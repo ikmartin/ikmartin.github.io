@@ -3,5 +3,4 @@
 
 # Isaac Martin's Homepage
 
-Webiste is currently being built.
-
+Website is currently being built.
