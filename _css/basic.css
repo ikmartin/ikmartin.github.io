@@ -3,7 +3,7 @@
 ================================================================== */
 
 nav {
-  width: 64%;
+  width: 75%;
   display: inline-block;
 }
 
@@ -47,7 +47,7 @@ header .blog-name {
   display: inline-block;
   text-align: left;
   font-size: 18px;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: 'Lucida Console', Monaco, monospace;
   padding-top: 10px;
 }
 
@@ -92,7 +92,9 @@ header li a:hover {
 medium display: nav goes under name
 */
 @media (max-width: 760px) {
-  header { display: block; }
+  header {
+    display: block;
+  }
 
   header .blog-name {
     display: block;
@@ -118,7 +120,7 @@ instead, display a burger menu.
 
   header .blog-name {
     display: inline-block;
-    width: 70%;
+    width: 80%;
   }
 
   nav {
@@ -147,8 +149,12 @@ instead, display a burger menu.
     padding: 0;
     margin: 0;
   }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
+  header li a {
+    border-bottom: none;
+  }
+  header li a:hover {
+    border-bottom: none;
+  }
 
   nav:hover ul {
     display: block;
