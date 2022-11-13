@@ -1,25 +1,143 @@
 <!--
 Add here global page variables to use throughout your website.
 -->
+
 +++
 author = "Isaac Martin"
 mintoclevel = 2
 
 # Add here files or directories that should be ignored by Franklin, otherwise
+
 # these files might be copied and, if markdown, processed by Franklin which
+
 # you might not want. Indicate directories by ending the name with a `/`.
+
 # Base files such as LICENSE.md and README.md are ignored by default.
+
 ignore = ["node_modules/"]
 
-# RSS (the website_{title, descr, url} must be defined to get RSS)
+# RSS (the website\_{title, descr, url} must be defined to get RSS)
+
 generate_rss = true
 website_title = "Isaac Martin's Homepage"
 website_descr = "Homepage of Isaac Martin"
-website_url   = "https://lwkatzen.github.io"
+website_url = "https://lwkatzen.github.io"
 +++
 
 <!--
+############################################################
 Add here global latex commands to use throughout your pages.
+############################################################
 -->
-\newcommand{\bR}{\mathbb R}
-\newcommand{\scal}[1]{\langle #1 \rangle}
+
+<!--
+Operator Names
+-->
+
+\newcommand{\cone}{\operatorname{cone}}
+\newcommand{\dim}{\operatorname{dim}}
+\newcommand{\vspan}{\operatorname{span}}
+
+<!--
+Categories
+-->
+
+\newcommand{\Ab}{\mathsf{Ab}}
+\newcommand{\Cones}{\mathsf{Cones}}
+\newcommand{\Grp}{\mathsf{Grp}}
+\newcommand{\Set}{\mathsf{Set}}
+
+<!--
+Functors
+-->
+
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Spec}{\operatorname{Spec}}
+
+<!--
+mathbb
+-->
+
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bJ}{\mathbb{J}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bU}{\mathbb{U}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bW}{\mathbb{W}}
+\newcommand{\bX}{\mathbb{X}}
+\newcommand{\bY}{\mathbb{Y}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\ba}{\mathbb{a}}
+\newcommand{\bb}{\mathbb{b}}
+\newcommand{\bc}{\mathbb{c}}
+\newcommand{\bd}{\mathbb{d}}
+\newcommand{\be}{\mathbb{e}}
+\newcommand{\bf}{\mathbb{f}}
+\newcommand{\bg}{\mathbb{g}}
+\newcommand{\bh}{\mathbb{h}}
+\newcommand{\bi}{\mathbb{i}}
+\newcommand{\bj}{\mathbb{j}}
+\newcommand{\bk}{\mathbb{k}}
+\newcommand{\bl}{\mathbb{l}}
+\newcommand{\bm}{\mathbb{m}}
+\newcommand{\bn}{\mathbb{n}}
+\newcommand{\bo}{\mathbb{o}}
+\newcommand{\bp}{\mathbb{p}}
+\newcommand{\bq}{\mathbb{q}}
+\newcommand{\br}{\mathbb{r}}
+\newcommand{\bs}{\mathbb{s}}
+\newcommand{\bt}{\mathbb{t}}
+\newcommand{\bu}{\mathbb{u}}
+\newcommand{\bv}{\mathbb{v}}
+\newcommand{\bw}{\mathbb{w}}
+\newcommand{\bx}{\mathbb{x}}
+\newcommand{\by}{\mathbb{y}}
+\newcommand{\bz}{\mathbb{z}}
+
+<!--
+mathcal
+-->
+
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
