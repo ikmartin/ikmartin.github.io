@@ -23,6 +23,25 @@
 
 <item>
   <title>
+    <![CDATA[  Associating cones to logarithmic stacks  ]]>
+  </title>
+  <link> https://lwkatzen.github.io/pages/blog/posts/post2/index.html </link>
+  <guid> https://lwkatzen.github.io/pages/blog/posts/post2/index.html </guid>
+  <description>
+    <![CDATA[  Detailed description of section 2.1 in <a href="https://arxiv.org/pdf/1709.09864.pdf">Decomposition of Degenerate Gromov-Witten Invariants</a>. Goal is to understand how one can attach combinatorial structure &#40;strictly rational polyhedral cones&#41; to logarithmic schemes.  ]]>
+  </description>  
+    
+  <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Isaac Martin</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  More goodies  ]]>
   </title>
   <link>  </link>

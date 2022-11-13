@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:georss="http://www.georss.org/georss">
+
+  <channel>
+    <title>
+      <![CDATA[  Isaac Martin&#39;s Homepage  ]]>
+    </title>
+    <link> https://lwkatzen.github.io </link>
+    <description>
+      <![CDATA[  Homepage of Isaac Martin  ]]>
+    </description>
+    <atom:link
+      href="https://lwkatzen.github.io/feed.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+
+<item>
+  <title>
+    <![CDATA[  Associating cones to logarithmic stacks  ]]>
+  </title>
+  <link> https://lwkatzen.github.io/pages/blog/posts/post2/index.html </link>
+  <guid> https://lwkatzen.github.io/pages/blog/posts/post2/index.html </guid>
+  <description>
+    <![CDATA[  Detailed description of section 2.1 in <a href="https://arxiv.org/pdf/1709.09864.pdf">Decomposition of Degenerate Gromov-Witten Invariants</a>. Goal is to understand how one can attach combinatorial structure &#40;strictly rational polyhedral cones&#41; to logarithmic schemes.  ]]>
+  </description>  
+    
+  <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Isaac Martin</atom:name>
+  </atom:author>
+        
+</item>
+</channel></rss>
