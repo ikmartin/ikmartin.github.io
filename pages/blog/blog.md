@@ -9,6 +9,7 @@ for (root, dirs, files) in walkdir("./pages/blog/posts")
     println("[$dir](" * chop(joinpath(root,dir), head = 1, tail = 0) * ")\n")
   end
 end
+
 ```
 
 \textoutput{get-posts}
