@@ -4,10 +4,10 @@ hascode = true
 date = Date(2022, 11, 12)
 rss = "Detailed description of section 2.1 in [Decomposition of Degenerate Gromov-Witten Invariants](https://arxiv.org/pdf/1709.09864.pdf). Goal is to understand how one can attach combinatorial structure (strictly rational polyhedral cones) to logarithmic schemes."
 
-tags = ["tropical-geometry", "algebraic-geometry", "log-geometry"]
+tags = ["blog", "tropical-geometry", "algebraic-geometry", "log-geometry"]
 +++
 
-# Associating cones to logarithmic stacks
+# Associating cones to logarithmic schemes
 
 \toc
 
