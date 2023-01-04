@@ -11,8 +11,7 @@ def increment_name(name, n):
 
 
 # the default post template
-templatePost = """
-+++
+templatePost = """+++
 title = "{}"
 hascode = true
 description = "{}"
@@ -63,7 +62,7 @@ parser.add_argument(
 # parse arguments, store relevant values in variables
 args = parser.parse_args()
 title = args.title[0]
-dirname = args.dirname[0]
+dirname = args.dirname
 post_desc = args.desc[0]
 tags = args.tags if args.tags else ["blog"]
 
