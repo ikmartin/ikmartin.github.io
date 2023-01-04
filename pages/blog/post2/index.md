@@ -1,5 +1,5 @@
 +++
-title = "Associating cones to logarithmic stacks"
+title = "Associating cones to logarithmic stacks (draft)"
 hascode = true
 date = Date(2022, 11, 12)
 rss = "Detailed description of section 2.1 in [Decomposition of Degenerate Gromov-Witten Invariants](https://arxiv.org/pdf/1709.09864.pdf). Goal is to understand how one can attach combinatorial structure (strictly rational polyhedral cones) to logarithmic schemes."

@@ -12,31 +12,24 @@ tags = ["toric-geometry", "seminar"]
 \toc
 
 ---
+Welcome to the seminar page for the Spring 2023 toric varieties learning seminar. In the first ten weeks, we plan to cover almost all of Fulton's *Introduction to Toric Varieties* supplemented by Cox, Little and Schneck's *Toric Varieties*. The final four to five weeks are reserved for special topics, chosen by the participants.
 
-## Proposed Plan
+- Scheduling doodle poll can be accessed [here](https://doodle.com/meeting/participate/id/egZrrG9d)
+- Sign-up for talks [here](https://docs.google.com/spreadsheets/d/1eVWcPL2YpMXUNEUnB4KWRQ7l24N7cM6jTY0XmoMOg3Q/edit?usp=sharing).
 
-There are many directions we could take this, but I'd personally like to approach it as if the participants have never heard of a toric variety before. My idea is that we can follow Fulton and Cox/Little/Schenk's books, taking turns presenting on chapters/topics each week. We could also leave some time at the end for special topics not found in either of these books.
+## Schedule Outline (Subject to Change)
 
-### Potential Topics
+- **Weeks 1-2, Chapter 1:** Cones, fans and toric varieties
 
-Here's a potential list of topics:
+- **Weeks 3-4, Chapter 2:** Local properties, singularities, one-parameter subgroups
 
-#### Tori and fans and first properties
-- Definition of toric variety, cones and fans
-- Smoothness
-- Blowups
-- Orbit Cone Correspondence
+- **Weeks 5-7, Chapter 3:** Orbit-cone correspondence, divisors, line bundles and cohomology
 
-#### Divisors and Line Bundles
-- Toric divisors
-- Weil/Cartier Divisors
-- Line bundles
+- **Weeks 8-10, Chapter 4 & 5:** Moment map, tangent bundle, intersection theory, Serre duality, Betti numbers, Chow groups, Riemann-Roch and Bezout theorem
 
-#### Generalizations
-- Log geometry?
-- Spherical varieties?
+- **Weeks 11-15, Beyond Fulton:** Special topics (Log geometry? Spherical varieties?)
 
-### Resources
+## Resources
 Here are some books/notes
 - [*Introduction to Toric Varieties* by Fulton](documents/Introduction-to-Toric-Varieties_Fulton.pdf)
 - [*Toric Varieties* by Cox, Little Schneck](documents/Toric-Varieties_Cox-Little-Schenck.pdf)
