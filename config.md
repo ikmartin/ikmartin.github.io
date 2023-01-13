@@ -37,6 +37,8 @@ Operator Names
 \newcommand{\cone}{\operatorname{cone}}
 \newcommand{\dim}{\operatorname{dim}}
 \newcommand{\vspan}{\operatorname{span}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Maxspec}{\operatorname{Maxspec}}
 
 <!--
 Categories

@@ -13,15 +13,20 @@ function hfun_pageFill(page,vname)
   return pagevar(page,var)
 end
 
-# prints an ordered list of the first $num blog posts
-# sorted in reverse chronological ordered
-function hfun_printblog(num)
-  basedir = "pages/blog/"
-  println(num)
-  num = parse(Int64, num[1])
+function check_post(postdir)
+  return isdir(postdir) && isfile(joinpath(postdir,"index.md"))
+end
+
+# prints an ordered list of pages in a given directory
+# expects an argument of the form (directory::String, number::number-of-pages-to-display)
+# sorted in reverse chronological order
+function hfun_printpages(args)
+  basedir = args[1]
+  println(args)
+  num = parse(Int64, args[2])
 
   # get all subdirectories of blog, these are the posts
-  dirs = filter(x -> isdir(joinpath(basedir, x)), readdir(basedir))
+  dirs = filter(x -> check_post(joinpath(basedir,x)), readdir(basedir))
   print("\nAll posts: ")
   println(dirs)
 
