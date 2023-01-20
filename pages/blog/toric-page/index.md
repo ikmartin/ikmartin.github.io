@@ -13,7 +13,7 @@ tags = ["toric-geometry", "seminar"]
 
 ---
 
-Welcome to the seminar page for the Spring 2023 toric varieties learning seminar. We meet on Fridays in PMA 12.166 from 12-13 pm. In the first ten weeks, we plan to cover almost all of Fulton's *Introduction to Toric Varieties* supplemented by Cox, Little and Schneck's *Toric Varieties*. The final four to five weeks are reserved for special topics, chosen by the participants.
+Welcome to the seminar page for the Spring 2023 toric varieties learning seminar. We meet on Fridays in PMA 12.166 from 12:00 - 13:00. In the first ten weeks, we plan to cover almost all of Fulton's *Introduction to Toric Varieties* supplemented by Cox, Little and Schneck's *Toric Varieties*. The final four to five weeks are reserved for special topics, chosen by the participants.
 
 - Sign-up for talks [here](https://docs.google.com/spreadsheets/d/1eVWcPL2YpMXUNEUnB4KWRQ7l24N7cM6jTY0XmoMOg3Q/edit?usp=sharing).
 
