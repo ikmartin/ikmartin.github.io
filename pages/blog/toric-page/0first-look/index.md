@@ -1,7 +1,7 @@
 +++
-title = "A first look at toric varieties"
+title = "Part 0. The briefest primer on algebraic geometry"
 hascode = true
-description = "A first look at toric varieties intended for a Junior Geometry talk"
+description = "0. A first look at toric varieties intended for a Junior Geometry talk"
 tags = ["toric-geometry"]
 +++
 
@@ -11,13 +11,13 @@ tags = ["toric-geometry"]
 
 ---
 
-This primer was written with the Junior Geometry graduate seminar at UT Austin in mind. Some participants may not have seen schemes before; so we start with some intuition:
+This primer was written with the Junior Geometry graduate seminar at UT Austin in mind. Some participants had not seen schemes before; so I started with a lightning fast introduction taking people from vanishing sets of polynomials to $\Spec$. The main point of this writeup is to demonstrate that you can do algebraic geometry using arbitrary rings, though we fail to explain the Zariski topology.
 
 ## An extraordinarily fast primer on algebraic geometry
 
 Algebraic geometry studies, among other things, algebraic varieties. These are shapes cut out by polynomials. For instance, $X = V(x^2 + y^2 - 1)\subseteq K^2$ is an algebraic variety consisting of all points where the polynomial $x^2 + y^2 - 1$ vanishes. Here $K$ is the base field for my polynomial ring.
 
-  ![This algebraic variety is the unit circle](/pages/blog/toric-page/1first-look/circle.png)
+  ![This algebraic variety is the unit circle](/pages/blog/toric-page/0first-look/circle.png)
 
 It also makes sense to consider the vanishing set of multiple polynomials at once, for instance $V(x^2 + y^2 - 1, x = 0)$ consists of the two points $(x,y) = (0, 1), (0,-1)$ since these are the only places where both polynomials simultaneously vanish. 
 
@@ -42,5 +42,3 @@ For example, consider one-dimensional affine space over $\bC$; $\bA^1_{\bC}$ giv
 > **Note:** Despite the fact that $\bA^1_{\bC}$ is strictly larger than $\bC$, it is common to interchange $\bA^1_\bC$ and $\bC$ via the identification $\Maxspec(\bC[t]) = \bC$. This is not an egregious abuse of notation when working over an algebraically closed field; one loses nothing by working with $\Maxspec$ instead of $\Spec$ in this setting. We also denote by $\bC^\times$ the space $\bA^1_{\bC} \setminus \{0\}$.
 
 More generally, we see that $(\bC^\times)^n = \Spec \bC[x_1^{\pm},...,x_n^{\pm}]$. Because the punctured complex plane $\bC^\times$ is homotopy equivalent to $S^1$, we call $(\bC^\times)^n$  **the complex $n$-torus and denote it by $\bT^n$**. This is the *torus* in *toric geometry*.
-
-## Toric Varieties
