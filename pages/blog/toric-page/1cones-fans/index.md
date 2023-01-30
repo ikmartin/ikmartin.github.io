@@ -1,5 +1,5 @@
 +++
-title = "Part 1. Cones, fans and toric varieties"
+title = "Week 1. Cones, fans and toric varieties (DRAFT)"
 hascode = true
 description = "Notes covering Fulton chapter 1"
 tags = ["toric-geometry", "polyhedral-geometry"]

@@ -1,5 +1,5 @@
 +++
-title = "Part 0. The briefest primer on algebraic geometry"
+title = "Week 0. The briefest primer on algebraic geometry"
 hascode = true
 description = "0. A first look at toric varieties intended for a Junior Geometry talk"
 tags = ["toric-geometry"]
@@ -11,7 +11,7 @@ tags = ["toric-geometry"]
 
 ---
 
-This primer was written with the Junior Geometry graduate seminar at UT Austin in mind. Some participants had not seen schemes before; so I started with a lightning fast introduction taking people from vanishing sets of polynomials to $\Spec$. The main point of this writeup is to demonstrate that you can do algebraic geometry using arbitrary rings, though we fail to explain the Zariski topology.
+This primer was written as an introduction to a talk given in the Junior Geometry graduate seminar at UT Austin. The talk covered most of the material found in [Week 1: Cones, fans and toric varieties](/pages/blog/toric-page/1cones-fans/), but it felt pertinent to include this primer here too. Some participants had not seen schemes before; so I started with a lightning fast introduction taking people from vanishing sets of polynomials to $\Spec$. The main point of this writeup is to demonstrate that you can do algebraic geometry using arbitrary rings, though we fail to explain the Zariski topology.
 
 ## An extraordinarily fast primer on algebraic geometry
 
