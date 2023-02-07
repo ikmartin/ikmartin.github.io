@@ -17,7 +17,7 @@ Back in December of 2022 I visited a middle school in Tacoma, Washington to talk
 2. The circle is the set of all pairs $(x,y)$ in the plane which satisfy the equation $x^2 + y^2 = 1$.
 3. The circle is the set of all complex numbers which can be written $e^{i\theta}$ there $\theta$ is some real number.
 4. A circle is a set which can be written as the image of a continuous function $\gamma:[0,1]\to \bR^2$, where $\gamma(0) = \gamma(1)$ and $\gamma$ is injective on the open interval $(0,1)$.
-5. A circle is the topological space $SO(1)$.
+5. A circle is the topological space $SO(2)$.
 6. The circle is the unique compact one dimensional real manifold. 
 7. A circle is a one dimensional cell complex with one $0$-cell and one $1$-cell.
 8. A circle is the affine scheme $\Spec R[x,y]/(x^2 + y^2 - 1)$.

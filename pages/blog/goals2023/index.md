@@ -22,7 +22,7 @@ If I don't finish these things, I'll be quite sad by the time  arrives. Here's t
 - Choose an advisor
 
 #### Complete at least 1/3 of the exercises in Chapters II and III of Hartshorne.
-I've been working through Hartshorne sporadically over the past two years. It's time to wade through it earnestly. There are a total of **222 exercises** between chapters II and III of Hartshorne, so I'll need to complete **74 exercises** by May. That's about **2 exercises 3 days**.
+I've been working through Hartshorne sporadically over the past two years. It's time to wade through it earnestly. There are a total of **222 exercises** between chapters II and III of Hartshorne, so I'll need to complete **74 exercises** by May. That's about **2 exercises every 3 days**.
 
 #### Complete the preliminary exam and course requirements for the Ph.D.
 UT Austin's math Ph.D. program requires students to complete 7 preliminary courses in order to advance to the second stage of the Ph.D., and at least 3 of those courses by exam. I've finished one exam and two courses at the time of this writing. I think I'll receive credit for 3 courses I completed at Utah and will take two more exams in January. If everything goes perfectly then I will be done quite soon, but in the likely scenario in which I fail at least one of the exams, I will need to study and retake it in either June or August. If I am done with this stage of the Ph.D. by Fall 2023, I'll consider that a success.
