@@ -26,12 +26,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lwkatzen.github.io/pages/alana/index.html</loc>
-    <lastmod>2023-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://lwkatzen.github.io/pages/old-index/index.html</loc>
     <lastmod>2023-02-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -51,6 +45,12 @@
 </url>
 <url>
     <loc>https://lwkatzen.github.io/pages/blog/toric-page/0first-look/index.html</loc>
+    <lastmod>2023-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://lwkatzen.github.io/pages/alana/index.html</loc>
     <lastmod>2023-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
