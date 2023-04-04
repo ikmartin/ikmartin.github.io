@@ -3,7 +3,7 @@
 
 # Isaac Martin's Homepage
 
-Hello! Putting down personal info and copying relevant portions of my CV is tedious -- I'll get to that in due time. Right now I'm mostly using this site to host random pages contained in [blog](/pages/blog/blog/). 
+Hello! Putting down personal info and copying relevant portions of my CV is tedious -- I'll get to that in due time. You can find a copy of my CV here for now: ([CV - Last updated August 2022](/files/CV.pdf)). Right now I'm mostly using this site to host random pages contained in [blog](/pages/blog/blog/). 
 
 I'll update the other stuff once a reason presents itself.
 
