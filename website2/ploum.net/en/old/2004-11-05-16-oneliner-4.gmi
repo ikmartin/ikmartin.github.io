@@ -1,5 +1,0 @@
-# [Oneliner 4]
-
-It is practically impossible to teach good programming style to students that (sic) have had prior exposure to BASIC; as potential programmers they are mentally mutilated beyond hope of regeneration.
-
-Dijkstra

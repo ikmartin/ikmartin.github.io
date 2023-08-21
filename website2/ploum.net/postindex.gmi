@@ -1,5 +1,0 @@
-## Blog Posts
-
-=> index_all.gmi All posts
-=> index_fr.gmi En français uniquement
-=> index_en.gmi English content only

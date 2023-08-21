@@ -1,5 +1,0 @@
-# [Oneliner 5]
-
-Dans le LHC, on devrait atteindre des performances de plusieurs milliers de GeV. Pleure pas GeV, t’es pas tout seul GeV !
-
-=> http://lhc-new-homepage.web.cern.ch/lhc-new-homepage/ LHC
