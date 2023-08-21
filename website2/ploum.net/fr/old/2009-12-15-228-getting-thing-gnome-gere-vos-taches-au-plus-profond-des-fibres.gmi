@@ -1,0 +1,78 @@
+# Getting Thing GNOME! gère vos tâches au plus profond des fibres
+
+Afin de gérer le stress et éviter la procrastination, j’ai dévelopé la méthode GARI (Glande Appliquée – Rangement Interdit). Vous vous souvenez ? Le monsieur au fond se souvient et il dit même que j’avais tout pompé sur GTD, ce qui est en partie vrai. Mais il nous restait à trouver un bon moyen pour gérer ma liste de choses à faire.
+
+=> /169-comment-s-organiser-sans-jamais-ranger-avec-la-methode-glande-appliquee-rangement-interdit GARI (Glande Appliquée – Rangement Interdit)
+=> http://fr.wikipedia.org/wiki/Getting_Things_Done GTD
+
+Quand on y pense, tout n’est jamais qu’une série de tâches. Déplacer une montagne paraît bien plus facile lorsqu’on le fait un caillou à la fois. Même si ça fait un peu tâche… (hihi, tâche, vous comprenez ? Jeu de mot subtil et raffiné).
+
+La première chose à faire est donc d’installer Getting Things GNOME![1]. Si vous utilisez Ubuntu Karmic, ajoutez le dépôt ppa:gtg/ppa dans vos sources de logiciels (Système > Administration > Sources de logiciels puis onglet « Autres logiciels » et bouton « Ajouter »). Dans le même menu Administration, lancez le gestionnaire de paquet Synaptic et installez « gtg ».
+
+=> http://gtg.fritalk.com/pages/download Getting Things GNOME!
+
+=> ../files/old/gtg_ppa.png Installer PPA GTG
+
+GTG est donc maintenant dans votre menu Applications > Bureautique.
+
+Mais comment l’utiliser ?
+
+Utiliser GTG est propre à chacun. Il y a autant de manière d’utiliser GTG que d’utilisateurs. Comme c’est mon blog, je vous explique la mienne, merci de ne pas déranger les lecteurs du fond qui dorment déjà.
+
+Lorsque je pense à quelque chose à faire, la toute première action est de le noter. Cela peut être un simple bout de papier, un mail que je m’envoie voire directement une nouvelle tâche dans GTG.
+
+De temps en temps, je vide mes « inbox ». Ce sont principalement une boîte sur mon bureau où atterrissent tous les petits papiers et l’inbox de ma boîte mail.
+
+=> ../files/old/gtg2b.png quickadd
+
+Pour chaque papier, chaque idée, chaque mail, je rajoute une action dans GTG en utilisant la barre d’ajout rapide. C’est rapide et efficace, c’est fait pour après tout.
+
+Ensuite, toujours dans GTG, j’affiche la liste des tâches qui n’ont pas de tag. Ce sont en effet des tâches que je n’ai pas encore triées. Si je veux ajouter directement un tag à une série de tâches que j’ajoute, je me positionne, dans GTG, sur le tag en question. Toutes les nouvelles tâches auront immédiatement ce tag.
+
+=> ../files/old/gtg3.png notag
+
+Je les ouvre une à une et complète la description de la tâche à faire. Je met également une date limite. Si celle-ci n’est pas nécessaire, j’estime l’urgence de la tâche avec les boutons « Maintenant », « Bientôt » et « Plus tard ». Si une contrainte m’empêche de travailler à cette tâche avant une date donnée, je sélectionne la date de commencement de manière à ne voir la tâche que lorsque cela sera utile.
+
+À chaque tâche, j’ajoute des tags. Les tags sont aussi bien des sujets (@blog, @gtg, @logistique) que des contextes (@home, @magasin) ou des projets particuliers (@nouveau_blog). Comme je suis synesthète, j’ajoute des couleurs à chaque tag important[2].
+
+=> http://fr.wikipedia.org/wiki/Synesth%C3%A9sie synesthète
+
+=> ../files/old/gtg4.png startdate
+
+Tout en éditant la tâche, je rajoute des sous-tâches qui me permettent de diviser le travail plus facilement. C’est très simple : il suffit de commencer une ligne dans l’éditeur par un tiret « -« .
+
+Lorsque les sous-tâches doivent se suivre (par exemple : acheter le cadeau, emballer le cadeau, le mettre sous le sapin), je rajoute toutes ces tâches d’un coup dans la tâche parent (cadeau de Newtonmas). Ensuite, par glisser-déposer, je fais en sorte que « acheter le cadeau » soit la sous-tâche de « emballer le cadeau », elle-même sous-tâche de « placer le cadeau sous le sapin » elle même sous-tâche de « cadeau de newtonmas ». GTG manque d’un moyen rapide d’ajouter des tâches qui dépendent l’une de l’autre[3] mais le glisser-déposer reste malgré tout rapide et suffisament efficace.
+
+=> /200-joyeux-noel-2142 Newtonmas
+
+=> ../files/old/gtg5.png list
+
+Une chose importante à garder à l’esprit est qu’une liste de tâche est par essence dynamique. Tout peut tout le temps changer. Il m’arrive souvent d’abandonner des tâches, d’en renommer d’autres. Dès que j’ai une idée, une note, je la met dans la tâche concernée : URL, adresse email, numéro de téléphone, copier/coller d’un court article sur le sujet, tout absolument tout va dans la tâche elle-même. Si j’ai sauvé un fichier, je mets ce fichier dans un répertoire appelé « deskbox » et je rajoute dans la note « voir fichier.pdf dans deskbox ».
+
+=> ../files/old/gtg6.png tâche
+
+Je crée également des tags plus généraux (@objectifs_2010), qu’il soit à long terme ou pour un project précis (@projet_ducranlapoigne). Sur ces tags généraux, je glisse-dépose les tags qui sont liés. @nouveau_blog va sur @objectifs_2010, @comptabilité_dl,@siteweb_dl,@marketing_dl vont tous sur @projet_ducranlapoigne. De cette manière je peux, à ma convenance, voir les tâches d’un domaine précis ou englober d’un regard le projet dans sa globalité. C’est également un bon indicateur si la catégorie @objectifs_2010 ne bouge pas beaucoup voire est vide. Bah, on y pensera en décembre…
+
+=> /180-methode-vie-partouane-ecrire-ses-objectifs long terme
+
+=> ../files/old/gtg7.png subtag
+
+Il ne me reste plus qu’à afficher la Vue de Travail et se mettre au travail. Plus d’excuses pour perdre son temps. Si une tâche trop complexe s’affiche dans la vue de travail, il serait pertinent de lui créer des sous-tâches.
+
+Et, enfin, vient le temps ô combien béni, ô combien attendu, où on peut appuyer sur le bouton « Marquer comme fait ».
+
+=> ../files/old/gtg8.png mark as done
+
+Aaaaaaah, ça fait du bien !
+
+#### Notes
+
+[1] Et non, GTG n’existe pas encore sous Windows ou Mac. Il est peut-être temps de vous y mettre non ?
+
+=> /223-ubuntu-efficace-3eme-edition temps de vous y mettre
+
+[2] Comme vous le dira tout bon synesthète, il faut que la couleur ajoutée soit proche de la « vraie » couleur du concept englobé par le tag, sinon cela met mal à l’aise.
+
+[3] toute proposition ou idée à ce sujet est la bienvenue
+
+=> https://bugs.edge.launchpad.net/gtg/+bug/497164 proposition ou idée à ce sujet

@@ -1,0 +1,49 @@
+# There Is No Content on Gemini
+
+One of the most frequent criticisms about the Gemini network is that there’s no content on it. When I hear that, my answer is always the same :
+
+"That’s the very point".
+
+## Consuming content with tokens
+
+Content is created with one purpose : being consumed. The target audience for any content is a consumer. You separate the world in two classes : content creators and content consumers. Creators being consumers themselves in their spare time.
+
+Content consumption implies an economical transaction. Consumers give some currency token to the distributor (which, most of the time, is not the creator). Historically, that currency was fiat money but, nowadays, new kinds of token have appeared : likes, retweets, comments and even "clicks". The whole point of the "clicks" is that the consumer exchanges it without even realising it. 
+
+If you are familiar with Gemini, you probably share many criticisms of the web and even some form of nostalgia for the "pre-monopolies" web era. All those feelings can be boiled down to this single problem : the web is now plagued with content waiting to be consumed against a token. The worst part being that every part of life is now contaminated. As people give their attention to contents, believing that they are not paying anything, they pay less attention to their surroundings, to the people around them. They feel empty and need to fill the tank of attention tokens. They crave for attention themselves.
+
+Google and Facebook have a simple business model : they sell their own attention tokens against fiat money. Buy ads on Google and get a lot more clicks in your Google analytics. Buy page views on Facebook and get hits on your Facebook page. Buy ads on Twitter and get more random retweets.
+
+## Art against content
+
+On Gemini, there’s no attention token. No like. No direct share. Mostly no analytics. This makes it a very harsh environment for pure contents. That’s why on Gemini, we have no content. We have conversations. We have humans writing because they want to. Because they need to. We may have answers. We may start conversations over email. We are slowly interacting. The purpose is to write, to express, not having the feeling of being read.
+
+It’s interesting because my own definition of art is "what you cannot not do". What you do because you need to do it for yourself. As soon as you take into account the market for your art, as soon as you adapt to an audience for economical reason, you are not making art any more. You are creating content. 
+
+The Web is full of content. Gemini is full of art and human interactions.
+
+Of course, there are a lot of art and human interactions on the web too. Many blogs and websites are awesome. But they are more and more hidden. They feel like beautiful forest paths between two highways. You need to discover them. You are afraid to explore them too much because you know you will end sooner or later on the highway.
+
+## Feedbacks on the web are purely lies
+
+When I send an email to a gemlog writer, the first reaction is always "wow, I thought nobody was reading it". We are so used to immediate feedback that we equated the absence of feedback with not being read. 
+
+But think about it for a second: when was the last time you sent some feedback to the author of a book you loved? Most of you probably never contacted the author (unfortunately, I didn’t find the address of Victor Hugo and Émile Zola but I really wanted to say thanks…). This is an essential part of the written media: no immediate feedback or no feedback at all. 
+
+I had a few times random encounters with people who told me how my writing changed their life, sometimes years before our encounter. They never sent me a feedback. It just happened that we met and had the opportunity to tell me their story.
+
+On the opposite, what is a trustworthy feedback on the modern web? Most of the click, the likes are fakes. Done by bots and spamming accounts. No humans ever read your stuff. The amount of purely fake feedback is astonishing on modern platforms (I tested it myself, investing money in Facebook/Twitter ads to promote my books). But even not taking those into account, let’s focus on real human feedback. As I was travelling by train recently, I observed my fellow train goers on their smartphone. Their fingers were scrolling incredibly fast, sometimes stopping the feed for a tenth of a second, hitting the little heart, then resuming scrolling. Usually while watching multiple series on a bigger screen, constantly switching between episodes. When a comment is posted on a web content, it is often obvious that the commentator has not even started to read the content. That he is reacting to the first words of the title or the first picture.
+
+The whole attention economy is over-optimised to generate feedback which is not even close to be correlated with real human attention. Even when you create a true viral story shared in traditional media and on television, as I managed to do that several times in my career as a blogger, the global impact is nearly nihil. Yes, people talk about the story during a few days. Yes, people recognise you in the street. But they don’t even remember why. They don’t even think about why you did something. Except in some very rare cases, they don’t buy your book, they don’t subscribe to your newsletter. One week later, everything is done and, as a content creator, you are left craving for more dopamine shots while everybody else is already onto the next viral stories.
+
+## The purpose of Gemini
+
+If you miss feedback on Gemini, if you feel like nobody is reading you, remember that nobody was reading you on the web in the first place. That any feedback was a lie, a deception. That having a true impact on someone else’s life is something long, deep and without immediate feedback. The people who told me I changed their life often quoted blog posts that I thought nobody had read. They were also talking about how important it was to read me over the year, not to focus on a particular post. As I writer, I had absolutely no feedback for that. 
+
+If you feel that there’s no content on Gemini, then it might be because you are looking for a quick catchy slogan with colourful picture that can be skipped and scrolled. There’s plenty to read on Gemini. But reading is not the same as consuming. Look around your desk. There’s a good chance that you will see a few books you promised yourself to read "someday". If you want deep, insightful, life-changing stuff, turn off your computer and take one of those books.
+
+Gemini is a wonderful place where people that need to write meet people that want to read. Where humans exchange with other humans. Where, by definition, you can’t think about what your post will look like on other screens. Where you don’t try to build an "experience" each time someone clicks on your link.  Gemini being for humans, it is obviously imperfect. It might not always have the latest news about your favourite subjects. It may stay long hours without anything new.
+
+That’s exactly the plan. Gemini’s lack of content is not a bug, it’s a feature.
+
+Welcome to Gemini!

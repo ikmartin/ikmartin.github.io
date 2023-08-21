@@ -1,0 +1,47 @@
+# Offpunk 0.3 : Gopher, Pictures and Feeds
+
+Not long after Offpunk 0.2, here is 0.3 which add the support for… pictures ! In your terminal, yes. A small tool is required for this to work: chafa (available under Debian and Ubuntu. Simply apt-get install chafa).
+
+Offpunk 0.3 brings vastly improved HTML rendering and support for RSS and Atom feeds. The somewhat hidden "less full" command now allows you to check an HTML page without the Readability filter.
+
+Last but not least, Offpunk 0.3 introduces initial support for Gopher. As I’m not really familiar with Gopher, it will be full of bugs. Please report them. Thanks again to Solderpunk. Most of Gopher code is copied from his projects Agena and VF1.
+
+All those features now makes Offpunk nearly feature-complete. In my case, launching another browser to read web content is barely needed anymore (except for webapplications which require login and/or Javascript, of course). In the rare case where I thought Offpunk was failing, I realized that the incoming HTML was faulty.
+
+=> https://tildegit.org/ploum/AV-98-offline/ Offpunk official page
+
+## About Images
+
+Playing with Chafa in my terminal, I thought it would be fun to try it within Offpunk. I didn’t plan to release that feature as I thought that most images on pages I read are only decorative and perturbing the reading flow. I still think it’s the case.
+
+On some rare occasions, I felt like I was missing something and it happened that viewing the picture was required for the full context. The worst being quotes posted as screenshots and not copy/pasted texts. At first, I thought I would simply display alt-text as a link to the original picture (which is still the case if chafa is not installed).
+
+But I found myself opening most pictures because the alt-text made me curious.
+
+Having a small rendering of the picture displayed proved to be particularly useful to tell me if it was an image worth looking at or not.
+
+In short: it works for me, it’s fun and completely optional. If there’s any interest, I may add configurability to this feature so people can use catimg or libcaca if they prefer.
+
+Another side effect of this feature is that it highlight how useless most pictures are on web pages. 
+
+## About RSS/Atom
+
+A very nice side effect of rendering RSS/Atom feeds in Offpunk is that you can easily subscribe to them ( command "subscribe") and have every new item put in your tour.
+
+What I didn’t expect was how hard it was to detect if a document is HTML, RSS/Atom or a random XML file that should be opened by another application.
+
+So expect some false detections. If you find such occurence of a misdetection, please send me the link so I can try to understand how to improve my detection algorithm.
+
+## Roadmap to 1.0
+
+I will probably stop adding features to Offpunk, at least for a while, and focus on fixing bugs. Please report them! I would also happily mentor people willing to contribute.
+
+With Gopher now supported, I believe the only missing bit would be a way to search your cache (and to post search to different services and get results asynchronously). I’m investigating python-whoosh as a possible candidate to do that.
+
+But there’s a law in programming that states that each added line makes the software more complex, harder to maintain and unlock bugs because the code was never written with this particular vision. Refactoring usually involves defeating hundreds of small tweaks and ad-hoc fixes. 
+
+Once a project is running well, like Offpunk currently, adding stuff is fun and easy. But it might not be necessary. I must learn to gradually stop thinking "Offpunk code" before going to bed and start working on other, harders tasks. At some point, we should consider a software as "finished".
+
+Of course, I plan to fix bugs and reply to feedbacks. Thanks to Bjorn Westergard’s feedback, I added "--depth", "--disable-http" and reworked the "--sync" logic. (this has the nice side effect that you can sync gemini/gopher deeper than http, a nice optimisation as http pages are full of useless links).
+
+Don’t hesitate to drop an email to offpunk@ploum.eu if you have any feedback about how Offpunk could be more useful to you.

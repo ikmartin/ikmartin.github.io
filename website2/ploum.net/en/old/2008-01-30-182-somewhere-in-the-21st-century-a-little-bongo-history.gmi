@@ -1,0 +1,72 @@
+# Somewhere in the 21st century : a little Bongo history
+
+Hi, there. I want to talk to you about ducts.
+
+=> ../files/old/brazil02.jpg Intro
+
+In February 2005 (but it seems to me like it has been three decades), Novell opensourced his Netmail mail server under the name Hula with a whole new visual identity and a lot of Nat Friedman-ish hype.
+
+=> http://www.novell.com/products/netmail/ Netmail
+=> http://www.nat.org/2005/february/ Hula
+
+The project started very quickly, with some bright Novell guys working on it. Everybody was very enthusiast, the idea was clear : built a super-hype-trendy mail-calendar-contacts server. I also had my share of expectations. Hula was coming with a fresh new design but an ultra polished Ajax interface was developed under the name « Dragonfly ». Everybody was stunned by the screencasts. It was so hype !
+
+=> /67-the-bulb-and-the-flower my share of expectations
+
+=> ../files/old/brazil_computer.jpg Computer
+Then, nearly as suddenly as the project started, things stalled. Novell had still full control over Hula but the Novell guys were assigned on different projects, letting the community alone in the cold without any indication. Getting a svn write access was nearly impossible, some artworks were Novell properties, etc. Things were very unclear and the software was in a very bad shape, stuck between the old interface and Dragonfly.
+
+Bloody typical, they’ve gone back to metric without telling us
+
+In November 2006, Novell announced that they stopped all Hula development. Worst, Netmail was sold to Messaging Architects with all the rights over Hula. Of course, MA and Novell swore that they will continue to support the community effort, blabla. As you can expect, Messaging Architecht never contacted anyone of the community, the website disappeared. It looks exactly like the Hula project never existed. Sad.
+
+=> http://forge.novell.com/pipermail/hula-general/2006-November/002084.html announced that they stopped all Hula development
+=> http://www.messagingarchitects.com/en/netmail/ Messaging Architects
+
+=> ../files/old/brazil_angel.jpg angel
+But there was some very bright people in the Hula community. Alex Hudson quickly took the lead and, with a bunch of über fantastic guys, forked Hula into a new project called… BONGO !
+
+=> http://www.alcoholicsunanimous.com/hula/future.shtml Alex Hudson quickly took the lead
+=> http://bongo-project.org/ BONGO
+
+I came into this game for the action, the excitement. Go anywhere, travel light, get in, get out, wherever there’s trouble, a man alone.
+
+Unlike Hula, Bongo was a community-driven project and was quickly successful. Bongo guys wanted to release often, following a very ambitious roadmap. Unfortunately, the M2 release of March 2007 was delayed to May. The M3, originally scheduled for April 2007, was intended to be the first usable release.
+
+=> http://bongo-project.org/Roadmap roadmap
+
+A mail server is a very sensible piece of software. Nobody will accept to loose an email or to not be able to read his emails for a few days because of a bug. In the Bongo spirit, M1 and M2 were « experimental-developers only-will kill your cat-and rape your dog » releases. You’ve been warned.
+
+This strong requirement for M3 delayed the release a bit. Then, it was discovered that Hula inheritance was even worse than previously thought. More work to do. A lot more work. Incredibly more work !
+
+=> ../files/old/brazil_ducts.jpg Ducts
+
+There’s been a little complication with my complication
+
+Until today ! Yes, the M3 release is there now, ready to be tested.
+
+=> http://bongo-project.org/Releases/0.3.0 Yes, the M3 release is there now, ready to be tested
+
+=> http://bongo-project.org/ 
+=> ../files/old/bongo.png Bongo
+
+I guess that Ubuntu packages will follow quickly but it’s already a very good news. Be careful : things might not work as expected because numerous « under-the-hood » things have changed. And this will continue for M4 as it appeared that the so cool Dragonfly, to remain short, sucks. Bongo guys are now working on a replacement.
+
+But Bongo is not only a really slick mail-calendar server. It’s also the most dedicated and friendly community I’ve ever seen in the opensource world.
+
+=> http://planet.bongo-project.org/ dedicated and friendly community
+
+You can even disappear for months without a word then come back on #bongo chan and they will consider you like you were away for a brief moment, explaining carefully what have changed and helping you to swim through the code.
+
+So go, test the M3 release, join the community, contribute and take a beer with them at Fosdem. In two or three years, when Bongo will have taken over the world, you will be able to say with a proud smile : « Yes, I know. I was one of the first adopter and I use to chat with the developers on IRC. »
+
+=> http://bongo-project.org/Releases/0.3.0 M3 release
+=> http://fosdem.org/2008/ Fosdem
+
+=> ../files/old/brazil_fly.jpg Fly
+
+Bongo worth it, long live Bongo !
+
+=> http://bongo-project.org/ Bongo
+
+It’s about flights of fantasy. And the nightmare of reality. Terrorist bombings. And late night shopping. True Love. And creative plumbing.

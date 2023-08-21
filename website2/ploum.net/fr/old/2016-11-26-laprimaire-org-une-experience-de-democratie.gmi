@@ -1,0 +1,76 @@
+# Laprimaire.org, une expérience de démocratie
+=> files/old/3980024175_dbea388555_o.jpg
+
+Étymologiquement, la démocratie signifie le pouvoir par le peuple. Elle s’oppose à l’aristocratie où le pouvoir est détenu par une minorité.
+
+Dans la société d’aujourd’hui, force est de constater que ce que nous appelons démocratie n’en est pas une. Le pouvoir réel est toujours détenu par une minorité.
+
+Mais, contrairement à une aristocratie traditionnelle héréditaire, l’aristocratie moderne est désormais choisie par le peuple à travers le processus électoral. Nous vivons dans une aristocratie démocratiquement représentative, le processus électoral nous permettant de nous affubler du titre de « démocratie ».
+
+## Les faiblesses des élections
+
+Comme je le soulignais dans « Et si on tuait le parti pirate ? », se faire élire et être un élu sont deux métiers fondamentalement différents voire antagonistes. Ceux qui maîtrisent l’art de se faire élire vont conquérir le pouvoir et s’y maintenir, quelles que soient leurs actions. Notre système est donc complètement inféodé aux faiblesses du processus électoral choisi.
+
+=> /et-si-on-tuait-le-parti-pirate/ Et si on tuait le parti pirate ?
+
+Deux qualités sont essentielles pour être élu : la popularité et l’accès à l’argent, l’argent permettant d’acheter la popularité à travers les campagnes électorales. L’élection va donc favoriser l’émergence de personnages riches, représentant les intérêts d’autres riches et étant maîtres dans l’art de l’apparence ou du détournement de l’attention à travers un programme aussi inutile que mensonger.
+
+=> /elections-demandez-le-programme/ un programme aussi inutile que mensonger
+
+Les méthodes de calcul des résultats électoraux, elles-mêmes, vont avoir un poids définitif. Ainsi, le système à deux tours français va avoir tendance à tuer tout candidat favorisant le compromis ou l’innovation au profit de celui qui sera inacceptable pour 49% des électeurs mais suffisant pour 51%.
+
+Aux États-Unis, le système des grands électeurs permet l’élection d’un président moins populaire que son adversaire. Deux fois (Bush vs Gore en 2000 et Trump vs Clinton en 2016), le gagnant ne l’est devenu qu’en emportant de manière très suspecte l’état de Floride.
+
+=> http://www.palmerreport.com/opinion/rigged-election-hillary-clintons-early-voting-lead-florida-mathematically-insurmountable/114/ de manière très suspecte l’état de Floride
+
+Ce que nous appelons démocratie est donc un ensemble de règles donnant le pouvoir à celui qui saura le mieux les exploiter, légalement ou illégalement.
+
+## Le futur de la démocratie
+
+Comme je le décris dans mes billets « Il faudra la construire sans eux » et « Obéir, lire, écrire, les trois apprentissages de l’humain », je pense que nous sommes arrivés à un tournant de l’histoire.
+
+=> /il-faudra-la-construire-sans-eux/ Il faudra la construire sans eux
+=> /obeir-lire-ecrire-les-trois-apprentissages-de-lhumain/ Obéir, lire, écrire, les trois apprentissages de l’humain
+
+Après l’aristocratie et l’aristocratie démocratiquement représentative (plus communément appelée « démocratie »), il est temps de réinventer une nouvelle forme de gouvernance.
+
+Selon moi, cette post-démocratie sera fondée sur les outils technologiques de son époque, à savoir Internet et la blockchain. Les expériences de démocratie liquide nous ouvrent la voie en ce sens.
+
+=> https://framablog.org/2015/12/09/democratie-liquide/ démocratie liquide
+
+Cependant, cette (r)évolution n’est pas encore là et il faut bien composer avec le système en place. Comment apporter de nouvelles idées dans un système structurellement construit pour favoriser le conservatisme ?
+
+Le candidat Jean-Luc Mélenchon, par exemple, promet s’il est élu de former une assemblée constituante puis de démissionner. Dans l’idée, c’est évidemment magnifique. Mais Mr Mélenchon reste un homme politique traditionnel issu d’un parti traditionnel cherchant avant tout à défendre des valeurs. Cette défense de valeurs pourrait être en conflit avec la mise en place d’un nouveau système.
+
+=> http://www.jlm2017.fr/le_projet promet s’il est élu de former une assemblée constituante puis de démissionner
+
+## L’expérience de laprimaire.org
+
+Tenter d’utiliser les outils modernes pour perturber, même légèrement, le système en place, c’est exactement ce que tente de faire laprimaire.org pour les élections présidentielles françaises de 2017.
+
+=> https://laprimaire.org/ laprimaire.org
+
+Le principe est assez simple : un règlement fixé à l’avance pour désigner un candidat unique, un candidat issu du net et choisi par tous les citoyens qui le souhaitent.
+
+Début 2016, tout citoyen français pouvait se déclarer candidat. Afin d’être sélectionné pour le second tour, il fallait obtenir 500 soutiens d’autres citoyens français. Une barrière arbitraire, certes, mais facilement franchissable pour qui avait la motivation de devenir réellement candidat.
+
+Sur 215 candidats déclarés, ils furent 16 à passer le cap des 500 soutiens. Tous les citoyens inscrits sur laprimaire.org ont ensuite été appelés à choisir leurs 5 candidats préférés parmi les 16 qualifiés à travers un processus se basant sur le « jugement majoritaire ».
+
+=> http://www.marianne.net/agora-eviter-nouveau-21-avril-instaurons-jugement-majoritaire-100242214.html jugement majoritaire
+
+De ces 5 candidats, un seul sera finalement choisi comme le candidat de laprimaire.org pour se présenter réellement aux présidentielles. Mais les organisateurs avaient fixé une limite minimale de 100.000 citoyens inscrits avant de poursuivre l’aventure.
+
+Ils sont actuellement près de 97.000. Alors, si vous êtes citoyen français, vous savez ce qu’il vous reste à faire pour voir se présenter un candidat à la présidentielle issu non pas d’un parti mais bien d’un processus citoyen innovant.
+
+Même si ce candidat n’a aucune chance, sa simple présence sur les bulletins de vote assurera une incroyable publicité au fait que, oui, Internet permet désormais un nouveau mode de gouvernance. Que nous avons faim de remises en question, d’idées nouvelles, d’explorations. Que nous souhaitons prendre en main notre destin !
+
+Laprimaire.org n’est certainement pas parfaite mais c’est une expérience réelle qui innove, qui essaie et qui s’ouvre à toutes les tendances politiques. Étant belge, je ne peux participer mais je recommande chaudement à mes lecteurs français de s’inscrire.
+
+=> https://laprimaire.org/ de s’inscrire
+
+Vite, il ne vous reste que deux semaines !
+
+Photo par Will Keightley. Relecture par le gauchiste.
+
+=> https://www.flickr.com/photos/feverblue/3980024175/ Will Keightley
+=> http://gauchiste.fr/ le gauchiste

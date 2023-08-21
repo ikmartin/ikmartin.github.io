@@ -1,0 +1,26 @@
+# Software I wrote
+
+## Offpunk
+
+I’m currently mostly working on Offpunk, a command-line browser for the web, Gemini and Gopher. It works offline and also serves as my RSS reader
+=> files/screenshot_offpunk1.png Screenshot of Offpunk
+
+=> https://sr.ht/~lioploum/offpunk/ Offpunk, an offline-first command-line browser
+
+## Ploum.net
+
+I wrote a python static generator for this website. It takes Gemini files and translate them into HTML.
+
+=> https://sr.ht/~lioploum/ploum.net/ Source and generator for this website
+
+## Personal config
+
+=> https://sr.ht/~lioploum/offlinetools/ Custom tools to live offline (including do_the_internet.sh)
+
+## Older projects
+
+I co-created Getting Things GNOME! in 2009 and maintained it until 2014. GTG is still actively developped by others. I also created the liblarch python library.
+
+=> https://wiki.gnome.org/Apps/GTG GTG
+=> https://fr.wikipedia.org/wiki/Getting_Things_Gnome GTG on Wikipedia
+=> https://wiki.gnome.org/Projects/liblarch Liblarch

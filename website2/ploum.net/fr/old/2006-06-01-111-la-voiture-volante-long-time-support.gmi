@@ -1,0 +1,76 @@
+# La voiture volante « Long Term Support »
+
+=> /2006/06/01/110-the-long-time-support-flying-car English translation available
+
+=> ../files/old/earth2.jpg La Terre
+Il était une fois, sur une sympathique petite planète bleue, un homme qui pensait que ce serait vraiment chouette si tout le monde pouvait avoir une voiture volante gratuite et écologique. Le moins qu’on puisse dire c’est qu’il avait une vision à long terme du monde. Vous êtes libre de ne pas me croire, mais à cette époque près de 99% de la population utilisait des vieilles voitures bruyantes et puantes. Vous savez, ce genre de voitures à quatre roues qui roulent sur le sol et ne décollent jamais.
+
+=> http://mako.cc/copyrighteous/reflections/20041119-00.html une vision
+=> /2004/11/21/25-oneliner-6 à long terme
+
+Quoi ? Mais si, je vous assure, ça a existé. C’était il y a longtemps mais c’était comme ça.
+
+=> ../files/old/flyingcar.jpg Voiture volante
+Les voitures volantes existaient déjà, bien sûr, mais elles étaient considérées comme une alternative excentrique et peu fiable. Les gens sérieux n’utilisaient pas de voitures volantes. Aussi tentèrent-ils de prévenir notre visionnaire :
+
+– Une voiture volante ? Impossible. Vous gâchez votre temps !
+– Mais il y a déjà plein de modèles différents disponibles.
+– Hein ? .. Ah oui, bien sûr. Mais ce sont des prototypes expérimentaux.
+– Bien sûr que non ! J’en utilise une. Plein de gens en utilisent tous les jours.
+– Et bien, ça doit vous coûter un fameux paquet.
+– C’est gratuit ! Et vous avez même les plans pour la modifier. C’est d’ailleurs ce que j’essaie de faire.
+– *Oh, je vois. Cette voiture volante ! (*rires*) Seuls les experts peuvent l’utiliser !*
+– C’est bien là le but de mon idée. Je pense que si les gens savent conduire une voiture, apprendre à piloter une voiture volante ne devrait pas poser beaucoup de problème.
+– *AHAHA ! (*gros rires gras*)*
+
+Construire une voiture volante tout seul en partant de zéro, voilà une tâche insurmontable. Mais notre homme ne partait pas de zéro. Et puis, il n’était pas vraiment tout seul. Un grand nombre d’autres personnes étaient intéressées par construire une voiture volante facile et bon-marché. Ensemble, il décidèrent de se baser sur les plans d’une voiture volante existante très performante. Ils choisirent d’utiliser un moteur gratuit inventé par un étudiant finlandais. Pour accomplir le gros du travail, ils utilisèrent une panoplie d’outils de haute qualité. Et parce qu’ils voulaient avant tout que la voiture soit facile à utiliser, ils intégrèrent un excellent tableau de bord.
+
+=> http://debian.org voiture volante existante très performante
+=> http://en.wikipedia.org/wiki/Linus_Torvalds un étudiant finlandais
+=> http://www.gnu.org/ panoplie d’outils de haute qualité
+=> http://gnome.org/ excellent tableau de bord
+
+– Pfff.. Vieux radoteur ! Ton histoire est ennuyeuse. Viens-en au fait !
+
+Intérieurement, j’ai souri. C’est amusant de voir ces enfants qui ont grandi dans un monde où les voitures volantes sont partout. En fait, ils ne savent même pas réellement ce qu’est une « voiture ». Ils ne peuvent pas comprendre ce qui a été accompli. Non, ils ne peuvent pas. D’ailleurs, je crois que j’en suis heureux pour eux.
+
+– Les enfants ! Je peux continuer mon histoire ? Ok ? Bon, silence maintenant.
+
+=> ../files/old/skycar.jpg A nice flying car
+
+Ils mirent en place une première version. Ce fût un succès et d’autres personnes commencèrent à l’utiliser et à l’aimer. Avec l’expérience, ils purent éviter des erreurs et s’améliorer. Ce fût la seconde version. On commençait un peu partout à parler de cette fameuse voiture volante. De plus en plus de personnes furent intéressées et se joignirent au projet. La troisième version fût un réel buzz. Beaucoup de gens voulaient l’essayer juste parce que c’était cool, c’était à la mode. Bien sûr, beaucoup d’autres se refusaient toujours à croire en l’existence d’une voiture volante gratuite d’excellente qualité.
+
+=> /2004/10/21/4-ensemble-les-yeux-leves-vers-le-ciel une première version
+=> /2005/04/08/48-lhoary-ma-meilleure-amie seconde version
+=> /2005/10/13/73-breezy-pitez-vous troisième version
+
+=> ../files/old/wheel.jpg Spare wheel
+– Cela ne peut pas marcher. Où est le piège ?
+– Il n’y a pas de piège. Regarde : c’est rapide, c’est élégant, c’est résistant, cela ne touche jamais le sol !
+– Ah ouais ? Je vois. Il n’y a même pas de roue de secours. Vous croyez vraiment que je suis assez fou pour conduire une voiture sans roue de secours ?
+
+Néanmoins, le premier juin 2006, ils annoncèrent au monde la disponibilité de la première voiture volante Long Term Support, garantie 3 ans. Je n’oublierai jamais cette date. Pour la première fois, tout le monde avait la possibilité de conduire une voiture volante. Différents tableaux de bord étaient même disponibles, au choix. Même les hommes d’affaire, les écoles et les scientifiques étaient intéressés. Pourquoi continuer à utiliser une vieille voiture bringueballante après tout ? La voiture volante était si chouette, si élégante ! Sans qu’on le sache, c’était le commencement d’une nouvelle ère…
+
+=> http://www.ubuntu.com/ voiture volante Long Term Support
+=> http://www.ubuntu.com/download de conduire une voiture volante
+=> http://www.kubuntu.com/ Différents
+=> http://www.xubuntu.org tableaux de bord
+
+Oh !
+
+Ils se sont endormis. Chut ! Plus de bruit ! Ah, regardez comme ils sont mignons quand ils dorment, ces enfant de la terre. Oui, c’est justement la planète bleue qu’on aperçoit par le hublot du vaisseau. Une chouette planète. Je vous conseille de vous y rendre si vous avez l’occasion, elle vaut le détour…
+
+=> ../files/old/earth1.jpg Earth
+
+Ubuntu 6.06 LTS est disponible pour votre bureau grâce à une immense commauté de développeurs, traducteurs, rédacteurs de documentation, artistes, testeurs et dictateurs bénévoles auto-payés. Ubuntu dispose d’une fantastique communauté francophone et est distribué en Belgique par les buveurs de bières d’Ubuntu-be.org.
+
+=> http://www.ubuntu.com/download Ubuntu 6.06 LTS
+=> http://www.ubuntu.com/desktop pour votre bureau
+=> http://planet.ubuntu.com/ immense
+=> http://www.ubuntu.com/community commauté
+=> http://ubuntu-fr.org/ communauté francophone
+=> http://ubuntu-be.org/ Ubuntu-be.org
+
+Ubunteros de tous les pays, vous avez réalisé un travail extraordinaire ! Merci pour tout le canard.
+
+=> http://www.ubuntu.com/community/processes/newmember Ubunteros

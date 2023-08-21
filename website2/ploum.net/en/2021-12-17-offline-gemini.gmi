@@ -1,0 +1,68 @@
+# Browsing Gemini Offline
+
+I’m now browsing Gemini completely offline. It works. I managed to make AV-98 a totally offline gemini client which works well enough for my own needs and it’s a very interesting experience.
+
+## How I use it daily
+
+Every morning (in theory, currently a bit more often), I run my script "./do_the_internet.sh". This script contains the following line:
+
+> ./av98.py --sync --cache-validity 43200
+
+With the --sync option, AV-98 will dowload every bookmarked capsule and every link in those capsules. But not only for bookmarks. It will also do that for content I tried to access while I was offline (and could not), content I tried to reload while offline and content in my tour. The --cache-validity is the number of seconds before even attempting to refresh a cached ressource. If omitted, it is set to "3600" and will sync every bookmark and ressource which are at least 1h old. For my usecase, 43200 is simply the number of seconds in 12h.
+
+While doing that, AV-98 will add every new content found in my bookmarks to my tour (because yes, tour is now persistent accross sessions). This means that my tour automatically get every new post ("new" means "not cached". If you delete your cache, everything becomes new).
+
+If you didn’t know, tour is a very powerful feature of AV-98. While navigating, symply add link to a "tour" with "t X" (where X is the number of the link) then go to the next item in your tour with "t". "t ls" and "t clear" allows you to manage your tour. You can also add range with "t X-Y" or "t *". Tour used to not be saved accross session but I added this feature.
+
+In my av98.rc file, I added the line:
+
+> offline
+
+Which means AV-98 will start in offline mode and not access anything on the network (if I really need it, typing "online" change the mode to online and "offline" obviously get back). For those unfamiliar with AV-98, the .config/av98/av98rc is only a list of command that will be run before the start.
+
+My config files contains 3 lines:
+
+> handler text/* less -EFrXf %s
+> set offline_web echo %s >> ~/inbox/to_read/urls.txt
+> offline
+
+While the first line is a way to configure less to be best integrated with AV-98, the second line is a new option I added : offline_web. With this option set, if I try to access an http/https ressource while offline, the URL is saved in a file. Each time I’m online, my do_the_internet.sh script send the content of this file to forlater.email. Meaning I will receive the content of this webpage by mail as soon I reconnect.
+
+This is so handy that I’m now using AV-98 to "go https://" when I’m offline (instead of manually editing the file as I was doing before). I can even forget the "go" if the url includes https:// or gemini://.
+
+## How it feels
+
+Besides the fact that I’m still discovery quircky bugs (this is very experimental code), the overal impression is… speed. It’s fast !
+
+When we browse Gemini or the Web, we are used to those tenth of seconds of latency all the time, at every request. It’s so hardwired in my brain that browsing locally feels incredibly smooth and strange. I quickly forget I’m only accessing local ressources and I’m astonished by the speed of the network. I recommend at least testing it to get the feeling.
+
+There’s also the feeling that nothing new is happening as long as I didn’t launch "--sync" and that I cannot miss anything as long as Antenna is in my bookmarks. Which is also a strange relief I should get used to.
+
+Last but not least, it means that I’m doing everything in the terminal, never tempted to go see the pictures in the links or to be sucked into the graphical web. This is something really interesting I will write more about.
+
+## How it is coded
+
+Badly. I’m really ashamed about the code I wrote. I did the experiment to focus on getting things done, not right. The code looks really ugly. There are some ugly hack because I had no reliable way to know if some.server/path is serving me a file or the index.gmi in a folder. I try to workaround problematic cases each time I encounter one.
+
+Also, --sync will try to access dead links or unavailable ressources because those can not be cached. Bookmarking a page with lot of dead links will make the --sync super slow.
+
+## How can you test it
+
+The code is here:
+=> https://tildegit.org/ploum/AV-98-offline AV-98-offline
+
+Simply git clone then launch ./av98.py  (setup.py is optional).
+
+I try to follow the original design of not requiring any hard dependancies so it should just work.
+
+If the rest of my setup is of interest to you, have a look at:
+=> https://github.com/ploum/offlinetools/ Ploum’s do_the_internet.sh script
+=> https://forlater.email/ forlater.email
+
+## How will it evolves
+
+As I plan to spend next year mostly offline, I’m looking for a forge that could be managed offline with git+mail. It seems that sr.ht is something to watch but I never used it before. I don’t know if there’s a way to track ticket/pull requests only with mails and git. If you have any experience/idea, please share them with me.
+
+In the near future, I will mainly fix bugs. Bug reports are welcome. I may also add features if they make sense for my offline experiment. Why not try to get and cache http content with the same interface after all?
+
+If I see any external interest for this code, I may do a proper release with a new name to not confuse it with the original AV-98 but, currently, I see it only as a personal experiment. I’m not sure that the intersection of Gemini users, mostly offline folks and command line groupies is a huge user base.

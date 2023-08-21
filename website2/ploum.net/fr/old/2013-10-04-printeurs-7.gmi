@@ -1,0 +1,69 @@
+# Printeurs 7
+=> files/old/inside_computer.jpg
+
+— Georges Farreck ? Arrête Nellio, tu déconnes !
+
+La chambre est étroite, minuscule. L’entassement de câbles et de matériel électronique donnerait à n’importe quel télé-passif un écrasant sentiment de claustrophobie. Mais pour les geeks comme Max et moi, la pièce est au contraire chaleureuse, rassurante. Seule source de lumière, la fenêtre polarisée donne l’impression d’une porte vers l’immeuble d’en face. Je n’aurais qu’à tendre le bras pour le toucher, qu’à prendre mon élan pour passer d’un balcon à l’autre. Effet d’optique trompeur qui m’enverrait réasphalter la ruelle quatre-vingt-trois étages plus bas, comme le font régulièrement des adolescents qui découvrent, un peu trop tard, la différence entre les lois de Newton et la physique hollywoodienne.
+
+— T’es certain d’avoir coupé toutes les sources de streaming ? Je te l’avoue franchement, j’ai peur ! Je pense que je suis embarqué dans une histoire qui me dépasse.
+— Nellio, depuis combien de temps se connaît-on ? Tout est blindé ! J’ai tapissé la chambre d’un maillage Faraday. Si je coupe le routeur principal, plus rien ne passe. Je te rappelle que j’administre un nœud Tor2 et que j’ai tout intérêt à faire profil bas.
+
+Il a raison. Trois mois déjà depuis que j’ai été embauché par une société écran appartenant à Georges Farreck et j’en deviens paranoïaque. En réalité, je ne travaille qu’avec Eva. Sur l’organigramme officiel, elle est ma directrice marketing. Amusant. Je suis tenu au secret le plus strict. Mais Max, ce n’est pas pareil. Si je ne peux plus lui faire confiance, alors autant arrêter tout de suite ce cirque et se jeter du balcon. Max, c’est mon mentor, mon frère virtuel. Sauf pour la coupe de cheveux. La crête d’Iroquois, même courte, c’est dépassé depuis près d’un siècle.
+
+— J’ai peur Max ! Je ne comprends pas la raison de ce secret. Ce que nous faisons est extraordinaire d’un point de vue technologique. À partir d’atomes, nous pourrions un jour être en mesure de recréer n’importe quel objet, y compris de la nourriture ! Le recyclage ultime ! Pourquoi se cacher ?
+— Quelle naïveté, Nellio ! Te rends-tu compte des intérêts en jeu pour les producteurs actuels ?
+— Et bien les usines de la zone industrielle sont déjà entièrement automatisées, non ? Après tout, ce n’est qu’une étape supplémentaire, une optimisation.
+— Chaque optimisation de l’humanité revient à rendre inutile un travail jusqu’alors exercé par un humain. Cela crée une friction de la part de tous ceux qui vont voir leur vie bouleversée par ce changement. Et cela même si cette transformation est éminemment positive ! Le changement est perçu comme une agression. La souffrance continue est bien plus tolérable que la guérison car cette dernière implique d’affronter la nouveauté, la crainte d’une rechute. Ces sentiments sont habituellement inhibés par la douleur. Délivre l’homme de la douleur et il découvre la pensée. Une pensée que bien peu sont prêts à affronter. Souviens-toi de la difficulté de la réforme des armées ! Les pays fusionnent ? La terre devient une seule et unique fédération ? La guerre disparaît totalement, une Pax Universalis s’instaure. Et qui s’en désole ? Les militaires, qui n’auront plus le loisir de jouer à s’entre-tuer. Les vétérans qui ne veulent pas accepter l’absurdité de leur souffrance et qui, malgré ce qu’ils ont enduré, préfèrent plonger l’humanité dans le carnage plutôt que de reconnaître le vain sacrifice qui fut le leur. Et encore, je ne parle pas de ceux qui ont construit leur pouvoir sur la situation actuelle !
+— Mais dans le cas présent, quels sont les intérêts à l’œuvre ?
+— Les usines, dont nous savons si peu de choses. Sans compter le conglomérat de l’intertube ! Une infrastructure mondiale mise en place depuis des décennies et qui deviendrait obsolète avant même son inauguration ? Ce serait une insulte jetée à la figure de tous ces pseudos visionnaires, ces riches décideurs.
+— Ça existe encore ce projet d’intertube ? Il a pris tellement de retard, je pensais qu’il ne s’agissait que d’arguties entre politiciens. Je ne pense pas le voir un jour réellement mis en œuvre !
+— Détrompe-toi ! J’ai assisté à une démonstration grâce à un contact dans le conseil municipal. La zone industrielle est déjà entièrement équipée pour l’envoi. Les tuyaux récepteurs ne sont actifs que dans quelques mégapoles pilotes mais c’est assez impressionnant. Tu commandes ton produit sur le net, il est automatiquement extrait du dépôt le plus proche et est routé à travers les tubes souterrains jusqu’à ton immeuble. Les nouvelles constructions seront d’aillleurs équipées de récepteurs dans chaque appartement.
+— C’est rapide ?
+— La majeure partie du tubage se fait sous vide avec propulsion magnétique. Dans la plupart des cas, tu es livré en moins d’une heure. Ce qui ne plait guère au lobby des auto-transporteurs. Ils ont fini par capituler mais on leur doit quand même une bonne dizaine d’années de retard. Bref, le paroxysme de l’efficacité selon le capitalisme moderne.
+
+La mise en place de l’intertube fait partie de ces sujets récurrents qui occupent tellement les discussions qu’ils en deviennent abstraits, une Arlésienne politique qui engouffre les budgets, qui suscite de nombreuses discussions financières d’où les ingénieurs ont été subtilement exclus. Mais Max vient de raviver mon intérêt. Le fait qu’un projet confisqué par les politiques puisse devenir une réalité me semble particulièrement incongru.
+— Cela a l’air génial !
+— … me dit le mec qui bosse sur l’impression atomique. Est-ce que tu te rends compte du gouffre qui te sépare des politiciens et autres financiers ? Tu es en train de construire une fusée interstellaire à l’heure où nos élus se targuent de faire voler un cerf-volant ! Tu construis la Sagrada Familia à côté de huttes en torchis qui font la fierté de brutes à peine sorties de la préhistoire.
+— À vrai dire, je me fous un peu de toutes ces considérations Max. Ce qui me fait peur c’est ce qui est arrivé aux autres.
+— Quels autres ?
+— Tu penses bien qu’Eva n’avait pas tout créé toute seule. Des dizaines de génies ont développé des outils, des modèles. J’ai récupéré un algo qui me permet de faire le mapping d’une structure atomique avec un scanner multi-modal et de le compresser efficacement en quelques gigaoctets.
+
+J’attrape un relief de repas qui traîne dans un emballage en polystyrène. Une mouche, dérangée en plein festin, s’envole d’exaspération.
+— Je te fais tenir dix hamburgers dans une simple carte mémoire. Mais je n’y suis pour rien. Je n’ai eu qu’à connecter les différentes pièces du puzzle.
+— C’est extraordinaire !
+— Sauf que chaque contributeur est décédé de mort violente. J’ai pu retracer les noms et l’historique. Une fois leur contribution achevée, leur taxi fait une embardée, un gang de délinquants les agresse, un drone s’écrase par accident sur leur chemin ou un court-circuit dans…
+
+Max m’interrompt d’un geste de la main.
+— Une seconde, tu veux dire que Georges Farreck serait…
+— Georges Farreck ? Non ! Quel serait son intérêt ? Il est riche, puissant et il prend des risques. C’est lui le principal commanditaire. Mais il y a Eva. Elle est une des premières participantes du projet. Elle est toujours indemne.
+— Quoi ? Mais bon sang Nellio, tu es bleu de cette nana ! Ne me dis pas que tu es en train de me faire une crise de parano parce qu’elle a repoussé tes avances !
+— Elle ne m’attire plus. Peut-être les pubs n’ont-elles qu’un effet temporaire ? Elle me fait peur.
+
+Max réfléchit. Il prend son ordinateur, un vieux combiné écran-clavier bardé d’autocollants qui, malgré son âge, garde la cote dans les communautés underground. Il tapote quelque chose.
+
+— Nellio, je pense que ce que tu fais est vraiment important. Un jour, tu risques d’avoir fichtrement besoin d’aide. Genre un vrai coup de pouce pour te sauver les miches. Si tu te trouves dans une merde noire, incapable de surnager plus longtemps, esseulé, trouve-toi une connexion Tor2 sécurisée et connecte-toi sur IRC ! Tiens, voilà l’adresse du chan !
+
+Il me tend un bout de papier où est griffonnée, au crayon, la phrase « Clé Wifi maman » suivi d’une longue série hexadécimale.
+— La clé hexa est l’adresse du chan, en rot13. Il y a cet op, FatNerdz. Tu le contactes en privé et il pourra t’aider.
+— Tu le connais ? En quoi puis-je lui faire confiance ?
+— Personne ne l’a jamais vu. Il doit probablement vivre complètement reclus dans une cabane ou un bunker en Helvétie fasciste. Mais je peux te garantir que, sans lui, je serais probablement en train de me débattre sous les traitements électriques anti-terroristes. D’ailleurs, je vais te le prouver ! Fais attention à ce que tu dis, je rebranche le routeur.
+
+Il appuie sur un interrupteur. Les ampoules du plafond s’allument, les lumières commencent à clignoter sur les équipements connectés. Une publicité apparaît dans mon champ de vision, le réseau est revenu. Max pianote sur son portable. Les lignes défilent.
+— Salut FatNerdz, t’es dispo ?
+— Salut mec, ‘sup ?
+— Je cherche des infos sur le profil psychologique d’une nana. Je sais pas si je peux lui faire confiance. Officiellement enregistrée sous le nom de Eva…
+
+Max se tourne vers moi : « C’est quoi son nom de famille ? » Je le lui dis, Max l’encode. L’écran semble s’arrêter. Pas de réponse.
+— FatNerdz: ping
+— Sorry mec, j’étais occupé. Bien reçu ta requête, je te transmets son profil dès que je l’ai.
+
+Refermant son antique laptop, Max se tourne vers moi.
+— Et voilà. Bon, c’est mieux qu’on en reste là. Je t’appelle dès que j’ai la réponse.
+
+Alors que l’ascenseur me projette vers le sol à la vitesse d’une balle de fusil, je tente de mettre de l’ordre dans mes sentiments. J’ai menti à Max. Eva ne me laisse pas indifférent. J’essaie, tant bien que mal, de faire la part des choses. La phrase de Georges résonne dans mes oreilles : « Regarde avec tes yeux, ton intelligence; pas avec tes souvenirs ni tes sentiments. » À l’extérieur, la ruelle est sombre, encombrée de taxis, de télé-passifs et de vendeurs à la sauvette. Sale quartier. Un bruit sourd, violent. Mon estomac se retourne, mes tympans sifflent, des hurlements. Je suis au sol, abasourdi, le nez dans un flaque aux relents infâmes. Mon cerveau bourdonne, des pieds m’écrasent, des corps s’enfuient. Une explosion ! Il y en a souvent dans ce quartier. Équipement vieillot, peu entretenu. Grands risques de courts-circuits. Des débris épars tombent, des vendeurs s’abritent. Court-circuits dans… Non ! Je lève les yeux. Là-haut, une fumée épaisse s’élève d’une fenêtre du quatre-vingt-troisième étage. Max !
+
+Photo par Kyp. Relecture par Pit, Florian Judith, galex-713 et François Martin.
+
+=> http://www.flickr.com/photos/40655772@N00/2958250656 Kyp
+=> http://namok.be/blog/ Pit
+=> /no-proprietary-service.html François Martin

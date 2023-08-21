@@ -1,0 +1,78 @@
+# Le monde selon Google
+=> files/old/google.jpg
+
+This post is also available in English.
+
+=> /a-googles-world available in English
+
+Que feriez-vous si vous aviez à votre disposition des ressources et une richesse pratiquement illimitée ? La possibilité d’embaucher les plus grands génies de votre temps, de disposer de toute la technologie imaginable ?
+
+Pour une majorité des grandes entreprises de la fin de la période industrielle, la réponse fut « faire encore plus d’argent, accumuler encore plus de richesses ». Quand on y pense, c’était un peu balot. Pas étonnant que les puissants de cette époque aient été sur le point de foutre le monde en l’air.
+
+Google fut l’exception qui se dégagea. Chez Google, on se contentait de dépenser l’argent pour faire les trucs les plus chouettes possibles, ceux que les patrons avaient envie d’avoir. Forcément, une petite fraction des projets finissaient toujours par rapporter de l’argent. Mais ce n’était pas le but premier.
+
+À son commencement, alors que toutes les entreprises essayaient de créer un site web et d’y garder le plus de visiteurs, Google lança le sien où les utilisateurs devaient passer le moins de temps possible et trouver, ailleurs, ce qu’ils cherchaient. Cela ne pouvait pas être rentable.
+
+Lorsque l’email atteignit son apogée et que les logiciels rivalisèrent en fonctions et en ingéniosité, Google décida de faire une interface simplifiée et uniquement accessible dans un navigateur. Mais avec, gratuitement, un espace virtuellement illimité. Cela ne pouvait pas être rentable.
+
+Vous avez sans doute visité le musée de la technologie. Vous y avez vu le premier véritable smartphone, l’Apple Iphone de 2007. À cette époque, les documents attestent d’une rumeur misant sur une réaction de Google et le lancement d’un Google phone.
+
+Surprise et déception : Google se contenta de publier, gratuitement et sous licence open source, un système d’exploitation pour smartphones : Android. Pourtant ce sont les ventes de téléphones qui faisaient de l’argent. L’idée de Google ne pouvait pas être rentable.
+
+Pourtant, Android devint en moins de dix ans le standard de facto de l’informatique individuelle, sur tous les types d’équipement depuis la télévision géante à l’oreillette. Des fabricants de téléphone qui se pavanaient, il ne reste à présent que quelques constructeurs se faisant concurrence avec des marges de plus en plus serrées.
+
+Google récidiva avec Google Wallet. Plutôt que de rentrer en guerre avec les grands noms comme VISA ou Master Card, il se contenta de proposer un moyen de paiement en ligne qui utilisait justement les cartes de crédit existantes. VISA et les autres y virent une coopération plutôt que de la concurrence.
+
+Mais les échanges de Google Wallet à Google Wallet devinrent bientôt tellement simples que les cartes de crédit périclitèrent. Il suffisait en effet de mettre deux téléphones en contact pour initier une transaction, pour se prêter quelques euros ou pour régler l’addition dans un bar.
+
+Lorsque certaines entreprises offrirent de payer directement les employés sur les comptes Google Wallet, les gouvernements tentèrent d’intervenir. Google se plia à toutes leurs exigences mais commença au même moment à accepter les paiements en bitcoin. Petit à petit, l’économie se passa des états, s’affranchit des frontières, rendant obsolètes des concepts tels que le PIB ou la banque centrale.
+
+=> /futur-economie bitcoin
+
+Des sites et des services web virent le jour. Il y eu Flattr pour les micros dons, KissKissBankBank pour le microfinancement et d’autres pour les micros crédits. On a appelé cela le P2P banking. Vous vouliez construire une maison ou lancer une entreprise ? Vous empruntiez à des amis et des amis d’amis, chacun fixant son propre taux en fonction de son affinité avec votre projet ou de manière générique. Tout étant géré de manière automatique, la plupart ne savaient même pas à qui ils prêtaient. Tout au plus avaient-ils fixé le montant d’intérêt et la liquidité qu’ils exigeaient de ce qu’ils avaient entreposé sur tel ou tel service.
+
+=> https://flattr.com Flattr
+=> http://www.kisskissbankbank.com/ KissKissBankBank
+
+Comme l’industrie musicale avant lui, le secteur bancaire ne s’est pas laissé faire face à cette concurrence déloyale. À force de lobbying, de corruption, de lois iniques et de procès scandaleux, ils réussirent à prolonger leur agonie pendant près de vingt ans avant de disparaître dans l’opprobre la plus totale. À peine moins rapidement que les états.
+
+En effet, voyant la plupart des transactions financières leur échapper, les gouvernements ne surent plus quoi taxer et firent dans un premier temps front commun avec les banques. Ils durent néanmoins réduirent leur train de vie. Les administrations fondirent comme neige au soleil au gré des crises, se simplifiant de plus en plus, coupant dans le superflu.
+
+Mais les états finirent par s’adapter, se transformant en fédérations de régions et de villes, elles mêmes fédérations de bourgs et de quartiers. La fameuse taxe de propriété fut instaurée. Que vous soyez propriétaire d’une maison, d’une œuvre d’art, d’un cheval, d’une voiture de sport, d’un bijou ou d’une société, vous êtes taxé à l’échelle de sa valeur déclarée aux assurances.
+
+Vous pouvez bien entendu sous-estimer votre bien voire ne pas prendre d’assurance du tout. Mais en cas de sinistre, aucune aide à espérer. Les resquilleurs sont donc rares. De toutes façons, si vous êtes propriétaire d’un bien qui vaut la peine d’être assuré, c’est que vous avez déjà un certain confort. Et la taxe sera intrinsèquement juste vu que proportionnelle à votre richesse.
+
+Aujourd’hui, je vois directement dans mes lunettes la route à suivre pour aller chez un ami, mon agenda, mes nouveaux messages, mon flux de nouvelles, mes livres et quelques jeux auxquels je joue en courant dans le parc. Je dois sauter pour attraper des bonus que je suis le seul à voir, faire des pointes de vitesse quand un monstre me poursuit : c’est excellent pour ma condition physique.
+
+=> ../files/old/google_glass.jpg Google Glass
+
+Lorsque j’ai un rendez-vous, mon agenda calcule automatiquement la meilleure manière de s’y rendre en fonction de mon temps libre et de la météo. Si la voiture se révèle la meilleure option, je sais qu’elle m’attendra devant ma porte à l’heure optimale. La voiture conduira seule selon l’itinéraire idéal et retournera à la station de recharge la plus proche après m’avoir débarqué. Inutile de dire que les bus ont complètement disparu. Les trains ne sont utilisés que pour les moyennes ou longues distances Et posséder sa voiture personnelle relève d’un snobisme démodé.
+
+Mais de toutes façons, je ne m’occupe de rien, ce sont des détails d’implémentation qui ne m’intéressent pas. Je dis juste où je veux être et à quelle heure, je choisis mon hôtel parmi plusieurs propositions si c’est nécessaire et je suis les instructions de mes lunettes. Je sors de la voiture, j’embarque dans un train grande vitesse ou un avion, je ressors, prends un métro et marche un quart d’heure. Je fais confiance à Google pour trouver le plus rapide et le moins cher entre toutes les alternatives. D’ailleurs, le système a bien compris que j’aimais la marche à pieds et favorise ce mode de déplacement si le temps le permet. Et si une ondée soudaine apparait, je sais qu’une voiture passera automatiquement me prendre.
+
+Parfois, quand je monte dans la voiture, j’y trouve l’une ou l’autre personne. Le système optimise en effet les déplacements de tous les utilisateurs et je n’ai pas pris l’abonnement « exclusif » de Cambio car il est fort cher. Mais c’est sympa, cela me permet de discuter, de rencontrer des gens de la région. J’ai déjà ajouté de cette manière plusieurs personnes à mon cerle « Gens du quartier ».
+
+Cela me plait de consulter le flux et d’y trouver, de temps en temps, des nouvelles de personnes avec qui j’ai partagé quelques trajets. Grâce à ce cercle, j’ai organisé l’année passée une fête de quartier. Je me suis contenté de créer l’évènement sans date particulière et avec une brève description, invitant toutes les personnes à proximité. Les suggestions ont fusé, certains se sont dévoués pour le matériel, d’autres pour la nourriture. La date s’est fixée automatiquement de manière à satisfaire le plus grand nombre. Même la participation aux frais a été automatiquement calculée équitablement et s’est versée automatiquement, après un clic d’acceptation, aux personnes qui avaient avancé l’argent.
+
+Le montant m’a d’ailleurs paru dérisoire. Mais il faut avouer que les fins de mois difficiles sont un mauvais souvenir, la taxe sur la propriété dissuadant des achats inconsidérés. Faisant partie d’un site d’échange de matériel, je sais qu’en prêtant ma tondeuse de temps en temps, j’ai accès à tous les autres accessoires nécessaires quand j’en ai besoin dans ma maison. Du coup, je préfère investir dans des places de concerts, le visionnage d’un film en famille ou la lecture d’un livre. Bref, des achats qui m’offrent des souvenirs et ne prennent pas une place inutile.
+
+De temps en temps, je me fais plaisir et achète une œuvre d’art pour la murale du salon. J’aime la changer régulièrement même si cela coûte cher. Et si ma femme n’apprécie pas, je reviens en un clic à l’ancienne, profitant de ma nouvelle acquisition en son absence. Il faut avouer que, dans notre salon, tout un mur est peint à l’encre électronique. Une folie ! Je dois d’ailleurs le déclarer à l’assurance sans tarder.
+
+Étant féru d’histoire, je ne peux qu’admirer l’influence de Google sur notre monde. En moins d’un siècle, nous avons connu la réduction des états et une diminution conséquente des conflits, la disparition de la finance sauvage et avec elle d’une grande partie de la pauvreté, une limitation drastique de la pollution et de la consommation à outrance.
+
+Bref, à lui seul Google nous a sortis de la période industrielle, de ce monde qui ne vivait que pour l’absurde croissance et le rendement. Nous sommes dans une nouvelle ère, l’ère Google.
+
+Quand j’y réfléchis, je vois une ombre au tableau. Une petite chose qui me chiffonne et dont, jusqu’à présent, je n’ai pas trouvé d’équivalent historique. Un petit nuage qui est présent dans le subconscient de chacun mais qu’on préfère ne pas voir.
+
+Toute ma vie est sur Google. Mon argent, mon histoire, mes photos, mes souvenirs, mes livres, mon identité, mes relations. Même un simple déplacement ou un accès à mon dossier administratif nécessite mon compte Google.
+
+Et depuis ce soir, quand j’essaie de me connecter, je vois un message « Votre compte a été désactivé ».
+
+Ce n’est sans doute qu’une simple erreur temporaire mais, honnêtement, je ne sais pas trop quoi en penser. J’attends que cela soit résolu pour appeler mes amis et en discuter.
+
+Images par Robert Scoble et Antonio Zugaldia
+This post is also available in English.
+
+=> http://www.flickr.com/photos/35034363287@N01/4249731778 Robert Scoble
+=> http://www.flickr.com/photos/23526149@N00/7457645618 Antonio Zugaldia
+=> /a-googles-world available in English

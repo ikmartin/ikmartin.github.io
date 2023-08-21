@@ -1,0 +1,58 @@
+# Les opportunités manquées du Libre : la satisfaction
+=> files/old/love_lock.jpg
+
+Pendant des siècles, la définition de l’innovation était « rendre possible quelque chose qui ne l’était pas auparavant ». Même si cela n’affectait qu’une minorité technologiquement lettrée ou ayant la chance d’être bien équipée.
+
+Désormais, un autre type d’innovation prend le pas : « rendre agréable à une catégorie de personnes ce qui est possible ».
+
+Imaginons que vous souhaitiez automatiquement prévenir vos amis à chaque fois que vous allez au supermarché. Le GPS et le réseau cellulaire ont rendu cela possible il y a déjà une grosse dizaine d’années. Technologiquement, il suffisait de définir une zone de coordonnées GPS et de faire en sorte que votre GPS envoie un signal bluetooth à votre GSM qui se serait chargé d’envoyer un SMS à vos amis.
+
+Stupide, compliqué à faire, inutile mais c’était possible.
+
+De nos jours, 4thsquare et Twitter rendent le tout bien plus agréable. C’est toujours stupide et inutile mais c’est facile et, mieux, rigolo voire addictif. Remarquez que rien n’a été rendu possible qui ne l’était pas. Cela juste été rendu plus simple et plus amusant. Bref, satisfaisant pour une grande partie de la population.
+
+Lorsqu’un nouveau produit est développé, il est à présent nécessaire de cibler la catégorie d’utilisateurs visés et de déterminer quelle sera leur satisfaction. Pour des professionnels, ce sera un sentiment d’efficacité (le sentiment est ici très important). Pour les gens branchés, ce sera le sentiment d’appartenir à une élite. Pour les loisirs, ce sera le sentiment de s’amuser. Un simple produit qui « rend possible » n’a plus d’avenir sur un marché hyper concurrentiel si il n’offre pas une satisfaction particulière à sa cible.
+
+Le principe de base est simple : un produit peut avoir des défauts et offrir des désagréments. Mais il faut que la satisfaction l’emporte. Un outil très rapide mais complexe emportera la satisfaction des utilisateurs concernés par la vitesse alors que d’autres utilisateurs préfèreront un outil moins efficace mais plus simple.
+
+#### Et le logiciel libre ?
+
+Peuplée en majorité d’ingénieurs ou de scientifiques, la communauté du libre est restée majoritairement bloquée sur « rendre possible ». En fait, sans le savoir, les libristes appliquaient déjà le principe de satisfaction, tirant leur propre satisfaction du fait que les outils qu’ils utilisaient étaient libres.
+
+Ainsi, si une technologie rendait une action possible, la communauté se décarcassait pour développer un équivalent libre, tirant sa satisfaction de se passer des outils non-libres. On a même vu des logiciels qui calculaient le pourcentage de « liberté » de votre ordinateur.
+
+Mais les utilisateurs sont tous différents. Et force est de constater que l’aspect libre d’un logiciel n’offre de satisfaction qu’à une minorité. Au lieu de se poser la question de ce qui pourrait satisfaire les autres utilisateurs, les libristes se sont immédiatement lancés dans une croisade tentant de convaincre le monde entier que d’utiliser du libre était une satisfaction en soi.
+
+Cette croisade, à laquelle votre serviteur participa amplement, fit des émules. Rétrospectivement, il semble absurde de penser que nous aurions pu convaincre la multitude.
+
+=> /62-de-la-liberte-la-face-meconnue-de-l-informatique participa amplement
+
+Longtemps, la communauté libre s’est aveuglée. Lorsqu’un nouveau venu avait le malheur de vouloir faire quelque chose en libre qui n’était pas possible ou très difficilement, il se voyait répondre : « Mais pourquoi tu veux faire ça ? » voire « C’est débile de vouloir faire ça ! ».
+
+Pire : la satisfaction d’une minorité de libristes était justement de maîtriser des outils complexes, de les personnaliser, d’apprendre. Cette satisfaction était en opposition totale avec l’intérêt du plus grand nombre, à savoir que l’outil fonctionne sans avoir besoin de se prendre la tête.
+
+#### L’excuse du monopole
+
+Ne pouvant offrir de satisfaction qu’à une minorité, le logiciel libre chercha un bouc émissaire. Et le trouva avec Microsoft. OpenOffice ne décolle pas ? À cause du monopole de MS Office. Linux sur le bureau ? Monopole de Windows. Jabber ? La faute à MSN. Même Firefox, qui pourtant offrait énormément de satisfaction et est sans doute l’un des plus gros succès du libre se frottait constamment au monopole d’Internet Explorer.
+
+En fait, on découvre aujourd’hui que le monopole n’était qu’une excuse, que, tout simplement, le libre n’apportait aucune réelle satisfaction supplémentaire.
+
+En très peu de temps, Google Documents a réussi à faire vaciller l’hégémonie de MS Office. Les tablettes, téléphones et ordinateurs Mac et Android ont rélégué Windows au status d’un outil parmi d’autres. Google Talk et Facebook ont fait de MSN une anecdote pour collégiens. En quelques mois, Chrome a dépassé les parts de marché de Firefox.
+
+Si il y a une part de puissance marketing indéniable dans ces succès, force est de constater que, technologiquement, le libre avait tout en main pour créer ce genre d’outils. Mais n’en a tout simplement pas été capable, n’en voyant pas l’utilité.
+
+#### Le futur
+
+L’avenir n’est guère plus brillant. Le libre semble enfermé dans son paradigme : « Offrir un équivalent à l’existant mais en libre, surtout sans innovation ». Diaspora se voulait un Facebook libre, oubliant complètement la satisfaction de l’utilisateur et se concentrant sur celle de ses développeurs. GNOME et KDE ont pour ambitieux projet de… développer une tablette libre, équivalente à un iPad ou une tablette Android. LibreOffice, de son côté, espère sortir LibreOffice online, un équivalent libre à Google Documents.
+
+=> http://www.framablog.org/index.php/post/2012/09/10/diaspora-facebook-open-source Diaspora
+
+Le libre se renferme sur lui-même et perd peu à peu ses plus fervents partisans, ceux-ci trouvant des solutions comme Android « assez libre à leur goût » voire sacrifiant complètement la liberté à d’autres satisfactions en passant sous Mac.
+
+Seul Ubuntu semble vouloir se démarquer quelque peu avec Ubuntu pour Android mais certains argueront que, Ubuntu, ce n’est plus vraiment du libre…
+
+=> http://www.ubuntu.com/devices/android Ubuntu pour Android
+
+Picture by Chris Blakeley
+
+=> http://www.flickr.com/photos/61565201@N00/895161207 Chris Blakeley

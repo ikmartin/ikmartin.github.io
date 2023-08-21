@@ -1,0 +1,69 @@
+# Lettre ouverte aux artistes piratés
+=> files/old/pelican_pirate.jpg
+
+English translation available.
+
+=> /open-letter-pirated-artists English translation
+
+Chers artistes,
+
+Il y a un an, en solidarité avec le blackout de protestation contre SOPA, j’ai écrit un billet expliquant pourquoi je piratais vos œuvres. Quelques heures plus tard, la fermeture soudaine de MegaUpload suscitait une vague d’indignation sur le web, donnant à mon billet une visibilité inattendue. Dans les semaines qui ont suivi, près de 100 000 personnes ont lu mon billet, sans compter les nombreuses traductions.
+
+=> http://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA blackout de protestation contre SOPA
+=> /je-suis-un-pirate billet expliquant pourquoi je piratais vos œuvres
+=> http://fr.wikipedia.org/wiki/Megaupload#Fermeture MegaUpload
+
+Grâce à Flattr, j’ai gagné un total de 34,70€ pour ce billet et sa traduction anglophone. N’aurais-je pas dû rendre la lecture payante à 1€ ? Ce billet à lui seul m’aurait alors rapporté 100 000€. Même en considérant que seulement 10% des lecteurs auraient payé, cela ferait toujours 10 000€. Pas mal non ?
+
+=> https://flattr.com/thing/467287/Pourquoi-je-suis-un-pirate ce billet
+=> https://flattr.com/thing/467338/Why-Im-a-Pirate sa traduction anglophone
+
+Mais si j’avais rendu l’accès à mon texte payant, personne ne l’aurait lu, il ne serait jamais devenu viral, je n’aurais pas eu le moindre euro sur Flattr. Cela doit vous sembler évident. Pourtant, c’est exactement ce que les industriels du divertissement vous font croire quand ils vous disent que les pirates vous volent. Les pirates vous volent autant que les lecteurs de mon billet m’ont volé en le lisant.
+
+L’erreur fondamentale est de continuer à considérer l’art comme un bien matériel. Même la vente de MP3 ou de livres électroniques suit ce principe de matérialisation. Les acheteurs gardent « leurs MP3 » comme une collection de disques. Les DRM tentent d’imposer les contraintes matérielles au monde virtuel.
+
+=> /145-do-i-have-to-protect-my-content-with-drm-the-drm-equation DRM
+
+Mais vous, artistes, quel est votre objectif ? Vendre des disques, des livres et des planches ? Ou être lu, écouté et admiré ? J’ose espérer que, toute considération pécuniaire mise à part, vous préférez la seconde solution. Les disques et les livres ne sont que des supports matériels à votre art.
+
+Beaucoup d’entre vous n’arrivent pas à en vivre. Même si c’est dommage, c’est entièrement normal. Personnellement, je me considère également comme un artiste : je blogue et j’écris de la fiction. J’aimerais en vivre pour pouvoir m’y consacrer pleinement. Pourtant, ce n’est pas le cas. Soit je n’ai pas trouvé le bon business model soit je n’ai tout simplement pas le talent nécessaire. Est-ce la faute des gens qui consomment mon blog gratuitement ? Non, au contraire vu que certains me font même des dons ou répandent mes écrits. Pourtant, encore une fois, c’est exactement ce que les producteurs vous font croire : que vos fans sont vos ennemis, ceux qui vous empêchent de vivre de votre talent.
+
+=> /no-proprietary-service.html j’écris de la fiction
+=> /je-nai-faire-de-votre-business-model le bon business model
+
+Vous voulez diffuser votre art et, si possible, gagner de l’argent. Nous voulons profiter de votre art et, si possible, contribuer financièrement à votre talent.
+
+Cependant, lorsque nous achetons votre art « légalement », nous savons que plus de 95% de notre argent ira à des intermédiaires que nous considérons inutiles et nocifs pour la société. Toute la sueur, tout le talent que vous avez mis dans votre expression est vampirisé à 95% par ces parasites. Nous sommes également réticents à payer le même prix pour une chanson amusante que nous écouterons une ou deux fois ou un hymne qui résonnera chaque matin de nos vies.
+
+=> http://www.negativland.com/news/?page_id=17 plus de 95% de notre argent
+
+Nous sommes prêts à investir dans le lancement de vos projets, par exemple via Kickstarter. Mais nous ne voulons pas payer pour « posséder » un fichier informatique. Cela n’a plus de sens. Nous n’imaginons pas non plus payer un prix fixe à chaque fois que nous vous écoutons ou lisons. Cela ruinerait vos fans et ceux qui écoutent de la musique en arrière plan toute la journée. Ce serait un frein à votre succès. À la place, personnellement, je donne tous les mois une somme fixe via Flattr. Sur Grooveshark, un artiste est Flattré si je l’ai écouté au moins une fois durant le mois. J’aimerais que cela soit également automatique quand je lis un ebook ou une page web dans Pocket.
+
+=> http://www.kickstarter.com/ Kickstarter
+=> https://flattr.com Flattr
+=> http://grooveshark.com/ Grooveshark
+=> /le-futur-du-livre-2 un ebook
+=> http://getpocket.com/ Pocket
+
+En généralisant un tel système, votre intérêt d’artiste serait d’être écouté, lu, admiré. Et cela même des années plus tard, vous autorisant à miser sur le long terme. À l’opposé, lier une œuvre à un support encourage le marketing aggressif, la consommation éphémère et le succès bref avant de retomber dans l’oubli total.
+
+Afin de préserver ses seuls intérêts et son obsolescence, l’industrie du divertissement vous a menti en nous faisant passer comme vos pires ennemis, vous a exploités en vous soutirant l’énorme majorité de vos gains, a traité vos fans comme des criminels, a perverti nos lois, nos politiciens et notre système éducatif, a uniformisé la culture et la créativité. Leur technique est simple : nous opposer l’un à l’autre. Pourtant, notre intérêt est commun : que vous puissiez vous consacrer pleinement à votre art sans faire les nuits dans un fast-food pour survivre. Alors que le leur est d’engranger un maximum d’argent, sans considération aucune pour l’art.
+
+=> /213-le-piratage notre système éducatif
+
+Chers artistes, voulez-vous embarquer sur le navire pirate à destination de ce nouveau monde où les fans et les artistes coopéreront ? Certes, tout reste encore à découvrir. Flattr n’est pour le moment qu’anecdotique et, d’ailleurs, c’est peut-être plus une piste de réflexion qu’une solution réelle. Tout comme les dons en ligne. Il y a beaucoup de problèmes à résoudre. C’est pourquoi nous avons besoin de vous et de votre créativité. Mais pas de ces sangsues que vous avez sur le dos.
+
+=> /le-nouveau-monde nouveau monde
+
+En espérant une réponse positive de votre part,
+
+Un admirateur pirate.
+
+Photo par Jason Barnette. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/47335729@N03/6867163309 Jason Barnette
+=> http://sylvestre.org Sylvestre
+
+English translation available.
+
+=> /open-letter-pirated-artists English translation

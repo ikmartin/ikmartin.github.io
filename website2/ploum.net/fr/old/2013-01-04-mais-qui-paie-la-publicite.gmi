@@ -1,0 +1,72 @@
+# Mais qui paie la publicité ?
+=> files/old/billboard.jpg
+
+Si je vous avais dit, hier, que la publicité n’était pas un modèle économique viable, vous m’auriez rit au nez. Aujourd’hui, avec l’activation d’une fonctionnalité techniquement très simple dans sa Freebox, le fournisseur Free lance un pavé dans la mare d’une manière on ne peut plus cavalière.
+
+=> http://www.numerama.com/magazine/24665-blocage-des-pubs-free-pete-un-cable.html lance un pavé dans la mare
+
+Je dois avouer que, dans cette histoire, je n’arrive pas à m’intéresser à l’aspect neutralité des réseaux. Je laisserai Benjamin Bayart s’en charger et je rappellerai que lorsque j’installais Ubuntu autour de moi, je mettais AdBlock par défaut, même si la personne ne le savait pas. Et que, finalement, Free ne fait pas autre chose.
+
+=> http://blog.fdn.fr/?post/2013/01/03/Free-porte-t-il-atteinte-a-la-neutralite-du-Net-en-filtrant-la-publicite Benjamin Bayart s’en charger
+=> http://adblockplus.org/fr/firefox AdBlock
+
+Mais le plus rigolo dans cette histoire c’est l’inquiétude sourde que l’on sent poindre chez ceux qui vivent de la publicité.
+
+Le modèle économique de la publicité
+
+Quatre acteurs sont impliqués dans une relation publicitaire : l’annonceur, qui souhaite vendre un produit, une boisson gazeuse par exemple, le support, typiquement un site web ou un journal gratuit, la cible, c’est-à-dire le lecteur comme vous et moi et le publicitaire, qui va faire l’intermédiaire entre l’annonceur et le support. Google est, sur le web, un de ces intermédiaires.
+
+L’annonceur paie donc une somme d’argent au publicitaire. Celui-ci en rétrocède une petite partie au support. L’objectif étant que la cible paie au final une somme plus importante à l’annonceur.
+
+Soit la publicité ne fonctionne pas et, dans ce cas, L’annonceur fait vivre à ses frais un publicitaire et des supports. Soit elle fonctionne et c’est la cible qui fait vivre tout ce petit monde.
+
+Et si la publicité était inefficace ?
+
+Lorsqu’on interroge les cibles, vous et moi, les réponses sont unanimes : la publicité ne fonctionne pas. Peut-être chez les gens moins intelligents mais pas chez moi.
+
+Les cibles en sont tellement convaincues qu’elles vont jusqu’à activer les publicités volontairement sur les sites qu’elles soutiennent. Pire, certains vont jusqu’à afficher des publicités pour soutenir des œuvres caritatives.
+
+=> http://www.tabforacause.org/ soutenir des œuvres caritatives
+
+Tout cela sur base sur le postulat selon lequel la publicité ne serait pas efficace, que nous serions insensibles à son message. Il y a également une certaines satisfaction à savoir que l’annonceur, gros producteur capitaliste de boisson gazeuse, va indirectement payer pour notre site préféré ou une œuvre caritative.
+
+Les conséquences d’un postulat
+
+Or, cette inefficacité est illusoire. La publicité ne fait pas appel à notre raison ni à notre intelligence mais à des réflexes primaires ancestraux et inconscients. La publicité va jusqu’à modifier notre perception du goût !
+
+D’ailleurs, si la publicité était si peu efficace, notre annonceur ne dépenserait pas des millions, que dis-je, des milliards.
+
+En conséquence de quoi, en activant les publicités sur votre site préféré, vous allez donner 1€ à l’annonceur, lequel paiera 10 centimes au publicitaire qui, lui-même, donnera 1 misérable centime à votre site. Votre contribution d’un centime à votre site préféré vous aura coûté 1€ et, pire, vous aurez fait vivre un annonceur et un publicitaire, ce qui n’était peut-être pas votre but.
+
+De plus, en encourageant ce système vous pervertissez l’indépendance de votre site préféré, même si le site lui-même n’en est pas toujours conscient. C’est la fameuse course à l’audience. Les chiffres deviennent plus importants que la qualité.
+
+La contribution directe
+
+Si vous souhaitez soutenir un site particulier, contribuez-y directement si c’est possible. Wikipédia n’a jamais fait autre chose.
+
+Personnellement, après un test d’un mois en 2007, j’ai décidé de me passer de la publicité pour les raisons que je viens d’expliquer. J’ai cependant la chance de recevoir quelques euros tous les mois grâce aux dons de mes lecteurs via Flattr.
+
+=> /no-proprietary-service.html Flattr
+
+Il est intéressant de constater que les billets qui me rapportent le plus d’argent ne sont pas toujours ceux qui font le plus d’audience mais ceux qui apportent quelque chose de neuf ou d’un peu fouillé comme ce billet ou celui-ci.
+
+=> /216-le-bepo-sur-le-bout-des-doigts ce billet
+=> /tout-peut-etre-compris celui-ci
+
+L’avantage de la contribution directe, c’est que votre argent va à 100% (90% dans le cas de Flattr) au site que vous soutenez et que votre esprit est assez libre pour décider de boire de l’eau du robinet plutôt qu’une boisson gazeuse dont vous n’avez pas réellement besoin.
+
+La publicité n’est pas spécialement négative
+
+Mais il ne faut pas non plus refuser toute publicité. Après tout, quand je parle de services privés comme Flattr ou Medium, je leur fait de la publicité. Une publicité qui se veut informative mais une publicité quand même.
+
+=> /no-proprietary-service.html Flattr
+=> /no-proprietary-service.html Medium
+
+C’est ce que Google a bien compris et tente, au fil des années, de faire : développer une publicité qui correspondrait à vos besoins et à vos goûts, qui ne soit pas intrusive mais juste adaptée et informative. Une publicité qui, finalement, n’aurait plus raison d’être bloquée car pertinente.
+
+Je sais que cette vision du futur en fait frémir plus d’un. Une publicité qui se conformerait à nos esprits ? Quelle horreur ! Mais peut-être est-ce préférable à la situation actuelle où nos esprits se conforment à la publicité.
+
+Photo par Chris Goldberg. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/34325628@N05/8230790281 Chris Goldberg
+=> http://sylvestre.org Sylvestre

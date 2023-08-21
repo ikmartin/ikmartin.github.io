@@ -1,0 +1,53 @@
+# Le plus grand jeu en ligne massivement multi-joueurs du monde
+
+=> ../files/old/avalon.jpg Avalon
+L’une des critiques que j’entends le plus régulièrement à propos de l’utilisation de Linux est le manque de jeux pour cette plate-forme. Là, je corrige tout de suite, des jeux il y en a, et des centaines. Il suffit de lire le blog de Yekcim pour s’en convaincre. Depuis le FPS galactique au counterstrike-like en passant par les petites perles.
+
+=> http://yeknan.free.fr/dc2/index.php?tag/jeux blog de Yekcim
+=> http://tremulous.net/ FPS galactique
+=> http://www.tcelite.net/ counterstrike-like
+=> http://2dboy.com/games.php petites perles
+
+Là, je vous vois venir : oui mais il manque un vrai grand jeu. Une épopée massivement multi-joueurs, un univers virtuel où s’immerger. Un jeu où incarner un gourou magicien qui sauve le monde avec l’aide de sa guilde, un jeu où le temps passé permet d’acquérir de l’expérience, des supers pouvoirs. Un jeu où les meilleurs sont reconnus par leurs pairs, une seconde vie virtuelle à propos de laquelle on peut discuter sur les fora où dans les cours de récré. Ce genre de jeu n’existe pas pour Linux.
+
+Quoi ? Ce genre de jeu n’existe pas pour Linux ?
+
+
+Vous voulez passer des heures à apprendre, à vous entraîner pour augmenter votre niveau d’expérience ? Vous voulez faire partie d’un groupe rassemblé autour d’une quête commune ? Vous voulez faire vivre votre avatar dans le plus grand univers virtuel qui soit ? Vous voulez trembler d’inquiétude certains jours et faire la fête le lendemain suite à une bonne nouvelle ?
+
+J’ai ce qu’il vous faut. L’histoire est classique : une grande multinationale à le contrôle d’une majorité des moyens de communication et des ordinateurs de la planète. Cette multi-nationale est même soutenue par la plupart des gouvernements et par les hommes les plus riches du monde. Les citoyens, sous le contrôle de cette multi-nationale, subissent chaque jour les avanies de cette situation sans en être vraiment conscients et en l’acceptant avec fatalité.
+
+
+Vous faîtes partie d’un groupe qui a pris conscience de cet état de fait. Vous refusez à vous résigner et à abandonner votre choix personnel et votre liberté. Pour sauvegarder cette liberté si précieuse, il va falloir lutter. Chaque jour, chaque instant est sera un combat contre l’empire d’une multi-nationale, contre la passivité de votre entourage, contre les préjugés.
+
+Tout comme le premier grec au sommet de l’Olympe à son retour à Athènes[1], vous découvrirez que vos pires ennemis sont vos anciens compagnons de captivité, effrayés par l’idée d’une liberté qu’ils n’ont jamais connue.
+
+=> /197-le-conte-du-mousse-et-des-vingt-neuf-navires effrayés
+
+
+Bienvenue dans le plus grand jeu en ligne massivement multi-joueurs, bienvenue sous Linux !
+
+Au début, il vous faudra lutter pour acquérir cette fameuse liberté. Apprendre un nouveau système, de nouveaux logiciels, apprendre à se débrouiller face à l’adversité. Une contribution toute simple, à la portée de tous les joueurs : dîtes tout haut que vous utilisez Linux. Pas besoin de discours, pas besoin de technique. Vous croyez n’avoir aucun effet mais votre petite affirmation rentrera petit à petit dans l’inconscience populaire. La prochaine fois que le mot « Linux » apparaîtra, ce ne sera plus une inconnue, cela sera « Ah oui, j’ai entendu parler de ce truc ». La première étape : l’acceptation qu’il puisse exister autre chose. L’ouverture à la différence.
+
+=> /62-de-la-liberte-la-face-meconnue-de-l-informatique fameuse liberté
+
+
+Vous pouvez choisir d’en rester là et c’est très bien. Mais si vous être pris dans l’engrenage, vous risquez très vite de devenir accro : aide des débutants, contributions aux traductions, à la documentation. Vous commencerez à vous familiariser avec votre nouvel univers : ligne de commande, entraide, ergonomie, …
+
+Certains en arriveront à ouvrir un blog, à aider les programmeurs à gérer les rapports de bugs. Finalement, vous vous retrouverez peut-être même à coder ou contribuer artistiquement à des projets pour les améliorer. En les améliorant, vous les rendez encore plus attractifs aux yeux des nouveaux venus, devenant un « gourou » voire un « hacker », honneur suprême.
+
+
+Si vous choisissez la classe « prosélyte », votre expérience vous permettra de convaincre votre entourage sans avoir l’air d’un gros boulet monomaniaque. Vous acquerrez petit à petit la diplomatie, l’empathie et l’art de la manipulation. Vos auditeurs deviendront eux aussi des joueurs qui grossiront les rangs de votre guilde.
+
+Pas de jeu sous Linux ? Laissez moi rire, Linux est le plus grand jeu du monde ! Un jeu qui se construit par les joueurs eux-mêmes, un monde à la frontière entre le virtuel et le réel.
+
+Et, à ma connaissance, il s’agit du seul jeu au monde dont vous pouvez vous vanter sur votre CV d’y passer des nuits blanches.
+
+Level complete…
+
+
+Bienvenue sous Linux…
+
+#### Notes
+
+[1] Je n’arrive pas à retrouver le nom ni l’histoire exacte de ce grec qui, arrivé au sommet de l’Olympe, ne vit rien de spécial et redescendit pour annoncer au peuple que les dieux n’existaient pas. Il fût traité de menteur et mis à mort. L’histoire nous est racontée par un philosophe grec mais je n’arrive plus à mettre la main dessus. Toute ma reconnaince au premier à m’envoyer l’histoire

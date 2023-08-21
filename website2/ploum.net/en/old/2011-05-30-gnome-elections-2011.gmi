@@ -1,0 +1,74 @@
+# Elections 2011: fostering the GNOME commercial ecosystem
+
+During last Fosdem, I bumped into Joaquim Rocha, from Igalia.
+— I heard that you joined Lanedo, he told me with a bright smile. Congratulations!
+— Well, thanks, I replied. I guess we are competitors now.
+— Not really. There is plenty of room for everybody.
+
+=> http://fosdem.org/2011/ Fosdem
+=> http://www.joaquimrocha.com/ Joaquim Rocha
+=> http://www.igalia.com/ Igalia
+
+=> ../files/old/greentree.jpg One big tree
+
+For days, his simple and direct answer stayed in my mind. Coming from the very conservative automotive industry, I still had some old aggressive reflex that I needed to get rid of.
+
+In the traditional industry, Free Software is often considered as a geekish toy. Managers are eager to point at the danger of relying on a project that could be abandoned. And because Free Software are often not developed by a given company, they assume that there is no commercial support available.
+
+GNOME is a typical example. It is a project mostly run by a non-profit organization, most of the work seems to be done by volunteers and there is no official GNOME commercial support. This is definitely not a serious project, unlike Lotus Notes or other boring but serious stuffs.
+
+You and me know that this is only a perception problem. GNOME is a very high quality project, a lot of companies are selling professional support for the different GNOME technologies and it is used is a number of commercial products.
+
+But this bad perception keeps a lot of potential users away. It means less market opportunities for GNOME companies and less visibility in the industry.
+
+Joaquim’s answer made me realize that we were not forced to accept this situation. We can break that vicious circle. Yes, we can![1]
+
+=> ../files/old/leafs.jpg Lot of green leaves
+Fostering the GNOME commercial market should be, in my opinion, one major role of the GNOME board of directors[2]. But, as I discovered quickly, there was no representative of the GNOME companies on the board. Members were either independent or from those bigger companies using GNOME in their products.
+
+I decided to tackle the problem and to stand for election on the GNOME board of directors. If you are a GNOME foundation member, don’t forget to vote before Monday June 13th! Even if you are not really interested by the subject, please take the time to read candidacies instead of just voting for names you recognize.
+
+=> http://foundation.gnome.org/vote/2011/candidates.html to vote
+=> http://foundation.gnome.org/vote/2011/rules.html Monday June 13th
+=> http://foundation.gnome.org/vote/2011/candidates.html candidacies
+
+Personnaly, I stand to represent GNOME professional providers. Not only Lanedo but all of those wonderful GNOME companies, existing or yet to come[3].
+
+=> http://www.lanedo.com/ Lanedo
+
+There is a myriad of potential customers waiting around the corner, from very small companies wanting a quick bug fix or a small customization to the biggest phone makers who want to use GNOME in their products.
+
+If I’m elected, I will work to ensure a better visibility to all the GNOME providers. I will foster the GNOME market by giving a more professional image, highlighting existing commercial support.
+
+I would also like to promote the GNOME entrepreneurship state of mind, improving cooperation and communication between GNOME companies and, why not, helping in the creation of new GNOME related businesses.
+
+This is a vision, of course, I don’t except all of that to be achieved in one year. Anyway, I believe that fostering the GNOME ecosystem will create many business opportunities, will allow the creation of multiple GNOME jobs and will vastly improve the promotion of GNOME in the industry.
+
+As Joaquim said: There’s plenty of room for everybody!
+
+=> ../files/old/forest.jpg A beautiful forest
+
+PS: I’m pleased to see the candidacies of Ryan Lortie (Codethink), Andre Klapper (Openismus) and Diego Escalante Urrelo (Igalia) which are also working for GNOME companies. As you have multiple votes, nothing prevents you to vote for all four of us 🙂
+
+=> http://blogs.gnome.org/desrt/ Ryan Lortie
+=> http://www.codethink.co.uk/ Codethink
+=> http://blogs.gnome.org/aklapper/ Andre Klapper
+=> http://www.openismus.com/ Openismus
+=> http://blogs.gnome.org/diegoe/ Diego Escalante Urrelo
+=> http://www.igalia.com/ Igalia
+
+Picture credits: Ward and David Hepworth 1 – 2
+
+=> http://www.flickr.com/photos/wards/516828716/ Ward
+=> http://www.flickr.com/photos/medhead/5707061938/ 1
+=> http://www.flickr.com/photos/medhead/5713671966/in/photostream/ 2
+
+#### Notes
+
+[1] Since 2008, this obviously has to be posted in any election related post. Not to be taken too seriously.
+
+[2] excerpt for the Foundation website : The Foundation will act as an official voice for the GNOME project, providing a means of communication with the press and with commercial and noncommercial organizations interested in GNOME software.
+
+=> http://foundation.gnome.org/ Foundation website
+
+[3] After all, I didn’t sign my Lanedo contract with my blood. Nobody can predict the future: Lanedo could disappear, I could leave Lanedo. But one thing is sure: GNOME will stay and it is my interest to make the GNOME market stronger than ever.

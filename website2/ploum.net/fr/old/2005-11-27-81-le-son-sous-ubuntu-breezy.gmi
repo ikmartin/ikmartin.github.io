@@ -1,0 +1,143 @@
+# Le son sous Ubuntu
+
+– Dis, tu peux m’aider ? Je viens d’installer Ubuntu. Tout est nickel sauf que je n’ai pas de son..
+– Pas de problème ! Tu utilises Alsa avec Dmix ? Est-ce que t’as configuré GStreamer pour utiliser OSS plutôt que ESD ?
+– ah…euh…
+– Dis moi tout d’abord si lsmod liste le module ALSA ou OSS de ta carte. T’as quoi comme chipset en fait ? Tu sais m’en donner l’output lspci ?
+– euh… c’est un ordinateur et j’aimerais juste que la musique sorte. Tu vois le genre ?
+– T’as branché les enceintes ?
+– Oups ! Merci, ça fonctionne !
+
+=> /2005/08/29/66-les-oreilles-n-ont-point-de-barreaux musique
+
+Outre l’anecdote du classique « coup-des-enceintes-pas-branchées-voire-éteintes », force est de constater que le son sous les systèmes Linux est un brin compliqué voire, disons-le franchement, un affreux foutoir !
+
+Tendons donc l’oreille pour faire la lumière sur cette sombre affaire…
+
+=> ../files/old/sound.png sound icon
+
+### Au niveau du noyau
+
+Le coeur du système Ubuntu est constitué du noyau Linux. C’est lui qui va s’occuper de votre matériel, notamment votre carte son, grâce au pilote approprié. Cependant, déjà là, ça commence à merder car Linux peut s’occuper de votre carte son selon deux méthodes distinctes :
+
+=> ../files/old/ecouteurs.jpg Image dans le domaine public wikimedia
+OSS
+Anciennement (c’est-à-dire jusqu’au noyau 2.4), la partie de Linux qui permettait une gestion de votre carte son était appélée Open Sound System, OSS. Beaucoup de pilotes ont été développés pour OSS. De même, beaucoup d’applications utilisent encore OSS pour utiliser la carte son. En effet, ça fonctionnait pas trop mal…
+Pour savoir quels sont les programmes qui sont en train d’utiliser OSS, il suffit de taper :
+
+> lsof /dev/dsp
+
+Cela nécessite d’avoir installé le programme lsof, sudo apt-get install lsof et on n’en parle plus. Notons également que, sous Breezy, lsof peut vous sortir une erreur du type :
+
+> lsof: WARNING: can’t stat() ext3 file system /dev/.static/dev Output information may be incomplete.
+
+C’est pas grave, n’en tenez pas compte.
+
+ALSA
+OSS n’étant techniquement pas parfait, un remplaçant a été trouvé. Ce remplaçant est ALSA, pour Advanced Linux Sound Architecture[1]. Les programmes utilisant du son doivent donc être réécrits pour pouvoir utiliser ALSA à la place de OSS. (c’est pourquoi xmms a un plugin OSS et un plugin ALSA).
+
+Cependant, afin que les anciennes applications continuent à fonctionner, il existe dans ALSA une couche de compatibilité qui permet aux applications OSS de croire qu’elles utilisent OSS au lieu de ALSA. Le greffon Flash de Macromedia, par exemple, ne connait pas ALSA et continue d’utiliser OSS. Notons qu’il est aussi nécessaire de réécrire tous les pilotes de carte son[2], connu aussi sous le nom de « module ». Ce module est normalement lancé automatiquement à chaque démarrage. La commande lsmod permet d’afficher la liste des modules chargés sur votre système. Ceux qui concernent ALSA ont un nom commençant par « snd ».
+Pour savoir quels programmes utilisent pour le moment alsa :
+
+> lsof /dev/snd/pcm*
+
+(même remarques que pour OSS en ce qui concerne l’utilisation de lsof)
+
+=> ../files/old/sound.png sound icon
+
+### Écouter plusieurs sons en même temps
+
+Généralement, une carte son ne dispose que d’une seule sortie. D’où, le noyau Linux ne sort qu’un seul son à la fois. Si on lui en demande plusieurs en même temps, le premier passera et pour les autres apparaîtra le message « device busy », qui signifie en gros le « occupééééé » caverneux de votre oncle gérard lorsque, pris dans l’ambiance et la boisson de cette terrible réunion de famille, vous n’avez pas de suite prêté attention à un besoin pressant et agitez à présent désespérément la clinge d’une porte obstinément close.
+
+=> ../files/old/mixage.jpg Image sous licence CC By de Tom Harpel, via Wikimedia
+L’oreille humaine, merveille de la nature, étant capable de différencier plusieurs sons mélangés, il faut donc mélanger -mixer- les différents sons avant de les envoyer au noyau Linux[3]. Pour cela, il existe plusieurs solutions, dont nous citerons :
+
+ESD
+ESD, Enlightmachinchouette Sound Daemon, est un programme au départ conçu pour Gnome qui mélange les sons et les envoie ensuite à OSS ou ALSA. Le problème c’est que quand ESD est lancé, seul lui occupe le cabinet, pardon la carte son, et donc tous les programmes qui n’utilisent pas ESD sont muets. On va donc dire à ESD de se lancer uniquement quand on a besoin de lui et de se couper après X secondes d’inactivité. C’est ce qui est fait par défaut dans Ubuntu Breezy. La config est visible dans /etc/esound/esd.conf : auto_spawn=1 (lance toi automatiquement si on a besoin de toi) et, dans spawn_options : -terminate -as 2 (casse-toi si on a pas besoin de toi après 2 secondes).
+Le gros problème d’ESD, outre que tous les programmes ne l’utilisent pas, est qu’il introduit un temps de latence. Pour résoudre ça, un remplaçant théoriquement bien meilleur est en préparation : polypaudio[4].
+Notons que ESD n’a pas que des désavantages : il permet, par exemple, d’écouter de la musique à travers un réseau. On joue la musique sur un ordinateur et le son sort sur un autre.
+Par défaut, ESD utilise OSS. Mais la commande sudo apt-get install libesd-alsa0 lui permet d’utiliser ALSA.
+
+=> http://0pointer.de/lennart/projects/polypaudio/ polypaudio
+
+Arts
+Arts, c’est exactement comme ESD mais pour KDE au lieu de GNOME. Si j’ai le malheur de dire quoi que ce soit, on va m’accuser de trolleur. De toutes façons, il n’y a rien de plus à dire.
+
+Dmix
+Dmix est en fait l’approche la plus logique. Contrairement aux deux premiers, ce n’est plus un programme externe mais directement ALSA qui va s’occuper du mixage, profitant des capacités de mixage hardware des cartes qui en possède. Pour activer Dmix, il suffit de créer un fichier /etc/asound.conf comme expliqué sur différents forums[5].
+Dmix n’est pas activé par défaut sous Ubuntu Breezy car il introduit des plantages avec certaines cartes son. Soyez prudents.
+
+=> http://forum.ubuntu-fr.org/viewtopic.php?id=19402 forums
+
+=> ../files/old/sound.png sound icon
+
+### Plusieurs cartes son ?
+
+Vous avez plusieurs cartes son ? Et bien sous Ubuntu Breezy ce n’est heureusement plus un problème.
+
+Dans Système > Préférences > Son, il suffit de choisir la carte son souhaitée.
+
+Notons aussi l’apparition du « serveur de son ». Le serveur de son est tou simplement le nom usuel pour ESD. En cochant cette case, vous activez donc ESD.
+
+
+### Les applications qui utilisent le son
+
+Tout ce que nous avons vu concerne l’accès direct à la carte son. Cependant, dans la majorité des cas, les sons sont stockés sous forme de fichiers, le tout dans différents formats : ogg Vorbis[6], MP3, ….
+
+Il faut donc les décoder et c’est ce que fait une application comme XMMS : elle décode un fichier suivant le format, le transforme en son et l’envoie à la carte son selon la sortie choisie.
+À chaque fois qu’on crée un nouveau lecteur multimédia, on doit donc se farcir l’implémentation du décodeur mp3, du décodeur ogg, etc… Bref, pas cool :-(. C’est pour régler ce problème que de grands hackers ont créé :
+
+GStreamer
+=> ../files/old/gstreamer-logo.png gstreamer
+GStreamer est un « framework ». C’est en fait une application comme une autre qui accède à la carte son. Il est possible, en ligne de commande, de lire des fichiers audio avec gstreamer. Par exemple :
+
+=> http://gstreamer.freedesktop.org/ 
+
+
+> gst-launch gnomevfssrc location=musique.ogg ! vorbisfile ! esdsink
+
+(où musique.ogg est un fichier.ogg)[7]
+
+Grâce à cette architecture, d’autres programmes peuvent utiliser GStreamer et ne doivent plus se casser la tête à décoder des fichiers. Il suffit de dire « GStreamer lit moi ça! » et GStreamer le lit. « GStreamer, encode moi ça ! » et GStreamer l’encode. Le paradis quoi !
+Rhythmbox, Sound-Juicer et Totem, entre autres, utilisent GStreamer.
+
+Le sélecteur de systèmes mutlimédia, dans les préférences, permet de choisir quelle sortie on veut que les applications GStreamer utilisent : OSS, ALSA, ESD.
+
+=> ../files/old/soundselector.png Sélecteur Multimédia
+
+Ainsi, si dans ce sélecteur on déclare vouloir utiliser ESD, Rhythmbox et Totem utiliseront par conséquent ESD. Xmms, par contre, s’en fout comme de sa première chaussure vu qu’il n’utilise pas GStreamer. Logique…
+
+GStreamer est très modulaire, et il est très facile de rajouter un plugin pour lire un format particulier. Par défaut, GStreamer ne possède pas le support pour lire des MP3. C’est peut-être pourquoi votre xmms lit des MP3 mais pas Totem ou Rhythmbox. Il suffit donc d’installer le plugin GStreamer adéquat :
+
+> sudo apt-get install gstreamer0.8-plugins gstreamer0.8-plugins-multiverse gstreamer0.8-ffmpeg
+
+(en ayant activé les dépôts Universe et Multiverse).
+Pour ce qui concerne la lecture des différents formats, je vous recommande la lecture adéquate.
+
+=> https://wiki.ubuntu.com/RestrictedFormats lecture adéquate
+
+
+### Moralité
+
+Mieux vaut vérifier que les enceintes sont bien branchées avant de recompiler un noyau. (vieux proverbe de Debianneux, c’est du vécu)
+
+
+#### Notes
+
+[1] Comme toujours, ALSA est théoriquement bien meilleur que OSS. En pratique, ça n’est vrai que quand il fonctionne correctement…
+
+[2] Et c’est là que le bât blesse avec ALSA : beaucoup de pilote sont très mal écrit et personne ne souhaite les corriger. Ceci explique pourquoi, sur certaines carte son, on a une meilleure qualité d’écoute en passant par l’émulation OSS d’ALSA que par ALSA directement. Une histoire de fréquences d’échantillonage que je vous raconterais une autre fois
+
+[3] Et, personnellement, je ne suis pas d’accord. Je trouve que ce feignant de Linux pourrait quand même faire ça tout seul comme un grand. Mais Moooonsieur passe son temps à boire avec les copains plutôt que bosser…
+
+[4] Et, comme d’hab, en pratique, ça marche pas du tout. Attendons on va encore dire que je suis mauvaise langue
+
+[5] Il paraît que « fora » n’est pas juste
+
+[6] qui est bien meilleur que le mp3. Vive le ogg !
+
+=> http://www.vorbis.com/ ogg
+
+[7] Note pour les geeks : On remarque qu’ici on prend le fichier musique.ogg depuis le système de fichier de gnome, on le décode via le décodeur Vorbis et on envoie le résultat vers ESD. Cette structure permet toutes les fantaisies comme, par exemple, convertir un mp3 en ogg. Plus d’infos
+
+=> http://www.coagul.org/article.php3?id_article=316 Plus d’infos

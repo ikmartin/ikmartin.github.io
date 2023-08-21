@@ -1,0 +1,110 @@
+# La fin d’un blog et la dernière version de ploum.net
+
+> Avertissement : Ce billet est une rétrospective technique des 18 années de ce blog. Il contient des termes informatiques et traite de la manière dont j’ai développé du code pour créer les pages que vous lisez. N’hésitez pas à passer les paragraphes qui contiennent trop de jargon.
+
+## La naissance d’un blog
+
+Je suis un précurseur visionnaire.
+
+En 2004, sur les conseils de mon ami Bertrand qui avait constaté que j’écrivais de longues tartines éparpillées aux quatre coins du web, je finis par ouvrir un blog. J’étais au départ réticent, affirmant qu’un blog n’était qu’un site web comme un autre, que la mode passerait vite. Tout comme le podcast n’était jamais qu’un fichier MP3, que la mode passerait tout autant. J’avais tenu un discours similaire en 97, affirmant que le web n’était que du texte affiché à l’écran, que la mode passerait. Juste avant de créer mon premier site. Un véritable précurseur visionnaire vous dis-je.
+
+Inspiré par le Standblog de Tristan Nitot (que je lisais et lis toujours), j’installai le logiciel Dotclear sur le serveur de deux amis et me mis à bloguer. Pour ne plus jamais arrêter. Que Bertrand, Tristan, Anthony, Fabien et Valérie (qui nomma mon blog "Where is Ploum?") soient ici mille fois remerciés.
+
+En 2010, n’arrivant pas à trouver un thème Dotclear 2 qui me satisfasse, je décidai de migrer temporairement vers Wordpress (et non pas vers J2EE). Plateforme sur laquelle je suis resté depuis.
+
+=> /ploum-en-j2ee/index.gmi Ploum.net en J2EE (je précise qu’il s’agit d’une blague que seuls les vieux geeks comprendront)
+
+La vie avec Wordpress n’est pas de tout repos : mises à jour fréquentes, incompatibilités avec certains plug-ins, évolutions de plug-ins et de thèmes, certains devenant payants, messages d’alertes pour des versions PHP ou MySQL dépassées. Sans compter des pléthores de versions d’un fichier htaccess à ne surtout pas toucher sous peine de tout casser, des sauvegardes de bases de données à faire et oubliées dans un coin.
+
+Cherchant un minimalisme numérique, Wordpress ne me convenait plus du tout. Il ne correspondait plus non à ma philosophie. Malgré quelques tentatives, je n’avais pas réussi à retirer tout le JavaScript ni certaines fontes hébergées par Google sans casser mon thème. En 2018, je me suis activement mis à chercher une alternative.
+
+À cette époque, j’ai rencontré Matt, le fondateur de Write.as. J’ai contribué au projet afin de le rendre open source (ce que Matt fera sous le nom WriteFreely). Nous avons tenté de l’adapter à mes besoins. Besoins que je décrivais dans un long document évolutif. En parallèle, je testais tous les générateurs de sites statiques, les trouvant complexes, n’arrivant pas à faire exactement ce que je voulais.
+
+Je prétendais chercher du minimalisme et je reproduisais, sans le vouloir, le syndrome du project manager J2EE dont je m’étais moqué.
+
+Découvrant le protocole Gemini, je me suis rendu compte que c’était bel et bien ce genre de minimalisme auquel j’aspirais. J’en étais convaincu : mon Ploum.net nouvelle génération devrait également être sur Gemini.
+
+=> /gemini-le-protocole-du-slow-web/index.gmi Gemini, le protocole du slow web
+
+Mais loin de m’aider, cette certitude ne faisait qu’ajouter une fonctionnalité à la liste déjà longue de ce que je voulais pour mon blog. Je me perdais dans une quête d’un workflow idéal.
+
+Après quelques mois, abandonnant l’idée de mettre mon blog sur Gemini, je me décidai à ouvrir un Gemlog sur rawtext.club. Pour tester. Que cmccabe soit ici publiquement remercié.
+
+J’écrivais tous mes fichiers à la main dans Vim, je les envoyai ensuite sur le serveur distant depuis mon terminal. Le tout sans le moindre automatisme. J’y prenais énormément de plaisir. Alors que je pensais juste tester la technologie, je me suis naturellement retrouvé à écrire sur mon Gemlog, à réfléchir, à partager. Je retrouvais la naïveté initiale de mon blog, la spontanéité.
+
+Au fil des mois, j’introduisis néanmoins certaines automatisations. Sauvegardes et envoi vers le serveur grâce à git. Un petit script pour générer la page d’index. Les billets sur mon gemlog connaissaient un certain succès et certains les partageaient sur le web grâce à un proxy gemini−>web. Un comble !
+
+Et c’est à ce moment-là que je compris que mon blog ne serait jamais sur Gemini. Ce serait le contraire ! J’allais mettre mon gemlog sur le web. Et importer près de 800 billets Wordpress dans mon Gemlog. Plus de 800.000 mots écrits en 18 années de blog. L’équivalent de 15 livres de la taille de Printeurs.
+
+## Lire avant tout
+
+Depuis mon premier Dotclear, je jouais avec les thèmes, les plug-ins, les artifices, les commentaires. Je ne m’étais jamais vraiment posé la question de ce que j’attendais de mon blog.
+
+Mon blog est, depuis ces années, un fil de vie, un élément essentiel de mon identité. Mon blog me reflète,  je suis qui je suis grâce à mon blog. Il est une partie de mon intimité, de mon essence.
+
+Qu’ai-je envie de faire de ma vie ? Écrire ! Mon blog doit donc me faciliter le fait d’écrire et son pendant indissociable : être lu !
+
+Être lu ne signifie pas être découvert, avoir des fans, des likes ou des abonnés. Être lu signifie que chaque personne arrivant sur un article sera considérée comme une lectrice et respectée comme telle. Pas d’engagement, de métriques, d’invitation à découvrir d’autres articles. Une lectrice a le droit de lire dans les meilleures conditions et de passer ensuite à autre chose.
+
+## Au travail !
+
+Pour la première fois, le chemin me semblait enfin clair. Je n’allais pas tenter de trouver le logiciel parfait pour faire ce que je voulais. Je n’allais pas planifier, tester, connecter des solutions différentes en écumant le web. J’allais tout faire à la main, tout seul comme un grand. Si j’arrivais à convertir mon blog Wordpress en fichiers gmi (le format Gemini), il ne me restait qu’à écrire une petite routine pour convertir le tout en HTML.
+
+Un adage chez les programmeurs dit que tout programme complexe nait parce que le programmeur pensait sincèrement que c’était facile. Mon script ne fait pas exception à la règle. Il m’aura fallu plusieurs mois pour peaufiner et arriver à un résultat acceptable. Devant me passer du service Mailpoet intégré à Wordpress (service dont la licence m’était fournie par un sympathique lecteur, qu’il soit ici remercié), je du me résoudre à écrire ma propre gestion d’email pour pouvoir l’intégrer à un service open source. Ce fut la partie la plus difficile (probablement parce qu’en toute honnêteté, cela ne m’intéresse pas du tout). Si vous voulez recevoir les billets par mail, il existe désormais deux mailing-listes (si vous avez reçu ce billet par mail, vous êtes inscrit à la première FR mais pas à celle en anglais EN, je vous laisse vous inscrire si vous le souhaitez) :
+
+=> https://listes.ploum.net/ 2 mailings listes
+=> mailto:fr-join@listes.ploum.net Envoyez un mail à fr-join@listes.ploum.net pour recevoir les billets en français
+=> mailto:en-join@listes.ploum.net Pareil à en-join@listes.ploum.net pour recevoir les billets en anglais
+
+J’avoue être assez fier du résultat. Chaque billet que vous lisez est désormais un simple fichier texte que j’écris et corrige avant de publier en l’insérant dans le répertoire FR ou EN selon la langue. À partir de là, le tout est envoyé par git sur le service sourcehut et un script publish.py transforme mon texte en une page gmi, une page hmtl ou un email. À l’exception des éventuelles images, chaque page est complètement indépendante et ne fait appel à aucune ressource externe. Même les 40 lignes de CSS (pas une de plus) sont incluses. Cela permet des pages légères, rapides à charger même sur une  mauvaise connexion, compatibles avec absolument toutes les plateformes même les plus anciennes, des pages que vous pouvez sauver, imprimer, envoyer sans craindre de perdre des informations. Bref, des véritables pages web, un concept devenu absurdement rare.
+
+=> https://sr.ht/~lioploum/ploum.net/ Les sources de ce blog sur Sourcehut
+
+## La signification du minimalisme
+
+En codant ce site, il m’est apparu que le minimalisme impliquait de faire des sacrifices. D’abandonner certains besoins. La raison pour laquelle je n’avais jamais été satisfait jusqu’à présent était mon incapacité à abandonner ce que je pensais essentiel.
+
+Les tags aident-ils la lecture ? Non, ils ont donc disparu. Les séries ? J’étais convaincu d’en avoir besoin. J’ai commencé à les implémenter, mais je n’ai pas été convaincu et j’ai mis ce travail de côté. La recherche intégrée ? La fonctionnalité est certes utile, mais son bénéfice ne couvre pas le coût de sa complexité. J’ai dû me faire violence pour l’abandonner, mais, une fois convaincu, quel soulagement ! 
+
+Pour remplacer la recherche, je dispose de deux armes : la première est que la liste de tous mes billets est désormais disponible sur une simple page. Si vous connaissez un mot du titre du billet que vous recherchez, vous le trouverez avec un simple Ctrl+f dans votre navigateur.
+
+=> /index_all.gmi La liste de tous mes billets depuis 2004
+
+Pour la recherche plus profonde sur le contenu, mes billets étant désormais de simples fichiers texte sur mon disque dur, la commande "grep" me convient parfaitement. Et elle fonctionne même lorsque je suis déconnecté. 
+
+Car l’aspect déconnecté est primordial. Ma déconnexion dans la première moitié de 2022 m’a fait prendre conscience à quel point mon blog Wordpress n’était plus en phase avec moi. Je ne pouvais plus le consulter simplement, je ne pouvais plus y poster sans passer du temps en ligne. 
+
+Mes lecteurs les plus techniques peuvent également me consulter offline avec un simple "git clone/git pull".
+
+## La dernière version ?
+
+Le titre de ce billet est volontairement racoleur (et si vous êtes arrivé jusqu’ici, c’est que ça fonctionne), mais, oui, ce billet annonce bel et bien la fin de mon blog sur le web tel qu’il a été durant 18 ans. 
+
+Désormais, vous ne lirez plus que mon Gemlog. Gemlog dans lequel j’ai importé le contenu de mon ancien blog. Cette approche Gemini-first implique des contraintes assez fortes, notamment celle de n’avoir qu’un lien par ligne (ce qui rend certains de mes anciens billets truffés de liens assez particuliers à lire, je le reconnais).
+
+J’ai cependant pris grand soin de faire en sorte que les anciennes URLs fonctionnent toujours. "Cool URLs never change". Si ce n’est pas le cas, signalez-le-moi !
+
+Une autre particularité de ce projet dont je suis fier est que tout mon blog ne dépend désormais plus que de deux briques logicielles : git et python, des composants fondamentaux sur lesquels je peux espérer me baser jusqu’à la fin de ma vie. Le tout étant rédigé dans Vim et corrigé par le couple Antidote/Grammalecte (le point le plus fragile de mon système).
+
+Ce qui me fait dire que ce site est peut-être bel et bien la dernière version de ploum.net. Après Dotclear et Wordpress, je ne dépends désormais plus de personne. Plus de mises à jour imposées, plus de changements soudains d’interface, plus d’adaptation à des nouvelles versions (à part un éventuel python 4 qui ne devrait pas poser de problème vu que je n’utilise à dessein aucune bibliothèque externe). J’évolue à mon rythme et en faisant exactement ce qui me plait, sans dépendre d’une communauté ou d’un fournisseur.
+
+Aurais-je été plus efficace avec un générateur de site web existant ? Peut-être. Je n’en suis pas convaincu. J’aurais dû l’apprendre et me plier à ses contraintes arbitraires. Pour ensuite tenter de l’adapter à mes besoins. Même si cela avait été plus rapide sur le court terme, il aurait été nécessaire de me plier aux nouvelles versions, d’espérer qu’il soit maintenu, de m’intégrer dans la communauté et j’aurais forcément fini par migrer vers une autre solution un moment ou un autre.
+
+## La philosophie du code
+
+Pour la première fois, mon blog exprime donc avec son code des valeurs que je tente de mettre par écrit : la simplicité volontaire est difficile, mais libère autant l’auteur que les lecteurs. Elle implique une vision tournée vers un long terme qui se compte en décennies. L’indépendance se conquiert en apprenant à maitriser des outils de base plutôt qu’en tentant d’adopter la dernière mode. 
+
+En apportant les dernières touches au code qui génère ce qui n’est pour vous qu’une page parmi tant d’autres, j’ai eu l’impression d’avoir réduit la distance qui nous séparait. Les intermédiaires entre mon clavier et votre intelligence ont été réduits au strict nécessaire. Plutôt que des connexions à des interfaces impliquant des copier-coller, des chargements de librairies JavaScript, j’écris désormais dans un simple fichier texte.
+
+Fichier texte qui s’affiche ensuite dans vos mails, votre lecteur RSS ou votre nagivateur.
+
+Cela parait trivial, simple. C’est pourtant l’essence du web. Une essence qui est malheureusement beaucoup trop rare.
+
+
+Merci de me lire, de me partager (pour certain·e·s depuis des années), de partager mon intimité. Merci pour vos réactions, vos suggestions et votre soutien. J’espère que cette version vous plaira. 
+
+Bonnes lectures et bons partages !
+
+
+PS: Si vous relisez régulièrement certains anciens articles (plusieurs personnes m’ont confié le faire), n’hésitez pas à vérifier que tout est OK et me signaler tout problème éventuel. Comme tout logiciel, le travail n’est jamais terminé. La version Wordpress restera disponible sur le domaine ploum.eu pour quelques mois.
+=> https://ploum.eu Ancienne version de ploum.net

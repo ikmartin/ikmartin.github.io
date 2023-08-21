@@ -1,0 +1,47 @@
+# La chaussette de Schrodinger, un phénomène encore mal compris des physiciens
+
+Je suis un rationaliste convaincu. Mais, cependant, je dois avouer que la science à encore fort à faire.
+
+=> /tout-peut-etre-compris rationaliste convaincu
+
+Nous vivons tous au quotidien des moments où la magie noire semble être la seule explication plausible, où le rationnel cède la place au magique, au mystérieux. Un exemple parmi tant d’autre ?
+
+#### Le dépareillement des paires de chaussettes
+
+Chaque jour, je porte aux pieds une paire de chaussettes rigoureusement identiques (d’où le nom de « paire »). Au bout d’une semaine, j’ai donc 14 chaussettes de 7 modèles différents.
+
+Pour simplifier, je dispose de certaines paires en double, ce qui est censé rendre l’appareillement plus facile.
+
+Au bout de deux semaines, mon panier de linges comporte donc, en théorie 28 chaussettes de 14 modèles différents. Posons que je possède 4 des paires en doubles. J’ai donc 28 chaussettes de 10 modèles différents.
+
+Ce contenu est transvasé dans la machine à laver puis dans le sèche-linge et enfin dans le bac de retour.
+
+Au moment de ranger mes 28 chaussettes, je n’ai plus 10 mais 20 modèles différents. La majorité de mes chaussettes sont solitaires. Lorsque j’ai plusieurs paires du même modèle, c’est toujours un nombre impaire (3 ou 5).
+
+Le premier réflexe de tout être humain est d’invoquer un dieu protecteur, de faire la danse du « dépareillement » (ne fonctionne que les nuits de pleine lune) ou toute autre action sensée.
+
+=> /109-plus-ou-moins-tout-seul-dans-un-infini-plutot-moyen dieu protecteur
+
+Pas moi, je suis un scientifique.
+
+J’ai donc mis au point un protocole rigoureux au cours duquel j’ai testé les différentes paires durant chaque transvasement.
+
+De manière étonnante, j’ai constaté de cette manière la diminution du nombre total de paire dépareillée.
+
+Si l’observation modifie la mesure, nul doute que nous sommes face à un phénomène quantique. J’ai donc démontré que chaussettes obéissent à une variante du principe d’incertitude d’Heisenberg :
+
+Pour toute chaussette, il est impossible de connaître à la fois sa position dans le cycle de lavage et la paire à laquelle cette chaussette se rattache
+
+Remarquons également que mes observations étant partielles (je n’ai pas accès à l’intérieur de la machine à laver), j’ai malgré tout des chaussettes dépareillées.
+
+Une solution serait donc d’installer une caméra dans ma machine à laver afin de monitorer en permanence l’état de mes chaussettes et éviter le dépareillement.
+
+Mais avant d’être un scientifique, je suis un ingénieur et donc une grosse feignasse. Plutôt que de bricoler mon lave-linge, je propose une solution bien plus élégante pour laquelle j’ai besoin de votre aide: lancer la mode des chaussettes dépareillées.
+
+=> /oneliner-18 un ingénieur
+
+— Oh très chère, cette soirée chez ce Jean-Pierre fut un véritable calvaire !
+— En effet très chère, quel grossier personnage.
+— Et quel rustre: il portait deux chaussettes de la même paire hier soir.
+— Un manque de classe certain, très chère. Nous l’éviterons dorénavant.
+— Quelle indécence. J’en ris encore !

@@ -1,0 +1,73 @@
+# Pour un logiciel de correspondance plutôt qu’un client mail
+=> files/old/liam-truong-oeDH20DVb2A-unsplash.jpg
+
+Plaidoyer en faveur d’un logiciel de relations épistolaires électroniques, échanges sacrifiés au culte de l’instantanéité.
+
+J’aime l’email. Je ne me lasse pas de m’émerveiller sur la beauté de ce système qui nous permet d’échanger par écrit, de manière décentralisée. D’entretenir des relations épistolaires dématérialisées à l’abri des regards (si l’on choisit bien son fournisseur). Je l’ai déjà dit et le redis.
+
+=> /email-mon-amour/. https://ploum.net/email-mon-amour/.
+
+Pourtant, l’indispensable email est régulièrement regardé de haut. Personne n’aime l’email. Il est technique, laborieux. Il est encombré de messages. Alors toute nouvelle plateforme nous attire, nous donne l’impression de pouvoir communiquer plus simplement qu’avec l’email.
+
+Beaucoup trop d’utilisateurs sont noyés dans leurs emails. Ils postposent une réponse avant que celle-ci ne soit noyée dans un flux incessant de sollicitation. Entrainant, effet pervers, une insistance de l’expéditeur.
+
+Désabusé, la tentation est grande de se tourner vers cette nouvelle plateforme aguichante. Tout semble plus simple. Il y’a moins de messages, ils sont plus clairs. La raison est toute simple : la plateforme est nouvelle, les échanges entre les utilisateurs sont peu nombreux. Dès le moment où cette plateforme sera devenue particulièrement populaire, votre boîte à messages se retrouvera noyée tout comme votre boîte à email. Tout au plus certaines plateformes s’évertuent à transformer vos boîtes en flux, de manière à vous retirer de la culpabilité, mais entrainant une perte d’informations encore plus importante.
+
+=> /comment-jai-fui-le-flux-pour-retrouver-ma-boite/ https://ploum.net/comment-jai-fui-le-flux-pour-retrouver-ma-boite/
+
+C’est pour cela que l’email est magnifique. Après des décennies, il est toujours aussi utile, aussi indispensable. Nous pouvons imaginer un futur sans Google, un futur sans Facebook. Mais un futur sans email ?
+
+L’email pourrait être merveilleux. Mais aucun client mail ne donne envie d’écrire des mails.
+
+Je rêve d’un client mail qui serait un véritable logiciel d’écriture. Pas d’options et de fioriture. Pas de code HTML. Écrire un email comme on écrit une lettre. En mettant l’adresse du destinataire en dernier, comme on le fait pour une enveloppe.
+
+Un logiciel d’écriture d’email qui nous aiderait à retrouver un contact avec sa correspondance plutôt qu’à permettre l’accomplissement d’une tâche mécanique. Un logiciel qui nous encouragerait à nous désabonner de tout ce qui n’est pas sollicité, qui marquerait des mails les correspondances en attente d’une réponse. Qui nous encouragerait à archiver un mail où à le marquer comme nécessitant une action plutôt qu’à le laisser moisir dans notre boîte aux lettres.
+
+Bref, je rêve d’un client mail qui me redonne le plaisir d’interagir avec des personnes, pas avec des fils de discussions ou des onomatopées.
+
+D’un autre côté, j’abhorre ces tentatives de classement automatique qui fleurissent, par exemple sur Gmail. Outre qu’elles augmentent le pouvoir de ces algorithmes, elles ne font que cacher le problème sans tenter d’y remédier. Si les mails doivent être triés comme « promotions » ou « notifications », c’est la plupart du temps que je n’avais pas besoin de les voir en premier lieu. Que ces emails n’auraient jamais dû être envoyés.
+
+Enfin, un véritable logiciel de correspondance devrait abandonner cette notion de notification et de temps réel. Une fois par jour, comme le passage du facteur, les courriels seraient relevés, m’indiquant clairement mes interactions pour la journée.
+
+De même, mes mails rédigés ne seraient pas envoyés avant une heure fixe du soir, me permettant de les modifier, de les corriger. Mieux, je devrais être forcé de passer en revue ce que j ‘envoie, comme si je me rendais au bureau de poste.
+
+En poussant le bouchon un peu plus loin, les mails envoyés pourraient prendre une durée aléatoire pour être remis. Un lecteur de mon blog a même imaginé que cette durée soit proportionnelle à la distance, comme si le courriel était remis à pied, à cheval ou en bateau.
+
+Car l’immédiateté nous condamne à la solitude. Si un mail est envoyé, une réponse reçue instantanément, l’ubiquité du smartphone nous oblige presque à répondre immédiatement. Cela même au milieu d’un magasin ou d’une activité, sous peine d’oublier et de penser paraitre grossier.
+
+La réponse à la réponse sera elle aussi immédiate et la conversation s’achèvera, les protagonistes comprenant que ce ping-pong en temps réel ne peut pas durer plus de quelques mots.
+
+Paradoxalement, en créant l’email, nous avons détruit une fonctionnalité majeure des relations épistolaires : la possibilité pour chacune des parties de répondre quand l’envie lui prend et quand elle est disponible.
+
+Jusqu’au 20e siècle, personne ne s’étonnait de ne pas recevoir de réponse à sa lettre pendant plusieurs jours voire pendant des semaines. Écrire une lettre de relance était donc un investissement en soi : il fallait se souvenir, garder l’envie et prendre le temps de le faire.
+
+Cette temporisation a permis une explosion de la créativité et de la connaissance. De grands pans de l’histoire nous sont accessibles grâce aux relations épistolaires de l’époque. De nombreuses idées ont germé lors d’échanges de lettres. Pouvez-vous imaginer le 21e siècle vu par les yeux des historiens du futur à travers nos emails ?
+
+Une lettre était lue, relue. Elle plantait une graine chez le destinataire qui méditait avant de prendre sa plume, parfois après plusieurs brouillons, pour rédiger une réponse.
+
+Une réponse qui n’était pas paragraphe par paragraphe, mais bien une lettre à part entière. Une réponse rédigée en partant du principe que le lecteur ne se souvenait plus nécessairement des détails de la lettre initiale. Aujourd’hui, l’email nous sert à essentiellement à « organiser un call » pour discuter d’un sujet sur lequel personne n’a pris le temps de réfléchir.
+
+Des parties d’échecs historiques se sont déroulées sur plusieurs années par lettres interposées. Pourrait-on imaginer la même chose avec l’email ? Difficilement. Les échecs se jouent désormais majoritairement en ligne en temps réel.
+
+Pourtant, le protocole le permet. Il s’agit simplement d’un choix des concepteurs de logiciel d’avoir voulu mettre l’accent sur la rapidité, l’immédiateté, l’efficacité et la quantité.
+
+Il ne faudrait pas grand-chose pour remettre au centre des échanges écrits la qualité dont nous avons cruellement besoin.
+
+Nous utilisons le mail pour nous déresponsabiliser. Il y’a une action à faire, mais en répondant à l’email, je passe la patate chaude à quelqu’un d’autre. Répondre le plus rapidement, si possible avec une question, pour déférer le moment où quelqu’un devra prendre une décision. Tout cela au milieu d’un invraisemblable bruit publicitaire robotisé. Nous n’échangeons plus avec des humains, nous sommes noyés par le bruit des robots tout en tentant d’échanger avec des agents administratifs anonymes. Nous n’avons plus le temps de lire ni d’écrire, mais nous croyons avoir la pertinence de prendre des décisions rapides. Nous confondons, avec des conséquences dramatiques, efficience et rapidité.
+
+Pour l’interaction humaine, nous nous sommes alors rabattus sur les chats. Leur format nous faisait penser à une conversation, leur conception nous empêche de gérer autrement qu’en répondant immédiatement.
+
+Ce faisant, nous avons implicitement réduit l’interaction humaine à un échange court, bref, immédiat. Une brièveté et une rapidité émotive qui nous pousse à agrémenter chaque information d’un succédané d’émotion : l’émoji.
+
+Nous en oublions la possibilité d’avoir des échanges lents, profonds, réfléchis.
+
+Parfois, je rêve d’abandonner les clients mails et les messageries pour un véritable client de correspondances. De sortir de l’immédiateté du chat et de la froideur administrative du mail pour retrouver le plaisir des relations épistolaires.
+
+Update : Brandon Nolet semble avoir des idées similaires aux miennes.
+
+=> https://bnolet.me/posts/2019/07/conversing-through-email/ https://bnolet.me/posts/2019/07/conversing-through-email/
+
+Photo by Liam Truong on Unsplash
+
+=> https://unsplash.com/@liamtruong?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Liam Truong
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

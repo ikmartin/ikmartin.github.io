@@ -1,0 +1,43 @@
+# De l’importance de comprendre ce qu’est une licence
+
+On entend souvent que les programmes informatiques ou les œuvres en ligne sont publiées sous une licence. Qu’est-ce que cela signifie ? Et en quoi est-ce important ?
+
+Pour simplifier, dans nos sociétés, tout échange se fait suivant un contrat. Ce contrat peut être implicite, mais il existe. Si j’achète une pomme au marché, le contrat implicite est qu’après avoir payé, je reçois ma pomme et je peux en faire ce que je veux. 
+
+Pour les biens matériels dits « rivaux », le contrat de vente implique souvent un transfert de la propriété du bien. Mais il y’a parfois d’autres clauses au contrat. Comme les garanties.
+
+Là où les choses se corsent, c’est lorsque le bien échangé est dit « non-rival ». C’est-à-dire que le bien peut être copié ou acheté plusieurs fois sans impact pour les acheteurs. Dans le cas qui nous concerne, on parle typiquement d’un logiciel ou d’une œuvre numérique (film, livre, musique …). Il est évident que l’achat numérique ne nous donne aucune propriété sur l’œuvre.
+
+Il faut signaler que, pendant longtemps, la non-rivalité des biens comme les musiques, les livres ou les films a été camouflée par le fait que le support, lui, était un bien rival. Si j’achète un livre papier, j’en suis propriétaire. Mais je n’ai pas pour autant les droits sur le contenu !  Les supports numériques et Internet ont dissipé cette confusion entre l’œuvre et le support. 
+
+Pour réguler tout cela, l’achat d’une œuvre numérique ou d’un programme informatique est, comme tout achat, soumis à un contrat, contrat qui stipule les droits et les obligations exactes que l’acheteur va recevoir. La licence n’est jamais qu’un contrat type, une sorte de modèle de contrat standard. Ce contrat, et une bonne partie de notre société, se base sur la présupposition que, tout comme un bien rival, un bien non-rival se doit d’avoir un propriétaire. C’est bien entendu arbitraire et je vous invite à questionner ce principe un peu trop souvent admis comme une loi naturelle.
+
+Il est important de signaler que chaque transaction vient avec son propre contrat. Il est possible de donner des droits à un acheteur et pas à un autre. C’est d’ailleurs ce principe qui permet la pratique de « double licence » (ou dual-licensing).
+
+## Droits et obligations définis par la licence
+
+Dans notre société, toute œuvre est, par défaut, sous la licence du copyright. C’est-à-dire que l’acheteur ne peut rien faire d’autre que consulter l’œuvre et l’utiliser à des fins personnelles. Tout autre utilisation, partage, modification est bannie par défaut.
+
+À l’opposé, il existe le domaine public. Les œuvres dans le domaine public ne sont associées à aucun droit particulier : chacun peut les utiliser, modifier et redistribuer à sa guise.
+
+L’une des escroqueries intellectuelles majeures des absolutistes du copyright est d’avoir réussi à nous faire croire qu’il n’y avait pas d’alternatives entre ces deux extrêmes. Tout comme on est soit propriétaire de la pomme, soit on n’en est pas propriétaire, la fiction veut qu’on soit soit propriétaire d’une œuvre (détenteur du copyright), soit rien du tout, juste bon à regarder. C’est bien entendu faux.
+
+Si la licence est un mur d’obligations auxquelles doit se soumettre l’acheteur, il est possible de n’en prendre que certaines briques. Par exemple, on peut donner tous les droits à l’utilisateur sauf celui de s’approprier la paternité d’une œuvre. Les licences BSD, MIT ou Creative Commons By, par exemple, requièrent de citer l’auteur original. Mais on peut toujours modifier et redistribuer.
+
+La licence CC By-ND, elle, oblige à citer l’auteur, mais ne permet pas de modifications. On peut redistribuer une telle œuvre.
+
+Un point important c’est que lorsqu’on redistribue une œuvre existante, on peut modifier la licence, mais seulement si on rajoute des contraintes, des briques. J’ai donc le droit de prendre une œuvre sous licence CC By, de la modifier puis de la redistribuer sous CC By-ND. Par contre, je ne peux évidemment pas retirer des briques et faire l’inverse. Dans toute redistribution, la nouvelle licence doit être soit équivalente, soit plus restrictive.
+
+Le problème de cette approche, c’est que tout va finir par se restreindre vu qu’on ne peut que restreindre les droits des utilisateurs ! C’est d’ailleurs ce qui se passe dans des grandes entreprises comme Google, Facebook ou Apple qui utilisent des milliers de programmes open source gratuits et les transforment en programmes propriétaires. Un véritable pillage du patrimoine open source !
+
+## Le copyleft ou interdiction de rajouter des briques
+
+C’est là que l’idée de Richard Stallman tient du génie : en inventant la licence GPL, Richard Stallman a en effet inventé la brique « interdiction de rajouter d’autres briques ». Vous pouvez modifier et redistribuer un logiciel sous licence GPL. Mais la modification doit être également sous GPL.
+
+C’est également l’idée de la clause Share-Alike des Creative Commons. Une œuvre publiée sous licence CC By-SA (comme le sont mes livres aux éditions PVH) peut être modifiée, redistribuée et même revendue. À condition d’être toujours sous une licence CC By-SA ou équivalente.
+
+Par ironie, on désigne par « copyleft » les licences qui empêchent de rajouter des briques et donc de privatiser des ressources. Elles ont souvent été présentées comme « contaminantes » voire comme des « cancers » par Microsoft, Apple, Google ou Facebook. Ces entreprises se présentent désormais comme des grands défenseurs de l’open source. Mais elles luttent de toutes leurs forces contre le copyleft et contre l’adoption de ces licences dans le monde de l’open source. L’idée est de prétendre aux développeurs open source que si leur logiciel peut être privatisé, alors elles, grands princes, pourront l’utiliser et, éventuellement, très éventuellement, engager le développeur ou lui payer quelques cacahouètes.
+
+La réalité est bien sûr aussi évidente qu’elle en a l’air : tant qu’elles peuvent ajouter des briques privatrices aux licences, ces monopoles peuvent continuer l’exploitation du bien commun que représentent les logiciels open source. Elles peuvent bénéficier d’une impressionnante quantité de travail gratuit ou très bon marché. 
+
+Le fait que ces monopoles morbides puissent continuer cette exploitation et soient même acclamés par les développeurs exploités illustre l’importance fondamentale de comprendre ce qu’est réellement une licence et des implications du choix d’une licence plutôt qu’une autre.

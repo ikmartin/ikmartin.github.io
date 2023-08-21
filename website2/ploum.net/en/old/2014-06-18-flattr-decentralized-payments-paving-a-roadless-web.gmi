@@ -1,0 +1,44 @@
+# Flattr: Decentralized Payments Paving A Roadless Web
+=> files/old/peter_sunde_0237-2-768x511-1.jpg
+
+Peter Sunde, recently arrested for having been the spokesperson of The Pirate Bay, is lesser known for co-creating Flattr. The fact that Flattr is often forgotten by the media is a clear illustration about how the society doesn’t protect the artists or the citizens. It is now obvious that the copyright establishment fights only to keep its own power.
+
+For years, copyright industry lobbyists have been trying to describe pirates as selfish and greedy, downloading movies only to save or to make money themselves out of the sweat of others. But reality shows that Pirates are often willing to support their favorite artists. They just don’t see the need for an useless third party.
+
+It is a little known fact that, after the trial of The Pirate Bay, Peter Sunde co-created a web service called Flattr. The goal of Flattr? Making it easy to support the content you like on the web.
+
+=> http://flattr.com Flattr
+
+The way it works is quite simple: create a Flattr account, send some money on it and choose a monthly budget between 2€ and 250€. Then, click on Flattr buttons you cross during your journey on the web. At the end of the month, your monthly budget is divided by the number of clicks. That way, creators get some money and you keep your expense under tight control. I’ve called that “The Paying Web“.
+
+=> /paying-web/ The Paying Web
+
+If Flattr was not an overnight worldwide success, mainly due to a chicken-and-egg problem, it is still quite popular, mainly in the German podcast community. In fact, at the bottom of every post on this website, you can find a Flattr button. So why not create an account right now and offer your first Flattr to Peter Sunde, as a way to support him?
+
+=> /flattrs-biggest-problem/ chicken-and-egg problem
+=> https://flattr.com/register create an account right now
+=> https://flattr.com/profile/brokep Peter Sunde
+
+If Flattr is often seen as a simple anecdotal tool, it is part of something bigger, a complete shake-up of the way we perceive money or consumption. The ability to pay a Free Price, instead of being coerced into a fixed price, deeply modifies our perception of value. We understand more what and who we want to pay, we try to get rid of useless middlemen like we do any obsolete business model.
+
+=> /the-disruptive-free-price/ Free Price
+
+The established lobbies have been fighting this change since the start. No famous well-established artist from major labels ever signed up on Flattr or Patreon, despite money waiting for them! Flattr integration is even forbidden on any application on the App Store.
+
+But, in the long term, that doesn’t matter. With Bitcoin and technologies like Ethereum, you can build completely decentralized platforms. In my short story “The Blogger from Tomorrow“, I explained how such a platform could basically make any formal organization, any company or any bank account useless! Not to mention how it could change our democracy.
+
+=> https://www.ethereum.org/ Ethereum
+=> /series/the-blogger-from-tomorrow/ The Blogger from Tomorrow
+=> http://www.v-initiative.org/ our democracy
+
+The question is not whether such changes will happen or not. They already are, like the incredible way OpenWhisperSystems is handling its donations. You can’t stop the future. The real question is “how to handle the change gracefully”? And that’s why people like Peter Sunde are essential to our society. While The Pirate Bay exposed a flaw in the system, Flattr was an answer. Or at least the start of one. Problem. Solution. A true Pirate spirit.
+
+=> https://whispersystems.org/blog/bithub/ OpenWhisperSystems
+
+Any honest man can understand how people like Peter Sunde are good for society. But we are not dealing with honesty. We are dealing with selfish minds corrupted by power. Minds who are ready to do anything to keep their power. Minds who will try to block every possible road to a better world.
+
+Fortunately, we don’t have to wait for them. Because, where we are going, we don’t need roads.
+
+Published on Falkvinge.net
+
+=> https://falkvinge.net/2014/06/18/flattr-and-bitcoin-paves-the-way-to-a-roadless-society/ Falkvinge.net

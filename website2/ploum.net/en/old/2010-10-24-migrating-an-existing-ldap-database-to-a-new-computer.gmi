@@ -1,0 +1,39 @@
+# Migrating an existing LDAP database to a new computer
+
+I recently moved the Fritalk platform from a old server (Ubuntu 10.04, upgraded to every Ubuntu release since 7.10) to a new, fresh, powerful engine running on Ubuntu 10.10.
+
+=> http://fritalk.com/post/2010/10/24/Nouveau-serveur-pour-Fritalk moved
+=> http://fritalk.com Fritalk
+
+The hardest part of the migration was, without any doubt, the LDAP part. There’s nearly no documentation so here’s a little howto.
+
+First, you have to know that LDAP contains two differents layers. The first one is the « schema », which describes how your data will be put in your LDAP. The second layer are the data themselves. (The reason why LDAP cannot act like MySQL with everything in one place escapes my understanding).
+
+In the good old days, it was rather easy. The schema were a big slapd.conf file. To make it dynamic, the slapd project switched to an slapd.d folder approach. This approach makes things very hard to understand and is nearly not documented at all !
+
+#### Step 1 : dump your current content
+
+No, you can’t have a slapdump command. Why ? It would be too easy. So do the following :
+
+1. sudo /etc/init.d/slapd stop
+2. sudo slapcat -l /root/ldapdump.raw
+3. sudo egrep -v ‘^entryCSN:’ < /root/ldapdump.raw > /root/ldapdump
+
+The .raw file is not importable. Your real backup is then the ldapdump file.
+
+#### Step 2 : Create your schema on your new server
+
+Simply copying the slapd.d folder was not working for me. Fortunatly, I still had the old slapd.conf file and my schema didn’t change since then. How do you do if you don’t have the slapd.conf file ? I’ve no idea but I’m really interested by the answer.
+
+So, assuming you still have the old slapd.conf file :
+
+1. sudo mkdir /etc/ldap/slapd.d
+2. sudo slaptest -f slapd.conf -F slapd.d
+3. sudo chown -R openldap:openldap slapd.d
+
+#### Step 3 : import your datas
+
+1. sudo slapadd -l /root/ldapdump
+2. sudo chown openldap:openldap /var/lib/ldap/*
+
+Voilà. sudo /etc/init.d/slapd start and it should work. Hope it was useful.

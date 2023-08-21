@@ -1,0 +1,90 @@
+# The aristocratic desktop (part 1)
+
+Part 1 : Introduction
+Part 2 : Home is Desktop
+Part 3 : There’s no tray icon in GNOME! 
+Part 4 : Kill The Double Click
+
+=> /201-the-aristocratic-desktop-part-2-home-is-desktop Part 2 : Home is Desktop
+=> /219-the-aristocratic-desktop-part-3-there-s-no-tray-icon-in-gnome Part 3 : There’s no tray icon in GNOME!
+=> /kill-double-click Part 4 : Kill The Double Click
+
+### The terrific world of computers
+
+Geeks like me are used to compare operating systems and desktop environments, discussing the benefits of one over the others. But, most than often, we loose the big picture and forget about the users.
+
+I mean : « the real-life users », those who cannot even grasp the basic concepts and who use a computer because they have no choice. Some geeks would say that « it’s good for them to learn » but I really disagree. Everyday I see very bright people who need to have their emails printed out on hard paper so they can read them or who cannot understand the difference between the « minimize » and the « close » button on a window.
+
+=> ../files/old/falaise.jpg Falaise
+It seems so hard
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=5656 
+
+It is real : most users are simply lost in a terrific world where newspapers talk about « virus » and « hackers » all the time. They are even afraid to sit in front of their own computer ! If something popup on the screen, they panic and loose all common sense. « Do you want to save this file ? Yes or no ? » and they scream : « What do I do ? What do I have to do ? Please tell me ! I’m afraid that, if I click on the bad button, the computer will explode »[1].
+
+#### Notes
+
+[1] Then, they simply close the message using the little cross so the computer make the decision for them. By observing a normal user, you discover that 99% of the errors are simply not needed.
+
+### Less does not sell
+
+=> ../files/old/feuilles.jpg Feuilles
+It’s a hard job but we could imagine an user-friendly operating system. Currently, when a user do a mistake, the computer or the engineer tell him that he’s wrong and he should learn how do to it correctly. It takes its root so deeply in the engineering culture that, very often, the computer understand what you want and explain you how to do it in an error… instead of doing it ! « I understand that you want to enter your phone number and that you entered a dot between the groups of digits but I will only accept your phone number if you manually remove the dots, lazy looser ! ».
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=7813 
+
+Look at your car or at your drying machine. If they are new, chances are that they have a lot of buttons, of tiny screens everywhere, emitting some « beeps » nearly all of the time. If you are not a geek, chances are that you fought hard with it the first days and now you are using only the two or three buttons you know. If a child press some random button, you will observe a totally unexpected behaviour and blame the child : « Don’t touch this ! See, you broke the system ! ». But the only one to blame is, for sure, the engineer who designed it.
+
+If we would make a really user friendly system, we should listen to the users and watch them. And we should adapt the system to them.
+
+Unfortunately, it would also mean removing a lot of not very useful stuffs. It would mean putting just what is really needed in front of the user, so nearly nothing. And less do not sell. « Easier to use » is just one line in a product description while you could add a lot of lines like « extra feature to draw 3D graphics » and « including a semi-intelligent stochastic handling protocol ».
+
+=> ../files/old/marie.jpg Marie
+But, most of the time, free software don’t sell either. So why not make things easy ? Take the opportunities to make a really user-friendly system. We should target a typical newcomer to the computer world.
+
+=> http://commons.wikimedia.org/wiki/Image:Renate_K%C3%BCnast_20060915.jpg 
+
+Let me introduce you Marie. She’s 58 and she’s a very famous mathematician. She was using computers with punched cards when she was a teenager. Things change and she now has difficulties to adapt. Her email is checked by her assistant who print them so she can read. She often reply by phone because it’s easier. The university provides her with a new computer every year but if she turn it on, she receive a lot of warning and the IT department is all the time very angry at her because of « viruses ».
+
+=> ../files/old/jean.jpg Jean
+Another normal user is Jean. He’s 75 and has never used a computer before. He doesn’t even now the mouse paradigm. He was a brilliant biologist and he likes to read scientific books. He has bad eyes and his hand is shaking. His nephew is his sole family and will soon leave the country to work overseas. Jean want to use a computer to keep contact with him and receive picture of his nephew.
+
+=> http://commons.wikimedia.org/wiki/Image:Adolphe-Low-2005.jpg 
+
+Let’s make a deskop who will be simple, efficient, elegant, pure for Jean and Marie but without having to teach them a lot of concept. Let’s make an aristocratic desktop !
+
+### Changing our habits, step by step
+
+Well, I will not invent a whole new paradigm for computing. Nor will I show you a lot of fancy mockups. Just explain you a few options I use everyday.
+
+I’ve helped and I still help a lot of Jean and Marie, from 7 to 87. Some of them were using computers for 20 years, some of them were proud to tell me that the keyboard was nearly identical to their old typewriter. All of them were completely lost in front of a computer and most of them don’t want to learn, they want to use the tool.
+
+My first step was, for all of them, to install Ubuntu with the Gnome Desktop. In my experience, it’s the easier desktop to use by default. I only speak about « easy » so don’t start a troll with your favorite desktop please[1]. One thing I’m sure, anyway, is that Windows is completely unusable for any sane person who want to « use » its computer. So far, I believe I was right because for 100% of the people I helped, switching them to Ubuntu divided the problem rate by at least a factor 10.
+
+Still, there was some issues. And I discovered that some very basic concepts are harder to understand than I thought. Double-click, a window, a folder, the desktop, the taskbar, the trayicon. I also discovered that some users were using a computer for ten years without even understanding the minimize function for a window ! The only way to switch between a web page and a word processor was to close one and then opening the other. It was seen as normal !
+
+=> ../files/old/feuille.jpg Feuille
+Simple thing
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=5656 
+
+Sometime, they were asking me : « why is it like this and not like that ? » and I wasn’t able to answer. I discovered that changing a few options in the Gnome desktop helped them a lot. Then, I discovered that, even for me, it was easier to use. I will share that with you by writing a few posts, one about each option.
+
+You might not like them. You might fight against the idea that those option are useful. I met some really hard resistance when trying to convince hardcore computer users. But normal users were all delighted.
+
+Remember : it’s not about you, it’s not about your computer usage. It’s about having a sensible default. It’s about making stuff easy for your grand-mother. We all agree that Vim and Emacs are very useful and very efficient software (depending of your number of fingers) but nobody will every think about teaching one of them to your grand-father the day he discover his first keyboard !
+
+Part 1 : Introduction
+Part 2 : Home is Desktop
+Part 3 : There’s no tray icon in GNOME! 
+Part 4 : Kill The Double Click
+
+=> /201-the-aristocratic-desktop-part-2-home-is-desktop Part 2 : Home is Desktop
+=> /219-the-aristocratic-desktop-part-3-there-s-no-tray-icon-in-gnome Part 3 : There’s no tray icon in GNOME!
+=> /kill-double-click Part 4 : Kill The Double Click
+
+Disclaimer : Jean and Marie are fictive persons and the pictures were found on Wikimedia (clic on it for the source). Anyway, Jean and Marie are inspired by existing persons and all the facts described in this text are true and really happened.
+
+#### Notes
+
+[1] And I choosed Ubuntu because I’m more familiar with it. No need to defend your distribution, it’s a pure personnal choise

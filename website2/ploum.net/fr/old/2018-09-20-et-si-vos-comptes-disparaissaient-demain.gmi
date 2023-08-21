@@ -1,0 +1,54 @@
+# Et si vos comptes disparaissaient demain ?
+=> files/old/kev-seto-94686-unsplash.jpg
+
+## Petit rappel sur le danger des plateformes centralisées
+
+On a tendance à l’oublier mais, aujourd’hui, la plupart de nos interactions sur le net ont lieu à travers des plateformes centralisées. Cela signifie qu’une seule entité possède le pouvoir absolu sur ce qui se passe sur sa plateforme.
+
+C’est fort théorique jusqu’au jour où, sans raison apparente, votre compte est suspendu. Du jour au lendemain, tous vos contenus sont inaccessibles. Tous vos contacts sont injoignables (et vous êtes injoignables pour eux).
+
+C’est insupportable lorsque ça vous arrive à titre privé. Cela peut être tout bonnement la ruine si cela vous arrive à titre professionnel. Et ce n’est pas réservé qu’aux autres.
+
+Un ami s’est ainsi un jour réveillé pour constater que son compte Google était complètement suspendu. Il n’avait plus accès à ses emails personnels et semi-professionnels. Il n’avait plus accès à ses documents Google Drive, à son calendrier. Il n’avait plus accès à tous les services qui utilisent votre adresse Google pour se connecter. La plupart des apps de son téléphone ne fonctionnaient plus. Il était numériquement anéanti et n’avait absolument aucun recours. De plus, il était en voyage à l’autre bout du monde. Cela pourrait limite faire le scenario d’un film.
+
+Par chance, un de ses contacts travaillait chez Google et a réussi à débloquer la situation après quelques semaines mais sans aucune explication. Cela pourrait lui arriver encore demain. Cela pourrait vous arriver à vous. Faites l’expérience de vivre une semaine sans votre compte Google et vous comprendrez.
+
+Personnellement, je ne me sentais pas trop concerné car, si je suis encore partiellement chez Google, j’ai un compte payant avec mon propre nom de domaine. Celui-là, me disais-je, ne devrait jamais avoir de problème. Après tout, je suis un client payant.
+
+=> ../files/old/Screen-Shot-2018-09-20-at-00.15.44-1.png 
+Mais voilà que je découvre que mon profil Google+ a été suspendu. Si je peux toujours utiliser mes mails et mon calendrier, tous mes posts Google+ sont désormais inaccessibles. Heureusement que, depuis des années, je n’y postais plus activement et que j’avais copié sur mon blog tout ce que je trouvais important pour moi. Néanmoins, pour les 3000 personnes qui me suivent sur Google+, j’ai tout simplement cessé d’exister et ils ne le savent pas (merci de leur envoyer ce billet). Lorsque je collabore à un document sur Google Drive, ce n’est plus ma photo et le nom que j’ai choisi qui s’affichent. Je ne peux plus non plus commenter sur Youtube (pas que ça m’arrive).
+
+Bref, si cette suppression de profil n’est pas dramatique pour moi, elle sert quand même de piqûre de rappel. Sur Twitter, j’ai vécu un incident similaire lorsque j’ai décidé de tester le modèle publicitaire en payant pour promouvoir les aventures d’Aristide, mon livre pour enfant (que vous pouvez encore commander durant quelques jours). Après quelques impressions, ma campagne a été bloquée et j’ai été averti que ma publicité ne respectait pas les règles de Twitter (un livre pour enfants, imaginez un peu le scandale !). Chance, mon compte n’a pas été affecté par cette décision (cela m’aurait bien plus ennuyé que la suspension Google+) mais, encore une fois, on n’est pas passé loin.
+
+=> https://www.ulule.com/aristide-lapin-cosmonaute/ que vous pouvez encore commander durant quelques jours
+
+=> ../files/old/Screen-Shot-2018-08-23-at-22.30.58.png 
+Même histoire sur Reddit où, là, mon compte a été “shadow banned”. Cela veut dire que je ne m’en rendais pas compte mais tout ce que je postais était invisible. Je m’étonnais de n’avoir aucune réponse à mes commentaires et c’est plusieurs contacts qui m’ont confirmé ne pas voir ce que je postais. Un modérateur anonyme a décidé, de manière irrévocable, que je ne convenais pas à Reddit et je n’en savais rien.
+
+Sur Facebook, les histoires de ce genre sont nombreuses même si je n’en ai pas fait l’expérience personnellement. Sur Medium, le projet Liberapay a également connu ce genre d’aventure car, comme toute plateforme centralisée, Medium s’arroge le droit de décider ce qui est publiable ou non sur sa plateforme.
+
+=> https://medium.com/@liberapay le projet Liberapay
+=> /no-proprietary-service.html Medium s’arroge le droit de décider
+
+Dans chacun des cas, vous remarquez qu’il n’y a aucune infraction clairement identifiée et qu’il n’y a aucun recours. Parfois il est possible de demander de réexaminer la situation mais la discussion n’est généralement pas possible, tout est automatique.
+
+Mais alors, que faire ?
+
+Et bien c’est la raison pour laquelle je vous recommande chaudement de me suivre également sur Mastodon, un réseau social décentralisé. Je ne possède pas ma propre instance mais j’ai choisi de créer mon compte sur mamot.fr qui est mis en place par La Quadrature du Net. J’ai la conviction qu’en cas de problème ou de litige, j’aurai face à moi un interlocuteur humain qui partage plus ou moins ma sensibilité.
+
+=> https://mamot.fr/@ploum sur Mastodon
+=> /mastodon-le-premier-reseau-social-veritablement-social/ un réseau social décentralisé
+=> https://www.laquadrature.net La Quadrature du Net
+
+Bien sûr, la solution n’est pas parfaite. Si votre instance Mastodon disparait, vous perdrez également tout. C’est la raison pour laquelle beaucoup de mastonautes ont désormais plusieurs comptes. J’avoue que, dans ce cas-ci, je fais une confiance aveugle aux capacités techniques de La Quadrature du Net. Mais, à choisir, je préfère perdre un compte suite à un problème technique que suite à une décision politique inique et indiscutable.
+
+En attendant une solution parfaite, il est important de se rappeler constamment que nous offrons du contenu aux plateformes et qu’elles en font ce qu’elles veulent ou peuvent. Ne perdez donc pas trop d’énergie à faire de grandes tartines, à travailler vos textes là-bas. Gardez à l’esprit que tous vos comptes, vos écrits, vos données, vos contacts peuvent disparaitre demain. Prévoyez des solutions de rechange, soyez résilients.
+
+C’est la raison pour laquelle ce blog reste, depuis 14 ans, une constante de ma présence en ligne, mon seul historique officiel et unique. Il a déjà une longévité plus grande que la plupart des services web et j’espère même qu’il me survivra.
+
+PS: Sans explication, mon compte Google+ semble être de nouveau actif. Mais jusqu’à quand ?
+
+Photo by Kev Seto on Unsplash
+
+=> https://unsplash.com/photos/Jv0TBnjzYNM?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Kev Seto
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

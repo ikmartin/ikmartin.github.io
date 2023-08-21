@@ -1,0 +1,284 @@
+# The signals and threads flying circus
+
+Disclaimer : if you don’t program in python and don’t know what a thread is, you probably want to skip this post as this is highly technically geekish loghorea which is not funny or even understandable in a remotely perverse way. Knowing some Flying Circus episodes might also help.
+
+Say that you have two thread in your python application. One is « TV_speaker » and the other is « knight ». Those two threads live in parallel their own live and all is good. But sometimes you want the « TV_speaker » to stop. In order to do that, you will ask the knight to throw a chicken at him. And the first thing that comes to mind is using a « signal ».
+
+You cant to call knight.send(« chicken ») and that, on the other side, tv_speaker.connect(« chicken ») handles things correctly.
+
+Problem : using google, you find that, since 2.6, the python documentation is barely readable and unusable.
+
+=> http://docs.python.org/library/signal.html the python documentation
+
+Hopefully, you find your way back to the good old and well organized 2.5 documentation only to discover that those signals are UNIX signals and have nothing in common with signals you can use in a GTK application.
+
+=> http://www.python.org/doc/2.5.2/lib/module-signal.html 2.5 documentation
+
+Worse : those signals don’t work with threads !
+
+You seat down, cry and wait that a giant foot quickly stops your pain.
+
+=> ../files/old/monty_python_foot.png Monty Foot
+
+##### Nobody expects the GObject introspection !
+
+There’s hope : GObject signals are just what you want. It’s really simple : your signal sender (the knight) should be a subclass of gobject.GObject and that’s nearly all. Well, you also have to define your signal with some obscure GObject terminology but copy/paste works well.
+
+```
+class knight(gobject.GObject):
+``` ```
+    <strong>gsignals</strong> = { 'chicken': (gobject.SIGNAL_RUN_FIRST,\ 
+``` ```
+                                 gobject.TYPE_NONE,\ 
+``` ```
+                                 (str,)) }
+``` ```
+    def <strong>init</strong>(self) :
+``` ```
+        gobject.GObject.<strong>init</strong>(self)
+``` ```
+        #Do your initialization here
+``` ```
+        a = None
+```
+
+The definition of the signal is better explained here. The latest argument is the one of interest : it’s the payload of your signal. It means hear that we will pass a string as an extra argument.
+
+=> http://www.sicem.biz/personal/lgs/docs/gobject-python/gobject-tutorial.html better explained here
+
+Now write the tv_speaker :
+
+```
+class tv_speaker : 
+``` ```
+    def <strong>init</strong>(self,emiter) : 
+``` ```
+        self.emiter = emiter 
+``` ```
+        self.emiter.connect("chicken",self.do) 
+``` ```
+
+``` ```
+    def do(self,param1,param2) : 
+``` ```
+        print "receiving the chicken on the head : my brain hurt"
+``` ```
+        time.sleep(2)
+``` ```
+        print "And now for something completely %s" %param2 
+```
+
+As you can see, the receiver must have a reference to the emiter in order to catch the signal. We pass it in the constructor.
+
+```
+
+```
+
+Now build the knight, the tv_speaker and send two chicken :
+
+```
+k = knight() 
+``` ```
+tv = tv_speaker(k) 
+``` ```
+k.emit("chicken","different") 
+``` ```
+k.emit("chicken","random") 
+```
+
+As you can see, the « do » function is called for each signal, one after the other. This works even if the knight is in another thread !
+
+```
+
+```
+
+=> ../files/old/signal/signal1.py Download the code for this example
+
+##### Intermediate class
+
+And what if you don’t have a direct reference to the sender ? Your knight is not able to throw the chicken itself. Instead, Chapman will take the chicken from the knight and throw it at the tv_speaker.
+
+All you have to do is to implement the « connect » method in chapman.
+
+```
+class chapman: 
+``` ```
+    def <strong>init</strong>(self,emiter) : 
+``` ```
+        self.emiter = emiter 
+``` ```
+
+``` ```
+    def connect(self,signal,func) : 
+``` ```
+        self.emiter.connect(signal,func) 
+```
+
+That’s all ! If knight has a reference to chapman, chapman will transmit the signal for him :
+
+```
+k = knight() 
+``` ```
+c = chapman(k) 
+``` ```
+tv = tv_speaker(c) 
+``` ```
+k.emit("chicken","different") 
+``` ```
+k.emit("chicken","random") 
+```
+
+Your output is sequential, illustrating that each signal is handled one after another :
+
+```
+receiving the chicken on the head : my brain hurt 
+``` ```
+And now for something completely different 
+``` ```
+receiving the chicken on the head : my brain hurt 
+``` ```
+And now for something completely random 
+```
+
+=> ../files/old/signal/signal2.py Download the code for this example
+
+##### And now with threads
+
+But what if you want to launch an action as soon as the signal is received without waiting for its result ? That’s when you want to use threads.
+
+Modify the do() function of the tv_speaker :
+
+```
+    def do(self,param1,param2) : 
+``` ```
+        def reallydo(param) : 
+``` ```
+            print "receiving the chicken on the head : my brain hurt" 
+``` ```
+            time.sleep(2) 
+``` ```
+            print "And now for something completely %s" %param 
+``` ```
+        t = threading.Thread(target=reallydo,args=[param2]) 
+``` ```
+        t.start() 
+```
+
+Now, the output is the following, illustrating that signals are handled in parallel :
+
+```
+receiving the chicken on the head : my brain hurt 
+``` ```
+receiving the chicken on the head : my brain hurt 
+``` ```
+And now for something completely random 
+``` ```
+And now for something completely different 
+```
+
+Warning : if your reallydo() function touch some GTK widget, you will experience crashes. That’s because GTK is not thread safe. This problem is easy to solve : use GObject thread instead. Replace the two threading lines by :
+
+=> http://faq.pygtk.org/index.py?req=show&amp;file=faq20.001.htp GObject thread instead
+
+```
+gobject.idle_add(reallydo,param2)
+```
+
+You also have to tell GTK that you will use threads. So, just before gtk.main(), add :
+
+```
+gobject.threads_init()
+```
+
+That’s it !
+
+=> ../files/old/signal/signal3.py Download the code for this example
+
+##### But if I receive multiple signals at the same time, I want to respond only once
+
+That’s faire enough and, for that, we will use a lock. If the lock is already acquired by another thread, we will do nothing.
+
+=> http://www.python.org/doc/2.5.2/lib/lock-objects.html a lock
+
+```
+    def do(self,param1,param2) : 
+``` ```
+        def reallydo(param) : 
+``` ```
+            print "receiving the chicken on the head : my brain hurt" 
+``` ```
+            time.sleep(2) 
+``` ```
+            print "And now for something completely %s" %param 
+``` ```
+            self.lock.release() 
+``` ```
+        if self.lock.acquire(False) : 
+``` ```
+            t = threading.Thread(target=reallydo,args=[param2]) 
+``` ```
+            t.start() 
+``` ```
+        else : 
+``` ```
+            print "We don't need you today"  
+```
+
+Don’t forget to release your lock, specially if you are catching error. You can release the lock in a « finally » statement.
+
+=> http://ibiblio.org/g2swap/byteofpython/read/try-finally.html « finally » statement
+
+Also, don’t forget to make your lock module wide or application wide, depending on your need. It our example, the lock was instantiated in the tv_speaker.init() but if you have multiple tv_speaker, you might want to create the lock before and pass it as a constructor argument when instantiating the object.
+
+We could also choose to wait for the lock to be released by simply calling « self.lock.acquire() » without a the « if » statement.
+
+=> ../files/old/signal/signal4.py Download the code for this example
+
+##### I want to respond to signals only when it’s needed. Not less, not more.
+
+=> ../files/old/knight_with_chicken.jpg Knight With Chicken
+ With the lock, we avoid unnecessary responses but, unfortunately we can lose information in a specific corner case : if the signal is received only a tiny fraction of second before we release the lock. It could mean that something has changed after we did our work but before we released the lock.
+
+What we should do is the following : if any number of signals were received when the lock was acquired, we run the response one more time. It ensure that we don’t miss anything and will not run too much responses (in the worst case, we will just run it once too much).
+
+There’s plenty of way of achieving that and I advise you to read of RLock, Semaphore and stuffs like that. I will give you my solution that I found simple, elegant and working well enough for my needs : protecting the lock by another lock that I call « lock_lock ».
+
+When receiving the signal, the tv_speaker will first try to acquire lock_lock. If he didn’t succeed, nothing happens. If it succeed, it will call a new thread that will acquire the main_lock, waiting for it if needed, and then immediately releases the lock_lock. If another thread is already running, it means that main_lock will not be available and our thread will wait until its freed, keeping the lock_lock acquired all the time. All threads that will come afterwards will not do anything because they will not obtain lock_lock
+
+```
+    def do(self,param1,param2) : 
+``` ```
+        def reallydo(param) : 
+``` ```
+            self.main_lock.acquire() 
+``` ```
+            self.lock_lock.release() 
+``` ```
+            print "receiving the chicken on the head : my brain hurt" 
+``` ```
+            time.sleep(2) 
+``` ```
+            print "And now for something completely %s" %param 
+``` ```
+            self.main_lock.release() 
+``` ```
+        if self.lock_lock.acquire(False) : 
+``` ```
+            t = threading.Thread(target=reallydo,args=[param2]) 
+``` ```
+            t.start() 
+``` ```
+        else : 
+``` ```
+            print "We don't need you today" 
+```
+
+=> ../files/old/signal/signal5.py Download the code for this example
+
+##### Conclusion
+
+=> ../files/old/spanish-inquisition.jpg Nobody expect them..
+
+Never forget, when entering the threads world, that you lose predictability. Your software might works well hundreds of times and then, suddenly, erase all your data, rape your cat and kill your dogs. Avoid threads as much as possible and when you use, be sure to know what you are doing.
+
+Happy coding !

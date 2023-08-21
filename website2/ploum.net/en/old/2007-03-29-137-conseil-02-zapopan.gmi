@@ -1,0 +1,39 @@
+# Conseil 0.2 « Zapopan »
+
+=> /gallery/life-of-ploum/2007-zapopan/100_1987_1600#gallery 
+=> ../files/old/conseil/zapopan.jpg Zapopan
+
+I’m happy to announce you the release 0.2 « Zapopan » of Conseil. Conseil is a bug reader and triager for the GNOME desktop. Currently, Launchpad is the only supported bug tracking system.
+
+=> http://conseil.fritalk.com/ Conseil
+
+This release was made possible thanks to the friendship and the huge help of Étienne « We can work together even if we don’t agree » Bersac. Thanks Étienne.
+
+=> http://www.gnome.org/projects/gnome-scan/index Étienne « We can work together even if we don’t agree » Bersac
+
+With release 0.2, you can use Conseil as a bug triager for Launchpad. You can search, bookmark, post a comment and open bugs in your web browser.
+
+=> /gallery/life-of-ploum/2007-zapopan/100_1997_1600#gallery 
+
+The next step will be to implement multi-BTS support then the ability to modify a bug and to do advanced search. We are still thinking about that.
+
+=> http://conseil.fritalk.com/wiki/AdvancedSearch thinking about that
+
+Another reccurent question : must Conseil be able to post bugs ? There are already tools to post bugs on Launchpad or bugzilla, but each one is highly specialized. Would it be useful to have a generic bug poster in Conseil ? We don’t know.
+
+=> http://conseil.fritalk.com/wiki/PostingBug We don’t know
+
+Any contribution (code, wiki help, artwork or documentation) is more than welcome ! We are specially looking for a Tango icon and a logo (why not a prettier website ?).
+
+=> http://lists.freedesktop.org/archives/tango-artists/2007-March/001123.html Tango icon
+
+If you have a problem with Conseil 0.2, report a bug and describe precisely how to reproduce it. You can of course also report feature requests or ideas.
+
+=> http://conseil.fritalk.com/newticket report a bug
+
+Conseil website – 0.2 download – Release notes – Known bugs
+
+=> http://conseil.fritalk.com/ Conseil website
+=> http://conseil.fritalk.com/wiki/DownloadInstall 0.2 download
+=> http://conseil.fritalk.com/browser/README?rev=73 Release notes
+=> http://conseil.fritalk.com/report/1 Known bugs

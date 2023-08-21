@@ -1,0 +1,67 @@
+# The Invisible Captcha Mechanism (ICM) against Form Spam
+
+Today’s web suffers of a terrible plague of spam. Each form is a way for spammers to send their content : blog comments, forums, wiki, … I call this « Form Spam ».
+
+To fight this, most of webmasters out there use a « captcha » : a picture with text inside that people must copy. It’s annoying, it’s boring, it’s hard to read (see some examples) and it’s the worst thing ever for people with bad sight. Worst of all : some robots can now read them !
+
+=> /105-lutter-contre-le-spam-dans-dotclear some examples
+
+For almost a year now, I’ve been using a hand-made solution called « Invisible Captha Mechanism » that works perfectly : I have approximately one spam/month in my comments. (I had more than 200/day before ! I also solved completely the trackbacks spam problem) No captcha, no known false positive, no annoyance and easy to implement. For me, it was perfect but I was just to lazy to document it for you before today (and you know how much I like to fight spam).
+
+=> /89-the-ploum-s-ultimate-anti-spam-solution how much I like to fight spam
+
+##### How do they spam your website ?
+
+I discovered that there are two types of form spambots. Let’s call them Dumb and Dumber. Dumber will simply browse the web, looking for forms. If it finds one, it fill it with its crap then submit it.
+
+The easiest way to get rid of Dumber is to implement an invisible field in your form. You can easily hide this field with the CSS (bots don’t read the CSS). The invisible field has an initial value. If this value is changed, then we have a spammer and the content of the form is discarded.
+
+I thought that it was enough. Unfortunatly, it was enough only for a few weeks. I discovered that changing the name of the regular fields and the name of the invisible one will save me a few more day. It’s because all bots are not « Dumber ». Some of them are actually just « Dumb ».
+
+By looking carefully at the logs I discovered that I was firstly spammed by a human ! Yes, a real human. He would browse the site and send a comment just like a regular reader. The « Dumb » bot will simply copy the same behaviour. As a consequence, unlike Dumber, Dumb will not trigger the invisible field.
+
+##### ICM : how it works ?
+
+You probably guessed it : ICM will reuse the principle of invisible field but, as a captcha, will regularly change its name. That’s why I call it « Invisible Captcha ».
+
+Of course, in order to be effective, you also have to change the name of all fields in your form. That’s not a big deal. The problem is « how will I recognise good names from bad names if I change them all the time » ?
+
+To answer that, one would probably keep somewhere the current « good fields » and the current « bad fields ». The other problem is that you cannot change too often : if an user load your page then post a comment after one hour, if the fields have changed, he would be considered as a spam !
+
+##### ICM : a basic implementation
+
+Because I’m very lazy, I did a very basic implementation of that idea in PHP. As it works perfectly for now, I didn’t see the point to make a better one 😉
+
+First of all, we will generate the name of one good and one bad field. Those names will simply be the obfuscated date (Year, Month, Week). This will allow the name to change automatically every week !
+
+```
+ $true_field='blabla'.'97'.date("YmW").'5'; $false_field='blabla'.'6'.date("Y").7.date("mW").'3'; 
+```
+
+As you can see, the names will change every week. It’s also very easy to recognise : the true one always ends with « 5 », the false one with « 3 ». It’s dumb but it works. Then, the form looks like this :
+
+```
+ <p class="invisible"><label for="<? echo($false_field); ?>">This field must keep his initial value: </label> <input name="<? echo($false_field); ?>" id="<? echo($false_field); ?>" type="text" size="30" maxlength="255" value="<?php dcCommentFormValue('ze_nom'); ?>" /></p> <p class="field"><label for="<? echo($true_field); ?>">Name :</label> <input name="<? echo($true_field); ?>" id="<? echo($true_field); ?>" type="text" size="30" maxlength="255" value="<?php dcCommentFormValue('spam_nom'); ?>" /> </p> <p class="invisible"><label for="site">This field must keep his initial value: </label> <input name="site" id="site" value="http://" /></p> <p class="field"><label for="spam_site">Website :</label> <input name="spam_site" id="spam_site" type="text" size="30" maxlength="255" value="<?php dcCommentFormValue('spam_site'); ?>" /> </p> <p class="field"><label for="c_content">Commentaire :</label> <textarea name="c_content" id="c_content" cols="35" rows="7"><?php  dcCommentFormValue('c_content'); ?></textarea> </p> 
+```
+
+As you can see, the first field of all is my spam trap. I don’t know if it’s important to put it first but it seems to work. I also added another simple invisible field called « site ». The trick here is that the normal field is called « spam_site » and the false one is called « site ». Simple obfuscation, more funny than useful but I still keep it because I will not change something that works. Of course, the fields are invisible thanks to the CSS (you can make them invisible or, better, put them 2billion pixels above the page). The label is a reminder for the people who browse the site without CSS.
+
+Then, I just have to discard all comments which contain something in an IC.
+
+```
+ if (($_POST['site']=="http://") && ($_POST[$false_field]=="")) {  post the comment... } 
+```
+
+Last thing : as any normal field, IC are also saved in the cookies. I did this because I thought it might be a way to identify which fields were important.
+
+##### ICM : ameliorations
+
+Of course, for now my simple obfuscation works but it might not be enough if this method becomes widespread. The solution is obvious : don’t simply obfuscate the date but generate real random strings that you keep somewhere. You can add multiple IC in your forms and change randomly the order of the fields.
+
+Another problem of my implementation is if someone request the page Sunday at 11:59PM and post at 00:01. I’m not sure of what would happen in this case. The solution is pretty straightforward : keep the previous random string in memory and accept both the old and the new one for a short amount of time.
+
+##### Conclusion
+
+Voilà ! It’s done. I have no idea whether or not this solution will work for you. As I repeat, it works incredibly well for me. And nobody never complained about a real comment that was rejected. I hope it will be the same for you so you can get rid of those awful captchas.
+
+=> http://digg.com/programming/Invisible_Captcha_Mechanism_Fight_the_webform_spam Digg this

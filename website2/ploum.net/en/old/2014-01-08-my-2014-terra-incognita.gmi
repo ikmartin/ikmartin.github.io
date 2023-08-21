@@ -1,0 +1,33 @@
+# My 2014 Terra Incognita
+=> files/old/outdoor.jpg
+
+2014 just started and already proved to be a challenging year. First thing, I will have to find or create a new job. After 3 years having the luck of managing open source projects at Lanedo, I’m leaving the company. This is an opportunity for me to try something new, to get out of my comfort zone. How? I don’t know yet. Perhaps by launching my own business if I found the right partners. I’m also very attracted by the startups and/or mobile world.
+
+=> /joining-lanedo/ After 3 years
+=> http://www.lanedo.com/2013/why-software-project-takes-time/ managing open source projects
+
+In 2013, I’ve spent more time writing than ever, completing a NanoWrimo and liking it. I’ve also written a lot for my blog and successfully managed to earn money (not much but it is symbolic) by applying a « free price » to my writing. In 2014, I plan to expand that by writing more and, if offered any opportunities, taking part in artistic projects. If you need a writer, don’t hesitate to contact me.
+
+=> /the-disruptive-free-price/ free price
+=> /about-myself/ to contact me
+
+While this sounds great, it also means I need to acknowledge some choices. Five years after starting the work on GTG, I will not be involved any more in its development. I’ve not been very active lately any way but I want to make it official. I trust Parin Porecha to become a great project maintainer.
+
+=> /206-getting-things-gnome-01-just-5-minutes-more/ starting the work on GTG
+=> https://launchpad.net/~parinporecha Parin
+
+During GUADEC this year, I’ve discussed with great people and they made me realize that, subconsciously, I may not be motivated by GNOME any more. And I have to admit that I was not able to fulfil my latest engagements. In those last months, I came to the very harsh conclusion that I’m not a GNOME community member any more. I’m more and more interested by shiny things like FirefoxOS, Ubuntu Touch or CyanogenMod. Because, yes, I’m back on Ubuntu.
+
+=> https://wiki.gnome.org/GUADEC/2013/BusinessBOF/LionelsNotes fulfil my latest engagements
+=> /so-long-ubuntu/ I’m back on Ubuntu
+
+Goodbye Lanedo. Goodbye GNOME. Goodbye GTG. Thank you everyone in those community for the wonderful ride. Thank you for giving me pride and accepting me and my rants. Thank you for all the work you did and continue doing.
+
+Now welcome… welcome what? I still have no idea. If you are looking for a partner or an employee which is a computer engineer who became a project/team manager, have a look at my Linkedin, drop me a mail and let’s have a chat. I’m currently holding my doors open to everything, looking to dive in an exciting Terra Incognita.
+
+=> /no-proprietary-service.html my Linkedin
+=> /about-myself/ drop me a mail
+
+Picture by Linh Nguyen.
+
+=> http://ngkhanhlinh.dunked.com/ Linh Nguyen

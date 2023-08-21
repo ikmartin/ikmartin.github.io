@@ -1,0 +1,114 @@
+# Le blogueur venu de Demain (première partie)
+=> files/old/villefranche.jpg
+
+English version.
+
+=> /the-blogger-from-tomorrow-part-i/ English version
+
+Le soleil de fin d’après-midi brille sur le bord de mer de cette charmante station balnéaire méditerranéenne. Alors que j’arrive en vue du bar où nous avons convenu de nous rencontrer, je le reconnais immédiatement, assis en terrasse en train de siroter un cocktail. Si j’ai déjà vu des photos de lui, j’ai été en grande partie aidé par son uniforme de blogueur typique: un t-shirt faisant référence à un jeu vidéo du siècle passé, un jeans usé et des tongs. Il n’a pas de sac mais je devine un téléphone dans sa poche. Son air concentré, ses lunettes sur le nez, les deux bracelets claviers à chaque poignet et les imperceptibles mouvements de ses doigts tapotant la table m’indiquent qu’il est en train d’écrire un billet.
+
+Alors que je m’approche, il sourit et m’invite à prendre un siège. Dans ce geste de politesse devenu courant, il remonte ses lunettes sur le sommet de son crâne, indiquant par là qu’il se consacre tout entier à notre conversation. Ce faisant, je l’entends murmurer « draft ». Je ne m’étais pas trompé, il était bien en train de rédiger un article.
+
+Je touche ostensiblement mes lunettes de l’index droit pour lui signaler que je suis en train de filmer. Comme je n’ai utilisé qu’un seul doigt, il comprend qu’il n’y a pas de retransmission en direct et qu’à priori la vidéo sera essentiellement pour mon usage personnel. Il acquiesce d’un sourire.
+
+Bonjour Max. Heureux de te rencontrer. Tu es ici en vacances ?
+
+Des vacances ? (il rit) Et bien c’est un concept que je ne comprends plus très bien. Je suis en vacances perpétuelles mais je travaille 365 jours par an. Je suppose que que le mot « vacances » ne s’applique plus vraiment à moi.
+
+Peux-tu te présenter pour nos lecteurs ? Quel est ton parcours ?
+
+Dans une vie antérieure, j’étais un ingénieur en informatique, un programmeur. Je sais que ça me fait paraître pour un dinosaure auprès des plus jeunes mais je faisais du J2EE dans une banque. J’ai aussi travaillé un peu comme journaliste. Il y a quinze ans, j’ai démarré un blog, « Le blog de Max », car c’était la mode parmi les geeks. Certains le voyaient comme le futur du journalisme mais, personnellement, je n’avais pas d’objectif particulier. J’ai créé un blog, c’est tout.
+
+=> /ploum-en-j2ee J2EE
+=> /162-toi-aussi-deviens-un-veritable-blogueur-web-20 c’était la mode parmi les geeks
+
+Ce blog a commencé à avoir du succès et à attirer des lecteurs. Grâce à la publicité, j’ai pu rentabiliser le coût de mon hébergement puis, petit à petit, me créer un véritable salaire. J’ai quitté mon travail et je me suis lancé comme blogueur professionnel.
+
+Tu considérais sans doute cela comme une réussite. Cela t’a-t-il rendu heureux ?
+
+Au début, j’étais très fier, bien entendu. Mais j’ai réalisé que j’étais forcé de mettre mon blog à jour de plus en plus fréquemment. La compétition était très dure et il y avait une véritable course à l’audience. Auparavant, je ne m’inquiétais pas trop du nombre de visiteurs. Étant devenu un professionnel, je n’avais plus le choix. Ce que j’avais dans mon frigo à la fin du mois était directement proportionnel au nombre de lecteurs.
+
+J’ai alors commencé à écrire des articles peu intéressants mais qui faisaient du chiffre : des potins de stars, du sensationnalisme, ce genre de choses.
+
+J’ai aussi reçu des contrats pour parler de certains produits. Bien que ce soit de l’argent facile, j’ai découvert que je perdais mon indépendance. Ce n’était plus une passion mais un travail comme un autre. Je bâclais un post, je le postais sur Reddit et je demandais à mes followers sur Twitter de voter pour le billet. Puis, je modérais les commentaires sans vraiment les lire.
+
+Parfois, je recevais des offres pour écrire un billet sur un produit où il était explicitement stipulé que je ne pouvais pas informer mes lecteurs du caractère commercial.
+
+Comment as-tu répondu à ces offres ?
+
+Je pense que chaque homme à un prix. Si on m’avait offert un million, j’aurais accepté sans hésiter. Mon prix est donc inférieur à un million mais, heureusement, les offres ne l’ont jamais atteint. Par ailleurs, ma crédibilité auprès des lecteurs s’essoufflait et ce genre de choses ne pouvaient que me faire du tort.
+
+De manière amusante, c’est lorsque mon audience a été la plus grande que j’ai compris qu’il y avait un problème.
+
+Que veux-tu dire ?
+
+Beaucoup de gens se basent sur la valeur absolue. Mon audience était impressionnante et ne faisait que croître. J’aurais pu m’en contenter.
+
+Mais, personnellement, je me fiais à d’autres indicateurs et à mon instinct. Mes plus fidèles lecteurs ne réagissaient plus dans les commentaires dont le niveau ortographique tendait vers le bas. Si on liait mes articles dans les forums génériques, ce n’était plus le cas sur les sites spécialisés ou dans les communautés à la pointe. Bref, j’étais en train de devenir grand-public.
+
+Est-ce un tort ? N’est-ce pas une bonne chose d’élargir son audience ?
+
+Pour moi, c’était un très mauvais signe. Lorsqu’on est respecté par une communauté précise, on se crée un capital de réputation. Vis-à-vis du grand public, ce capital est négligeable. Les gens partageaient mes articles par habitude, parce que mon nom était relativement connu. Mais, en quelques semaines, je pouvais tomber dans l’oubli total, un peu comme ces stars de télé-réalité.
+
+J’étais lu mais je n’étais plus respecté par personne. Personne ne disait plus: « Si Max en parle, c’est que c’est bien ». J’ai donc décidé de reconquérir cette confiance, de me recréer un public.
+
+Quelle a été ta stratégie ?
+
+Tout d’abord, du jour au lendemain, j’ai complètement supprimé la pub. J’ai également encouragé mes lecteurs à réfléchir au sens profond de la publicité et à installer AdBlock. J’ai toujours utilisé AdBlock mais, publiquement, je le critiquais ouvertement tout simplement parce que je gagnais de l’argent avec la publicité. Ce ne fut pas facile d’accepter que j’étais tout simplement un profiteur hypocrite. Faites ce que je dis, pas ce que je fais !
+
+=> /mais-qui-paie-la-publicite au sens profond de la publicité
+
+Financièrement, je n’avais pas trop d’idée. J’acceptais les dons par Paypal mais c’est un lecteur qui m’a parlé de Flattr. C’est également à cette époque que j’ai découvert le bitcoin, qui était bien moins connu qu’aujourd’hui.
+
+=> /si-vous-testiez-le-web-payant Flattr
+=> /futur-economie bitcoin
+
+Et tu t’y es retrouvé financièrement ?
+
+Non. Les premiers mois ont été durs. J’avais prévu le coup et mis de côté pour tenir un an. J’ai cependant été heureusement surpris de Flattr: un bon billet pouvait me rapporter 150-200€. Le plus surprenant étant qu’un bon billet peut continuer à rapporter durant plusieurs mois.
+
+C’est un incitant génial : au lieu d’essayer de faire de l’audience, j’essayais d’écrire des billets que mes lecteurs auraient envie de Flattrer. Quand un billet que je trouvais bon se retrouvait presque sans Flattrs, je me posais des questions. Bref, j’ai énormément appris, je pense que j’ai fait beaucoup de progrès.
+
+Paypal et bitcoins étaient eux anecdotiques. Faire un don régulier est trop ennuyeux avec ces systèmes.
+
+Histoire de survivre, je retirais mes gains Flattr principalement en bitcoins et j’achetais autant que je pouvais en ligne en utilisant cette monnaie. Cela me permettait de ne pas payer d’impôts. C’est certainement une forme de fraude mais Bitcoin n’étant pas reconnu comme une monnaie, cela reste une zone grise. Pour le législateur, je n’ai tout simplement jamais gagné d’argent. De plus, rien ne transite par un compte en France et n’est donc pas soumis aux lois françaises. Si les milliardaires ont la possibilité de ne pas payer d’impôts en déposant leur fortune en Suisse ou dans les Îles Caïmans, pourquoi devrais-je rougir de faire exactement la même chose mais à une toute petite échelle dans le seul but de remplir mon frigo ? Et pourquoi devrais-je me soumettre aux lois françaises plutôt que d’un autre pays? Cette année, j’ai passé plus de temps à l’étranger que dans le pays qui est arbitrairement celui marqué sur mon passeport !
+
+Au final, quelle était ta situation ?
+
+Selon les mois, je faisais entre 500€ et 2000€ sur Flattr. Cela parait beaucoup mais n’oublions pas que j’étais taxé sur ce qui arrivait sur mon compte en banque car tout ne s’achètait pas en bitcoins. Vivre à Paris avec ce qui restait n’était pas envisageable. Je grignotais sur mes réserves.
+
+J’ai découvert que c’était une réelle limitation lorsque le parlement a commencé à discuter d’interdire les smartglasses pour éviter que les gens soient filmés sans le savoir. À l’époque, il ne s’agissait que des Google glasses mais j’ai senti qu’une fois encore on exploitait la peur des gens pour bloquer l’innovation et tenter de se voiler la face.
+
+=> /le-monde-selon-google Google glasses
+
+J’ai écrit un billet à charge, qui a eu beaucoup de succès, et je suis devenu de facto le porte parole des « pro-lunettes ». J’ai voulu lancer un site dédié sur le sujet avec pétition en ligne, vidéos explicatives, etc. Et je me suis rendu compte que je n’avais pas le budget.
+
+Pour la première fois de ma carrière de blogueur, je ne pouvais pas lancer un projet que j’avais en tête pour faute de budget. Pourtant, le graphiste était un ami, je connaissais ceux qui faisaient les vidéos : j’avais juste besoin d’une centaine de bitcoins. Investissement que j’étais d’ailleurs presque sûr de récupérer en dons et en vente de t-shirt par après. Mais je ne pouvais pas lancer le projet.
+
+Pourtant, je me souviens de cette campagne. Quelle a été ta solution ?
+
+C’est à ce moment là que j’ai découvert le crowdfunding. Popularisé par Kickstarter et Kisskissbankbank, le principe est fort simple : on lance un projet avec le montant dont on a besoin. Les gens donnent selon leur choix. Si l’argent n’est par récolté au bout d’un temps déterminé, le projet est annulé et les donateurs récupèrent leur argent.
+
+=> http://www.kickstarter.com/ Kickstarter
+=> http://www.kisskissbankbank.com/ Kisskissbankbank
+
+Il s’agit donc en quelques sortes d’une donation a priori. Facile et sans risque. Les donateurs peuvent même donner dans la monnaie de leur choix qui est automatiquement convertie si nécessaire.
+
+Cette expérience m’a complètement ouvert les yeux sur les possibilités du crowdfunding.
+
+Quel parti en as-tu tiré ?
+
+Aucun dans l’immédiat. En effet, le crowdfunding s’adressait à des projets concrets d’une certaine ampleur qui nécessitait une préparation. Je me voyais mal créer un projet pour chaque billet que je pensais écrire sur mon blog.
+
+L’idée est juste resté dans un coin de mon cerveau jusqu’aux élections européennes.
+
+Le serveur nous interrompt un instant pour apporter ma commande. Je reste une seconde interloqué. Cet interview est en train de prendre une tournure que je n’avais pas soupçonnée. Pourquoi parler d’élections ? Quel est le rapport entre la politique et le financement d’un blog ? Où Max est-il en train de m’emmener ?
+
+Suite et fin dans la seconde partie. Photo par Mark Fischer.**
+
+=> /le-blogueur-venu-de-demain-seconde-partie la seconde partie
+=> http://www.flickr.com/photos/80854685@N08/8465319847 Mark Fischer
+
+English version.
+
+=> /the-blogger-from-tomorrow-part-i/ English version

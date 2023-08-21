@@ -1,0 +1,65 @@
+# Creating Against Consuming	
+
+I want to write more. I need to write more. It’s boiling inside me.
+
+But each time I turn on my computer to write, something very strange happens: I do everything but writing.
+
+I want to check if I received some messages. I want to check some random news. I want to reply to the messages in my inbox because they are now filling my brain given that I saw them. I want to share or react to the news I’ve seen. I want to upgrade my software. I want to tweak some configuration in my setup. When I did all of this, I check again for messages and for news.
+
+Going offline only partially solved the problem. Instead of checking random news, I started to play some good old games thanks to Scummvm and Dosbox. I started to write more code than text (resulting in Offpunk).
+
+## Consumer devices
+
+One of the main problems is that every single computer became a "consumer device". As the name implies, those devices are done for the purpose of "consuming". The industry wants us to consume more, our boss wants us to consume more ("more emails, more team chat, more meetings"), it makes sense that our devices are made to consume.
+
+Each year, screens get bigger and brighter while keyboards are tinier and less ergonomic. When Apple released its infamous "butterfly keyboard design", it was implied that people don’t need a real keyboard anymore. Around me, the number of people able to do everything with their phone while only using a true keyboard a couple of times a week is a testament to the fact that we, as a species, are not using keyboards anymore, that we are not expected to use one.
+
+Ears plugged, eyes glued to a screen, fingers slipping on a smooth piece of glass, we are living in a virtual world fully controlled by a handful of monopolies.
+
+Walk down the street and look at those humans wearing white piece of plastic in their ears and scrolling on their phone while walking towards you. What’s the difference between them and the humans farmed in the movie Matrix?
+
+Two big differences: the first is that our human still has to work and suffer to earn their food and warmth, unlike farmed humans in comfortable cocoons. The second difference is that the virtual world they experience in Matrix is vastly superior to the one which is currently sucking all our lives. We are happy with a few pixels, some sounds and absolutely no other touch feeling than some artificial vibration. We filled with artificial emotions but deprived from any sensual experience.
+
+Like the Matrix world, the consumer device is your boss. If you want to do anything with it, it will remind you that you have messages, that you have updates to do, that there are new ToS to accept, that it is in control of your life and not the opposite.
+
+
+## Experiencing life
+
+The opposite of consuming is experiencing. Experiencing is letting the material world build deep connections, deep memories inside your body. Experiencing means forgetting the past, forgetting the future, living in the present.
+
+It’s intense and not something we want to be permanent. But the sum of all our experiences is basically what we call "our life".
+
+I’m stunned to see that during major life events (like weddings, concerts, sports events), most people are fully disconnected, looking at their screen and taking pictures. Twenty years ago, we were poking fun at Japanese for taking pictures instead of enjoying things. I remember a neurology paper observing that taking a picture actually weakens your memory of an event. If this is true, we are filling some proprietary servers with pictures of our lives while losing the memories. 
+
+We are literally giving away our lives.
+
+## Devices for creators
+
+I have my own definition of art. Art is what you create because you cannot "not create it". It’s a call. It’s stronger than you. You need to get it out of you, you need to create. I want to consume more art and less content.
+
+With consuming devices, creating art is even harder because the device gets in your way.
+
+That’s why I bought a Freewrite, hoping to have a good keyboard and nothing else. But the "consumer device" mentality was too strong. Closed source software forced me to accept bugs and limitations. Bad designs forced me to always check the battery, to type slowly to avoid words being mangled. Forced proprietary clouds broke my workflow multiple times and even took my work in hostage during downtime.
+
+By forcing myself to be offline most of the time, I realised how much time in my life I was devoting to get a working connection (while travelling), to get a power plug, to adapt to the new interface of "shiny proprietary tools" and even to read about "news about proprietary tools".
+
+Today, I’m most of the time in a black terminal using Neovim and only one plugin (Goyo). I even plan to switch to a Debian LTS. Nothing is moving. Nothing is interfering with my work. I can work with my mail offline in Neomutt and read the RSS I selected in Offpunk. I havve a setup that could be sustained with minimal effort for my whole life.
+
+Besides that, I’m journaling and zettelkasting using a typewriter. I’m even writing novels with a typewriter. A mechanical one. At the end of each year, I go to the shop in town to bind my yearly journal. Unlike bits on a hard disk, typewritten papers are there to be read. When daydreaming, I can browse through my journal.
+
+In order to avoid my computer most of the time, I’m dreaming of being able to install Neovim/Neomutt/Offpunk on my Freewrite (not the Traveller, as the keyboard is barely usable). Or to have a small computer with an eink screen and a very good keyboard. Like the MNT Pocket maybe?
+
+In doing devices that could handle everything, we created Franken-suming machines that took control over our life. We are slaves from them. We must obey them. Maybe the monster is not the connection after all but the devices themselves.
+
+It’s time to think back and switch to simple creating tools. Tools that could be connected when we want it and how we want it. 
+
+That’s why I’m very grateful for Gemini and the smolnet. Gemini managed to create a network where creating is almost as easy as consuming. Where there’s little friction to create and it’s not too easy to be drowned in content. Where everybody is equal and free.
+
+That’s the very definition of a conversation. That’s the root of democracy.
+
+Thanks for being part of it.
+
+
+PS: this is my ROOPHLOCH entry for 2022.
+
+=> gopher://zaibatsu.circumlunar.space/0/~solderpunk/phlog/announcing-roophloch-2022.txt Announcing ROOPHLOCH 2022 by solderpunk

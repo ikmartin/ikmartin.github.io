@@ -1,0 +1,25 @@
+# XKCD’s law
+
+« As an online technical discussion grows longer, the probability of a comparison with an existing XKCD comic approaches 1.«
+
+=> http://xkcd.com/ XKCD comic
+
+=> ../files/old/duty_calls.png 386
+
+#### Corollaries
+
+There is a tradition in many Internet discussion forums that once such a comparison is made, the thread is finished and whoever posted the appropriate XKCD link has automatically won whatever debate was in progress. Indeed, it is considered that Randall Munroe cannot be wrong. Thus, prooving that Randall Munroe agrees with you is enough to win any argument.
+
+=> http://en.wikipedia.org/wiki/Randall_Munroe Randall Munroe
+
+#### Usage
+
+People used to technical debates on the internet are so used to XKCD’s law that links are not always necessary. Giving the number of the corresponding XKCD comic is often enough.
+
+#### Example
+
+— Leibniz is the true inventor of calculus.
+— No way, Newton did it first !
+— Newton merely copied what Leibniz did.
+— 626 !
+— …

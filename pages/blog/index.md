@@ -1,6 +1,6 @@
 # Blog
 
-This is a place for me to post random things I've written. Most of it will be math-related, but not all of it. It's possible random pages I want to make accessible but don't want to bother manually linking elsewhere in the site will appear here too.
+This is where I post random things I've written. Most, but not all, posts will be math-related.
 
 <!--
 

@@ -1,0 +1,113 @@
+# Ubuntu Efficace
+
+=> ../files/old/ubuntu2.jpg Livre
+J’ai l’immense plaisir de vous annoncer la sortie du livre Ubuntu Efficace [1], seconde édition du livre Ubuntu, une distribution facile à utiliser.
+
+=> http://www.eyrolles.com/Accueil/Livre/9782212120035/livre-ubuntu-efficace.php 
+
+=> /2006/01/06/88-ubuntu-le-livre Ubuntu, une distribution facile à utiliser
+
+Cette seconde édition a été rendue possible grâce à l’extraordinaire feedback que nous avons reçu de la communauté et des lecteurs. Je tiens à vous exprimer mes plus profonds remerciements, cela m’a fait chaud au coeur et m’a donné la motivation nécessaire pour me lancer dans ce titanesque[2] travail de révision, travail dans lequel j’ai été aidé et conseillé par Roland Mas, développeur Debian attitré.
+
+=> http://www.gnurandal.com/ Roland Mas
+=> http://debian.org Debian
+
+Ce livre est dédié à la mémoire de Jean-Marie Thomas qui a mis en page la première édition de ce livre et est décédé inopinément durant la période de finalisation du présent ouvrage.
+
+=> http://www.eyrolles.com/Accueil/Auteur/47033/jean-marie-thomas.php Jean-Marie Thomas
+
+#### Notes
+
+[1] lalilalilalila…
+
+=> http://www.youtube.com/watch?v=FdCx6Fl6QYc lalilalilalila
+
+[2] Je croyais que ce serait facile mais, en connaissance de cause, je peux vous dire que sortir une seconde édition est bien plus éprouvant que rédiger un livre from scratch
+
+Alors ? Quoi de neuf dans cette nouvelle édition docteur ?
+
+Alors là, plein de bonnes choses : une structure des chapitres complètement revue afin d’être plus rapidement « efficace », un chapitre d’installation complètement réécrit pour prendre en compte la nouvelle méthode d’installation depuis le Live CD (qui est d’ailleurs fournit avec le livre), 240 nouvelles captures d’écran (!) et surtout plein de petites corrections que vous avez été nombreux à nous signaler[1].
+
+De nombreux logiciels font une apparition, que ce soit de manière anecdotique ou en profondeur : epiphany, liferea, xchat-gnome, abiword, … Vous apprendrez même comment obtenir un filtre antispam fonctionnel dans Evolution !
+
+Vous avez été nombreux à le demander : le chapitre consacré à la personnalisation explique comment installer KDE et le lancer à la place de GNOME, permettant de ce fait de convertir son poste Ubuntu en véritable KUbuntu, voire XUbuntu.
+
+=> http://kubuntu-fr.org 
+=> ../files/old/ubuntubook/kubuntu3.jpg Kubuntu
+
+L’index a été sérieusement étoffé (c’était une remarque récurrente). Je pense d’ailleurs que c’est le seul livre sur Ubuntu qui comporte « Monty Pythons », « clafouti » et « vaisseau intergalactique » dans son index.
+
+Enfin, last but not least, un tout nouveau chapitre fait son apparition : En ligne de commande…. Autant vous dire que ce chapitre est plus ardu et beaucoup moins illustré que les autres. 30 pages bien fournies qui devraient vous introduire au principe d’un shell, manipulation des fichiers, installation des programmes, gestion des permissions, …
+
+La place manquait malheureusement pour ajouter les premiers scripts, les shells alternatifs, vim en profondeur et tout le reste mais je serais alors parti pour écrire un livre entier sur la ligne de commande. Rassurez-vous, le contenu de ce chapitre est déjà largement suffisant pour se la péter en soirée.
+
+Un livre sur Dapper alors que Edgy est sur le point de sortir ?
+
+Les Ubunteros attentifs noteront que ce livre est basé sur Ubuntu 6.06, Dapper Drake. Or Edgy (Ubuntu 6.10) pointe le bout du museau !
+
+Rassurez-vous, c’est tout à fait conscient. Tout d’abord il faut savoir que Dapper est la version LTS (Long Term Support) ce qui signifie qu’elle sera supportée pendant 3 ans sur le bureau et 5 ans sur le serveur. Edgy a en effet introduit certains changements un peu « risqués » et si vous recherchez avant tout la sécurité et la stabilité, il est fortement conseillé de rester sous Dapper.
+
+De plus, les changements survenus entre Dapper et Edgy sont principalement des changements de fond. En gros, il n’y a pas de changements majeurs visibles par l’utilisateur. Certes, si on voulait faire un livre sur Edgy, certains screenshots seraient à refaire mais rien de fondamental.
+
+Enfin, à la relecture de la première édition, il est apparu que le livre était très spécifique à Breezy. Le temps de 6 mois entre chaque nouvelle Ubuntu étant un délai trop bref pour être suivi par le monde de l’édition papier, j’ai décidé de faire un livre centré sur Dapper mais donc les informations pourront autant que possible être utilisées dans les versions futures. C’est un souci majeur que j’ai gardé à l’esprit tout au long de la réécriture.
+
+Ayant fraîchement installé une Edgy Release Candidate, je suis très heureusement surpris de constater à quel point Ubuntu Efficace est adapté à cette release ! Le gros point gênant ? Le logo au démarrage, qui est entièrement différent… Argh !
+
+Est-ce que le livre est indiqué pour les débutants ?
+
+Tout à fait ! Le livre est évolutif et accompagnera les grands débutants, les utilisateurs quotidiens sans réelle connaissance de l’informatique ainsi que les amateurs plus avancés désirant structurer leur connaissance et découvrir de nouveaux outils.
+
+Par contre, il est évident que ce livre n’est pas destiné aux experts désireux de recompiler leur noyau ou d’administrer des serveurs de production.
+
+En fait, en écrivant ce livre j’avais en tête de réaliser le livre idéal à garder sur l’étagère de manière à pouvoir le prêter facilement à toute personne me demandant d’un air intéressé : « Mais en fait, c’est quoi tes histoires de Linux-machin-chose ? Logiciel Libre ? C’est quoi ça ? ». Mais un livre que je pourrais continuer à consulter moi-même lorsque je souhaite me rafraîchir la mémoire.
+
+Si j’y suis arrivé ou pas, c’est à vous de juger…
+
+J’ai acheté l’ancienne édition ! Du coup, je n’ai pas le chapitre sur la ligne de commande…
+
+Et bien, pourquoi ne pas racheter un nouveau ? Ça me ferait très plaisir 😉
+
+Bon, je comprends que ça peut-être râlant. Puisque vous avez tous été bien sages, j’ai pensé à vous ! Grâce à l’accord sympathique de mon éditeur, j’ai le plaisir de vous annoncer que le chapitre 14, En ligne de commande…, est disponible sous la licence libre CC By-SA. Vous pouvez le télécharger, le modifier, l’utiliser (y compris à des fins commerciales) et le redistribuer pour peu que le nom de l’auteur (Lionel Dricot, éditions Eyrolles) soit préservé ! Merci qui ?
+
+=> http://editions-eyrolles.com mon éditeur
+=> http://creativecommons.org/licenses/by-sa/2.0/fr/ la licence libre CC By-SA
+=> http://www.eyrolles.com/Chapitres/9782212120035/chap14_Dricot.pdf télécharger
+
+Voilà, un bien simple billet en vérité pour quelque chose qui me tient vraiment à coeur. Alors que la sortie de la première version m’avait emplit de fierté, je dois avouer être un peu ému de tenir entre mes mains Ubuntu Efficace. J’espère que cela aidera certains à franchir le pas et à découvrir le monde merveilleux du Libre. Je souhaite également que les utilisateurs déjà convaincus découvrent une infime partie de mon plaisir à utiliser quotidiennement Ubuntu.
+
+=> /2006/01/06/88-ubuntu-le-livre première version
+
+Merci à tout ceux qui m’ont fait et me feront l’accueil de votre bibliothèque et excellente lecture !
+
+Ils en parlent :
+Play
+Racoon97
+Roland Mas
+Yekcim
+Myriam Tamagni
+Blog de l’ABULLE
+Bastnic l’a commandé, finalement reçu et même lu et critiqué.
+Filyb
+Linuxfr
+Une vidéo de mon éditrice sur le site de Benoit
+Ubuntu en salle des profs
+Kno’ parle de la critique de Bastnic (mais je voulais linker Kno’)
+
+=> http://gilles.fabio.free.fr/blog/index.php?2006/10/20/108-ubuntu-efficace Play
+=> http://blog.racoon97.net/?2006/10/21/54-deuxieme-edition-pour-ubuntu-efficace Racoon97
+=> http://roland.entierement.nu/blog/2006/10/22/ubuntu-efficace-le-livre.html Roland Mas
+=> http://yeknan.free.fr/blog/index.php?2006/10/22/145-ubuntu-efficace Yekcim
+=> http://tamagni.fritalk.com/?2006/10/22/32-ubuntu-efficace-ou-fierte-d-une-maman Myriam Tamagni
+=> http://abul.centerblog.net/635905-la-nouvelle-edition-- Blog de l’ABULLE
+=> http://bastnic.info/index.php/post/2006/10/25/Merci-M-Le-facteur commandé
+=> http://bastnic.info/index.php/post/2006/10/26/Ubuntu-efficace-%3A-Je-lai finalement reçu
+=> http://bastnic.info/index.php/post/2006/11/20/Critique-du-livre-Ubuntu-efficace-de-Lionel-Dricot-Ploum lu et critiqué
+=> http://filyb.info/dotclear/index.php/2006/10/26/411-release-day Filyb
+=> http://linuxfr.org/2006/10/27/21543.html Linuxfr
+=> http://benoit.plunus.be/blog/index.php?2006/11/10/29-un-peu-de-pub Une vidéo de mon éditrice sur le site de Benoit
+=> http://www.gesnel.fr/ubuntu/index_files/cf26d8cc4c3c7e5b9e30e506bf367025-57.html Ubuntu en salle des profs
+=> http://jehaisleprintemps.net/detail.php?id=1471&amp;lang=fr Kno’ parle de la critique de Bastnic
+
+#### Notes
+
+[1] Qui a dit le « KUbuntu de la préface » ? 😉

@@ -1,0 +1,19 @@
+# About Bluesky and Decentralisation
+
+Jack Dorsey, Twitter co-founder, is trying to launch Bluesky, a "decentralised Twitter" and people are wondering how it compares to Mastodon.
+
+I remember when Jack started to speak about "project bluesky" on Twitter, years ago. ActivityPub was a lot more niche and he ignored any message related to it. It definitely looked like a NIH syndrome as he could, at least, have started to discuss ActivityPub pros and cons. I was myself heavily invested in decentralised protocols (from blockchain to ActivityPub). It was my job to keep an eye on everything decentralised and really tried to understand what BlueSky was about.
+
+My feeling was, in the end, clear: Jack Dorsey wanted a "decentralised protocol" on which he had full power (aka "VC-style decentralisation" or "permissioned-blockchains").
+
+You have to keep in mind that those successful in the Silicon Valley know only one kind of thinking: raise money, get users, sell off. They can’t grasp decentralisation other than as a nice marketing term to add to their product (and, as Ripple demonstrated during the Cryptobubble, they are completely right when it comes to making tons of money with shitty tech which pretends to be decentralised while not being it at all).
+
+To my knowledge, acknowledgement of ActivityPub existence by BlueSky came very late after the huge Mastodon burst caused by Elon Musk buying Twitter from Jack Dorsey. It’s more a "oh shit, we are not the first" kind of reaction.
+
+But even without that history, it’s important to note that you don’t simply design a decentralised protocol behind closed doors then expect everybody to adopt it. You need to be transparent, to discuss in the open. People need to know who is in charge and why. They also need to know every single decision. Decentralisation cannot be done without being perfectly free and open source. That’s the very point of it.
+
+If we don’t want to consider the hypothesis that "bluesky decentralisation" is simply cynical marketing fluff, I think we can safely assume that Jack Dorsey has hit his mental glass ceiling. He doesn’t get decentralisation. He doesn’t have the mental model to get it. He will probably never get it (he became a billionaire by "not getting it" so there’s no reason for him to change). The whole project is simply a billionaire throwing money at a few developers telling him what he expects to hear in order to get pay. A very-rich-man’s hobby.
+
+There’s no need to analyse the protocol or make guess about the future. It’s a closed source beta application with invite-only membership. It is not decentralised. It cannot be decentralised. 
+
+=> https://news.ycombinator.com/item?id=35009723 Discussion on Hacker-News

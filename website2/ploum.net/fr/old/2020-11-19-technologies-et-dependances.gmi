@@ -1,0 +1,86 @@
+# Technologies et dépendances
+=> files/old/engin-akyurt-DJWafJfD99s-unsplash.jpg
+
+Quelques liens et conseils de lecture pour réfléchir sur nos dépendances à la technologie et à la superficialité.
+
+> Couché sur le dos, j’allume des séries. Je zappe. Quand mon attention déraille, je lance des sites d’actualités que je déroule à l’infini. Les actualités évitent de penser. Contrairement à une fiction, il n’y a rien à comprendre, rien à chercher. Il suffit de se laisser happer par l’émotion brute pendant quelques secondes. Puis de continuer à faire défiler le site. Je reprends ensuite une série.
+> 
+> Printeurs, chapitre 9
+
+L’addiction au smartphone, un poncif sur lequel tout semble avoir été dit. Depuis le mode d’emploi simple et efficace pour se libérer écrit par Korben aux analyses poussées de Cal Newport, est-il utile de revenir sur le sujet ?
+
+Oui, car ce n’est pas uniquement le smartphone le problème. Nos addictions sont toutes différentes. Depuis l’addiction physique au fait d’être devant un écran (traitée notamment par Michel Desmurget dans l’excellent « TV Lobotomie »), l’addiction aux contacts sociaux, l’addiction aux actualités, l’addiction aux jeux …
+
+Écrit en 2009, bien avant la vague des réseaux sociaux, le court texte Technology is Heroin offre une formidable analogie pour prendre du recul et comprendre notre dépendance à la technologie. Le point clé est l’inverse de ce que dit le titre : « Heroin is Technology ». En effet, l’héroïne était au départ une solution technologique innovante en vente libre pour se sentir bien. Pourquoi s’en passer ? Ce n’est qu’au fil du temps que certains effets pernicieux ont commencé à se faire sentir.
+
+=> http://tiny-giant-books.com/Entry1.html?EntryId=recgcpfuOFUesUpRy http://tiny-giant-books.com/Entry1.html?EntryId=recgcpfuOFUesUpRy
+
+Comme l’héroïne, les nouvelles technologies ne font que manipuler un équilibre chimique cérébral issu de millénaires d’évolution pour nous procurer du plaisir facilement. Mais tout plaisir trop facile entraine un comportement morbide : évitement des difficultés, perte d’énergie, refuge dans les paradis artificiels. Ce que Cal Newport appelle « escapism ».
+
+Les fabricants de technologies, tout comme les dealers, ont très vite compris l’intérêt de créer des consommateurs addicts. Cet effet a été renforcé par l’apparition de monopoles technologiques, apparition rendue possible par la politique reaganienne qui a détricoté les lois antitrust pour les rendre le moins efficaces possible.
+
+=> https://getpocket.com/explore/item/has-dopamine-got-us-hooked-on-tech https://getpocket.com/explore/item/has-dopamine-got-us-hooked-on-tech
+
+Les militants de longue date qui dénoncent l’abus des monopoles technologiques ne manquent pas (et, à ma petite échelle, j’en fais partie). Paradoxalement, ils sont très peu médiatiques. Au contraire d’anciens employés de ces mêmes monopoles qui ont fait fortune grâce à cette addiction et qui, soudain, se lancent dans une seconde carrière de militant. C’est dangereux, car s’ils apportent une vision de l’intérieur, ils ne sont pas neutres, ils découvrent seulement cet aspect de leur ancien métier et ils sont très loin d’être objectifs. Comme le dit Aral Balkan :
+— À tous ceux qui me demandent ce que je pense du film Netflix « The social dilemma », je réponds : que pensez-vous du texte « The prodigal Techbro » ?
+
+Un texte qui, paraphrasant la parabole biblique du fils prodigue, nous montre que nous célébrons souvent quelqu’un qui tente de se repentir en oubliant complètement ceux qui, depuis le début, ont fait attention à ne pas commettre d’actions néfastes.
+
+=> https://conversationalist.org/2020/03/05/the-prodigal-techbro/ https://conversationalist.org/2020/03/05/the-prodigal-techbro/
+
+D’ailleurs, la solution la plus souvent préconisée par les « techbros repentis » (essentiellement ce que j’appelle des bliches, des hommes blancs et riches), c’est… « plus de tech ». Le problème ne serait que du design. Il n’y aurait rien de sociologique, politique là derrière. Tu parles Charles…
+
+C’est exactement le danger dénoncé par « The prodigal techbro ». Une personne qui a fait sa fortune dans la tech, qui a l’intuition d’un problème, mais qui ne peut pas imaginer le résoudre autrement qu’en développant une solution technologique.
+
+=> https://www.fastcompany.com/3051765/how-our-tech-addiction-and-constant-distraction-is-a-solvable-design-problem https://www.fastcompany.com/3051765/how-our-tech-addiction-and-constant-distraction-is-a-solvable-design-problem
+
+Car si on creuse un peu, on se rend compte que la pollution mentale tant dénoncée n’est pas qu’un artefact technologique, un simple problème qu’une « bonne tech » pourrait résoudre. Elle est réellement volontaire et encouragée par les monopoles tech, même dans ses aspects les plus sombres et clairement illégaux. En bref, le problème n’est pas technologique, il est humain à la base.
+
+=> https://getpocket.com/explore/item/how-facebook-helps-shady-advertisers-pollute-the-internet https://getpocket.com/explore/item/how-facebook-helps-shady-advertisers-pollute-the-internet
+
+Ce concept du prophète techbro repenti et blanchi est souvent aggravé par le syndrome du polymathe. Un polymathe, c’est quelqu’un qui excelle dans plusieurs domaines forts différents. L’exemple que j’aime donner est Bruce Dickinson, chanteur d’Iron Maiden et l’une des plus belles voix de l’histoire du métal, pilote d’avion gros porteur (licence commerciale) et escrimeur olympien. Il est également auteur de romans. Les véritables polymathes de ce genre sont incroyablement rares. Pour la plupart, ce sont des gens avec une spécialité bien précise et des centres d’intérêt vers d’autres domaines. Le problème c’est qu’il est difficile pour un non-expert de faire la différence entre un véritable expert et un amateur qui a lu deux livres sur le sujet. On aura une tendance naturelle à accorder beaucoup de valeur à l’opinion d’une personne spécialiste, même si elle s’exprime sur un domaine qui n’est pas le sien. La pandémie l’a démontré amplement : une certitude en blouse blanche devant une caméra est bien plus médiatique que mille études statistiques démontrant que l’on ne sait pas grand-chose et que la prudence est de mise.
+
+=> https://applieddivinitystudies.com/2020/09/28/polymath/ https://applieddivinitystudies.com/2020/09/28/polymath/
+
+Un autre aspect du problème c’est que les personnes qui parlent de ce sujet, à savoir les journalistes web, sont dépendantes des effets néfastes du même web pour vivre. Ils doivent créer des addictions à leur propre site pour vivre ! On a donc une relation symbiotique entre des pseudo-experts qui « ont vu la lumière » après avoir fait fortune en accaparant le cerveau des gens et des journalistes sans le sou qui parlent d’eux pour gagner de quoi (sur)vivre en accaparant les mêmes cerveaux. (le fait que l’article suivant soit sur Medium illustre l’ampleur du problème)
+
+=> https://medium.com/message/the-hypocrisy-of-the-internet-journalist-587d33f6279e https://medium.com/message/the-hypocrisy-of-the-internet-journalist-587d33f6279e
+
+Le pire ? Tout cela pourrit nos vies et notre cerveau, mais cela ne fait pas spécialement vendre mieux. C’est une sorte de course à l’armement. Faire plus de pubs ne fait pas vendre plus, mais ne pas faire de pub fait perdre des ventes. Lorsque cette bulle va un jour se dégonfler, cela ne risque de ne pas être joli joli.
+
+=> https://www.wired.com/story/ad-tech-could-be-the-next-internet-bubble/ https://www.wired.com/story/ad-tech-could-be-the-next-internet-bubble/
+
+La publicité pourrit toute notre société. Notre étrange rapport aux stars qui ne sont plus adulées pour des accomplissements, mais parce qu’elles sont… des stars n’en est qu’un exemple parmi tant d’autres. Au Royaume-Uni, 54% des adolescents de 16 ans ont pour plan de vie de « devenir une célébrité ».
+
+=> https://www.theguardian.com/commentisfree/2016/dec/20/celebrity-corporate-machine-fame-big-business-donald-trump-kim-kardashian https://www.theguardian.com/commentisfree/2016/dec/20/celebrity-corporate-machine-fame-big-business-donald-trump-kim-kardashian
+
+Et ne croyez pas que les populations éduquées soient préservées. La recherche de prestige est même devenue l’ambition majeure des jeunes diplômés qui se ruent dans les entreprises qui sont « prestigieuses ». Si le prestige comme conséquence de l’excellence est peut-être une bonne chose, la recherche du prestige avant l’excellence entraine une course vers la médiocrité où l’apparence est le seul atout.
+
+Le problème, c’est que nous n’avons plus de mesure de l’excellence. Pour faire la différence entre un expert qui a étudié, avec compétence, un domaine pendant 20 ans et un internaute qui a lu des opinions sur des forums, il faut généralement avoir une certaine expertise soi-même. L’excellence est donc une perte de temps et la sélection naturelle nous pousse vers une culture d’apparence, de mensonge et de déconnexion de la réalité qui n’est pas sans rappeler les mouvances religieuses.
+
+=> https://wesdesilvestro.com/the-prestige-trap https://wesdesilvestro.com/the-prestige-trap
+
+L’exemple est frappant dans mon pays où le parti écologiste a réussi faire voter une loi pour « sortir du nucléaire », entrainant un désinvestissement complet des infrastructures nucléaires alors que le nucléaire est aujourd’hui l’énergie la plus écologique. L’apparence et la médiatisation ont pris le pas sur la compétence et la réalité, avec des résultats dramatiques.
+
+Au final, on en est réduit à s’acheter tout. Même les amis histoire de montrer qu’on est populaire, qu’on a du prestige. Même si c’est un mensonge et que tout le monde le sait.
+
+=> https://namok.be/blog/?post/2014/04/25/comment-acheter-des-amis https://namok.be/blog/?post/2014/04/25/comment-acheter-des-amis
+
+Enfermés dans nos petits plaisirs faciles et addictifs, nous n’avons plus l’énergie ni le temps de cerveau pour la difficulté, étape essentielle à l’excellence. Nous en sommes réduits à simuler, à nous mentir à nous même et à faire du marketing pour tout et n’importe quoi.
+
+D’ailleurs, à propos de faire du marketing : l’addiction à la technologie et la publicité sont des thèmes centraux de Printeurs, mon premier roman de science-fiction à paraître le 24 novembre. Si vous commandez votre exemplaire avant cette date, vous pourrez rejoindre le club très select des lecteurs privilégiés qui recevront chaque chapitre du tome 2 au fur et à mesure de son écriture ! Une opportunité unique et prestigieuse de briller dans les cocktails mondains.
+
+=> https://www.plaisirvaleurdhistoire.com/shop/29-utopies-p2p https://www.plaisirvaleurdhistoire.com/shop/29-utopies-p2p
+
+Si la crise du coronavirus a malheureusement impacté votre portefeuille, mais que le cœur y est, j’ai encore des exemplaires suspendus à distribuer (et vous pourrez également bénéficier du tome 2 en exclusivité). Envoyez-moi un mail !
+
+=> /le-roman-suspendu/ https://ploum.net/le-roman-suspendu/
+
+> Je regarde défiler les milliers de messages de ces télépass persuadés de détenir des vérités secrètes pour la simple raison qu’elles leur font du bien et qu’ils se les racontent en groupe. Ils se sentent soudainement importants, ils se sentent exister, ils se créent une identité dans une société qui ne veut même plus d’eux comme simple rouage. Comme eux, je me sens seul, inutile, dans le noir. Comme eux, je ressens le désir, la bouffée d’espoir que représente une information qui me rendrait supérieur, important. Ou, pour le moins, pas complètement, désespérément inutile.
+> 
+> Printeurs, chapitre 9
+
+Photo by engin akyurt on Unsplash
+
+=> https://unsplash.com/@enginakyurt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText engin akyurt
+=> https://unsplash.com/collections/3422333/my-first-collection/bc85f85fb80db6b193fd1dcf2ffec545?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

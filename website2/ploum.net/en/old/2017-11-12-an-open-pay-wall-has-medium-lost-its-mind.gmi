@@ -1,0 +1,53 @@
+# An “Open Pay Wall”, has Medium lost its mind?
+=> files/old/14936229991_5f6edcf18e_c.jpg
+
+If there’s one thing we have learned in the past decade, it’s that paywalls don’t work and that they are a threat to the openness of the Internet. Writing “open” on it doesn’t change the fact that it’s a wall. By building such walls, Medium will either kill itself or become a threat to the open Internet. It is sad because the solution is right here in front of our eyes. It only takes a bit of courage and trust.
+
+I gained early access to Medium through a writing contest. Since then, I fell in love with how Medium was trying to make writers and readers technically at home. But I’ve also severely criticised how Medium never managed to choose between being a platform or a publication with an editorial line.
+
+=> /no-proprietary-service.html a writing contest
+=> /no-proprietary-service.html never managed to choose between being a platform or a publication with an editorial line
+
+Today’s attempt to transform Medium into a walled garden is, at best, stupid and dangerous. But it is a reminder that we should never trust a centralised place.
+
+When Medium started to launch a paying subscription, not knowing yet what to offer to pay members, I thought they understood it. I happily jumped on the wagon and spent $5 a month to support the platform.
+
+Finally, a platform was reacting to the “free ad myth”, the fantasy that ads provide money without having to return anything in exchange. Finally, someone was acknowledging that advertising was hurting our brains and transforming every content creator into a sausage salesperson. It was time for creators to be paid directly by people consuming their work.
+
+Then, Medium introduced “Members only” contents. I cancelled my subscription for multiple practical reasons:
+
+1. I was suggested a lot of “members only” stories for which I had no interest.
+2. The few times I found a “member only” story interesting, I shared it on Twitter. Only to receive plenty of comments that people had no access to that story.
+3. I realised that my money was sent to very few authors with non-public stories. I wanted to thank people that make their stories public, and I was doing precisely the opposite.
+
+After cancelling, I realised that the problem was much worse. It’s not that the idea is poorly implemented, it is the concept itself which is a threat to the open Internet.
+
+Now, when I publish a story, Medium try to convince me to make my post “members only”. Medium actively encourages writers to close their work. By posting on Medium, writers usually have one clear goal: reach an audience. Restricting the audience is probably the worst suggestion that can be done.
+
+=> https://miro.medium.com/max/400/1*A6cmD9q_Cg-d27tQGCshPQ.png 
+
+In one of the most beautiful hypocritical marketing bullshit ever seen, Medium goes as far as calling its paywall “An Open Paywall”. See the irony? The “open wall” image looks like an Orwellian paradigm even worse than the “free ad myth”.
+
+=> https://medium.com/creators An Open Paywall
+
+=> https://miro.medium.com/max/400/1*G79My4ngTCl5GmQk298t4g.png 
+
+Don’t worry, tells you Medium, people without a paying account can still access up to 3 paying stories a month. Which makes you think: the more writers use Medium, the less likely my audience is to be able to read my “open walled writings”. Be also aware that your “open-walled” content will not be readable by external services such as Pocket.
+
+But, wait, there’s more! Medium has not abandoned its editorial ambitions. Members-only stories have to follow strict guidelines, those guidelines being fuzzy enough to open the door to any restrictions. Writers are also encouraged to submit “only their best works”. Being an active blogger for the last 13 years, I can attest one thing: you never know what your best work is. Only time tells if a piece will be part of your history or just something quickly forgotten. Also, there’s one thing I’m sure: I want my best work to be read, published, shared. I want it to be accessible, even to people without resources. Not kept behind a wall, even if there’s an “open” sign hastily nailed to it. Medium, can you stop interfering with my writings and just become a platform?
+
+=> https://medium.com/policy/member-content-guidelines-e81e2e345294 strict guidelines
+
+=> https://miro.medium.com/max/400/1*4x_b4dSjkOfe3BgjVkC7BQ.png 
+
+The saddest part of all of that is that the solution is there, right in front of our eyes: remove the “members only” concept and distribute the $5 amongst the read stories. Flattr pioneered this model.
+
+Be transparent. Let people see how their money was spent. You may also offer extra features to paid members, like the audio version of the texts. But trust your users. Trust them like you did when introducing the membership. At that time, I saw a considerable amount of people starting to pay $5 a month without any advantage, without any promise, just for the sake of supporting Medium.
+
+In the meantime, I can only recommend Medium users to do two things: cancel your subscription and don’t publish any members-only content.
+
+Dear Medium, information want to be free. Every business model that restrict the freedom of information is doomed. We trusted you. Trust us and start building bridges, not wall.
+
+Picture by Etienne.
+
+=> https://www.flickr.com/photos/glassholic/14936229991/ Etienne

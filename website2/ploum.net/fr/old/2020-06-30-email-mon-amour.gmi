@@ -1,0 +1,46 @@
+# Email, mon amour !
+=> files/old/matt-artz-NP4mDCN0PIU-unsplash.jpg
+
+Je me suis surpris à envoyer un long email à une personne que je suis depuis plusieurs années sur les réseaux sociaux. J’ai pris le temps de rédiger cet email. De le relire. De le corriger. De l’affiner. J’y exprime une idée simple que j’aurai pu lui envoyer sur Twitter, que ce soit en le mentionnant ou en messagerie privée. Je lui dis, tout simplement, que je ne souhaite plus interagir sur Twitter.
+
+Le fait de prendre du temps, de réfléchir, de me relire m’a procuré un énorme plaisir. J’avais l’impression d’avoir apporté un petit quelque chose au monde, une clarification de mes idées, une main tendue, une piste de réflexion partagée. J’ai construit quelque chose d’intime, où je me révèle.
+
+En tentant de regagner le contrôle de mon cerveau, j’ai retrouvé, sans le vouloir, l’art désuet de la relation épistolaire.
+
+Nous avons oublié l’importance et la facilité de l’email. Nous l’avons oublié, car nous n’en avons pas pris soin. Nous laissons notre boîte aux lettres pourrir sous des milliers de messages non sollicités, nous perfectionnons volontairement l’art de remplir nos boîtes de courriels inutiles, inintéressants, ennuyeux sans plus jamais prendre le temps d’y déposer un courrier utile, écrit, intime.
+
+Nous croyons que le mail est ennuyeux alors que ce sont nos pensées qui sont obscurément désertes. « Ce qui se conçoit bien s’énonce clairement et les mots pour le dire viennent aisément », disait Boileau. Force est de constater que nos cerveaux sont désormais d’infernaux capharnaüms assiégés par d’innombrables tentatives de les remplir encore et encore. Anesthésiés par la quantité d’informations, nous ne trouvons d’échappatoire que dans la consommation.
+
+Souhaitant soigner ma dépendance à Twitter, j’avais décidé de ne plus suivre que quelques comptes sélectionnés dans mon lecteur RSS grâce à l’interface Nitter. En quelques semaines, une froide vérité s’est imposée à moi : rien n’était intéressant. Nous postons du vide, du bruit. Une fois ôtées les fonctionnalités affriolantes, les notifications, les commentaires, le contenu brut s’avère misérable, souffreteux. J’avais pourtant sélectionné les comptes Twitter de personnes particulièrement intéressantes et intelligentes selon mes critères. Las ! Nous nous complaisons tous dans la même fange d’indignation face à une actualité très ciblée, le tout saupoudré d’autocongratulation. Réduite à quelques caractères, même l’idée la plus enrichissante se transforme en bouillie prédigérée conçue pour peupler un hypnotique défilement intinterrompu.
+
+=> /sous-les-reseaux-sociaux-un-monde-post-deconnexion/ ma dépendance à Twitter
+=> http://nitter.net/ Nitter
+=> /le-silence-au-milieu-du-bruit/ du bruit
+
+Un soir, alors que je profitais de ma douche pour articuler un concept théorique qui m’occupait l’esprit, j’ai réalisé avec effroi que je pensais en threads Twitter. Mon esprit était en train de diviser mon idée en blocs de 280 caractères. Pour le rendre plus digeste, plus populaire. J’optimisais spontanément certaines phrases pour les rendre plus « retweetables ».
+
+En échange d’un contenu de piètre qualité, Twitter déformait mes pensées au point de transformer mon aquatique méditation vespérale en quête semi-consciente de glorioles et d’approbations immédiates. Le prix payé est inimaginable, exorbitant.
+
+Ayant bloqué tous les sites d’actualité depuis belle lurette, je décidai que Twitter et Mastodon allaient suivre le même régime que Facebook et Linkedin : ne plus suivre personne. Je nourris désormais ma sérendipité d’écrits plus longs grâce à l’ancienne magie vaudoue du RSS.
+
+Libéré, aéré, le cerveau retrouve soudain de la souplesse, de l’amplitude. Au détour d’une blague dans un forum que je suis, je crois deviner qu’un politicien a été mis en prison. L’information m’agresse. Elle occupe une place imméritée dans mon cerveau. Je n’avais pas envie de savoir cet inutile artefact qui sera vite effacé de la conscience publique. Comme un ancien fumeur soudainement allergique à la fumée, mon cerveau ne peut plus supporter les déchets pseudo-informationnels dont nous sommes abreuvés par tous les pores, par tous les écrans, par toutes les conversations.
+
+Une fois débarrassé de cette gangue d’immondices, je me surprends à penser. Mes doigts se surprennent à vouloir écrire plutôt qu’à rafraîchir une page et réagir avec une émotion préfabriquée. Au lieu d’une démonstration publique de mon égotique fierté travestie en succédané de communication, j’ai envie de forger des textes, des histoires, de faire passer une information dans un contexte plus large, de lui donner le temps d’exister dans l’esprit des récipients. Et tant pis si ces derniers sont moins nombreux, moins enclins à m’injecter leurs likes chargés de dopamine.
+
+=> /pour-labolition-du-like/ leurs likes chargés de dopamine
+
+Devant ma boîte aux lettres, immaculées grâce à une stricte observance des mes règles inbox 0 et de désabonnement, je guetterai la réponse comme un adolescent attend le facteur lui tendant une enveloppe parfumée. Et si elle ne vient pas, ma vie continuera sans que je sois obnubilé par un compteur de vues, de likes ou de partages.
+
+=> /pourquoi-vous-devriez-viser-inbox-0/ règles inbox 0
+=> /desabonnez-moi/ désabonnement
+
+L’outil de communication décentralisé web 5.0, 6.0 et 12000.0 existe déjà. C’est l’email. Nous n’avons tout simplement pas encore vraiment appris à l’utiliser. Nous tentons vainement de le remplacer ou de l’améliorer à grands coups d’interfaces et de fonctionnalités multicolores, car il expose la vacuité de nos interactions. Il met à nu que nous devrions faire un effort, changer notre cerveau et notre volonté. Tant que nous nous évertuerons à produire et consommer le plus de bruit possible en insatiables gloutonneries, tant que nous mesurerons notre succès avec d’autocrates statistiques, aucun système ne nous permettra de communiquer. Parce que ce n’est pas ce que nous cherchons. Parce que nous nous sommes perdus dans l’apparence et la quantité, jetant aux oubliettes l’idée même de qualité. Nous critiquons la faiblesse d’esprit et le court-termisme de nos politiciens sans réaliser que nous moquons notre propre reflet.
+
+Lorsque nous serons assez mûrs pour tout simplement vouloir échanger de l’information de qualité, nous découvrirons que la solution était sous nos yeux. Si simple, si belle, si élégante, si décentralisée.
+
+L’email.
+
+Photo by Matt Artz on Unsplash
+
+=> https://unsplash.com/@mattartz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Matt Artz
+=> /?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

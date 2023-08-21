@@ -1,0 +1,68 @@
+# Les opportunités manquées du Libre 2: la décentralisation
+=> files/old/8102036321_96b5d0d12a_z.jpg
+
+Je vous ai déjà parlé de l’importance de la décentralisation : il faut créer des services indépendants qui communiquent entre eux (l’email) plutôt qu’un gros service qui contrôle tout le monde (Facebook, Google).
+
+=> /odd2011 la décentralisation
+
+Mais créer un service décentralisé est une véritable gageure. Si les problèmes techniques sont légion (compatibilité, communication, standardisation), ils ne sont rien face à l’immense défi humain. Je pense notamment aux abus comme le spam ou la fraude. Un service centralisé peut gérer les spammeurs au cas par cas en désactivant les comptes. Un service décentralisé doit mettre en place une stratégie complètement différente. Le seul réseau décentralisé d’envergure, le mail, n’a d’ailleurs jamais résolu ce problème.
+
+Pour réussir, un service décentralisé doit donc offrir une solution au moins équivalente en termes de confort d’utilisation, une résolution des problèmes propres à la décentralisation et un petit plus qui fera la différence, qui poussera les utilisateurs à abandonner la concurrence.
+
+Le résultat est sans appel : depuis l’email, aucune solution décentralisée n’a réellement percé auprès du grand public. Même le protocole de chat XMPP ne doit son succès qu’à son adoption par Google. Et, soyons honnêtes, si Google décide d’arrêter d’utiliser XMPP demain, ce ne seront pas les utilisateurs de Google Chat qui se plaindront mais bien les utilisateurs des autres serveurs qui n’auront plus accès à la majorité de leurs contacts.
+
+#### Les raisons d’un échec
+
+Comme je vous le disais précédemment, les libristes se sont concentrés sur la résolution des problèmes techniques, faisant fi de l’expérience utilisateur. La décentralisation ne fait pas exception. Ainsi, il est hors de question de mélanger un serveur de mail avec un serveur de chat XMPP. Chaque outil doit être indépendant. La conséquence directe est que la majorité des utilisateurs de solutions libres a une adresse pour le mail et une pour le chat. Et, quand bien même certains services offriraient une adresse commune, il n’y aucune réelle intégration contrairement à Google qui, entre autres, envoie par mail les messages reçus lorsqu’on est déconnecté.
+
+=> /opportunites-manquees-du-libre-satisfaction le disais précédemment
+
+Face au succès des services webs centralisés, le monde libre a répondu avec la license AGPL. Plutôt que de se poser la question de l’indépendance, de ce que nous souhaitions construire et offrir aux utilisateurs, nous nous sommes contentés de nous vautrer dans notre petite zone de confort : l’accès au code source et l’évangélisme.
+
+
+#### Les avantages de la centralisation
+
+Mais il y a pire : la décentralisation est censée nous garantir l’indépendance, la sécurité par rapport à une seule entreprise. Mais, entre nous, quels sont les risques lorsque vous utilisez un service en ligne ?
+
+1. Le serveur est indisponible pour une période prolongée suite à une défaillance matérielle
+2. Vos données sont perdues suite à une défaillance matérielle et un mauvais plan de sauvegarde.
+3. Vos données sont volées suite à un piratage
+4. Votre fournisseur fait faillite et disparaît dans la nature
+5. Votre fournisseur décide de couper l’accès à vos données sans préavis
+
+Chez un géant comme Google, la probabilité de souffrir d’un des 4 premiers problèmes est virtuellement nulle. Quant à la cinquième, elle arrive de temps en temps. Cela fait d’ailleurs un certain buzz et cela permet aux libristes d’avoir des exemples concrets pour illustrer le problème de la centralisation.
+
+#### Les alternatives à la centralisation
+
+Fuyant les géants, vous vous êtes installé chez un petit fournisseur indépendant. Tristement, il faut reconnaître que les 5 problèmes deviennent beaucoup plus probables. Vous devenez donc extrêmement dépendant de ce fournisseur qui peut faire faillite, se faire pirater ou brusquement augmenter ses prix sans que vous n’ayez la moindre chance d’alerter l’opinion publique.
+
+Étant très doué en informatique, vous faites partie de cette minorité capable de gérer des services de base et vous décidez alors de passer à l’autohébergement. Malheureusement, cela a un coût non négligeable. Si il permet de résoudre les deux derniers points, il maximise la probabilité des trois premiers. Cela vous coûte de l’argent, cela vous prend un temps fou et cela vous force à être disponible en permanence. Un exemple célèbre est Rick Falkvinge, fondateur du Parti Pirate. Il héberge son site sur son propre serveur dans son bureau. Régulièrement, son site est indisponible pendant plusieurs jours suite à une panne de courant ou un problème de disque dur alors qu’il est à l’étranger. Dans ces cas-là, il ne communique plus que par Twitter, Google+ et Facebook, les réseaux centralisés…
+
+Il s’ensuit, de manière paradoxale, que la solution la plus sécurisée et qui vous donne le plus d’indépendance est… d’utiliser un géant centralisé comme Google.
+
+#### Google plus libre que Diaspora
+
+Et à ce petit jeu, Google est très fort et se permet le luxe d’offrir une fonctionnalité de Libération de Données : vous pouvez à tout moment télécharger toutes vos données dans un format aisément exploitable. Photos, publications, commentaires, contacts : tout y est ! En conséquence, j’ai un meilleur contrôle de mes données chez Google que celles sur Diaspora, où l’outil d’export n’est pas encore complet !
+
+Diaspora et Status.net sont les exemples même de l’échec du libre face à la décentralisation. Se contentant de copier les solutions centralisées en apposant un protocole décentralisé dessous, elles ont justifié leur échec par le monopole des acteurs de Facebook et Twitter. Le récent succès de Pinterest montre pourtant qu’il y a de l’espace pour l’innovation.
+
+#### Et pourtant…
+
+C’est dommage ! La décentralisation aurait pu devenir le cœur de notre expérience utilisateur. L’analyse du problème montre que la seule solution qui rende réellement indépendant est l’autohébergement mais qu’il faudrait le rendre simple, accessible à tous et sûr. Imaginez un instant une version serveur et une version client de votre distribution préférée. La version serveur s’installe en un clic sur le boîtier dans votre salon et une interface graphique permet de créer les comptes sous forme d’une adresse email. Quant à la version client, il suffit de s’y connecter avec son adresse mail pour avoir aussitôt accès aux mails, aux calendriers, au chat, au partage de fichiers, à votre flux d’informations continu. C’est un rêve que certains n’abandonnent pas.
+
+=> /freasy-future-for-gnome votre distribution préférée
+=> /flux-total flux d’informations continu
+=> http://freedomboxfoundation.org/ certains n’abandonnent pas
+
+Simple et efficace.
+
+Mais… Attendez une seconde ! C’est exactement ce que Google est en train de faire avec ChromeOS. Des services décentralisés, redondants, accessible du monde entier en un clic. Il n’y a qu’un seul hic : ils sont contrôlés par une seule société. Une société qui fait tout trop bien, allant jusqu’à financer la concurrence pour encourager la compétition. Si vous étiez à leur place, que feriez-vous de différent ? Sincèrement ?
+
+=> /google-moins une seule société
+
+Alors, préférez-vous mettre tous vos œufs dans un unique panier très solide ou … pas de panier du tout ?
+
+Photo par Mark Tominski. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/75495303@N06/8102036321 Mark Tominski
+=> http://sylvestre.org Sylvestre

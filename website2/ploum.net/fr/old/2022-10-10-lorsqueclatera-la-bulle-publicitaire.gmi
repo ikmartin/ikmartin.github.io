@@ -1,0 +1,81 @@
+# Lorsqu’éclatera la bulle publicitaire
+
+En 2007, espérant monétiser ma réputation naissante de blogueur influent, j’ai installé des publicités Google sur mon blog. Les premiers mois furent de bonnes surprises (entre 100€ et 200€ par mois) avant que Google ne m’annonce qu’en raison des clics frauduleux sur mes publicités, la somme serait revue à la baisse (pour tomber très vite à 30-50€ par mois).
+
+Ne cliquant pas sur mes propres publicités et étant d’une naïve honnêteté, ma première réalisation fut que Google pouvait me raconter absolument n’importe quoi, qu’ils pouvaient décider de leur tarif, que je n’avais de toute façon aucun recours. Que 30€, c’était mieux que rien.
+
+Vraiment ? À ce moment précis, je me fis la réflexion que tout modèle publicitaire était intenable sur le long terme. Que la publicité ne pouvait fonctionner que si elle était une fraction d’un véritable échange économique, mais que, toute seule, la publicité ne permet rien. Si une entreprise paye pour une publicité, c’est parce qu’elle espère augmenter son bénéfice d’une somme supérieure à celle dépensée.
+
+Ce qui nous place devant deux alternatives :
+
+Soit la publicité fonctionne et elle entraine que les personnes exposées (à savoir les lecteurs de mon blog) dépensent plus d’argent que s’ils n’y avaient pas été exposés.
+
+Soit la publicité ne fonctionne pas vraiment et toute l’industrie n’est qu’une gigantesque arnaque de laquelle il vaut mieux rester le plus éloigné possible.
+
+Dans le premier cas, l’affichage de publicités sur mon blog était hautement immoral (je poussais mes lecteurs à dépenser tout en n’en obtenant qu’un très maigre bénéfice), dans l’autre cas je participais à une arnaque qui risquait de s’écrouler rapidement.
+
+Force est de constater que j’étais un peu trop en avance : quinze années plus tard, l’arnaque semble encore fonctionner. Mais les premières fissures semblent apparaitre dans la pyramide. Dans tous les cas, il est clair que la publicité est hautement immorale. Que toutes les personnes qui y contribuent d’une manière ou d’une autre sont de sacrés enfoirés. Oui. Vous ! Votre métier consiste à attirer le plus possible l’attention des gens, à polluer leur esprit afin qu’ils consomment plus et polluent plus la planète. Pourrir la vie des gens tout en pourrissant la planète.
+
+## La publicité en ligne, arnaque ou pas ?
+
+Tim Hwang, dans « Subprime Attention Crisis », et Cory Doctorow, dans « How to destroy surveillance capitalism », défendent tout deux la théorie de l’arnaque. Comme le souligne Cory Doctorow, à lire les rapports aux actionnaires de Facebook, leur plateforme serait une espèce de rayon magique invisible pour manipuler l’esprit des gens. Hautement improbable !
+
+Cependant la publicité a un effet très clair : attirer notre attention, nous distraire, détourner les idées et créer des envies. Il semblerait que la publicité ciblée ne fonctionne en réalité pas beaucoup mieux que des publicités génériques. Voire pas du tout mieux. Cela n’empêche pas Google et Facebook de nous espionner sous toutes les coutures en espérant faire croire à leurs clients que ça fonctionne.
+
+Une chose est certaine : Google (Alphabet) et Facebook (Meta) sont parmi les cinq plus grandes entreprises du monde. Avec Twitter et TikTok, elles occupent le centre des vies connectées (et donc des vies tout court) de milliards d’individus. Il est impossible d’acheter un téléphone sans Google. Il est impossible de lire un article de presse sans liens vers Twitter (Rick Falkvinge se plaisait à appeler la presse « Printed tweets from yesterday »). En rue ou dans les transports, l’immense majorité de la population est en permanence sur Instagram (Meta), Whatsapp (Meta également) ou TikTok (une entreprise chinoise qui a largement démontré son irrespectabilité).
+
+L’immense majorité du chiffre d’affaires de ces quatre sociétés est généré par la publicité. On parle de chiffres plus gros que le budget de tout un pays.
+
+Postuler que la publicité est un business « honnête » revient à dire que ces milliards d’euros ne seraient pas dépensés sans elle. Et donc revient à démontrer que la publicité appauvrit la population d’une manière démentielle en entrainant une surconsommation qui détruit littéralement la planète.
+
+Grâce au smartphone, la publicité a colonisé chaque seconde de nos vies. Il n’en reste pas moins que ces vies sont limitées à une poignée de milliards de secondes et que nos portefeuilles le sont également.
+
+Force est de constater que la publicité est, au moins en partie, une gigantesque arnaque. L’autre partie étant un business parfaitement immoral en pleine compétition avec l’industrie de l’armement pour savoir qui entrainera le plus rapidement la disparition de l’humanité.
+
+## Des monopoles à la fois juge et partie
+
+Comme je l’avais découvert avec Google en 2007, le véritable problème de ce marché publicitaire est que les entreprises sont à la fois arbitre et partie prenante. Lorsque vous achetez des publicités chez un de ces géants, tout ce qu’ils vous offrent en échange sont… des chiffres qu’ils inventent.
+
+Pour promouvoir un de mes livres, j’avais fait l’expérience d’acheter des publicités sur Twitter et Facebook en spécifiant que je voulais cibler la Belgique. Sur Twitter, j’ai obtenu des milliers « d’impressions » (le terme pour dire que mon tweet a été affiché chez un utilisateur) et des dizaines de retweets. À l’inspection, tous ces retweets provenaient de comptes vraisemblablement faux (comptes sans interactions, dans une langue étrangère, mais, comme par hasard, contentant tous un drapeau belge dans leur description). De son côté, Facebook m’a informé que des centaines de personnes avaient cliqué sur le lien de ma campagne de financement. Chose étrange, aucun de ces clics n’apparaissait dans les statistiques du site de crowdfunding. L’impact sur les ventes a été absolument nul.
+
+Ces réseaux sont tellement remplis de faux comptes et de fausses interactions que cela en devient gênant. Elon Musk a notamment fait trainer son offre de rachat de Twitter lorsqu’il s’est rendu compte de l’importance du problème (ce qui en dit long sur sa méconnaissance de ce type de business). LinkedIn (Microsoft) est confronté à un problème similaire : la majorité des interactions y sont fausses. Même vos statistiques Google Analytics sont majoritairement remplies de visites de robots.
+
+La situation est simple : nous voulons tous plus de « clics » sur nos contenus et des followers, les grandes entreprises ont pris le contrôle du Web pour nous offrir ces clics et ces followers. Ils nous offrent des compteurs de clics et un moyen de faire augmenter ces clics avec une simple carte de crédit. Ils nous vendent une monnaie de singe de leur propre inventions contre notre argent véritable, un peu comme certaines sociétés de jeux en ligne. Tant qu’il y’a des pigeons pour payer, pourquoi s’en priver ?
+
+Le géant Procter&Gamble a d’ailleurs annoncé avoir coupé complètement tous ses budgets publicitaires pour les réseaux sociaux et n’avoir perçu absolument aucune différence dans les ventes.
+
+## La faible qualité de l’attention vendue
+
+Tout n’est pas complètement faux. Facebook s’est fait une spécialité de vous permettre de créer une « communauté », mais de vous forcer à payer pour envoyer des messages à une partie de cette communauté. Avec mes 2500 followers sur Facebook, j’avais découvert à l’époque que chaque message touchait en moyenne 1%, mais que, en payant, je pouvais monter à 5% voire 10% de « ma communauté ». Facebook me faisait croire que j’atteignais un public alors qu’en réalité, je devais payer pour contacter moins de gens que si je leur avais conseillé de s’abonner par mail ou RSS.
+
+Mais même lorsque payer permet réellement d’entrer en contact avec un être humain, cette interaction est généralement d’une qualité incroyablement faible. Dans le train, le bus ou l’avion, observez l’écran des autres voyageurs. Ils font défiler à toute vitesse, s’arrêtant parfois une seconde pour mettre un like sans même prendre le temps de lire. Lorsque la publicité n’est pas une simple arnaque, tout ce qu’elle vous offre est donc d’apparaitre quelques fractions de seconde sur un écran en train de défiler.
+
+Sur LinkedIn, j’ai durant quelques mois tenté d’accepter les offres d’emplois qui m’arrivaient par messages privés. Alors que pour les besoins de l’expérience j’acceptais toutes les conditions sans discuter, aucune des dizaines de demandes n’a jamais débouché sur quoi que ce soit. En fait, je n’ai reçu que quelques réponses à mes dizaines d’acceptations et, malgré des relances de ma part, toutes ces discussions ont tourné en eau de boudin, mes interlocuteurs étant passés à autre chose.
+
+Même lorsque les géants publicitaires remplissent leur part du contrat de manière honnête, force est de constater qu’il s’agit d’une arnaque.
+
+## La morbidité des métriques
+
+Comme d’habitude, tout n’est que question de métrique. Si vous êtes dans un job où votre chef vous demande d’augmenter les clics sur un site web ou d’obtenir des followers, alors cela a complètement du sens d’acheter ces clics ou ces followers.
+
+Mais si vous avez un peu plus de recul, la véritable question est « Quel est l’objectif du business ? » et « Quelles sont les métriques véritablement corrélées à cet objectif ».
+
+Ce n’est pas parce que Google, Facebook et les autres vous offrent un beau pack de métriques toutes faites et d’un moyen de les optimiser que cela convient à votre business. En fait, de manière générale, tout fournisseur qui prétend vous vendre l’observation de métriques décidées par lui, mesurées par lui et optimisées par lui est par essence un escroc.
+
+À part dans de rares cas, il est même probable que le fait d’avoir un Google Analytics sur votre site soit préjudiciable à votre business. Le simple fait d’avoir accès à ces statistiques va vous faire prendre des décisions pour augmenter le nombre de visites sur votre site, ce qu’on appelle SEO. Ensuite, vous allez tenter de comprendre pourquoi vos visiteurs qui affluent ne passent pas commande alors que vos techniques de SEO ont justement fait affluer une masse de gens (lorsque ce ne sont pas des robots) qui ne sont a priori pas concernés par votre business. En essayant d’être trouvé par tout le monde, vous perdez de vue le cœur de votre marché, à savoir ceux qui vous cherchent.
+
+L’omniprésence des métriques web fournies par Facebook, Google et compagnie fait que plus personne n’imagine ne pas optimiser ces métriques, même les services publics, les écoles, les restaurants, les business de proximité, les entreprises qui ont une relation humaine avec leurs clients. Bref, l’immense majorité de l’économie.
+
+## Échapper aux influences néfastes
+
+C’est ce qui a fait la fortune de Google et Facebook : ils ont confisqué l’économie, l’ont pris en otage en convainquant le monde entier qu’il n’y avait pas d’autre manière de faire du business qu’en augmentant les clics sur le web. Et que la seule manière d’y arriver, c’est de passer par leur monopole.
+
+Tant qu’il y’aura des pigeons pour payer des publicités, ces entreprises survivront. Même si les publicités sont pour promouvoir des services vivant eux-mêmes de la publicité ? Sur Android, par exemple, les jeux font souvent la publicité d’autres jeux publicitaires. Sur Facebook, beaucoup de médias, y compris ceux financés par l’argent public, font leur publicité afin d’attirer des visiteurs pour visionner… leurs propres publicités.
+
+Il n’est pas compliqué de comprendre que tout cela tourne en boucle et que le jour où tout cela s’écroulera, ce ne sera pas très beau à voir. Que tous vos investissements pour obtenir des abonnés, pour obtenir des vues et des clics seront réduits à néant.
+
+Briser l’incroyable puissance de ces monopoles morbides ne passe pas par l’utilisation d’alternatives ou de succédanés, mais par la réalisation profonde que nous n’avons tout simplement pas besoin d’eux.
+
+Qu’ils ne survivent qu’en nous faisant croire à la fable qu’ils sont indispensables.
+
+Que sous les apparences de technologie et de scientisme, ces business ne sont que de simples religions qui contrôlent ceux qui veulent bien y croire, qui extorquent l’argent de leurs fidèles en leur faisant croire que c’est la seule option viable pour gagner le paradis.

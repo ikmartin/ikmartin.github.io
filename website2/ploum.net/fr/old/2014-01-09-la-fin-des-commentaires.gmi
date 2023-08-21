@@ -1,0 +1,57 @@
+# La fin des commentaires ?
+=> files/old/dog_waste_bench.jpg
+
+Lorsque je me suis lancé dans mon NaNoWriMo, j’ai décidé de diminuer autant que possible les distractions non-productives parmi lesquelles l’administration des commentaires de mon blog. Cela a tellement bien fonctionné et cela m’a tellement soulagé que je n’ai pas vu l’intérêt de les réactiver. Les commentaires resteront donc fermés jusqu’à nouvel ordre. Mais pourquoi agir de cette manière ?
+
+=> /9-ans-de-blog-le-defi-nanowrimo/ NaNoWriMo
+
+Parce que c’est scientifique !
+
+Le site PopularScience.com a également supprimé la possibilité de laisser un commentaire. La décision se base, comme on peut s’y attendre, sur les résultats d’une étude scientifique qui démontre que les commentaires dégradent l’appréciation que les lecteurs ont d’un article. C’est aussi simple que ça : avoir des commentaires est contre-productif si vous cherchez à produire du contenu perçu comme de qualité.
+
+=> http://www.popsci.com/science/article/2013-09/why-were-shutting-our-comments supprimé la possibilité de laisser un commentaire
+
+Intuitivement, nous en avons d’ailleurs tous déjà fait l’expérience : regardez une vidéo sur Youtube avec vos amis et vous observerez que, très rapidement, la conversation déviera vers la déplorable qualité des commentaires liés à cette vidéo. Le message, la qualité du film n’y changera rien.
+
+Même une minorité de commentaires de piètre qualité est suffisant pour tirer vers le bas le niveau entier de la discussion. À tel point que beaucoup d’internautes ont pris le parti de ne pas lire les commentaires, ritournelle reprise de manière humoristique par un compte Twitter dédié. Mais c’est souvent peine perdue : la curiosité et un défilement un peu trop rapide amèneront très vite la majorité d’entre nous à lire certains commentaires, à vouloir réagir, à rentrer dans une boucle négative de frustration, de non-écoute.
+
+=> https://twitter.com/AvoidComments un compte Twitter dédié
+
+Plusieurs lecteurs m’ont explicitement suggéré de fermer les commentaires de mon blog, ce qui est un signal important.
+
+Parce que c’est un gouffre d’énergie
+
+Si l’administration des commentaires semble une opération parfaitement anodine, elle produit néanmoins énormément d’énergie négative. Tout d’abord, je suis obligé de régulièrement vérifier si des nouveaux commentaires ont été postés. Ce n’est pas grand chose mais malgré tout une vérification de plus dans la routine mail-réseaux sociaux-agenda-SMS. Ou plutôt trois vérifications : les commentaires publiés, pour éventuellement répondre ou supprimer les indésirables, les commentaires à modérer et la file de spam dans laquelle se glissent régulièrement des commentaires légitimes.
+
+Pour chaque nouveau commentaire, je dois prendre la décision de le publier ou non. Et cette décision est chaque jour plus difficile. Ce commentaire semble logique et construit mais le site web du posteur est à caractère publicitaire. Acceptable ou non ? Ce commentaire est bourré d’injures mais n’est-ce pas la liberté d’expression de l’auteur ? Bref, des dizaines de micro-décisions à prendre tous les jours avec, à chaque fois, la crainte de prendre la mauvaise et de vexer des lecteurs.
+
+Le tout dans une atmosphère d’agression permanente. Car il suffit d’un commentaire injurieux, insultant ou agressif pour pourrir une journée. Le cerveau humain a tendance a retenir et mettre en valeur les agressions. Je l’ai constaté empiriquement le jour où, sur un billet fortement débattu, j’ai exprimé le sentiment que la moitié des commentaires étaient violemment en opposition avec mon propos. Or, après vérification et comptage, j’ai découvert que les commentaires incriminés étaient largement minoritaires. Leur impact émotionnel avait cependant été très important sur moi.
+
+Car le relatif anonymat des commentaires a tendance à lever les inhibitions et accroître l’agressivité. Je ne parle même pas des commentaires qui exigent des réponses de ma part ou qui, ayant été filtrés comme spams, s’insurgent sur le filtrage que j’exerce, exigent, vitupèrent.
+
+Au final, je me suis rendu compte que m’occuper des commentaires publiés sur mon propre site me stressait. Dans certains cas extrêmes, la crainte des commentaires pouvait repousser la publication d’un billet!
+
+Parce que l’utilité est devenue plus que limitée
+
+Bien sûr, on pourrait arguer que le jeu en vaut la chandelle, que les commentaires sont utiles. Mais je ne pense plus que ce soit le cas. Si le commentaire souhaite apporter un éclairage différent, une critique, l’auteur est tout à fait libre de le faire sur son propre blog ou sur les réseaux sociaux. Si, au contraire, le lecteur souhaite avoir ma réaction ou poser des questions, le mail fonctionne très bien. J’ai découvert avec amusement que la plupart des commentateurs de qualité sur mon blog commentent également sur au moins un réseau social. Certains m’ont même demandé où je préférais qu’ils commentent. Je ne risque donc pas de perdre leurs avis ou leurs pertinentes corrections.
+
+=> /a-propos-de-lionel-dricot/ le mail
+
+Les commentaires ont également une propension à se transformer en une discussion entre trois ou quatre intervenants, sans le moindre rapport avec le sujet initial et excluant tout nouvel apport.
+
+Les commentaires restaient également une mesure, très subjective, du succès d’un billet. Je me souviens d’une époque où je tirais une grande fierté du grand nombre de commentaires. J’ai le sentiment d’avoir évolué, de m’être affranchi de cette dépendance.
+
+=> /comment-jai-appris-a-ne-plus-men-faire-et-a-aimer-le-web/ de m’être affranchi de cette dépendance
+
+Merci pour tous vos commentaires au cours de ces neuf années. J’espère que vous continuerez à me commenter et critiquer sur Google+, Facebook, Twitter, par mail ou sur le réseau de votre choix.
+
+=> /no-proprietary-service.html Google+
+=> /no-proprietary-service.html Facebook
+=> /no-proprietary-service.html Twitter
+=> /a-propos-de-lionel-dricot/ par mail
+
+EDIT: Un argument qui revient souvent dans l’intérêt des commentaires est de compléter utilement l’information pour les futurs lecteurs. J’ai oublié de préciser que c’est toujours possible. Si je reçois des commentaires pertinents par mail, je peux rajouter les informations dans le billet directement (et je l’ai déjà fait).
+
+Image par Marie Coleman.
+
+=> http://www.flickr.com/photos/33901022@N00/8064652737 Marie Coleman

@@ -1,0 +1,46 @@
+# Ensemble, les yeux levés vers le ciel…
+
+Un homme et deux femmes regardent le ciel en se tenant par les épaules.
+
+=> ../files/old/login.png ubuntu login
+
+Bon d’accord, c’est un peu cucul. Mais là n’est pas le sujet. Il s’agit en fait de l’écran qui vous accueillera lorsque vous démarrez désormais votre ordinateur sous Ubuntu. (NB : ce n’est pas le thème par défaut, il faut choisir HumanCircle pour avoir ça, mais ça me faisait une chouette introduction à mon article).
+
+Ubuntu, un mot africain qui signifie humanité. Et qui est, je vous l’assure, le futur de Linux. Ubuntu, pour ne plus avoir à choisir entre la facilité de Mandrake ou la stabilité de Debian.
+
+=> http://www.ubuntulinux.org/ Ubuntu
+
+Ubuntu est un projet qui a été lancé par Mark Shuttleworth, un jeune millionaire sud-africain, qui fut le second touriste de l’espace et qui est, ce qui ne gâche rien, un mécène pour l’éducation scientifique des jeunes. Mark est de plus un fervent développeur Python et un défenseur de l’OpenSource. (bref le parti idéal pour les copines de geek)
+
+=> http://www.markshuttleworth.com/ Mark Shuttleworth
+=> http://www.firstafricaninspace.com/ le second touriste de l’espace
+=> http://www.shuttleworthfoundation.org/ mécène pour l’éducation scientifique des jeunes
+=> http://www.copinedegeek.com copines de geek
+
+Basé donc sur un capital économique solide (les millions de Mark) a été fondé une société, Canonical. Canonical n’a pas pour but de créer une énième distribution Linux. Au lieu de ça, ils ont engagés une panoplie de développeurs Debian et Gnome officiels (et pas n’importe qui) afin d’améliorer directement Debian et Gnome et de les intégrer au maximum. Tous les patchs sont accessibles et peuvent donc être facilement inclus « upstream ».
+
+=> http://www.canonical.com/ Canonical
+=> http://debian.org Debian
+=> http://gnome.org Gnome
+
+Etant un béta-testeur de Ubuntu depuis le mois d’aout (mais à l’époque je ne pouvais pas trop en parler), je peux vous assurer que le résultat est à la hauteur des espérances : une distribution simple à installer, belle dès le départ mais qui garde tous les avantages de Debian ! Bref, le pied intégral. Aujourd’hui est la sortie officielle de la première version, la 4.10 (comme octobre 2004), nom de code Warty : un tout grand bravo à Mark pour son initiative et aux extraordinaires développeurs. Armé de cet outil, vous pouvez enfin passer à Linux et, si c’est déjà fait, pourquoi ne pas convertir vos parents, amis et voisins ? (mais n’oubliez pas les 11 commandements de l’évangéliste OpenSource)
+
+=> http://frimouvy.org/wiki/InformationBazar les 11 commandements de l’évangéliste OpenSource
+
+Vous hésitez ? Pas convaincu ? Vous vous posez des questions ? Venez jeter un coup d’oeil à la FAQ en français ou bien venez en discuter sur le forum. »(EDIT : remplacement du forum Andesi par ubuntu-fr) »
+
+=> http://www.ubuntu-fr.org/articles/faqubuntu/ FAQ en français
+=> http://forum.ubuntu-fr.org le forum
+
+Après avoir converti ma Debian en Ubuntu (je ne vous le conseille pas), j’ai installé Ubuntu sur un très vieux portable et juste cet après midi sur le portable de mon ami Eric qui venait voir si je n’avais pas un CD de Windows. (comme quoi, je suis pas assez geek). Cependant, le manque de temps n’ont pas, je crois convaincu Eric, et il n’a pas l’air réellement motivé. Peut-être un coup dans l’eau. Il semble aussi rester des bugs dans Ubuntu au niveau du son ou de certains cartes graphiques. Mais je suis certain, quand je vois la quantité de travail abattue en peu de temps par cette Dream Team du logiciel libre, que la version prochaine, prévue dans 6 mois avec Gnome 2.10 et X.org, sera tout simplement exceptionnelle.
+
+=> http://frimouvy.org/wiki/CompaqPresario un très vieux portable
+
+=> ../files/old/ubuntu.png ubuntu logo
+
+Il n’y a pas à dire, Ubuntu semble enfoncer tout sur son passage là où Mepis et UserLinux n’ont jamais réussi à décoller. Go Ubuntu ! Go !
+
+PS : vous pouvez télécharger Ubuntu ou bien l’obtenir gratuitement par la poste !
+
+=> http://releases.ubuntu.com/warty/ télécharger Ubuntu
+=> http://shipit.ubuntulinux.org/ l’obtenir gratuitement par la poste

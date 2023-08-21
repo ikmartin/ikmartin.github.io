@@ -1,0 +1,28 @@
+# The Winmail.dat Syndrome
+=> files/old/emails.png
+
+For more than a decade, Microsoft Outlook has been acting in a weird way, sometimes sending email content or attachments in a file called « winmail.dat ». Most mail clients were unable to open that strange file.
+
+The logic behind this behaviour is not trivial but the point is that Microsoft was sending mail in a non-standard format. They were guilty of breaking the mail standard and the only sane solution was, obviously, for them to fix MS Outlook.
+
+=> http://www.dwheeler.com/essays/microsoft-outlook-tnef.html sending mail in a non-standard format
+
+But it didn’t happened. And people not using MS Outlook received winmail.dat files while Outlook users could exchange information without problems.
+
+Even if it was nothing but a faulty implementation in MS Outlook, some webmails started to transparently convert winmail.dat to a normal mail format: Hotmail, Yahoo and even GMail. It’s not a standard, it’s the sender fault but the receiver is the one who ends complaining. As such, it was fixed on the receiver side. A really bad and disgusting hack.
+
+The result is that a lot of people are now able to receive badly sent MS Outlook emails. If one of your contacts sends such an email to a bunch of friends, only a tiny minority will actually complain.
+
+And because they are a minority, it will be considered that the fault is theirs. « Oh but you are using that strange mail provider/your own server. You are the geek, you do strange things, fix the issue on your side ».
+
+Worst: if you run a business and offer mail services to paying customers, they will complain and get angry at you. They can’t read an email from a potential customer! They are loosing business opportunities because of you! And no, it’s not Microsoft fault : according to the sender, they are the first to complain. And even if it’s Microsoft fault, they don’t care, they just want to read their emails. Which is a perfectly understandable answer.
+
+I call this anecdote the « Winmail.dat Syndrome« . In the Free Software community, we are eager to support standardisation. To blame people who don’t follow a written standard.
+
+But, sometimes, we are blind to the real de facto standard. A standard that might be a piece of shit, a pure accident. A standard that was chosen by nobody. We try to educate people to the fact that their standard is not good, not a « real » one. But, in reality, nobody cares. They just want to use anything that works, even if suboptimal under the hood.
+
+By being picky about using a true written-by-experts standard, we are sometimes only excluding ourselves from the party. We are doing exactly what we are blaming: not acting as everybody else and doing our own protocol that nobody can understand. The fact that our protocol is open and could be implemented by anyone doesn’t matter for the end users. Nobody understands it and we are the troublemakers.
+
+Does it means that we should accept everything and forget about standardisation? Of course not! But shouldn’t we sometimes admit that we’ve lost a battle and that staying « pure » actually harm our end users instead of helping them?
+
+I tend to think that when a project is hurting its users instead of helping them, even with good intentions, something is very wrong about that project.

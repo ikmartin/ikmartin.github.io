@@ -1,0 +1,62 @@
+# How to be a lazy but successful Google SoC mentor
+
+Each year, Google is sponsoring a Summer of Code (SoC). During three months, Google pay students to work on various opensource projects. Each student should be followed by a « mentor » from the original project but the mentor is not paid, he receives a tshirt.
+
+=> http://en.wikipedia.org/wiki/Summer_of_code Summer of Code
+
+=> ../files/old/gsoc.jpg Google SoC
+
+3 years ago, I was a SoC student and developed the now abandoned Conseil but I learned a lot from that experience.
+
+=> /tag/conseil Conseil
+
+This year, one of the GNOME SoC projects was related to Getting Things GNOME!, the software I started with Bertrand. The project was to add the concept of geolocalization to your tasks list so you would be able to see where you can do tasks. The candidate, Paulo Cabido, seemed bright and skilled. I was the mentor. Strange to be on the other side of the fence.
+
+=> http://gtg.fritalk.com/ Getting Things GNOME!
+=> http://fr.wikipedia.org/wiki/Getting_Things_Gnome software
+=> http://rousseau.frispeech.com/ Bertrand
+=> http://www.paulocabido.com/gsoc/getting-things-gnome-12-weeks-after-soc/ geolocalization to your tasks list
+=> http://www.paulocabido.com/ Paulo Cabido
+
+Let’s kill the suspense : the result is more than a success. It’s wonderful. I’m proud to say that GTG has now a whole plugin engine, a geolocalization plugin using libchamplain and geoclue has a python « extended-binding ». More : GTG has now one new and very talented core developer, the GNOME community has one more bright member. Rock-n-roll !
+
+=> http://live.gnome.org/gtg/pluginHowTo plugin engine
+=> http://www.paulocabido.com/gsoc/geolocalized-tasks-in-getting-things-gnome/ geolocalization plugin
+=> http://projects.gnome.org/libchamplain/ libchamplain
+=> http://www.freedesktop.org/wiki/Software/GeoClue geoclue
+
+=> ../files/old/geoplugin.png GTG geo plugin
+
+Seeing the result, I might say that I was a good mentor. But I was lazy and I didn’t worked 10 hours a day for that SoC. Let me share my little recipe.
+
+The student : find a very talented an creative student, with technical skills. Be sure that the student is actually skilled enough to do basics stuffs. Write the proposition with him to be sure you have the same understanding. 3 months is too short to learn and master a new language or a new programming paradigm, at least for most of us. Paulo demonstrated his Python skills and even sent a small patch to libchamplain, showing that he didn’t feared C, bugzilla and other tools. We discussed a lot together to write his proposition.
+
+Communication : reply to every email of your student. Even a bit late, even with a short « I don’t know » or « No time, sorry ». Reply. No excuse. Reply. If no news and no sign of activity during a few days, send him an email. Most of my communication with Paulo were one sentence emails. Quick and efficient. When we wanted to discuss something, we fixed a meeting hour to discuss on IRC or Jabber. Frequently at the beginning, less at the end.
+
+Freedom : your student is *not* a coding hand. My hidden agenda was to make him a core developer of GTG in 3 months. The project itself was, in my mind, only an excuse, a learning tool. It means that your should never impose anything (technically speaking). Respect his choices and, if you disagree, that’s a very good sign. Discuss to find a solution and to understand his view. Consider him as a coworker and let him make his own choice. You are doing it right when your student needs you less and less. In the last weeks, nearly everything I was doing was reading his commit logs and his code.
+
+Resource : it’s his project. Not yours. You are only a resource that can give him informations. He will makes his own choice with those informations. Sometimes, let him think by himself. Just answer « What do you think ? ». When you don’t have an information, tell him how you would find this information but don’t do it yourself. Paulo quickly grasped that and I believe he was efficient to use me as a resource, not as a supervisor.
+
+Community : Introduce him to the community. Tell him to ask this developer or to see on this mailing-list. Bertrand and the whole GTG community were in fact co-mentor of the whole SoC, thanks a lot to them. I remember the first time someone asked me a question about GTG and I replied « Ask Paulo, he’s in charge for that ». I shivered, it was so nice to feel, on that very second, that he was my co-developer, not anymore an anonymous student.
+
+=> http://rousseau.frispeech.com/ Bertrand
+=> https://www.ohloh.net/p/gtg/contributors GTG community
+
+Honesty : That’s maybe the most important point. Be straightforward and ask your student to do the same. Never hide problems. It is perfectly OK to say « I didn’t work at all this week » or « I screwed my branch ». We don’t care about excuses. We only want facts. Everybody does mistakes and has problems. But if we communicate about it, we can solve everything. It also helps a lot to be honest when fighting against procrastination. If you are direct, the student will be. And never be angry at a student : you are the mentor. A lot of student fail because of bad mentor. Once or twice, I was a bit annoyed by the way Paulo was working. He was not listening to me! Or maybe, were my explanations not so clear? Taking the time to explain one more time, from A to Z, solved the problem. I was not happy with what the student was doing but, in fact, it was my fault!
+
+=> ../files/old/gtg.png GTG
+This was my first experience as a mentor and I tried to stick to those rules. As this was a wonderful experience, I thought that I would share them with you. Of course, there are hundred of successful SoC. This is not *the* way, this was my way. Some will say that only the first rule was really important, and that Paulo would have succeeded even with an IRC bot as a mentor. And you know what? I believe they are right!
+
+Well, forget that! Each organization is awarded money by Google to send two mentors to the mentor summit. If I want to be chosen amongst the GNOME mentors, I should probably say that I worked so hard, with sleepless night of code and student coaching. Hey GNOME foundation, did you hear? I worked very hard and really think that I will be a good representative of GNOME in the mentor summit and I will send a postcard to every member of the board of directors[1]. 😉
+
+=> http://gsoc-wiki.osuosl.org/index.php/2009 mentor summit
+=> http://www.gnome.org/ GNOME foundation
+
+Enough speaking about myself : Congratulations Paulo, welcome to the GNOME jungle. I hope that you and Bertrand will soon be GNOME members and that the whole GTG community will continue to rock as it is right now.
+
+=> http://foundation.gnome.org/membership/ GNOME members
+=> https://edge.launchpad.net/~gtg-user/+mugshots GTG community
+
+#### Notes
+
+[1] At least I can try, can’t I?

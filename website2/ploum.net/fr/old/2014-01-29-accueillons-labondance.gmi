@@ -1,0 +1,54 @@
+# Accueillons l’abondance !
+=> files/old/fountain_kid.jpg
+
+Selon les théoriciens, nous sommes en train de passer d’une économie basée sur la rareté à une économie basée sur l’abondance. La phrase est connue, ressassée mais reste fort hermétique. Tentons ensemble de comprendre ce que cela implique dans la vie quotidienne !
+
+La transition vers l’abondance, nous la vivons tous les jours. Elle s’illustre avec un exemple très simple : traditionnellement, lorsque vous aviez envie de lire un livre ou de regarder un film, vous consultiez la liste de ce qui était disponible. Que ce soit chez-vous, dans votre bibliothèque ou dans votre cinéma.
+
+Or, nous avons mis le pieds dans un monde où tout est disponible. Sans effort. En un clic. Tous les livres écrits, tous les films tournés. Face à l’immensité du choix, nous prenons peur, nous nous replions sur des concepts irrationnels comme « le plaisir de l’objet ». Mais nous nous habituerons, nous évoluerons.
+
+Des sites se sont créés pour partager des recommandations, des critiques. Si vous aimez ceci, alors vous aimerez sans doute cela. Certains d’entre nous gardent, dans un fichier, une liste de films qu’ils aimeraient voir ou de livres recommandés par les amis. Mais toutes ces méthodes ont un point commun : il va falloir se procurer par après le contenu. Il faut avoir l’opportunité de l’acheter. Ces systèmes n’exploitent donc pas l’abondance, ils sont déjà dépassés.
+
+Dans un monde où tout est disponible, séparer la recommandation du contenu n’a plus de sens. Imaginez que vous puissiez ajouter, en un clic, un article intéressant, un roman qui vous est recommandé, une trilogie de 1000 pages ou un film dont vous avez vu la bande-annonce à votre liste « à voir/à lire ». Que, lorsque vous avez des envies, vous puissiez simplement dire : « Je veux lire un livre. Je veux regarder un film amusant pour me changer les idées. Je n’ai pas d’idées particulières. » Votre liste vous suggérerait immédiatement ce que vous êtes susceptible d’apprécier maintenant et pour lequel vous avez marqué de l’intérêt.
+
+Science-fiction ? Pourtant c’est exactement ce que le service Pocket est en train de mettre en place avec la gestion fine des vidéos. Grand utilisateur de Pocket, que j’utilise depuis mon ebook, j’en ai déjà fait l’expérience : pour les livres du domaine public disponibles sur WikiSource, je ne prends même plus la peine de télécharger l’epub et de le charger sur mon Kobo. Je me contente d’ajouter la page WikiSource à ma liste Pocket. Il est à présent possible de faire de même avec les films que l’on souhaite visionner sur sa télévision. Chez Wallabag (ex-Poche), le concurrent Open Source de Pocket, il existe à présent un plugin permettant de transformer tout ses articles en epub, lisibles sur une liseuse. Pratique ! Mais si, au final, nous nous dirigions vers le contraire en convertissant tous nos epubs déjà vieillissants en… simples pages web ?
+
+=> http://getpocket.com/blog/2014/01/now-showing-your-saved-videos-on-apple-tv/ le service Pocket est en train de mettre en place avec la gestion fine des vidéos
+=> /lire-rapidement-sur-le-web/ ajouter la page WikiSource à ma liste Pocket
+=> http://www.wallabag.org/ Wallabag
+=> https://github.com/FaustXVI/poche-to-calibre un plugin
+
+Ce n’est pas un changement, c’est une véritable révolution. Les intermédiaires verront avec effroi disparaître leur raison d’être. Un auteur se contentera de publier ses textes sur un blog. Un réalisateur se contentera d’envoyer sa vidéo sur Youtube.
+
+=> http://actualitte.com/blog/projetbradbury/faut-il-laisser-mourir-les-librairies/ Les intermédiaires verront avec effroi disparaître leur raison d’être
+=> http://www.antredugreg.be/et-si-vous-essayiez-la-litterature-2-0/ se contentera de publier ses textes sur un blog
+
+Ceux qui resteront accrochés à leur copyright, qui refuseront ce type de diffusion finiront par disparaître hors des radars. Mais tout cela n’est possible que si ce type de consommation s’accompagne d’une prise de conscience du public et d’une contribution spontanée. Nous sommes dans une période transitoire ou trop peu d’artistes acceptent d’être payés librement et, du coup, très peu de consommateurs utilisent ce principe. Mais cela va changer !
+
+=> /la-liberte-de-soutenir/ trop peu d’artistes acceptent d’être payés librement
+
+Cela vous semble illusoire ? N’avez-vous jamais acheté un CD ou un livre que vous possédiez déjà en version « pirate » dans le seul but « de soutenir l’auteur » ? Piratez-vous uniquement par ladrerie ? Sans le savoir, vous êtes donc déjà un adepte du prix libre.
+
+=> http://www.framablog.org/index.php/post/2014/01/02/je-ne-veux-pas-payer uniquement par ladrerie
+=> /ce-blog-est-payant/ un adepte du prix libre
+
+L’abondance fait peur car elle menace tout un pan de l’économie basée sur la rareté. L’abondance menace l’emploi. Mais l’abondance fait également peur au public, le rend insatisfait. C’est le paradoxe du choix.
+
+=> http://www.amazon.fr/Le-paradoxe-choix-Comment-labondance/dp/2749905524 le paradoxe du choix
+
+Pourtant, l’abondance est une opportunité unique pour les créateurs et pour le public. Il s’agit d’un nouvel âge d’or de la culture. Dans quelques décennies, les ebooks d’histoire nous décriront comme des sauvages abrutis qui tentèrent, vainement, de s’opposer à ce progrès. Ils s’exclaferont en se demandant comment nous avons pu être aussi arriérés, comment nous avons pu être effrayés à l’idée de bénéficier d’une des plus grandes merveilles de l’histoire de l’humanité.
+
+=> /le-web-ce-pulp-ultime/ un nouvel âge d’or de la culture
+=> http://falkvinge.net/2012/12/13/four-more-reasons-the-pirate-bay-is-effectively-a-public-library-and-a-great-one/ grandes merveilles de l’histoire de l’humanité
+
+Tentons, ensemble, l’évolution, essayons le positif ! Écrivons à nos créateurs favoris pour leur proposer spontanément des paiements libres ! Soutenons les créations que nous aimons, que ce soit avec Flattr ou tout autre système ! Accueillons l’abondance !
+
+=> /a-mes-ecrivains-favoris/ Écrivons à nos créateurs favoris
+=> /si-vous-testiez-le-web-payant/ avec Flattr
+
+Si possible avec le sourire. Après tout, n’est-ce pas un des plus grands bienfaits de l’histoire de l’humanité qui se profile ?
+
+Photo par Paul Mayne. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/64685187@N00/12684226 Paul Mayne
+=> http://sylvestre.org Sylvestre

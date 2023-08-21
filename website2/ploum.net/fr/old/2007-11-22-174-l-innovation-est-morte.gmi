@@ -1,0 +1,49 @@
+# L’innovation est morte
+
+=> ../files/old/ampoule.jpg Ampoule brisée
+Imaginez un instant un monde informatique où le matériel fonctionnerait dès que vous le branchez, où remplacer une imprimante par une autre se ferait de manière tout à fait transparente, où regarder un film ne nécessiterait pas l’installation de codecs. Imaginez que vous puissiez installer les programmes dont vous avez besoin en les sélectionnant dans une liste, que vos fichiers fonctionnent dans tous les programmes, dans tous les lecteurs, tout simplement. Imaginez que vous n’ayez pas à vous préoccuper de la machine, de virus, de malwares, d’adwares, d’attaques. Imaginez que vous n’ayez qu’à utiliser votre ordinateur.
+
+=> /49-tout-simplement tout simplement
+
+Cela vous semble un rêve ? Utopique ? Et pourquoi pas ?
+
+En effet, si vous démarrez votre ordinateur sous Windows, que constatez-vous : chaque programme gère sa propre installation à sa façon, sa propre configuration réseau, sa propre désinstallation (un comble si le programme refuse de se désinstaller), sa propre interface pour être le plus voyant possible. Vous changer de réseau ? Vous êtes derrière un proxy ? Vous êtes bon pour reconfigurer chacune de vos applications. Profitez-en pour les mettre à jour tiens. Et vérifiez votre antivirus et votre firewall. Vous avez déjà vu la liste des applications les plus téléchargées pour Windows ? À part parfois Firefox, on ne trouve dans le top 10 que des antivirus, antitrucs, antimachins : des programmes qui vous permettent de lutter contre votre ordinateur !
+
+=> /24-un-pays-sympathique-mais-aux-moeurs-parfois-etranges Firefox
+
+=> ../files/old/catapulte.jpg Catapulte
+Disons le franchement : Windows a tué l’innovation. Toute tentative de faire quelque chose de nouveau est aussitôt étouffée dans l’oeuf. Pourquoi y’a-t-il toujours autant de câble derrière un PC ? Pourquoi l’écran possède deux cables distincts qui partent du même endroit pour aboutir presque au même endroit également ? Tout le monde branche et débranche sa clé USB, pourquoi est-il si pénible d’imaginer un simple clavier disposant d’un port USB ? Tout simplement parce que Windows a tué l’innovation. Les fabricants d’ordinateurs ne sont plus que des fournisseurs de « machine à faire tourner Windows » qui réduisent leurs coûts au maximum. L’innovation ne rapporte pas , l’innovation ne rapporte plus.
+
+Petit exemple illustratif : essayons d’installer une nouvelle webcam Philips sous Windows. Insertion du CD, webcam non-reconnue, driver ininstallable, recherche sur google de la mise à jour du driver (recherche qui renvoie plein de sites où se côtoient fesses et nichons[1], ce sont des coquins chez Philips), installation du driver, plantage complet de l’ordinateur. Ah mais c’est la faute du driver ! Branchement à chaud sous Ubuntu : la webcam fonctionne. Ni plus, ni moins. Sous windows, même graver un simple CD-rom est une affaire qui demande à faire appel au fils du voisin, « celui-qui-s’y-connait ».
+
+=> /36-je-ne-suis-pas-un-numero-de-hotline-je-suis-un-geek-libre « celui-qui-s’y-connait »
+
+L’informatique, d’un outil, est devenu un mal nécessaire. D’une révolution est devenu une pollution. Les gens ne veulent plus utiliser l’informatique, les gens ne veulent pas savoir. Ils se forcent, ils se plaignent. Ils perdent du temps, de l’argent. Grâce à Windows, nous avons 10 ans de retard. Il y a 30 ans, personne n’aurait parié sur des ordinateurs si rapides, si petits, avec autant d’espace mémoire. Il y a 30 ans, personne n’imaginait qu’une machine digne d’un film de science-fiction ne pourrait, en fin de compte, ne générer guère plus qu’une immense frustration et une telle gabégie d’énergie.
+
+=> ../files/old/boulet.jpg Windows, boulet de l'innovation
+Car la non-innovation, le goudron windowsien qui colle aux plumes de l’industrie n’est pas seulement une perte de confort : c’est une énorme perte économique. Actuellement une entreprise de 100 personnes en compte une dizaine juste pour le service informatique ! Au moindre problème, ce service informatique vous rétorquera que vous n’avez pas mis votre anti-virus à jour, que les règles du firewall ont changé. Il vous prendre votre ordinateur pour une demi-journée, voire plus, pour vous le rendre enfin mis à jour ! Malheureusement, votre problème initial n’est pas réglé lui. Et qui plus est, la moitié de vos applications ne se lancent plus non plus.
+
+« Oui mais moi, je n’ai jamais aucun problème ». Si. Tous les systèmes ont des problèmes. Simplement, on s’y habitue. Et c’est ça le drame. Windows nous habitue. Windows, tout le monde l’utilise. Si il y a un problème, c’est de ma faute. Avez-vous déjà compté le nombre d’heures passées en configuration, en installation, en réinstallation, en nettoyage, en recyclage ? Nous sommes tous des humains, nous avons une tendance innée au conservatisme, nous résistons au changement. Admettre que Windows n’est pas la panacée, c’est implicitement admettre avoir été dans l’erreur pendant des années, c’est un peu comme dire que des années d’expériences sont inutiles. C’est jeter aux oubliettes ces heures passées à apprendre à contourner les problèmes. Et bien non, ouvrons les yeux ! Toute expérience est bonne à prendre. Nous avions nos raisons de choisir Windows il y a quelques années. Le monde a évolué, nous aussi, sommes-nous obligé de rester englués à hier ? Ne pouvons-nous pas voir demain ? Et après ?
+
+=> /163-petite-psychologie-des-logiciels-libres-vs-logiciels-proprietaires c’est de ma faute
+
+De par le modèle sur lequel il est basé, Windows ne peut plus progresser. D’ailleurs, quel est l’intérêt d’une compagnie qui a un monopole absolu et qui fait les plus gros bénéfices du monde ? Que rien ne change bien entendu ! Une entreprise, et c’est logique, soutient uniquement ses propres intérêts. Ne faîtes pas confiance aux discours, aux publicités : faîtes uniquement confiance aux entreprises qui ont les même intérêts que vous.
+
+=> /167-de-l-evolution-et-de-la-liberte Windows ne peut plus progresser
+
+On va sans doute me taxer d’extrémiste. Mais je le dis et le redis : Windows n’a qu’un seul et unique avantage : il permet d’être « comme tout le monde ». Où du moins, il le permet encore pour quelques mois, quelques années.
+
+=> /2005/04/18/50-en-verite-je-vous-le-demande et le redis
+
+=> ../files/old/bulb_old_new.jpg Ampoule économique
+Bien entendu MacOSX, Mandriva, Fedora ou Ubuntu ne sont pas parfaits. Ils ont des défauts. Des problèmes. Mais contrairement à Windows, ces problèmes ne sont pas « normaux », ils doivent être corrigés, ils font déjà partie de l’histoire ancienne. Le monde utopique du premier paragraphe ? Linux, Apple ou d’autres, chacuns à leur façon, ils tentent d’y arriver. Ils y sont d’ailleurs presque, vous seriez étonnés…
+
+=> http://www.mandriva.com/fr Mandriva
+=> http://www.fedora-fr.org/ Fedora
+=> http://ubuntu-fr.org/ Ubuntu
+
+L’innovation est morte ? Non, elle bande encore !
+
+#### Notes
+
+[1] et pouf, plein de googleurs en plus, ça c’est du placement

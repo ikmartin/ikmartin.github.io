@@ -1,0 +1,33 @@
+# The Offline-First Quest
+
+I’m Ploum, a SF author, writing mostly in French. Since 2004, I’ve been trying to centralise all my writings on my blog, Ploum.net. I tried to not fall into the trap of "becoming a specialized media". Ploum.net is what I want to write, it can be about every subject, it can be in French or in English. If I wrote it, it probably fits on ploum.net.
+
+=> https://ploum.net Ploum.net, my www blog since 2004
+
+As I began my journey into Gemini, I wondered how I could make my blog available on Gemini too. After months of turning my head around it, I discovered that, if I wanted to make my blog available on Gemini (still working on it), I should first wrote a true gemlog, in the spirit of those I’m currently reading.
+
+My blog had become to high profile to be really free. When you know that your writings will end in the mailbox of hundreds of people, you care about content and form. Writing a blog post is now a process that take several days, multiple proof-reading. I also often censor myself: this is not good enough, better not post it.
+
+That’s also why, unlike my friend Thierry Crouzet, I don’t post my personal journal on my blog. It means that I either write for myself or take extra-step to produce good quality content for the mass.
+
+This gemlog is an attempt at finding a middle-ground. Also, because the Gemini space is still quite small, I will write in English. I will make it a journal through a particular pet project of mine : building an offline-first typewriter.
+
+My dream is to type on a true typewriter than, once happy with the text, have it scanned and automatically posted on a blog/gemlog. Both in text version (with some OCR errors) and as a picture of the typed text. That’s my current dream.
+
+I’ve already bought a few secondhand typewriters to play with them and explore this avenue. The process of writing mechanically and not be able to delete characters is very appealing to me. I want to try this experiment to see what I could write.
+
+Of course, this would be a write-only system. In order to still be connected, I’m trying to setup an "offline-first" system on my laptop.
+
+Offline first means that I could do most things I usually do on my laptop then, when plugged in, everything will synchronise. I’ve already disabled wifi on my laptop and installed a RJ45 cable on my desk. Through the free software Kiwix, I have an offline French and English wikipedia on my hard disk. I’ve offline spellcheck and synonyms through Antidote. I’m working on a mail system through mbsync/mutt/msmtp that would allow to write and reply to emails while offline and have them sent as soon as I connect. This work is currently in process and way harder than I thought.
+
+Next step would be to have my RSS feeds automatically sent to Pocket. Pocket is, of course, online but it is working well on a Kobo ereader I own. Which means I could read news immediately on the ereader (while, currently, I must manually open my feed reader, open the page and send them to pocket).
+
+I also imagined an offline browsing mode of the Gemini space. I described my idea on the Amfora bug tracker but this would also apply fairly well on the Tour feature of AV-98.
+
+=> https://github.com/makeworld-the-better-one/amfora/issues/169 #169: offline mode for Amfora
+
+Last but not least, as I’m writing this post in a connected SSH shell, I should find a way to write my gemlog and have it automatically pushed when connected (while waiting for the typewriter/scanner combo).
+
+There’s no rocket science involved in building this #offlinefirst mode but it’s full of small tasks which are very time consuming (yes, still in the process of configuring Mutt). Those days, we assume permanent connectivity to the point it’s hard to work without being connected. Most of your software will complain at some point if you are not connected.
+
+Any tip, any help and any share of experience will be highly appreciated in this quest. You can contact me on lio at ploum.be.

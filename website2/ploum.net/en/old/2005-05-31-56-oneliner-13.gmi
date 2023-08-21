@@ -1,0 +1,3 @@
+# [Oneliner 13]
+
+=> ../files/old/one_way.jpg One Way

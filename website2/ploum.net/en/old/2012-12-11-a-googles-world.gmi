@@ -1,0 +1,81 @@
+# A Google’s world
+=> files/old/google1.jpg
+
+Ce texte est également disponible en français.
+
+=> /le-monde-selon-Google disponible en français
+
+What would you do if you had access to a virtually unlimited wealth and to all the greatest technology? The opportunity to hire the greatest geniuses of your time?
+
+For most of the large companies at the end of the industrial era, the answer was « make more money, accumulate more wealth ». It is so meaningless. Not a surprise that they were about to destroy the world.
+
+Google was the exception. Google was spending money to make the coolest stuff, not to earn more money. They were building what they wanted to have for themselves. Inevitably, some of the projects ended earning money. But it was not the primary goal.
+
+While all companies were trying to create a website and to keep as much visitors as possible, Google launched its own where users had to spend the least possible time and find elsewhere what they wanted. This could not be a profitable business.
+
+When email solutions reached their peak and competed with features, Google decided to make a simplified interface only accessible in a browser. But with free virtually unlimited storage. This could not be a profitable business.
+
+You’ve probably visited the museum of technology. You saw the first true smartphone, the Apple iPhone from 2007. At that time, rumours expected a Google reaction and the launch of a Google phone.
+
+Surprise and disappointment: Google merely published a free and open source operating system for smartphones: Android. Yet most money was done selling phones themselves. Google’s idea could not be a profitable business.
+
+However, in less than ten years, Android became the de facto standard for personal computing, on all types of equipment ranging from giant atrium television to tiny headset. From the strutting original phone manufacturers, only a bunch of surviving competitors were struggling with tight margins.
+
+Google struck again with Google Wallet. Rather than going to war with the big names like VISA or Master Card, it merely offered an online payment solution using existing credit cards. VISA and others saw it as a cooperation rather than competition.
+
+Soon, the exchange between two Google Wallets became so simple that credit cards were considered useless. Just place two phones close to each others to initiate a transaction, be it to buy a drink, a car or reimburse a friend.
+
+When some companies offered to pay employees directly on Google Wallet accounts, governments tried to regulate it. Google bowed to all their requirements but, at the same time started to recognize bitcoin as a currency. Gradually, the economy bypassed the boundaries and the states, concepts such as GDP and Federal Reserve became obsoletes.
+
+=> /bitcoin-bubble bitcoin
+
+Web services were created. There was Flattr for micro-donations, KissKissBankBank for project funding and other for mortgage. It was called P2P banking. You want to build a house or start a business? You borrow from friends and friends of friends, each of them settings its own rate depending on its affinity with your project or by default. All is managed automatically, most do not even know to whom they are lending. They fixed the interest and the required liquidity they needed, that is all.
+
+=> http://flattr.com Flattr
+=> http://www.kisskissbankbank.com/ KissKissBankBank
+
+Like the music industry before, the banking sector did not want to deal with this unfair competition. Thanks to heavy lobbying, corruption, unfair laws and scandalous trial, they managed to extend their agony for nearly twenty years before disappearing in utter disgrace. Only a few years before the states themselves.
+
+Indeed, witnessing most financial transactions escaping its control, governments no longer knew what to tax and stood on the bankers side. Nevertheless, administrations melted like snow in the sun, enforcing a lot of simplifications.
+
+Unlike banks, states eventually adapted, becoming federation of regions and cities which were themselves federations of towns and neighbourhoods. The property tax was introduced. Whether you own a home, a work of art, a horse, a sports car, a jewel or a company, you are taxed at the level of the declared insured value.
+
+You can of course underestimate your good or not take any insurance at all. But, in case of a disaster, do not expect any help. It’s a risk that few are willing to take. And, anyway, owning a property that is worth the insurance means that you have some comfort. The tax being inherently proportional to your wealth, it is considered as fair.
+
+Nowadays, I see directly in my glasses the directions to a friend’s house, my calendar, my new posts, my news feed, my books and even a few games that I play while running in the park. I have to jump to get bonuses that I’m the only one to see or to sprint when a monster is chasing me: fun and healthy.
+
+=> ../files/old/google_glass.jpg Google glasses
+
+When I make an appointment, my calendar automatically calculates the best way to get there, taking many parameters like weather into account. If a car turns out to be the best option, I know it will wait for me in front of the house when I have to leave. The car will automatically follow the optimal route and return to the nearest charging station after dropping me at destination. Needless to say, buses have completely disappeared. Trains are used for medium or long distance and owning his own car is an old-fashioned snobbery.
+
+I do not care about anything anyway, those are implementation details. I just decide where I want to be and at what time. If necessary, I chose an hotel amongst several proposals. Then I simply follow the instructions of my glasses. I leave the car, I get a high speed train or a plane, jump in a subway and walk a quarter of an hour. I trust Google to find the fastest and least expensive route. Moreover, the system has understood that I love walking and favour it when weather conditions are nice. A sudden downpour and a car magically appears, allowing me to stay dry.
+
+Sometimes, when I get in a car, I meet strangers. Indeed, the system optimizes the flow of all users and I did not take the « exclusive » Cambio subscription « . It is quite expensive. But I don’t really need it anyway as it allows me to discuss, to meet people of my own town that I add to my « Neighbourhood » circle.
+
+From time to time, I receive in my stream news from people with whom I shared a few trips. Last year, I organized a block party. I created the event without a particular date, inviting people from my nearby circles. Lot posted suggestions, volunteered to bring the chairs or the food. The most convenient day for the majority was automatically set. Even the costs were automatically balanced and all I had to do was to click to accept a small participation fee.
+
+That fee was ridiculous. Admittedly, most of us have a comfortable income. The property tax discourages useless shopping sprees. Being a member of a tools community, I lend my lawnmower from time to time and have access to all other necessary tools without having to buy them. I prefer to invest my money in concert tickets, watching a movie or reading a book. In short, buying memories, not items taking place in a closet or a garage.
+
+From time to time, I do myself a favour a buy a work of art for the wall of the living room. I like to change it regularly even if it is expensive. If my wife does not like it, I fall back in one click, enjoying my new acquisition when I’m alone. I have to make the confession that, in our living room, an entire wall is painted with electronic ink. Madness! I should declare it to the insurance.
+
+Studying history, I’m admiring the way Google shaped our world. In less than a century, we have witnessed the reduction of states and a consequent reduction in conflicts, the end of wild finance and, with it, most of the poverty, a drastic limitation of pollution and consumption.
+
+In short, Google led the world out of the industrial era when we lived only for an absurd growth. We are now living in the future, the Google times.
+
+When I think about it, I see a downside. A small itch that bothers me and which seems to have no equivalent in history. A small dark cloud present in the subconscious of everyone but that we prefer to ignore.
+
+My whole life is on Google. My money, my history, my photos, my memories, my books, my identity, my relationships. Even a simple movement or administrative access requires my Google account.
+
+And, starting tonight, trying to connect brings me a message: « Your account has been disabled. »
+
+This is probably a simple temporary mistake but I honestly do not know what to think. I’m waiting for the issue to be resolved so I could call my friends and discuss that unexpected event with them.
+
+*This post is part of the Letters from the Future collection.Pictures by Robert Scoble and Antonio Zugaldia*
+
+=> /no-proprietary-service.html Letters from the Future
+=> http://www.flickr.com/photos/35034363287@N01/4249731778 Robert Scoble
+=> http://www.flickr.com/photos/23526149@N00/7457645618 Antonio Zugaldia
+
+Ce texte est également disponible en français.
+
+=> /le-monde-selon-Google disponible en français

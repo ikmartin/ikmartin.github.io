@@ -1,0 +1,28 @@
+# Les DRM sur PureFM…
+
+Ce samedi, j’ai été invité par Damien sur PureFM pour discuter de la problématique des DRM, ces technologies ajoutées sur les musiques (ou les films) pour soi disant vous empêcher des les pirater. En 5 minutes d’antenne, nous avons dû nous rendre à l’évidence, les DRM, c’est de la m…
+
+=> http://www.bloggingthenews.info/ Damien
+=> http://www.purefm.be PureFM
+=> http://fr.wikipedia.org/wiki/Gestion_num%C3%A9rique_des_droits DRM
+=> http://linuxfr.org/images/dessins/concours_antidrm/protection_des_livres/protection_des_livres_small.png les DRM, c’est de la m…
+
+=> ../files/old/Microphone_and_cord.jpg Micro
+Vous pouvez écouter le podcast[1]sur le site de l’émission ou bien le télécharger (15Mo).
+Après l’émission, j’ai eu l’occasion de discuter hors-ligne une demi-heure avec Damien de blogs, de logiciel libre, de culture et de journalisme. C’était très agréable et instructif.
+
+=> http://pureblog.purefm.be/2007/02/podcast_pureblo.html sur le site de l’émission
+=> http://podcast.rtbf.be/sound/Pure_Blog_03-02-07_Les_Medias_Centers__Les_D_1595136.mp3 le télécharger
+=> http://www.bloggingthenews.info/ blogs
+
+Ah oui, j’oubliais, il va installer Ubuntu[2] pour tester. Décidemment, on ne se refait pas…
+
+=> http://www.ubuntu.com/ Ubuntu
+
+#### Notes
+
+[1] On ne dit plus MP3, on dit podcast bien sûr ! MP3 c’est soooooo 20ème siècle !
+
+[2] Pardon, il faudrait dire Vista Ultimate
+
+=> http://www.degredo.net/ Vista Ultimate

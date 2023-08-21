@@ -1,0 +1,13 @@
+# This is Madness! No, This is Offpunk 0.9!
+
+I’m jumping directly to Offpunk 0.9 as a release candidate of Offpunk 1.0, which should be released next week.
+
+While there are many improvements that could be made, I believe Offpunk has reached some maturity with mainly bug fixes and small improvements since the 0.4 release.
+
+One of those improvements is that Offpunk will now avoid fetching http content above 20Mo if that content was not explicitely requested. This configurable download limit is impossible to implement with Gemini as there is no "content-lenght" information but Gemini content is recommended to be under 100Mo.
+
+There’s still one new completely unexpected feature with this release: initial support for the Spartan protocol. Hope this will be fun for the semi-naked warriors amongst us. Offpunk is now officially a Gemini/Gopher/Spartan/Web client. Let’s call it a "Smolnet browser".
+
+Please report bugs so I can fix them for the 1.0 release scheduled for March 10th. At this date, I will need your help to spread the word about the Offpunk way of browsing the smolnet and beyond.
+
+=> https://tildegit.org/ploum/AV-98-offline/ Offpunk repository

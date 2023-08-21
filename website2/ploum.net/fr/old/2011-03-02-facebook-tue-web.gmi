@@ -1,0 +1,57 @@
+# Facebook est-il en train de tuer le web ?
+
+Il arrive que, de temps en temps, un petit blog comme le mien se paie le luxe d’un billet à succès. Un bon timing et une plume moins amphigourique qu’à l’accoutumée se combinent avec un zeste de chance pour produire un « hit ».
+
+Dans ces moments là, gonflé de ma fierté, je lis avec plaisir l’avalanche de commentaires, je parcours mes statistiques afin de trouver les sites qui parlent de mon billet, j’apprécie les réactions (même négatives), les discussions qui se lancent.
+
+C’est ce qui m’est arrivé le mois passé. Un véritable raz-de-marée de visiteurs provenant de toute l’Europe, une reprise sur le site d’un des plus grands quotidiens belges. La gloire. Je dois remonter à 2007 (ou, dans une moindre mesure, 2009) pour retrouver trace d’un pareil engouement suscité par mes écrits.
+
+=> /go/q le mois passé
+=> /go/17 2007
+=> /go/a 2009
+
+=> ../files/old/crowd.jpg Foule
+
+Étonné par ce succès inattendu, je me rue donc sur la liste des référents, euphorique.
+
+Ma mâchoire se fige, mon sang ne fait qu’un tour.
+
+Pour le mois de février, plus de 90% de mes visiteurs proviennent de Facebook. Le restant provient, en grosse majorité, de Twitter. La tendance observée avec sur des billets relativement populaires en 2011 se confirme et s’accentue.
+
+=> /go/18 Facebook
+=> /go/branlr relativement
+=> /go/9 populaires
+
+=> ../files/old/wall2.jpg Sur le mur
+Il n’y a plus de liens. Je ne peux plus voir les réactions des gens que je subodore nombreuses sur les « walls ». L’interaction entre personnes non connectées sur Facebook est donc réduite à néant. Le nombre de visiteurs postant un commentaire sur mon propre site se réduit à une peau de chagrin.
+
+Cela me chagrine car les blogs, hérauts d’une nouvelle génération, disparaissent ou s’uniformisent, laissant la place au format Facebook. La créativité individuelle se fond dans un moule restrictif mais tellement confortable.
+
+Les échanges se réduisent également au cercle des gens connectés. C’est effrayant. Si Facebook nous promettait de garder facilement contact avec nos relations, nous n’imaginions pas le faire au détriment de la possibilité de rencontrer, au détour d’un message, un horizon inconnu. Twitter joue ici le très léger contre-pouvoir mais la pauvreté d’une expression en 140 caractères donne un aspect décérébré aux opinions et aux conversations.
+
+Un producteur de contenu comme moi en vient donc à ne plus connaître ses lecteurs. Qui sont-ils ? D’où viennent-ils ? Pourquoi me lisent-ils ? Mes visiteurs s’enfoncent dans un uniforme brouillard. Mais Facebook les connait. Facebook sait exactement qui a visité mon site. Facebook sait exactement ce qu’ils en pensent, avec qui ils échangent.
+
+Paradoxalement, en écrivant sur le web, j’offre du contenu à Facebook. Je produis et la masse des Facebookiens cloisonnés consomment tandis que Facebook, d’un regard bienveillant, se demande encore que faire de cette gigantesque puissance que nous lui avons donnée.
+
+Grâce aux récentes révolutions, Facebook acquiert une aura de sauveur, de chevalier blanc. Mais comme tout service centralisé, cette puissance peu à tout moment se retourner contre ses utilisateurs. Un exemple très frappant est Gravatar: simple, pratique. Je l’utilise même sur ce site. Mais avez-vous réfléchi au fait que chaque gravatar est noté et peut être censuré à tout moment ?
+
+=> /go/19 une aura de sauveur
+=> /go/1a Gravatar
+
+=> ../files/old/wall3.jpg Sortir du mur
+
+Les réseaux sociaux changent la manière de communiquer, ils changent la société. Nous ne pouvons pas nous contenter de les refuser ou de fournir quelques ersatz libres. Nous avons la responsabilité de codifier cette nouvelle communication, d’inventer des protocoles, des langages.
+
+=> /go/1b ersatz
+=> /go/1c libres
+=> /go/1d nouvelle communication
+=> /go/1e protocoles
+=> /go/n langages
+
+Non, Facebook ne tue pas le web. C’est nous qui laissons mourir le web, petit à petit, par simple paresse ou par confort.
+
+Crédits photos: Anirudh Koul, spoon, Niels Linneberg
+
+=> /go/1f Anirudh Koul
+=> /go/1g spoon
+=> /go/1h Niels Linneberg

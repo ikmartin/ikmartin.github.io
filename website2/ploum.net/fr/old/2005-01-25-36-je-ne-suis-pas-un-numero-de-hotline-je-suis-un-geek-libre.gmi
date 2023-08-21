@@ -1,0 +1,97 @@
+# Je ne suis pas un numéro de hotline, je suis un geek libre !
+
+=> ../files/old/prisx62r.jpg le prisonnier
+– Où suis-je ?
+– Au village !
+– Que me voulez-vous ?
+– Des renseignements ! Nous voulons des renseignements !
+– Vous n’en aurez pas !
+
+Lorsqu’on écoute un linuxien se plaindre et râler, il y a fort à parier que cela concerne le système Windows de Microsoft. Dans la toute grosse majorité des cas, le problème ne le concerne pas directement mais notre pauvre linuxien (appelons le Robert) y a été confronté alors qu’il opérait comme administrateur système bénévole pour son copain/cousin/voisin Gérard.
+
+Car, avant d’être linuxien, Robert est avant tout considéré comme celui-qui-s’y-connait-en-informatique. Et pour Gérard, celui-qui-s’y-connait-en-informatique signifie que Robert sait comment réinstaller Windows quand tout a planté, comment centrer un texte dans Word sans remplir les lignes de caractères d’espacement et installer un anti-virus gratuitement.
+
+Robert ayant passé des heures à configurer l’ordinateur de Gérard, lui ayant expressément recommandé de ne pas utiliser Internet Explorer, il est forcément fou de rage quand, une semaine plus tard, Gérard lui annonce que l’ordinateur est de nouveau « planté ».
+
+Alors, comme Robert est gentil, il va se contenter d’aller hurler sa haine sur son blog[1] ou dans un forum. Quant à Gérard, il ne se préoccupe plus de rien. Il dira d’ailleurs autour de lui que Windows est quand même bien plus facile que Linux, que Robert lui a montré une fois.
+
+=> http://gfabio.blog.free.fr/?2005/01/18/139-windows-grosse-merde son blog
+
+#### Notes
+
+[1] Ce blog n’est qu’un exemple parmi tant d’autres pour illustrer mon propos. Play, sans rancunes j’espère ?
+
+Celui qui…
+
+```
+
+```
+
+Beaucoup de linuxiens se reconnaîtront probablement dans cette caricature de Robert. Et, pour tout avouer, l’auteur de ces lignes était un Gérard en puissance il n’y a pas tellement longtemps.
+
+=> ../files/old/helpdesk.jpg un helpdesk en puissance
+
+En effet, chaque semaine lorsque je rentrais à la maison, je passais une soirée à mettre à jour les antivirus, à supprimer les spywares installés, à nettoyer les répertoires temporaires un peu partout. Sans compter les voisins, qui me demandaient régulièrement de passer nettoyer leur ordinateur. Certes, j’installais Firefox et Thunderbird, en expliquant bien comment les utiliser. Mais quand je revenais au bout de quelques semaines et constatait qu’ils n’avaient pas été utilisés, on me répondaient toujours une phrase genre « oui, ton truc est pas mal mais moi j’utilise google ».
+
+Lors d’une réunion de famille, si quelqu’un se plaignait que son ordinateur ne marchait plus, il y avait toujours une personne ayant déjà bénéficié de mes services pour dire à haute voix que je pourrais sans doute arranger tout cela.
+
+Tout ce travail bénévole, me valait quelque fois un merci[1]. Lorsque dans un élan de prosélytisme je faisais une démonstration de Linux, on m’écoutait avec politesse avant de conclure « c’est quand même beaucoup plus compliqué ton truc ».
+
+En gros, j’effectuais bénévolement le travail du service après-vente de Microsoft. Pire, le fait que j’impose l’installation de Firefox et Thunderbird me rendait responsable de tous les problèmes qu’un PC pouvait avoir.
+
+Non, je ne suis pas un helpdesk ! 
+
+Un jour ma mère m’appelle en catastrophe. Elle a ouvert un attachement .pif dans un mail. Certes l’anti-virus lui a demandé 3 fois si elle était sûre de vouloir ouvrir le fichier, mais elle n’a pas fait attention et a cliqué trois fois sur « oui ».
+
+Le logiciel libre est une question de choix. Je ne peux ni ne doit rien imposer à personne. Cela avait été mon erreur en imposant Firefox partout.
+
+J’ai donc calmement expliqué à ma mère que je n’interviendrais plus sur un ordinateur Windows. Je lui proposai alors d’utiliser Linux à la place. Si elle n’était pas d’accord, elle pouvait faire appel à quelqu’un d’autre que moi[2].
+
+Depuis ce jour là, je n’ai plus accepté le moindre dépannage sur un ordinateur Windows, sauf pour installer des logiciels libres quand on me le demandait.
+
+J’ai toujours répondu poliment aux demandes mais en étant catégorique : je veux bien installer un Linux, mais je ne toucherais pas à un Windows. Lorsque la personne insiste vraiment, je réponds que, n’utilisant pas Windows, je n’ai de toutes façons pas les compétences requises[3].
+
+J’avoue avoir pris un risque. Je croyais en effet qu’on allait désormais me considérer comme quelqu’un qui ne connait même pas Windows et qui n’est de plus pas sympathique. J’étais persuadé de subir des réactions négatives de la part de mes anciens « clients ». Je fûs très étonné de constater l’effet exactement inverse. Dans l’esprit de mon entourage, je devins en quelques sortes celui-qui-s’y-connait-vraiment-bien-et-qui-est-au-dessus-de-tout-ça.
+
+=> ../files/old/Angel.jpg ange
+Celui qui est au dessus de tout ça. Alléluia !
+
+Les demandes en réparation se firent plus rare. Mais autour de moi Windows cessait de devenir un système plus facile que Linux. D’autres « réparateurs Microsoft » firent leur apparition, mais nettement moins compétent que moi. Les logiciels piratés cessèrent de circuler, étant donné que je ne les fournissais plus. Et les demandes pour installer Linux commencèrent à affluer, bien que souvent timidement déguisées.
+
+Sans que j’ai besoin de dire quoi que ce soit, mon interlocuteur me proposait de m’inviter à dîner en échange d’une installation de Linux. Les personnes que je connaissais moins me demandait même directement combien je prenais de l’heure pour installer Linux.
+
+J’étais donc bien plus respecté pour mon travail, j’avais plus de temps libre et surtout mon exposition décroissante au système de Redmond permettait à mes pauvres petits nerfs de se reposer.
+
+Oui mais … 
+=> ../files/old/AA050669.JPG Y'a pas de mais !
+
+Quand je raconte cette histoire autour de moi, on me prétend toujours que parfois, on n’a pas le choix. C’est faux !
+
+En acceptant de faire la maintenance d’un système Windows, on se comporte comme le pire ennemi de l’avance de Linux : On conforte les utilisateurs dans l’idée que Windows est facile, on effectue un travail pour lequel l’utilisateur a déjà payé à Microsoft (et donc on fait don de son travail à Microsoft).
+
+Oui mais, pour la famille ou la petite amie ?
+
+Et alors ? Depuis ce moment là, j’ai refusé d’aider mes petites amies sous Windows. De toutes façons, si votre petite amie ne vous aime que pour votre capacité à réparer son ordinateur, changez de petite amie… Quant à la famille, il n’y a pas de raison qu’elle soit logée à une autre enseigne que le reste. De plus, le fait d’être le réparateur de service vous octroie automatiquement la responsabilité de tous les problèmes qui pourraient se manifester après votre passage.
+
+Le point le plus important dans cette transition est le choix. Vous devez affirmer votre choix personnel « Désormais, je ne ferai plus de dépannage pour Windows ». Nul ne peut objecter quoi que ce soit car il s’agit de votre choix personnel. Si vous souhaiter convertir quelqu’un à Linux, vous devez lui laisser le choix : « Si tu veux, je peux t’aider à installer et utiliser Linux ». Nul besoin de critiquer Windows ou de vouloir faire paraître Linux bien meilleur. Il faut être honnête et présenter les désavantages comme les avantages de chaque solution. « Oui, sous Linux tu n’auras plus de virus. Mais tu ne pourras plus utiliser les mêmes programmes et tu devras te réhabituer à d’autres ».
+
+Et si la personne refuse ou n’utilise pas le Linux dual-boot que vous avez installé, ce n’est pas un problème, c’est son choix.
+
+Ah oui, un dernier conseil : ne lancez jamais vous-même un sujet informatique ou Linux dans une discussion. N’essayez jamais de vous mettre en valeur en disant « Ah oui, Linux je connais, d’ailleurs.. ».
+
+Attendez qu’on vienne vous chercher. Vous verrez la différence 😉
+
+Conclusion
+
+Si votre choix est d’aider les personnes sous Windows, je le respecte entièrement. Chacun son choix. Néanmoins, je serai désormais intransigeant avec les personnes se plaignant d’avoir dû dépanner un Windows. Car, contrairement à ce que vous pourrez dire, vous avez le choix ! Durant 17 épisodes, le prisonnier tient bon et ne donne aucun renseignement. Il gagne à la fin contre les méchants. Si il avait dit « j’ai pas le choix, je donne les renseignements », pas sûr que ça aurait été pareil..
+
+=> ../files/old/prisonnier.jpg le prisonnier
+Maintenant qu’il a vaincu les méchants sans donner de renseignements, le prisonnier part vers d’autres aventures…
+
+#### Notes
+
+[1] et encore… mais ne noircissons pas exgérément le tableau
+
+[2] Elle a évidemment accepté et est devenu une évangéliste Linux en puissance
+
+[3] ce n’est que partiellement vrai, mais diplomatiquement plus facile

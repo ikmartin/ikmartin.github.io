@@ -1,0 +1,68 @@
+# The Ploum’s Ultimate Anti-Spam Solution
+
+Warning : This joke is not related to the real Ploum Engineering company, a great (and friendly) specialist in technical consultancy. You are probably looking for them !
+
+=> http://ploumengineering.nl/ Ploum Engineering
+
+=> ../files/old/antispam/2.jpg Antispam
+
+Tired of Spam ? Tired of junk in your mailbox ? For a long time now, we have developped, in the biggest secret, a new technology. Ploum is proud to present you the ultimate solution to fight against Spam.
+
+Marre du Spam ? Marre de cet envahissement permanent de votre boîte aux lettres ? Depuis longtemps et dans le plus grand secret, nous avons développé une techologie révolutionnaire. Ploum est fier de vous présenter la solution ultime pour combattre le spam.
+
+=> ../files/old/antispam/1.jpg Antispam
+Each morning, it’s the same story ! My mail box is full of spam.
+
+Chaque matin, c’est la même histoire ! Ma boîte à lettre est pleine de spam.
+
+=> ../files/old/antispam/3.jpg Antispam
+Mmmmmm… How could I fight spam ? There must be a way !
+
+Mmmmmm… Comment combattre le spam ? Il doit bien y avoir un moyen !
+
+=> ../files/old/antispam/4.jpg Antispam
+The first thing is to obtain a bayesian filter. You could buy one in most specialized shops. Just ask for a standard bayesian filter.
+
+La première chose est de se procurer un filtre bayésien. Vous pouvez en acheter dans la plupart des magasins spécialisés. Demandez juste un filtre bayésien standard.
+
+=> ../files/old/antispam/5.jpg Antispam
+With this bayesian filter, we will build an anti-spam that fits perfectly our needs.
+
+Avec ce filtre bayésien, nous allons construire un anti-spam qui correspond parfaitement à nos besoin.
+
+=> ../files/old/antispam/6.jpg Antispam
+Simply install the bayesian filter on your mailbox. There’s no difficulty here, it’s really easy.
+
+Installez simplement le filtre bayésien sur votre boîte à lettre. Pas de problème, c’est très facile.
+
+=> ../files/old/antispam/7.jpg Antispam
+You’ve fooled the spam ! The naughty spammer cannot put his junk in your inbox anymore. Wonderful !
+
+Vous avez vaincu le spam ! Le méchant spammeur ne peut plus mettre sa camelote dans votre boîte. Merveilleux !
+
+=> ../files/old/antispam/8.jpg Antispam
+Thank you Ploum. By developping this great technology for years in your big secret lab, you allowed us to fight spam just like bicycle repairman fight the communism.
+
+Merci Ploum. En développant cette technologie révolutionnaire depuis des années dans votre laboratoire secret, vous nous avez permis de combattre le spam tout comme bicycle repairman combat le communisme.
+
+Ploum, studying migrating coconuts since 20th century.
+
+=> ../files/old/antispam/thunderbird.jpg Mozilla Thunderbird
+If the solution described above doesn’t fill your needs, we recommend you to use Mozilla Thunderbird which includes, besides a lot of other essential features, a very efficient spam filter.
+
+=> http://www.mozilla-europe.org/en/products/thunderbird/ 
+
+=> http://opensourcearticles.com/articles/introduction_to_thunderbird_5 spam filter
+
+Si la solution décrite ci-dessus ne vous satisfait pas complètement, nous ne pouvons que vous recommander d’utiliser Mozilla Thunderbird qui comporte, en plus d’un tas d’autres fonctionnalités indispensables, un filtre à pourriels très efficace.
+
+=> http://www.mozilla-europe.org/fr/products/thunderbird/ Mozilla Thunderbird
+=> http://www.geckozone.org/articles/2004/06/30/26-introduction-a-thunderbird-5eme-partie filtre à pourriels
+
+The customer/le client : Ploum
+The spammer/le spammeur : Denis
+Pictures by/photos de : Bertrand
+
+=>  Ploum
+=> http://denis.fritalk.com Denis
+=> http://beber.frimouvy.org Bertrand

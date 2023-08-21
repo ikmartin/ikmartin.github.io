@@ -1,0 +1,10 @@
+# Ploum.net
+
+I’m Ploum, a writer alternating between a bépo keyboard, to feed this blog, and old mechanical typewriters on which I imagine our futures, available in every good (French-speaking) book store. Without a keyboard, you can find me underwater or on a bike.
+
+As « Lionel Dricot », I pretend to be respectable to teach software freedom at École Polytechnique de Louvain.
+
+=> software.gmi Software
+=> about.gmi Contact
+=> https://listes.ploum.net/mailman3/postorius/lists/en.listes.ploum.net/ Subscribe to the newsletter (EN)
+

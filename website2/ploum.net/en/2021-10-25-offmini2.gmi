@@ -1,0 +1,255 @@
+# Offmini (part 2): Designing a Simple Offline and Decentralised Mail and Web
+
+
+For the last 15 years, I’ve been thinking about decentralised networks and, one day, I swear I will finish my PhD on the subject. During the last year, I’ve started to dream about being less connected and, as you can read on this gemlog, about an offline experimental protocol I call Offmini and that I introduced in the following post:
+
+=> gemini://rawtext.club/~ploum/2021-10-10.gmi
+
+As I closed my laptop and started to walk to spend some time alone in the wood, the idea hit me. Offline and decentralisation are faces of a very similar coin. And the reason why it’s so hard to be offline those days is precisely because everything we use is, in a way or another, centralised. 
+
+Instead of trying to implement Offmini intuitively, to quickly make a code experiment, I started to think more in terms of network theory. 
+
+And it changed my views about networks.
+
+Get comfortable, shut down the wifi and come with me in this little journey.
+
+## The central concept of identity for senders and receivers.
+
+A network is, by definition, a set of nodes communicating through links. One central concept, often overlook, is the concept of identity. In a given network, each node must have an identity. This identity must be unique : two nodes cannot share the same identity. One node can have multiple identities but will then be seen as a set of interconnected nodes. Topologically, we can affirm that each node has one and only one unique identity.
+
+This concept of identity is very hard, both on the philosophical and on the practical side of things.  An identity convey an intention. There’s plenty to say about the subject.
+
+But what’s even more interesting is to realise that, in a directed network, there are two different kind identities : an identity as a sender of messages and an identity as a receiver.
+
+There are three kinds of networks. Receiver-only, sender-only and receiver-and-sender.
+
+## Receivers-Only Networks
+
+In these kinds of networks, nodes only have identities as receivers. Messages can be sent from anyone, including from outside of the network. Think about the postal network : identities are street addresses. You can send messages only to street addresses. But you don’t need a street address to send a letter. You don’t need an identity to send a message in the network. You need one to receive it. Those kinds of networks mostly guarantee that every message reaches its destination but without any guarantee about the sender.
+
+The mail protocol is receiver only. It’s a little known fact for the younger generation but every participant of the 90s hacking scene knows that, to send an email, you only need to find a open SMTP relay, connect to it through telnet and give it raw SMTP instruction.
+As I teenager, I’ve sent  multiple jokes to my friends that way, impersonating teachers and IT administrators. It’s a bit different nowadays.
+
+Email identities are subdivisions of the centralised DNS registry. In order to receive an email, you need access to a domain. DNS looks decentralised on the surface but it is only delegated centralisation (or pyramidal hierarchy). Historically, DNS was nothing else than a huge hosts file.
+
+
+## Senders-Only Network
+
+The web is the opposite : a senders-only network. Everybody can read what is on the web but only identified nodes can post. Same applies to Gemini.
+
+Like emails, those identities are DNS name too. We observe the similar delegated centralisation which, from a distance, might look like a decentralised network.
+
+## Receivers-and-Sender Network
+
+Some other networks require both an identity to send and to receive messages. What we call the Internet, the IP network, is one. In order to send a message, you need an IP. In order to receive a message, you need an IP.
+
+Is the Internet decentralised? Not really. In order to participate, you need an IP. Those IP addresses are handled by one very centralised authority, the IANA. But, like DNS, this authority is delegated which allows some kind of decentralised properties without being truly decentralised.
+
+Once there’s a centralised register of identities, networks are way easier. And if you centralise the communications themselves, it even become trivial. Think of Facebook as a network of Facebook accounts.
+
+
+## The Identities Merging Test
+
+Does it mean that every network is poised to be centralised? No. But decentralised networks require decentralised identities and decentralised identities are very hard.
+
+There’s a simple test to see if your network is identity-decentralised : merge two separate networks and see if it works.
+
+You can spawn two completely unrelated IP networks that don’t communicate with each other. But, if you ever happen to connect them together, you may have a big trouble : some nodes which had unique identities (IP adresse) may, suddenly, conflict with a node from the other network.
+
+That’s the reason why the protocol specifies IP addresses which are outside of the Internet. Those well-known local IP (typically 192.168.X.X) needs to access the Internet through a proxy. The simple fact that you can differentiate "the Internet" from "outside the Internet" is a sufficient information to know that, technically, the Internet is an identity-centralised network. 
+
+In a true decentralised network, it should be possible to create a valid, universal and unique identity without communicating with anybody else.
+
+## Bitcoin and the blockchain
+
+According to this definition, Bitcoin can be considered as a true identity-decentralised network. Bitcoin even uses a clever trick : an identity is secret and never published (in Bitcoin, the wallet is the identity). Each identity can generate receiving addresses and sending addresses without necessarily revealing the link between them (it should be noted that analysis makes it possible to find those links but the protocol never assumes them).
+
+Identities can be generated fully offline thus passing the "identities merging test". Offline identities can even receive messages, which is the principle behind cold wallets.
+
+While decentralised, Bitcoin relies heavily on the IP network (which is itself identity-centralised, as we have seen). Also, given the nature of the blockchain protocol and the particularly hard requirement to avoid double spending, it should be noted than when two previously separated Bitcoin network merges, the way to resolve the conflicts is basically to cancel every transaction made by one of the two networks. There are interesting strategies to allow transactions between weakly connected nodes but we will try not to enter into the blockchain world (I spent enough academical time on the subject and, now that it is trendy, a lot of smart people are writing about it).
+
+
+## The 3 Ways to Fight Spam
+
+On a network, one of the main challenges is to fight abusive overload. You can call it spam, DDOS or whatever. 
+
+When you see a network through the identity prism, you realise there are only three ways to stop abuse. At the identity level, at the sender level or at the receiver level.
+
+The simplest one is the receiver level. Through arbitrary rules, a receiver may consider some messages as inappropriate and discard them. It might be based on the content (Bayesian filtering) or other characteristics (bad formatting, blacklisting). The point is that it doesn’t affect network rules at all. Messages are still sent. There are simply discarded by the receiver. This may be problematic because such systems may discard them silently. The network becomes unreliable, as with email. Ever heard "Your email? Oh yes, it was in my spam box?"
+
+Another way to fight abuse is at the sender level. Makes it costly to send a message. Examples include experiments with some Proof of Work computations before sending an email. In the Bitcoin network, you need to pay for any transaction, making spam transactions either useless or costly.
+
+Last but not least, control could happen at the identity level through some reputation mechanisms. If an identity is known to abuse the network, other nodes may cut connections thus isolating the "bad" node. Instead of simply discarding messages (as in receiver-only filtering), nodes will refuse connections from some others, making it clear that the link is broken. Of course, for such a system to work, creating an identity must be costly enough not to create thousands of throwaway identities (also known as "Sybil attack").
+
+In centralised network, a central authority arbitrarily bans the bad identities. Which is an easy solution and probably the main problem of centralised networks.
+
+## Keep it Simple, Stupid
+
+One of the main objectives I have with the Offmini thought experiment is, like Gemini before, to make it as simple as possible.
+
+Really good and complete solution already exists like IPFS, Scuttlebutt, DAT:// or the confidential NNCP (see the very nice article about integrating NNCP and syncthing or the one about IPFS).
+
+=> https://changelog.complete.org/archives/10219-a-simple-delay-tolerant-offline-capable-mesh-network-with-syncthing-optional-nncp
+
+=> https://ipfs.io/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html
+
+The problem with all those solutions : they are awfully complex. There’s no real intuition behind them. 
+
+Ideally, Offmini could be implemented "by hand", meaning being intuitive enough so the result could be achieved without writing any software and using only common tool. Also, by design, any features that would overly complexify the protocol can be disregarded as irrelevant.
+
+First of all, we need a decentralised identity system.
+
+Luckily, we have exactly that: GPG.
+
+Let’s assume that a GPG key $KEY with a fingerprint $FP is an Offmini identity.
+
+That’s it. Done.
+
+Best of all? The full network already exists: it’s the PGP/GPG web of trust.
+
+Now, we "only" need to define the protocol allowing nodes to exchange information.
+
+
+## Folders, text files and index
+
+We are familiar with the website concept. A website is nothing but a folder hierarchy with text files in them (even if they are called html, css or js). 
+
+Of course, there are also other media but Offmini is inspired by Gemini which demonstrated that, even in the 20s, text alone is very powerful. Let’s focus on a text-only protocol and let’s assume that all Offmini contents are stored in Markdown .md files.
+
+Each Offmini capsule would be a simple folder named $FP containing files signed with $KEY.
+
+One could simply browse a capsule with a file manager. Or with a dedicated client which would be very similar to a Gemini client.
+
+I add one requirement in the protocol : the index.md should be "transparent". By this, I mean that the client would automatically happen the listing of the directory below the content of every file named "index.md".
+
+If my capsule root contains
+
+$FP/index.md
+$FB/about.md
+$FP/folder1/
+$FP/folder2/
+
+and index.md contains "# Welcome to my Offmini page", this should be displayed as:
+
+"# Welcome to my Offmini page
+
+=> about.md
+=> folder1
+=> folder2
+"
+
+Also, the client should add, at the top of every page except the root index, an "UP" link.
+
+
+I may have missed some disadvantages of that "index transparency" and mandatory "up" but I think it enables a real intuition and transparency. Files are not hidden anymore, giving a false sense of privacy to the publisher and confusing the reader. The Offmini client is nothing but a nice file browser.
+
+
+## External Links
+
+What about linking to other Offmini capsules? Simply do it like Gemini, replacing the DNS name by the $FP fingerprint.
+
+" => off://$FP/folder1/index.md "
+
+OK, I admit that a GPG fingerprint is not really pretty. Some advanced Offmini clients could automatically replace "off://$FP/" by the name under which this key is known in your keyring. That would be optional, of course, but that would add a true sense of identity. People knowing me under the name Ploum would see something like "Ploum : folder1/index.md" while those knowing me, in their keyring, under my civil name would see "Lionel Dricot : folder1/index.md".
+
+
+## Connecting, downloading, updating
+
+All of this is nice but it seems I forgot to mention the most important part: how do we access content at all?
+
+First of all, we will assume that everything is stored locally in a local folder configured in your Offmini client: $FOLDER.
+
+$FOLDER contains whole Offmini capsules. If you ever access one capsule, the whole capsule is downloaded and available for local use.
+
+By default, you only browse locally. When you request a capsule not available locally, the request is stored by the client in a file called $UNFULLFILED. Each request contains : the address requested, the date of the request and the source of the request (the page where you were when you made the request. Potentially empty).
+
+An Offmini client can be configured to have multiple sources. Sources can be a given folder on a USB key, a WWW proxy, a distant SSH folder, …
+
+Once a source is available, the Offmini client will "discover". It means it will request
+- capsules listed in $UNFULLFILLED
+- capsules of trusted keys in the keyring
+- subscribed capsules (more on this later)
+- optionally : all linked capsules from those above, until depth=n.
+- optionally: if bandwidth is cheap : every possible capsule (why not after all?)
+
+If the remote version is newer than the local one, it is downloaded. Remember : as every content in a capsule is signed with its $KEY, you know as a fact that the latest version comes from its author. 
+
+What is interesting with this strategy is that there’s absolutely no server to write. Offmini clients are simply accessing folders by whatever means.
+
+An alternative would be for Gemini clients to speak to each other, exchanging capsules but that may make the software more complicated without any real benefit. 
+
+One truly interesting feature of the GPG web of trust networks is that spam content would be mostly ignored as long as they are not in your web of trust. They would not be requested, not be stored, not even appear in your searches as those are only done locally.
+
+## Subscribing and Reading Later
+
+How do you read on such platform ? How do you discover ?
+
+Instead of context-switching from tab to tab, opening multiple subjects at once, being offline force you to be more focused.
+
+First of all, you should be able to subscribe to a folder. Which means a whole capsule if the folder is the root folder but also to a subfolder. By subscribing, you indicate that you want to read every new file added to this folder.
+
+One main tool to help you read would be a "Reading list" $TOREAD, a list of page you have indicated you wanted to read and which are available.
+
+A page is marked as "To read" if it was previously in $UNFULLFILLED or if it was added to a folder you are subscribed to.
+
+Browsing $TOREAD could be an experience similar to the "Tour" pioneered by solderpunk in AV-98 but, of course, design will vary from clients to clients.
+
+Metadata stored in $UNFULLFILLED are also important. When reading a page in $TOREAD, you will be informed that "You requested this page on $DATE while reading $SOURCE" or "You are subscribed to $SUBFOLDER". Adding context should help to slow down and avoid the real-time frenzy.
+
+A really cool feature would be to have proxies that would convert HTTP and Gemini contents before putting them in $TOREAD. You would be able to browse the good old web offline (albeit in text mode) without thinking about it.
+
+Search would happen purely locally and aggregators similar to those seen in Gemini could be built, either by individuals in their own capsule or by people creating a specific identity for the aggregator.
+
+After all, I’m already doing my Wikipedia searches locally through Kiwix.
+
+
+## Deleting
+
+I’ve been, on purpose, very fuzzy on implementation details. How do we sign files? How do we ensure we have the latest version. I had some idea and started to deal with those issues until solderpunk suggested using git in the following must-read post.
+
+=> gemini://gemini.circumlunar.space/~solderpunk/gemlog/low-budget-p2p-content-distribution-with-git.gmi
+
+Voilà. Problem (mostly) solved. Git even allows signing commits.
+
+It even offers an elegant solution to the hard problem of removing files. Indeed, files could simply be git-rm’ed from your capsule.
+
+This means that the files would be recoverable anywhere but would be hidden from any Offmini client or search. As a newer commit, the removing of the file would spread over your network. The only way to recover a file would be to really dig down the history of your capsule to find it. In most cases, that would be more than enough.
+
+For really rare cases, the nuclear option could be enabled: reverting the commits and rewriting the entire git history. Of course, this does not mean that you file would be removed from everywhere but, at the very least, that would indicate a clear will of removing the file by the author.
+
+
+## Managing Space
+
+Having the whole network available offline on your device is really nice. But, of course, it takes some space. As we focused on the text aspect, some rough computations make me really confident that managing space would be a nice-to-have problem. If Offmini ever reaches this stage, it probably means that it’s not my thought experiment anymore but something used by people smarter and wiser than me.
+
+Anyway, the problem doesn’t seem particularly hard and should be handled on the client side. Above a custom threshold, client could simply remove older, unconsulted or unlinked capsules. Instead of deleting, clients could also offer the option to spread their content over multiple removable storage.
+
+I feel that space is not and will not be an issue.
+
+
+## Private messages (aka emails)
+
+We have talked at length about public signed content. But what is really exciting is that GPG offers private content too!
+
+Knowing the GPG key of someone, you could write to him/her a message, encrypt it and, for example, upload it to a special $INBOX folder defined by the protocol.
+
+I’ve talked at length about the problems with the email protocol.
+=> gemini://rawtext.club/~ploum/2021-10-20.gmi
+
+This simple solution would be a game changer: simply upload a file in the recipient inbox folder and let the network deliver it through WWW tunnels or concealed USB keys.
+
+Like a good old letter, messages would not have headers or fields like Subject. A message would be only a text file that should contain all relevant information to be understood. Instead of quoting another message, a link to the relevant message could be done through something like off://$RECIPIENT FINGERPRINT/$INBOX/$ASH_OF_PREVIOUS_MAIL
+
+You could decide whether or not you accept messages from keys outside your network of trust, meaning you would mainly communicate with people in your network. No, this will not replace your good old corporate email like Gemini will never replace your advertising website.
+
+This is, of course, only a rough idea. It would be necessary to think more deeply about how to manage your Offmails, how to remove them from the network once you have received them (for example by having some kind of Merkle tree with the hash of all the emails you have received so others knows they can remove an encrypted file from their local copy of your $INBOX). Also to consider: even if messages are encrypted, the simple fact that you receive a given number of messages is an information that would become public. Would it be problematic? Could it be somewhat mitigated?
+
+We would have to discuss if features like multiple users discussions are relevant. One clear fact is that announcements mailing lists are not relevant. If one wants to be informed, one would simply subscribe to the capsule or folder. Some clients may even blur the distinction between $TOREAD and $INBOX.
+
+But one thing is really exciting: this idea is basically a quite simple offline and decentralised protocol which would allow publishing and private messaging without any new infrastructure. There would be a very clear line between what is public and what is private.
+
+And this would add some fun in keysigning parties by transforming them in "keysigning and offline content synchronisation parties".
+
+Who would have thought that, in a time where most of the population takes selfies and spend most of their time online during parties, hardcore geeks would root for offline parties?
+
+

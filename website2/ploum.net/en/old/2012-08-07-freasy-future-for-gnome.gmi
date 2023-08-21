@@ -1,0 +1,76 @@
+# A freasy future for GNOME
+
+Last week, Lanedo sent me to GUADEC, the GNOME developers and users conference. As you may have read elsewhere, the conference was wonderfully organized, with splendid weather, gorgeous food and awesome people.
+
+=> http://lanedo.com Lanedo
+=> http://guadec.org/ GUADEC
+
+But there was a strange feeling amongst participants. Was it the last GUADEC? What is the future of the GNOME project? Xan López and Juan José Sánchez suggested to ship a tablet with GNOME in 2014. But isn’t that too late? Is it really useful?
+
+=> http://www.slideshare.net/juanjosanchezpenas/brightfuture-gnome suggested to ship a tablet with GNOME in 2014
+
+=> ../files/old/hercules.jpg Tore de Hercules, La Coruna
+Is this the end of the world, the end of the road?
+
+##### What is the goal of GNOME?
+
+The first question we may ask ourselves is « What is our goal? What do we want to offer to users? ». To this question, the answer from Jon McCann was straightforward:
+
+We want to offer freedom to anyone that want it.
+
+This makes a lot of sense. What are the dominant platforms those days? Apple, where your only freedom is spending money. Android, which is slightly more free but heavily linked to Google services. Ubuntu is a rising platform but, if it looks more free than Android, it is heavily linked to a private company. A freedom oriented solution is needed.
+
+As Lennart Poettering pointed out, we should forget about the « Desktop environment » thing. Even if they use Linux, Android, Ubuntu and even Tizen are OSes. So should be GNOME.
+
+=> http://0pointer.de/lennart/ Lennart Poettering
+
+##### What is freedom anyway?
+
+But it would be a mistake to take freedom for granted because your operating system is completely open-source. Are you free if you use gNewSense with Gmail, Google calendar, Google contacts and Dropbox?
+
+You could install OwnCloud somewhere, try to configure your phone to access it after installing a custom ROM. Then cry because you don’t have all the nice features of the closed world, when everybody is live-sharing pictures during an event. And abandon your freedom the day your server crashes and you realize your last backup is months old.
+
+Today, freedom is not only about the code that runs on your computer. It is about all the online services you are connected to, all the servers that host your data.
+
+##### The solution: a freasy network
+
+Online freedom is only achievable through decentralization. GNOME’s purpose is to offer freedom to anyone that want it. Discussing with Karen Sandler, I came to the conclusion that GNOME should not only offer an OS, it should offer decentralized online services.
+
+=> /odd2011-en decentralization
+=> http://punkrocklawyer.com/ Karen Sandler
+
+You would be able to install GNOME in server mode or in client mode. In server mode, it would be required to have a DNS pointing to your server. You will configure it through simple wizards. Then, you will be able to add accounts. Each user will be identified by an unique email address but, of course, a GNOME server could host multiple domains.
+
+When logging on your client, you will enter your mail address and your password. Automatically, emails, calendar, XMPP, files, contacts will be synchronized. And erased at logoff if you want.
+
+You would also be able to migrate your data from one server to another in one step. Best of all: we could offer to encrypt data so even GNOME servers administrators cannot access it. What about built-in support for TOR, making GNOME a true freedom and private cloud OS?
+
+All of this should be dead simple, else we would loose lost of potential users. It’s not because you are not an engineer that you cannot expect freedom. GNOME should be freasy: free and easy.
+
+=> /no-proprietary-service.html 
+=> ../files/old/welcome_canon.jpg You are welcome
+
+##### Apps, the key to success
+
+The key to success for a platform those days is having a lot of apps. Why would apps creators invest in GNOME, after Android and iOS?
+
+Because we can offer a level of integration never seen before. With technologies such as Telepathy tubes, XMPP, DBus, developing an online application for GNOME would be as easy as writing a desktop application. Instead of writing your server application, your web interface, your web API, your Android application, you only write one server app and one client app which communicate through DBus.
+
+Apps creators should also fear Apple and Google dominant positions. Apple proved that they can delete an application from the store without any comment. The day Google decides to enter your business and develop an application similar to yours, you are doomed. They will propose better integration with all their services. Ultimately, apps creator need a free ecosystem.
+
+##### Cooperation
+
+Most of the relevant pieces of technologies are already available like XMPP servers, LDAP, mail and calendaring servers. But, as the Fritalk.com administrator, I know that putting all the pieces together is very hard. Also, some pieces are still missing, like a good decentralized social network.
+
+=> http://fritalk.com Fritalk.com
+
+But lot of projects are already tackling the issue, each from their own perspective: Mozilla launched a mobile OS, LibreOffice is working on an online version, KDE has OwnCloud, there’s FreedomBox. In what sense are they different? I’ve the feeling that their ultimate goal is exactly the same as ours: offering freedom to those who want it.
+
+=> http://blog.mozilla.org/blog/2012/07/02/firefox-mobile-os/ a mobile OS
+=> http://www.libreoffice.org/ LibreOffice
+=> http://owncloud.org/ OwnCloud
+=> https://freedomboxfoundation.org/ FreedomBox
+
+As such, it doesn’t make sense to compete against each other. It is time to join forces, to make compromises on design and technological choices, to offer an unified solution, at least in the early days.
+
+We are those who care about freedom, privacy, independence, data ownership. It’s our duty to make it freasy.

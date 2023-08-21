@@ -1,0 +1,119 @@
+# Building your web identity
+
+While strolling on that inter-network thingy, you quickly realize that there’s one mandatory identity certificate required: your email address.
+
+It is not possible anymore to be active on the web without an email address. Most services require that you provide a valid email address. And it’s a good thing because email has the following properties: being decentralized (not tied to any provider), being standardized and freely implementable, being easy to share (just one human-readable string). It’s also possible to have multiple addresses, meaning there’s no enforcement to have a one-to-one connection between a real-life identity and a web identity.
+
+But, now, there’s a increasing need for a more complete web identity. People want to know your profile, want to talk to you, learn about you. That’s why more and more services are allowing you to connect with your Facebook or Google account.
+
+=> http://www.wirtland.com/ 
+=> ../files/old/wirtland.jpg Web identity
+
+Is a Facebook account a good web identity? My French speaking readers know that I don’t like Facebook. What’s the biggest problem of Facebook in this context? It is centralized. It is tied to one and only one company. It is not standardized. It cannot work. It, hopefully, should not work.
+
+=> /facebook-la-pause-clope-2 I don’t like Facebook
+
+### How should our web identity look like?
+
+It could be either our email address (user@provider), a http adress (http://provider/user) or something completely new.
+
+=> http://provider/user http://provider/user
+
+The email address is obviously the best solution as people already have one. Extending the available features of an existing mail address seems to be the easiest way. The limited success of OpenID (seriously, who has an OpenID on his business card?) demonstrated that people are identifying themselves to their email address. Most website now use your email address as your login.
+
+=> http://en.wikipedia.org/wiki/OpenID OpenID
+
+I believe that, in order to succeed, a web identity as to be linked to your email address.
+
+### What do we want to craft into our web id?
+
+#### Chat/Instant messaging
+
+The answer is called XMPP. It works and it is becoming quite popular. Probably because I tried to advocate it؟ Might also be because Google tied every GMail email address to an XMPP address. We could hope that, in a near future, nearly every mail address becomes an XMPP one[1].
+
+=> /107-the-captive-clown to advocate it
+
+#### Avatar
+
+Gravatar did it right: by tightening an avatar to your email address, they transparently extended your web ID. Good job. Problem: it is centralized. But there’s already one place where we have an avatar: XMPP. Whatever the solution is, your web ID avatar should be the same everywhere. Why not use directly the XMPP one? This concept is called « javatar » but I haven’t found any working implementation so far. It might requires a new protocol. This would also allow your avatar to be displayed in mail clients. Wouldn’t it be nice?
+
+#### Contacts
+
+It doesn’t make sense to have an address book for emails, a contact list for chat, a friend list for social networking. Everything should be one and only one big list. A list that could grow infinitely.
+
+=> ../files/old/pissenlit.jpg Pissenlit
+
+Of course, you don’t want to see everybody online, you don’t want to share your picture with your whole list. Here is where Diaspora gets it right. You add your contacts to « aspects ». Those aspects are private, meaning you can put someone into the « boring ugly people » aspect without any problem. It also means that aspects could have properties like: share contacts in that aspect, allow that aspect to chat with me and see my online status, allow those aspects to see my pictures. Diaspora also allows you to post stuffs to the world, meaning that anybody can see it if they want. This allows people you don’t know to « follow » you, just like on Twitter. It would requires to manage your aspects but aren’t we already spending lot of time to manage address books and contact lists everywhere?
+
+=> https://joindiaspora.com Diaspora
+
+Best of all: your diaspora handle is in the email form: ploum@joindiaspora.com. It shouldn’t be hard for a provider to tight your diaspora account to your real email[2]. Awesome, isn’t it?
+
+=> https://joindiaspora.com/people/7611 ploum@joindiaspora.com
+
+#### Micro blogging
+
+=> ../files/old/tweetlimit.jpg tweet limit
+Twitter is yet another web identity. New nickname, new avatar, new contact list, new messaging system. There’s one really good decentralized solution: Status.net. Problem: there’s no way to link my email to http://identi.ca/ploum. It doesn’t solve the decoupling of information and, worst of all, it has really low added value. Who are you reading on Twitter/identi.ca? People you are caring about? Or people that are posting the most? Identi.ca makes it even worse with the concept of « groups ».
+
+=> http://status.net Status.net
+=> http://identi.ca/ploum http://identi.ca/ploum
+
+And there’s probably nothing with identi.ca/twitter that could not be implemented within Diaspora. What do you think? Is it easier to improve Status.net or to implement a micro-blogging feature in Diaspora?
+
+#### CV/Professional networking
+
+I find Linkedin quite good. It allows you to stay in touch, to keep informed about what people are doing while staying out of your way. I find it a lot more informative to know that my old friend is now working as a tax-accountant than to see countless picture of his parties.
+
+Thinking about it, this might also be implemented in Diaspora. Just as an aspect properties: allow people from this aspect to see my resume and to see related contacts.
+
+#### Signature/encryption
+
+It should be really easy to encrypt a message for someone in your contacts or to put a signature, certifying that a message comes well from a given web identity. Technically, we have PGP/GPG. What’s the problem then? So far, no PGP/GPG implementation allowed users to be used easily. Every one of them is a f*** mind blowing geek nightmare, exposing the underlying principles everywhere.
+
+Just imagine that your mail client automatically retrieve the key related to an address when sending an email? It could be so easy to know that a mail/message is digitally signed by a given web identity.
+
+As you see, there’s no need for any kind of web of trust here. This web of trust is needed only in order to certify the match between a virtual identity and a real identity.
+
+Maybe this could also be the starts of making security a bit easier. Instead of having an https website telling you some cryptic garbage in order to accept the certificate, you could simply trust the emitter of the certificate.
+
+#### Money
+
+=> ../files/old/bitcoin.png Bitcoin
+There’s currently something very hard to do online: receiving and giving money. All those solutions involves complex credit cards stuffs. That’s why overpriced centralized services like Paypal are successful. But what if you could easily send virtual money to someone? What if you could easily offer your service for a small fee?
+
+This is the next big thing and my little finger tells me that Facebook is already working on it. That something where they could be very dangerous.
+
+Just like GPG, the solution is already there and is called Bitcoin. Bitcoin is a decentralized virtual money. There’s a growing bitcoin economy which is quite impressive.
+
+=> http://bitcoin.org Bitcoin
+
+Currently, to pay in BTC to someone, you have to ask him for a BTC address in the form of 18gmgzNk9aVWEwE9t32biLdDyF8Ng2ZJzN. There’s also no way to know from who the money is coming nor to add any comment with your payment. Good for privacy but not really user friendly. There’s only one missing bit then, a small protocol that allows two wed identity to exchange bitcoins. This would allows you to easily send money to someone.
+
+=> http://en.wikipedia.org/wiki/Bitcoin BTC
+
+### Conclusion
+
+There are many other services on the web that you could use to build your virtual identity (like Last.fm, 4thsquare,…). Instead of building yet another contact list, it would be awesome if those services could simply connect to your contacts using you existing web id. Well, we aren’t there yet and current providers are of course not intersted in anything that could help any form of competitino. But we can already think about it.
+
+=> /no-proprietary-service.html Last.fm
+
+As you can see, we are not really far from having a perfect free and decentralized web identity solution. Some missing part even starts to be addressed.
+
+=> http://code.google.com/p/webfinger/wiki/WebFingerProtocol to be addressed
+
+Then, we will « just » have to wait that providers make the switch. There will be no need for that kind of page anymore…
+
+=> /pages/apropos kind of page
+
+If you liked the article, tips are welcome on the following bitcoin address: 18gmgzNk9aVWEwE9t32biLdDyF8Ng2ZJzN
+
+#### Notes
+
+[1] Ads: I’m providing a Fritalk.com email/xmpp address for only a few BTC a year. Contact me if you are interested
+
+=> http://fritalk.com Fritalk.com
+=> http://bitcoin.org BTC
+=> /contact Contact me if you are interested
+
+[2] Yes, that’s something I want to try on Fritalk.com

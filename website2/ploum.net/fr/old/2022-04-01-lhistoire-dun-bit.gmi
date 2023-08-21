@@ -1,0 +1,194 @@
+# L’histoire d’un bit
+
+*Petite vulgarisation du fonctionnement d’Internet et de son impact sur notre cerveau et notre société*
+
+## Introduction
+
+Ce texte vous parait long, rébarbatif, indigeste. Pas d’animations, pas de vidéos. Il y’a de grandes chances que votre cerveau ait graduellement perdu sa capacité de concentration. Vous préférez désormais papillonner entre deux messages au lieu de lire un long texte. Si vous êtes plus jeune, vous n’avez peut-être jamais eu cette capacité à vous concentrer.
+
+Ce n’est pas de votre faute. Votre cerveau est, à dessein, manipulé pour perdre sa capacité de concentration. Pour devenir une meilleure éponge publicitaire. Ce n’est pas une théorie du complot, mais une simple observation des mécanismes techniques mis en œuvre. La bonne nouvelle c’est que cette capacité de concentration peut être retrouvée.
+
+Ce texte comme la vidéo du chaton trop mignon et le message « kess tu fé? lol! » qui vient de s’afficher sur votre écran ne sont, à la base, que des impulsions électriques envoyées depuis mon ordinateur vers le vôtre (que vous appelez téléphone, mais cela reste un ordinateur). Des 1 et des 0. Rien d’autre.
+
+Comment est-ce possible ? Comment des 1 et des 0 peuvent-ils donner le pouvoir d’apprendre tout en nous faisant perdre la capacité de le faire ?
+
+## Compter en n’utilisant que 1 et 0 : le binaire
+
+Tout système de communication est doté d’un alphabet, un ensemble de caractères arbitraires qui peuvent être assemblés pour former des mots. Certaines langues disposent de milliers de caractères (comme l’écriture chinoise).
+
+Notre système de numération, hérité des Arabes, compte 10 chiffres qui permettent d’écrire une infinité de nombres. On pourrait également l’utiliser pour coder un message en remplaçant les lettres de l’alphabet. 01 serait A, 02 serait B et 26 serait Z. « BONJOUR » s’écrirait donc simplement « 02151410152118 ». Cela nous semble complexe, mais peut-être que si nous l’apprenions très jeune, nous pourrions lire ce système couramment. À noter que j’ai sciemment utilisé le 0 pour différencier le « 11 = AA (deux fois 1) » de « 11 = K (onze) ».
+
+Nous avons donc réduit notre alphabet de 26 caractères à 10 via cette simple méthode.
+
+Comment pourrions-nous réduire encore ? Par exemple en supprimant le chiffre « 9 ». Sans le chiffre 9, nous pouvons compter 1,2,3,4,5,6,7,8…10. 8+1 = 10 ! C’est ce qui s’appelle compter en base « 9 », car il n’y a que 9 chiffres.
+
+Il faut bien reconnaitre que le fait de compter en base 10 nous semble naturel, mais que c’est tout à fait arbitraire. Les Romains, eux-mêmes, étaient incapables de le faire. Les Babyloniens, portant des sandales ou étant pieds nus, comptaient en base 20 (et nous tenons d’eux cette propension à dire « quatre-vingt », une « vingtaine »). D’autres comptaient en base douze. Certaines peuplades, comptant sur leurs phalanges au lieu de leurs doigts, utilisaient la base 14 (essayez sur vos phalanges, vous verrez).
+
+Mais revenons à notre base 10, devenue base 9. Si nous retirons le 8, nous obtenons que 7+1 = 10. Et, logiquement, 77 + 1 = 100. De la même manière, nous pouvons retirer tous les nombres jusqu’à n’avoir plus que 0 et 1. Auquel cas, on pourra compter de la manière suivante : 0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, …
+
+Cette arithmétique binaire, notamment décrite par Leibniz, était une curiosité mathématique. Elle va cependant acquérir son importance lorsque vint l’idée de transmettre des messages à travers un câble électrique.
+
+Sur un fil électrique, il n’y a que deux états possibles. Soit le courant passe, soit le courant ne passe pas. On ne peut transmettre que deux lettres, que nous notons désormais arbitrairement 0 et 1.
+
+Vous remarquez qu’il est indispensable de se mettre d’accord sur la signification à donner à ces lettres. Au début du XIXe siècle, Samuel Morse propose le code qui porte son nom et qui est encore utilisé aujourd’hui. Mais ce code n’est pas du binaire ! En effet, il joue sur la longueur d’un signal et sur les silences entre les signaux. Techniquement, il y’a quatre lettres dans l’alphabet morse : le court, le long, le silence court et le silence long). Le morse est particulièrement adapté à la compréhension humaine. Les opérateurs télégraphiques qui l’utilisent quotidiennement deviennent capables de comprendre les messages en morse presque en temps réel.
+
+Vers la fin du XIXe siècle apparaissent les machines à écrire et avec elles l’idée de transmettre des caractères écrits via une ligne électrique voire via ce qu’on appelle encore l’invention de Marconi : la radio. Pour simplifier, nous allons considérer que toute onde radio (radio, gsm, wifi, 3G, 4G, 5G) n’est jamais qu’un fil invisible. Dans tous les cas, on sait faire passer des 1 et des 0 d’une extrémité à l’autre du fil.
+
+L’un des premiers codes proposant de convertir les lettres en binaire est le code Baudot, qui utilise 5 bits (le terme « bit » signifie « binary digit » ou « chiffre binaire »). 5 bits permettent 32 caractères possibles, ce qui est très peu. L’alphabet latin comporte 26 caractères, en majuscules et minuscules, ce qui fait 52, 10 chiffres, des symboles de ponctuation. Les langues comme le français rajoutent des caractères comme À,Ê,É,Ǜ,….
+
+Les télétypes font leurs apparitions au début du XXe siècle. Il s’agit de machines à écrire reliées à un câble de communication. À chaque pression de la lettre du clavier, le code correspondant est envoyé et active l’impression du caractère correspondant à l’autre bout du câble. Un réseau de communication basé sur ce système se met en place mondialement: le réseau télex, notamment utilisé par les journalistes. Les particuliers peuvent également s’envoyer des télégrammes, qui sont facturés au mot ou à la lettre.
+
+Envoyer des données binaires n’est pas une mince affaire, car le courant électrique a tendance à s’affaiblir avec la distance (on parle de « dispersion »). De plus, un courant n’est jamais parfaitement allumé ou éteint. It trace des courbes en forme de sinusoïdes. Il faut donc déterminer arbitrairement à partir de quand on considère un signal reçu comme un 1 ou un 0. Il faut également déterminer combien de temps dure chaque bit pour différencier 00000 de 0. Et que faire si le signal varie durant la période d’un bit? Prendre la valeur moyenne du courant?
+
+La grande difficulté consiste donc à se mettre d’accord, à standardiser. C’est ce qu’on appelle un protocole. Un protocole n’est utile que si chacun peut le comprendre et l’utiliser à sa guise pour coder ou décoder des messages. Le langage parlé et le langage écrit sont des exemples de protocoles : nous associons des concepts à des sons et des images complètement arbitraires. Mais nous nous comprenons tant que cette association arbitraire est partagée.
+
+Pour remplacer le code Baudot, chaque fabricant d’ordinateurs développe son propre codage. Ce n’est évidemment pas pratique aussi les Américains développent-ils l’ASCII, un codage sur 7 bits. Cela permet l’utilisation de 128 caractères au lieu de 32. Remarquons que la seule réelle innovation de l’ASCII est de mettre tout le monde d’accord, de créer un protocole, un langage.
+
+En ASCII, A s’écrit 1000001, B 1000010, etc. Le « a » minuscule, lui, s’écrit 1100001. C’est pratique, le deuxième bit change pour identifier les majuscules des minuscules. À savoir que l’ASCII est particulièrement optimisé pour l’utilisation sur télétypes. L’ASCII prévoit des codes de contrôle de la machine comme le retour à la ligne, le fait d’activer une sonnette, de débuter ou de terminer une transmission.
+
+Les premiers ordinateurs sont alimentés en données via des cartes perforées (un trou représente un bit 1, pas de trou un bit 0), mais, très vite, l’idée vient d’utiliser un clavier. Comme les télétypes sont disponibles, ceux-ci sont utilisés. Très naturellement, les premiers ordinateurs se mettent à stocker leurs données au format ASCII qui se prête bien à l’écriture sur carte perforée.
+
+L’ASCII ne permet cependant que d’écrire en anglais. Beaucoup de caractères pour le français n’existent pas et les langues utilisant d’autres alphabets sont tout bonnement intraduisibles. Plusieurs solutions techniques ont été utilisées au cours du temps. Depuis les années 2010, le codage UTF-8 s’impose graduellement. Il permet l’écriture de la plupart des langues connues, y compris les langues mortes, les symboles mathématiques, scientifiques, mais également des centaines d’émojis. La particularité de l’UTF-8 est d’être compatible avec l’ASCII. Les caractères ASCII gardent exactement le même code binaire en UTF-8.
+
+Les limites de l’ASCII se ressentent encore souvent dans l’informatique moderne : il n’est pas toujours possible de créer une adresse email possédant un accent ou de taper certains caractères dans la communication d’un virement chez certaines banques. L’utilisation d’encodages anciens fait parfois s’afficher des caractères bizarres.
+
+## Stocker des données : les formats
+
+Si n’importe quelle donnée peut être convertie en bits, nous remarquons très vite que le point essentiel est de se mettre d’accord sur la manière de les convertir. Cette conversion se fait pour transformer la donnée et la stocker, c’est ce qu’on appelle le « format de fichier ». Un format ne repose pas toujours sur du texte. Pour stocker une image ou un son, par exemple, il faut définir d’autres formats que les formats texte. Il faut être capable de transformer une donnée en bits pour le stocker et, inversement, de transformer les bits en données pour y accéder.
+
+Il existe deux grandes catégories de formats sur les ordinateurs. Les formats « texte », qui reposent sur un encodage de texte (ASCII, UTF-8 ou autres) et les autres, dits « formats binaires ». La particularité d’un format texte c’est que n’importe quel ordinateur dans le monde pourra toujours les ouvrir pour y lire le texte. Les formats binaires, eux, sont complètement incompréhensibles si on ne dispose pas de l’explication sur la manière de le traiter. On parle de « format ouvert » lorsque cette explication est disponible et de « format propriétaire » lorsqu’elle ne l’est pas.
+
+Le texte a cependant des limites. Imaginons que nous souhaitions lui ajouter une mise en forme. L’une des solutions serait de définir un format complètement différent du texte standard (ASCII ou UTF-8). C’est ce qu’a fait par exemple Microsoft avec Word et le format .doc (ensuite devenu .docx). L’intérêt est évident pour l’entreprise : une fois qu’un utilisateur sauve ses données au format .doc, il est obligé d’utiliser Microsoft Word pour y accéder. Il ne peut pas utiliser un concurrent, car le format est propriétaire et que seul Microsoft Word permet d’ouvrir les documents. L’utilisateur doit donc convertir toutes ses données, ce qui peut être très long, voire impossible. L’utilisateur est prisonnier d’un logiciel appartenant à une entreprise. Ce n’est pas un détail, c’est une technique commerciale sciemment mise au point. Le terme technique est « vendor lock-in ».
+
+Le format .doc étant tellement populaire, il finira malgré tout par être « compris » et implémenté dans des logiciels concurrents, cela malgré l’opposition active de Microsoft (on parle de « rétro-ingéniérie »). Pour répondre à des accusations légales d’abus de position dominante, Microsoft sortira le format successeur, le .docx, en le proclamant « format ouvert », les spécifications techniques étant disponibles. Cependant, et je parle d’expérience, il s’avérera que les spécifications techniques étaient d’une complexité ahurissante, qu’elles étaient par moment incomplètes voire fausses. De cette manière, si un concurrent comme LibreOffice offrait la possibilité d’ouvrir un fichier .docx, de subtiles différences étaient visibles, ce qui convainquait l’utilisateur que LibreOffice était buggué.
+
+À l’opposé, des formats existent pour utiliser du texte afin de définir des styles.
+
+Le plus connu et utilisé aujourd’hui est l’HTML, inventé par Tim Berners-Lee. Le principe du HTML est de mettre des textes entre des balises, également en texte. Le tout n’est donc qu’un unique texte.
+
+```
+Ces mots sont <b>en gras (bold)</b> et en <i>italique</i>.
+```
+
+Vous pouvez constater que, même sans comprendre le HTML, le texte reste « lisible ». Si vous sauvez vos données en HTML, vous êtes certains de toujours pouvoir les lire, quel que soit le logiciel. Le HTML permet d’insérer des références vers des images (qui seront alors intégrées à la page) ou vers d’autres pages, ce qu’on appelle des « liens ».
+
+## Utiliser les données : les algorithmes
+
+Un ordinateur n’est jamais qu’une machine à calculer qui effectue des opérations sur des suites de bits pour les transformer en une autre suite de bits. Ces opérations sont déterminées par un programmeur. Un ensemble d’opérations est généralement appelé un « algorithme ». L’algorithme est une abstraction mathématique qui n’existe que dans la tête du programmeur. Lorsqu’il se décide à les écrire, dans un format de texte en suivant un « language », cet algorithme est transformé en « programme ». Oui, le programme est à la base un fichier texte. Les programmeurs écrivent donc du texte qui va servir à transformer des textes en d’autres.
+
+Il est important de comprendre qu’un programme ne fait que ce qu’un programmeur lui a demandé. Il prend des données en entrées (des « inputs ») et fournit des données en sorties (des « outputs »). Un navigateur web prend en input un fichier HTML et le transforme pour l’afficher sur votre écran (votre écran est donc l’output).
+
+Parfois, le programme ne fonctionne pas comme le programmeur l’avait imaginé, souvent parce que l’input sort de l’habituel. On parle alors d’un « bug », traduit désormais en « bogue ». Le bug est une erreur, un imprévu. Qui peut même résulter en un « crash » ou « plantage » (le programme ne sait plus du tout quoi faire et s’interrompt brutalement).
+
+Tout ce que fait un programme est donc décidé à l’avance par un être humain. Y compris les crashs, qui sont des erreurs humaines du programmeur ou de l’utilisateur qui n’a pas respecté les consignes du programmeur.
+
+Il existe cependant une nouvelle catégorie de programmes auxquels le nom spectaculaire a donné une grande visibilité : l’intelligence artificielle. Sous ce terme trompeur se cache un ensemble d’algorithmes qui ne sont pas du tout des robots tueurs, mais qui sont essentiellement statistiques. Au lieu de donner un output fixé par le programmeur, les programmes « intelligents » vont donner un résultat statistique, une probabilité.
+
+Si un programme doit décider si une photo représente un homme ou un singe, il va, à la fin de son algorithme, fournir une valeur binaire : 1 pour l’homme et 0 pour le singe. Le programmeur humain va, par exemple, tenter de détecter la taille relative du visage et du crâne. Mais il est conscient qu’il peut se tromper. S’il est consciencieux, il va peut-être même consulter des zoologues et des anatomistes pour leur demander quelques règles générales.
+
+Les algorithmes statistiques (dits « d’intelligence artificielle ») fonctionnent tous sur le même principe. Au lieu de demander à un programmeur de déterminer les règles qui différencient un singe d’un humain, les programmeurs vont concevoir un algorithme qui « s’initialise » avec une série de photos d’humains et une série de photos de singes. À charge du programme de détecter des corrélations qui échapperaient à l’œil humain. En output, l’algorithme va fournir une probabilité que la photo soit un humain ou un singe.
+
+Le problème c’est que ces méthodes sont incroyablement sensibles aux biais de la société. Imaginons que l’équipe détectant le logiciel humain/singe injecte dans l’algorithme des photos d’eux-mêmes et de leur famille. Ils vont également au zoo local pour prendre les photos de singes. Le logiciel est testé et il fonctionne.
+
+Ce que personne n’a réalisé c’est que toute l’équipe est composée de personnes de race blanche. Leur famille également. Les membres l’ayant testé également. Or, au zoo, le pavillon des chimpanzés était fermé.
+
+Il s’ensuit que l’algorithme a très bien compris comment reconnaitre un singe : la photo est plus foncée. La première personne de race noire qui se présente devant le logiciel se fera donc traiter de singe. Le biais raciste de la société s’est vu renforcé alors même qu’aucun des programmeurs n’était raciste.
+
+Les algorithmes apprenant avec des données issues de leurs propres algorithmes, ces biais se renforcent. Dans certaines villes aux États-Unis, les polices ont été équipées d’algorithmes « d’intelligence artificielle » pour prédire les prochaines infractions et savoir où envoyer des patrouilles. Ces algorithmes ont fait exploser le taux d’infractions dans les quartiers pauvres.
+
+Le fait d’avoir des patrouilles en permanence à fait en sorte que les policiers furent bien plus à même d’observer et d’agir sur les petits délits (vente de drogue, tapage, jet de déchets, etc.). Ces délits renforcèrent la conviction que ces zones pauvres connaissaient plus de délits. Et pour cause : il n’y avait plus de policiers ailleurs. Le nombre d’interventions augmenta, mais la qualité de ces interventions chuta. Les policiers furent moins présents pour les crimes passionnels et les cambriolages, plus rares et également répartis dans les quartiers riches.
+
+Nous pouvons voir un effet majeur des biais de ces « intelligences artificielles » sur Facebook : un algorithme pense que vous serez intéressé par la guerre en Ukraine. Vous cliquez, car il n’y a rien d’autre à lire et c’est désormais acté dans les algorithmes que vous êtes intéressés par la guerre en Ukraine. Vous vous verrez donc proposer des nouvelles sur la guerre en Ukraine. Comme elles vous sont proposées, vous cliquez dessus, ce qui renforce la conviction que vous êtes un véritable passionné de ce sujet.
+
+Sous le terme « Intelligence artificielle », nous avons en fait conçu des systèmes statistiques à prophéties autoréalisatrices. Le simple fait de croire que ces systèmes puissent avoir raison crée de toutes pièces une réalité dans laquelle ces algorithmes ont raison.
+
+Un autre problème éthique majeur soulevé par ces algorithmes, c’est que le programmeur n’est plus nécessairement informé de la problématique de base. Un algorithme de différenciation de photos, par exemple, sera développé génériquement pour diviser une série de photos dans une catégorie A et une catégorie B. Si on lui fournit des humains en A et des singes en B, il va apprendre à détecter cette différence. On peut également lui fournir des hommes en A et des femmes en B. Ou bien des citoyens reconnus en A et une minorité ethnique à éliminer en B.
+
+Si une intelligence artificielle entrainée à trouver des rebelles en Afghanistan apprend que les terroristes sont susceptibles de changer de carte SIM plusieurs fois par jour près de la frontière avec le Pakistan, qu’un médecin effectuant la navette quotidienne vers plusieurs hôpitaux est mis par erreur sur cette liste et qu’il est tué par un drone lors d’une frappe ciblée (cas réel), est-ce la faute du programmeur de l’algorithme, de ceux qui ont générés les données concernant les terroristes ou ceux qui ont entré ces données dans l’algorithme ?
+
+À noter que, scientifiquement, ces algorithmes sont incroyablement intéressants et utiles. Leur utilisation doit, cependant, être encadrée par des personnes compétentes qui en comprennent les forces et les faiblesses.
+
+## Transmettre des données
+
+Stocker les données n’est pas suffisant, encore faut-il pouvoir les transmettre. De nouveau, le nœud du problème est de se mettre d’accord. Comment transmettre les bits ? Dans quel ordre ? À quelle vitesse ? Comment détecter les erreurs de transmission ?
+
+C’est le rôle du protocole.
+
+La particularité des protocoles, c’est qu’on peut les empiler en couches successives, les « encapsuler ».
+
+Physiquement, un ordinateur ne peut transmettre des données qu’aux ordinateurs auxquels il est directement relié, que ce soit par câble ou par wifi (qui est encore un protocole, mais que vous pouvez imaginer comme un fil invisible). Le protocole le plus utilisé pour cela aujourd’hui est Ethernet. Observez votre routeur (votre « box »), il comporte généralement des emplacements pour connecter des câbles Ethernet (entrées jaunes et rectangulaires, le format de ce connecteur étant appelé RJ-45, car il y’a aussi un protocole pour le format des prises, on parle alors de « norme » ou de « standard »).
+
+Dans les années 70, une idée géniale voit le jour : celle de permettre à des ordinateurs non connectés directement de s’échanger des messages en passant par d’autres ordinateurs qui serviraient de relais. Le protocole est formalisé sous le nom « INTERNET PROTOCOL ». Chaque ordinateur reçoit donc une adresse IP composée de quatre nombres entre 0 et 255 : 130.104.1.10 (par exemple). Tout ordinateur ayant une adresse IP fait donc partie d’Internet. Le nombre de ces adresses est malheureusement limité et, pour résoudre cela, de nouvelles adresses voient le jour : les adresses IPv6. Les adresses IPv6 ne sont pas encore la norme, mais sont disponibles chez certains fournisseurs.
+
+Le protocole IP (sur lequel on rajoute le protocole TCP, on parle donc souvent de TCP/IP) permet de relier les ordinateurs entre eux, mais ne dit pas encore comment négocier des échanges de données. Ce n’est pas tout de savoir envoyer des bits vers un ordinateur n’importe où dans le monde, encore faut-il les envoyer dans un langage qu’il comprend afin qu’il réponde dans un langage que moi je comprends.
+
+Les premiers temps de l’Internet virent l’explosion de protocoles permettant d’échanger différents types de données, chacun définissant son propre réseau. Le protocole UUCP, par exemple, permettant la synchronisation de données, fut utilisé par le réseau Usenet, l’ancêtre des forums de discussions. Le protocole FTP permet d’échanger des fichiers. Le protocole Gopher permet d’échanger des textes structurés hiérarchiquement (selon le format Gophermap). Le protocole SMTP permet d’échanger des emails (selon le format MIME). Chaque protocole est, traditionnellement, associé avec un format (sans que ce soit une obligation). En 1990, Tim Berners-Lee propose le protocole HTTP auquel il associe le format HTML. Le réseau HTTP+HTML est appelé le Web. Il est important de noter que le Web n’est qu’une petite partie d’Internet. Internet existait avant le Web et il est possible d’utiliser Internet sans aller sur le web (on peut télécharger ses mails, lire sur le réseau Gopher voire sur le tout nouveau réseau Gemini, consulter les forums sur Usenet, le tout sans aller sur le web ni lancer le moindre navigateur web).
+
+Le web utilise un format assez traditionnel dit « client/serveur ». Un ordinateur va faire une requête vers un autre ordinateur qui sert de serveur.
+
+Supposons que votre ordinateur (ou téléphone, montre, tablette, routeur, frigo connecté, c’est pareil, ce sont tous des ordinateurs à l’architecture similaire) souhaite accéder à www.ploum.net. Il va tout d’abord déterminer l’adresse IP qui correspond au domaine « ploum.net ». Il va ensuite créer une requête au format HTTP. Cette requête dit, en substance : « Donne-moi le contenu de la page www.ploum.net ». Le serveur répond un paquet HTTP qui dit « Le voici dans cette boîte ». La boîte en question contient un fichier texte au format HTML.
+
+Ce fichier HTML est interprété par votre navigateur. Si le navigateur s’aperçoit qu’il y’a des références à d’autres fichiers, par exemple des images, il va envoyer les requêtes automatiquement pour les avoir.
+
+Il est important de noter que rien ne distingue un ordinateur client d’un ordinateur serveur si ce n’est le logiciel installé. Il est tout à fait possible de transformer votre téléphone en serveur. Ce n’est juste pas pratique, car il faut être disponible 24h/24 pour répondre aux requêtes. C’est la raison pour laquelle on a mis en place des « data-centers », des salles dans lesquelles des ordinateurs tournent en permanence pour servir de serveurs et sont surveillés pour être automatiquement remplacés en cas de panne. Mais un ordinateur reste un ordinateur, qu’il soit un laptop, un téléphone, un rack dans un data-center, un routeur, une montre connectée ou un GPS dans une voiture. L’important est que tous ces ordinateurs sont reliés par câbles, les plus importants étant des câbles sous-marins qui quadrillent les océans et les mers.
+
+Lorsque votre téléphone se connecte à Internet, il cherche, sans fil, le premier ordinateur connecté par câble qu’il peut trouver. C’est soit votre borne Wifi (qui est un ordinateur auquel il ne manque qu’un écran et un clavier), soit l’ordinateur de votre fournisseur téléphonique qui se trouve dans la tour 3/4/5G la plus proche. Les fameuses antennes GSM (pour simplifier, on peut imaginer que ces antennes sont simplement de grosses bornes Wifi, même si les protocoles GSM et Wifi sont très différents).
+
+À noter que les satellites n’interviennent à aucun moment. L’utilisation de satellites pour accéder à Internet est en effet très rare même si on en parle beaucoup. Lorsqu’elle existe, cette utilisation ne concerne que le « dernier maillon », c’est à dire faire le lien entre l’utilisateur et le premier ordinateur connecté par câble.
+
+## L’hégémonie du web
+
+La confusion entre Internet et le Web est courante. Le Web est en effet devenu tellement populaire que la plupart des logiciels sont désormais réécrits pour passer par le web. La plupart d’entre nous consultent désormais leurs emails à travers un « webmail » au lieu d’un logiciel parlant le protocole SMTP nativement. Les documents sont également rédigés en ligne et stockés « dans le cloud ». Évidemment, cela se fait au prix d’une complexité accrue. Au lieu de recevoir des données par clavier et les afficher sur un écran, il faut désormais les envoyer via HTTP au serveur qui les convertit en HTML avant de les renvoyer, en HTTP, sur votre écran.
+
+L’une des raisons du succès du web est que ce modèle renforce le « vendor lock-in » évoqué préalablement. Si vous aviez sauvegardé vos données au format .doc, il vous fallait Microsoft Word pour les ouvrir, mais les données restaient malgré tout en votre possession.
+
+Le marketing lié au terme « cloud computing » a permis de populariser l’idée auparavant complètement incroyable de stocker ses données, même les plus personnelles, chez quelqu’un d’autres. Vos données, vos photos, vos documents, vos messages sont, pour la plupart d’entre vous, en totalité chez Google, Microsoft, Facebook et Apple. Quatre entreprises américaines se partagent la totalité de votre vie numérique et la possibilité de vous couper l’accès à vos données, que ce soit volontairement ou par accident (ce qui arrive régulièrement).
+
+Ces entreprises ont construit un monopole sur l’accès à vos souvenirs et sur l’observation de vos actions et pensées. Y compris les plus secrètes et les plus inconscientes.
+
+Car, rappelez-vous, en visitant une page Web, vous allez automatiquement envoyer des requêtes pour les ressources sur cette page. Il suffit donc d’ajouter dans les pages des ressources « invisibles » pour savoir sur quelle page vous êtes allé. Cela porte le nom de « analytics » ou « statistiques ». L’immense majorité du web contient désormais des « Google Analytics » ou des « widgets Facebook ». Cela signifie que ces entreprises savent exactement quelles pages vous avez visitées, avec quel appareil, à quelle heure, en provenant de quelle autre page. Elles peuvent même souvent connaitre votre position. Ces données sont croisées avec vos achats par carte de crédit (le mieux c’est si vous utilisez Google Pay/Apple Pay, mais Google possède un accord de partage de données avec Mastercard).
+
+Pour faire de vous un client, une entreprise devait auparavant développer un logiciel puis vous convaincre de l’installer sur votre ordinateur. Désormais, il suffit de vous convaincre de visiter une page web et d’y entrer des données. Une fois ces données entrées, vous êtes et resterez pour toujours dans leurs bases de données clients. J’ai personnellement fait l’expérience de tenter de lister et de me désinscrire de plus de 500 services web. Malgré le RGPD, il s’est avéré impossible d’être supprimé pour plus d’un quart de ces services.
+
+L’Université Catholique de Louvain est un bon exemple pour illustrer la manière dont ce mécanisme se met en place. Historiquement, l’UCL était un pionnier dans le domaine d’Internet et plus spécialement de l’email. La toute première liste de diffusion email ne concernait que des universités américaines et canadiennes avec deux exceptions : une université en Écosse et l’Université Catholique de Louvain. Le thème et l’expertise dans ce domaine sont donc importants. La faculté d’ingénierie, aujourd’hui École Polytechnique de Louvain, comprit très vite l’importance d’offrir des adresses email à ses étudiants. Les emails étaient, bien entendus, gérés en interne dans des ordinateurs de l’université.
+
+Début des années 2010, ce service a été étendu à toute l’université, ce qui a entrainé une surcharge de travail, mais, surtout, une perte de contrôle de la part de la faculté d’informatique. L’administration de l’université, malgré l’opposition de membres éminents de la faculté d’informatique, a décidé de migrer les adresses des étudiants sur les serveurs Google, mais de garder les adresses du membre du personnel sur un serveur interne de type Microsoft Outlook.
+
+Après quelques années, Microsoft a annoncé que si, au lieu d’utiliser Outlook en interne, les comptes mails étaient désormais hébergés sur les ordinateurs de Microsoft, les utilisateurs bénéficieraient de 100Go de stockage au lieu de 5Go. Les étudiants ont été également transférés de Google à Microsoft.
+
+Au final, absolument toutes les données universitaires, y compris les plus intimes, y compris les plus confidentielles, sont dans les mains toutes puissantes de Microsoft. Parce que c’était plus facile et que chaque utilisateur y gagnait 95Go pour stocker l’incroyable quantité de mails que l’université se sent obligée d’envoyer à chacun de ses membres sans leur permettre de se désabonner. Parce que tout le monde le fait et qu’on ne peut en vouloir à ceux qui prennent ces décisions.
+
+Toute donnée envoyée sur le cloud doit être considérée comme publique, car il est impossible de savoir exactement qui y a accès ni de garantir qu’elles seront un jour effacées. De même, toute donnée sur le cloud doit être considérée comme pouvant disparaitre ou pouvant être modifiée à chaque instant.
+
+## Analyse de la situation
+
+Comme nous l’avons vu tout au long de cette explication, la communication repose sur l’existence d’un protocole ouvert et partagé. Le contrôle du langage est d’ailleurs l’une des premières armes des tyrans. Cependant, l’existence d’un protocole nécessite un accord. Se mettre d’accord est difficile, prend du temps, nécessite de faire des choix et des compromis.
+
+La tendance actuelle est de chercher à éviter de faire des choix, à se recentraliser sur ce que les autres utilisent sans se poser de questions. On se recentralise sur le Web au point de le confondre avec Internet. On se recentralise sur Google/Facebook au point de les confondre avec le Web. Les développeurs informatiques eux-mêmes se recentralisent sur la plateforme Github (appartenant à… Microsoft), la confondant avec le logiciel de développement décentralisé Git.
+
+Par confort, nous cherchons à éviter de faire trop de choix, mais le prix à payer est que d’autres font ces choix à notre place et nous en oublions que ces choix sont même possibles. Ces choix étant oubliés, ils deviennent de plus en plus difficiles à imaginer. Un cercle vicieux se met en place : au plus les monopoles ont du pouvoir, au plus il est difficile de ne pas utiliser un monopole, ce qui entraine le renforcement du pouvoir du monopole en question.
+
+Quelques entreprises, toutes issues d’un même pays avec des ingénieurs qui se connaissent et qui viennent des mêmes universités, contrôlent : les ordinateurs que nous utilisons, les logiciels que nous y installons, les données traitées dans ces logiciels. Elles contrôlent également ce que nous allons voir, ce que nous allons lire, ce que nous allons acheter. Elles peuvent imposer des délais et des tarifs aux fournisseurs. Étant la principale source d’information des électeurs, les politiciens leur mangent dans la main.
+
+Ces entreprises ont également un seul et unique but commun : nous faire passer un maximum de temps devant notre écran afin de nous afficher un maximum de publicités et de nous faire régulièrement renouveler notre matériel. Toute l’incroyable infrastructure du web et des milliers de cerveaux parmi les plus intelligents du monde se consacrent à une seule et unique tâche : comment faire en sorte que nous soyons le plus possible sur l’ordinateur dans notre poche sans jamais nous poser la question de savoir comment il fonctionne.
+
+Grâce aux algorithmes statistiques, tout cela est désormais automatique. Personne chez Facebook ou Google ne va promouvoir des théories complotistes ou des discours d’extrême droite. C’est tout simplement que l’algorithme a appris ce qui fait revenir et réagir les utilisateurs, ce qui les empêche de réfléchir. Dans la catégorie A, l’utilisateur a été soumis à des textes de Hugo et Zola entrecoupés d’articles du Monde Diplomatique. Dans la catégorie B, un utilisateur a été soumis à des dizaines de « Incroyable : la vérité enfin dévoilée », « vous ne croirez pas ce que cette dame a fait pour sauver son enfant » et « Le candidat d’extrême droite traite les musulmans de cons ». Lequel de A ou B a cliqué sur le plus de lien et passé le plus de temps sur son téléphone ? Dans quelle catégorie d’articles va tenter d’apparaitre le politicien cherchant à se faire élire ?
+
+La presse « traditionnelle » a été complètement détruite par ce modèle. Non pas à cause de l’érosion des ventes, mais parce que les journalistes sont désormais jugés aux articles qui font le plus de « clics ». Le rédacteur en chef ne pose plus des choix humains, il se contente de suivre les statistiques en temps réels. La plupart des salles de rédaction disposent désormais d’écrans affichant, en temps réels, les articles qui fonctionnent le mieux sur les réseaux sociaux. Même les blogs les plus personnels ne peuvent se passer de statistiques.
+
+La plupart des entreprises, depuis votre boulangerie de quartier aux multinationales, utilisent les services de Google et/ou Microsoft. Cela signifie que toutes leurs données, toute leur infrastructure, toute leur connaissance, toute leur logistique sont confiées à une autre entreprise qui peut, du jour au lendemain, devenir un concurrent ou entrer en conflit. On a fait également croire que cette infrastructure était nécessaire. Est-ce que votre boucherie de quartier a vraiment besoin d’une page Facebook pour attirer des clients ? Est-ce que l’association locale d’aide aux démunis doit absolument communiquer sur Twitter ?
+
+Les politiciens, la presse et l’économie d’une grande partie du monde sont donc entièrement soumises à quelques entreprises américaines, entreprises dont le business-model établi et avoué est de tenter de manipuler notre conscience et notre libre arbitre en nous espionnant et en abusant de nos émotions. Ces entreprises vivant du budget alloué au marketing nous font en permanence croire que nous devons, tous et tout le temps, faire du marketing. Du personnal-branding. Mettre en évidence notre carrière et nos vacances de rêves. Communiquer sur les actions associatives. Se montrer au lieu de faire. Prétendre au lieu d’être.
+
+Ces entreprises cherchent également à cacher le plus possible le fonctionnement d’Internet tel que je vous l’ai expliqué. Elles tentent de le rendre incompréhensible, magique, mystique. Elles s’opposent légalement à toute tentative de comprendre les protocoles et les formats qu’elles utilisent. C’est à dessein. Parce que la compréhension est la première étape, nécessaire et indispensable, vers la liberté.
+
+Internet est aujourd’hui partout. Il est incontournable. Mais plus personne ne prend la peine de l’expliquer. C’est de l’IA avec des blockchains dans un satellite. C’est magique. Même les développeurs informatiques utilisent des « frameworks REACT dans un Docker virtualisé » pour éviter de se poser la question « Que suis-je en train de construire réellement ? ».
+
+Tenter de le comprendre est un devoir. Une rébellion. Si mon écran me captive autant, s’il affiche ces données particulières, c’est parce que d’autres êtres humains y ont un intérêt majeur. Parce qu’ils l’ont décidé. Et ce n’est probablement pas dans mon intérêt de leur obéir aveuglément. Ni dans celui de la société au sens large.
+
+## Lectures recommandées
+
+Sur l’influence et la problématique des monopoles : « Monopolized: Life in the Age of Corporate Power » , David Dayen.
+Sur le traitement de nos données et l’invasion dans notre vie privée : « The Age of Surveillance Capitalism », Shoshana Zuboff
+Sur l’impact d’Internet sur nos facultés mentales : « Digital Minimalism », Cal Newport et « La fabrique du crétin digital », Michel Desmurget
+Sur le fonctionnement des réseaux sociaux : « Ten Arguments For Deleting Your Social Media Accounts Right Now », Jaron Lanier

@@ -1,0 +1,95 @@
+# Google, le géant asocial
+=> files/old/16215044078_2adccdfebb_k.jpg
+
+*Les raisons de l’échec de Google+ et des tentatives sociales chez Google.*
+
+Avec 90% du marché mondial des recherches web, 1 milliard de personnes utilisant des téléphones Android, 1 milliard de visiteurs mensuels sur Youtube et 900 millions d’utilisateurs de GMail, difficile pour un internaute de passer à côté de Google.
+
+Aussi, quand Google a décidé de se lancer dans les réseaux sociaux en 2011, personne ne donnait cher de la peau de Twitter et Facebook.
+
+Pourtant, Google Buzz, la tentative de concurrencer Twitter, fut un échec cuisant et Google+, l’équivalent Google de Facebook, reste vivement controversé et assez peu utilisé alors même qu’il est intégré avec la plupart des smartphones vendus dans le monde aujourd’hui !
+
+Et s’il est impensable pour une marque ou une célébrité de ne pas avoir une page Facebook ou un compte Twitter, qu’en est-il d’une page Google+ ? La plupart ne sont-elles pas créées par acquis de conscience ?
+
+## Trouver une personne, la base d’un réseau social
+
+Google+ serait-il techniquement tellement inférieur à ses concurrents que, même imposé, il soit si peu utilisé ? Au contraire, certains, parmi lesquels l’auteur de ces lignes, considèrent que Google+ est techniquement plus abouti et plus riche que Facebook : possibilité d’avoir des relations asymétriques entre personnes, facilité de regroupement des amis dans des “cercles”, meilleur contrôle des permissions, …
+
+Mais alors, pourquoi même les aficionados les plus accros à Google ont-il le réflexe d’aller sur Twitter et Facebook ?
+
+La réponse la plus souvent pointée est que tout le monde est sur Facebook et que les utilisateurs vont où les autres sont. Facebook aurait l’avantage d’avoir été le premier à bénéficier de cet effet de réseau à large échelle.
+
+Mais c’est sans compter que Google bénéficie déjà d’énormes réservoirs d’utilisateurs que sont Gmail, Android et Youtube. S’il ne s’agissait que d’atteindre une masse critique, Google+ aurait pu être un succès instantané.
+
+Un réseau social, ce n’est jamais qu’un groupe de personnes avec des liens entre eux. Et ce réseau ne peut se construire qu’avec les personnes. La première fonctionnalité d’un réseau social est bien celle-là : trouver une personne, étape indispensable avant la création d’un lien. La motivation première pour ajouter un ami sur Facebook n’est pas de voir ses photos de vacances, c’est de rester en contact. Les photos de vacances ne sont qu’une conséquence !
+
+Certains utilisateurs sur Facebook n’utilisent d’ailleurs pas le flux d’activité. D’autres n’ont jamais ouvert la messagerie. Mais tous ont un point commun : ils ont confiance de pouvoir trouver n’importe qui ou presque sur Facebook. Même le « Jean Dupont » que je cherche se démarquera au milieu de ses homonymes grâce à nos amis communs, ses centres d’intérêts, ses photos ou sa description.
+
+Sur Twitter, aucun doute possible grâce à l’identifiant unique que Jean Dupont m’aura très aisément communiqué.
+
+## Google+, un réseau asocial ?
+
+Google, par contre, a complètement perdu de vue la fonctionnalité de base : « trouver une personne ». Google+ s’est immédiatement concentré sur les conséquences (avoir un flux d’activité, partager des photos, chatter) en oubliant la raison première d’un tel produit : rester en contact. De l’aveu même des ingénieurs travaillant sur le projet, il fallait toujours « développer une nouvelle fonctionnalité ».
+
+=> http://mashable.com/2015/08/02/google-plus-history/ développer une nouvelle fonctionnalité
+
+Que ce soit dans mon téléphone ou dans Gmail, le fait de taper « Jean Dupont » me donne des dizaines d’occurrences dont certaines sont des doublons et d’autres des homonymes. À qui appartient ce numéro de téléphone associé à un « Jean » qui a sans doute été importé depuis ma carte SIM à un moment donné ? Est-ce l’ancien numéro de Jean Dupont ? Au contraire un nouveau numéro ? Ou bien un homonyme ?
+
+Impossible, depuis GMail, d’envoyer un mail à certaines personnes avec qui je suis pourtant en contact sur Google+ ! Et si les innovations de Google Inbox ont largement amélioré la situation, elle n’en reste pas moins loin d’être parfaite !
+
+=> ../files/old/3314-600x114.png Google Inbox me propose deux fois la même personne. Laquelle choisir ?
+Google Inbox me propose deux fois la même personne. Laquelle choisir ?
+
+
+Détail révélateur : la photo de profil d’une personne varie d’un produit Google à l’autre voire, au sein même de GMail et Google Inbox, d’un mail à l’autre ! Certaines anciennes photos de profils Google+, pourtant supprimées depuis longtemps, apparaissent parfois comme par enchantement au détour d’un mail. Mais le plus souvent, aucune image ne s’affiche. Il m’est donc impossible d’associer avec confiance une personne à une photo de profil unique, contrairement à Twitter ou Facebook.
+
+Facebook l’a bien compris et, sur cette plateforme, le changement de photo de profil d’un de vos contacts est un événement majeur qui sera particulièrement mis en avant.
+
+## Hangouts et Contacts, des échecs lourds.
+
+Sur Android, l’application Hangout est incroyablement lente quand il s’agit de lancer une conversation avec un nouveau contact. Parfois, elle ne trouve tout simplement pas ce contact ou n’associe pas le numéro de téléphone avec le profil de la personne, ne me laissant que le choix d’envoyer un message Hangout à la place d’un SMS. À d’autres moments, elle me met en avant des « suggestions » de profil Google+ que je ne connais pas et cache ceux que je connais.
+
+=> ../files/old/3317-338x600.png Hangout me propose 5 fois Marie qui sont la même et unique personne sur G+ !
+Hangout me propose 5 fois Marie qui sont la même et unique personne sur G+ !
+
+
+Avant ce mois de mars 2016, l’interface web de Google Contacts n’avait jamais connu de refonte complète depuis sa mise en service. Google n’a même jamais pris la peine de développer une application Android de gestion de contacts.
+
+Si cette nouvelle version rassure sur le fait que cette partie de Google n’a pas été complètement laissée à l’abandon, elle est néanmoins très frustrante : il ne s’agit que d’un changement purement esthétique sans réelle nouvelle fonctionnalité ni meilleure intégration avec les autres produits Google.
+
+=> ../files/old/3313-600x270.png L'interface de Google Contacts, restées inchangée pendant des années.
+L’interface de Google Contacts, restées inchangée pendant des années.
+
+
+C’est comme si Google considérait qu’unifier et gérer une liste de contacts n’avait aucun intérêt. Google s’est contenté de développer les fonctionnalités d’un réseau social en oubliant ce qui est selon moi la fondation même de l’interaction sociale : entrer en contact avec une personne donnée.
+
+Une fonctionnalité que Google a laissé, peut-être volontairement, aux fabricants de smartphones. Avec un résultat assez catastrophique.
+
+=> ../files/old/3318-225x400.png 3 vincents identiques, 2 vincents différents et de nouveau 3 vincents identiques. Merci Samsung !
+3 vincents identiques, 2 vincents différents et de nouveau 3 vincents identiques. Merci Samsung !
+
+
+Un désintérêt que Google paie très cher, y compris dans le domaine de la messagerie où, malgré une position dominante confortable, Gmail et Hangouts se sont vite fait dépasser par Whatsapp.
+
+## Le désespoir de l’incompréhension
+
+Est-ce que Whatsapp offre une fonctionnalité incroyable, nouvelle ou particulièrement utile ?
+
+Non, la principale caractéristique de Whatsapp est de trouver mes amis qui utilisent Whatsapp en se basant sur les numéros stockés sur mon téléphone. Que ce soit sur Facebook, Twitter ou Whatsapp, j’ai donc confiance de facilement trouver une personne donnée. Oui, Google est très fort pour me faire explorer, pour me suggérer des nouvelles personnes. C’est d’ailleurs ce qui fait la joie des aficionados de Google+. Mais la plupart du temps, je veux simplement contacter une personne donnée le plus vite possible.
+
+Avec sa nouvelle version, Google+ semble d’ailleurs faire progressivement son deuil de l’aspect social pour se concentrer sur la découverte de nouveaux contenus, de thématiques et de centres d’intérêt.
+
+Le lancement d’un enième produit social, Google Spaces, et d’une enième application de chat, Google Allo, sont la confirmation de la totale incompréhension de Google face au social. Plutôt que de réfléchir, d’essayer de trouver les racines du problème, le géant américain lance des dizaines d’applications en espérant trouver, par hasard, le succès. On lance tout contre un mur et on regarde ce qui reste collé…
+
+=> https://get.google.com/spaces/ Google Spaces
+=> https://play.google.com/store/apps/details?id=com.google.android.apps.fireball Google Allo
+
+Mais, ce faisant, il ne fait que créer des espaces supplémentaires où potentiellement chercher une personne. Il rend encore plus complexe la recherche d’une personne précise.
+
+Peut-être car, dans la culture des ingénieurs de chez Google, on ne recherche que des solutions à des problèmes, des informations. Pas des personnes. Jamais des personnes.
+
+Ceci expliquerait tout : Google ne peut développer un réseau social car il est, tout simplement, profondément asocial.
+
+Photo par Thomas Hawk.
+
+=> https://www.flickr.com/photos/thomashawk/16215044078 Thomas Hawk

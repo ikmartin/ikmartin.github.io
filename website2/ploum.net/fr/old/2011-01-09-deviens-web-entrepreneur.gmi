@@ -1,0 +1,87 @@
+# Toi aussi, deviens Web Entrepreneur !
+
+Il y a quelques années, tu avais suivi mes conseils pour devenir un véritable blogueur influent. Cela a bien fonctionné : tu consacrais 5 ou 6h par jour à ton blog, ton compte Feedburner est monté à près de 10.000 abonnés, chacun de tes billets t’a rapporté entre dix et cent commentaires. Chouette. T’as même sans doute eu droit à deux ou trois articles dans la presse locale et quelques interviews sur d’autres blogs. Voire te faire attaquer en justice si tu es un veinard.
+
+=> /162-toi-aussi-deviens-un-veritable-blogueur-web-20 blogueur influent
+
+=> ../files/old/tasse.jpg Tasse
+Mais tout cela se tasse et, maintenant que tu as les traites de la maison en Corrèze à payer et une dépression post-trentenaire à soigner, tu aspires à quelque chose d’un peu plus rémunérateur. Parce que les commentaires, ça ne nourrit pas son homme…
+
+Si Google AdSense te rapportait près de 150€ par mois au début, tu es sans doute à présent entre 20€ et 30€ mensuels. Tu viens de découvrir Flattr qui te rajoute une petite quinzaine d’euros. Mais bon, 50€ par mois pour un blog qui te demande vaille que vaille une dizaine d’heures de travail hebdomadaire (il faut bien mettre l’hébergement à jour, modérer les commentaires, publier un billet de temps en temps), c’est très peu.
+
+=> /Monnaie-de-geek,-monnaie-de-singe Flattr
+=> https://flattr.com/thing/76498/Where-is-Ploum petite quinzaine d’euros
+
+=> ../files/old/travail.jpg Tout travail mérite salaire
+
+De plus, ton blog se perd à présent dans une offre largement plus diversifiée et une concurrence déloyale des Facebook et autres Twitter, sites qui te bouffent le temps que tu consacrais autrefois à rédiger ta prose.
+
+=> /facebook-la-pause-clope-2 Facebook
+=> /no-proprietary-service.html Twitter
+
+Trois solutions s’ouvrent à toi.
+
+=> ../files/old/pressecitron.jpg Presse citron
+La première, la plus directe, consiste à presser le citron jusqu’au zeste. Tu vas couvrir ton blog de pubs en tout genre tout en rédigeant des publi-reportages. Ton blog ressemble à un dépliant Aldi, tant pour la forme que pour le contenu, mais ça peut te permettre de tenir un an ou deux, le temps que tes abonnés prennent la peine de te retirer de leur aggrégateur.
+
+La seconde consiste à vendre ton âme et ton profil influent pour devenir « Community Manager » pour une grosse boîte. Le community manager, c’est un peu le ministre de la propagande des temps modernes. Cela consiste à poster sur Twitter toutes les nouveautés de ta boîte avec un ton enthousiaste, à parcourir les forums en tentant d’en manipuler les intervenants. À titre d’exemple, on demandera à un Community Manager de chez Philips Morris d’aller sur le forum de Santé Magazine pour vanter la dernière cigarette mentholée et, en réponse aux bordées d’injures, poster un truc du genre :
+
+=> http://bloggingthenews.info/blogging_the_news/2011/01/a-propos-de-mon-job-de-community-manager-a-la-rtbf.html community manager
+
+« Je suis très surpris des réactions mais j’en prend bonne note. Nous sommes extrêmement soucieux de nos clients chez Philips Morris. Aussi, je vous propose d’essayer notre dernière TuePoumon à l’anis et de nous faire parvenir vos idées d’améliorations. Vous pouvez me contacter sur mon adresse privée. »
+
+Mais le top du top reste là troisième option, la voie royale choisie par une majorité de tes collègues ex-blogueurs influents. Alors, comme eux, deviens :
+
+### Web-entrepreneur
+
+=> ../files/old/entrepreneur.jpg Wé la classe
+
+Comment ? Tu n’as pas d’idée ? Tu n’as pas la fibre entrepreneuriale ? Tant mieux. Si c’était le cas, tu ne serais pas en train de me lire.
+
+La première chose qu’il te faut, c’est un nom et un logo. Pour cela, tu vas investir tes maigres économies auprès d’une boîte de com. Oui, tu m’entends bien : tu vas échanger trois années d’économie serrée contre un fichier Photoshop pondu par un jeune cocaïnomane aux cheveux décolorés qui met un veston par dessus son t-shirt Che Guevara.
+
+Le nom de ton bébé doit préférablement se terminer en « R ». Un « ook » ou quelques autres variantes sont également possibles, mais, depuis 2005, la norme ISO est le « R » terminal. Tout comme ton blog, ton « service web » sera en beta, avec le logo approprié. Rajoute un slogan en anglais et tu as déjà fait la moitié du boulot. Allez, je t’aide.
+
+=> ../files/old/branlr.png Le logo vous rappelle quelque chose, n'est-il pas ? Et oui, certaines choses sont immuables dans le web 2.0 !
+
+Bon, maintenant que tu as le nom, tu vas faire la promotion de ton service. Pour cela, tu crées un compte Twitter spécifique pour Branlr. Tu postes tous tes tweets via ce compte que tu retweetes ensuite via ton compte perso. Ouvre également ton service uniquement sur invitation que tu distribues à tes abonnés Twitter. Cela donne un sentiment de supériorité à tes utilisateurs et cela augmente tes followers.
+
+Histoire de crédibiliser ton image de marque et d’avoir encore plus de followers sur Twitter, follow toi-même des tas de gens connus. Retweete régulièrement le dalaï-lama et sa philosophie de comptoir, en rajoutant un « So true » devant. Genre :
+
+« So True RT@dalailama : war is bad, love is good »
+
+Essaye également de fréquenter les endroits branchés et de te coller aux célébrités qui sont sur Twitter. Même si tu ne leur adresse pas la parole, cela fera un excellent tweet.
+
+« Had a nice piss with @scobleizer in Beer-garden, Los Angeles. »
+
+Non seulement tu fréquentes les plus grands mais, en plus, tu es à Los Angeles. Bref, la véritable vie d’un CEO (titre dont tu dois t’affubler un peu partout, surtout dans ta bio Twitter).
+
+Va aux conférences et prends des photos toutes noires que tu passes ensuite dans instagr.am. Ta purée de pixels crados couplée à ton compte 4thsquare donnera tout de suite de toi l’image d’un chef d’entreprise motivé, efficace, charismatique, sociable et passionné.
+
+=> ../files/old/business.jpg Business Angels
+Tu peux maintenant passer à la seconde phase qui consiste à lever des fonds. Tu vas à présent passer ton temps à convaincre de jeunes vieillards riches mais technologiquement ignares que ton idée est le prochain Facebook d’un point de vue rentabilité (eux-mêmes te demandant si ton « moteur de recherche » est diesel ou essence).
+
+Ton blog ne parle donc plus que de VP, Business Angels et autres barbarismes. Tes arguments principaux ? Tu as 3000 followers sur Twitter, tu as été élu blogueur influent en 2007 et tu as, outre ton enthousiasme fauché, « l’expérience du web ».
+
+« Branlr, c’est en quelques sortes un méta-réseau social, un croisement entre Facebook et Twitter. Les utilisateurs s’inscrivent, entrent leur données et peuvent networker via les autres utilisateurs tout en bénéficiant de fonctionnalités avancées. »
+
+Ta spécialité deviendra vite le sus-dit « Networking ». Le networking, c’est le fait de rencontrer des gens qui pourront t’être utiles car ils connaissent d’autres gens. Et parfois, ces autres gens sont eux-mêmes des experts en networking, il est donc vachement utile de les rencontrer afin d’étendre son réseau (ce qui te permettra, plus tard, d’étendre ton réseau. Tu suis ?[1])
+
+Une fois que tu auras un petit budget de départ, tu paieras ta première bagnole de société et tu engageras quelques développeurs afin d’implémenter Branlr pour de vrai.
+
+Jusqu’ici, tu as toujours pensé que seule l’idée était importante. La mise en œuvre, il suffit de trouver un informaticien ultra-compétent mais dénué d’imagination pour le faire. C’est facile non ? Après tout, ça sert à ça les informaticiens. Tu postes donc une annonce ad-hoc :
+
+« Cherche informaticien passionné de CSS/XHTML/Java/Flash/Django/PHP pour boulot passionnant de 80h semaine dans startup. Payé au lance-pierre mais le café est gratuit, on bosse en t-shirt jaune fluo sans se prendre au sérieux et on a tous des iphones ».
+
+=> ../files/old/statue.jpg Tout n'est qu'un éternel recommencement
+Dès qu’un informaticien rentre dans le jeu, ton service Branlr est condamné. Mais c’est normal. Le but est en effet d’arriver à avoir assez de membres sur Branlr (via des invitations, de la pub sur Twitter) pour te faire racheter par Yahoo! ou Microsoft (ces deux sociétés étant particulièrement friandes en services webs merdiques et creux) avant que tes fonds soient épuisés. C’est un peu une course contre la montre mais ça en vaut la chandelle. Si ça réussit, tu finis millionnaire et tu passes de l’autre côté de la barrière en devenant investisseur. On parlera de toi dans la gazette locale de Tirlipont-Plage. Tu deviendras la fierté du village.
+
+=> /ploum-en-j2ee condamné
+
+Sinon, bah, tu retournes t’occuper de la maintenance du logiciel de comptabilité du bureau de poste de Tirlipont-Ville, ce qui te permet de payer les traites de la maison en Corrèze et les croquettes du Labrador tout en regardant grandir tes enfants. Tu t’es bien marré mais il n’y a pas que le web dans la vie.
+
+Vanitas vanitatum et omnia vanitas! comme disait l’autre en moins de 140 caractères.
+
+#### Note
+
+[1] Le but ultime étant, bien entendu, d’avoir Kevin Bacon dans son réseau

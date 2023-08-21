@@ -1,0 +1,69 @@
+# Ce blog est payant
+=> files/old/money_water.jpg
+
+Voilà, ce blog est désormais officiellement un blog payant. En contrepartie, je vous laisse la liberté de choisir le prix ainsi que la manière de me payer.
+
+Comme je l’ai déjà écrit, vous pouvez utiliser Flattr. Ou bien Bitcoin. Vous pouvez décider de m’envoyer une fois pour toute, par le moyen de votre choix, une petite somme pour un abonnement annuel ou à vie. Vous pouvez décider que le temps passé à me lire est un paiement amplement suffisant. Vous partagez mes articles autour de vous ou sur les réseaux sociaux ? Alors peut-être estimerez-vous qu’il s’agit là d’un paiement en nature. Vous pouvez m’offrir une eau gazeuse lors d’une conférence, m’inviter un week-end dans votre maison de campagne, m’envoyer un t-shirt, une carte postale ou un mail exprimant votre gratitude.
+
+=> /si-vous-testiez-le-web-payant utiliser Flattr
+=> /bitcoin-pour-les-nuls Bitcoin
+=> /soutenir-lauteur/ par le moyen de votre choix
+
+Quoiqu’il en soit, je ne jugerai pas, je vous laisse la liberté. Car, si ce blog est payant, le prix est entièrement libre, même si vous le fixez à rien du tout. Voir mes articles lus et partagés est déjà un paiement en soi.
+
+Un prix libre ? N’est-ce pas une utopie ?
+
+Dans un monde où les biens sont rares, la théorie libérale veut que le prix tende automatiquement, grâce à la main invisible du marché, vers sa valeur réelle. Ce postulat est à ce point ancré dans nos mentalités que peu d’entre nous savent se départir de l’équation valeur = prix. Ou imaginer que la valeur puisse être différente pour chacun.
+
+Or, dans un monde virtuel où la rareté n’a plus court, il est évident que ces théories libérales doivent être revues en profondeur. Plutôt que de mettre en cause la théorie, les conservateurs ont donc tenté d’implémenter la rareté artificielle, que ce soit techniquement avec les DRMs, législativement avec des lois criminalisant le partage d’informations ou culturellement, avec du lavage de cerveau.
+
+=> /123-un-petit-air-de-liberte les DRMs
+=> /je-suis-un-pirate des lois criminalisant le partage
+=> /213-le-piratage du lavage de cerveau
+
+Plutôt que de suivre cette approche, j’ai décidé d’explorer l’alternative. Et si la théorie était inapplicable ? Et si la valeur n’était plus corrélée au prix ? C’est déjà le cas avec, par exemple, la musique en ligne. Le MP3 piraté a-t-il moins de valeur aux yeux de l’auditeur que celui acheté à prix d’or ? Non, la musique procure autant de plaisir dans les deux cas. Pour un prix nul ou un prix fixé par le distributeur, vous obtenez la même valeur.
+
+Dans ce cas, pourquoi acheter ? Deux raisons, dont aucune n’est liée à la valeur de la musique : un incitant moral négatif et un incitant moral positif.
+
+L’incitant négatif, c’est la peur de se faire prendre, c’est le refus d’outrepasser la loi. Cet incitant est puissant et c’est pourquoi les lobbies industriels ont tant fait pression auprès du législateur. Il n’en reste pas moins que, personnellement, je trouve moralement inacceptable de soutirer de l’argent en utilisant la crainte ou la culpabilité. Ce n’est rien d’autre que du racket, de l’extorsion.
+
+L’incitant positif, c’est le désir de soutenir l’artiste, de montrer notre appréciation envers son travail, de lui permettre de consacrer autant de temps que possible à son art. C’est un incitant merveilleux. Par contre, c’est dommage que le prix soit fixé. Certains aimeraient montrer leur soutien mais de manière plus raisonnable, les fins de mois étant difficiles. D’autres aimeraient, au contraire, contribuer plus amplement à ce créateur qui change leur vie.
+
+Si vous avez, ne fût-ce qu’une fois dans votre vie, acheté un bien disponible gratuitement pour « soutenir l’artiste », si vous avez donné un pourboire dans un restaurant, si vous avez jeté une pièce à une artiste que vous appréciez dans le métro, alors vous avez fait l’expérience du prix libre. Ne le confondez pas avec la charité, il s’agit bel et bien d’un prix, d’un échange économique.
+
+Mais pourquoi rendre ce blog payant ? Pourquoi monétiser ?
+
+Je me permets de faire la leçon aux créateurs, je critique certains modèles économiques mais je suggère des nouvelles formes de monétisation. À ce titre, il serait hypocrite de ne pas appliquer les méthodes que je préconise.
+
+=> /lettre-ouverte-aux-artistes-pirates la leçon aux créateurs
+=> /pourquoi-vous-devez-utiliser-adblock certains modèles économiques
+=> /si-vous-testiez-le-web-payant des nouvelles formes de monétisation
+
+D’autres part, oui, j’aimerais pouvoir consacrer plus de temps à l’écriture. À l’heure où mes revenus Flattr représentent entre 3% et 5% de mes revenus mensuels, ce rêve ne semble plus complètement absurde. Difficile à atteindre, certes, mais possible. À plus petite échelle, la monétisation garde un sens pour couvrir les frais d’hébergement et mettre, pourquoi pas, un peu de beurre dans les épinards.
+
+Enfin, et ce n’est pas le moindre des arguments, pour la fierté et la motivation. Il y a peu de temps, l’idée de gagner de l’argent avec ma plume m’aurait semblé inconcevable. Aujourd’hui, c’est un fait. Chaque don, fût-il de 0,01 bitcoin ou de 10 centimes, me remplit de fierté et de motivation. Si quelqu’un, dans le monde, estime mes écrits au point de faire la démarche de me rétribuer, à sa manière, c’est un signal très fort, un véritable symbole, un incitant à continuer.
+
+La monétisation ne va-t-elle pas pervertir le contenu ?
+
+Tout indicateur, de quelque nature que ce soit, va déformer le créateur. Un blogueur qui vit de la pub va avoir tendance à écrire des articles courts pour que le visiteur clique le plus vite possible sur la réclame clignotante. Un autre, consultant compulsivement ses statistiques, va avoir tendance à écrire des billets qui ramènent le plus de visiteurs. Un troisième va tenter, inconsciemment, de générer le plus de commentaires. Enfin ce dernier, obsédé par son score Klout, délaisse totalement son blog pour avoir le plus de retweets.
+
+=> /pour-en-finir-avec-klout son score Klout
+
+Il n’existe pas de réelle perversion ni de pureté originale. Nous sommes des humains qui évoluons avec les interactions. Refuser l’évolution n’a donc pas de sens.
+
+En ce sens, j’estime que le prix libre est une excellente chose. Il va me pousser à écrire des articles auxquels les lecteurs attachent une grande valeur, des billets qu’ils ne pourront pas trouver ailleurs et qui leur apporteront quelque chose. Ce sera ma seule statistique, mon indicateur.
+
+=> /comment-jai-appris-a-ne-plus-men-faire-et-a-aimer-le-web ma seule statistique, mon indicateur
+
+Le danger hypothétique est de voir une personne très riche tenter d’orienter ma motivation en faisant de très gros dons pour les billets d’un sujet précis. Mais, outre la faible probabilité que ça arrive, ce danger est fortement mitigé par le fait que le nombre de personnes ayant fait un don (ou un flattr) est pour moi plus importante que la valeur du don lui-même.
+
+Conclusion
+
+Ce blog est donc payant. Je ne fais pas appel à la charité. Je ne demande pas de la compassion ni de l’aide (je ne suis pas l’UMP). Il s’agit d’un véritable échange économique. À la différence du commerce classique, c’est vous qui fixerez le prix. Selon votre ressenti, selon la valeur que vous apportent mes écrits et selon vos propres possibilités.
+
+Mais je n’insisterai jamais assez sur le fait que votre temps à me lire et à me partager autour de vous est déjà le plus beau des paiements.
+
+Photo par Thomas Schlueter. Relecture par Sylvestre.
+
+=> http://500px.com/photo/27516973 Thomas Schlueter
+=> http://sylvestre.org/ Sylvestre

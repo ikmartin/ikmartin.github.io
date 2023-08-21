@@ -1,0 +1,95 @@
+# Le silence au milieu du bruit
+=> files/old/chairulfajar_-655482-unsplash.jpg
+
+*Pourquoi l’immense majorité des contenus en ligne aujourd’hui est en fait du bruit, comment on peut s’en protéger et comment faire pour rendre le monde un peu moins bruyant*
+
+## Mon expérience des blogs marketing
+
+Blogueur actif et, dans une certaine mesure, reconnu depuis plus de 14 ans, il est normal que j’aie tenté de multiples fois de faire de ma plume bloguesque un arc de ma carrière professionnelle.
+
+Soit en postulant par moi-même pour alimenter le blog d’une entreprise contre rémunération, soit suite à une demande de mon employeur, impressionné par les différentes métriques de mon blog et rêvant de reproduire la même chose, de transférer mon audience vers son entreprise.
+
+Dans tous les cas, ces projets se vautrèrent aussi misérablement qu’un base jumpeur ivre accroché à une plaque de tôle ondulée.
+
+Je n’étais pas satisfait de mon travail. Mon employeur non plus. Le plus souvent, mes billets étaient même refusés avant publication. Pour le reste, ils étaient retravaillés à outrance, je devais les réécrire plusieurs fois et aucun de ceux qui ont finalement été publiés n’ont jamais obtenu ne fût qu’une fraction du succès relatif dont je peux régulièrement m’enorgueillir sur mon blog personnel. D’ailleurs, j’avais l’impression que les lettres s’étalaient sur l’écran en une bouse fraîche et odorante de printemps. Mon commanditaire me faisait comprendre que ce n’était pas qu’une impression.
+
+J’ai toujours attribué ces échecs au bike shedding, ce besoin des managers de surveiller, de modifier ce qui leur semble simple au lieu de me faire confiance. Je les croyais incapables de laisser publier un truc qu’ils n’avaient pas écrit eux-mêmes (alors que si on m’engage, c’est justement pour ne pas l’écrire soi-même). Bref, du micromanagement.
+
+## Les deux types de contenus
+
+Avec le recul, je commence seulement à réaliser une raison bien plus profonde de ces échecs : il y’a deux types de contenu, deux types de texte.
+
+Les premiers, comme celui que vous êtes en train de lire, sont le résultat d’une expression personnelle. Le but est de réfléchir, en public ou non, par clavier interposé, de partager des réflexions, de les lancer dans l’éther sans trop savoir ce qui va en découler.
+
+Mais les entreprises n’ont, par définition, qu’un seul objectif : vendre leurs tapis, leurs chameaux de plastiques produits en chine par des enfants aveugles dans des mines, leurs services de voyance/consultance aussi ineptes que dispendieux, leur golfware et autre tupperware. Mais on ne vend pas directement par blog interposé, ça se saurait ! En conséquence, le but du blog corporate est uniquement d’augmenter la visibilité, le pagerank, le référencement du site de l’entreprise dans les moteurs de recherches et les réseaux sociaux. L’entreprise va tenter de produire du contenu, mais sans réelle motivation (car elle n’a rien à partager ou, si c’est le cas, elle ne souhaite justement pas le partager) et sans aucun objectif d’être lu. Un blog d’entreprise, c’est surtout ne rien dire (pour ne pas donner des idées aux concurrents), mais faire du vent en espérant que les suites aléatoires de mots à haute teneur de buzz bercent les oreilles des robots Google d’une douce musique de pagerank ou que le titre soit suffisamment accrocheur pour générer un clic chez une aléatoire probabilité de clientèle potentielle.
+
+J’exagère ? Mais regardez, au hasard, le blog de Freedom, un logiciel qui a pour mission de filtrer les distractions, de permettre de se concentrer. Il est rempli d’articles creux, vides et, disons-le, nullissimes, sur le thème du focus. Le but est évident : attirer l’attention. Tenter de distraire les internautes pour leur vendre une solution pour éviter les distractions.
+
+=> https://freedom.to/blog/ le blog de Freedom
+
+Ce qui est particulièrement dommage c’est que ce genre de blog peut avoir des choses à dire. Mais un contenu intéressant, car parlant du logiciel lui-même, est noyé au milieu d’un succédané de Flair l’hebdo. Freedom n’est pas une exception, c’est la règle générale. Les projets, même intéressants, se sentent obligés de produire régulièrement du contenu, de faire du marketing au lieu de se concentrer sur la technique.
+
+Une fois clairement identifiée la différence entre un blog d’idées et un blog marketing, il semble absurde qu’on ait voulu, de nombreuses fois, me confier les rênes d’un blog marketing.
+
+Un blog marketing, par essence, n’est que du vent, du bruit. Il a pour objectif d’attirer l’attention sans prendre le moindre risque. Un blog personnel, c’est le contraire. J’ai l’aspiration d’écrire pour moi, de prendre des risques, de me mettre à nu. Même si, trop souvent, je cède aux sirènes du bruit et du marketing de mon fragile ego.
+
+## Le bruit de l’email
+
+Il semble évident que cette différentiation du contenu ne s’applique pas qu’aux blogs, mais absolument à tout type de média, depuis l’email à la lettre papier. Il y’a deux types de contenus : les contenus créés pour partager quelque chose et les contenus qui ne cherchent qu’à prendre de la place dans un océan de contenu, à exister, à accaparer votre attention. Bref, du bruit…
+
+Toute la « science » enseignée dans les écoles de marketing peut se résumer à cela : faire du bruit. Faire plus de bruit que les autres. Et accessoirement mesurer combien de personnes ont été forcées d’entendre. Alors, forcément, quand des milliers de marketeux issus des mêmes écoles se retrouvent en situation de concurrence, cela produit un gigantesque tintamarre, un tohu-bohu, un charivari dans lequel nous vivons pour le moment.
+
+Aujourd’hui, je commence à peine à prendre conscience que la grande partie de mon temps de consommation pré-déconnexion était en fait dédié à “trier” le bruit, sans réel repère autre que l’intuition. Je tentais de donner un sens à tout ce vacarme. Pour chaque contenu qui “avait l’air intéressant”, je passais du temps à soit le supprimer, soit à tenter de comprendre ce qui se cachait sous les parasites. Et, forcément, lorsqu’on est assourdi, tout parait bruyant. Même une conversation normale devient inintelligible.
+
+À la lueur de cette dichotomie manichéenne, ma déconnexion s’illumine d’un nouveau sens : comment passer moins de temps dans la mer de contenu à trier ? Comment supprimer le bruit de mon existence ?
+
+Et la solution se révèle, pour moi, incroyablement simple.
+
+## Ne plus accepter le bruit
+
+Pour les emails, cela consiste à se désabonner d’absolument tous les mails qui comportent la mention “unsubscribe” et à demander à tous les auteurs de mails impersonnels de me supprimer de leur liste. Chaque mail de ce type est donc un léger effort (parfois il y’a des négociations), mais l’effet, au bout de quelques semaines, est absolument saisissant. L’immense majorité de notre usage du mail est en fait “filtrer le bruit”. Ma solution est tellement efficace que, parfois, j’ai l’impression que mon mail est planté. Cela demande une certaine rigueur, car recevoir un mail est source d’une légère décharge de dopamine. Nous sommes accros à recevoir des mails. Si vous êtes de ceux qui reçoivent plus de cinquante emails par jour, et je l’ai été bien longtemps, vous n’êtes pas une personne importante, vous êtes tout simplement une victime du bruit.
+
+Il y’a probablement certaines newsletters que vous trouvez instructives, intéressantes. Si vous ne payez pas pour ces newsletters, alors c’est par définition du bruit. Des mails conçus pour vous rappeler que le projet ou la personne existe. Les grands services en ligne comme Facebook et Linkedin sont d’ailleurs particulièrement retors : de nouvelles catégories d’emails sont ajoutées régulièrement, permettant de toucher ceux qui s’étaient déjà désinscrits de tout le reste. Se désinscrire peut parfois révéler du véritable parcours du combattant, et c’est parfois pire pour les mailings papier !
+
+Hors mail, comme vous le savez peut-être, je n’accède plus non plus aux réseaux sociaux. Au fond, ceux-ci sont l’archétype du bruit. Sur les réseaux sociaux, l’immense majorité des contenus ne sont que « Regardez-moi, j’existe ! ». Être sur les réseaux sociaux, c’est un peu comme rentrer dans une discothèque en espérant tomber par hasard sur quelqu’un avec qui discuter de l’influence kantienne dans l’œuvre d’Heidegger. Ça arrive, mais c’est tellement rare que mieux vaut utiliser d’autres moyens et se couper du bruit.
+
+=> /comment-jai-deconnecte/ comme vous le savez peut-être
+
+Par contre, je lis avec plaisir ce que mes amis prennent le temps de me recommander. Je suis également le flux RSS de quelques individus sélectionnés. Le fait de les lire non plus en vitesse, au milieu du bruit, en les scannant pour tester leur “intérêt potentiel”, m’apporte énormément. Je leur fais désormais confiance, je les lis en étant disponible à 100%. Cela me permet de m’imprégner de leurs idées. Je ne me contente plus de lister leurs idées pour les archiver dans un coin de ma tête ou d’Evernote, mais je prends le temps de les laisser grandir en moi, de les approprier, de partager leur vision.
+
+Au lieu de scanner le bruit pour repérer ce qui m’intéresse, j’accepte de rater des infos et je n’accepte que des sources qui sont majoritairement personnelles, profondes, quel que soit le sujet. Je peux me passionner pour un billet d’un Alias même lorsqu’il traite de sujets abscons et complètement hors de mes intérêts. Par exemple la différence entre le néo-prog métal et le néo-métal tendance prog, un sujet fondamental. Si je pestais contre les articles trop longs qui n’allaient pas directement à l’essentiel, aujourd’hui je suis déçu par la brièveté de certains qui ne font que toucher, effleurer ce qui mériterait une bien plus grande profondeur.
+
+=> https://alias.erdorin.org un Alias
+
+## Contribuer au silence
+
+Mais réduire le bruit du monde n’est pas uniquement à sens unique. Nous sommes tous responsables d’une part de bruit. Comment contribuer ?
+
+C’est simple ! Que ce soit un simple email, un post sur les réseaux sociaux, un blog post, posez-vous la question : est-ce que je suis en train de rendre le monde meilleur en diffusant ce contenu ?
+
+S’il s’agit d’essayer d’obtenir de la reconnaissance, de convaincre votre public (que ce soit de la pertinence de vos idées, de la nécessité d’acheter votre produit, de l’importance de votre vie) ou de cracher votre colère, alors vous ne rendez pas le monde meilleur.
+
+J’ai, un peu par hasard, acheté une licence Antidote en commençant ma déconnexion (ce qui est râlant, ils ont annoncé la version 10 3 semaines après). Antidote possède une fonctionnalité qui fait que chaque mail que vous envoyez vous est affiché à l’écran avec toutes les fautes d’orthographe. C’est un peu pénible, car, Antidote étant lent, cela rend le mail moins immédiat.
+
+Pourtant, deux ou trois fois, à la relecture, j’ai purement et simplement renoncé à envoyer le mail. Moi qui étais ultra-impulsif du clavier, voilà un outil qui me soigne. Si le monde n’a pas besoin de mon email, alors je ne l’envoie pas. Non seulement j’applique Inbox 0 pour moi, mais, désormais, j’aide les autres à l’atteindre.
+
+Exemple frappant : mon mail type de demande de désinscription citant le RGPD comportait un paragraphe tentant de convaincre de l’aspect immoral des pratiques marketing. J’ai arrêté. Je tente de ne répondre à chaque email qu’avec le minimum d’informations nécessaires. Je garde pour moi toutes mes suggestions d’améliorations. C’est difficile, mais ça va soulager pas mal de monde.
+
+## Trop de bruit, pas assez de silence ?
+
+Depuis l’avènement d’Internet, nous sommes tous des producteurs de contenus. Si nous rajoutons les contenus générés automatiquement par des ordinateurs, il semble évident qu’il y’a désormais beaucoup trop de contenus, que trouver de l’audience est difficile. C’est un truc dont traite régulièrement l’auteur Neil Jomunsi.
+
+=> https://page42.org Neil Jomunsi
+
+Loin d’être effrayé par cette apparence de abondance, je pense qu’il n’y a en réalité pas assez de contenu de qualité. Il n’y a pas assez d’écrivains, d’artistes. Il n’y a pas assez de contenu qui n’a pour seule vocation que d’enrichir le patrimoine commun de l’humanité.
+
+Et si, avant toute chose, on arrêtait de produire et de consommer du bruit, de la merde ?
+
+À un âge de surabondance de l’information, de publicités épileptiques clignotantes à tous les coins de rue et d’omniscients écrans, publier un contenu devrait être soumis à un filtre strict : « Est-ce que j’ai vraiment envie de publier ça ? Est-ce que je ne rajoute pas une couche de fumier sur la merde du monde ? »
+
+Est-ce que moi, Ploum moralisateur en quête d’égo, je ne suis pas face à un paradoxe en continuant à alimenter automatiquement mes bruyants comptes de réseaux sociaux pour que vous veniez lire mes pontifiants sermons sur le silence ? La réflexion est en cours.
+
+Photo by @chairulfajar_ on Unsplash
+
+=> https://unsplash.com/photos/wR5u40w3GMw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText @chairulfajar_
+=> https://unsplash.com/search/photos/noise?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

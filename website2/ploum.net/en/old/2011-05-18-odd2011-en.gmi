@@ -1,0 +1,68 @@
+# Open Discussion Day 2011 : Why Decentralization Matters
+
+=> /odd2011 Traduction française disponible
+
+A boy that was just discovering Internet once asked me: “I’m wondering, where is located the content of Internet?”. I considered it as a silly question but, in fact, it is the most crucial question about the Internet.
+
+And to answer it, why not celebrate the Open Discussion Day this Thursday like every May 19th since 2006?
+
+=> http://www.opendiscussionday.org/ Open Discussion Day
+=> /103-may-19th-the-open-discussion-day-19-mai May 19th since 2006
+
+=> ../files/old/eoliennes.jpg Decentralized energy
+
+Some people say that Internet was made to be able to sustain an atomic bombing. I find the solution incredibly beautiful: decentralization. Internet doesn’t have a center or a major node. It is only a lot of interconnected computers. A bomb could destroy some of them, the network would still be there. Of course, some website would be offline but without major impact on the others.
+
+One of the key aspect of a decentralized network is an open protocol. Indeed, you want to allow anyone to join the network without any prerequisite. We need a language that anyone is able to learn.
+
+Today, we fear a bit less a nuclear attack. But should we care less about decentralization?
+
+=> ../files/old/petiteol.jpg petite eolienne
+Centralized communication means that everything could be controlled by one given authority. And today, it’s often a private company. Facebook messages, MSN chats, Skype: you are maybe using centralized services yourself. Ant it matters:
+
+1. You depend on the company willingness to provide its service. If they want to change their terms of service to something unacceptable, you are screwed.
+2. A huge part of your private life is offered to those companies for free. They can use it at will. People tend to minimize that fact because it is quite disturbing.
+3. A given company could decide to block all your messages or messages about a given topic. Not a big deal? In some troubled times, it does.
+4. You have no control over your own informations. Not happy? Wanting to change? You cannot, all your friends are there!
+5. You are encouraging your friends to join the network, making it even more powerful.
+6. If you have contacts on different networks, you have to make an account on all those networks. Of course, they see interoperability as a disease!
+7. Last but not least, it reinforces the big players and other monopolistic companies, which is a pity for small innovating businesses.
+
+In order to be spread the word about decentralized networks and open protocols, May 19th is usually called the Open Discussion Day.
+
+=> /107-the-captive-clown all those networks
+=> http://www.opendiscussionday.org/ Open Discussion Day
+
+```
+
+```
+
+=> ../files/old/odd_logo.png ODD
+
+During one day, you are invited to use only decentralized services and open protocols. It means using preferably emails, XMPP, Google Chat, SIP and many others. On the black list for that day: Skype, MSN, Facebook messages and attachements .docs.
+
+=> http://www.gnu.org/philosophy/no-word-attachments.html attachements .docs
+
+For a more hardcore experience, don’t use Twitter or Facebook but only Diaspora and Status.net. The die hard fans will spend only bitcoins as even money is centralized.
+
+=> https://joindiaspora.com/people/7611 Diaspora
+=> http://identi.ca/ploum Status.net
+=> /bitcoin-bubble bitcoins
+
+One of the last centralized bit of the Internet is probably the DNS protocol. That’s why I’m really excited to see a (very experimental) decentralized replacement: Namecoin.
+
+=> http://www.bluishcoder.co.nz/2011/05/12/namecoin-a-dns-alternative-based-on-bitcoin.html Namecoin
+
+=> ../files/old/yelloweol.jpg Eol jaunes
+
+I wish you an excellent Open Discussion Day. Don’t hesitate to join our Identi.ca group.
+
+=> http://identi.ca/group/opendiscussionday Identi.ca group
+
+Pictures credits: FredArt, Cap21Photo and olympi
+
+=> http://www.flickr.com/photos/fredart/1224764457/ FredArt
+=> http://www.flickr.com/photos/10357688@N08/1360357830/ Cap21Photo
+=> http://www.flickr.com/photos/olympi/3473548135/ olympi
+
+=> /odd2011 Traduction française disponible

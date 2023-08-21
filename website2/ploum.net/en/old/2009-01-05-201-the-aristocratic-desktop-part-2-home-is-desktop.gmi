@@ -1,0 +1,57 @@
+# The aristocratic desktop (part 2) : Home is Desktop
+
+Part 1 : Introduction
+Part 2 : Home is Desktop
+Part 3 : There’s no tray icon in GNOME! 
+Part 4 : Kill The Double Click
+
+=> /195-the-aristocratic-desktop-part-1 Part 1 : Introduction
+=> /219-the-aristocratic-desktop-part-3-there-s-no-tray-icon-in-gnome Part 3 : There’s no tray icon in GNOME!
+=> /kill-double-click Part 4 : Kill The Double Click
+
+After I installed Ubuntu for Marie, she quickly grasped a lot of things and I discovered that she was really bright. She quickly organized a lot of folders for all of her project, downloading a lot of file and putting them in a lot of place. On the opposite, Jean had a lot of difficulties to understand the file concept. Well, in fact, he understood the document concept he was not seeing where those documents were.
+
+=> ../files/old/bee.jpg Bee
+How can I make things easier ?
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=8042 
+
+=> ../files/old/hand_mouse.jpg Hand
+One problem Marie had was to find back documents spread in multiple folder in her home folder and the desktop. Jean always forgot that his files are in his home folder. Both of them were perplex when they discovered that their home folder contained a desktop folder with a content similar to what they had on their desktop. Marie was afraid of recursion (remember that she is a mathematician) and Jean simply said that he never created a desktop folder in his home so it has to be deleted.
+
+Then, one day, I enabled the « desktop_is_home_dir » option (in gconf->apps->nautilus->preferences).
+
+For Jean, I simply created a folder called « document » on his desktop. And he was happy with that. He finally only save pictures of his nephew and nothing else.
+
+To Marie, I explained that the « root » of all of her documents was the « desktop », the icons she was seeing on the wallpaper. And that there, she could create folders with subfolders. « It makes sense », she said.
+
+After a few weeks, Marie told me that she had done a lot of folders. Those on the right side of her desktop were work related and those on the left side were home related. She also told me that she created an « archive folder » in the bottom of the screen. When a project is finished (or not anymore used everyday), she simply take the folder with her mouse and drop it in the archive folder. And if the project becomes active again, she open the archive folder and put the project folder back on the right side of her desktop.
+
+=> ../files/old/petit_homeisdesktop.jpg Home is desktop
+A desktop like Marie’s one. Here, she was working on a blog post…
+
+=> ../files/old/homeisdesktop.jpg 
+=> ../files/old/petit_homeisdesktop.jpg Home is desktop
+
+Jean told me that now, he was not loosing files anymore.
+– You know, when I saved a picture that I received, I disappeared forever. Now, the saved picture is displayed in small on the desktop. So I can see it all the time. I like that. I just have to click on it to see it larger. If I don’t want to see it all the time, I just take it with my mouse like you told me and I push it in the orange thing called document. It’s like a drawer : when I want to see the picture, I click on it. Now, I also save some funny picture I found on the Internet. Do you want to see them ? Some are really funny. Like the one with that guy on the bicycle with stuffs on his head. Do you know it ?
+
+I showed to Jean how to change the size of a picture on his desktop by right clicking and changing the size of the icon. He was impressed but I’m not sure he will be able to do it alone. It will takes some time.
+
+=> ../files/old/flower.jpg Flower
+Seems nice, isn’t it ?
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=8009 
+
+I decided to enable this option on my own computer as well. And, since then, I’m not able to use the standard setup anymore. It is just so easy. When I use the command line, I know that what I see is what is available through a simple « cd ». Also, my home is not a mess anymore. Of course, I have a « messy » folder but is it better to have all your crap somewhere in a drawer or on the floor of your room ?
+
+Part 1 : Introduction
+Part 2 : Home is Desktop
+Part 3 : There’s no tray icon in GNOME! 
+Part 4 : Kill The Double Click
+
+=> /195-the-aristocratic-desktop-part-1 Part 1 : Introduction
+=> /219-the-aristocratic-desktop-part-3-there-s-no-tray-icon-in-gnome Part 3 : There’s no tray icon in GNOME!
+=> /kill-double-click Part 4 : Kill The Double Click
+
+You might not like them. You might fight against the idea that those option are useful. I met some really hard resistance when trying to convince hardcore computer users. But normal users were all delighted. Remember : it’s not about you, it’s not about your computer usage. It’s about having a sensible default.

@@ -1,0 +1,47 @@
+# Mais que veut dire « Crypto » ?
+=> files/old/kotagauni-srinivas-Rkx0IZesW3M-unsplash.jpg
+
+*Petite introduction à la cryptographie*
+
+Le mot “crypto” est sur toutes les lèvres. Le plus souvent pour désigner les cryptomonnaies comme Bitcoin et Ethereum. Mais que signifie réellement cette abréviation qui semble issue du titre d’un roman de Dan Brown ?
+
+La plupart du temps, on utilise “crypto” pour parler de la cryptographie qui est, tout simplement, l’art ou la science de la transmission de messages sécurisés.
+
+Ce n’est pas plus compliqué que cela : la cryptographie, c’est développer des techniques pour permettre l’échange de messages. Pour l’exemple, on aime bien parler de l’échange de messages entre Alice et Bob.
+
+Mais, comme dans toute bonne histoire, il y’a un méchant ou plutôt une méchante : Eve. Eve va tenter trois types d’attaques : envoyer de faux messages à Bob en signant du nom d’Alice, modifier un véritable message d’Alice pour tromper Bob ou prendre connaissance de messages confidentiels entre Alice et Bob.
+
+Transmettre des messages sécurisés implique donc un ou plusieurs des trois points suivants : garantir l’identité de l’auteur du message, garantir l’intégrité du message (il n’a pas été modifié) et/ou garantir le secret du message (seul le destinataire peut en connaître le contenu).
+
+À travers des méthodes mathématiques, la cryptographie tente de répondre à ces trois points, ensemble ou séparément, pour différents cas de figure.
+
+La cryptographie est donc très ancienne. On pourrait dire que l’écriture en est la toute première forme : elle permet en effet de transmettre une information relativement secrète (peu de gens savaient lire) avec une relative garantie d’intégrité (modifier un message écrit se voit généralement). Pour garantir l’identité, le sceau fait également son apparition.
+
+Depuis le code de César à la machine Enigma utilisée par les allemands durant la seconde guerre mondiale, l’histoire de la cryptographie est longue et passionnante.
+
+Mais c’est avec les ordinateurs que la cryptographie passe du statut d’art artisanal à celui de science. Il est à noter que l’ordinateur moderne a été inventé pour “casser” le code Enigma. La science qui cherche à déchiffrer les messages secrets s’appelle la cryptoanalyse et est un peu la sœur ennemie de la cryptographie. Ces deux sœurs forment la cryptologie. L’ordinateur a donc été créé pour faire de la cryptoanalyse mais a surtout permis l’essor de la cryptographie.
+
+Aujourd’hui, vous utilisez sans le savoir la cryptographie à chaque instant. C’est en effet la cryptographie qui vous permet de sécuriser un réseau wifi sans que tout ordinateur puisse espionner votre activité sur le net. C’est la cryptographie qui permet la connexion sécurisée aux sites https. C’est encore et toujours la cryptographie qui protège votre carte de banque via un code pin.
+
+Avec l’essor d’un monde ultra-connecté, les défis liés à la protection de la vie privée et les risques potentiels d’arnaques en ligne, l’importance de la cryptographie devient prépondérante.
+
+En effet, tout devient message. Et tout message doit être sécurisé.
+
+Les crypto-monnaies comme le Bitcoin tirent d’ailleurs leur nom de ce simple principe : les transactions monétaires sont devenues de simples messages. Ces messages doivent être sécurisés afin de garantir leur authenticité (c’est bien le bon portefeuille qui est débité) et leur intégrité (pas question de modifier une transaction après qu’elle aie été validée !). Certaines crypto-monnaies veulent également garantir l’anonymat des transactions.
+
+On pourrait croire qu’une fois ces problèmes résolus, la cryptographie serait une science complète, terminée, qu’il n’y aurait plus rien à inventer.
+
+C’est sans compter la multitude de challenges, de situations et de messages que nous échangeons. Comment faire un vote électronique que chacun puisse vérifier et recompter tout en garantissant le secret du vote ? Comment faire un moteur de recherche dans vos emails personnels qui sont chiffrés de telle manière que vous soyez le seul à pouvoir les lire ? Comment garantir l’identité et la confidentialité d’un chat vidéo avec une personne que vous n’avez jamais vue ? Comment…
+
+Une chose est sûre : la cryptographie n’est pas prête de tomber à court de challenges à relever et nous ne sommes qu’aux balbutiements de la phase moderne de cette science.
+
+Alors, bienvenue sur ce blog qui cherchera à vous partager une passion pour ces challenges de la cryptographie !
+
+Le Petit Cryptographe est une initiative de l’UCL Crypto Group soutenu par le FEDER dans le cadre du projet CryptoMedia/UserMedia. Photo by Kotagauni Srinivas on Unsplash
+
+=> https://uclouvain.be/crypto/ UCL Crypto Group
+=> https://usermedia.be UserMedia
+=> https://unsplash.com/photos/Rkx0IZesW3M?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Kotagauni Srinivas
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash
+
+=> https://miro.medium.com/max/600/1*VB9SVJlVmI0TiN78aRaUUA.png

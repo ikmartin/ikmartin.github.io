@@ -1,0 +1,40 @@
+# Ubuntu Live … without me
+
+On March 15th, when I received a confirmation that I was selected to make a talk at Ubuntu Live, I was really happy. I would be able to share my experience and meet a lot of members of the community. Because I thought that « Users conference » means also the community. And I started immediately preliminary work on my conference.
+
+=> http://www.ubuntulive.com/cs/ubuntu/view/e_sess/13439 Ubuntu Live
+
+=> http://www.ubuntulive.com 
+=> ../files/old/ubuntulive.png Ubuntu Live
+
+I’m not that experienced with conferences but I didn’t worry too much about the travel. I knew that some conferences pay for the whole expenses (travel, hotels, food). Some just pay for the travel, some others don’t cover the whole thing but help you with a participation. And those who don’t pay for anything clearly state it in big letters on the website. So far, each time I had to do a conference, my travel was fully covered.
+
+=> http://fosdem.org/ some conferences
+=> http://www.lugradio.org/live/2007/index.php/Call_For_Papers who don’t pay for anything
+
+After more than one month without any news, I was a bit anxious. Fortunatly my name was on the website. I began to send emails asking for more information about buying the flight ticket. No reply.
+
+Then the pricing page appeared on the website. I thought : « Wow, this is definitely not a community conference ! Nobody which is not sponsored could afford that, even with the 35% discount« . But I was also hoping « Given the sponsors and the registration fee, they will certainly cover 100% of my flight ! After all just one registration fee can cover more than my travel. »
+
+=> http://www.ubuntulive.com/pub/w/60/pricing.html pricing page
+=> http://robitaille.wordpress.com/2007/05/22/25-discount-is-now-35-for-ubuntulive/ 35% discount
+
+Since I still had no reply to my emails after nearly one months, I started sending mails to multiple addresses from multiple SMTP. Some of my emails came back with the error « Unknown user » which is typically the answer you get when you are in some kind of blacklist (blacklists and RBL is crap, it’s the typical example where the solution is even worse than the problem). Side note to Oreilly people : you might loose a lot of emails with your current configuration ! Even Gmail seems to be blacklisted.
+
+But I finally received a reply :
+For the conference presenters, we do offer you a free registration pass to the event, but we do not cover travel or hotel.
+
+So the good news is that I will not have to pay a registration fee to make my conference. Woohoo! The bad news is that I’m currently looking for a job[1] and, consequently, I cannot afford the whole travel.
+
+I’m very sad I will not be able to attend. I think that Ubuntu Live is really a good thing in our ecosystem. I was very interested in meeting and hearing other people. Because of my lack of experience, I assumed that the travel cost will not be a problem. I was wrong, I was too naive but at least, I learned it.
+
+I’m sorry that I have to cancel my talk. I’m sorry I will not be able to meet you all. I feel really sad about that but I’m sure we will meet somewhere else in a not to distant future.
+
+Enjoy the conference and send me pictures ! 😉
+
+#### Notes
+
+[1] If you are looking for an engineer in Belgium or for teleworking, don’t hesitate to ask for my resume, my mail is ploum at ubuntu.com
+
+=> https://wiki.ubuntu.com/LionelDricot an engineer
+=> /contact to ask for my resume

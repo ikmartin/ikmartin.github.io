@@ -1,0 +1,187 @@
+# Le Bitcoin va-t-il détruire la planète ?
+=> files/old/matthew-henry-134263-unsplash.jpg
+
+Article co-rédigé avec Mathieu Jamar.
+
+Vous n’avez pas pu manquer les nombreux articles qui comparent la consommation énergétique du réseau Bitcoin à celui de différents pays. Et tous d’insister sur la catastrophe écologique qu’est le Bitcoin.
+
+=> ../files/old/Cropped_Bitcoin_World-400x225.jpg 
+Bitcoin consomme plus que tous les pays en orange ! Horreur !
+
+=> /le-bitcoin-va-t-il-detruire-la-planete/cropped_bitcoin_world/ 
+
+=> http://bigthink.com/strange-maps/bitcoin-consumes-more-energy-than-159-individual-countries tous les pays en orange
+
+Si le Bitcoin consomme autant d’électricité que le Maroc, c’est une catastrophe, non ?
+
+=> https://sputniknews.com/business/201712051059716976-bitcoin-mining-energy-expenses/ que le Maroc
+
+Non.
+
+« Bitcoin pollue énormément et va détruire la planète » est au Bitcoin ce que « Les étrangers piquent notre boulot » est à l’immigration. Une croyance facile à instiller mais fausse sur tellement de niveaux que ça en devient difficile d’énumérer les différentes erreurs. Ce que je vais pourtant tenter de faire.
+
+Pour simplifier, je vais diviser les erreurs de raisonnement en quatre parties :
+1. La fausse simplification consommation équivaut à pollution
+2. On ne compare que ce qui est comparable
+3. Non, l’énergie du Bitcoin n’est pas gaspillée
+4. L’optimisation en ingénierie
+
+## Consommation électrique n’est pas pollution
+
+En tout premier lieu, consommer de l’électricité ne pollue pas. Ce qui pollue, ce sont certains moyens de production d’électricité.
+
+C’est pareil, me direz-vous. Et bien pas du tout !
+
+Vous êtes certainement convaincu que les voitures électriques, qui consomment de l’électricité, sont un atout dans la préservation de l’environnement. Or, selon les conditions, une Tesla consommerait entre entre 5000 et 10.000kWh pour 20/30.000 km par an.
+
+=> https://forums.tesla.com/forum/forums/model-s-1-year-kwh-consumption 5000 et 10.000kWh pour 20/30.000 km par an
+
+Cela veut dire que si la moitié des automobilistes d’un petit pays comme la Belgique achetait une Tesla, cette moitié consommerait à elle seule plus que toute la consommation du Bitcoin ! Et je ne parle que de la moitié d’un tout petit pays ! Vous imaginez la catastrophe si il y’avait plus de Tesla ?
+
+Mais trêve de comparaison foireuse, pourquoi est-ce que la consommation électrique n’est pas nécessairement polluante ? Et pourquoi les voitures électriques sont écologiquement intéressantes ?
+
+Premièrement parce que parfois l’électricité est là et inutilisée. C’est le cas des panneaux solaires, des barrages hydro-électriques ou des centrales nucléaires qui produisent de l’électricité, quoi qu’il arrive. On ne peut pas faire ON/OFF. Et l’électricité est pour le moment difficilement transportable.
+
+Selon une étude de Bitmex, une grande partie de l’électricité aujourd’hui utilisée dans le Bitcoin serait en fait de l’électricité provenant d’infrastructures hydro-électriques sous-utilisées car initialement dédiée à la production d’aluminium en Chine, production qui a baissé drastiquement suite à une baisse de demande pour ce matériau. Je répète : le Bitcoin a bénéficié d’une grande quantité d’électricité non-utilisée et donc très bon marché, écologiquement comme économiquement.
+
+=> https://blog.bitmex.com/mining-incentives-part-2-why-is-china-dominant-in-bitcoin-mining/ une étude de Bitmex
+
+Dans certains cas, diminuer la consommation électrique peut même être problématique. Lors de mes études, on m’a raconté que l’éclairage outrancier des autoroutes belges a été conçu pour absorber l’excédent électrique des centrales nucléaires durant la nuit. Je ne sais pas si c’est vrai mais cela était affirmé comme tel par des professeurs d’université.
+
+En deuxième lieu, si on se concentre uniquement sur la pollution de CO2 (qui est loin d’être la seule pollution mais la plus médiatique actuellement), il est tout simplement impossible de faire une équivalence: autant d’électricité produite équivaut à autant de CO2 produit. En effet, le CO2 produit dépend complètement du moyen de production utilisé. Pire, chaque atome de CO2 n’est pas équivalent ! Comme je l’expliquais, le seul CO2 problématique est celui qui provient du carbone fossile (charbon, pétrole, gaz). Le reste est du carbone est déjà présent dans le cycle naturel du carbone (le CO2 de votre respiration ou celui produit par une centrale à cogénération par exemple).
+
+=> /pourquoi-le-rechauffement-climatique-est-indiscutable/ le seul CO2 problématique est celui qui provient du carbone fossile
+
+Alors je sais qu’on nous lave le cerveau depuis des années avec “consommer de l’électricité, c’est mal, il faut éteindre les lumières” mais c’est un raccourci très très très raccourci qui peut parfois être faux. Dans son livre “Sapiens”, Harari affirme que tenter de consommer moins d’électricité n’a aucun sens. Ce qu’il faut améliorer, ce sont les moyens de production. Il ajoute que quelques kilomètres carrés de panneaux solaires dans le Sahara suffirait à alimenter toute la planète. Cette solution n’est malheureusement pas réalisable en l’état car l’électricité reste difficile à déplacer sur de grandes distances mais cela illustre bien que le challenge est dans l’amélioration de la production et du transport, pas dans une hypothétique réduction de la consommation.
+
+=> http://www.albin-michel.fr/ouvrages/sapiens-9782226257017 Sapiens
+
+Bref, pour résumer, il est tout simplement faux de dire que consommer de l’électricité pollue. Cela peut être parfois (ou souvent) le cas mais c’est très loin d’être une vérité générale.
+
+Et oui, c’est très difficile à admettre quand ça fait 10 ans qu’on met des ampoules écolos et qu’on mesure chaque kilowattheure de sa maison pour se sentir l’âme d’un sauveur de planète. Mais ces actions n’ont qu’un impact infime par rapport à d’autres actions individuelles (par exemple réduire l’utilisation d’une voiture à essence).
+
+=> https://jancovici.com/transition-energetique/l-energie-et-nous/les-economies-denergie-cest-juste-des-ampoules-basse-consommation/ un impact infime
+
+## Comparons ce qui est comparable
+
+Les comparaisons que j’ai vue sont toutes plus absurdes que les autres. Bitcoin consommerait autant que le Maroc. La consommation du Bitcoin aurait annulé les bénéfices de l’obligation des ampoules économiques en Europe. Voire “Bitcoin consommerait plus que 159 pays” (en oubliant de préciser qu’il s’agit d’un classement, pas de la somme de ces pays).
+
+Dit comme ça, ça paraît catastrophique.
+
+Mais vous savez combien consomme le Maroc, vous ? Vous savez que le Maroc a 33 millions d’habitants et qu’on estime entre 13 et 30 millions le nombre d’utilisateurs de Bitcoin ? Bref que l’ordre de grandeur est tout à fait comparable !
+
+=> https://www.bitcoinmarketjournal.com/how-many-people-use-bitcoin/ entre 13 et 30 millions
+
+Quand aux ampoules, cela ne veut-il pas dire tout simplement que cette mesure d’obligation des ampoules économiques est tout simplement une mesurette qui n’a pas servi à grand chose en termes d’économie ? Je ne dis pas que c’est une éventualité tout à fait plausible.
+
+Bref, il faut comparer ce qui est comparable.
+
+Aujourd’hui, Bitcoin est avant tout un système d’échange de valeur. Il se compare donc aux monnaies, au banque et à l’or.
+
+Surprise, le Bitcoin consomme à peine plus que la production des pièces de monnaies et des billets de banque ! Or, rappelons que les pièces et billets ne représentent que 8% de la masse monétaire totale et plus spécifiquement 6,2% pour la zone euro.
+
+=> https://www.quora.com/What-percentage-of-the-worlds-money-is-printed-in-cash-bills-coins ne représentent que 8% de la masse monétaire totale
+=> https://www.ecb.europa.eu/press/key/date/2018/html/ecb.sp180208.en.html 6,2% pour la zone euro
+
+Il consomme également près de 8 fois moins que l’extraction de l’or ou 50 fois moins que la production de l’aluminium. Or, outre la consommation énergétique, l’extraction de l’or est extrêmement contaminante (notamment en termes de métaux lourds comme le mercure).
+
+=> ../files/old/Screen-Shot-2018-03-04-at-10.58.56-600x243.png 
+Source : @beetcoin
+
+=> /le-bitcoin-va-t-il-detruire-la-planete/screen-shot-2018-03-04-at-10-58-56/ 
+
+=> https://twitter.com/Beetcoin @beetcoin
+
+La pollution liée à l’or semble d’autant plus inutile quand on sait que 17% de tout l’or extrait dans l’histoire de l’humanité est entreposé dans les coffres des états et ne bougent pas. Comme le disait Warren Buffet, l’or est extrait d’un trou en Afrique pour être mis dans un trou gardé jour et nuit dans un autre pays. Si on ajoute à cela l’or acheté par des particuliers (pour garder dans un coffre ou planquer sous un matelas) ou utilisé dans la joaillerie (dont l’utilité est donc uniquement esthétique), il ne reste que 10% de la production annuelle d’or qui est utilisé dans l’industrie !
+
+=> https://en.wikipedia.org/wiki/Gold_as_an_investment#cite_note-32 10% de la production annuelle d’or qui est utilisé dans l’industrie
+
+Si Bitcoin remplaçait l’or stocké dans des coffres, même partiellement, ce serait donc une merveille d’écologie, comparable au remplacement de toutes les voitures à essence du monde par des voitures électriques.
+
+Et s’il fallait comparer Bitcoin au système bancaire, avec ses milliers d’immeubles refroidis à l’air conditionnés, ses millions d’employés qui viennent bosser en voiture (ou en jets privés), je pense que le Bitcoin ne paraîtrait plus écologique mais tout simplement miraculeux.
+
+Sans compter que nous n’en somme qu’au début ! Bitcoin a le potentiel pour devenir une véritable plateforme décentralisée qui pourrait remplacer complètement le web tel que nous le connaissons et modifier notre interactions sociales et politiques : votes, communications, échanges sans possibilité de contrôle d’une autorité centralisée.
+
+Vous êtes-vous déjà demandé quelle est la consommation énergétique d’un Youtube qui sert essentiellement à vous afficher des pubs entre deux vidéos rigolotes (et donc de vous faire consommer et polluer plus) ? Et bien la consommation des data-centers de Google en 2015 était supérieure à la consommation du Bitcoin en 2017 ! Cela n’inclut pas les consommations des routeurs intermédiaires, de vos ordinateurs/téléphones/tablettes ni de tous les bureaux de Google autres que les data centers !
+
+=> https://www.nouvelobs.com/les-internets/20150930.OBS6808/les-videos-de-chat-polluent-plus-que-les-avions.html la consommation énergétique d’un Youtube
+=> https://blog.bitcoin.org.hk/bitcoin-mining-and-energy-consumption-4526d4b56186 des data-centers de Google en 2015
+
+Face à ces nombres, quelle est selon vous la consommation acceptable pour une plateforme décentralisée mondiale capable de remplacer l’extraction hyper polluante de l’or, les banques, l’Internet centralisés voire même les états ? Ou, tout simplement, de protéger certaines de nos libertés fondamentales ? Avant de critiquer la consommation de Bitcoin, il est donc nécessaire de quantifier à combien nous estimons une consommation « normale » pour un tel système.
+
+=> https://www.ecb.europa.eu/press/key/date/2018/html/ecb.sp180214.en.html certaines de nos libertés fondamentales
+
+## Un gaspillage d’énergie ?
+
+Une autre incompréhension, plus subtile celle-là, est que l’énergie du Bitcoin est gaspillée. Il est vrai que les mineurs cherchent tous à résoudre un problème mathématique compliqué et consomment tous de l’électricité mais que seul le premier à trouver la solution gagne et il faut à chaque fois tout reprendre à zéro.
+
+Vu comme ça, cela parait du gaspillage.
+
+Mais la compétition entre mineurs est un élément essentiel qui garantit la décentralisation du Bitcoin. Si les mineurs se mettaient d’accord pour coopérer, ils auraient le contrôle sur le réseau qui ne serait plus décentralisé.
+
+Ce “gaspillage”, appelé “Proof of Work”, est donc un élément fondamental. Chaque watt utilisé l’est afin de garantir la décentralisation du système Bitcoin.
+
+Ce serait comme dire que les policiers doivent rester enfermés dans leur commissariat et n’en sortir qu’après un appel. Les rondes en voiture sont en effet polluantes et essentiellement inutiles (seules un pourcentage infime des rondes en voitures aboutit à une intervention policière). Pourtant, nous acceptons que les rondes de police « inutiles » sont un élément essentiel de la sécurité d’une ville ou d’un quartier (moyennant que vous ayez confiance envers les forces de police).
+
+Pour Bitcoin, c’est pareil : les calculs inutiles garantissent la sécurité et la décentralisation. Des alternatives au Proof of Work sont étudiées mais aucune n’a encore été démontrée comme fonctionnelle. Il n’est même pas encore certain que ces alternatives soient possibles !
+
+=> http://blog.deloitte.com.au/bitcoin-wasteful/ que ces alternatives soient possibles
+
+## L’optimisation, une étape nécessairement tardive
+
+Une des règles majeurs d’ingénierie c’est qu’avant d’optimiser quoi que ce soit dans un projet, il faut garantir que le projet est correct.
+
+On n’essaie pas de rendre plus rapide un programme informatique qui renvoie des valeurs erronnées. On ne rend pas plus aérodynamique un avion qui ne vole pas. On n’essaie pas de limiter la consommation d’un moteur qui ne démarre pas.
+
+Lors de la phase expérimentale, la consommation de ressources est maximale.
+
+Elon Musk a utilisé toute une fusée juste pour envoyer une voiture dans l’espace. Non pas par gaspillage mais parce que concevoir une fusée nécessite des tests “à vide”.
+
+Bitcoin est encore dans cette phase expérimentale. Le système est tellement complexe et se doit de garantir une telle sécurité qu’il doit d’abord prouver qu’il fonctionne avant qu’on envisage d’optimiser sa consommation en électricité. Comme le disait Antonopoulos, dire “En 2020, le Bitcoin consommera plus que tout la consommation actuelle mondiale” revient à dire à une femme enceinte “Madame, à ce rythme, dans 5 ans, votre ventre aura la taille de la pièce”.
+
+=> http://www.afr.com/technology/bitcoin-and-the-power-of-decentralisation-20171211-h02i0z votre ventre aura la taille de la pièce
+
+Donc oui, comme tout système humain, le Bitcoin pourrait sans doute polluer moins. Et je suis certains que, dans les prochaines années, des propositions en ce sens vont voir le jour. C’est d’ailleurs déjà le cas si on considère la consommation liée au nombre de transactions car l’amélioration “Lightning Network” va permettre de réaliser des milliers de transactions Bitcoin pour un coût quasi nul, y compris en termes de consommation électrique. Mais les comparaisons coût par transaction sont de toutes façons pour la plupart malhonnêtes car elles ne prennent généralement pas en compte toute l’infrastructure bancaire sur laquelle s’appuient les solutions comme VISA ou MasterCard.
+
+Une autre règle de l’optimisation est qu’avant toute optimisation, il faut mesurer pour tenter d’optimiser les points les plus critiques. En effet, rien ne sert de diminuer de même 90% la consommation électrique des ampoules si les ampoules ne représentent que 0,01% de la consommation globale mais que l’air conditionné, par exemple, représente 30% de la consommation globale. J’invente les chiffres mais ça vous donne une idée. C’est un principe bien connu des développeurs informatiques qui, après des jours à diviser par deux le temps d’une fonction, se rendent compte que cette fonction ne prend qu’un millième du temps total d’exécution. Il s’ensuit qu’avant de chercher à optimiser Bitcoin à tout prix, il est nécessaire de voir quelle sera sa consommation lors des utilisations futures et mesurer si c’est bien lui qui consomme le plus. Cela pourrait être nos smartphones. Ou ces écrans publicitaires lumineux qui nous aveuglent la nuit.
+
+## Pourquoi un tel acharnement ?
+
+J’espère qu’à ce point de la lecture, vous avez compris le nombre d’erreurs de logique nécessaires pour arriver à la conclusion “Bitcoin est un monstre de pollution qui va détruire le monde et les bébés phoques”.
+
+Mais du coup, pourquoi un tel acharnement ?
+
+Pour deux raisons.
+
+Premièrement, c’est du sensationnalisme et ça se vend. Dire “Le Bitcoin consomme autant que le Maroc” ne veut rien dire rationnellement mais ça fait réagir, ça pousse les gens à s’indigner, à partager l’article et à faire vivre les publicitaires qui financent les médias. Avez-vous une idée de la consommation électrique qu’engendre la publicité sur le net ?
+
+Le deuxième point c’est que les médias sont financés par les publicitaires et par les états. Tout ce petit monde pressent bien que le Bitcoin peut bouleverser les choses. Nulle théorie du complot nécessaire ici, mais il va sans dire qu’un sujet qui décrédibilise une technologie dangereuse pour la souveraineté des états et qui verse dans le sensationnalisme est du pain béni. La peur et l’ignorance sont devenus les deux moteurs de la presse qui n’est plus qu’une machine à manipuler nos émotions.
+
+=> /echappez-a-la-manipulation-de-vos-emotions/ une machine à manipuler nos émotions
+
+Vous lirez rarement des articles dont le titre est “Le Bitcoin a consommé moins en 2017 que les datacenters Google en 2015” ou “Si la moitié du parc automobile belge était des Tesla, elles consommeraient plus que le réseau Bitcoin”. Ces titres ne sont pourtant pas moins faux que ceux que vous lisez habituellement. Mais écrire un article comme celui que vous êtes en train de lire en ce moment demande à la fois de la compétence et du temps. Le temps est un luxe que les journalistes, acculés par la rentabilité publicitaire, ne peuvent plus se permettre. Si nous devions facturer notre travail, aucun média financé par la publicité ne pourrait nous rétribuer le temps passé à un tarif raisonnable.
+
+## Moralité
+
+De manière étonnante, les personnes les plus convaincues que le Bitcoin est une catastrophe écologique sont celles qui ne connaissent absolument rien au domaine.
+
+Dans la littérature académique, on peut même lire que, potentiellement, le Bitcoin pourrait devenir la manière la plus efficace de transformer de l’électricité en argent, empêchant les états de subsidier l’électricité afin de maintenir un prix artificiellement bas et d’attirer les grosses usines. À terme, le Bitcoin pourrait donc forcer une optimisation du réseau électrique mondial et favoriser le développement des productions d’électricité plus locales, moins centralisées (voir par exemple “Bitcoin and Cryptocurrency Technologies”, p. 122-123, par Narayanan, Bonneau, Felten, Miller et Goldfeder).
+
+Il n’est pas impossible que le Bitcoin signe la fin des centrales à charbon et des méga centrales nucléaires. Mais ce genre de possibilité n’est tout simplement jamais évoquée dans les feuilles de chou sponsorisée par l’état et les vendeurs de voitures.
+
+Ce simple exemple devrait vous alerter sur la facilité avec laquelle nous sommes manipulés, avec laquelle on nous fait avaler n’importe quoi, surtout sur des domaines que nous ne connaissons pas.
+
+Et si vous avez investi dans un « concurrent à Bitcoin qui est écologique et qui va dépasser Bitcoin », et bien, aussi dur à admettre que cela puisse être, vous vous êtes probablement fait avoir (ce qui ne vous empêchera peut-être pas de faire des bénéfices sur le dos d’autres investisseurs arrivés après vous).
+
+Alors, oui, le Bitcoin consomme de l’électricité. Mais c’est normal, c’est un système très complexe qui offre énormément de choses. Il consomme cependant moins d’électricité que bien d’autres systèmes que nous acceptons et qui sont certainement moins utiles ou qui n’ont pas été sélectionnés comme tête de turc par les médias. Vous avez souvent lu des articles sur la consommation électrique de l’industrie de l’or, de l’aluminium ou de l’industrie du surgelé ? Et si, en fait, pour ce qu’il propose le Bitcoin était extrêmement écologique ?
+
+=> https://www.youtube.com/watch?v=uZxxaeAONEk le Bitcoin était extrêmement écologique
+
+Ce n’est pas une raison pour ne pas encourager les améliorations visant à ce que Bitcoin consomme moins. Mais peut-être qu’on peut arrêter de ne se tourner que sur cet aspect et se concentrer sur des questions certainement plus intéressantes. Par exemple : qu’est-ce que le Bitcoin (ou ses successeurs) va changer dans nos vies et nos sociétés ?
+
+UPDATE 10 avril 2018 : suppression d’un paragraphe qui disait de manière erronée qu’un moteur à essence est plus efficace qu’un moteur électrique. C’est bien entendu faux.
+
+Photo by Matthew Henry on Unsplash
+
+=> https://unsplash.com/photos/yETqkLnhsUI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Matthew Henry
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

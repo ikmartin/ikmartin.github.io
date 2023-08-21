@@ -1,0 +1,79 @@
+# Le gilet de sauvetage et le TGV
+
+=> ../files/old/mandarine.jpg Mandarine,quel rapport avec l'article ?
+Parmi les longues traditions de la sécurité informatique, on trouve la tristement célèbre obligation de changer son mot de passe toutes les 4 ou 6 semaines.
+
+Cependant, comme beaucoup de traditions, lorsqu’on les applique sans en saisir réellement le sens, on finit par les rendre inutiles voire nocives !
+
+A ce sujet, Bruce Schneier, « Monsieur sécurité informatique », recommande l’excellent article du docteur Gene Spafford, professeur à l’université de Purdue, Indiana.
+
+=> http://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier
+=> http://www.schneier.com/blog/archives/2006/04/security_myths.html recommande
+=> http://www.cerias.purdue.edu/weblogs/spaf/general/post-30/ l’excellent article
+=> http://spaf.cerias.purdue.edu/ Gene Spafford
+
+Changer de mot de passe régulièrement est extrêmement envahissant, ennuyeux et perturbant. Si votre accès à Internet dépend de ce mot de passe, cela peut même relever du parcours du combattant sous des systèmes comme MS Windows où chaque application possède sa propre configuration et nécessite elle aussi de changer le mot de passe bien caché dans les préférences (ennui qui est nettement moindre pour les heureux utilisateurs de systèmes mieux conçus où toutes les applications coopèrent autant que possible). Il en résulte donc du stress, de la perte de temps et de productivité, parfois des appels au helpdesk simplement car l’utilisateur a oublié de changer son mot de passe.
+
+=> http://ubuntu-fr.org/ mieux conçus
+
+=> ../files/old/dilbert.png 
+=> ../files/old/petit_dilbert.png Dilbert password
+
+Il ne faut pas non plus sous estimer l’impact psychologique qui amène les utilisateurs à craindre le tant redouté « jour du changement de mot de passe », à développer une aversion grandissante pour l’outil informatique et tout ce qui tourne autour. Beaucoup pensent qu’un utilisateur sans problème implique un utilisateur heureux. Au contraire, je défend qu’un utilisateur sans problème doit être tout d’abord un utilisateur heureux. Le changement imposé de mot de passe est perçu comme une mesure inique qui va à cet encontre.
+
+On pensera donc que cette mesure rébarbative, pour être si répandue, doit être amplement justifiée et indispensable. Cela reste à voir…
+
+### Le changement de mot de passe est utile…
+
+=> ../files/old/lifejacket.jpg Gilet de sauvetage
+Prenons le cas du mot de passe de Alice intercepté par Eve, notre attaquant. La manière dont ce mot de passe est intercepté importe peu dans notre exemple mais c’est pourtant la première question que devrait se poser une équipe chargée de la sécurité.
+
+En cas de mot de passe corrompu, la première chose à faire est bien entendu de changer le mot de passe immédiatement (et de couper l’accès au compte en question). Un changement forcé toutes les 4 semaines serait effectif bien trop tardivement. Pire, Eve pourrait elle-même changer le mot de passe et continuer à garder l’accès.
+
+La mesure du changement n’est donc effective que pour un compte qui a été secrètement corrompu. Il va sans dire qu’il faut également que Eve ne puisse pas reproduire son attaque pour obtenir le mot de passe sinon il lui suffit de recommencer tous les mois.
+
+D’autre part, un rapide sondage montre que la toute grande majorité des utilisateurs, face au changement forcé de mot de passe, se contentent d’incrémenter un chiffre ou une lettre d’une même racine. Il est très vraisemblable qu’en craquant une fois le mot de passe d’Alice, Eve puisse deviner très rapidement les mots de passe suivants. De toutes façons, Eve ayant accès au compte d’Alice, rien ne lui empêche d’installer une backdoor pour récupérer ponctuellement le mot de passe. C’est même la solution la plus simple.
+
+En conclusion, le changement obligatoire de mot de passe sera utile si et seulement si les conditions suivantes sont respectées :
+
+* Eve a obtenu le mot de passe d’Alice par chance ou par une attaque non-répétable
+* Le piratage d’Eve n’a pas été détecté
+* Alice utilise tous les mois un mot de passe fondamentalement différent et difficile à cracker
+* Par un coup de chance du destin, le changement de mot de passe de Alice a eu lieu juste après le piratage, ne laissant pas à Eve le temps d’installer une backdoor ou de craquer d’autres comptes utilisateurs.
+* Eve souhaite continuer à garder l’accès sur une longue période (après tout, beaucoup de piratages sont ponctuels pour accéder à une donnée précise)
+
+Si toutes ces conditions ne sont pas scrupuleusement remplies, le changement régulier de mot de passe n’aura aucun effet bénéfique sur la sécurité du système. Vous pourriez arguez que c’est malgré tout toujours cela de pris.
+
+### …pour les pirates informatiques
+
+=> ../files/old/tgv.jpg TGV
+Le problème c’est que le changement forcé a beaucoup d’effets pervers dont le syndrome du post-it n’est pas le moindre. En effet, ayant déjà des difficultés à jongler avec les dizaines de comptes que la vie actuelle requiert, la plupart d’entre nous ne sera tout simplement pas capable d’apprendre un nouveau mot de passe non trivial tous les mois. Le post-it collé à l’écran sera alors la solution de choix.
+
+Pour d’autres, le mot de passe se simplifiera à outrance. D’un « az@Et(çP;% » le premier mois, on retombera facilement à un « azet_01 » qu’on incrémentera. D’une manière beaucoup plus globale, à chaque changement de mot de passe, la sécurité globale du système diminuera.
+
+Certains administrateurs s’en défendront, arguant que le post-it ou la sécurité du mot de passe sont de la responsabilité de l’utilisateur, pas des gestionnaires. N’oublions pas que le rôle des gestionnaires est de construire la sécurité la plus globale. L’éducation des utilisateurs et l’adaptation à leurs besoins (tout le monde n’est pas informaticien) fait partie de cette globalité. A-t-on déjà vu un garde se défendre, après un vol : « Oh mais moi, je suis payé pour garder la porte. Ils sont rentrés par la fenêtre, ce n’est pas mon problème » ?
+
+Pire : la pratique du changement de mot de passe imposé donnera aux administrateurs une illusoire impression de sécurité. Or, toute personne confrontée à la sécurité informatique vous le dira : rien n’est plus dangereux qu’une illusion.
+
+En imposant une politique de changement de mot de passe régulière, non seulement nous augmentons la frustration des utilisateurs, nous favorisons l’apparition de nouveaux problèmes mais, surtout, nous affaiblissons la sécurité globale du système informatique.
+
+### En conclusion
+
+Mais dans ce cas, pourquoi le changement de mot de passe est-il si répandu ?
+
+Gene Spafford fait remonter cette tradition aux premiers super-ordinateurs de l’armée américaine des années 70. A l’époque, étant donné la puissance de calcul limitée, on avait estimé que tenter une attaque « brute force » (en essayant toutes les combinaisons possibles) prendrait plusieurs mois. Il parut donc logique de forcer un changement tous les mois. La facilité de cocher la case Force password change every..  de Windows Active Directory a fait le reste…
+
+Personnellement, j’y vois même une survivance des premiers systèmes de l’armée (pas nécessairement informatiques) où les comptes utilisateurs n’existaient pas. Les personnes autorisées recevaient un « mot de passe » (tout le monde le même) toutes les semaines voire tous les jours afin d’être sûr qu’un ancien employé n’ait pas accès aux missiles. D’ailleurs, ça fonctionne encore comme ça dans la majorité des films de science-fiction.
+
+
+C’est bien la preuve que changer le mot de passe n’est en soi pas un mal. Il faut juste savoir adapter sa politique à l’environnement dans lequel on est. On ne saurait nier l’utilité d’un gilet de sauvetage. Des tas de règles imposent sa présence pour chaque passager même si c’est encombrant. Cela a d’ailleurs sauvé des tas de vies. Pourtant, je dois avouer que je mets rarement un gilet de sauvetage quand je prends le TGV. En toute honnêteté, je crois d’ailleurs que cela serait assez mal perçu d’imposer le port du gilet de sauvetage à chaque voyageur dans le TGV (même si ça pourrait être amusant).
+
+Dans l’environnement actuel, il est avant tout primordial d’éduquer les utilisateurs à choisir des mots de passe convenables. A cet effet, une bonne pratique consiste à lancer régulièrement un programme « craqueur » (comme John The Ripper) et envoyer automatiquement un mail aux utilisateurs dont le mot de passe était trop facile.
+
+=> http://fr.wikipedia.org/wiki/John_the_ripper John The Ripper
+
+Il est également important de surveiller toute activité suspecte d’un utilisateur et de s’expliquer immédiatement avec lui. Si un compte semble corrompu, il est indispensable de le bloquer immédiatement avant des investigations futures.
+
+Si changer le mot de passe est souvent utile dans certains cas particuliers, son changement systématique n’est, nous l’avons vu, qu’une survivance non justifiée d’un passé révolu. Comme le conclut le professeur Spafford : « J’utilise certains mots de passe depuis plusieurs années sans le moindre incident. Je ne vous en dirai pas plus. ».
+
+Mais professeur, enfilez-vous un gilet de sauvetage lorsque vous empruntez le tunnel sous la manche ?

@@ -1,0 +1,67 @@
+# Le web, ce pulp ultime
+=> files/old/pulps.jpg
+
+Où l’on compare le parcours des auteurs du siècle passé avec les opportunités et les outils de la future décennie. Et où l’on intronise pompeusement le « lectauteur ».
+
+Glorieux passé
+
+J’ai grandi dans les remugles poussiéreux des vieux recueil de science-fiction. Ma bibliothèque est chargée des collections presque complètes des magazines Galaxie et Fiction. En les feuilletant, je me prenais à rêver être né plus tôt, lors de cette époque bénie.
+
+Comme Asimov, Van Vogt ou d’autres, dont le nom a été oublié, j’aurais soumis mes nouvelles à toutes les revues possibles et imaginables. J’aurais essuyé des refus. J’aurais reçu des conseils. À force de persévérance, j’aurais bien fini par être publié. Le public seul aurait ensuite jugé si mon nom méritait de passer à la postérité comme écrivain ou si, et il sont nombreux dans ce cas, je serais tombé dans l’oubli comme rédacteur de quelques nouvelles sans grand intérêt.
+
+La disparition de ces revues me donnait le goût amer de voir l’accès au métier d’écrivain désormais barricadé par quelques comités de lecture aux goûts forcément arbitraires. Je regrettais cet âge d’or où il ne m’aurait coûté que quelques timbres pour soumettre et resoumettre mes nouvelles. Glorieux passé !
+
+Étonnant présent
+
+Hier, fêtant le succès de la moitié de mon NaNoWriMo, je mettais sans trop y penser une nouvelle dans ma liste de lecture Pocket. Une nouvelle que Saint-Epondyle avait publié sur son blog pour inaugurer son challenge des Écrinautes. Nouvelle que je décidai de lire sur ma liseuse Kobo suite à la mise à jour. Ce fut un véritable déclic !
+
+=> /plongeon-dans-lecume-du-temps/ mon NaNoWriMo
+=> http://saint-epondyle.net/blog/2013/11/08/retour-a-saint-regent/ publié sur son blog
+=> http://bouquinautes.wordpress.com/2013/11/02/les-ecrinautes-challenge-decriture-mensuel/ challenge des Écrinautes
+=> /lire-rapidement-sur-le-web/ ma liseuse Kobo suite à la mise à jour
+
+Cette nouvelle, je venais de la lire avec un confort de lecture similaire à tous les romans que j’ai lu ces derniers mois. Je venais de lire un véritable livre, pas une page web ! Saint-Epondyle s’était immiscé, excusez du peu, entre Proust, Pratchett et Jean Ray !
+
+Je réfléchis un instant et réalisai que je publiais moi-même des nouvelles. Qu’elles me rapportaient même un peu d’argent ! Que j’avais, avec un certain succès, réussi à faire passer des émotions littéraires via le web. Que j’avais commencé ce qui avait toutes les caractéristiques d’un roman feuilleton des plus classiques.
+
+=> /tag/epub publiais moi-même des nouvelles
+=> /ce-blog-est-payant/ un peu d’argent
+=> /cest-la-vie/ des émotions littéraires via le web
+=> /series/printeurs/ un roman feuilleton des plus classiques
+
+Sans nous en rendre compte, nous sommes en train de façonner le web pour en faire un énorme pulp, un magazine littéraire à l’échelle mondiale où nous sommes tous à la fois auteurs, lecteurs et éditeurs. Comme les pulps en leurs temps, le web n’est pas considéré comme « de la vraie littérature », il est déprécié, évité voire rejeté par les « vrais ». Peu importe car, comme le dit Thierry Crouzet, il change l’écriture. Le futur jugera !
+
+=> http://blog.tcrouzet.com/2013/11/12/ce-que-le-net-a-change-lecriture/ il change l’écriture
+
+Enthousiasmant futur
+
+À l’époque des pulps, les auteurs étaient payés au mot. Asimov est célèbre pour avoir commencé à écrire dans le but de financer ses études. Mais être payé au mot n’a plus aucun sens sur le web. Être payé à la nouvelle ? Au chapitre ? Au livre ? Finalement, c’est à peine moins absurde qu’être payé au mot. Et si les auteurs étaient tout simplement payés au plaisir ? À la satisfaction qu’ils apportent aux lecteurs ? S’ils laissaient le choix du prix aux lecteurs ?
+
+=> /la-liberte-de-soutenir/ le choix du prix aux lecteurs
+
+Tout ceux qui n’ont jamais essayé de faire confiance aux lecteurs vous diront que c’est utopique, que cela ne peut pas fonctionner.
+
+Pourtant, placé sous le signe du NaNoWriMo, ce mois de novembre semble démontrer exactement le contraire et confirmer le témoignage d’un Cory Doctorow pour qui la gratuité et le partage sont non seulement indispensables mais aussi générateurs de ventes. En effet, les candidats se sont bousculés pour accueillir et nourrir Pouhiou durant son périple d’écriture. Moi-même, j’ai eu l’insigne honneur d’être soutenu dans mon NaNoWriMo au delà de toutes mes espérances. Je me surprends à relire ce message d’un contributeur m’offrant, par son don, de me libérer du travail pendant quelques heures afin que je puisse me consacrer à l’écriture.
+
+=> http://wiki.creativecommons.org/Case_Studies/Cory_Doctorow le témoignage d’un Cory Doctorow
+=> http://www.framablog.org/index.php/post/2013/10/29-pouhiou-vient-ecrire-chez-vous Pouhiou durant son périple d’écriture
+=> /9-ans-de-blog-le-defi-nanowrimo/ soutenu dans mon NaNoWriMo
+
+De manière particulièrement intéressante, l’auteur Neil Jomunsi profite également de ce mois de novembre pour se remettre en question. Et si le piratage était une bonne chose ? Et si, aussi incroyable que cela puisse paraître, Flattr rapportait plus que les ventes Amazon ?
+
+=> http://actualitte.com/blog/projetbradbury/dans-piratage-il-y-a-partage/ le piratage était une bonne chose
+=> http://actualitte.com/blog/projetbradbury/comment-les-auteurs-payent-leurs-factures-ou-comment-ne-pas-perdre-sa-vie-a-la-gagner/ Flattr rapportait plus que les ventes Amazon
+
+Et si le futur du livre n’était qu’une simple page web ? Une liseuse toute simple reliée à un service libre comme Poche avec possibilité de faire des dons automatiquement à la fin de votre lecture ? Une liberté totale de partage et de soutien ! (Ne serait-ce pas enthousiasmant de crowdfunder une telle liseuse et de convaincre vos auteurs favoris ?)
+
+=> http://inthepoche.com/ Poche
+=> /le-dilemme-de-lediteur/ une telle liseuse
+=> /a-mes-ecrivains-favoris/ convaincre vos auteurs favoris
+
+Mais après ? Quelles œuvres passeront à la postérité ? Quels sont les auteurs dont la biographie enrichira Wikipédia ?
+
+C’est à vous et vous seuls d’en décider. Ce ne sont ni les éditeurs ni les pseudo jurys de prix littéraires qui écrivent le futur de la littérature mais vous, nous, les lectauteurs. Car, après tout, est-ce encore utile de différencier auteurs et lecteurs dans ce gigantesque pulp qu’est internet ?
+
+Photo par Felix Nine.
+
+=> http://www.flickr.com/photos/33026794@N04/5111835576 Felix Nine

@@ -1,0 +1,77 @@
+# Rapport Flattr 2012
+
+Chère Flatteuse, cher Flatteur,
+
+Si vous lisez ce message, c’est que vous m’avez au moins une fois soutenu sur Flattr. Merci beaucoup. En échange, je vous propose une petite analyse de mes revenus Flattr que vous n’êtes pas obligé de lire.
+
+Pour cette analyse, j’ai développé un petit outil en ligne de commande : FlattrStat.
+
+=> /flattrstat FlattrStat
+
+Je suis Flattré sur 4 grands axes : mon blog, le logiciel GTG que je développe, Fritalk.com que j’abandonne et divers, qui comprends les petits Flattrs sur Twitter, dans les commentaires d’autres blogs, etc.
+
+=> /228-getting-thing-gnome-gere-vos-taches-au-plus-profond-des-fibres GTG
+=> http://fritalk.com Fritalk.com
+=> /adieu-fritalk j’abandonne
+
+J’ai commencé à utiliser Flattr fin 2010 et voici l’évolution, pour chaque poste, de mes revenus :
+
+Ploum.net : 40 clics et 27,89€ en 2010 – 166 clics et 86,90€ en 2011 – 280 clics et 182,05€ en 2012.
+
+GTG: 44 clics et 32,35€ en 2010 – 81 clics et 57,38€ en 2011 – 67 clics et 48,81€ en 2012.
+
+Fritalk : 6 clics et 3,95 euros en 2010 – 7 clics et 4,71€ en 2011 – 20 clics et 3,42€ en 2012.
+
+Divers : 4 clics et 0,49€ en 2010 – 22 clics et 6,45€ en 2011 – 15 clics et 5,24€ en 2012.
+
+Comme vous pouvez le constater, mon blog se porte plutôt bien sur Flattr là où le reste est relativement constant.
+
+2012 aura surtout été pour moi l’occasion d’un énorme buzz, en faisant la première page sur HackerNews avec Why I’m a Pirate (41 clicks et 21,35€) et sa traduction Pourquoi je suis un pirate ( 20 clics et 13,35€). Sans surprise, ces deux billets deviennent les billets les plus rentables de 2012 mais aussi de l’histoire de mon blog. Remarquons que mon blog lui-même reste plus rentable avec, en 2012, 32 clics mais 26,70€.
+
+=> /im-a-pirate Why I’m a Pirate
+=> /je-suis-un-pirate Pourquoi je suis un pirate
+=> https://flattr.com/thing/76498/Where-is-Ploum mon blog lui-même
+
+La médaille de bronze de 2012 est le surprenant A Google’s World qui, avec seulement 5 clics, rapporte 10,98€ dès son premier mois ! Sa version française, Le monde selon Google, rapporte lui 3€ pour 3 clics. J’ai donc bien fait de le traduire en anglais.
+
+=> /a-googles-world A Google’s World
+=> /le-monde-selon-google Le monde selon Google
+
+La suite du classement de rentabilité avec FlattrStat (15 clics – 9,11€), The Quest for the Best GNOME 3 distribution (5 clics – 6,33€) et l’étonnant In the year 292,277,026,596 (5 clics – 5,50€). Je suis très heureux de voir un texte de fiction dans ce classement. Malgré son grand âge, ma méthode d’apprentissage du Bépo attire encore 4 clics et 5,21€. J’aime bien quand de vieux billets sont déterrés par les Flatteurs !
+
+=> /flattrstat FlattrStat
+=> /best-gnome3-distribution The Quest for the Best GNOME 3 distribution
+=> /in-the-year-292277026596 In the year 292,277,026,596
+=> /216-le-bepo-sur-le-bout-des-doigts ma méthode d’apprentissage du Bépo
+
+En top 10 global, depuis 2010, après Why I’m a Pirate et Pourquoi je suis un pirate, on trouve donc Le Bépo sur le bout des doigts (10 clics – 12,33€), Tout peut être compris (5 clics, 11,74€), A Google’s world, FlattrStat, Facebook, la pause clope 2.0 (12 clics – 7,26€), La blague européenne officielle (10 clics, 6,57€), Ploum.net en J2EE (11 clics – 6,42€) et The Quest for the Best GNOME 3 distribution.
+
+=> /im-a-pirate Why I’m a Pirate
+=> /je-suis-un-pirate Pourquoi je suis un pirate
+=> /216-le-bepo-sur-le-bout-des-doigts Le Bépo sur le bout des doigts
+=> /tout-peut-etre-compris Tout peut être compris
+=> /a-googles-world A Google’s world
+=> /flattrstat FlattrStat
+=> /facebook-la-pause-clope-2 Facebook, la pause clope 2.0
+=> /la-blague-europeenne La blague européenne officielle
+=> /ploum-en-j2ee Ploum.net en J2EE
+=> /best-gnome3-distribution The Quest for the Best GNOME 3 distribution
+
+On remarque que la fiction semble très peu rentable (et ne fait d’ailleurs jamais beaucoup de vagues). Peut-être que le blog n’est pas un support approprié, je migre donc la fiction vers Medium.
+
+=> /no-proprietary-service.html Medium
+
+Que fais-je de cet argent ?
+
+En premier lieu, je paye mon compte Flattr. Je ne Flattr pas beaucoup mais, à la fin du mois, j’essaie que chaque Flattr soit au moins 0,50€, en ajustant la somme dépensée si nécessaire. Mais j’essaie de faire sortir l’argent de Flattr, pour ne pas que ça tourne en boucle.
+
+Ceci dit, cela me laisse une marge très confortable. L’argent gagné avec GTG me sert à payer des petits extras. Nous avons fait un restaurant à Berlin et un petit déjeuner à Bruxelles sur le compte des Flatteurs. L’argent gagné par mon blog est, quand à lui, toujours sur Flattr. Il servira à payer mon futur hébergement. Si il reste des bénéfices, ce qui sera probablement le cas, le tout ira à mon dealer de coke pour que je continue à écrire jusqu’à 2h du mat.
+
+Voilà, n’hésitez pas à me contacter si vous avez des questions. Merci beaucoup pour votre soutien en 2012 et j’espère que 2013 sera une bonne année pour vous. Pour moi, j’espère en 2013 vivre uniquement de Flattr. À défaut, j’espère juste bien me marrer à faire le con sur Twitter et Google+.
+
+=> /no-proprietary-service.html Twitter
+=> /no-proprietary-service.html Google+
+
+Bonjour chez vous,
+
+Lionel (aka Ploum)

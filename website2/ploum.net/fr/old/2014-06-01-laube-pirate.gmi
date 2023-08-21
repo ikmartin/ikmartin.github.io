@@ -1,0 +1,210 @@
+# L’aube pirate
+=> files/old/aube.jpg
+
+Télécharger « L’aube pirate » :
+
+Format .epub – Format .pdf
+
+=> ../files/old/ebooks/aube_pirate.epub Format .epub
+=> ../files/old/ebooks/aube_pirate.pdf Format .pdf
+
+Parti Pirate, The Pirate Bay, piratage. Que sont ces mots ? Comment en sommes-nous arrivés là ? Que s’est-il réellement passé ? Comment est apparu le terme « pirate » ? Comment est né le Parti Pirate ? Quelle était la relation avec The Pirate Bay ? Et pourquoi cela a-t-il de l’importance alors que les pirates font des scores électoraux relativement faibles ?
+
+Après de longues recherches, de multiples échanges par mail avec Rick Falkvinge et un entretien en tête-à-tête avec Amelia Andersdotter, je vous invite à découvrir « L’aube pirate », le récit d’un bouleversement technologique, politique et sociétal qui pourrait changer la face du monde. Ou disparaître comme s’il n’avait jamais existé.
+
+Lors des élections de 2009, l’Europe apprend avec surprise l’existence d’un petit parti suédois au nom pour le moins folklorique : le Parti Pirate. Raflant plus de 7% des votes en Suède, il permet à Christian Engström de devenir le premier pirate à entrer dans un parlement. La mise en place du traité de Lisbonne qui change le nombre de sièges attribués à chaque pays permettra même à un deuxième pirate de le rejoindre. Amélia Andersdotter deviendra, à 23 ans, la benjamine de l’hémicycle.
+
+Deux députés pour ce qui ne semble être qu’une blague de potache ? Un parti dont les militants ne semblent intéressés que par la possibilité de télécharger gratuitement de la musique sur Internet ?
+
+En fait, pour comprendre les fondements du Parti Pirate, il faut remonter à la création d’Internet et du World Wide Web.
+
+Le web, une machine à partager l’information
+
+Depuis les années 60, les ordinateurs sont capables de communiquer entre eux. Les utilisateurs peuvent s’envoyer des messages et échanger des informations pour peu qu’ils se soient préalablement accordés sur la manière de s’interconnecter. Mais, en 1993, dans un laboratoire du CERN, Tim Berners Lee et Robert Caillau décident de lancer un nouveau système qu’ils appellent World Wide Web.
+
+Un seul ordinateur, appelé serveur, pourra répondre aux demandes de n’importe quel autre ordinateur et leur envoyer une page contenant du texte ou des images. La véritable innovation se situe dans le fait que la page en question pourra contenir des liens vers d’autres pages. Une invention appelée hypertexte qui révolutionne la communication entre ordinateurs.
+
+Il n’est en effet plus nécessaire de savoir à quel ordinateur se connecter pour obtenir une information précise : il suffit de lire le texte d’une page et de cliquer sur les liens pour accéder à d’autres pages.
+
+Grâce à cette invention, l’information peut se propager librement à travers la planète. Une personne qui souhaite partager un texte n’a qu’à créer une « page web » et à la rendre disponible sur un « serveur web ».
+
+Le système d’hyperliens permet la mise en place d’annuaires de pages web. Les créateurs de pages web soumettent leurs pages avec une brève description à ces annuaires que les utilisateurs peuvent ensuite explorer. Parmi les plus connus, on peut citer Yahoo.
+
+À cause des limitations technologiques du réseau, les pages web sont composées essentiellement de texte, format qui peut être transmis rapidement, d’images de basse qualité et de courts sons. Le contenu d’une page web n’est lisible que sur des ordinateurs peu transportables et dont les écrans font mal aux yeux. Bref, il s’agit d’un outil de travail, certes pratique mais auquel le plus grand nombre ne voit que peu d’utilité.
+
+Au cours de l’histoire, l’humanité a montré une créativité sans limite pour relever les défis technologiques. À la fin des années 90, outre l’amélioration de la vitesse entre les ordinateurs, le format MP3 permet dorénavant de comprimer une chanson avec une qualité proche du CD en quelques mégaoctets. Cela signifie qu’une chanson MP3 placée sur un serveur web peut être téléchargée en une dizaine ou une vingtaine de minutes par un utilisateur utilisant sa connexion téléphonique. Dans les entreprises ou les universités, le téléchargement est encore plus rapide.
+
+L’essor du partage musical
+
+Pourquoi la musique ? Tout simplement car les consommateurs de musique sont déjà habitués à écouter de la musique sous forme numérique à travers les CDs. Si lire ou regarder des images sur un écran d’ordinateur est inconfortable, il est possible de brancher des enceintes de bonne qualité sur un ordinateur et de restituer un son proche du CD.
+
+Mieux : il est possible de graver un CD lisible dans la majorité des lecteurs à partir des fichiers MP3.
+
+Dès 1998, soit à peine 5 ans après les débuts du World Wide Web, le MP3 est tellement populaire que des baladeurs MP3 sont commercialisés.
+
+Du point de vue des utilisateurs, le partage de MP3 n’est guère différent de l’échange de cassettes audio. Il s’agit d’échanges entre amis, rien de plus.
+
+Les grandes maisons de disque voient évidemment la chose d’un autre œil et, prenant Internet en grippe, tentent de s’opposer à la commercialisation de baladeurs MP3. Leur raisonnement est simple voire simpliste : toute personne qui a téléchargé un MP3 sans acheter le disque avait envie d’écouter cette musique et aurait acheté le disque si elle n’avait pu télécharger le MP3. Selon eux, le MP3 est donc un énorme manque à gagner.
+
+De plus, au cours de cette même année 1998, un nouvel acteur est apparu, au nom cryptique et difficilement prononçable : Google.
+
+Au lieu de créer un annuaire de sites où chaque webmaster devrait soumettre sa page web, Google décide de créer un programme automatique qui va analyser le contenu des pages web et suivre les hyperliens afin de découvrir de nouvelles pages sans intervention humaine.
+
+La méthode est tellement efficace que, pendant un temps, il suffit de taper le nom d’une chanson populaire suivi de MP3 dans Google pour en trouver une version.
+
+Les maisons de disque s’étranglent. Mais, fortes d’un oligopole de plusieurs décennies, elles ont les moyens de résister. Se ralliant sous la bannière de la défense du Copyright, elles déclarent purement et simplement la guerre à Internet.
+
+La début d’une guerre
+
+La stratégie est simple : publier de la musique sur un site web revient à la diffuser publiquement. Or, il est interdit de diffuser publiquement de la musique sans accord des ayants droit. Il suffit donc de menacer l’hébergeur d’un site web de poursuites judiciaires.
+
+Les hébergeurs tenteront d’abord de faire la distinction entre l’auteur d’un site web et l’hébergeur, ce dernier n’étant qu’un prestataire technique n’ayant pas toujours les ressources pour contrôler ce que ses clients publient. De plus, arguent les hébergeurs, cela introduit une situation dangereuse ou, pour garantir sa position, un hébergeur devra en permanence exiger de tous ses clients qu’ils prouvent qu’ils ont les droits nécessaires pour publier leur site. Par défaut, un client est donc présumé coupable.
+
+Les défenseurs du copyright savent bien que, souvent, un auteur de site web est anonyme et difficile à trouver. Un hébergeur, par contre, c’est une entreprise qui a pignon sur rue et des ordinateurs connectés en permanence au réseau. C’est le maillon faible.
+
+La jurisprudence confirmera d’ailleurs la responsabilité de l’hébergeur. En France, en 1999, un internaute scanne, à partir d’un magazine people, des photos volées d’une star dénudée et les publie sur son site personnel. La star attaque en justice l’hébergeur, AlternB, qui gère près de 45000 sites web. Le tribunal astreint l’hébergeur à s’assurer que les photos ne sont pas publiées sur son infrastructure.
+
+Vérifier en permanence ce qui est publié sur 45000 sites web n’étant pas matériellement possible, AlternB se voit contraint de fermer boutique et ainsi de couper l’accès à 45000 sites dont la toute grande majorité entièrement légitimes.
+
+Mais revenons à la musique. Pour publier des MP3 sur Internet il faut disposer du CD original, le transformer en MP3 (on parle de « ripper »), avoir accès à un site web et y envoyer les fichiers, ce qui prend du temps.
+
+Dès qu’un site de ce type apparaît sur le web, il suffit donc aux maisons de disques d’envoyer une lettre de menace à l’hébergeur, exigeant le retrait du site sous peine de poursuites judiciaires.
+
+Les défenseurs du copyright ayant à leur disposition une flopée d’avocats, ces poursuites judiciaires ne peuvent que s’avérer extrêmement coûteuses pour l’hébergeur, quand bien même celui-ci serait dans son droit. Il est donc plus simple de retirer le site incriminé. La diffusion de MP3 s’en trouve fortement compromise. Et tant pis si des sites entièrement légaux font le frais des excès de zèle.
+
+La résistance s’organise
+
+Si le maillon faible est l’hébergeur, pourquoi ne pas s’affranchir de l’hébergeur ? C’est ce que propose le logiciel Napster en 1999, avec le principe du pair à pair (peer-to-peer ou P2P).
+
+L’internaute qui utilise le logiciel Napster va choisir, sur son ordinateur, les fichiers qu’il souhaite partager. Automatiquement, le nom de ces fichiers ainsi que, pour chacun, un identifiant unique sera envoyé au site Napster.
+
+De cette manière, Napster sait qui a quel fichier. Lorsqu’un internaute souhaite un fichier donné, il suffit de le télécharger chez ceux qui l’ont.
+
+Première subtilité : le fichier peut être téléchargé chez plusieurs personnes à la fois. De cette manière, chaque internaute contribue au partage selon sa connexion. Si cent internautes envoient chacun un centième de fichier (ce qui est une quantité négligeable), cela fera un cent et unième internaute possédant le fichier qui pourra à son tour partager le résultat.
+
+Seconde subtilité : dès que l’internaute commence à télécharger un fichier, Napster fait en sorte de le partager automatiquement. Ainsi, il vous est possible de partager un fichier que vous ne possédez pas encore complètement ! Bien entendu, vous ne partagez que les parties que vous avez préalablement téléchargées. Mais cela rend le partage extrêmement rapide : plus un fichier est demandé, plus il est rapide à se répandre dans le réseau.
+
+Par analogie, on pourrait dire qu’Internet était avant tout un échange de courriers entre individus. Le World Wide Web équivaut alors à l’imprimerie : il est possible à une personne de communiquer à destination du plus grand nombre. Le peer-to-peer lui est l’équivalent du téléphone arabe : tout le monde communique avec tout le monde et l’information se répand à la vitesse de l’éclair.
+
+Dans le cas de Napster, il reste néanmoins un maillon faible évident : le site Napster lui-même. Les créateurs se défendent en soutenant qu’ils n’hébergent pas les fichiers eux-mêmes mais uniquement une liste. En ce sens, le partage de musique par peer-to-peer se rapproche très fort de l’échange de cassettes entre amis. Napster ne serait qu’un fichier ou chacun peut lister ce qu’il souhaite mettre à disposition de la communauté, ce qui pourrait très difficilement être considéré comme illégal.
+
+Cette notion de communauté devient d’ailleurs très vite fondamentale. Internet n’est plus uniquement un outil de travail, il devient partie intégrante de la vie de nombreuses personnes. Des liens se créent, des rencontres se font et, pour le plus grand plaisir des journaux à sensation, on assiste même à des mariages par Internet. En ce sens, il parait évident aux internautes qu’ils ont le droit de partager leur musique avec les autres internautes tout comme ils peuvent prêter leurs CDs à leurs voisins de quartier. L’expression « village global » fait son apparition.
+
+Malgré tout cela, Napster ne peut que faire long feu et, en 2001, met la clé sous le paillasson. Néanmoins, le logiciel a pavé le chemin pour toute une génération de réseaux peer-to-peer qui tenteront de s’affranchir de ce problème de maillon faible centralisé.
+
+Parmi d’autres, on retiendra l’apparition de Bittorrent. Contrairement à Napster, Bittorrent ne nécessite pas un catalogue centralisé. Il suffit de s’échanger un tout petit fichier, un torrent, qui contient la référence du ou des fichiers qu’on souhaite télécharger. Des sites permettent de faire des recherches parmi ces fichiers torrents mais, contrairement à Napster, ils ne sont pas du tout indispensable. Pour un site qui ferme, un autre est créé sans que le réseau en soit le moins du monde perturbé.
+
+Un tournant moral
+
+À cette époque, les maisons de disques sont rejointes par d’autres défenseurs du copyright : la qualité des écrans et des connexions à en effet élargi le problème du partage aux films, aux jeux vidéos voire, même si cela reste plus marginal, à la bande dessinée, aux mangas et aux comics.
+
+Les menaces de poursuites judiciaires pleuvent sur les utilisateurs mais la popularité du partage par peer-to-peer est telle qu’il est nécessaire de recourir à d’autres armes. Une machine de propagande se met en place et son premier effet est de donner un nom à connotation péjorative au partage de fichiers : le piratage.
+
+Les personnes partageant des fichiers seront donc des pirates. Dans plusieurs pays, des comités anti-piratage se mettent en place. La propagande sera poussée jusqu’à publier des bandes dessinées pour enfants dans lesquelles un valeureux héros, Captain Copyright, protège les artistes contre les vilains pirates. Une rhétorique forte se met en place, présentant les pirates comme uniques responsables de la précarité du métier d’artiste. Les plus grands artistes s’engagent, sur les conseils de leur producteur, dans la lutte contre le piratage.
+
+En Suède, où existe un bureau anti-pirate, l’antipiratbyran, une association se crée pour réfléchir justement aux possibilités offertes par le pirat… le partage. Par ironie, l’association sera baptisée Piratbyran, le bureau pirate.
+
+Entre autres projets, ce bureau pirate met en place un moteur de recherche pour les torrents. Choisissant volontairement de rester dans l’imagerie pirate, le site sera intitulé The Pirate Bay, la baie des pirates.
+
+Rapidement, The Pirate Bay deviendra le principal fournisseur de torrents de la planète et ce, y compris pour des fichiers entièrement légaux : les logiciels libres, les distributions linux, les films et musiques du domaine publics ou sous licences libres. Chacun peut envoyer son propre torrent sur The Pirate Bay et certains artistes y mettront volontairement leurs œuvres dans un soucis de visibilité.
+
+Aussi, lorsque l’équipe de TPB reçoit des menaces de poursuites judiciaires, elle se contente de répondre de s’adresser à l’utilisateur ayant envoyé le fichier torrent en question. Puis, devant l’avalanche de menaces, elle décide de les publier sur leur site web avec des réponses potaches voire vulgaires. Leur ligne de défense est claire : ils n’hébergent aucun fichier illégaux, ils ne peuvent pas matériellement contrôler le contenu de chaque fichier qu’on peut potentiellement télécharger grâce à un torrent envoyé sur le site. Imaginez que tout votre quartier vous envoie volontairement des copies des clés des armoires dans lesquelles ils rangent leurs DVDs. Êtes-vous responsable du contenu de ces DVDs ? Cerise sur le gâteau, The Pirate Bay est en Suède. Les lois américaines ne s’appliquent donc pas.
+
+Le bruit des bottes
+
+Le premier avril 2005, The Pirate Bay annonce que le service est suspendu suite à un raid de la police. Il s’agissait évidemment d’un poisson d’avril et peu de monde prend la blague au sérieux tellement elle semble absurde. Néanmoins, inspiré par le Piratbyran, un certain Rickard Falkvinge pense qu’il est temps d’investir le champ politique avec les questions liées au copyright et aux brevets. À l’époque, le Piratbyran ne souhaite pas avoir de lien avec un parti plutôt qu’un autre. Qu’à cela ne tienne, le premier janvier 2006, Rick lance le Piratpartiet (le Parti Pirate) avec pour objectif de récolter 2000 signatures avant le 4 février afin de pouvoir se présenter aux élections de septembre 2006. En réalité, en guise de parti il s’agit purement et simplement d’une page web simpliste réalisée par Rick Falkvinge. Le parti, inexistant, compte un seul et unique membre. Beaucoup pensent à une blague ou une action symbolique. Cependant, alors que certains médias y voient un simple coup marketing pour The Pirate Bay, les signatures sont récoltées en moins de vingt-quatre heures. Rick Falkvinge n’en croit pas ses yeux : il existe une réelle volonté populaire de créer un parti pirate !
+
+Le 31 mai 2006, la réalité dépasse la fiction. Le juge Tomas Norström ordonne un raid et la saisie de tout le matériel informatique chez l’hébergeur de The Pirate Bay. Ce raid est dirigé par le policier Jim Keyzer et a pour conséquence la mise hors-ligne de The Pirate Bay mais également d’autres sites non liés à l’affaire comme le Piratbyran ou celui d’une agence de presse russe.
+
+Le raid est surprenant, puissant mais terriblement mal organisé. Soixante-cinq policiers visiblement non formés surgissent à douze endroits où sont stockés des serveurs. Incompétents, les policiers saisissent tout ce qui leur passe sous la main : câbles, enceintes stéréo, claviers. Et passent à côté d’autres endroits et de certains ordinateurs. Il n’en reste pas moins que les membres de The Pirate Bay sont choqués.
+
+En réaction, le tout récent Parti Pirate organise des manifestations à Stockholm et dans le reste de la Suède. Le nombre de membres explose. The Pirate Bay est réouvert trois jours plus tard et devient entièrement fonctionnel le cinq juin, hébergé cette fois-ci aux Pays-Bas.
+
+Peter Sunde, porte-parole de The Pirate Bay, affirme que l’équipe travaille à un plan d’urgence permettant de remettre le site en ligne en quelques heures et depuis plusieurs pays à la fois.
+
+Au cours du mois de juin, il est révélé que ce raid a été explicitement demandé par les États-Unis au ministre de la justice Suédois, Thomas Bodström, lors d’une entrevue à la maison blanche. La Suède doit se plier sous peine de sanctions économiques importantes. Cette version sera amplement confirmée en 2011 lorsque, parmi les câbles diplomatiques rendus publics par Wikileaks on trouvera, en toutes lettres, une demande émanant de l’IIPA, l’Alliance Internationale pour la Propriété Intellectuelle, exigeant de la Suède de prendre six mesures prioritaires avant 2009. Cinq de ces points sont d’ordre général : adopter des lois qui permettent de plus facilement attaquer en justice les individus coupables de piratage, augmenter les effectifs de polices liés à la protection du copyright. Mais, dans la liste, le deuxième point contraste :
+
+=> ../files/old/ebooks/sweden.pdf une demande émanant de l’IIPA
+
+« Poursuivre en justice autant que faire se peut les propriétaires de ThePirateBay »
+
+Un enjeu politique mondial
+
+2006 marque donc un tournant : de simple jeu de chat et souris, le partage de fichiers devient un véritable combat politique, un conflit où s’opposent deux moralités : les intérêts économiques contre le libre partage de toute forme de connaissance. Des acteurs économiques et politiques de tout premier plan sont dans la bagarre.
+
+Toutes ces révélations ne sont malheureusement pas suffisantes et, en septembre 2006, le Parti Pirate ne recueille que 0,63% des voix. Si le score n’est pas brillant, il permet néanmoins à ce tout jeune parti d’apparaître dans les dix plus importants partis de Suède, sur près de quarante formations se présentant aux élections.
+
+Le 31 janvier 2008, suite aux investigations issues du raid, les membres de The Pirate Bay sont officiellement inculpés de « promotion par des tiers du non-respect des lois sur le copyright ». Un peu avant cela, Jim Keyzer, le responsable en charge de l’enquête, appelle Peter Sunde, qui est en train de déménager de Norvège pour venir vivre en Suède et qui est jusque là considéré comme témoin. Jim Keyzer l’informe que, lors de son arrivée en Suède, il sera inculpé d’un crime et qu’en conséquence de quoi, il a légalement le droit d’exiger la présence d’un avocat. Il lui conseille de prendre le premier avocat venu, qu’il s’agit d’une petite affaire et qu’autant aller vite et ne pas déranger un ténor du barreau. Inquiet, Peter Sunde fait exactement le contraire.
+
+Agacé, Jim Keyzer se montrera très irritable durant les interrogatoires de Peter Sunde, au point que ses paroles ne sont tout simplement plus compréhensibles dans les enregistrements. Et, stupeur, lors du dernier jour de l’enquête, un internaute découvre sur le profil Facebook de Jim Keyzer que celui-ci est en train de prester son dernier jour à la police. Son nouveau job ? Anti-pirate manager chez Warner Brothers, l’un des principaux plaignants dans le procès de The Pirate Bay.
+
+Cherchant à en savoir plus, certains internautes pirateront en 2009 le compte Hotmail de la petite amie de Jim Keyzer. Si l’acte est moralement condamnable, il apportera de l’eau au moulin d’une rumeur tenace : Jim Keyzer aurait, au cours de cette période, acheté une maison inabordable pour n’importe quel policier ou fonctionnaire fédéral.
+
+Le procès, comme le veut la loi Suédoise pour les cas relevant du Tribunal de District, est assigné aléatoirement à un département pour y être jugé. Les départements sont identifiés par un simple numéro. Le responsable du département cinq introduit une demande pour changer le département assigné aléatoirement. Cette requête est acceptée et le procès se tiendra finalement sous la responsabilité du département cinq, celui-là même qui a introduit la demande. Le responsable du susdit département cinq n’est autre que Tomas Norström, le juge qui a ordonné le raid initial.
+
+Une affaire entachée d’irrégularités
+
+Tomas Norström est également un membre actif dans l’association suédoise pour le copyright et siège au conseil d’administration de la SFIR, l’association suédoise pour la protection de la propriété industrielle. Mais Tomas Norström n’y voit aucun conflit d’intérêt. À tel point qu’il oubliera de révéler ces détails ou de révéler que la majorité des avocats de la partie adverse, les grandes maisons de disque, sont également membres de ces associations et qu’il en connait personnellement la plupart. Certains sont mêmes considérés comme des amis proches.
+
+Le procès s’ouvre le 16 février 2009 et est raconté dans le documentaire « TPB AFK », disponible au téléchargement sur… The Pirate Bay. Durant toute la durée du procès, Peter Sunde se révèle confiant : tout cela ressemble à une vaste farce. Chaque élément à charge est minutieusement démonté par la défense. The Pirate Bay n’est rien de plus qu’un moteur de recherche. Il permet de trouver des fichiers légaux ou illégaux selon la juridiction où l’on se trouve. Condamner The Pirate Bay, c’est condamner Google. Toutes les analyses techniques abondent d’ailleurs en ce sens.
+
+Le 17 avril 2009, la sentence tombe : 30 millions de couronnes (près de 3 millions d’euros) d’amende par personne et un an de prison pour chacun des membres de l’équipe de The Pirate Bay. La somme est du jamais vu pour une condamnation en Suède. Le cas de Peter Sunde est emblématique : en tant que porte-parole et non-informaticien, il n’a jamais programmé la moindre ligne de code pour The Pirate Bay. Sa condamnation ne mentionne aucun crime concret, aucune date. Il n’a pas la moindre idée de ce qui lui est reproché. Pire : les très vagues accusations qui pèsent sur The Pirate Bay portent, pour la plupart, sur des périodes avant l’arrivée de Peter Sunde dans l’équipe !
+
+The Pirate Bay fait appel. Le tribunal d’appel est composé de deux juges, tous les deux membres de l’association suédoise pour la défense du copyright. La peine de prison est diminuée à 8 mois mais l’amende est augmentée à 46 millions de couronnes auxquelles se rajoutent des intérêts exorbitants.
+
+Cependant, un sondage révèle que 99,8% de la population estime que The Pirate Bay ne devrait pas être condamné.
+
+L’étincelle…
+
+L’importance de la condamnation, l’ingérence démontrée des États-Unis, les conflits d’intérêts et les nombreuses irrégularités de la procédure laissent une impression amère de corruption. Rick Falkvinge n’hésite pas à dénoncer publiquement cette corruption. Il tente d’ameuter l’opinion publique suédoise et internationale. Le procès de The Pirate Bay est l’affaire du moment sur fond de campagne électorale. Car, le 7 juin 2009 ont lieu les élections européennes. Un raz de marée pirate envahit la Suède. Le Parti Pirate obtient 7,1% des voix et un siège sur dix-huit au parlement européen. La mise en place en décembre 2009 du traité de Lisbonne, octroyant vingt sièges à la Suède, permettra à un deuxième pirate de siéger, Amelia Andersdotter qui, à vingt-trois ans, deviendra la benjamine de l’hémicycle.
+
+Christian Engström et Amelia Andersdotter décident de se concentrer exclusivement sur le domaine de la propriété intellectuelle, cheval de bataille du Parti Pirate. Beaucoup critiquent le principe d’un parti monothématique mais le Parti Pirate suédois tient bon. Selon eux, il est préférable d’être très compétent sur un domaine qu’incompétent dans tous.
+
+D’autres Partis Pirate ont vu le jour dans différents pays, notamment en Allemagne, mais aucun ne perce. À l’exception des deux députés européens suédois, il n’existe aucun pirate élu nulle part.
+
+La croisade du Parti Pirate prend la tournure d’une anecdote, une farce prise au sérieux par quelques jeunes obnubilés par internet.
+
+En 2010, la procédure en appel confirme le jugement envers l’équipe de The Pirate Bay. Les peines de prison sont légèrement réduites mais les amendes sérieusement augmentées. Peter Sunde change ironiquement son pseudonyme Twitter en « @brokep », «P(eter) le fauché ». Freidrik Neij et Gottfrid Svartholm se sont exilés respectivement au Laos et au Cambodge. Freidrik s’y est marié et a fondé une famille. Peter Sunde, lui, lance le service Flattr dans le but de promouvoir les paiements directs aux artistes. Il voyage beaucoup à travers l’Europe, donne des conférences et confie s’être bâti une existence nomade.
+
+Début 2011, le Parti Pirate et le procès de The Pirate Bay sombrent dans l’oubli. Souhaitant éviter de transformer le Parti Pirate en parti Falkvinge, Rick Falkvinge démissionne et laisse le poste de président de parti à Anna Troberg.
+
+…qui met le feu aux poudres
+
+Mais, en Allemagne, une évolution majeure prend forme. Le Parti Pirate allemand décide de sortir du carcan de la propriété intellectuelle pour rédiger un véritable projet politique. Les problèmes de la propriété intellectuelle ne sont que la pointe émergée de l’iceberg, un symptôme. La cause ? Une caste politique incapable de s’adapter aux changements rapides de la société et corrompues par les intérêts financiers.
+
+Avec une campagne humoristique et décalée, abordant tous les thèmes de la société, le Parti Pirate Allemand fait mouche. En septembre 2011, aux élections régionales à Berlin, ce sont près de 9% des voix qui vont au Parti Pirate. Trois autres régions (Länder) suivent avec chaque fois plus de 7% des voix au Parti Pirate, assurant à chaque fois plusieurs sièges.
+
+Dans l’enthousiasme, des partis pirates se créent partout dans le monde. Des pirates sont élus en Tchéquie, en Islande, en Autriche, en Suisse, en Catalogne, en Croatie. Une structure Parti Pirate International se met en place, les pirates débattent et se positionnent sur les principaux faits de société. Rick Falkvinge tente de formaliser la pensée pirate en publiant « La roue des pirates ».
+
+Néanmoins, érigés en modèles, les pirates allemands essuient leur premier revers. Des critiques fusent, des tensions internes apparaissent et de mini scandales éclatent comme celui de cette élue pirate allemande ayant écrit un livre mais qui en interdit le piratage. Dans la plupart des autres pays, les pirates peinent à dépasser le 1% de voix aux élections où ils sont présents.
+
+L’empire contre-attaque
+
+En 2012, Gottfrid Svartholm est arrêté au Cambodge et extradé vers la Suède malgré l’absence d’accord d’extradition entre les deux pays. Certains pays s’étonnent d’une telle promptitude du Cambodge. Moins d’une semaine plus tard, la Suède annonce un don de 400 millions de couronnes (±59 millions de dollars à l’époque) au gouvernement Cambodgien « à des fins humanitaires ». Un mois plus tard, votre serviteur manque de quatorze voix la place de premier pirate élu en Belgique. Mais nulle part en Europe on ne voit les pirates percer réellement.
+
+Après avoir purgé sa peine en Suède, Gottfrid Svartholm est ensuite extradé vers le Danemark où il est à présent en isolement carcéral, en attente d’un jugement pour le piratage présumé de la base de donnée des permis de conduire danois. Il a également été démontré que Gottfrid a été un membre actif de Wikileaks, travaillant notamment sur le dossier « Collateral Damage » de 2010, la fameuse vidéo montrant des pilotes d’hélicoptère américains tuant un journaliste et des civils.
+
+Peter Sunde, lui, décide de se présenter comme candidat finlandais pour le Parti Pirate aux élections européennes du 25 mai 2014. Il est également candidat à la présidence du parlement européen en duo avec Amelia Andersdotter. Malheureusement, il ne sera pas élu et le Parti Pirate perdra ses deux sièges suédois. Seule l’Allemagne enverra un Pirate à l’Europe, Julia Reda, dont la liste n’a obtenu que 1,4% des voix. Alors, le Parti Pirate était-il un feu de paille, une simple anecdote ?
+
+Pour avoir cru que de rendre public les horreurs de la guerre pouvait peut-être apporter un peu de paix, Chelsea Manning a passé plusieurs mois en isolement carcéral maximal, apparenté à de la torture, passera-t-elle les 35 prochaines années de sa vie en prison ?
+
+Pour avoir cru que la transparence pouvait aider à lutter contre la corruption, Julian Assange se terre depuis juin 2012 dans l’ambassade d’Équateur à Londres dans la crainte d’une extradition vers la Suède puis vers les USA. Pourra-t-il en sortir un jour sans crainte ?
+
+Pour avoir cru que le monde serait meilleur si l’information et la science étaient en libre accès pour toute l’humanité, Aaron Swartz a été harcelé judiciairement et poussé au suicide en janvier 2013. Son combat aura-t-il été vain ?
+
+Pour avoir eu la décence morale de confier à un journaliste qu’une poignée d’hommes espionnaient le monde entier, Edward Snowden est traqué à travers le monde entier depuis juin 2013. Pourra-t-il un jour retourner dans son pays et être reconnu comme un bienfaiteur de l’humanité ?
+
+Pour avoir simplement cru que le partage transcendait les intérêts financiers d’une minorité et que la raison triompherait sur la corruption, Peter Sunde est aujourd’hui en prison et endetté à vie. Pourra-t-il un jour en parler comme d’un mauvais souvenir ?
+
+Aucune de ces personnes n’a jamais porté la main sur un autre être humain ni nui à l’humanité, au contraire. Leur seul crime est d’avoir cru que les règles périmées d’hier pouvaient être abolies aujourd’hui, qu’il n’y avait aucune raison de ne pas rendre le monde meilleur si nous en avions le pouvoir. Pourtant, ils sont traités comme les pires des dangereux criminels. Des ressources incroyables sont mobilisées au niveau mondial pour les condamner, les arrêter et les punir.
+
+Alors, la guerre est-elle perdue ? Le Parti Pirate a-t-il échoué ? Ou bien assistons-nous à une naissance douloureuse, aux premiers symptômes d’un mouvement de grande ampleur ?
+
+La réponse à ces questions, c’est à vous qu’il revient de l’écrire. Aujourd’hui et demain. Vous qui estimez que le futur et le bien de l’humanité passent avant quelques égoïstes intérêts individuels du passé. Vous qui, de ce fait, êtes des pirates.
+
+Photo par Nik Wilets. Corrections par Raphaël Dunant. Soutenez l’écriture de mes mini-livres sur Patreon.
+
+=> https://www.flickr.com/photos/41894170037@N01/101757292 Nik Wilets
+=> /no-proprietary-service.html Raphaël Dunant
+=> /tag/epub/ mini-livres
+=> /no-proprietary-service.html Patreon

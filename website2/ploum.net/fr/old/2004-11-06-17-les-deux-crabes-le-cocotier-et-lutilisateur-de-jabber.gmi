@@ -1,0 +1,76 @@
+# Les deux crabes, le cocotier et l’utilisateur de Jabber
+
+Le ressac de la mer chaude carresse mes orteils tandis que je me prélasse dans l’ombre du cocotier. Deux petits crabes s’afférent devant moi. Deux petits crabes rouges, qui semblent avoir bien de la peine à pousser une malheureuse boulette de sable. Une fois la boulette arrivée à destination, voilà le premier qui repart en chercher une autre tandis que le second fait claquer ses pinces.
+
+=> ../files/old/TDM96_1660.jpg 
+
+Je suis un vieux con, pas de doute. La preuve, j’ai connu ICQ ! Je suis un vieux con je vous dis…
+
+Pour beaucoup de monde, messagerie instantanée rime avec MSN.
+
+=> ../files/old/icq.gif icq
+Lorsqu’on parle de l’époque, pas si ancienne, où seul ICQ existait et paraissait révolutionnaire, on passe pour un vieux con, ce que je suis sans doute devenu. Rendez-vous compte, c’était il y’a 5 ans, autant dire 5 siècles, à l’époque des dinosaures.
+
+=> ../files/old/dino.jpg dinos
+
+Et puis est arrivé MSN, je m’en souviens encore très bien, avec un produit techniquement bien inférieur (même pas moyen d’envoyer des messages offline ni d’historique !). Résultat : quelques années plus tard, on ne parle plus que de MSN.
+
+Si il faut reconnaitre que MSN offre une certaine facilité, surtout pour la vidéoconférence, le logiciel en lui-même est lourd, moche et encombré (bon, les coups et les douleurs…). Malgré cela (grâce à ?), une force de masse populaire incroyable est derrière MSN, à tel point que même chez les adeptes furieux du logiciel libre et de linux, MSN reste bien souvent le dernier bastion propriétaire.
+
+Pourtant, MSN représente à lui seul tout ce que le logiciel propriétaire peut avoir de pire : failles de sécurite (virus transmis par MSN), interface bariolée et repoussante à souhait sans oublier, cerise sur le gateau, un protocole complètement fermé et le fait d’être fiché avec un passeport .NET, bref que des bonnes choses.
+
+Tout cela devrait faire fuire tous les Richard Stallman en herbe ? Et bien il est amusant de constater que ceux qui portent le plus volontiers des t-shirts avec des pingouins guerriers, des « Born to Kill Windows » et qui parsèment leurs messages de « Micro$oft » et « winchiotte » sont aussi complètement accros à MSN.
+
+Est-ce parce qu’il n’existe pas une alternative libre ? Poser la question, c’est y répondre ! Bien sûr que si, et cette alternative s’appelle Jabber. Il faut reconnaître que Jabber n’est pas encore intégré avec de la vidéo-conférence, mais en dehors de cela, il n’a rien a envier à MSN. De plus, il existe une multitude de clients différents pour Jabber et ce serait bien le diable si vous ne trouvez pas celui qui convient le mieux à vos besoins.
+
+=> http://wiki.frimouvy.org/ComparaisonsClients une multitude de clients différents
+
+=> ../files/old/jsf-banner.png 
+
+Jabber est longtemps resté encore très peu connu, même au sein des Linuxiens qui n’utilisaient que Gaim ou Amsn.
+
+Mais, petit à petit, Jabber fait son nid. Et il faut reconnaitre que ces derniers mois, Jabber a connu un véritable essor. Ainsi, à peine une année s’est écoulée depuis que quelques intégristes convaincus (dont votre serviteur) tentaient de faire découvrir Jabber aux linuxiens déjà touchés par la cause du libre. Aujourd’hui, Jabber devient un terme générique qui est au linuxien ce que MSN est à Mr tout le monde.
+
+Notre linuxien a donc abandonné amsn et peste maintenant contre tous ceux qui sont sous MSN. Il tente par tout les moyens de les convaincre que MSN c’est mal. Il envoie des messages rageurs à ses 90 contacts MSN pour les faire passer sous Jabber. Il tente de les raisonner à la fois sur le vilain capitalisme de Microsoft, sur le caractère dangereux des protocoles propriétaires tout en essayant de (se) convaincre sur la facilité des passerelles et du multi-protocole.
+
+Comme on peut s’y attendre, aucun de ses contacts ne passe à Jabber. Pire, ses contacts le cataloguent comme emmerdeur et refusent d’écouter le moindre de ses conseils en informatique.
+
+Mais, asseyons-nous et réfléchissons : n’est-ce pas logique finalement ? Si quelqu’un tente de vous convaincre que la voiture avec laquelle vous roulez depuis deux ans est nulle, quelle sera votre première réaction ? Tout simplement refuser en masse. Admettre que votre voiture est nulle revient à admettre que vous avez été dans l’erreur tout ce temps. En gros, la personne pourrait très bien vous traiter de con que vous ne réagiriez pas autrement. Si en plus la personne en question continue à utiliser cette même voiture pour venir vous voir…
+
+=> ../files/old/voiture.gif 
+
+Mais alors, comment donc promouvoir Jabber auprès de ses contacts ?
+
+Je vois trois approches possibles :
+
+1. Vous n’êtes pas fervent défenseur du logiciel libre et ne souhaitez pas vous investir trop personnellement : C’est très facile. Quand on vous demande votre adresse MSN, dîtes que vous préférez Jabber. Si on vous pose des questions sur Jabber, envoyez la personne sur un site de référence[1]. Puis, finissez par donner votre adresse MSN.
+2. Vous êtes prêt à donner un peu de vous même : Refusez simplement tout nouveau contact MSN. Ne donnez que votre adresse Jabber et n’acceptez pas les personnes qui vous ajoutent à leur liste MSN en expliquant que vous passez à Jabber. Vous pouvez aller plus loin en supprimant les contacts MSN les moins importants (avec explications, bien évidemment).
+3. Vous êtes, comme l’auteur de ces lignes, un intégriste qui chante la Free-Software-Song avec le poing tendu : Vous annoncez à tous que vous allez fermer votre compte MSN et que ceux qui veulent encore vous contacter devront passer à Jabber.
+
+Puis, une semaine ou deux plus tard, faites-le pour de bon. 🙂
+
+Quelque soit l’approche que vous avez choisie, il est très important de garder à l’esprit que jamais vous ne devez chercher à convaincre la personne en face. Expliquez toujours qu’il s’agit d’un choix personnel, que vous avez réfléchi et refusez que des données vous concernant soit gardées par des grandes multinationales (rappelons que le principe de Passport .NET est d’établir des profils individuels pour chaque client), que vous ne souhaitez plus utiliser MSN, etc. Dans tous les cas il s’agit toujours de vous et uniquement de vous ! Restez cohérent avec vous-même. N’essayez pas de convaincre vos amis d’abandonner complètement MSN alors que vous continuez à l’utiliser pour parler avec eux !
+
+=> ../files/old/tartine.jpg tartine
+Ne vous étalez pas en longues tartines ! Préférez aiguiser la curiosité de vos interlocuteurs. N’hésitez pas à placer un « Mais je ne veux pas t’ennuyer avec ça, c’est juste un choix personnel », n’oubliez pas que le logiciel libre c’est aussi la liberté de choisir. Si la personne est intéressée, elle vous posera des questions. Si elle ne pose pas de question, et bien rien ne sert de courir après, elle n’est pas réceptive à ce genre de choses pour le moment (mais peut cependant rester un très bon ami). Rappelez-vous que le téléphone, le mail et aller boire un verre sont aussi des moyens très sympas pour communiquer avec ses ami(e)s et que vous pouvez très bien avoir des connaissances qui ne sont pas dans votre contact-list. Nul besoin de convaincre tout le monde à tout prix.
+
+Une fois qu’une personne de votre entourage est interessée, n’oubliez jamais de lui faire remarquer qu’elle peut continuer à utiliser MSN et jabber en parallèle. Accompagnez-la et conseillez lui un serveur Jabber stable[2]. Ne parlez pas tout de suite des passerelles, c’est souvent un peu compliqué. Chaque chose en son temps. Evitez autant que possible ce qui est technique ou ce qui est trop geek (nul besoin de réciter la GPL !). La meilleure solution, au début, est sans doute d’installer Gaim et de configurer MSN et Jabber. Une alternative est d’installer un vrai client Jabber (Psi, Exodus) et de continuer à utiliser MSN en parallèle. N’oubliez pas d’encourager la personne, c’est un effort assez important pour elle que de changer ses habitudes. Tout le monde n’a pas votre aisance devant un ordinateur.
+
+Enfin, il va falloir maintenant résister à la pression sociale : « Pourquoi t’as pas MSN ? Tout le monde à MSN ? ». Cela peut même devenir un cruel dilemne lorsque la personne qui vous le demande a de grands yeux profonds comme le ciel, un sourire d’ange et que votre coeur s’emballe chaque fois que vous la voyiez. (J’ai résolu ce dilemne en disant que je préfèrais la voir et passer du temps avec elle que de chatter sur internet et, croyez-le ou non, ça marche parfois très bien[3]).
+
+Plutôt que de prendre à coeur la discussion, de s’énerver et de tenter de convaincre que Jabber est mille fois mieux, restez détaché. Répondez simplement « Et toi? Pourquoi t’as pas Jabber ? ». Ensuite, sur les considérations habituelles telles « Jean, Kevin et Isabelle sont sur MSN eux« , arguez simplement que c’est votre choix personnel et que vous ne souhaitez pas être inscrit dans une banque de données comme celle de MSN.
+
+Evidemment, tout cela est très facile à dire. Et si j’écris ces lignes c’est parce que mon expérience personnelle m’a montré à quel point tout ce que je faisais pour promouvoir Jabber et le logiciel libre avait la plupart du temps l’effet contraire de celui escompté. Toute ressemblance avec des évangélisateurs existants ou ayant existé n’est donc pas complètement fortuite. Autant que vous ne fassiez pas les mêmes erreurs que moi. Et peut-être que le temps tant attendu du couple Jabber-Gnomemeeting multiplateforme n’est plus si loin..
+
+Pendant ce temps où j’ai ressassé mes réflexions de vieux con, les deux petits crabes ont continué leur curieux manège. Devant moi se dresse maintenant un chateau de sable extraordinaire, où la finesse des détails rivalise avec la majesté de l’ensemble. Machicoulis, crénaux, pont-levis, tout est sculpté dans le sable, tout s’est construit sous mes yeux et je ne m’en suis pas aperçu ! Rêve-je ou bien un des crabe m’a bel et bien fait un clin d’oeil ?
+
+#### Notes
+
+[1]Jabberfr ou la grenouille bleue par exemple…
+
+=> http://jabberfr.org Jabberfr
+=> http://frimouvy.org/formation/jabber/ la grenouille bleue
+
+[2]Teaser : Mais quel serveur stable conseiller ? Restez connecté, je vous promet une surprise à ce niveau là…
+
+[3]Pour le moment, ça marche pas du tout mais elle n’a même pas d’adresse MSN donc ça n’a rien à voir !

@@ -1,0 +1,76 @@
+# Being selected as a Summer of Code student
+
+For several years now, I’ve been a Summer of Code mentor for Getting Things Gnome, under the GNOME umbrella.
+
+=> /221-how-to-be-a-lazy-but-successful-googlesoc-mentor Summer of Code
+=> /gsoc2011 mentor
+=> http://gtg.fritalk.com Getting Things Gnome
+
+This year again we received plenty of student proposals. GTG being a very small part of the GNOME project and having only few mentors available, we had to choose. That choice was sometimes really hard and it’s a pity to see some students not being selected.
+
+In order to help them for next year, I would like to point what we, potential mentors, expect from the students.
+
+=> ../files/old/balancoire2.jpg Swing in the night
+
+#### Programming knowledge
+
+Summer of Code’s primary purpose is programming. We expect candidates to have a somewhat good knowledge of the programming language used in our project. We have seen very bright students with very interesting ideas. But it quickly appeared that they were not comfortable enough with Python.
+
+Accepting such a student could only lead to a failure. Every little problem which is trivial to an experienced programmer might become a blocker. More importantly: we are not programming mentors. Programming is obvious to us and is a pre-requisite.
+
+#### Project ownership
+
+=> ../files/old/balancoire1.jpg Swing for baby
+Each year, GTG developers put some SoC ideas on the GNOME wiki. Retrospectively, I think it’s a bad thing. Indeed, we receive plenty of proposals from students who simply copy/paste our ideas. Sometimes, they don’t even understand it and have no clue of what GTG is.
+
+=> https://live.gnome.org/SummerOfCode2012/Ideas GNOME wiki
+
+We expect students to become owners of their project. The best way to achieve that is to have the student come with his own idea, to scratch his own itch. Of course, this could be discussed with the team and potential mentors but the initiative itself should come from the student.
+
+#### Originality
+
+Another reason why taking a SoC idea from the wiki is bad is because we end with ten identical proposals. We then try to find the most skilled student but we usually found that the best students came with their own, original project.
+
+If you want to succeed as a student, be original and show that you understand what you want to achieve. Ask you the question: « Why was it not done before me and why can I succeed where nobody has been before? ».
+
+#### Early start
+
+Next year, during the student proposal period, I plan to not answer emails from students with whom I had no prior contacts. As I’m listed as a possible mentor, each year I see my inbox filled with requests from students that particular week. All those mails are kind, polite but are basically asking « please tell me what to write on my proposal and support my candidacy ».
+
+Sorry but that week is not a good time to approach a mentor. A mentor is busy, have a work, a family and cannot handle twenty students requests in a few days. Remember that a mentor is not paid and that writing the proposal is your job.
+
+But the secret here is very simple: start early. Be involved very early in the project you target. Get in touch with the team. Fix some easy bugs. Learn the project.
+
+If you don’t have the time or the motivation to do that in the months prior to the Summer of Code, there are chances you will not be a good student anyway.
+
+But if you are known to the team, if we have seen you at work, we will probably want you as our student.
+
+=> ../files/old/balancoire3.jpg Jump from a swing
+
+#### Initiative
+
+Never send an email to a possible mentor vaguely asking what to do. We want to see initiatives. Try to find a mentor several weeks before the proposal period. Come with a well structured idea and ask for a critical review of your project. Seek critics, not advices.
+
+When the submitting time start, immediately post your proposal. Don’t wait. You will always be able to correct or edit your proposal. You will immediately get feedback from mentors so don’t waste time trying to get private feedback before posting.
+
+Also, in the first days, there’s usually few proposals posted. Mentors take time to review them and post comments. After one week, there could be tenth of proposals and nobody review them all anymore.
+
+#### Multiply your chances
+
+You can post multiple proposals in different organisations, you have nothing to lose doing so. It’s specially interesting if your project could be under different umbrellas. For example, a proposal about a video chat client could be adapted for GNOME, Gstreamer or even XMPP.
+
+#### Conclusion
+
+Being accepted as a GSoC student doesn’t require you to be good enough. You need to convince us that you are the best.
+
+Doing so is never, never, never done by writing an impressive list of skills or telling us that you were the leader of your football team. All we need to see is your code, your idea and your planning skills.
+
+If you were not accepted this year and plan to try again next year, start to code now. Start to learn, start to contribute.
+
+And don’t send me an email asking me what to do. My answer is already written hereabove.
+
+Picture by Seema K K, Mypouss and Fred Dhennin
+
+=> http://www.flickr.com/photos/kkseema/2042946052/ Seema K K
+=> http://www.flickr.com/photos/mypouss/2522291337/ Mypouss
+=> http://www.flickr.com/photos/tontonfredo/3029779051/ Fred Dhennin

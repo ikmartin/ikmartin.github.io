@@ -1,0 +1,93 @@
+# Et si on comptait les voix ? (élections législatives belges 2014)
+=> files/old/vote2.jpg
+
+Et si, plutôt que de se fier aux déclarations ou aux savants calculs par cantons et communautés, on regardait le résultat des élections sous la simple optique du nombre de voix récolté par chaque parti. Tout en gardant à l’esprit que certaines parties du pays vont peut-être être appelées à revoter en raison d’un problème informatique.
+
+Entre 2010 et 2014, le nombre de citoyens belges disposant du droit de vote est passé de 7.767.552 à 8.001.278. On observe principalement un pic au niveau des belges vivant à l’étranger et votant par correspondance qui passe de 19.259 à 89.581. Une augmention globale du nombre de votant de 3%.
+
+Si on supprime l’absention, les votes blancs et les votes nuls, le nombre de votes valables aux élections fédérales passe de 6.527.367 à 6.745.059. Une augmention de 3,3%.
+
+On peut donc en déduire que, pour rester stable, un parti doit voir son nombre total de votes croître de 3,3%.
+
+=> ../files/old/resultats.png 
+
+Source : résultats officiels
+
+=> http://elections2014.belgium.be/fr/cha/results/results_tab_CKR00000.html résultats officiels
+
+Pour la simplicité, je ne m’intéresserai qu’aux partis ayant fait plus de 20.000 voix sur l’ensemble du pays. Notez également que les chiffres continuent de varier sur le site du ministère.
+
+Du côté flamand
+
+Annoncé comme grand vainqueur, la NVA passe de 1.135.617 voix à 1.366.414. 230.797 nouveaux électeurs qui représentent une hause de 20%. Une belle victoire, en effet.
+
+Mais, dans le même temps,le VB perd 259.048 électeurs et la Lĳst Dedecker en perd 122163. Si on considère le bloc VB-LD-NVA comme un front séparatiste, cela fait 150.755 électeurs en moins. Étrange.
+
+L’OpenVLD gagne 95.453 électeur, une hause de 17%. Le CD&V gagne 74.903, un gain un peu plus modeste mais significatif de 11%.
+
+Groen séduit 72,629 électeurs de plus, ce qui représente une hause de 43% ! En termes de croissance absolue, Groen est donc le grand gagnant de ce scrutin. Le PVDA+ connait lui un gain de 123%. Plus du double d’électeurs ! Mais cela ne lui permet pas de décrocher un siège.
+
+Le seul perdant (si on oublie VB et LD) est le sp.a, qui perd 7677 électeurs, une baisse de 1,3% (malgré, ne l’oublions pas, une augmentation du nombre de votants de 3,3%).
+
+Conclusion : Groen et la NVA peuvent pavoiser, même si cette dernière devrait se poser des questions quand au subtil désintérêt envers le séparatisme. L’OpenVLD, quant à lui, dépasse largement le sp.a et se met à talonner le CD&V.
+
+Du côté wallon
+
+Le MR se présente comme le grand gagnant. Et il est vrai qu’il gagne 44.673 électeurs. Mais cela ne fait jamais qu’une hause de 7%, rien de comparable avec ce qu’on observe chez les partis flamands.
+
+Il faut toutefois préciser que le FDF, auparavant allié du MR, fait 121,403 voix. Le groupe MR+FDF gagne alors 26%. Mais les deux forment-ils toujours un groupe ?
+
+Le PS se targue d’être le grand vainqueur mais il perd 107.378 électeurs, un plongeon de 12% ! En nombre absolu de voix, le PS n’a plus que 15.472 électeurs d’avance sur le tandem MR+FDF !
+
+Même s’il minimise sa défaite en se targuant d’être le 3ème parti, le CDH a également perdu 24.160 électeurs, une chute de 7%. Correction moins sévère que pour le PS mais cependant loin d’être anodine (n’oublions pas que, pour se maintenir, les partis devaient faire +3,3%).
+
+Ecolo perd lui 90.496 électeurs. C’est moins que le PS en valeur absolue mais cela représente une chute de 29%, le plus gros écart.
+
+Le Parti Populaire gagne 19.594 nouveaux électeurs pour une croissance de 22%. En termes absolus c’est bien entendu excellent mais certains observateurs s’attendaient à plus.
+
+Le PTB, quand à lui, séduit 84.786 électeurs en plus. C’est bien entendu énorme en valeur absolue et cela représente une croissance de 175% ! On n’est pas loin du triplement de la base d’électeurs !
+
+Notons que Laurent Louis obtient un score significatif avec 58.056 votants. C’est très loin d’être négligeable même si cela ne fait gagner aucun siège.
+
+=> /laurent-louis-le-depute-pour-qui-personne-na-vote/ Laurent Louis
+
+Conclusion : Le MR, le FDF et le PTB peuvent pavoiser. Le Parti Populaire passe avec succès une épreuve difficile. Par contre, le PS et le CDH sont très clairement en perte de terrain, surtout lorsque l’on sait que ce sont les deux partis avec la plus grande inertie électorale, inertie qui freine probablement leur chute.
+
+Et dans tout le pays ?
+
+Si on s’amuse à comparer les scores des familles on observe que le front séparatiste flaminguant perd 150.755 voix.
+
+Les libéraux gagnent 140.126 électeurs auquels il faut éventuellement rajouter 121.403 électeurs FDF. Les chrétiens en gagnent 50.743.
+
+La famille écologiste perd 17.867 voix et la famille socialiste en perd 115.055.
+
+La droite radicale (VB, LD, NVA, PP et La Droite) perd au total 105.217 voix. Si ce fait est passé assez inaperçu, je le considère comme important et significatif.
+
+La gauche radicale (PVDA, PTB, MG, Front des gauches, MSplus) gagne 153.944 votants.
+
+Pour l’anecdote, les pirates font 23.169 voix en Flandre et 9.849 voix en Francophonie, un total de 33.018 électeurs, un gain de 30.818 par rapport à 2010.
+
+Conclusion : il est extrêmement intéressant de constater que, en dehors des grands effets d’annonce, une majorité de la population modérée abandonne clairement le centre gauche (socialistes, écologistes et, chez les francophones, humanistes) pour se tourner vers un centre droit à tendance libérale.
+
+On observe l’effet exactement inverse chez les votes radicaux, qui délaissent la droite radicale pour la gauche radicale.
+
+Cette tendance est confirmée par une analyse en profondeur des petits partis : Wallonie d’abord passe de 36.642 à 11.226, le FN, renommé Nation, passe de 33.591 (et 11.553 pour une dissidence FN+) à 10.226. Même le Rattachement Wallonie France passe de 35.743 à 7.396. On observe également la disparition d’un grand nombre de groupuscules d’extrême droite qui ne sont pas réellement remplacés.
+
+Au final
+
+=> ../files/old/parlement.png 
+
+Source : résultats officiels
+
+=> http://elections2014.belgium.be/fr/cha/seat/seat_CKR00000.html résultats officiels
+
+Mon interprétation personelle, si on fait fi de tout jeu politicien, est que le belge veut un gouvernement fédéral de droite libérale (NVA, CD&V, OpenVLD, MR et éventuellement le CDH mais il n’est pas nécessaire) avec une opposition forte à gauche (Socialistes, écologistes et PTB). Je ne peux m’empêcher de penser qu’une cure d’opposition serait une excellente chose pour le parti socialiste qui, quand il est au pouvoir, me semble parfois plus économiquement à droite que bien des libéraux.
+
+Bien sûr, tout ceci présuppose que les élections ont réellement un sens. Ce qui n’est pas garanti. Je vous invite à lire le livre de David Van Reybrouck à ce sujet et à imaginer, peut-être, d’autres formes de démocratie.
+
+=> http://www.librairiepax.be/9782330028206-contre-les-elections-david-van-reybrouck/ le livre de David Van Reybrouck à ce sujet
+=> /999-jours-sans-gouvernement/ d’autres formes de démocratie
+
+Photo par European Parliament.
+
+=> https://www.flickr.com/photos/european_parliament/3604121362/in/photostream/ European Parliament

@@ -1,0 +1,77 @@
+# Offpunk et cyberpunk : le texte et la voix
+
+J’ai le plaisir de vous annoncer deux sorties dans deux domaines complètement différents : la version 1.0 du logiciel Offpunk, le navigateur web/gemini déconnecté que je développe et la version audiolivre de Printeurs, mon roman cyberpunk.
+
+## Printeurs, la version audiolivre
+
+=> ../files/old/printeurs_cd.webp 
+Printeurs – version CD
+
+J’aime beaucoup lire à haute voix, déclamer, changer d’intonation pour interpréter les différents personnages. Mais en faisant un test avec le producteur d’audiolivres Voolume, j’ai très vite réalisé mes limites. L’exercice est épuisant et demande une expérience particulière.
+
+C’est la raison pour laquelle nous avons fait appel au comédien Loïc Richard avec qui ce fut un plaisir d’échanger. J’ai pu lui confier ma vision des personnages, lui révéler des petits secrets qui n’apparaissent pas dans le livre, mais qui m’ont guidé pour les faire agir.
+
+À la première écoute, un frisson m’a parcouru l’échine. C’était bien mon texte, mes personnages, mais ils semblaient s’être émancipés, avoir acquis une vie propre sous la voix de Loïc. J’adore ! Merci Loïc !
+
+Tout ça pour dire que l’audiolivre Printeurs est disponible sur Voolume et bientôt sur toutes vos plateformes centralisées propriétaires, que je vous le conseille chaudement. Si vous souhaitez vous passer d’intermédiaire et obtenir des MP3 sans DRM, je vous encourage à pousser un peu mon éditeur pour les rendre disponibles sur son site.
+
+L’avantage des MP3, c’est que ça se partage sur clé USB ou par… comment ? Bitruisseau ? Bitrivière ? Bitcascade ? Bref, un truc du genre, mais le contrôle de cerveau de mon éditeur m’empêche de me rappeler du nom exact.
+
+Lien voolume: https://voolume.fr/catalogue/sf-et-fantasy/printeurs/
+Le site du comédien Loïc Richard: https://www.loicrichard.com/
+Commander Printeurs version papier ou epub: https://pvh-editions.com/shop/38-printeurs
+
+=> https://voolume.fr/catalogue/sf-et-fantasy/printeurs/%20 https://voolume.fr/catalogue/sf-et-fantasy/printeurs/
+=> https://www.loicrichard.com/ https://www.loicrichard.com/
+=> https://pvh-editions.com/shop/38-printeurs https://pvh-editions.com/shop/38-printeurs
+
+## Offpunk, le navigateur déconnecté pour le smolnet
+
+On reste dans le cyberpunk, mais on passe au texte écrit en vert sur un écran noir clignotant.
+
+Sur le web, chaque site est devenu une véritable application qu’il faut apprendre à utiliser, réapprendre à chaque mise à jour, contre lequel il faut lutter pour ne pas être envahi de publicité ni espionné. Quant au contenu ? Il faut généralement se dépêtrer de tout ce qui l’entoure pour le trouver. Certains navigateurs disposent d’un mode « readability/lecture » qui permet de n’afficher que le texte de l’article. Un énorme effort d’ingénierie pour défaire l’effort d’ingénierie de ceux qui ont programmé le site en question. Souvent pour se rendre compte que la valeur du contenu nu est faible voire nulle. Avez-vous déjà réalisé que ce magnifique « thread » de 37 tweets que vous avez lus tweet par tweet n’est, une fois imprimé, qu’un assemblage maladroit de phrases mal agencées contenant très peu d’information de valeur ?
+
+Parmi les programmeurs, les bidouilleurs, les amateurs de texte brut et autres geeks, une fronde se met en place contre cette complexité et hypercommercialisation d’un web où la seule manière d’exister est de passer dix fois plus de temps à promouvoir son contenu qu’à le créer, où l’objectif n’est plus de communiquer, mais de soutirer des données et d’augmenter le nombre de clics.
+
+Le nom de cette fronde ? Il n’est pas officiel, bien entendu, mais la bannière « smolnet » revient souvent (avec des variantes comme « small web » ou le très ironique « slow web »). Ce qu’on trouve sur le smolnet ? Des blogs personnels et minimalistes sans publicités ni statistiques (se retirant parfois volontairement des moteurs de recherche), des contenus disponibles par RSS. Des capsules de texte disponibles sur le protocole Gemini (voire sur l’ancêtre du web, le vénérable protocole Gopher), des podcasts directement accessibles au format MP3. Certains incluent également les réseaux décentralisés comme Mastodon dans le smolnet.
+
+Passionné par la mouvance, mais étant essentiellement déconnecté, j’ai créé un navigateur dédié au smolnet: Offpunk, dont je vous annonce la version 1.0, première version stable et mature.
+
+=> ../files/old/screenshot_offpunk2-600x332.png 
+Capture d’écran d’Offpunk sur un site Gemini
+
+Offpunk est un logiciel en ligne de commande : pas de souris, pas de raccourcis clavier. Chaque action correspond à une commande.
+
+Par exemple, la commande « go gemini://rawtext.club/~ploum » va vous afficher ma capsule Gemini. Sur celle-ci, chaque lien est représenté par un chiffre. Il suffit de taper ce chiffre pour suivre le lien. Puis de taper « back » (ou « b ») pour revenir à la page précédente.
+
+Mais comment faire si plusieurs liens sont intéressants ? Nous allons les ajouter à un « tour », une liste de liens que l’on souhaite lire. Par exemple : »tour 5 6 8-11″ (ce qui comprend automatiquement le 9 et le 10). Pour visiter la prochaine page dans le tour, il suffit de taper « tour » tout seul (ou « t »).
+
+Cela parait un truc de geek, mais j’y trouve, au contraire, une simplicité reposante. Bon, après, je suis un geek qui s’est mis à Linux parce qu’il regrettait la ligne de commande DOS de son enfance.
+
+Offpunk permet de visiter les pages Gopher, Gemini et Web de cette manière. Les pages web sont optimisées pour n’afficher que le contenu sans menus, publicités et autres. Offpunk permet également de s’abonner au flux RSS d’une page web avec la commande « suscribe ». Tout nouvel élément dans un flux sera immédiatement ajouté au prochain tour.
+
+=> ../files/old/screenshot_offpunk1-600x332.png 
+Capture d’écran d’Offpunk affichant une page web avec une image
+
+La grande particularité d’Offpunk est que tout cela peut se faire de manière déconnectée ! Les contenus sont conservés sur le disque dur de manière permanente. Il suffit de lancer périodiquement la commande « sync » (depuis Offpunk ou en ligne de commande) qui va télécharger et ajouter à votre tour les contenus que vous avez demandés, mais qui n’étaient pas disponibles. Sync va également rafraichir les flux et autres pages auxquelles vous êtes abonnées pour peu que vous donniez une fréquence de rafraichissement (« sync 3600 » va rafraichir toutes les pages qui ont plus d’une heure).
+
+Tous les contenus, quelle que soit leur origine, s’affichent donc identiquement comme du texte dans votre terminal. C’est très confortable et permet de se concentrer sur le sens des mots plutôt que sur leur emballage. Ce qui n’est pas toujours à l’avantage des contenus, il faut le dire. L’accès déconnecté permet également de classer les contenus en listes, de les organiser, de prendre des notes au sein de ces listes. La commande « help » vous permettra d’explorer toutes les fonctionnalités d’Offpunk.
+
+Le logiciel fonctionne tellement bien que j’en viens à me demander si on est vraiment déconnecté quand on utilise Offpunk. Pour répondre à une déconnexion stricte, mon cerveau tordu a réussi à me faire programmer un logiciel qui me permet d’être connecté… tout en étant déconnecté. J’avoue ne pas l’avoir vu venir, ne croyant au départ utiliser le logiciel qu’occasionnellement pour télécharger un lien que j’aurais reçu par mail. Une fois encore, mon cerveau m’a roulé dans la farine pour satisfaire son addiction !
+
+Mais je vous laisse tester vous-même !
+
+Installer et tester Offpunk requiert, pour le moment, un ordinateur sous Linux ou BSD et de savoir télécharger et lancer un script Python, mais, comme il s’agit d’un logiciel libre, j’espère que d’autres le rendront disponible plus simplement à travers des paquets. La commande « version » est utile pour voir si certaines bibliothèques sont manquantes sur votre ordinateur, réduisant les fonctionnalités. Mais le mieux est d’utiliser « help » pour voir la liste de commandes possibles.
+
+Offpunk, site officiel: https://notabug.org/ploum/offpunk/
+Ma présentation de Gemini: https://ploum.net/gemini-le-protocole-du-slow-web/
+
+=> https://notabug.org/ploum/offpunk/ https://notabug.org/ploum/offpunk/
+=> /gemini-le-protocole-du-slow-web/ https://ploum.net/gemini-le-protocole-du-slow-web/
+
+Mon gemlog: gemini://rawtext.club/~ploum/
+
+Quelques gemlogs francophones pour démarrer sur Gemini:
+
+gemini://unbon.cafe/
+gemini://français.lanterne.chilliet.eu/

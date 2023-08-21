@@ -1,0 +1,89 @@
+# Pour la fondation « Ploum on t’aime », je fais un don de ….
+
+Wake up late. Pulled mail… Aujourd’hui, je m’emmerde grave, j’ai fumé un joint…
+
+Ouais, lamentable. J’ai toujours considéré les blogs et la mode des blogs comme la télé réalité du web : du vide, du vide et encore du vide. Pourtant tout le monde trouve ça génial, certains y voient une forme de journalisme. On a tous nos emmerdes, nos bonheurs dans la vie et si il y’a bien une chose dont je n’ai rien à faire, c’est la vie des gens que je ne connais pas. Mes petits bonheurs à moi me suffisent, mes emmerdes aussi d’ailleurs. Où est le rêve ? Où est la poésie bordel ?
+
+=> ../files/old/computers.jpg 
+Le web-réalité : ce soir je serai la poubelle…
+
+Waa l’aut’ ! Il crache sur la main qui le nourrit ! Ouais, je reconnais, c’est un peu facile. Mais parfois, il faut savoir se mettre en question. Quel est le but d’un blog finalement ? Et puis, faut arriver à raconter des conneries assez grosses sur la première page pour que les visiteurs aient envie de lire la suite.
+
+Je trouvais les blogs inintéressants. J’avais juré que je n’aurais jamais de blog. D’ailleurs, j’en profite pour jurer solennellement que jamais un lecteur de ce blog ne sera assez fou pour m’offrir l’intégrale DVD des Monty Pythons. (ben quoi, on peut essayer…) Ne m’intéressant pas à la vie des autres, je ne vois pas en quoi la mienne pourrait intéresser. La communauté des blogs, la blogosphère, me fait bien marrer. Chacun raconte sa petite misère et va lire celle de son voisin afin de faire monter ses statistiques.
+
+=> ../files/old/boxing_gloves.jpg 
+Mais euh.. Frappez pas tout de suite !
+
+J’ai légèrement changé d’avis le jour où j’ai découvert le Standblog. Enfin un blog intéressant que je prenais plaisir à consulter et qui m’a fait installer pour la première fois un lecteur RSS. Je me suis posé la question: pourquoi le standblog est-il intéressant ? En quoi est-il différent ? La réponse est simple : Tristant Nitot est, la majorité du temps, purement informatif. Certes, il y rajoute son style inimitable, il n’arrête pas d’être positif, de remercier les gens, de raconter à quel point tout est génial. C’est bien simple, Tristan semble vivre entouré de gens épatants et on sent dans ses informations un enthousiasme ultra-communicatif. De plus, le sujet assez strict de son blog (Les standards du web, c’est pas d’un romantisme à tomber, il faut le reconnaître…) l’empêche de trop dévier de son sujet et de se répandre dans des histoires de coeur. Bref, un blog utile, qui met de la bonne humeur dans la journée tout en restant informatif. Le Standblog ne dévie-t’il jamais ? Et bien si, avec une pondération toute calculée qui la rend justement savoureuse : écologie, bons restaurants, … Tristan parle très peu de ce qui ne concerne pas les standards mais du coup, quand ça arrive, on a l’impression d’être dans la confidence, de parler à un vieux copain. C’est bien simple, Tristan Nitot semble être le beau-frère dont tout le monde rêve[1] !
+
+=> http://standblog.org/ Standblog
+
+L’idée d’un blog avec un thème qui me serait spécifique, qui serait ma spécialité, m’est alors apparu. Enfin, ma seconde spécialité après les vannes industrielles[2] : l’évangélisme Open Source. Evangeblog ! ça aurait donné non ?
+
+Mais tout le monde n’a pas le clavier de Tristan Nitot et je ne suis pas sûr que j’eusse été capable de relever un défi d’une telle ampleur. Trop prétentieux.
+
+Second contact avec les blogs : PlanetGnome, la réunion des blogs des développeurs Gnome. Et pourquoi est-ce intéressant ? Car ça parle majoritairement technique, les idées fusent, c’est le temple de la créativité ! Et si ça parle aussi famille, sortie, vie réelle, c’est après tout très normal : ces dizaines de développeurs talentueux travaillent ensemble sur un projet magnifique mais séparés l’un de l’autre par des océans[3]. Pas de machine à café où discuter d’une idée ou du mariage prochain d’untel. Les planet (debian, openoffice, jabber, …) sont donc les machines à café des projets OpenSource. Des machines à café publiques où chacun est libre de s’asseoir et d’écouter. Génial ! J’adore l’OpenSource. 🙂
+
+=> http://planet.gnome.org PlanetGnome
+
+=> ../files/old/cafe.jpg 
+Planet, les machines à café de l’Open Source
+
+Bon, finalement, les blogs, ça peut être très bien. J’en suis d’autant plus convaincu quand mon ami Beber lance le sien. J’aime beaucoup lire les blogs des gens que je connais personnellement (la liste des copains, à gauche). C’est d’ailleurs le même Beber qui m’a convaincu d’ouvrir un blog. Faut dire que toutes les conneries que je poste mainentant sur ce blog, je les lui envoyais par mail…
+
+=> http://beber.frimouvy.org Beber
+
+Et donc, voici trois semaines, je lançais ce blog, à titre d’essai. Je m’étais fixé un objectif : apporter quelque chose de nouveau. Nul besoin d’un enième blog comme les autres. En gros, je voulais que ce blog soit utile, même si ça devait être dans la connerie. Et mine de rien, c’est difficile…
+
+=> http://frimouvy.org/albums/?displaypic=waldo_bust.gif&amp;non_lr= 
+
+Je constate avec satisfaction que j’ai quand même parlé d’évangélisme dans mon blog, et cela restera sans doute le sujet principal. J’ai même connu mon heure de gloire le jour de la sortie de Firefox 1.0, en vivant en direct la mise à mort de mon serveur par une horde enragée de linuxférien et de slashdotteurs empressés de lire ma prose[4]. J’ai même eu droit a un lien dans un billet de Tristan Nitot, je peux mourrir en paix 🙂
+
+=> http://standblog.org/blog/2004/11/10/93113784-ninstallez-pas-firefox un billet de Tristan Nitot
+
+Mon billet sur firefox a été référencé sur des dizaines de forums, traitant de tous les sujets (ça va de la communauté virtuelle aux supporters de l’équipe de foot du bled à 20km de chez moi en passant par les auteurs de bande dessinées amateurs). La fameuse blogosphère m’a chaudement accueilli, moi le petit nouveau, en me citant dans presque chaque blog ayant parlé de la sortie de Firefox. Plusieurs fois par jour, des gens arrivent sur mon blog en cherchant sur google à « ploum », « ploum ubuntu » voir « crack universalis » (à mon avis, celui-là a été déçu 😉 ). J’aime particulièrement tout ceux qui cherchent à « leçon de drague ».
+
+Sur des forums, j’ai vu des gens dire des phrases genre « ce ploum est vraiment trop fort », ce qui fait rudement plaisir, pas de fausse modestie. Plusieurs centaines de sites ont repris mon texte, et quelques rares personnes s’approprient même la paternité du texte (ou laisse planner le doute) dans des forums pour en recevoir les félicitations. J’en suis d’autant plus flatté ! Et après tout, cela continue à répandre Firefox, ce qui est le but recherché…
+
+=> http://www.google.be/search?q=Error+dll+in+0x863a5c9&amp;hl=fr&amp;lr=&amp;client=firefox&amp;rls=org.mozilla:en-US:unofficial&amp;filter=0 ont repris mon texte
+
+J’ai aussi découvert pas mal de blogs intéressants. J’ai même ajouté l’excellent Play::Myblog et ses astuces pour Ubuntu à mon lecteur RSS !
+
+=> http://gfabio.blog.free.fr/ Play::Myblog
+=> http://gfabio.blog.free.fr/?2004/10/28/63-ubuntu-evolution-et-correction-orthographique astuces pour Ubuntu
+
+De cette expérience, j’ai tiré énormément de choses. D’abord, du point de vue de l’évangéliste :
+
+1. L’humour est une arme à double tranchant et n’est pas universelle. Beaucoup trop de personnes réagissent en prenant le texte au premier degré. Dans la majorité des « repompes » ou des liens, le posteur initial prévient que c’est à prendre au second degré. Moi, c’est un peu le contraire donc prévenez moi quand vous postez un truc sérieux pour pas que trouve ça rigolo.
+2. Les gens qui réagissent mal face au texte et défendent Internet Explorer becs et ongles se font traiter de vieux réactionnaires. Avec amusement, on peut voir tout un forum s’acharner sur le pauvre défenseur de IE qui prétend n’avoir jamais eu ni plantage, ni virus, ni spyware. C’est avec un plaisir énorme que j’ai vu des gens réagir au texte en disant : « C’est vrai qu’il est drôle ce texte. Allez, je l’essaie votre Firefox… »
+3. Maintenant qu’une alternative existe, la majorité des utilisateurs prétendent soudainement n’avoir jamais eu de plantage ni de problème avec IE. A croire que c’est une légende inventée par quelques linuxiens barbus. Ceux qui essaient Firefox lui trouve soudain plein de défauts que IE n’a pas. N’essayez pas de raisonner, c’est normal ! N’avez-vous jamais entendu vos voisins se plaindre du temps dégueulasse, vous parler avec délice des spécialités espagnoles mais qu’on ne trouve que là bas puis, les ayant croisés par hasard en vacances dans un hotel sur la Costa Brava, vous les entendez se plaindre de la chaleur étouffante, de la nourriture qui n’est quand même pas comme chez nous. C’est l’être humain et on est tous comme ça[5].
+4. Le nombre de mes visiteurs sous Internet Explorer est passé de 8%à 16%. C’est vraiment une bonne chose car, les linuxiens sous Epiphany, plus besoin de les convaincre ;-). Alors j’espère j’aurai convaincu quelques uns des 2000 utilisateurs d’Internet Explorer tombés sur ce blog[6].
+
+Mais la plus grand expérience est sans doute d’un point de vue humain.
+
+1. Même les plus têtus peuvent changer d’avis. Si j’ai changé d’avis sur les blogs, vous convaincrez sans peine votre patron de passer toute la boite à Firefox.
+2. J’ai vécu intensément la sortie de Firefox 1.0, j’ai vécu deux heures de fou (alors que Tristan Nitot vivait ça à une autre échelle ) à tenter de préserver mon serveur tout en répondant sur les forums, je me suis extrèmement bien amusé. Merci les copains et les développeurs de Firefox pour le fun 🙂
+
+Mais la fierté de voir 10.000 personnes lire mon blog le même jour (sans laisser de commentaires, ou si peu) est tellement puérile. Cette joie est tellement insignifiante face au bonheur qui m’a envahit lorsque la plus belle fille du monde m’a proposé un café le lendemain.
+
+=> http://standblog.org/blog/2004/11/09/93113782-une-journee-de-fou-dans-une-vie-de-dingue Tristan Nitot vivait ça à une autre échelle
+
+En conclusion, je vous le demande à vous tous : Ce blog est-il utile ? Dois-je continuer de cette façon ? Poster plus d’épisodes de la vie des moules ? Poster moins souvent ? Y’a t’il des gens abonnés à mon blog ? Bref, l’expérience m’a semblé très intéressante, mais que pensez vous d’une éventuelle continuation ? Y a t’il des choses que je devrais aborder ici à votre avis ? Seriez-vous prêt à ce que je poste ici des trucs plus anciens, à titre d’archives ?
+
+Postez-moi votre avis. Rien ne dit que je le suivrai, je fais généralement toujours un peu ce que je veux, mais pour un clown, c’est toujours gai d’avoir un public.
+
+Quoiqu’il en soit, merci pour l’accueil que vous avez fait à mon petit coin de web (vous avez lu au moins ce billet, cela mérite respect), et n’oubliez pas que prudence et attentivité sont les mamelles de tout bon conducteur. Bonne route!
+
+#### Notes
+
+[1] Ce qui ne veut pas dire que je veuille me marier, je précise !
+
+[2] Ploum, vannes et lourdeurs de père en fils depuis trop longtemps
+
+[3] ou par une dizaine de mètres. Mais pour la fainénantise des geeks, cela ne change rien au principe
+
+[4] Ils étaient alléchés par des liens accrocheurs et ne savait pas ce qu’ils allaient lire, je précise
+
+[5] En tout cas vous. J’ai pas encore la preuve que le Ploum ne soit pas une entité virtuelle, un générateur de lourdeur égaré sur le réseau
+
+[6] Non non, ça fait pas mal de tomber sur un blog. ça m’arrive tout le temps

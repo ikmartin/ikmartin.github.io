@@ -1,0 +1,48 @@
+# Gpager 0.3 « Scenes From a Memory – Finally Free »
+
+Gpager is a GPLv2 libwnck pager that just float on your desktop, allowing you to do anything you were doing with you panel pager but bigger and stronger.
+
+Back in 2005-2006, my good friend Patrick Rácz developed a small pager for the GNOME desktop. Since then, I’ve been an happy user of this little application, recompiling it with every Ubuntu release. In fact, I just cannot live without it anymore.
+
+We thought that it might be helpful to other and, for years, we said : « we should publish it ». Today, after fixing some small bugs, I’m proud to announce the release of Gpager 0.3 « Scenes From a Memory – Finally Free ». I created a Launchpad project and even an Ohloh page.
+
+=> http://edge.launchpad.net/gpager/trunk/0.3/+download/gapger_0.3.tar.bz2 Gpager 0.3
+=> https://edge.launchpad.net/gpager Launchpad project
+=> https://www.ohloh.net/p/gnomepager Ohloh page
+
+=> ../files/old/gpagerbig.png GPager 0.3 with human theme
+
+Using Gpager is really simple :
+
+* launching it by typing « gpager ». It could be done at start in the gnome-session-properties.
+* move it by drag-n-dropping with the middle click.
+* resize it by drag-n-dropping with the right click.
+
+Pager properties have to be set independently in gconf or by adding a pager to a panel and going in its properties menu (not really handy, I admit).
+
+Dedicating already a lot of time to Getting Things GNOME!, I do not have any plan to further develop Gpager. But I will gladly merge patches or solve small bugs that might be reported.
+
+=> http://gtg.fritalk.com Getting Things GNOME!
+=> https://bugs.edge.launchpad.net/gpager might be reported
+
+Testing gpager from trunk is a simple matter of :
+
+=> https://code.edge.launchpad.net/gpager trunk
+
+* bzr branch lp:gpager
+* cd gpager
+* ./autogen.sh
+* make
+* ./src/gpager
+
+Alternatively, you can download 0.3 tarball.
+
+=> http://edge.launchpad.net/gpager/trunk/0.3/+download/gapger_0.3.tar.bz2 download 0.3 tarball
+
+I’m open to any suggestion and I really hope to see something similar to gpager in gnome-shell.
+
+=> https://bugzilla.gnome.org/show_bug.cgi?id=596602 gnome-shell
+
+Packages for Ubuntu Karmic are available in the PPA.
+
+=> https://edge.launchpad.net/~gpager/+archive/ppa the PPA

@@ -1,0 +1,90 @@
+# Open Discussion Day this Saturday May 19th – Just take off !
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=6824 
+=> ../files/old/ballon1.jpg Take off with Open Discussion Day
+
+This Saturday will be the 2nd Open Discussion Day. For one day, we will all try to only communicate with open protocols and file formats. It’s the perfect day to test your dependency to closed solutions. Ask yourself : will I be able to open all my documents in 2, 5 or 10 years ? If I need to change my system tomorrow, will I be able keep my datas and be able to communicate with the world ?
+
+=> /2006/04/06/103-may-19th-the-open-discussion-day-19-mai Open Discussion Day
+=> http://odd.fritalk.com/en/what_is_a_protocol open protocols and file formats
+=> http://odd.fritalk.com/en/important your dependency to closed solutions
+
+=> ../files/old/odd_logo.png Logo OpenDiscussionDay
+
+‘Ce samedi est la deuxième Journée de la Discussion Ouverte (Open Discussion Day). Durant une journée, nous allons tous essayer de communiquer qu’en utilisant des protocoles et des formats de fichiers ouverts. C’est aussi une bonne occasion pour tester sa dépendance envers les solutions fermées et propriétaires. Demandez-vous : vais-je pouvoir ouvrir mes documents dans 2, 5 ou 10 ans ? Si je dois changer mon système informatique demain, pourrais tout récupérer et continuer à communiquer avec le reste du monde ?‘
+
+=> /2006/04/06/103-may-19th-the-open-discussion-day-19-mai Journée de la Discussion Ouverte
+=> /39-jabber-pour-marie-et-les-non-ordinateuriens protocoles et des formats de fichiers ouverts
+
+Digg this – Scoopez cet article – On Slashdot
+
+=> http://digg.com/software/2nd_Open_Discussion_Day_this_May_19th_2 Digg this
+=> http://www.scoopeo.com/internet/seconde-journee-de-la-discussion-ouverte-ce-19-mai Scoopez cet article
+=> http://slashdot.org/firehose.pl?op=view&amp;id=169617 On Slashdot
+
+### Concretely – Concrètement
+
+For one day, we will use only open protocols like e-mail, Jabber, Google Talk, SIP (using Ekiga, OpenWengo, Gizmo, …). It means that Windows Live Messenger (MSN), Skype, AOL, ICQ, Yahoo must remain closed. Of course, tell it to your contact on those closed networks and explain them that you will be offline for one day. And, why not, they can create an account on an open network so they can talk to you.
+
+=> http://en.wikipedia.org/wiki/Jabber Jabber
+=> http://www.google.com/talk/ Google Talk
+=> http://ekiga.org/ Ekiga
+=> http://www.openwengo.org/ OpenWengo
+
+=> ../files/old/TRA2.jpg Translator
+
+‘Durant une journée, nous n’utiliserons que des protocoles ouverts comme le courriel, Jabber, Google Talk, SIP (avec des logiciels comme Ekiga, OpenWengo, Gizmo, …). Cela signifie que Windows Live Messenger (MSN), Skype, AOL, ICQ, Yahoo doivent rester fermer. Avertissez donc vos contacts sur ces réseaux fermés et expliquez leur pourquoi vous serez non connecté durant une journée. Et, pourquoi pas, ils peuvent bien sûr créer un compte pour vous rejoindre sur un réseau ouvert.‘
+
+=> http://jabberfr.org/ Jabber
+=> http://www.google.com/talk/ Google Talk
+=> http://ekiga.org/ Ekiga
+=> http://www.openwengo.org/ OpenWengo
+
+If you receive a document in a closed format (like .doc, .ppt, .wma, .wmv), reply politely asking for a version of that document in an open format (.odt, .odp, .pdf, .txt, .ogg). Don’t be rude ! Just tell them that it’s the Open Discussion Day and that you don’t accept document in a closed format this particular day.
+
+=> http://en.wikipedia.org/wiki/OpenDocument .odt
+=> http://www.gnu.org/philosophy/no-word-attachments.html don’t accept
+
+=> ../files/old/swallow.jpg Swallow carrying an attachement
+Is a coconut open enough to send it as an attachment ?
+
+‘Si vous recevez un document dans un format fermé (comme un .doc, .ppt, .wma, .wmv), répondez poliment en demandant une version du document dans un format ouvert (.odt, .odp, .pdf, .txt, .ogg). Rien ne sert d’être grossier ! Prenez juste la peine de leur expliquer que c’est l’Open Discussion Day et que vous n’acceptez pas les documents dans un format fermé ce jour particulier.‘
+
+=> http://fr.wikipedia.org/wiki/Open_document .odt
+=> /141-les-10-logiciels-indispensables-sous-windows .ogg
+=> http://www.gnu.org/philosophy/no-word-attachments.fr.html n’acceptez pas
+
+### Join the fun ! – Rejoignez-nous !
+
+=> ../files/old/ballon2.jpg Take off with the Open Discussion Day
+No need anymore to worry « will I be able to open my datas ? » each time you upgrade your computer. No need to explain that your friend cannot open your file because he has the 6.5 version of the software but you have the 2000 one. No need to have one new account for each new friend on a unknown network of a big company. Openness is safe, openness is easy, openness is fun, openness is so relaxing. If this May 19th was cool, why not ditch permanently closed protocols and format ? Just take off and enjoy Open Discussion Day all the year !
+
+=> http://pdphoto.org/PictureDetail.php?mat=pdef&amp;pg=6827 
+
+‘Plus besoin de se tracasser « Est-ce que je vais pouvoir ouvrir mes fichiers ? » chaque fois que vous mettez à jour votre ordinateur. Plus besoin d’expliquer à vos amis que si ils ne peuvent pas ouvrir vos superbe diaporama de photos c’est parce qu’ils ont la version 6.5 du logiciel alors que vous avez la 2000. Plus besoin d’avoir un nouveau compte pour chaque nouvel ami sur un réseau tenu par une grande société dont vous ne savez rien. L’ouverture c’est la sécurité, l’ouverture c’est la facilité mais c’est aussi rigolo et relaxant. Si ce 19 mai vous a plu, pourquoi ne pas dire adieu pour toujours aux formats et protocoles fermés ? Foncez et sentez-vous léger en appliquant l’Open Discussion Day toute l’année !‘
+
+The First OpenDiscussionDay in 2006
+The OpenDiscussionDay wiki (join in and translate !)
+Another OpenDiscussionDay wiki (with OpenID support)
+OpenDiscussionDay.com (in french only)
+The Facebook Open Discussion Day Event (invite your contacts!)
+
+=> /107-the-captive-clown The First OpenDiscussionDay in 2006
+=> http://odd.fritalk.com The OpenDiscussionDay wiki
+=> http://odd.schtuff.com/ Another OpenDiscussionDay wiki
+=> http://www.opendiscussionday.com/ OpenDiscussionDay.com
+=> http://www.facebook.com/event.php?eid=2564350790 The Facebook Open Discussion Day Event
+
+### Towel day this May 25th – Journée de la serviette ce 25 mai
+
+=> ../files/old/towel.jpg Towel
+Talking about « Days », in another strictly unrelated news, May 25th is the towel day ! Carry your towel everywhere with you to show the world that you are a true galactic hitchhiker. If someone ask you why you are carrying a towel, just reply that it might be useful if you encounter a Ravenous Bugblatter Beast of Traal. The Ravenous Bugblatter Beast of Traal is a creature that will eat anything. If you are to encounter one you should wrap a towel around your head. This creature is so mind-bogglingly stupid that it assumes that if you can’t see it, then it can’t see you.
+
+=> http://www.towelday.kojv.net/ towel day
+=> http://en.wikipedia.org/wiki/Races_and_species_in_The_Hitchhiker%27s_Guide_to_the_Galaxy#Blagulon_Kappans Ravenous Bugblatter Beast of Traal
+
+=> http://www.facebook.com/event.php?eid=2384503887 The Facebook Towel Day event
+
+‘Ça n’a rien à voir mais tant qu’on est dans les histoires de « journée machin », ce 25 mai sera la journée de la serviette. Emportez votre serviette avec vous partout où vous allez cette journée là. Si jamais quelqu’un vous demande pourquoi vous avez une serviette, répondez que ça peut être utile si vous croisez un hanneton glouton de Tron. Comme c’est très glouton un hanneton glouton de Tron, il va donc vouloir vous manger. Enroulez alors votre serviette autour de votre tête. L’animal est tellement stupide que si vous ne pouvez pas le voir, il pense que lui non plus ne peut pas vous voir et du coup, il ne vous mangera pas. C’est très bête un hanneton glouton de Tron. Très bête mais très glouton.‘
+
+=> http://www.towelday.kojv.net/ journée de la serviette

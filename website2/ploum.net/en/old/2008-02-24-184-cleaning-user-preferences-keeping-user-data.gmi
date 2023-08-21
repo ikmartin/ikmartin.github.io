@@ -1,0 +1,41 @@
+# Cleaning user preferences, keeping user data
+
+Dear GNOME Desktop, I appreciate my new GNOME equation t-shirt and the fact that you care about my choices and preferences. But, could you please care a bit more about what actually is important for me ?
+
+=> http://www.gnome.org 
+=> ../files/old/gnome-equation.png My new tshirt
+
+The problem : I like to keep as near-default configuration for my Gnome desktop. Every 6 months, I simply format my root partition and reinstall Ubuntu with all the packages I need (it’s even quicker than a dist-upgrade). Of course, I keep my /home partition.
+
+And this /home partition is now a complete mess, filled with hidden .folders from every application I ever tried. Because I’ve sometimes played with experimental software, those .folders are filled with craps. Go straight for an example : I cannot use Compiz. I’ve tried to delete all related hidden folders and files, the compiz configuration is still unusable thanks to some well hidden breakage, a probable inheritance of the Beryl times. I’m not a fan of Compiz but it makes me sad to know that there’s something ugly somewhere on my computer.
+
+Unfortunately, this problem is deeper than previously thought. Sometimes, on a fresh install I have bugs not reproducible anywhere else. Sometimes, the maintener of a package feel the need to push a new sensible default. Also, how the hell can we do a correct backup without too much overhead ?
+
+The cause : In fact, the cause is simple. For too long, we (software developers) have happily mixed user preferences and user data.
+
+This can even become absurd. If you carefully backup your .evolution folder, you won’t have any contacts in your address book when you will restore. You can manually check, all the informations are there, in the folder. But Evolution needs a magical-cryptic number. And this number is stored deeply inside the .gconf folder… Right, this is a reported bug but the fact that this kind of thing is even allowed to be a possibility is a breakage in itself.
+
+=> http://bugzilla.gnome.org/show_bug.cgi?id=300940 reported bug
+
+A possible solution : I think that it’s time to clean a bit the desktop. There should be two kind of files in the home folder : user data and preferences. Each application developer should carefully design its application to put thing in one category or in the other.
+
+The concept is fairly easy : if you can’t afford to loose it, it’s an user data. If a usable default exist, it’s a preference. If I restore or reinstall my desktop, I don’t mind if I must re-set my wallpaper, re-choose my favourite gnome applets,re-set the nautilus spatial mode and home-is-desktop options. But I highly care to get my files back, my songs statistics and playlists in Rhythmbox, my emails/contacts/calendars in evolution, my tomboy notes, my bookmarks, my highscores, my rss feeds and my IM contacts. Those are data ! Yes, just like my plain old files. But knowing that I have french spell checking enabled in Gedit and last.fm plugin enabled in Rhythmbox is not.
+
+When you see that your $HOME contains folders called .gnome, .gnome2, .gnome2-private, .gconf, .gconfd, it makes sense to say that things are not so well in shape there. Not to mention applications with their own .folder but that manage to still use gconf.
+
+Having this data/preferences duality would allow to quickly reset default preferences, to backup easily stuffs that matter. I want to be able to synchronise all my data with another computer that uses a different internet connection, a different theme, a different screen resolution.
+
+I hope you understand what I mean, it’s not rocket science, isn’t it ? Such an improvment would be really great with my new green tshirt.
+
+Love,
+
+Ploum
+
+Update : Dear beloved desktop, Fredo pointed me to the corresponding Freedesktop specification. Should I report bug against each application that doesn’t follow fd.o ?
+
+=> http://my.opera.com/freedo/blog/ Fredo
+=> http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html Freedesktop specification
+=> http://bugzilla.abisource.com/show_bug.cgi?id=11452 report bug
+
+=> http://brainstorm.ubuntu.com/idea/6557/ 
+=> http://brainstorm.ubuntu.com/idea/6557/image/1/ Vote for this Ubuntu proposal

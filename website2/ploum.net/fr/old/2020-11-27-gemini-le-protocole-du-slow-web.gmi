@@ -1,0 +1,82 @@
+# Gemini, le protocole du slow web
+=> files/old/Screenshot-2020-11-26-at-21.06.04.png
+
+Les possibilités infinies du HTML ont complexifié le web. À tel point qu’est né Gemini, un protocole dont le but est d’être et de rester le plus simple possible. Un nouveau réseau dédié à ceux qui veulent écrire et lire en ligne. Mais loin d’être un simple réseau, Gemini ouvre également la voie à une véritable mouvance : le slow web.
+
+Les développeurs informatiques savent bien que tout projet finit, un jour ou l’autre, par devenir une sorte de monstre de Frankenstein, une horreur qui fait un peu de tout très mal à un coût très élevé, mais rien de bien. En 2020, force est de constater que c’est exactement ce qui est arrivé au web.
+
+Le moindre site web fait désormais plusieurs mégaoctets, se charge en plusieurs fois rendant impossible toute utilisation sur une connexion instable, déplaçant des éléments de la page au moment où on essaye de cliquer. Le même site appelle des centaines de codes divers ralentissant les ordinateurs les moins puissants, remplissant la RAM, faisant des navigateurs des monstres de complexité.
+
+Je souhaite lire un article ? Encore faut-il qu’il charge correctement puis que je le trouve sur la page, entre des myriades de publicités, des logos, des extraits d’autres articles, des vidéos qui se lancent toutes seules. Pour chaque site, je dois apprendre à utiliser une nouvelle ergonomie. Tout ça pour simplement lire un lien que j’avais naïvement suivi.
+
+Parfois, après avoir paramétré les cookies et accepté les conditions du site (vous vous souvenez, je veux juste lire un article dont j’ai trouvé le lien), je ne trouve aucun contenu. Erreur temporaire ? Ou bien est-ce l’un de mes nombreux bloqueurs (de pubs, de JavaScript, d’avertissements, de trackers) qui a bloqué par erreur le contenu ? Peu importe, hors de question de tout désactiver. Sur le web, comme sur Tinder, il faut sortir couvert. Le web est à ce point complexe qu’il faut s’en protéger comme d’une maladie !
+
+Inutile de se lamenter sur le passé et sur une époque idéalisée où le web était plus simple. Souvenez-vous, nous avions les popups, les gifs animés et les musiques midi dans des frames cachées. Ça ne me manque pas. Constatons tout de même que le web est devenu une couche essentiellement applicative et particulièrement peu adaptée à un usage simple : écrire, publier, partager et lire des textes.
+
+Parmi les geeks, surtout les plus âgés, la recherche du retour au simple partage de texte est une véritable tendance.
+
+=> https://cheapskatesguide.org/articles/beauty-of-text.html https://cheapskatesguide.org/articles/beauty-of-text.html
+
+Certains tentent de regagner une certaine clarté d’esprit et d’indépendance en développant de nouveaux navigateurs web simplifiés, en ne postant plus que du texte brut sur leurs serveurs web ou, au contraire, en reprenant l’habitude de surfer en ligne de commande, voire en se reconnectant sur le vénérable réseau Gopher.
+
+=> http://len.falken.ink/misc/writing-for-the-internet-across-a-human-lifetime.txt http://len.falken.ink/misc/writing-for-the-internet-across-a-human-lifetime.txt
+
+=> https://dataswamp.org/~lich/musings/links-browser.html https://dataswamp.org/~lich/musings/links-browser.html
+
+Si Gopher est simple, mais trop limité et le web trop complexe, peut-être manque-t-il d’une solution intermédiaire ? C’est ce qu’ont pensé les auteurs du protocole Gemini, protocole qui tire son nom des missions astronautiques du même nom qui eurent lieu entre les missions simples Mercury et les missions ultra-complexes Apollo.
+
+La page principale du projet Gemini, à lire pour découvrir et explorer (le protocole est lui-même remarquablement court ) :
+
+=> https://gemini.circumlunar.space/ https://gemini.circumlunar.space/
+
+Si le web permet d’accéder à du contenu HTML via le protocole http://, Gemini permet d’accéder à du contenu Markdown via le protocole Gemini://.
+
+Le markdown est simplifié, car l’objectif de Gemini est clair : ne pas permettre d’étendre le protocole et empêcher tout espionnage des visiteurs. L’utilisateur, surfant via un client Gemini, se contente de lire du texte avec des titres, des sous-titres et des mises en exergue voire des citations. Rien d’autre ! Même les liens sont limités à un seul par ligne.
+
+Pas de couleurs, pas de design, pas de mise en page (et pas toujours d’images). Le seul lien entre un auteur et son lecteur est le texte, le contenu. Au lecteur de faire ses choix pour rendre la lecture la plus agréable possible.
+
+Inutile d’ajouter que je suis absolument conquis par le concept. Mais est-ce que Gemini peut remplacer le web ?
+
+Pas du tout. Ce n’est pas l’objectif. Aveuglés par l’idéal monopolistique rabâché par la Silicon Valley, nous en venons à juger que tout ce qui ne peut pas avoir de monopole est un échec. Notre seule métrique étant l’argent, nous concluons que tout ce qui n’enrichit pas des investisseurs est une perte de temps. Mais, comme Mastodon le fait pour Twitter, Gemini n’a pas pour objectif de remplacer. Simplement de proposer une alternative, un autre type d’espace partagé. Le simple fait qu’être utilisé prouve que ces espaces sont un succès.
+
+=> https://write.as/eloquence/why-mastodon-and-the-fediverse-are-doomed-to-fail https://write.as/eloquence/why-mastodon-and-the-fediverse-are-doomed-to-fail
+
+100% des utilisateurs de Gemini sont aussi utilisateurs du web. Une grande partie des contenus sur Gemini sont également disponibles sur le web classique. Il n’empêche que j’éprouve un plaisir incroyable à lancer Amfora (mon client Gemini en ligne de commande, screenshot en illustration) et à surfer sur Capcom, qui agrège les contenus postés récemment sur le réseau.
+
+=> https://github.com/makeworld-the-better-one/amfora https://github.com/makeworld-the-better-one/amfora
+
+gemini://gemini.circumlunar.space/capcom/ (ce lien est ma page de démarrage dans Amfora)
+
+Comme il est très simple de coder des clients Gemini, le choix est déjà large.
+
+=> https://kwiecien.us/gemini-client-review.html https://kwiecien.us/gemini-client-review.html
+
+On peut accéder à des services comme Wikipédia, Hacker News, Lobste.rs depuis Gemini.
+
+gemini://gempaper.strangled.net/mirrorlist/
+
+J’ai personnellement ressenti deux gros manques : un agrégateur RSS, pour s’abonner à un gemlog (un blog sur Gemini) et un service pour collecter mes lectures (comme Pocket ou Wallabag). Ce dernier manque est cependant intéressant parce que cela me force à lire directement ce que je trouve intéressant, à me concentrer plutôt que papillonner. J’ai d’ailleurs pris le pli de n’utiliser qu’un seul onglet dans Amfora !
+
+Gemini a été conçu pour qu’un codeur moyen puisse développer un serveur et un client Gemini en moins d’une journée (à comparer avec votre client web qui représente des années d’efforts par des milliers de développeurs). Je trouve cependant dommage de ne pas avoir profité de l’occasion pour insister sur la décentralisation. La légèreté du texte permettrait d’imaginer que les contenus ne soient pas stockés sur un seul serveur, mais soient distribués.
+
+Mais, avant toute évolution technique, les auteurs de Gemini insistent sur un point : il faut du contenu. Il y’a presque plus de logiciels liés au projet que de sites Gemini ! Si vous voulez contribuer à Gemini, postez du contenu sur Gemini. Si vous avez un serveur web, n’hésitez pas à lire la documentation pour installer un serveur Gemini (c’est court et simple). Sinon, certains services vous proposent d’héberger votre gemlog.
+
+=> https://gemlog.blue/ https://gemlog.blue/
+
+Ploum.net sur Gemini ? Vous vous doutez bien que cela occupe mes pensées et que je suis en train de réfléchir à la meilleure manière de le faire. Ce ne sera peut-être pas la plus rapide, mais c’est une de mes priorités. Je pense qu’il est nécessaire de développer aujourd’hui de nouveaux réseaux, légers, simples, rapides. Respectueux autant de notre attention que de la consommation électrique. Une espèce de slow web, un internet accessible depuis des connexions très aléatoires et depuis des terminaux e-ink ou du matériel de récupération. Par exemple le téléphone Mudita dont l’OS est open source.
+
+=> https://mudita.com/products/pure/muditaos https://mudita.com/products/pure/muditaos
+
+L’idée de ce slow web me fait rêver. Je vous ai dit dans le billet précédent à quel point j’appréciais l’email. L’email et Gemini sont parfaitement complémentaires et pourraient un jour être suffisants pour se nourrir intellectuellement, ne gardant le web traditionnel que pour l’administratif. Je ne suis d’ailleurs pas le seul à imaginer ce futur.
+
+=> https://kwiecien.us/why-i-love-thunderbird.html https://kwiecien.us/why-i-love-thunderbird.html
+
+Slow web ? Cela fait trop penser à des problèmes de connexion. Il faudrait un mot pour décrire ce concept. Que pensez-vous de Permacomputing ? Mot qui englobe également l’idée de rendre durable toute la chaine qui relie les participants au réseau.
+
+L’idée n’est pas de moi, mais de Solderpunk, le co-créateur du protocole Gemini et auteur d’un gemlog que j’ai découvert au hasard de mes lectures… sur le réseau Gemini bien sûr.
+
+gemini://gemini.circumlunar.space/~solderpunk/gemlog/permacomputing.gmi
+
+Vous l’avez compris, je suis fan. Et impatient que mon blog soit disponible sur ce réseau. N’hésitez pas à me communiquer vos écrits et vos trouvailles sur Gemini !
+
+UPDATE octobre 2021 : j’ai un gemlog sur gemini://rawtext.club/~ploum mais chut, ça reste entre nous.

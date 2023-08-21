@@ -1,0 +1,57 @@
+# Les 10 millions de conducteurs du train magique tueur
+=> files/old/8051906007_9d42074b13_z.jpg
+
+Fermez les yeux.
+
+Imaginez un long train contenant toutes les marchandises transportées durant une année en Europe. Ce train est magique : il part le 1er janvier, roule quelques millions de kilomètres sur une voie sans fin et, automatiquement, toutes les livraisons de l’année sont effectuées dans tous les magasins et usines du continent.
+
+Maintenant imaginez qu’une personne soit couchée sur la voie et empêche le train de passer. Si le train freine, c’est toute l’économie de l’année qui est par terre. Le train doit-il s’arrêter pour sauver la vie de cet individu ? Ou bien, au contraire, la société doit-elle sacrifier une vie pour faire tourner l’économie ?
+
+Aux États-Unis, avec 4000 personnes sur la voie, le train ne s’arrête pas. Et je pense que les chiffres seraient similaires partout dans le monde. 4000, c’est en effet le nombre de personnes tuées chaque année dans des accidents causés par des camions de transport (et, dans la plupart des cas, par une faute humaine du conducteur). Par comparaison, les attaques du 11 septembre qui ont chamboulé le monde et fait dépenser des trilliards en « mesures de sécurité » ont fait… 3000 victimes. Les camions de transport représente à eux-seuls plus d’un 11 septembre chaque année rien que sur le sol américain.
+
+Et si nous avons été hypnotisé par les cadavres du onze septembre, nous ignorons superbement les milliers de morts de la route, les considérant comme d’anonymes tragédies individuelles. Peut-être que si, comme pour le onze septembre, on nous repassait en boucle les images des gens en train de mourir, nous aurions une autre perception de la conduite automobile ? Personnellement, c’est la raison pour laquelle je ne veux plus conduire.
+
+=> /je-ne-veux-plus-conduire/ je ne veux plus conduire
+
+Mais j’ai une bonne nouvelle pour vous : j’ai dernièrement eu l’occasion de m’asseoir au volant d’un camion moderne. Tout est désormais automatisé : le camion anticipe les freinages, surveille la conduite du conducteur, avertit des obstacles et ralentit. De quoi éviter bien des accidents et sauver des vies.
+
+Mieux ! Ce mois de mai 2015 voit la mise en circulation aux États-Unis du premier camion entièrement autonome. Pas de conducteur, pas d’erreur. Comme l’a démontré la Google Car, le remplacement progressif des conducteurs par des intelligences artificielles va drastiquement réduire le nombre de victimes. En plus d’un millions de miles, les Google Cars n’ont en effet connu que 11 accidents mineurs, tous sans exception ayant été causés par une erreur humaine (dans 7 de ces accidents, la voiture s’est fait emboutir par l’arrière alors qu’elle était à l’arrêt).
+
+=> http://www.wired.com/2015/05/worlds-first-self-driving-semi-truck-hits-road/ premier camion entièrement autonome
+=> https://medium.com/backchannel/the-view-from-the-front-seat-of-the-google-self-driving-car-46fc9f3e6088 11 accidents mineurs
+
+Génial, non ?
+
+Il y a juste un petit problème. Il y a 3,5 millions de conducteurs de camion aux États-Unis. Dans son excellent article que je vous encourage à lire, Scott Santens estime qu’avec les motels, les restoroutes et tous les services associés, la conduite de camion représente 10 millions d’emplois.
+
+=> https://medium.com/basic-income/self-driving-trucks-are-going-to-hit-us-like-a-human-driven-truck-b8507d9c5961 son excellent article que je vous encourage à lire
+
+10 millions d’emplois qui vont devenir obsolètes. Ou plutôt qui le sont déjà vu que le camion automatique existe. Un camion qui pollue moins car il peut conduire de manière optimale. Un camion qui allège la route car il peut rouler 24h/24 et donc remplacer 3 camions qui sont forcés de faire des pauses régulières.
+
+10 millions d’emplois qui seront réalisés de manière plus efficace, plus rapide et plus sûre par des intelligences artificielles. 10 millions d’emplois qui sont, chaque année, responsables de 4000 morts.
+
+On pourrait se réjouir sans rien changer à la société. On sauve 4000 vies et on envoie 10 millions de personnes dans la misère. Le revenu actuellement perçu par ces 10 millions de personnes se partagera entre les quelques milliers de veinards qui auront acheté des camions automatiques. Ils vivront dans le luxe en le louant sans réellement rien faire de leur journée, accusant les anciens chauffeurs d’être des paresseux. C’est une possibilité.
+
+On pourrait également lutter de toutes nos forces contre une innovation de toutes façons inéluctable, on pourrait prétendre que rien ne vaut un bon camion manuel conduit par un routier qui sent la sueur. On pourrait tenter de faire passer des lois pour interdire les camions automatiques, permettant à 10 millions de personnes de continuer à faire un travail inutile de creusage et rebouchage de trous tout en tuant 4000 personnes par an. C’est une autre possibilité.
+
+=> /creusez-un-trou/ creusage et rebouchage de trous
+
+Je vous laisse choisir la meilleure.
+
+Ça y’est ? Vous avez choisi votre camp ?
+
+Ne trainez pas car les camionneurs ne sont bien entendu qu’un exemple. Si votre gagne-pain actuel n’est pas encore obsolète aujourd’hui, cela ne va guère tarder. Tout ce qu’un humain peut faire, y compris créer ou inventer, peut ou pourra être réalisé demain par une intelligence artificielle. En mieux, plus rapide et moins cher.
+
+Alors, dépêchez-vous de faire votre choix : allez-vous investir massivement en espérant être parmi les riches et que les pauvres crèveront de faim avant de vous couper la tête ? Allez-vous lutter de toutes vos forces pour empêcher le moindre progrès technologique afin que tout le monde puisse creuser des trous et les reboucher inutilement, même au prix de nombreuses vies humaines ?
+
+Ne pourrait-on pas imaginer une alternative, une troisième voie ? Contrairement aux politiciens, que le manque total de vision cantonne à l’équation emplois = social et donc à la dualité ci-dessus, je suis persuadé qu’il existe bien d’autres voies. Et tout comme Scott Santens, je suis convaincu que le revenu de base est une condition nécessaire à ces alternatives.
+
+=> /le-fatal-amalgame-de-leconomie-et-du-social/ l’équation emplois = social
+=> https://twitter.com/2noame Scott Santens
+=> /pourquoi-vous-etes-sans-le-savoir-favorable-au-revenu-de-base/ le revenu de base
+
+Si vous êtes contre le revenu de base, je vous laisse choisir entre les deux solutions précédentes.
+
+Photo par Daniel Bracchetti.
+
+=> https://www.flickr.com/photos/bracdan/8051906007/in/photolist-dgw88D-caLfGy-dg6PTe-diMe2M-viWVX-bUq4cH-e5sLEx-4JB4zP-ETDsB-drY9jF-e5y8fS-eagn4K-e5GHG7-nCyuk3-9N22Cb-c9VZKh-ciaZNw-dmYcgp-rfY228-bsADkF-drM7Gz-nMvZky-drMfzq-c9wfDd-cdPETy-bVTc4n-4qdCSk-fGQe2-ciaVCf-bUiSiV-e5GHA9-bUY8K2-nWvr8Q-cbF9PS-6ruSWp-vJyyA-qgdKRc-dMXa5z-c9wcH9-ax2LML-nNEitF-8FSLF7-eNMQgx-4NHBpj-qXeWj-drMhJY-nLSQ74-n67GAy-5PWpLJ-CEkVz Daniel Bracchetti

@@ -1,0 +1,12 @@
+# Petite leçon de drague avec Boumcke
+
+ls -l /soirée/filles
+
+dr——– root gabrielle
+ dr——– root sophie
+ dr——– root julie
+ dr——– root chloé
+ dr——– root marie
+
+Merde, j’ai accès à rien…
+ Il faut que je bascule en super-user

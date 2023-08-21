@@ -1,0 +1,82 @@
+# Removing the "packaging cruft" from the web. Or buying without packaging with Gemini.
+
+Have you ever received a parcel or bought an item to realise, once unpacked, that the room was mostly full of packaging? Holding the item in your hand, you thought : "all this crap only for this thing in my hand". Isn’t that feeling similar to reading most modern webpage? 
+
+After releasing Offpunk 1.0 and announcing it on my blog, I started to fear having released it with a huge bug that would prevent first-time users to even start the software. Breaking my disconnection rule, I started to watch my inbox several times during that day.
+
+There was two crashes reported but also a few strange feedback from people which were obviously not Gemininauts. Intrigued, I connected my laptop and did a Google search for "offpunk gemini". I don’t like Google but I know it has a recency bias which allow spotting very recent webpages.
+
+To my surprise, the first page of result was full of unknown links that led to gibberish contents. For most of them, the content was the Offpunk README but completely distorted. In one occurrence, I understood that the content was machine translated forth and back. In another instance, some sentences from other texts were clearly randomly inserted. Other links were visibly pointing to proxied versions of my gemlog but those proxies were returning errors. There was even a YouTube video showing Offpunk website with a computer voice reading it in its entirety.
+
+On the ninth link of the first page, I understood. Offpunk was on Hacker News front page. During my scheduled daily connection, I had posted Offpunk page on Lobste.rs, thinking it would interest the crowd there (which was not, fair enough). But someone cared enough to post on HN and it reached the first page.
+
+Watching votes and comments had a hypnotic effect on me and I forgot about my disconnection to start reading other articles on the front page. 
+
+They were boring. 
+
+Really.
+
+The best upvoted article for that day was a kind of short, Linkedinesque blog post about "not talking about problems but about opportunities". (I used to say that farting on a RJ-45 cable usually produces better output than anything found on Linkedin but that’s for another story).
+
+It was all crap.
+
+Which consumed my time anyway.
+
+I then made the connection with packaging. On the modern web, all the attention is on the packaging. Putting more and more appealing packaging around anything. Gemini is a network where people exchange directly, cutting down the packaging to nearly nothing. When I built Offpunk, I tried to make a tool that would remove the web packaging and access directly the content.
+
+Is all web content crap? In Offpunk, when I’ve finished reading an interesting item, I archive it. Offpunk keeps the last 200 archived items by default.
+
+In Offpunk:
+> list archives
+> !wc -l
+201
+> !grep http|wc -l
+141
+
+141 http content and 60 gemini content (a surprisingly stable ratio across many months). I’ve currently no gopher content in my archive but, when I’m in the process of reading through a phlog during multiple days, this number will, of course, vary. Nevertheless, it’s clear that I still get most of my content to read from the web. I just forget it’s the web because it looks so much like Gemini.
+
+There’s very good content on the web. But you have to find it in the mountains of garbage. The reason why there’s more and more crap on the web and why finding good content is harder has been theorised in 1970 by economist George Akerlof in a landmark paper called "The market for lemons".
+
+The central idea is that if there’s an information asymmetry in a market, if sellers know more about the product than the buyers, the quality of goods in the market will degrade to the point where only crap is left.
+
+Take our packaged boxes. Suppose sellers selling you closed boxes for 100€ with only a small description. When opening the box, you would sometimes find an item worth 100€, sometimes it would be crap. Knowing the risk, you would not pay 100€ for a box. Maybe 50€ if chances of having a good box are 50/50. The market would drive the price of boxes to 50€.
+
+But sellers, who know what is inside each box, would, of course, stop selling boxes with 100€ items in them. They would cap at 50€. Price will continue to fall until the market is inundated with craps that people keep buying because it is very cheap and there’s still an irrational hope to find a 100€ item.
+
+On the web, we don’t buy. We click. But it is exactly the same thing. Buying is important to sellers because their metric is the money you spend. The metric on the web is the "click" or "user view". It is so important, so obvious that it is nearly impossible to find a website that doesn’t have some statistic tool. It is the first thing any newbie asks when starting a website: "how to install Google analytics". It is also the first question on FLOSS-related forum "what’s the alternative to Google Analytics".
+
+Nobody thinks anymore about selling products but about making boxes that people would want to open. This became a whole industry called "crowdfunding". While the original idea was good, the crowdfunding scene quickly turned into "how to get people pay for a product that doesn’t even exist yet". Some companies in China are now specialised in building cheap products that you can easily customise to make it like you are developing something new. Others produce automatic video and marketing for a successful crowdfunding campaign. Facebook promotions are included in the price. Schedules are purposely designed to be deceptive : looking short enough to encourage people contributing then adding regular delays so, in the end, people completely forgot about the item. When the crappy thing arrives and you realise that, yes, it totally looks like the picture but, no, it is probably as bad as it could be while still looking like the picture, it’s too late. You have what you paid for : a mystery box with crap in it.
+
+Like crowdfunding, "search" looked like a good idea. Instead of browsing painfully through indexes like old books, you would search and get immediately what you needed. Unfortunately, there was a fatal flaw: a war would start to game the system and appear in the results. The results being controlled by one monopolistic company doesn’t help, of course, but it’s the whole principle which is terrible.
+
+With SEO, people stopped caring about producing content for other humans. They started producing contents for robots. Some by hand, some by programming other robots. In my life, I was asked several times to produce content for the official blog of my employer. It was always crappy. It took me time to realise that, on my blog, I write because I want to say something. I write for people who want to read me. I write even if nobody cares. On a company blog, everything is written in the hope of attracting customers. Every word is crafted as if you are talking to thousands of people. This trend has spread outside companies through "influencers" and "personal branding". People don’t write for an audience anymore, they write to attract an audience. Which is completely different.
+
+Just like movies are now designed to produce good trailers and good merchandising, forgetting about the movie itself in the process. The release of the trailer itself is now a marketing event. 
+
+The whole web industry is about producing shiny boxes : very complicated boxes, very appealing boxes, very technological boxes. "How to have your boxes on the top in every shop?", "How to make people open your box", "Your box is the reflect of your identity", etc.
+
+We created a whole market for boxes and completely forgot that the main goal of a box is to hold content. Because smart people were busy building and selling empty boxes, most of them were filled with random shit. Every shit looked shiny with its smart box.
+
+Some people started to care and tried delivering their own content with minimal packaging. Then Gemini proposed to remove it completely. You would simply deliver content, nearly naked. 
+
+This is sometimes seen as elitist because most people in the world can’t read. Most of them can decipher written texts but more than half of the population can’t really read in the sense "being immersed and understanding better and faster than when listening". For too many people, reading is only a poor substitute to speech. They often have to read aloud (at least in their head, which is called "subvocalising"). For them, with shiny pictures, videos and very short spoken-style texts, the web transformed from a chore to being fun.
+
+I strongly believe we don’t solve intellectual divide by lowering standards and trying to be easily accessible. This would mean that, in every aspect, nobody could surpass the capability of the worst. A race to the bottom (which is exactly how it works in companies nowadays. The whole team cannot be smarter than the dumbest manager in the whole chain of command). Instead, I always favour education. People should feel welcomed. People should be encouraged to learn. But people have to bring their own motivation to do it. A good community will teach you how to fish but will not make a machine so you only need to press a button to receive a frozen fish tick. 
+
+A good example is command-line computing. It’s frightening. It is seen as elitist. But, from my experience, every single person that tried to learn about it succeeded in understanding enough to be happy and proud in a couple of hours. Twenty years later, I still learn every day about the command line. A graphical interface, on the other hand, seems easy because you can learn it in minutes instead of hours. But, after a few days, the learning will stop. There’s nothing more to learn. You hit the limit of the software and, unconsciously, you limit your creativity. With images, possibilities are constrained in a locked canvas while words are boundless.
+
+Not every Gemini content is good. But without packaging, without statistics to optimise, the point is that every content on Gemini is here because someone wanted to make it public, to share it without looking for success, money or fame. Gemini content feels like a conversation between normal humans who are not pretending anything.
+
+Because there’s no metric on Gemini, I started to send emails to the authors I was reading. Simply to say thank. Simply to say: "I’m hearing you. Please continue."
+
+But the point is not Gemini vs the Web. It’s human-centred content vs bullshit. The web is full of nice and interesting content but you need to find it in a room full of packaging crap, you sometimes have to fight for it. Also, you don’t know in advance. Even the simple indicator of a scrollbar, telling you how much there’s too read, is skewed by advertising and comments.
+
+In that regard, Offpunk is my perfect tool. It merges web, gopher and gemini. If content looks interesting in Offpunk, then it probably is. I also realised an interesting correlation : when Offpunk fails to correctly present content, the content is usually of poor quality. It looks like technical simplicity is hand in hand with meaningfulness. If content is served in a way which is so complicated that it fails to be rendered as plaintext, that content is probably not worth reading anyway.
+
+In a world dying under our pile of trash, producing more boxes to sell more trash is a crime. Removing the packaging is not only saving tons of waste, of useless energy. It is also a tentative to offer another vision of the world, a tentative to get rid of the appearance decadence and get back to the essence.
+
+And we should not fall into the trap of trying to attract an audience. Gemini should be there for those who want it. For those who are ready to accept the tradeoff. For those who are seeking an alternative. Gemini should consider that there are no dumb questions from people who make the effort of asking questions. But Gemini will not try to convince those who are not looking for it.
+
+Like the characters in "Walkaway", from Cory Doctorow, you enter Gemini with your bag before realising you are naked. That it is not easy. It is not perfect. It’s not what you were hoping. It lacks comfort.
+
+But it’s one of those rare places where you still have the freedom to be a human.

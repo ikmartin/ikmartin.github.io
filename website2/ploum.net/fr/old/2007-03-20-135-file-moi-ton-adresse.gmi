@@ -1,0 +1,17 @@
+# File moi ton adresse…
+
+Quand ils jonglent avec la technologie et les réseaux, les geeks ne manquent pas d’adresse(s).
+Tout geek qui se respecte à un jour piqué un fard parce qu’on lui demandait son adresse postale et qu’il a répondu, machinalement, son adresse email. Voire se demande pourquoi il y a un champ « Ville » en dessous du champ « Adresse » du formulaire qu’il est en train de remplir. En tout cas, moi ça m’est arrivé plus d’une fois…
+
+Je me rassure en m’imaginant qu’il y a pire. Pour preuve la conversation fictive suivante :
+– C’est quoi ton adresse ?
+– C’est à moi que tu t’adresses ?
+– Oui, quelle est ton adresse ?
+– ploum@ub…
+– Non ! Ton adresse privée !
+– Quoi ? Mon adresse IP ? C’est 130.104.238.17, pourquoi ?
+– Mais non, je veux dire : ton adresse physique !
+– 00:13:02:68:D4:11. Mais pourquoi en as-tu besoin ?
+– Laisse tomber, je vais m’adresser à quelqu’un d’autre…
+
+Moralité : Je ne file plus mon adresse, je la 802.11g

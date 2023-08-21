@@ -1,0 +1,51 @@
+# I’m not a virgin anymore/there’s always a first time
+
+=> ../files/old/heron.jpg Heron
+I’ve been in the Free Software community for years now. I wrote countless documentation, articles, I translated a lot of stuffs, I did a lot of beta testing/bug reporting/bug triaging, including for a secret project called « no-name-yet », wich later became… Ubuntu. Sometimes, I wrote a quick trivial patch or I play with the code of something. But now that you ask, I must admit that there’s no non-trivial code I wrote in Ubuntu. I’ve no problem with that : a lot of developpers are so bright and talented that I can’t really compete. I contribute with my own weaponry : promoting, writing books, doing conferences.
+
+=> http://commons.wikimedia.org/wiki/Image:Heron-Everglades-20070401.jpg 
+
+=> https://wiki.ubuntu.com/LionelDricot years now
+
+Anyway, better late than never. I’m proud to say that Hardy Heron will include an obscure but non-trival patch from me : you will be able to stop the background music in gweled (bug #90499). The five people in the world that play Gweled know that it’s a huge improvement !
+
+=> https://wiki.ubuntu.com/HardyHeron Hardy Heron
+=> https://bugs.edge.launchpad.net/ubuntu/+source/gweled/+bug/90499 bug #90499
+
+##### Tell us the story Papy Ploum !
+
+Gweled is a nice little game written for the GNOME Desktop.
+
+=> http://sebdelestaing.free.fr/gweled/ Gweled
+
+=> ../files/old/gweled.png Gweled
+Exactly one year ago, I was in Mexico. After a day of hacking, I wanted to play a little game and I choosed Gweled. Don’t ask me why. I liked the game a lot, it was short, simple, funny. But there was a very annoying background music. As upstream development was stopped, I decided to report the bug in Launchpad. It was already reported so I just had to wait for a fix. I waited nearly 10 minutes then I decided to give it a try myself. It was 23PM.
+
+I discovered that the code was a huge mess. The music player was completely tight to the main function which is ugly. I refactorized this part to put all the music related stuff in one class. I launched glade to add a preference. At 4AM, I had a patch but it was crashing a lot. I gave up.
+
+I woke up after a few hours of sleep and immediatly started hacking (well, I took the time to eat a few tortillas). At 12AM, I had my final patch who was working fine. Crashes were due to an existing race condition between threads. Before my patch, this bug occured very rarely but now it was way to frequent. So I solved that too. And I had a perfect Gweled game. Because I had no experience with patches outside a SVN repository, my patch was borked and I forgot about that bug (I was not playing Gweled anymore anyway).
+
+A few months ago, I discovered that Daniel Holbach published a list of bugs we should really fix in Ubuntu. And guess what… The Gweled was in. Hmmm… Time for some action.
+
+=> http://daniel.holba.ch/really-fix-it/ bugs we should really fix in Ubuntu
+
+I took the time to do things properly and thank to the support of RainCT, the patch is now commited. So when you will install Hardy Heron, apt-get install gweled and click/unclick several times the « Play background music » checkbox. This little checkbox is dedicated to all the geeks of LinuxCabal in Guadalajara !
+
+=> /143-flisol-2007-in-guadalajara LinuxCabal in Guadalajara
+
+Oh and, by the way, do you remember my post about storing preferences in hidden folder ? I did a Gnome Goal proposal for it and I, of course, patched gweled to follow the FreeDesktop.org specification. If you agree, vote to support this idea in Brainstorm.
+
+=> /184-cleaning-user-preferences-keeping-user-data my post about storing preferences in hidden folder
+=> http://live.gnome.org/GnomeGoals/XDGConfigFolders Gnome Goal proposal for it
+=> https://bugs.edge.launchpad.net/ubuntu/+source/gweled/+bug/201509 patched gweled
+=> http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html FreeDesktop.org specification
+=> http://brainstorm.ubuntu.com/idea/6557/ vote to support this idea in Brainstorm
+
+=> http://brainstorm.ubuntu.com/idea/6557 
+=> http://brainstorm.ubuntu.com/idea/6557/image/1/ Vote to support Freedesktop spec
+
+Of course, I’m a bit GNOME/Ubuntu centric but I really believe that this specification should be implemented everywhere so report the idea to your prefered distribution/desktop/application. There’s already a tracker bug for GNOME but it should be the same everywhere.
+
+=> http://bugzilla.gnome.org/show_bug.cgi?id=523057 tracker bug for GNOME
+
+P.S. : Don’t be afraid, I will not post each time I write 10 lines of code. I just wanted to mark my first noticable contribution that I remember (although I think I was cited one or two times in some Debian changelog). I was not sure if I should write this post or make the guy used to that sort of things. Finally, I took the excuse that writing this post might perhaps encourage others to contribute but it was just to expose my proudness ! I’m weak. Ma ! Look, I’m commiting stuff, I’m Jeff Waugh !

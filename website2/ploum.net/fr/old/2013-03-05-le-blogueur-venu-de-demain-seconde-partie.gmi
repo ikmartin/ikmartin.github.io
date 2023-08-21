@@ -1,0 +1,140 @@
+# Le blogueur venu de Demain (seconde partie)
+=> files/old/cocktail.jpg
+
+Lire la première partie de cet interview. Available in English.
+
+=> /le-blogueur-venu-de-demain-premiere-partie Lire la première partie de cet interview
+=> /the-blogger-from-tomorrow-part-ii/ in English
+
+Face à Max, le célèbre blogueur qui est en train de m’entraîner doucement sur le terrain de la politique, je tente de me ressaisir. Innocemment, je l’interroge :
+
+Pourquoi les élections européennes ?
+
+Car lors de ces élections, le Parti Pirate a fait pas mal parler de lui dans tous les pays.
+
+Depuis des années, le Parti Pirate était confronté à un paradoxe : il prétendait défendre la liberté, la citoyenneté, la décentralisation mais se devait d’avoir un chef, un président ou un organisme central qui déterminait à quoi allait être dépensé l’argent du parti ou qui punissait un pirate qui avait un comportement « non-pirate ». Tel groupe pirate local est-il vraiment pirate ? Selon quelle définition ? Doit-on leur envoyer de l’argent pour leur projet d’affiche ? Et tel membre doit-il être exclu ?
+
+=> /parti-pirate-nouvelle-democracie la liberté, la citoyenneté, la décentralisation
+
+La solution qu’ils ont trouvé est tout simplement géniale : ils ont fait évoluer le crowdfunding à l’échelle non plus du projet mais de l’entité.
+
+Peux-tu donner un exemple ?
+
+Oui, sur la plate-forme du Parti Pirate, n’importe qui, je dis bien n’importe qui peut proposer un projet en lien avec le parti pirate : imprimer des affiches, organiser un happening, créer un site web sur une problématique, organiser une assemblée générale.
+
+Pour chaque projet, le budget était fixé et, comme n’importe quelle plateforme de crowdfunding, n’importe qui pouvait soutenir le projet de son choix. Et si une personne se prétendant pirate avait une mauvaise réputation, la communauté se contentait de ne pas soutenir ses projets.
+
+Ce n’est pourtant pas très différent de Kickstarter ou de Kisskissbankbank.
+
+Il y a une différence de taille: en dehors des projets, il existe également sur ce site des « organisations », typiquement le Parti Pirate de France, le Parti Pirate de Belgique, etc.
+
+Si on le souhaite, on peut soutenir l’organisation plutôt qu’un projet particulier. J’aime les pirates, je veux leur envoyer de l’argent mais je souhaite qu’ils l’utilisent à leur guise. D’ailleurs, le Parti Pirate n’a plus d’argent sur son compte en banque. Tout l’argent des dotations publiques ou des versements d’élus est immédiatement envoyé sur la plateforme de crowdfunding.
+
+Il n’en reste pas moins qu’il faut décider comment utiliser cet argent.
+
+C’est ici que réside l’éclat de génie : tout est automatique. Quand on donne de l’argent à un projet, on peut décider de l’importance que ce projet à pour nous. Les projets les plus prioritaires sont automatiquement financés par la caisse jusqu’à épuisement de celle-ci.
+
+Admettons que je fasse un projet d’imprimer des affiches pour ma ville et que j’aie besoin de 50 bitcoins. J’ai récolté 2 bitcoins mais comme le projet est voté comme prioritaire par les 20 donateurs, il se voit compléter de 48 btc par le compte de l’organisation.
+
+Une fois les affiches imprimées et le projet terminé, j’introduis la facture finale dans la plateforme, qui est d 52 btc car j’avais oublié de prévoir de la colle. Le compte de l’organisation complète et envoie la somme sur mon compte en banque vu que c’est moi qui vais payer la facture de l’imprimeur. En même temps, les affiches ont un tel succès que la moitié de la ville décide de donner au projet a postiori ou via Flattr. Le surplus est alors automatiquement versé au compte de l’organisation. En effet, le projet étant clôturé, il ne peut rien faire de ce surplus.
+
+Tout cela est donc entièrement transparent et consultable par tout un chacun jusqu’à la moindre facture. Des graphiques sont automatiquement générés. Il n’y a plus aucune autorité centrale qui détermine qui paie quoi.
+
+Il y a donc des imprimeurs qui acceptent les bitcoins ?
+
+C’est un exemple. Comme il s’agit de ma monnaie principale, j’ai tendance à penser en bitcoins. Je sais que c’est loin d’être la norme.
+
+D’ailleurs, j’ai installé l’extension BitSpend dans mon Firefox: elle me permet de payer en bitcoins sur la toute grande majorité des sites d’e-commerce même si eux n’acceptent pas encore Bitcoin. C’est tout à fait transparent pour moi.
+
+=> https://bitspend.net/ BitSpend
+
+Le problème de cette solution c’est qu’il n’est pas possible d’épargner, par exemple en vue d’élections prochaines. Tout l’argent de l’organisation est immédiatement reversé aux projets actuels.
+
+La solution est simple : il suffit de créer un projet « Épargne en vue des prochaines élections » avec un objectif précis. Cela encourage d’ailleurs les gens a contribuer à ce fond. Et si personne ne considère ce projet comme prioritaire et bien tant pis. C’est aussi cela la démocratie.
+
+Et les cotisations du parti ?
+
+Ils les ont tout simplement supprimées. À chaque section locale de sélectionner ses candidats pour chaque élection. Certains se plantent, ont des candidats loufoques. Mais d’autres réussissent et partagent leur expérience. Il n’y a plus de véritable parti, plus de structure pyramidale mais un réseau de groupuscules locaux. Il n’est plus possible de dire « Je suis un membre du parti pirate ». Un prétendu pirate fait des déclarations racistes ? Il perd tout simplement son crédit et aura du mal à devenir candidat ou à obtenir la confiance des autres pour lancer des projets. On est dans la do-ocracy, pas dans la discussion.
+
+Fait amusant : à l’époque, le Parti Pirate était fort critiqué pour son nom. On leur disait à tout bout de champs de changer, d’enlever le terme « Pirate », qui avait une connotation négative.
+
+Ils ont accepté de modifier leur nom mais c’est le mot « Parti » qu’ils ont supprimé. Avec un brin de populisme, certains ont d’ailleurs déclaré « Dans votre vie quotidienne, souffrez-vous le plus à cause de la piraterie ou de la particratie ? ».
+
+C’est depuis qu’on dit « Pirates » et non plus « Parti Pirate ». Un beau pieds de nez face à la déliquescence du concept de parti.
+
+Mais on s’éloigne de ton parcours là, non ?
+
+Pas vraiment car, comme beaucoup de blogueur, j’ai suivi de très près l’ascension des pirates. Je n’ai jamais été membre ni candidat, souhaitant rester indépendant, mais je ne cache pas avoir voté pour eux aux dernières élections.
+
+Ce crowdfunding politique m’a servi de modèle. S’ils peuvent le faire pour la politique, pourquoi ne pourrais-je pas le faire pour moi, pour ma vie ?
+
+Raconte nous comment cela se met en place, pratiquement.
+
+En utilisant une plateforme de crowdfunding similaire, j’ai décidé de faire pareil. Un projet mensuel pour mon loyer, un projet pour un voyage à la Silicon Valley, un projet pour l’hébergement de mon blog et puis un projet « dépenses diverses ».
+
+Il faut préciser que, contrairement au Parti Pirate, je ne suis pas une organisation « ouverte ». Dans une organisation « fermée », seuls les membres de l’organisation ont la possibilité de donner une priorité à un projet. Comme je suis le seul membre, je garde le contrôle sur ma vie.
+
+Un exemple simple est mon loyer : j’ai un projet récurrent de payer le loyer. C’est un projet prioritaire. J’ai indiqué directement en récipient le compte en banque de mon propriétaire. Du coup, je n’ai rien à faire. Si un lecteur veut contribuer à mon loyer du mois, il peut. Mais c’est rare. En règle générale, mon loyer est intégralement rempli par l’argent issu de l’organisation, à savoir moi.
+
+Lorsque j’ai été à la conférence I/O à San Francisco, j’avais préparé tout un budget. Comme je retransmettais en direct, cela intéressait très fort mes lecteurs. Ils ont donc contribué énormément. Mon essai en voiture partagée entièrement automatique a fait un buzz et a reçu beaucoup de Flattrs. Comme Flattr est intégré à ma plateforme de crowdfunding, ces flattrs spécifiques sont immédiatement ajoutés au budget du projet.
+
+=> /le-monde-selon-google voiture partagée entièrement automatique
+
+Au final, lorsque j’ai mis toutes mes factures dans la plateforme, y compris les moindres restaurants, je me suis rendu compte que j’avais été économe. Le projet a donc fait un bénéfice qui est venu s’ajouter au capital de mon organisation.
+
+Tout cela est donc transparent ?
+
+Oui, ma vie est très transparente. Il faut cependant signaler que je fais de la consultance pour certaines entreprises. Je crée ces projets comme les autres sur la plateforme de crowdfunding mais ils sont invisibles au public.
+
+Quand un de mes clients a découvert ça, il a réalisé qu’il pouvait s’associer avec un autre de mes clients pour me financer un projet spécifique en simplifiant grandement la comptabilité et le contrat.
+
+Ces projets sont donc entièrement bénéficiaires. Notons que, en conséquence, le budget de mon « organisation » est également privé. Comme l’est mon projet « épargne pour la pension ». Être transparent ne signifie pas pour autant ne plus avoir de vie privée.
+
+La plateforme de crowdfunding me sert à la fois d’outil de budget, de facturation et de comptabilité. Sans compter les projets impliquant plusieurs personnes auxquels je participe.
+
+Tu n’as donc plus de compte en banque ?
+
+Si car il y a encore des magasins où l’on doit encore payer avec une carte de banque plutôt qu’en scannant un QR code avec ses lunettes. Et deux trois broutilles comme les impôts. Mais ce n’est qu’une très petite somme d’argent qui transite par ce compte. C’est un accessoire. Un peu comme un lecteur CD sur un vieil ordinateur : il est là mais on ne l’utilise plus jamais. Mon épargne est entièrement en bitcoins, sur différents services. J’ai également un peu d’argent sur mon Google Wallet.
+
+D’ailleurs, je ne paie mes impôts que sur la somme qui entre sur mon compte en banque traditionnel. Tout le reste est dans un flou juridique absolu. J’ai déjà usé trois comptables avant d’abandonner. Je ne me cache pas, je ne cherche pas à frauder mais ce n’est pas à moi de résoudre les problèmes de l’administration. Si je suis un jour condamné, ça me donnera d’ailleurs de la matière à beaucoup d’articles.
+
+Mais c’est une bonne idée : supprimer complètement le compte en banque. Ça ferait une série de billets intéressants pour mon blog. J’achète déjà, en bitcoins, des cartes VISA prépayées. Peut-être qu’elles me permettraient de retirer du liquide à un distributeur ?
+
+Mais, par exemple, ton loyer est bien versé sur un compte en banque qui n’est pas le tien. Tu ne payes donc pas d’impôt dessus.
+
+Tiens, c’est juste. Je vais tenter de convaincre mon propriétaire d’accepter les bitcoins.
+
+En résumé, peut-on dire que tu vis essentiellement de dons ?
+
+Cela a été le cas car, effectivement, le crowdfunding ne concernait que le don, pas l’investissement. Or, depuis peu, la plateforme que j’utilise gère les contrats, que j’utilise pour mes missions de consultance et vient d’intégrer une nouvelle fonctionnalité : l’achat de parts. Un créateur de projet peut vendre des parts de son projet. Si le projet est rentable, l’investisseur recevra automatiquement une partie du bénéfice. Il est également possible d’acheter des parts d’une organisation chapeautant plusieurs projets.
+
+Tout cela est fait automatiquement sans la nécessité de la moindre comptabilité. Si vous avez des actions en bourse, mon conseil est de vendre tout. Je ne suis pas sûr que le concept même de bourse tienne encore longtemps. D’ailleurs, pensez-vous vraiment que les entreprises et les start-ups de bon-papa vont pouvoir lutter contre la simplicité d’une « organisation » sur une plateforme de crowdfunding ?
+
+Mais tout cela n’est possible que sur la plateforme de crowdfunding que tu utilises. En existe-t-il d’autres ?
+
+Il y en a de plus en plus et j’ai été enchanté d’apprendre qu’il allait bientôt être possible de contribuer à un projet sur une plateforme donnée en utilisant un compte sur une autre. En fait, les plateformes communiquent entre elles en utilisant Ripple, qui est un système décentralisé de transfert de dettes basé sur la confiance.
+
+=> /ripple-making-bitcoin-easier-or-obsolete Ripple
+
+Étant donné ma présence sur le web, pas mal de personnes me font confiance sur Ripple. Je réfléchis à leur emprunter de l’argent de cette manière pour acheter un terrain et me faire imprimer une maison, histoire de me poser un peu.
+
+Honnêtement, je ne suis pas sûr que nos banques traditionnelles feront de vieux os.
+
+Merci Max, un mot pour la fin ?
+
+Lorsqu’une nouvelle technologie apparait, on a tendance à surestimer l’impact à court terme. Les smartglasses, les bitcoins, le crowdfunding. Tout le monde s’extasiait, faisait des prévisions farfelues. Et, deux ou trois ans plus tard, on s’est rendu compte que le monde n’avait, au fond, pas vraiment changé.
+
+Par contre, nous avons une énorme tendance à sous estimer l’impact à long terme de ces mêmes technologies. Vous souvenez-vous qu’il y a 15 ans, personne n’avait de smartphone et que la 3G n’existait pas ? Tout cela produira un changement profond que je pressens sans avoir la prétention de le comprendre. Et qui n’est pas seulement sous-estimé mais radicalement ignoré par les puissants : les hommes riches et les politiciens.
+
+Peut-être est-ce dans leur intérêt de ne pas comprendre ce changement. Qu’importe, moi j’ai décidé de ne pas attendre.
+
+Machinalement, je fais signe au serveur. Il m’apporte un ticket avec un QR code. Tout en le regardant, je murmure « accepter paiement, copie dans notes de frais ». Max se lève et me lance un joyeux « Merci pour le verre et à la prochaine ! » avant de s’éloigner en rabattant ses lunettes sur son nez.
+
+Un peu abasourdi, je reste sans voix. Je venais rencontrer un blogueur, discuter de l’audience sur le web, de la manière de se faire connaître. J’en ressors estomaqué. Ce que je pensais être de la science-fiction est pour lui déjà du passé. Il ne vit plus dans la même société que moi, plus dans le même pays. La preuve, il n’en utilise pas la monnaie, il n’y travaille pas, il n’y paie pas ses impôts. Max est d’ailleurs, il vient de Demain.
+
+Cul-sec, je termine mon Mojito. Je crois que je tiens un titre accrocheur pour ce papier !
+
+Photo par Elisa Pictures. Available in English.
+
+=> http://www.flickr.com/photos/32080494@N02/7624324004 Elisa Pictures
+=> /the-blogger-from-tomorrow-part-ii/ in English

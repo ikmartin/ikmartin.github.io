@@ -1,0 +1,70 @@
+# Les brocolis contre-attaquent !
+
+Lorsqu’il s’agit de mesurer une position dans l’espace, il faut toujours disposer d’un repère inertiel à partir duquel faire les mesures. Un tel repère idéal existe-t’il ? Pas sûr.
+À notre niveau de précision, le soleil est une excellente approximation d’un repère inertiel.
+
+Et dans le repère ainsi défini, la terre est enfin revenue à la même position. Notre expérience arrive donc à son terme, les résultats seront publiés mais nous pouvons d’ores et déjà affirmer que le potentiel d’attraction observé dans la susdite expérience est, aux erreurs expérimentales près, proche de zéro.
+
+– Ça y’est, le Ploum a finit par craquer. vous entend-je déjà marmonner.
+
+Mais non ! Réfléchissez un peu ! Le fait que la terre occupe la même place par rapport au soleil signifie qu’il s’est écoulé 365 jours depuis la guerre des artichauds galactiques. 12 mois d’une lourdeur jamais démentie et toujours plus présente.
+=> ../files/old/ploum.png Oh mon dieu !
+
+=> /2004/10/20/1-la-guerre-des-artichauts-galactiques la guerre des artichauds galactiques
+
+Un an entier de bloconneries et déjà quelques conclusions dont celle dite du « potentiel d’attraction nul » : point de vue nanas, un blog c’est nul ! Zéro ! Niet !
+
+Je sais bien qu’il n’y a pas que les femmes dans la vie, mais je ne bois pas d’alcool et ne suis pas vénal.
+Moralité : si vous avez envie de commencer un blog, allez faire un tour dehors, ça va passer.
+
+Allez, c’est parti comme la fin de l’année à la télé avec le best off des meilleurs moments.
+
+Un an de Where’s Ploum, c’est :
+
+* La preuve que mon médicament n’est pas très efficace
+
+=> ../files/old/fepalcon.jpg Médicament
+
+* 69 billets dans 8 catégories.
+* 762 commentaires et 90 trackbacks
+* 3,6 Go de bande passante par mois juste pour les fils RSS et Atom (images non comprises)[1]. Je tiens d’ailleurs à remercier chaleureusement ceux qui m’ont accueilli dans leur aggrégateur voire dans leur blogroll. Ça fait très plaisir, si si !
+* Une dizaine d’habitués amateur d’humour vaseux et de jeux de mots débiles. Merci à eux pour leur soutien 🙂
+* Quelques milliers de googleurs perdus qui ne trouvent plus la sortie
+* 172,14 heures de sommeil manquées
+* Des requêtes google débiles (mise à jour des certificats de windows 98) à vraiment graves (photo de femme se faisant prendre par derrière par des animaux).
+* On a retrouvé le lapin qui fait meuh ! Mais ça n’a pas été facile…
+
+=> ../files/old/lapin.png Le lapin
+
+* 8 épisodes de « La vie trépidante des moules » dont 3 ont même été lu entièrement par plus de 2 lecteurs.
+* 47 tablettes de Côte-d’Or noix de pécan
+* Une idée stupide pour ne pas être en reste avec Beber, idée qui a d’ailleurs fait des émules
+* 379 contacts Jabber que-je-ne-sais-pas-qui-c’est-mais-qui-m’ont-ajouté-à-leur-liste-et-me-font-parfois-coucou[2]
+* Deux tailles de plus pour le col de mes chemises. Et oui, la fausse modestie, c’est pas mon truc et je suis parfois fier de certains billets ou des compliments que vous me faites.
+* L’occasion de participer à des gros projets dont le teasing, prévu pour octobre, est repoussé à novembre (hein Play et Niko ?).
+* L’occasion de faire la connaissance de Mitt-Méfiez-vous-du-pistolet-à-eau et de Play-Tu-vas-me-remettre-ton-blog-en-ligne (enfin, pas encore IRL, mais ça ne saurait tarder).
+
+=> ../files/old/mitt.jpg Mitt tue Ploum
+Argh ! Je suis mort ! Mitt m’as achevé …. Adieu monde cruel !
+
+=> http://beber.frimouvy.org Beber
+=> http://zefredz.frimouvy.org fait
+=> http://boumcke.fritalk.com/dotclear des
+=> http://denis.fritalk.com émules
+=> http://tu-me-reouvres-ce-blog-nom-dune-pipe Play
+=> http://www.prendreuncafe.com/blog/ Niko
+=> http://www.mitternachts-lied.net/blog/ Mitt-Méfiez-vous-du-pistolet-à-eau
+=> /gallery/life-of-ploum/paris-juin-2005/pict0037#gallery 
+
+Je suis mort, c’est donc la fin… Adieu ! Je meurs sans avoir retrouvé la moindre trace de la serviette de bain du grand Cthulhu…
+
+PS : Bon anniversaire à Bersace (voire les commentaires d’il y’a un an), avec un jour en retard à Tristan ainsi qu’à toute la communauté Ubuntu… 🙂
+PPS : Sur mon épitaphe, je veux voir L’humour lourd n’est pas à prendre à la légère.
+
+=> http://standblog.org/blog/2005/10/19/93114445-la-derniere-ligne-droite Tristan
+
+#### Notes
+
+[1] Faut pas croire que j’ai tellement de visiteurs. J’ai surtout beaucoup de gros boulets qui mettent à jour leur RSS toutes les 5 minutes. Alors, toi, oui toi, tu te reconnais, sache que je ne publie jamais plus d’un billet par jour. Et que dorénavant, je serais très très en colère pour toutes les IPs qui téléchargent mon RSS plus d’une fois par heure ! Est-ce clair ? Notez que je le prend comme un compliment, et ça fait plaisir.
+
+[2] Non, en vrai ils font : « ça va ? » 😉 Si vous avez quelque chose à me dire, utilisez le mail, je préfère nettement. J’utilise principalement l’IM pour mes amis proches ou les gens avec qui je travaille.

@@ -1,0 +1,102 @@
+# The Blogger from Tomorrow (Part I)
+=> files/old/villefranche.jpg
+
+Ce texte en français.
+
+=> /le-blogueur-venu-de-demain-premiere-partie/ Ce texte en français
+
+The sun of this late afternoon shines on the waterfront of this charming Mediterranean resort. I get to the bar where we agreed to meet, recognising him immediately. He’s sitting on the terrace sipping a cocktail. If I’ve seen pictures of him, I was mainly helped by his typical blogger’s uniform: a t-shirt referring to a video game of the past century, worn jeans and flip flops. He has no bag but, I guess, a phone is in his pocket. He looks very focused. His glasses on his nose, two keyboard bracelets on each wrist and the imperceptible movements of his fingers tapping the table indicate that he is writing a blog post.
+
+As I approach, he smiles and invites me to take a seat. With this now typically polite gesture, he puts his glasses on top of his head, indicating that he’s entirely dedicated to our conversation. In doing so, I hear him whispering « draft ». I was not mistaken, he was writing an article.
+
+Ostensibly, I touch my glasses with my right index finger to report that I’m filming. As I’ve only used one finger, he understands that there is no live broadcast and that the video will mainly be for my personal use. He nods with a smile.
+
+Hello Max. Nice to meet you. Are you here on vacation?
+
+You mean holiday? (Laughs) Well, that’s a concept I do not understand very well. I am in perpetual holiday but I work 365 days a year. I guess the word « holiday » doesn’t really apply to me.
+
+Can you introduce yourself to our readers? What is your background?
+
+In a previous life, I was a computer engineer, a programmer. I know that younger people may look at me as a dinosaur but I was a J2EE consultant in a big bank. I’ve also worked as an IT journalist. Fifteen years ago, I started a blog, « The blog of Max », because it was the latest trend among geeks . Some saw it as the future of journalism but, personally, I did not have specific targets. I created a blog, that’s all.
+
+This blog started to be successful and attract readers. Thanks to the advertising, I was able to pay for the infrastructure and then, gradually, build a real salary. I’ve left my job and became a professional blogger.
+
+You probably considered this step as a success. Were you happy?
+
+At first I was very proud, of course. But I realised that I was forced to update my blog more frequently. The competition was very tough and there was a race for the audience. Previously, I was not too worried about the number of visitors. Becoming a professional, I had no choice but to care about it. What I had in my fridge at the end of the month was directly proportional to the number of readers.
+
+I started to write uninteresting but profitable articles: celebrity gossips, sensationalism, that sort of thing.
+
+I also received contracts to talk about some products. While this was easy money, I discovered that I was losing my independence. It was not a passion any more but a job like any other. I botched posts, I posted them immediately on Reddit then I asked my Twitter followers to vote for the post. I was moderating the comments without even reading them.
+
+Sometimes, I was receiving offers to write a post about a product where it was explicitly stated that I could not inform my readers that I was paid. I had to fake my enthusiasm.
+
+How have you responded to these offers?
+
+I think every man has a prize. If you gave me a million, I would have accepted without hesitation. My price is less than one million but, fortunately, offers did not reached the cut. In addition, my credibility among readers was collapsing and those kind of posts could be very harmful to my e-reputation.
+
+Amusingly, it is when my audience was the largest than I realised there was a problem.
+
+What do you mean?
+
+Many people rely on the absolute value. My audience was impressive and still growing. I could have been satisfied.
+
+But, personally, I rely on other indicators such as my instinct. My most loyal readers were no longer commenting or correcting my spelling. If my articles were heavily linked in generic forums, it was not the case any more on specialized sites or in cutting edge communities. In short, I was becoming mainstream.
+
+Why is it wrong? Is it not a good thing to broaden your audience?
+
+For me, it was a warning bell. When one is respected by a specific community, he has a hard earned reputation capital. But for the mainstream audience, this capital is nearly zero. People shared my articles out of habit, because my name was relatively famous. But I could fall into oblivion under a couple of weeks, like the stars of a reality TV show.
+
+I was read but I was not respected by anyone. Nobody said: « If Max mention it, it must be good. » I decided to regain that trust and to recreate an audience from scratch.
+
+What was your strategy?
+
+Overnight, I completely removed advertising. That was the first step. I also encouraged my readers to think about the deeper meaning of advertising and to install AdBlock. I was a long time AdBlock user but, publicly, I was against its use because, well, I was making a living from advertising. It took me a while to accept what a hypocrite bastard I was. Do what I say, not what I do !
+
+Financially, I didn’t have much idea. I accepted donations through PayPal but it is a reader who told me about Flattr. It was also during those times that I discovered Bitcoin , which was a lot less widespread than today.
+
+=> /paying-web/ about Flattr
+
+Was it profitable?
+
+No! The first months were really hard. Hopefully, it was planned and I had enough sparing to live for one year. However, I was pleasantly surprised by Flattr: a good blog post could bring me € 150-200. The most surprising is that some blog posts may continue to be profitable several months after their initial publication.
+
+This is a great incentive: instead of trying to make the buzz, you are encouraged to write articles that readers would want to Flattr. When I was proud of an article and it has lot of readers but very few flattrs, it raised a huge question: why? I learned a lot and I think I improved my writing skills a lot too.
+
+Paypal and bitcoins were merely anecdotal. Making a regular donation is too much of a hassle with those systems.
+
+In order to pay the bills, I withdrew my Flattr income as bitcoins and I bought as much as I could online using that currency. This allowed me to evade taxes. It may be a form of fraud but Bitcoin not being recognized as a currency makes it a grey area. For the legislator, I never earned any money. In addition, nothing goes through an account in France and is therefore not subject to the French law. If billionaires are able to evade taxes by having their money in Switzerland or in the Caimans Islands, why should I worry to do exactly the same at a very small scale with the sole purpose of paying for my food? And why should I obey the French law anyway? In the last year, I’ve spent more time abroad than in the particular country whose name is on my passport for arbitrary reasons.
+
+In the end, how were you living?
+
+Depending on the month, I was earning between € 500 and € 2,000 on Flattr. It sounds a lot but do not forget that I was taxed on what landed on my bank account. Not everything was sold for bitcoins. It was impossible to live alone in Paris with that income. I was exhausting my savings.
+
+It struck me as a real limitation when the parliament began discussing the ban of smartglasses to prevent people being filmed without their consent. At the time, it was only about Google glasses but I felt that, once again, people’s fear was exploited to block innovation and to hide the real issue.
+
+=> /a-googles-world/ Google glasses
+
+I wrote a very successful blog post and became the de facto spokesperson for the « pro-glasses. » I wanted to launch a dedicated website on the subject with online petition, instructional videos, etc.. And I realized that I did not have the budget.
+
+For the first time in my career as a blogger, I could not launch a project I had in mind because of the lack of proper funding. The logo designer was a friend, I knew the videos makers: only a hundred bitcoins were needed to start the thing. Investment that I was sure to get back in donations and t-shirts sales. But I could not bootstrap the project.
+
+I remember that campaign. What was your solution?
+
+I discovered crowdfunding. The principle is simple and was popularized by Kickstarter: a prospective project is made public with the amount of money you need to start it. People give as much as they want. If the required money is not collected before a specified deadline, the project is cancelled and donors get their money back.
+
+It is like an a priori donation. Easy and safe. Donors may even give in the currency of their choice that will be automatically converted.
+
+This was an eye opening experience about to the possibilities of crowdfunding.
+
+What was the main benefit for you?
+
+In the short term? Nothing! Indeed, crowdfunding addressed specific projects of a given size. Each project requires preparation, estimation. I did not see myself creating a project for each blog post I wanted to write. It doesn’t make sense!
+
+But the idea stood in a corner of my brain until the European elections.
+
+The waiter stops us for a moment to bring my drink. I remain puzzled. This interview is taking a turn that I didn’t expect. Why talking about the European elections? What is the relationship between politics and the funding of a blog? Where is Max going to take me?
+
+Read the second and last part. Picture by Mark Fischer. Disponible** en français.
+
+=> /the-blogger-from-tomorrow-part-ii/ second and last part
+=> http://www.flickr.com/photos/80854685@N08/8465319847 Mark Fischer
+=> /le-blogueur-venu-de-demain-premiere-partie/ en français

@@ -1,0 +1,65 @@
+# Le courriel, avec Vim ou avec Emacs ?
+=> files/old/1024px-Comic_wall_Asterix__Obelix_Goscinny_and_Uderzo._Brussels.jpg
+
+*Aparté technique sur le choix d’un logiciel d’écriture et de correspondance sous Linux.*
+
+## Toute la Gaule est occupée. Toute ? Non…
+
+Je suis devenu passionnément linuxien lors d’une des dernières longues nuits du siècle précédent. Pour me guider dans cette conversion, je m’accrocherai religieusement à l’incroyable formation Debian d’Alexis de Lattre. Formation qui m’accompagnera pendant des mois et m’influencera au point de publier mon premier livre sur le sujet après un lustre et de l’enseigner à l’université 15 années plus tard.
+
+=> https://formation-debian.viarezo.fr/ https://formation-debian.viarezo.fr/
+
+Alexis de Lattre y présente notamment l’éditeur de texte Vim. Je deviendrai donc un utilisateur de Vim, pestant contre les rares fois où j’aurai à utiliser Emacs.
+
+Bien plus tard, je tenterai plusieurs fois d’approfondir mes connaissances de Vim grâce à l’excellent « Vim pour les humains » de Vincent Jousse, disponible à prix libre.
+
+=> https://vimebook.com/fr https://vimebook.com/fr
+
+Note pour ceux qui ne connaissent que peu ou prou le monde Linux : Vim et Emacs sont deux éditeurs de texte aux philosophies d’utilisation radicalement opposées. Ce sont tous les deux des logiciels très puissants, mais qui nécessitent un investissement important avant d’être maitrisés. Il est de coutume, entre technophiles, de se considérer partisan de l’un et de critiquer l’autre. C’est un peu comme se disputer pour du poisson pas frais dans un célèbre village gaulois. Cela fait partie des traditions, c’est bon enfant, mais on reste néanmoins unis face aux hordes de légionnaires.
+
+## Le secret de la potion magique
+
+Aimant écrire, aimant le clavier, il est normal que je me passionne pour l’optimisation de mon poste d’écriture. La douloureuse gestation de la nouvelle « Le vampire de Paris » me fera prendre conscience de l’importance de l’ergonomie et me motivera à utiliser une disposition de clavier Bépo.
+
+=> /le-vampire-de-paris/ https://ploum.net/le-vampire-de-paris/
+
+L’effet sera incroyable : j’écris plus, j’écris mieux. J’y prends beaucoup plus de plaisir et je n’ai plus mal aux articulations.
+
+=> /216-le-bepo-sur-le-bout-des-doigts/ https://ploum.net/216-le-bepo-sur-le-bout-des-doigts/
+
+Entre-temps, une évolution s’est marquée dans ma carrière. Je n’écris désormais plus de code. J’alterne uniquement entre le texte brut et les courriels.
+
+Pour mes textes, j’utilise Zettlr, dont l’organisation et le mode Zettelkasten me conviennent très bien. Il y’aurait certainement moyen d’arriver à un fonctionnement similaire avec Vim, mais je n’y suis jamais parvenu. Zettlr fonctionne suffisamment bien pour que je n’éprouve pas le besoin de trouver une alternative même si, parfois, je regrette de devoir utiliser la souris et je peste sur la lenteur de Zettlr.
+
+En conséquence, je n’utilise presque plus Vim. Pourtant loin d’avoir été un utilisateur avancé, je perds chaque jour un peu plus mes réflexes.
+
+Je peste, par contre, sur le temps passé à écrire dans les logiciels de courriel que je trouve affreux, anti-pratiques, complexes. Plutôt que de simplement lire, écrire archiver et rechercher, il faut gérer des myriades de dossiers, de mouvements de souris, de boutons, de clic droit.
+
+J’ai tenté une configuration Mutt/Notmuch (permettant d’utiliser Vim pour rédiger ses emails), mais la complexité était telle que j’ai abandonné. Je souhaite garder avant tout une configuration simple et facilement reproductible sur plusieurs ordinateurs.
+
+Je lis régulièrement l’enthousiasme des utilisateurs d’Emacs. Parfois, un doute m’étreint : devrais-je abandonner mon identité de Vimeur, historique plus que pratique, et tenter d’apprendre Emacs ? Emacs pourrait-il devenir un prototype de client de correspondance dont je rêve pour écrire mes emails ?
+
+=> /pour-un-logiciel-de-correspondance-plutot-quun-client-mail/ https://ploum.net/pour-un-logiciel-de-correspondance-plutot-quun-client-mail/
+
+Après tout, j’ai le souvenir que Richard Stallman, le créateur d’Emacs, répondait à ses emails de manière complètement déconnectée, que ses mails se synchronisaient automatiquement dès qu’il avait une connexion. De mon côté, la tâche est complexifiée par l’utilisation du Bridge Protonmail, mais rien qui semble insurmontable.
+
+Hélas, j’ai beau avoir passé quelques heures sur des tutoriaux Emacs, je n’ai encore jamais réussi à accrocher.
+
+## Ils sont fous ces Romains !
+
+Investir dans Vim/mutt ? Prendre le temps d’apprendre Emacs malgré un cerveau presque quarantenaire ? Ou, tout simplement, accepter l’instabilité de Geary (qui, parfois, n’envoie pas les mails sans me prévenir, ce qui a cassé toute ma confiance) ou la rage permanente qu’est l’exposition à Thunderbird, son interface de vaisseau spatial du siècle précédent et sa recherche inutilisable (lors d’une recherche sur un patronyme, un mail envoyé la veille à la personne concernée apparait derrière une centaine de mails vieux de plus de 10 ans et qui contiennent un mot qui ressemble vaguement à ce nom. Tout bonnement insupportable, je préfère encore recourir à l’interface web) ?
+
+Bref, quel outil pour reprendre plaisir à lire et écrire des emails sous Linux tout en ayant la certitude que les mails sont facilement trouvables et bien envoyés ? Étonnant comme cette question reste difficile à répondre en 2020.
+
+C’est un peu comme si la philosophie monopolistique de la Silicon Valley avait déteint sur notre créativité. Les investisseurs californiens ont en effet ce concept de « kill zone ». Ne surtout pas innover dans un domaine où un monopole s’est déjà établi et semble indétrônable. En conséquence, ce sera soit Gmail et Outlook, qui lisent et trient nos emails, décidant à notre place lesquels doivent avoir de l’importance, soit un vieux Thunderbird en Clickorama dont l’interface n’a pas évolué depuis 20 ans…
+
+Comme si l’offre pléthorique de services de discussion centralisés distrayait les développeurs pour nous faire oublier la correspondance décentralisée. Comme si on voulait nous faire détester l’email, notre dernier espace de liberté.
+
+Il ne me reste qu’à rejoindre l’un des derniers villages peuplés de fous qui résistent encore et toujours à l’envahisseur. Mais vais-je rejoindre le petit guerrier intrépide Vimix et son petit chien Muttix ? Ou bien le livreur de menhir Emacsix, qui est tombé dans la potion magique quand il était petit ?
+
+Je serais curieux de lire vos réflexions et vos expériences sur votre blog, votre gemlog, dans un journal Linuxfr ou, bien entendu, par mail.
+
+Photo par Ferran Cornellà sur Wikimedia.
+
+=> https://commons.wikimedia.org/wiki/User:Ferran_Cornell%C3%A0 Ferran Cornellà
+=> https://commons.wikimedia.org/wiki/File:Comic_wall_Asterix_%26_Obelix,_Goscinny_and_Uderzo._Brussels.jpg Wikimedia

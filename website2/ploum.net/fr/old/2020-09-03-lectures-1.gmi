@@ -1,0 +1,54 @@
+# Lectures 1
+=> files/old/alfons-morales-YLSwjSy7stw-unsplash-1.jpg
+
+Quelques liens en vrac que vous pouvez lire sans vous connecter aux réseaux sociaux.
+
+Je souhaite me libérer le plus complètement possible des réseaux sociaux et des plateformes propriétaires. Pourtant, je continue à y poster des lectures que je trouve intéressantes à partager mais pour lesquelles je ne prends pas la peine d’écrire un article de blog. Dommage. Pour tenter de remédier à cette situation, je tente l’expérience de poster régulièrement des billets de liens en vrac (inspirés entre autres par Tristan Nitot).
+
+=> https://standblog.org/blog/category/En-vrac Tristan Nitot
+
+## Small Web
+
+Ce retour aux sites personnels semble être une tendance de fond assez forte, appelée parfois « Small Web » :
+
+* Bajaji Srinivasan sur le fait d’abandonner Twitter.
+* Rediscovering the Small Web par Parimal Satyal.
+* What is the Small Web, par Ara Balkan.
+
+Personnellement, je vous recommande de me suivre par RSS. J’envisage également de lancer une newsletter qui enverrait automatiquement mes billets dans votre boîte mail. Si cela vous intéresse, inscrivez-vous sur la page d’accueil de ce blog (tout en haut).
+
+=> https://balajis.com/how-to-gradually-exit-twitter/ Bajaji Srinivasan sur le fait d’abandonner Twitter
+=> https://neustadt.fr/essays/the-small-web/ Rediscovering the Small Web par Parimal Satyal
+=> https://ar.al/2020/08/07/what-is-the-small-web/ What is the Small Web, par Ara Balkan
+=>  page d’accueil de ce blog (tout en haut)
+
+## Déconnexion
+
+* Ray Bradbury critiquait déjà l’hyperconnexion. Visionnaire et à la fois hyperconservateur. Nos enfants seront certainement immunisés contre cette hyperconnexion qui me dérange tant.
+* How to Destroy Surveillance Capitalism, par Cory Doctorow. Un livre en ligne (ou un très long article), ironiquement publié sur Medium mais qui résume tout ce que vous devez savoir sur le sujet. Brillant, écornant au passage Zouboff. Doctorow prend en compte ce phénomène de résilience, d’adaptation de l’humain, chose que nous avons tendance à perdre et oublier en vieillissant. À lire absolument (Attention, ne s’affiche pas complètement dans Pocket).
+* Les machines à écrire connectées. Ce projet n’est qu’un parmi les dizaines que j’ai vu passer ces derniers mois. J’écris moi-même sur un Astrohaus Freewrite qui est ce qui se rapproche le plus. Mais le logiciel propriétaire, plein de bugs, lié à un cloud propriétaire est très fatiguant. Je rêve de lancer ma propre startup de production de machine à écrire avec écran e-ink et OS ouvert permettant d’écrire, de programmer, de compiler, de répondre à ses mails sans être distrait par une connexion permanente. Je planche sur le sujet depuis plus d’un an, j’en rêve !
+* Tout ça car on a oublié que l‘Internet devrait être construit pour ses utilisateurs.
+
+=> https://www.calnewport.com/blog/2020/08/20/ray-bradbury-got-it-exactly-right/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+StudyHacks+%28Study+Hacks%29 Ray Bradbury critiquait déjà l’hyperconnexion.
+=> https://onezero.medium.com/how-to-destroy-surveillance-capitalism-8135e6744d59 How to Destroy Surveillance Capitalism
+=> https://alternativebit.fr/posts/ultimate-writer/ Les machines à écrire connectées
+=> https://www.mnot.net/blog/2020/08/28/for_the_users ‘Internet devrait être construit pour ses utilisateurs
+
+## Société
+
+* Même les États-Unis deviennent de moins en moins religieux. De manière intéressante, le degré de religiosité d’un pays est directement corrélé avec le degré de corruption. Mais on se rend compte que la religion a surtout pour objectif de réduire les femmes à un rôle de reproductrices dans des sociétés où la survie de l’espèce est menacée. Comme disait Asimov (je paraphrase de mémoire) : « Si être maman était une aspiration tellement nécessaire pour les femmes, les religions et les gouvernements n’auraient pas besoin de le répéter à longueur de journée. »
+* Diriger un gouvernement comme on dirige un business est la pire erreur. Tout simplement parce qu’un business peut faire faillite. Le business ou ses membres pourront alors être aidés par le gouvernement. Mais si le gouvernement fait faillite ? (Je recommande le blog de Doug Belshaw).
+* Thierry Crouzet sur l’abus des masques et l’oubli de l’hygiène des mains. Faut bien avouer que porter un masque toute la journée dans la rue et de voir les gens l’enlever pour fumer une clope ou pour se parler, ça me fait dire que la mesure est loin d’être la panacée !
+* Everything I know, des retranscriptions de longues conférences de Buckminster Fuller. Je suis dans la seconde session.
+
+Bonnes lectures à tou·te·s et bonne rentrée !
+
+=> https://www.foreignaffairs.com/articles/world/2020-08-11/religion-giving-god?utm_medium=social Même les États-Unis deviennent de moins en moins religieux
+=> http://dougbelshaw.com/blog/2020/09/02/economy/ Diriger un gouvernement comme on dirige un business est la pire erreur.
+=> https://tcrouzet.com/2020/08/28/france-bombe-a-retardement/ Thierry Crouzet sur l’abus des masques et l’oubli de l’hygiène des mains
+=> https://www.bfi.org/about-fuller/resources/everything-i-know/ Everything I know
+
+Photo by Alfons Morales on Unsplash
+
+=> https://unsplash.com/@alfonsmc10?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Alfons Morales
+=> https://unsplash.com/s/photos/reading?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

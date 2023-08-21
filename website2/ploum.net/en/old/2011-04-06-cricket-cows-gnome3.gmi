@@ -1,0 +1,56 @@
+# Cricket, cows and GNOME 3
+
+=> ../files/old/gnomeasia.jpg Welcome to GNOME Asia
+How strange. I’m sitting in my apartment in Belgium, I don’t hear any horn, my food tastes surprisingly unspicy and there’s no cow in the streets.
+
+It is impressive how quickly India can grow on you. Last week, I was kindly sponsored by Lanedo to attend the GNOME.Asia conference in Bangalore. It was my first trip to India and if I had only one word to describe this event, it would be *AWESOME* (look mam, I’m Jono Bacon!). Or absurd but in the good old Monty python way.
+
+=> http://www.lanedo.com Lanedo
+=> http://2011.gnome.asia/ GNOME.Asia
+
+Awesome, absurd and extremely funny. I had a smile on my face for the whole week. I initially planned to give one talk and ended giving five of them (+ one bad lightning talk). I met a bunch of wonderful people and even more really motivated students. I’ve never seen so many friendly people at the same time. Or maybe are we really grumpy in Europe? Anyway their questions were really insightful, ranging from « What distribution do you recommend to develop GNOME 3 » to the unexpected « I want to contribute to X.org and spotted this particular bug I want to solve, have you any advice? ». And I don’t talk about the incredible head-banging technique they use while you talk to them.
+
+=> ../files/old/lio_bangalore.jpg Yes, sometimes, I work
+As I was there, why not telling them about how to be a good student in the Google Summer of code (no slides for this but this old post might interest you), I gave a motivational/one man show speech about Getting a GNOME life and replaced Salahuddin Pasha on the fly to give a talk about User Experience in GNOME. Feedbacks from my talks were more than good and the audience was kind enough to cheer us all the time, making us feel like real rock stars.
+
+=> https://live.gnome.org/SummerOfCode2011 Google Summer of code
+=> /221-how-to-be-a-lazy-but-successful-googlesoc-mentor this old post might interest you
+=> ../files/old/uploads/gnome_life.pdf Getting a GNOME life
+=> ../files/old/uploads/user_experience.pdf User Experience in GNOME
+
+It’s also always a joy to share good moments with the usual suspects. And no, even if desrt was there, I’m not talking about that kind of good moments. One random Vuntz’s fact of the week: « Mark Shuttleworth has been in space but nobody is on more planets than Vuntz » (Copyrighted by desrt).
+
+=> http://2011.gnome.asia/who-is-speaking usual suspects
+=> http://blogs.gnome.org/desrt/ desrt
+=> /226-in-bed-with-ryan-lortie that kind of good moments
+
+While learning about cricket and enjoying the wonderful world championship final, I took the time to upgrade to Natty, using Unity for one complete day (April 1st, as a joke to myself) before switching completely to GNOME-shell, which is growing on me. I had to throw away every habit I had my computer but I believe that it worth it.
+
+=> http://en.wikipedia.org/wiki/Cricket cricket
+=> http://en.wikipedia.org/wiki/2011_Cricket_World_Cup world championship final
+
+=> ../files/old/happy_gnome3.jpg Happy GNOME 3 user
+I’m so thrilled by GNOME 3 and GNOME-shell, please give me vanilla GNOME!
+
+The only problem with GNOME-shell is that it will not be packaged in Ubuntu and that I don’t want to rely on a PPA for my whole desktop. Josselin nearly convinced me to switch back to Debian, which I haven’t used on a desktop for the last seven years. I’m still trying to make my mind about the best GNOME-shell distribution, possibly deb based.
+
+=> http://np237.livejournal.com/ Josselin
+
+If you ever go to Bangalore, don’t forget to try some extreme sports like taking a cab or crossing the road. Adrenaline rush guaranteed.
+
+This was a wonderful experience and I’m already waiting for next year edition. Please help me to thanks the whole GNOME.Asia team and all the volunteers for the work they did. First, you have to put your hand in the position described by the following picture:
+
+=> ../files/old/horn_hand.jpg Horn sign
+
+Now, close your eyes, take a very angry face and repeat after me:
+
+AWESOOOOOOOOOOOOOOOOOOOOME!
+
+=> ../files/old/lanedo.png Lanedo
+=> ../files/old/iamspeaking_gnomeasia.png I was speaking at GNOME Asia
+
+=> http://lanedo.com 
+=> ../files/old/lanedo.png Lanedo
+
+=> http://gnome.asia 
+=> ../files/old/iamspeaking_gnomeasia.png I was speaking at GNOME Asia

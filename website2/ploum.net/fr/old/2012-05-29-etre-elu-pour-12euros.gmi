@@ -1,0 +1,48 @@
+# Comment vous auriez pu être élu député pour 12€
+
+Ceci est la reprise d’un billet à propos des élections législatives françaises, texte que j’avais torché en trente secondes et publié sur les réseaux sociaux sans même prendre la peine de le relire. Ce texte expliquait comment se faire élire, grâce au vote électronique, sans faire campagne et pour une somme de 12€.
+
+=> https://joindiaspora.com/posts/1651344# publié
+=> /no-proprietary-service.html réseaux
+=> /no-proprietary-service.html sociaux
+
+Devant le succès de ma méthode, je vais tenter de la détailler pour la rendre compréhensible à tous.
+
+### Prérequis
+
+Tout d’abord, vous devez comprendre que, lorsque vous vous visitez un site internet, vous ne faites que vous connecter à un simple ordinateur, appelé « serveur », mais un ordinateur pas très différent du vôtre. Chaque ordinateur sur internet, le vôtre comme les serveurs, s’identifie grâce à une adresse unique, appelée « adresse IP », qui contient quatre chiffre entre 0 et 255. Par exemple: 46.192.163.214.
+
+Pour voter, vous allez entrer dans votre navigateur l’adresse scrutin.diplomatie.gouv.fr. Votre fournisseur d’accès va alors, grâce à un mécanisme appelé DNS, informer votre navigateur que le site est hébergé sur l’ordinateur ayant l’adresse IP suivante: 160.92.182.210. C’est un ordinateur appartenant à la société Atos.
+
+=> http://scrutin.diplomatie.gouv.fr scrutin.diplomatie.gouv.fr
+=> http://atosorigin.com Atos
+
+L’ordinateur de la société Atos va donc vous envoyer une page de vote, qui va s’afficher sur votre ordinateur. Vous allez introduire un mot de passe que l’ordinateur distant va vérifier. Si il est bon, il va vous offrir une page où vous pouvez voter. Votre vote sera donc enregistré par l’ordinateur de la société Atos.
+
+Mais comment contourner cela ? C’est très simple :
+
+### La méthode à 12€
+
+1. Tout d’abord, portez-vous candidat. Cela vous donnera immédiatement accès à la liste des adresses e-mail des électeurs de votre circonscription.
+2. Achetez, pour 12€, le domaine scrutin-diplomatie-gouv.fr. Vous remarquerez qu’il est très proche du domaine officiel mais, étant différent, vous avez le droit de l’acheter. Au lieu de le faire pointer vers le serveur de chez Atos, faites-le pointer vers un serveur que vous contrôlez. Par exemple, je pourrais le faire pointer vers 178.32.40.102, qui est l’adresse du serveur qui héberge mon blog. Appelons ce serveur Ploum.
+3. Ensuite, il me suffit de réaliser un site en tout point identique à celui, officiel, qui est sur le serveur Atos. Pour un visiteur du site, il n’y aurait aucun moyen de se rendre compte que les deux sites sont différents. Seuls les plus attentifs pourraient s’étonner que le site aie deux adresses IP distinctes.
+4. Envoyez à tous les électeurs un e-mail leur rappelant les consignes de sécurité pour voter et faites un lien vers scrutin-diplomatie-gouv.fr. Faites en sorte que votre e-mail provienne de l’adresse officielle du gouvernement en configurant votre logiciel de messagerie. Beaucoup d’électeurs vont sans aucun doute cliquer, ne pas se rendre compte de la supercherie et voter.
+5. Comme vous êtes l’administrateur du serveur Ploum, vous pouvez récupérer toutes les données qui lui sont envoyées. Vous avez donc accès à l’identifiant, au mot de passe et au vote de chacun des électeurs qui a cliqué sur votre lien.
+6. Avec ces mots de passe et identifiants, connectez-vous au véritable site de vote, sur le serveur Atos, et votez afin de favoriser le candidat de votre choix. Soyez un peu subtil pour que cela ne soit pas trop flagrant.
+7. Une fois que vous avez assez de mot de passe, faites pointer votre domaine scrutin-diplomatie-gouv.fr vers le véritable serveur Atos. De cette manière, même si il y a soupçon de fraude, une rapide vérification donnera l’impression que le site a toujours été correct et il sera très difficile de prouver qu’à un moment, le domaine scrutin-diplomatie-gouv.fr a redirigé vers le serveur Ploum et non le serveur Atos.
+8. Si suffisamment peu de personnes portent plainte, vous êtes élu. Dans le cas contraire, vous avez au moins réussi à faire invalider l’élection.
+9. Pour ajouter un peu de piment, vous pouvez en fait donner tous les votes, sans subtilité, à votre adversaire afin de le faire passer pour un tricheur et de détourner les soupçons sur lui.
+
+Il est vrai que si vous n’avez pas de serveur (4€ par mois chez Gandi.net) et que si vous voulez également un certificat SSL pour faire croire que votre site est sécurisé (12€ par an)[1], il vous en coûtera au final 28€ et non 12. J’avoue, j’ai menti et j’ai fait un titre purement accrocheur.
+
+=> https://pmartingomez2012.wordpress.com/2012/05/25/courriel-de-propagande/ liste des adresses e-mail des électeurs de votre circonscription
+=> http://fritalk.com 178.32.40.102
+
+Vous remarquerez qu’il existe une méthode encore plus facile pour modifier tous les votes: être au conseil d’administration de Atos vu que leur ordinateur récupère tous les résultats. Mais c’est une autre histoire…
+
+=> /france_internet_vote conseil d’administration de Atos
+=> /le-23-mai c’est une autre histoire
+
+#### Note
+
+[1] Le certificat SSL d’un nom de domaine est ce qui permet à votre navigateur d’afficher un petit cadenas à côté de l’adresse

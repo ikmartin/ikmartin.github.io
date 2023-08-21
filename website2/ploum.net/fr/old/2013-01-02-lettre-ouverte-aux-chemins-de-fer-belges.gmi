@@ -1,0 +1,50 @@
+# Lettre ouverte aux chemins de fer belges
+=> files/old/oldtrain1.jpg
+
+Chère Société Nationale des Chemins de fer Belges,
+
+Le 22 décembre dernier, un internaute découvrait par hasard lors d’une recherche sur Google qu’une base de données contenant les informations de 1,4 millions de vos clients était publiée sur votre site web. Cette base de donnée, accessible depuis au moins un mois, était entièrement indexée par Google et Bing.
+
+Je suis au nombre de ces clients. Certaines de mes informations personnelles privées sont donc devenues publiques par votre faute. Contrairement à d’autres, je ne m’en offusquerais pas outre mesure. En effet, l’erreur est humaine et, dans les années à venir, nous allons devoir apprendre à vivre avec des évènements de ce type de plus en plus nombreux.
+
+=> /opportunites-manquees-du-libre-3-vie-privee apprendre à vivre
+=> /rien-a-cacher ce type
+
+Si l’erreur est humaine et acceptable, le déni et le mensonge ne le sont pas.
+
+Votre devoir, en temps que responsable de ces données, était d’envoyer un email à toutes les personnes concernées en expliquant la situation et en détaillant, pour chacun, les informations concernées. Petit conseil : utilisez le champs copie cachée au lieu de copie simple. Je blague…
+
+Loin de faire preuve de transparence et d’honnêteté, vous avez sciemment menti en prétendant que les données ne concernait qu’une petite quantité d’usagers. À demi-mot, vous laissiez également sous-entendre que l’internaute qui avait découvert l’affaire avait effectué des actions illégales. Ce qui est entièrement faux.
+
+=> http://patrick.vande-walle.eu/belgium/post-mortem-la-sncb-met-en-ligne-les-coordonnees-de-1-400-000-clients/ entièrement faux
+
+Un citoyen belge s’est ému de cet état de fait et a monté un site permettant à tout un chacun de vérifier si ses données étaient dans la liste. Ce service, c’est vous, la SNCB, qui auriez du le mettre en place. Un citoyen s’en est chargé de manière purement désintéressée. Remarquons que, dans un soucis d’éthique qui ne fut pas le votre, son site ne permet pas d’accéder aux données proprement dites. Il permet juste de vérifier si, oui ou non, vous êtes concerné. En temps que membre du Parti Pirate, parti politique dont les valeurs sont la transparence et le respect de la vie privée, j’accorderais volontiers à l’auteur de ce site une médaille de citoyenneté.
+
+=> http://sncb.fredericjacobs.com/ un site permettant à tout un chacun de vérifier si ses données étaient dans la liste
+=> /parti-pirate-nouvelle-democracie Parti Pirate
+
+Apprenant cette initiative, votre première réaction a été de déclarer que vous étudiez les possibilités de poursuites légales à l’encontre de cette personne, sans même avoir pris la peine de la contacter.
+
+=> http://www.lalibre.be/actu/belgique/article/787574/fuite-a-la-sncb-les-options-juridiques-etudiees-contre-le-createur-du-site.html vous étudiez les possibilités de poursuites légales
+
+Si telle est est bien votre intention, je vous saurais gré de bien vouloir d’abord attaquer les deux sites qui ont rendu ces données publiques : Google et Bing, ce dernier appartenant à Microsoft.
+
+Quoiqu’il en soit, ces données sont publiques, prenons acte. Elles ont certainement déjà été vendues à des centaines de spammeurs et d’arnaqueurs en tout genre. Dans les semaines qui viennent, les hotlines d’Amazon et d’eBay vont être envahies d’appels de personnes ayant « oublié » leur mot de passe mais pouvant prouver leur identité avec leur adresse postale et leur numéro de téléphone.
+
+En cas d’incendie, le premier réflexe est d’évacuer l’immeuble et d’appeler les pompiers, pas d’attaquer en justice la personne qui a crié « Au feu ! ».
+
+Que votre service informatique aie fait une énorme boulette, je peux le concevoir. Que cette erreur soit restée non détectée pendant un mois, passe encore. Mais que votre direction fasse preuve d’une telle stupidité suffisante c’est une chose que je ne peux admettre. Cette direction qui défraie chaque année la chronique par l’ampleur des bonus que s’octroient les dirigeants.
+
+Mais je crois que cette direction et moi faisons partie d’une autre génération, d’un autre monde. Dans 10 ans plus les retards, ballonnée de fierté, elle inaugurera en grande pompe la première rame de RER que je regarderai circuler à vide depuis les voitures autonomes partagées que je décrivais dans un article précédent.
+
+=> /le-monde-selon-google un article précédent
+
+En ces premières heures de l’année nouvelle, cette affaire aura au moins eu le mérite de m’ouvrir les yeux sur une triste réalité : malgré le travail quotidien de votre personnel, de l’accompagnateur à l’informaticien, vous êtes en train de devenir obsolète.
+
+2013 sera l’année où vous saurez vous réinventer, vous adapter. Ou l’année où vous condamnerez vous-mêmes votre avenir et clouerez le premier clou de votre cercueil.
+
+À vous de choisir et de nous le prouver par vos actions !
+
+Photo par Sergio Ziliotti
+
+=> http://www.flickr.com/photos/35525679@N03/3661611514 Sergio Ziliotti

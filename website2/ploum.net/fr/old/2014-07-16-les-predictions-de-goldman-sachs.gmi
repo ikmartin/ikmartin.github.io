@@ -1,0 +1,46 @@
+# Les prédictions de Goldman Sachs
+=> files/old/yacht.jpg
+
+Avant le début de la coupe du monde de football, la célèbre et influente banque Goldman Sachs avait tweeté son pronostic pour le déroulement de la compétition, prédisant une finale Brésil-Argentine. D’où vient cette prédiction ? Et quelles ont été les conséquences ? Une passionnante enquête de Ploum, agent-blogueur-secret !
+
+=> https://twitter.com/GoldmanSachs/status/473883161143681024/photo/1 tweeté son pronostic pour le déroulement de la compétition
+
+=> ../files/old/prediction.jpg 
+
+Grâce à quelques billets adroitement placés dans les poches de certains portiers, j’ai pu me faufiler jusqu’à la fête célébrant la finale que donne Isidor Side sur son yacht privé. Isidor Side, le gourou « Market & Prediction » de chez Goldman Sachs. Rendu particulièrement volubile par les coupes de champagnes, il m’invite à venir prendre l’air sur le pont. C’est là que je décide de rentrer dans le vif du sujet.
+— Alors, ces prédictions pour la coupe du monde ? Comment as-tu fait ?
+— J’ai utilisé le même modèle que pour les simulations de l’économie mondiale. Tous les facteurs sont pris en compte, y compris les probabilités de corruption, les sautes d’humeur des joueurs. En fait, c’est même beaucoup plus facile que l’économie car il n’y a que trente-deux équipes !
+— Et ça marche ?
+— Infaillible ! C’est infaillible !
+Il titube un instant sur le pont et adresse un regard lubrique à deux créatures qui sont au féminisme ce que Goldman Sachs est à la lutte des classes. Je tente de réaccaparer son attention.
+— Pourtant les résultats…
+— Avait-on prédit l’Argentine en finale, oui ou non ?
+— Oui, reconnais-je à contre-cœur. Mais après avoir battu l’Équateur, le Portugal et l’Espagne. L’Espagne, elle, aurait battu l’Italie et la Croatie. Toutes des équipes qui n’ont même pas passé le premier tour !
+— Avait-on prévu une demi-finale Allemagne-Brésil, oui ou non ?
+— Oui mais votre modèle prévoyait la victoire du Brésil.
+Je vois qu’il commence à s’énerver. L’alcool le désinhibe et il fait de grands moulinets avec ses bras. Il me tend brusquement son smartphone.
+— Regarde ! Ce sont les statistiques du match Allemagne-Brésil !
+
+=> ../files/old/gerbra.png 
+
+Il commence à déclamer sur un ton véhément :
+— 51% de possession de balle pour le Brésil. 18 tirs au but dont 13 cadrés pour respectivement 14 et 12 à l’Allemagne. 7 corners à 5. Et le gardien brésilien n’a du faire que 5 arrêts pour 12 au gardien allemand. Cela prouve bien que le Brésil était la meilleure équipe sur le terrain. Notre modèle est donc parfaitement juste !
+Étonné, je jette rapidement un œil sur mon propre smartphone.
+
+=> ../files/old/Screenshot_2014-07-09-13-45-23.png 
+
+Tout est juste ! Ses statistiques sont exactes. Curieusement, je constate qu’il lui manque le score final. Pour ne pas le vexer, je tente d’enchaîner.
+— Et l’Espagne ? Le modèle la voyait en demi-finale et elle a probablement été une des grandes déceptions de ce tournoi.
+Il me lance un regard excédé avant de pousser un profond soupir d’exaspération.
+— Bon sang, ce n’est quand même pas la mer à boire ! C’est comme l’économie mondiale ! Nous produisons des modèles étudiés, précis, millimétrés. Tout le monde est d’accord : les pays, les banques, les grandes entreprises, les dirigeants. Tout le monde reconnait notre expertise. Mais si les joueurs n’y mettent pas un peu du leur et commencent à faire ce qu’ils veulent, comme ils veulent, on n’arrivera nulle part. Chacun doit faire un effort sinon cela deviendra le chaos, que dis-je, l’anarchie !
+Il est complètement exalté, transfiguré.
+— On se tue à faire tourner l’économie et quelques anarchistes qui s’auto-proclament « le peuple » veulent détruire toute la société ! Des paresseux, des feignants ! S’il y a des règles et des gouvernements, c’est pour les respecter. Nous sommes en démocratie !
+Dans un sinistre gargouillement, il ponctue sa tirade d’un vomissement par dessus le bastingage. Il se relève en essuyant sa bouche et me regarde d’un air étonné. Il semble avoir recouvert une partie de sa lucidité.
+— Mais au fait, qui êtes-vous ? Comment êtes-vous monté sur mon bateau ?
+Je réponds d’un rire nerveux mais je sens que le moment est venu de tirer ma révérence. Alors qu’il se retourne pour appeler la sécurité, j’arrache ma chemise de smoking, révélant ma combinaison d’apnée. D’un geste, j’enjambe le bastingage et saute dans les flots noirs avant de disparaître dans la nuit.
+
+Photo par Vanessa Hall. Pour mes prochaines enquêtes, n’hésitez pas à contribuer à mes frais de smoking et champagne. Et puis, pour rester dans le sujet, je vous invite à lire ce billet sérieux au sujet des observables.
+
+=> https://www.flickr.com/photos/antiguan_life/330465079 Vanessa Hall
+=> /soutenir-lauteur/ mes frais de smoking et champagne
+=> /vos-observables-tuent-elles-votre-valeur/ au sujet des observables

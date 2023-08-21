@@ -1,0 +1,25 @@
+# Offline-First, Typewriters, Emails and Gemini
+
+## Offline
+
+I said previously that modern systems don’t expect to be offline. Just after writing this online, I disconnected my laptop and was quite suprised to see it so hot. After a few testing, there was no doubt: the laptop was using a lot more CPU once disconnected.
+
+I reported the bug on Regolith github and it was very quickly fixed by the awesome Ken Gilmer. For the anecdote, it was a regolith applet trying to show network speed which was quitting if not connected, only to be immediatly relaunched.
+
+=> https://github.com/regolith-linux/regolith-desktop/issues/532/
+
+Still playing with my Mutt config and, on Mastodon, Matthieu Talbot gave me a great pointer to msmtpqueue, a script which is part of msmtp repository and does exactly what I want. Let’s try that a bit later.
+
+## Typewriters
+
+I also spent some time changing the ribbon of the Hermes Baby Rocket typewriter I bought. Unfortunately, I discovered that the machine is not in good condition. A complete cleaning will be needed. I bought the complete repair manual online for 10$. I’ve never been a mechanical guy but I guess it worth a try.
+
+I should also receive this week a Hermes 3000. I hope it’s in better condition.
+
+## Emails
+
+Cal Newport will publish soon a new book as a case against email. I’m very curious to read it because I actually love email. It’s the "less worst" communication tool we have. Sure, it is abused with people replying one-liner and trying to push the file away from them but I feel that we made the situation even worse with chat tools like Slack. Also, I feel that without email, your phone would ring constantly and you will have meeting all the time. There’s nothing worse than meetings for me. Meetings should happen only when the need is clear after a couple of email. But, mostly, meetings is a tool for people who can’t write and can’t read to have control over those wo can.
+
+## Gemini
+
+Very happy to have this very simple gemlog on rawtext.club. Still need to figure a few thing about Gemini. First, is there a way to generate my index page automatically when I write a new entry? I could write a simple bash script but I must not be alone. Also wondering if I should generate an Atom feed in order to be on CAPCOM. Still didn’t took the time to find the script to do that. Last but not least, I should figure out what are comments on Gemini and how they are handled. It’s still a bitt mysterious.

@@ -1,0 +1,92 @@
+# Stay on top of your inbox in 2013
+=> files/old/inboxes.jpg
+
+Chances are that, in 2012, you’ve spent more time than you wished « checking your email ». Those days, going back to work after one week of vacations often means that you will spend the next two days dealing with your email backlog only. No wonder why people communicate more and more through Facebook or Twitter messages : email is now a daunting nightmare, something that reminds you everyday that you are swamped in a life you don’t control anymore.
+
+Let’s take 2013 as an opportunity for a fresh start. I will give you a few rules to follow. Give it a try for one month. One full month and I promise you will start to love email again. Last year, I was receiving approximately between 40 and 80 emails a day. Keeping a neat inbox was taking me several hours each morning.
+1. Inbox 0
+
+Inbox 0 is a well known method. Every mail should go out of your inbox as quickly as possible. After reading an email, you should archive it immediately if there is no action, answer it immediately if needed or create an action in your todo list and archive the email.
+
+=> http://inboxzero.com/ Inbox 0
+=> https://addons.mozilla.org/en-us/thunderbird/addon/gtg-task-button/ in your todo list
+
+Lot of people tell me that they are doing the same with the read/unread status. This is not the same! Even if an email is read, it sits there, catching your attention, reminding your subconscious about something. So let’s start now and move every single read email from your inbox in an Archive folder. Do it now!
+
+The problem with inbox 0 is that it doesn’t scale well. You simply can’t do it with 100 mails a day, 25 folders, multiple accounts. That’s why we need other rules.
+
+2. One inbox to rule them all
+
+Are you the guy with twelve different email inboxes? Seriously, what’s the matter? You are one and only one person. You should have one and only one inbox. So, starting now, redirect all your addresses into one inbox.
+
+The obvious exception is your work email. It is fine to separate well work and private life. But if, sometimes, you doubt about which address to give to someone, it doesn’t mean that you have to create a third account. It means that you need to merge the existing ones.
+
+3. No folders
+
+That’s it. No exception. Some people will have a hard time with that rule but it is the most mandatory one. You should not even have a sent folder. You only need the inbox and the archives. When you need to look for a given email, use the built-in search mechanism. Most mail solutions, like GMail, offer very good tagging features. Tagging is also present in Thunderbird and can be improved with extensions. The advantages of tags is that you don’t have to tag an email to archive it. Or you can use multiple tags on the same email.
+
+=> https://addons.mozilla.org/en-us/thunderbird/addon/tag-toolbar/?src=search with extensions
+
+If you really insist on having folders, you will find yourself spending more time thinking about where to move a given email. And, when looking for that mail, you will have to go through ten potential recipient folders. Not to mention that you have to maintain your folder structure, to clean folder from finished projects, etc. Don’t do folders. Just don’t.
+
+You will probably tell me that your folder structure is efficient. It is not. Take one month to try and you will see.
+
+4. Don’t delete
+
+Deleting is, in fact, just another folder called Trash. Skip this and archive everything. Most email solutions allow you to define an Archive folder. Just do that. Let me repeat it again : inbox and archives are all you need.
+
+If your space is limited, first consider changing to a true email provider. Simplifying your life is more important than following stupid rules. If you nevertheless hit the limit, go through your archives folder and order email by size. Select and delete the biggest one. Space is always consumed by a tiny fraction of emails with very large attachment. Delete them when you have a warning about the space left on your account. If the attachment was important, it should be elsewhere on your hard disk anyway. Email is not a storage platform.
+
+5. Handle conversations, not individual emails
+
+A simple conversation about which restaurant to choose for the business lunch can contain tenth of emails. Forget about that and use the conversation mode. It’s the default in GMail and is becoming available for most provider. There’s a thunderbird extension too.
+
+=> https://addons.mozilla.org/en-us/thunderbird/addon/gmail-conversation-view/ thunderbird extension
+
+By handling conversations as a whole, you will have a feeling of less noise, less emails. Also, don’t mind archiving something because you know that, in case of a new reply, the whole conversation will be seen. As soon as you answered to a conversation and don’t have any action left, archive the whole conversation immediately.
+
+6. Unsubscribe from everything you can
+
+It is astonishing how quickly we are subscribed to an insane amount of newsletters or mailing-lists. Unsubscribe from everything. As soon as you receive an email that you were not explicitly expecting, unsubscribe. Even if it is interesting. If you need it, you will always be able to find it later on the web. Even the mailing list of your pet project is not relevant anymore: you can always read the mailing list archives on the web when you want to be informed. The major difference is that you are never annoyed when you don’t want it.
+
+Do the same with bug trackers. Even if you find it interesting now, chances are that you will not be interested anymore in a couple of months. But you will still receive every single updates for years if you don’t unsubscribe. For very interesting things, make a bookmark or use a service like Pocket and visit regularly until your interest fade away.
+
+=> http://getpocket.com/ Pocket
+
+The rule is quite simple : as soon as you receive an email that you archive immediately, you should unsubscribe from that sender.
+
+If the information is really important, the world will let you know, don’t worry.
+
+7. Disable every single mail notifications
+
+Yes. Every single notification. In hundred percent of the case, the notification is redundant with a built-in notification in the website. Facebook, Google+, Twitter, Linkedin, they all have mail notifications enabled by default and it is very hard to disable them. Do it anyway. If you want to be informed, go to the website. If you forget to do it, it means that this website doesn’t matter anyway.
+
+Your inbox is a way to communicate with people, not a spaceship dashboard invaded by robots trying to get your attention. Don’t worry, you will never miss something crucial.
+
+8. Unsubscribe from that annoying contact
+
+You probably have a few contacts that send irrelevant emails to all of their contacts every once in a while. Ask them politely to not send them to you. Don’t be aggressive, be polite and friendly. Say that you don’t want to receive them anymore, implying that it was fine until now. Be honest and say that, those days, you receive too much emails. It works better than you think and apply also to that colleague putting you in CC: of every single mail he’s sending.
+
+9. Ignore conversations
+
+Sometimes, you are in CC: of an email which becomes a huge conversation in which you have absolutely no interest. In GMail, there’s a very nice feature called « Mute this conversation ». Use it as soon as a conversation you are not interested in grows is more than three emails.
+
+Don’t fear, just hit the button.
+
+10. Teach your spam filter to do the work
+
+When everything else fails, mark the unwanted email as Spam. Spam filters are learning. If you do that a few times with a given kind of emails, those will be marked automatically as spam in the future. All benefit to your inbox.
+
+11. When you really have no choice
+
+In a corporate environment where marking some emails as spam is not an option, there’s also the silver bullet: an automatic filter that immediately archive all emails where you are not in the To field. This one is very effective to remove the noise and the emails are still available in your archives.
+
+Conclusion
+
+Applying those rules strictly for one month led me to less than 10 emails per day on both my professional and personal inbox. Best, I didn’t add the need for rule 11 and used rule 10 only a couple of time.
+
+Also, I took the habit to immediately answer from my smartphone instead of waiting to be on my laptop to write a more in depth answer. A quick answer of a few words is often more useful than waiting. In only one month, the inbox 0 came from an every day fight to a normal state. Of course, some emails wait a couple of day that I take the time to answer them but it is manageable. I divided the time spent in my mailbox by ten and my typical response time came down from one week to a couple of hours.
+
+You have to keep in mind that, since the rise of spam, missing an email is something acceptable those day. By applying those rules, you will in fact miss less important mails. In the worst case, you still have the excuse of « It was in my spam folder ».
+
+But I agree that this requires a modern mail solution. Doing a good an efficient work requires good tools. A good mail client is just like a good chair, a good screen and a good keyboard. If your company still want to stay with, His Noodly Appendage forbid, Lotus Notes (cough), they just can’t expect you to do any productive email work at all. You don’t build a modern bridge with a century old hammer.

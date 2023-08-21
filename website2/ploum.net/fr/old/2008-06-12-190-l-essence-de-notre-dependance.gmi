@@ -1,0 +1,55 @@
+# L’essence de notre dépendance
+
+Un sujet qui est sans conteste sur toutes les lèvres actuellement est l’augmentation du prix de l’essence. L’essence est un produit polluant, nocif et, à ce titre, il est taxé (pas assez) par la majorité des gouvernements.
+
+=> ../files/old/essence.jpg L'avenir ?
+
+En tant que tel, l’essence ne permet rien. Ne produit que peu de chose. Cependant, il permet, selon une réaction complexe, le transport des biens et des personnes. À tel point que la toute grande majorité des transports se fait actuellement en utilisant de l’essence. Le transport ayant une valeur de plus en plus importante, la demande en essence est très forte. Par contre, l’essence est produite à partir du pétrole qui est une ressource naturelle limitée (je simplifie volontairement le problème en oubliant la production d’électricité, de chauffage, de plastiques, de polymères et tout le reste. Posons, par soucis de concision, l’équation essence = déplacement).
+
+Après une heure d’économie de base, n’importe quel étudiant vous dira qu’il est donc logique que le prix de l’essence grimpe en flèche, la demande augmentant exponentiellement, l’offre décroissant petit à petit. [1]
+
+Et pourtant, beaucoup semble tomber des nues, se scandalisent, exigent des actions du gouvernement (mais que vient faire le gouvernement là dedans ? Il est un consommateur comme un autre et n’a pas à réguler le marché). Certains argueront qu’ils n’ont pas le choix, je répondrai comme d’habitude : on a toujours le choix. Mais choisir implique de renoncer à certaines choses.
+
+Il faut dire que l’essence était vue comme un moyen de transport peu cher (à l’époque), facile à mettre en oeuvre, facile à transporter. Nous avons vécu dans une fausse insouciance sans nous préoccuper des conséquences (économiques et écologiques). Comme un dealer qui nous offre notre première dose, l’industrie pétrolière nous a rendu dépendants. Notre société, axée sur un transport à outrance, est devenue une quasi-monoculture de l’essence. Coupez l’essence pendant une journée et ce sera le chaos.
+
+Or, l’histoire nous a appris plus d’une fois les dangers de la monoculture. La pseudo-crise du prix de l’essence n’est qu’un signe avant-coureur. Nous l’avons amplement mérité, nous avons mené une politique de l’autruche absolument parfaite pour nous mettre nous-même dans cette situation. Et pourtant, nous agissons comme des drogués en manque, menaçant de faire grève, exigeant une solution miracle.
+
+=> http://fr.wikipedia.org/wiki/Grande_Famine dangers de la monoculture
+
+=> ../files/old/autruche.jpg Quoi ? Plus chère l'essence ?
+
+Personnellement, je pense que la réponse naturelle à ce manque de vision sera un recours de moins en moins fréquent au transport. Je pense, et j’espère, que des outils comme Internet nous permettent de nous passer d’une grande partie de transports inutiles. Au final, nous obtiendrions donc un retour, déjà observable dans certaines catégories de la population, aux producteurs locaux pour les produits principaux, et un recours aux technologies pour se passer le plus possible du transport.
+
+Mais ce qui m’interpelle le plus dans cet avenir c’est que nous sommes déjà en train de préparer notre prochaine crise. Notre monoculture est celle, évidente, du logiciel et des données stockées dans des formats électroniques. Notre mildiou est déjà présent : les brevets logiciels, les protocoles fermés et les formats propriétaires.
+
+=> /136-sur-les-ondes les protocoles fermés
+
+Nous vivons insouciant dans un monde où le logiciel est bon marché, nous encodons nos données dans des formats dont nous ne savons presque rien ou qui nécessitent de payer des droits pour pouvoir les lire (ce même le cas du célèbre MP3. Écrire un logiciel lisant le MP3 nécessite de payer une licence fort chère). Nous prenons l’habitude de communiquer en utilisant des services qui sont, pour le moment, gratuits mais sur lesquels nous n’avons aucun contrôle (Skype, MSN), nous envoyons nos données importantes dans des formats obscurs (.doc, .ppt) en arguant que tout le monde fait pareil.
+
+Nous nous comportons avec l’informatique comme nous le faisions avec l’essence il y a 40 ans. Nous ne prenons garde aux conséquences et privilégions la facilité et le confort immédiat (oui mais bon, Josiane est sur MSN, du coup, hein… Et puis pour le boulot, mon manager il veut du .doc hein. On n’est pas là pour changer le monde).
+
+=> ../files/old/essence2.jpg Et si le futur...
+
+Nous préparons notre avenir d’une manière tellement prévisible que cela pourrait prêter à sourire. Les solutions existent : le format Open Document, Jabber, et tant d’autres. À nous de les promouvoir, de refuser les compromis que l’on juge non éthique, d’insister pour l’utilisation des standards reconnus.
+
+=> http://fr.wikipedia.org/wiki/Open_document Open Document
+=> /39-jabber-pour-marie-et-les-non-ordinateuriens Jabber
+=> /141-les-10-logiciels-indispensables-sous-windows tant d’autres
+
+Et dire que, dans le cas de l’essence, nous nous sommes braqués sur un seul produit mais pour lequel il existe plusieurs producteurs. La concurrence joue donc en notre faveur et permet de faire passer la pilule (ou autre chose) plus facilement. En ce qui concerne l’informatique, nous nous abaissons au point de soutenir un monopole absolu d’une et seule compagnie ! Nous sommes en train de donner nos clés et de baisser nos frocs devant une unique entité. Signe avant coureur : les dirigeants de cette entité sont tous parmi les personnes les plus riches du monde. Lampe rouge ! Cet argent, c’est nous qui y contribuons en achetant les chaînes qui nous retiendront prisonnier dans dix ans.
+
+=> ../files/old/vieux_velo.jpg Vieux vélo rouillé
+
+Quoi ? Je suis pessimiste ? Je suis paranoïaque ? Je joue l’oiseau de mauvais augure ? Vous avez sans doute raison, pourquoi une entité monopolistique sur plusieurs produits indispensables augmenterait les prix afin de maximiser son revenu en exploitant une dépendance construite minutieusement? Poser la question, c’est y répondre.
+
+Après tout, les magnats saoudiens du pétrole sont tous très attristés par le fait que la moitié de notre salaire paye à peine notre transport vers notre lieu de travail. Je suis sûr qu’ils aimeraient beaucoup faire quelque chose. Y’a pas de raison que les dirigeants des entreprises logicielles monopolistiques ne fassent pas de même et ne soient pas sensibles à notre douleur.
+
+Linux et OpenOffice, c’est comme le train et le vélo[2]. C’est clair que c’est bien. Moi aussi je voudrais bien les utiliser hein mais, tu comprends, c’est vraiment pas possible. Mais je suis 100% pour que les autres l’utilisent. Vraiment.
+
+Brave petit coeur…
+
+#### Notes
+
+[1] Ceux qui ne me croient pas quand à l’importance du transport n’ont qu’à, pour se convaincre, observer autour d’eux la surface consacrée uniquement au transport dans un pays comme la Belgique. L’humain utilise la surface du sol pour se nourrir (élevage et culture), pour vivre (habitations, loisirs, travail) et pour se déplacer (routes, aéroports, rails). Avez-vous déjà constaté à quel point le monde est défiguré simplement par les moyens de transports ?
+
+[2] L’analogie s’arrête là. Tout ceux qui ont essayé Linux vous confirmeront que, à côté, c’est Windows qui a l’air d’un vieux vélo rouillé

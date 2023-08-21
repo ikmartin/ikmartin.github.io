@@ -1,0 +1,76 @@
+# Lorsque l’industrie fait son deuil
+=> files/old/old_industry.jpg
+
+Confronté à une évolution de la société ou un progrès technologique qui la met en péril, une industrie doit faire le deuil de son business model. Le deuil est une étape nécessaire avant de pouvoir construire un nouveau modèle, de s’adapter.
+
+Au cours de ce deuil, les industriels et les clients vont, sans le savoir, suivre les étapes décrites par Elisabeth Kübler-Ross : le déni, la colère, le marchandage, la dépression et pour finir l’acceptation. Au plus ces étapes seront longues, au moins l’acceptation sera facile.
+
+=> http://fr.wikipedia.org/wiki/Elisabeth_K%C3%BCbler-Ross Elisabeth Kübler-Ross
+
+Le déni
+
+Confronté à la nouveauté, les premières réactions vont être de l’ignorer ou de la minimiser. On reconnaît très bien cette étape au fait que les industriels ne savent donner aucun argument concret pour justifier la continuation de leurs affaires. À la place, ils se rabattent sur de l’impalpable : « Nos clients nous sont fidèles », « Notre clientèle fait confiance à nos années d’expérience », « Chez nous il y a le service et la qualité » voire « Les clients ne vont pas acheter ce produit concurrent, ce n’est pas dans leurs habitudes » ou « Il y a des cas où notre produit est meilleur ».
+
+Les clients eux-mêmes justifieront leur fidélité à l’ancien modèle avec ces arguments. Remarquons la difficulté de trouver du concret ou l’utilisation d’une situation existante pour justifier des ventes futures sans tenir compte de l’évolution probable. « Tout le monde n’a pas Internet ».
+
+Aujourd’hui, ce stade est très visible chez les fabricants d’ordinateurs portables « Une tablette n’est pas un outil de travail » ou de GPS « Mais tout le monde n’a pas de smartphone ». On le retrouve également dans l’industrie automobile « Du pétrole, on en trouvera toujours » ou « Il est illusoire de vouloir se passer de la voiture ».
+
+D’autres arguments de déni portent sur la fourniture de services annexes présentés comme indispensables : « Les gens vont continuer à acheter des CDs. Ils ont besoin de toucher, de consulter le livret. »
+
+La colère
+
+Les chiffres de vente sont en baisse, on ne peut plus le nier. Parfois, ce n’est pas une réelle baisse mais une croissance éhontée du concurrent. L’industrie passe alors par une phase de colère. Cette colère se marque par une moralisation appuyée de ce qui n’était que de la vente et de la consommation. L’évolution devient « mauvaise ». On fait peser sur les anciens clients infidèles une culpabilité morale.
+
+C’est Steve Ballmer qui traite Linux de Cancer, ce sont les usines nationales qui s’insurgent contre les produits étrangers, c’est l’industrie du disque qui présente le spectre des musiciens mourant de faim et réduits à mendier.
+
+Les clients fidèles intègrent cette moralité et elle donne un côté éthique à leurs achats. Acheter ces produits procure une gratification morale intense. Cela devient d’ailleurs l’unique valeur ajoutée de l’achat : on paie plus cher pour s’acheter une bonne conscience. Les clients ayant abandonné le navire sont pointés du doigt. Souvent, il est également fait appel à la fibre patriotique ou éthique.
+
+Le marchandage
+
+Il devient évident que la compétitivité et la rentabilité économique font désormais partie du passé. En échange de cette reconnaissance, l’industrie négocie la poursuite de ses activités mais, cette fois-ci, subventionnées par le gouvernement ou par des transactions tout à fait artificielles.
+
+Les arguments deviennent la préservation des emplois et le fait que la société ne peut pas se passer de l’industrie concernée. Contrairement aux étapes précédentes, les arguments ne sont plus destinés aux clients mais bien uniquement au pouvoir politique. On met également au défi les clients infidèles de trouver un nouveau business model mais sans changer un iota des intérêts existants. L’impossibilité flagrante de s’adapter sans rien changer est pris comme une justification de la continuation actuelle.
+
+=> /je-nai-faire-de-votre-business-model les clients infidèles de trouver un nouveau business model
+
+Typiquement, on trouve les industries lourdes qui ne tournent que grâce au financement public ou les journalistes qui souhaitent faire payer Google pour combler la perte de leurs revenus.
+
+Dans une grande majorité des cas, le pouvoir politique saute à pieds joints et finance des emplois de toutes façons condamnés.
+
+=> /creusez-un-trou emplois de toutes façons condamnés
+
+La dépression
+
+Dans la dépression, toutes les barrières sautent. L’industrie n’hésitera pas à recourir à des moyens à la limite de la légalité pour tenter d’inverser le cours du destin : corruption, attaques en justice de ses anciens clients qui ont eu le malheur de l’abandonner, lobby politique pour faire passer des lois iniques dans son unique intérêt.
+
+L’industrie du disque attaquant des citoyens pour téléchargement de MP3 et tentant de faire passer l’accord SOPA est un exemple particulièrement illustratif : toute moralité, toute humanité ont été abandonnées. On est dans la rage destructrice : le monde disparaîtra avec moi !
+
+Les grèves contre la fermeture d’une usine sont une autre illustration. Face à une menace de ne plus pouvoir travailler, les employés arrêtent le travail en signe de protestation et vont, dans certains cas, jusqu’à la destruction physique du matériel. L’apparente absurdité est en fait la manifestation d’un profond désespoir.
+
+La dépression mène aux licenciements en masse voire à la faillite totale. La responsabilité n’est que rarement assumée. Le monde entier et principalement les anciens clients sont accusés de tous les maux.
+
+L’acceptation
+
+Le nouvel ordre est accepté. De nouvelles entreprises apparaissent. Les anciennes qui n’ont pas fait faillite se restructurent soit en ciblant un marché particulier soit en adaptant leur offre.
+
+On notera par exemple la transformation radicale d’IBM qui est passé en quelques années d’une société produisant des ordinateurs à une pure société de logiciels, de services et de conseils. Devant la pression du marché, il était en effet évident que les marges sur le matériel n’allaient faire que baisser. IBM a anticipé et accepté ce fait pour s’adapter. D’autres, comme HP, éprouvent aujourd’hui les plus grandes difficultés pour être restés dans le déni (et y être toujours ?).
+
+Différence par rapport à un deuil classique
+
+Il est important de remarquer que, contrairement à un deuil classique, une industrie devant faire face à la disparition de son business model va faire l’expérience des étapes décrites sur une longue période et va les mélanger allègrement. En effet, les étapes concernent les individus. Les travailleurs, les dirigeants, les clients et les politiques. Chaque individu va passer à travers les étapes selon son propre rythme.
+
+Ainsi, un groupe de dirigeants peut être dans la phase de marchandage et convaincre un politicien de rester dans le déni en lui disant qu’il ne s’agit que d’une situation temporaire. Dans le même temps, on tentera de garder les clients dans l’état de la colère afin qu’ils fassent pression sur le politicien. Si l’industrie de la musique est clairement entrée dans la phase de dépression, ses clients fidèles et ses employés (les musiciens) oscillent pour la plupart entre la colère et le marchandage.
+
+Au sein d’une même entreprise, des employés peuvent être en train de suivre des cours du soir et d’envoyer déjà des CV (acceptation) alors que d’autres manifestent (dépression) et que certains préfèrent ne même pas y penser (déni).
+
+Conclusion
+
+Un point important est l’inéluctabilité. Dès qu’une entreprise ou un pan entier d’une industrie rentre dans le déni, la fin est annoncée. La résistance peut retarder la chute finale mais la rendra également plus violente. Plus les différentes étapes sont prolongées, moins il y a de chances d’avoir une acceptation douce avec une adaptation sans drames conséquents.
+
+Il faut cependant relativiser sur le fait qu’une fin annoncée peut parfois prendre des années pour devenir perceptible. L’aspect lointain renforcera le déni, posant les bases d’une chute finale violente en lieu et place d’une reconversion négociée.
+
+Photo par Holger Eilhard. Relecture par Pierre-Louis Peeters.http://www.flickr.com/photos/holgman/
+
+=> http://www.flickr.com/photos/86297353@N00/3878477752 Holger Eilhard
+=> http://www.plpeeters.com/ Pierre-Louis Peeters
+=> http://www.flickr.com/photos/holgman/ http://www.flickr.com/photos/holgman/

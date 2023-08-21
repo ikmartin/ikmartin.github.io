@@ -1,0 +1,56 @@
+# Getting Things Gnome! 0.1 – « Just 5 minutes more »
+
+=> ../files/old/gtg_icon.png GTG icon
+Bertrand and I are very proud to announce you the first release of Getting Thing Gnome!, a personal organizer and todo list manager for the GNOME desktop.
+
+=> http://rousseau.frispeech.com Bertrand
+=> http://gtg.fritalk.com Getting Thing Gnome!
+=> http://gnome.org GNOME desktop
+
+GTG allows you to add and edit tasks with nearly no fields at all. It support subtasks and tags that you can use the way you want. It aims for flexibility. Getting Things Gnome! goal is to adapt itself to your workflow, not the opposite. GTG also brings the concept of « workview », a display of tasks that can be done right now, right here.
+
+Nearly a year ago, we started discussing about softwares to keep our todo list and to be used with our more or less Getting Things Done methodology. We wanted a GNOME software, with a very simple interface, with the ability to quickly add a task without filling a huge form of hunderd fields. Nothing was nearly what we wanted so we decided to start our own business. In October 2008, we met for a brainstorm meeting where we decided the basis of our future interface.
+
+=> ../files/old/gtg_board.jpg The first GTG mockup
+
+A bit more than 4 sleepless months later, we are proud to offer you GTG 0.1 « Just 5 minutes more ». This release is dedicated to the countless times I replied « Just 5 minutes more » when I was coding and my beloved one was waiting for me.
+
+=> http://gtg.fritalk.com/post/2009/03/07/First-official-release-of-Getting-Things-Gnome%21%2C-GTG-%22Just-5-minutes-more%22-0.1 GTG 0.1 « Just 5 minutes more »
+=> http://kristina.fritalk.com/ beloved one
+
+GTG is still in its early stage and an experimental software. This is more a working proof-of-concept than a real software. We are really curious about every feedback. Don’t hesitate to send us your ideas and report bugs. We don’t want to keep GTG as our own project. We hope to see it, maybe one day, becoming a component of the GNOME desktop and, in this regard, user feedback is really important to us.
+
+=> http://gtg.fritalk.com/pages/about send us
+=> https://bugs.edge.launchpad.net/gtg/+filebug report bugs
+
+=> http://gtg.fritalk.com/pages/screenshots 
+=> ../files/old/gtg1.png gtg 0.1
+
+There are a few things that were on the planning but we couldn’t achieve for 0.1. The most important one is probably the ability to store your tasks on a server. In this regard, we developed an extensible backend system for GTG. It should be easy for any python coder to write a backend for GTG but currently we have no GUI for allowing the user to change his backend and we have only one implemented backend : localfile.
+
+=> https://bugs.edge.launchpad.net/gtg/+bugs?field.tag=backends ability to store your tasks on a server
+
+Amongst other stuff we didn’t achieve : translation infrastructure using launchpad (we simply don’t know how to do it properly) and unit tests (because, after all, it was an experiment, nothing else). But we hope to bring you all that goodness for GTG 0.2 with ambitious stuffs like a gnome applet, a full Dbus API, Gnome DO plugin and many others.
+
+=> https://bugs.edge.launchpad.net/gtg/+bug/336624 translation infrastructure
+=> https://bugs.edge.launchpad.net/gtg/+bug/298201 unit tests
+=> https://bugs.edge.launchpad.net/gtg/+bug/319152 gnome applet
+=> https://bugs.edge.launchpad.net/gtg/+bug/329989 full Dbus API
+=> https://bugs.edge.launchpad.net/gtg/+bug/336795 Gnome DO plugin
+=> https://bugs.edge.launchpad.net/gtg/+bugs?search=Search&amp;field.status=New&amp;field.status=Incomplete&amp;field.status=Confirmed&amp;field.status=Triaged&amp;field.status=In+Progress&amp;field.status=Fix+Committed many others
+
+=> http://gtg.fritalk.com/pages/screenshots 
+=> ../files/old/gtg2.png gtg 0.1
+
+So, grab GTG on our PPA, install it and send your feedback. And if you like GTG, join us on our user mailing list, on Ohloh, on #gtg (GimpNet) or anywhere else. We are looking for all contributions : documentation, translation (when it will be ready), a new icon, …
+
+=> https://edge.launchpad.net/~gtg/+archive/ppa our PPA
+=> https://edge.launchpad.net/~gtg-user our user mailing list
+=> https://www.ohloh.net/p/gtg Ohloh
+=> http://gtg.fritalk.com/pages/contribute anywhere else
+
+I hope you will be as enthusiast about GTG as I am. I’m using it all the time, at work and at home and it changed my life. That’s why I want to publicly hug Bertrand for all the hard work he putted in GTG. Without him, I would have never the motivation and the ideas to work on this project. He did all the boring stuff in GTG that I would have never done and it’s for me a real pleasure to work with him. Please kudo him on Ohlho, he deserves it !
+
+=> https://www.ohloh.net/accounts/broussea kudo him on Ohlho
+
+PS : if you want to be productive and get things done, here’s my advice : never develop your own GTD application. Never !

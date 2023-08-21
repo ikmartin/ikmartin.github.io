@@ -3,8 +3,13 @@
 
 # Isaac Martin's Homepage
 
-Hello! Putting down personal info and copying relevant portions of my CV is tedious -- I'll get to that in due time. You can find a copy of my CV here for now: ([CV - Last updated August 2022](/files/CV.pdf)). Right now I'm mostly using this site to host random pages contained in [blog](/pages/blog/blog/). 
+I'm Isaac Martin and this is my website.
 
-I'll update the other stuff once a reason presents itself.
+Biography: University of Utah (Bachelor's) -> University of Cambridge (Master's) -> University of Texas at Austin (Ph.D. -- working on it).
 
-This site was built with the Julia package [Franklin](https://franklinjl.org/), and I'm still learning about everything it has to offer. I highly recommend it.
+Here's an outdated copy of my CV: ([CV - Last updated August 2022](/files/CV.pdf)).
+
+This site was built with help from the Julia package [Franklin](https://franklinjl.org/) and styled using a modified version of the formatting found on [Ploum](https://ploum.net).
+
+
+This site was styled using a modified version of the formatting found on [Ploum](https://ploum.net) and the Julia package [Franklin](https://franklinjl.org/) lets me write in Markdown and LaTeX without *too* much faffing about.

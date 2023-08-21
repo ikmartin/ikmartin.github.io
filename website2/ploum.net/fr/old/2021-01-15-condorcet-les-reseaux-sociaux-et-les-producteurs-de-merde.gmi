@@ -1,0 +1,167 @@
+# Condorcet, les réseaux sociaux et les producteurs de merde
+=> files/old/N._de_Condorcet_28_mars_1794_Musee_de_la_Revolution_francaise_-_Vizille.jpeg
+
+## Le XVIIIe siècle et les réseaux présociaux
+
+En 1793, au cœur de la Révolution française, la plupart des députés girondins, particulièrement les brissotins, sont arrêtés et exécutés par les Montagnards dirigés par Robespierre. C’est la fameuse Terreur durant laquelle Robespierre voit dans la moindre idée modérée une menace contre la révolution.
+
+Bien qu’il ne soit pas officiellement Girondin, un mandat d’arrestation est également émis contre le député, mathématicien et philosophe Condorcet, ami de Brissot. Condorcet est un idéaliste optimiste. Opposé à la peine de mort, il s’est refusé à voter pour l’exécution de Louis XVI, crime contre-révolutionnaire s’il en est.
+
+Piètre orateur, Condorcet est un homme d’écrit d’une grande finesse et d’une grande intelligence, mais avec des compétences sociales limitées. S’il a utilisé sa plume essentiellement pour étudier les mathématiques, notablement celle du vote, et défendre ses idéaux (très en avance sur leur temps, notamment sur l’égalité des droits des hommes, des femmes, des noirs, sur la nécessité d’une éducation gratuite obligatoire et de qualité voire même sur une forme de revenu de base), il n’hésite pas à la tremper dans le fiel pour critiquer vivement les différents extrémistes que sont pour lui Robespierre ou Marat.
+
+Car, au 18e siècle, pas besoin de Facebook pour s’insulter publiquement. Les publications, souvent éphémères et autoéditées, se suivent et se répondent avec virulence pour le plus grand plaisir des Parisiens. Le troll le plus célèbre étant assurément Voltaire.
+
+Forcé de se cacher dans une petite chambre pour ne pas être guillotiné comme ses camarades, Condorcet va d’abord écrire toute sa rage, tenter de rétablir la vérité à travers des missives qu’il fait parvenir à différentes publications.
+
+Percevant qu’il s’épuise et dépérit, Sophie de Condorcet, son épouse et complice, lui enjoint d’arrêter d’écrire contre les autres et le convainc d’écrire pour lui. Écoutant les conseils de son épouse, Condorcet va se mettre à rédiger ce qui sera son Opus Magna : « Esquisse d’un tableau historique des progrès de l’esprit humain ».
+
+Bien que pourchassé et ayant vu ses amis guillotinés, Condorcet aux abois et sentant sa fin proche livre un plaidoyer humaniste et optimiste sur le futur de l’humanité. Le manuscrit achevé, il quittera sa chambre au bout de neuf mois par crainte de faire condamner sa logeuse. La brave dame sait qu’elle sera guillotinée sans procès si Condorcet est trouvé chez elle, elle refuse néanmoins à le laisser sortir et celui-ci doit user d’un subterfuge pour s’éclipser. Après deux jours d’errances, Condorcet est arrêté comme étant suspect, mais pas reconnu. Le temps de l’enquête, il est placé dans une petite prison locale où il décèdera mystérieusement. Suicide ou crise cardiaque liée à une piètre santé ? On ne le saura jamais.
+
+L’histoire de Condorcet me revient à l’esprit chaque fois que je vois passer des débats, des attaques, des réponses détaillées à ces attaques (souvent de bonne foi). C’est une histoire à garder en mémoire chaque fois que l’envie vous prendra d’interagir sur les réseaux sociaux ou de pondre un virulent billet de blog à charge.
+
+## Livres vs réseaux
+
+Car les réseaux sociaux sont mathématiquement bien pires que ce qu’on imaginait. Même si on construisait un réseau social éthique/bio/fairtrade/cycliste/sans gluten qui ne tente pas de nous vendre n’importe quelle merde ni de nous faire réagir à tout prix, le simple fait que ce soit un réseau social est suffisant pour que la qualité des messages mis en avant soit inversement proportionnelle au nombre de messages sur ledit réseau.
+
+En résumé : au plus il y’a de messages, au plus votre lecture ne sera qu’un petit pourcentage des messages (logiques) et au plus la qualité moyenne des messages baissera.
+
+=> http://meta.ath0.com/2020/12/social-notwork/
+
+
+La conclusion optimiste c’est qu’il est difficile de faire un plus grand réseau que Facebook, que leurs algorithmes tirent encore plus la qualité vers le bas et que, mathématiquement, on aurait touché le fond. Ce que vous lisez sur Facebook serait donc la lie de l’humanité, le pire du pire.
+
+La bonne nouvelle, c’est que si vous vous éloignez un instant de l’écran, que vous allez jusqu’à la bibliothèque municipale (voire celle de votre salon qui est devenue purement décorative depuis que vous avez un smartphone), vous trouverez des tas de choses à lire qui représente généralement le meilleur de l’humanité (particulièrement les vieux livres qui restent classiques ou populaires). Je vous invite à essayer, vous allez voir, l’effet est saisissant ! (même si c’est perturbant de ne pas avoir des notifications et des discussions qui interrompent la lecture).
+
+Bon, encore faut-il que les éditeurs jouent leur rôle : celui de forcer les artistes à innover, à sortir des sentiers battus. Malheureusement, ils font exactement le contraire en tentant de formater les œuvres, d’éviter de prendre des risques pour s’assurer une rentabilité. Or, les réels succès seront originaux.
+
+=> https://unspicilege.org/index.php?post/Des-auteurs-et-des-artistes
+
+
+## Grandir pour vendre de la merde
+
+Il semble y avoir un fil conducteur. Plus on devient grand, plus on produit de la merde. Comme le souligne Vinay Gupta dans son excellent « The Future Of Stuff » (livre très court qui ressemble au Capital de Marx live-tweeté par un cyberpunk sous amphés), le but du tailleur est de faire des vêtements qui vous aillent bien. C’est l’essence de son métier, de sa réputation, de son business. Le but d’un producteur de vêtements est de les vendre. C’est très différent. Le métier est différent et les produits seront différents. En fait, le vêtement peut même être immettable, on s’en fout s’il se vend.
+
+Et lorsqu’une grosse entreprise se retrouve, par erreur, à faire un bon produit, elle s’arrange immédiatement pour corriger le tir. Désolé, on l’a pas fait exprès.
+
+Pour ceux qui ont installé des réseaux wifi dans les années 2010, le WRT54G de Linksys était le meilleur routeur qu’il était possible d’acheter. La raison ? On pouvait flasher le firmware pour le remplacer par un logiciel open source permettant plein de choses (comme de servir de répétiteur, de configurer la puissance de chacune des antennes, d’installer un firewall, etc. Perso, j’utilisais DD-WRT). Mais ce n’était en fait pas volontaire. Linksys avait sous traité la gestion de la puce à Broadcom qui avait lui-même sous-traité le développement du firmware à une obscure boîte asiatique, laquelle avait tout simplement mis un Linux. Or, Linux étant sous GPL, il a bien fallu rendre les sources publiques.
+
+Cela ne faisait pas les affaires de Cisco, qui venait de racheter Linksys, pour une raison toute simple : le firmware open source offrait des fonctionnalités normalement réservées aux produits bien plus onéreux. L’astuce qu’a trouvée Cisco ? Sortir une nouvelle version du WRT54G avec un processeur moins puissant et moins de mémoire, histoire d’empêcher la version open source de tourner.
+
+Ce qui illustre bien que le but d’une entreprise n’est, en règle générale, pas de faire un bon produit pour les consommateurs, mais, au contraire, tenter de les forcer à acheter la plus mauvaise qualité possible.
+
+=> https://tedium.co/2021/01/13/linksys-wrt54g-router-history/
+
+
+L’idéologie de la Silicon Valley est qu’il faut soit croître au point de contrôler le monde, soit se faire racheter par un plus gros, soit disparaitre. Gardons à l’esprit que ce n’est qu’une idéologie. Et que nous sommes en train d’en subir les effets néfastes. Non, Gemini ou Mastodon ne remplaceront pas le web et Twitter. On s’en fout. Le but est d’être une alternative, pas un remplacement.
+
+Mon premier conseil ? Évitez de travailler pour les grands monopoles.
+
+Drew DeVault explique pourquoi c’est une mauvaise idée de bosser pour les GAFAM. Une mauvaise idée à la fois pour vous et pour le monde. Même si vous êtes super bien payé, vous jouez à la roulette russe avec votre avenir.
+
+=> https://drewdevault.com/2021/01/01/Megacorps-are-not-your-dream-job.html
+
+
+## La vie privée et le respect mutuel
+
+Mon second conseil ?
+
+Même si tout cela vous passe par-dessus la tête, faites un effort d’écouter lorsque les gens qui s’intéressent au sujet expliquent des choses. Pour le moment, si vous utilisez Whatsapp, on vous demande certainement d’installer Signal.
+
+Et bien, faites-le ! Ça ne vous coûte que quelques minutes d’effort et quelques mégaoctets d’espace sur votre téléphone.
+
+Je sais bien que vous avez déjà trois messageries, que vous vous en foutez, que vous n’avez rien à cacher.
+
+Mais c’est par simple respect des autres. En installant Whatsapp, vous avez fourni à Facebook tout votre carnet d’adresses, y compris ceux qui ne souhaitent pas être sur Facebook. La moindre des choses que vous pouvez faire est de permettre à vos amis pour qui c’est important de vous contacter sur Signal. Personne ne vous demande d’abandonner Whatsapp. On vous demande juste de ne pas rajouter à la pression sociale d’utiliser un service Facebook.
+
+C’est comme pour les fumeurs : on ne vous demande pas d’arrêter de fumer, mais juste de ne pas nous forcer à fumer (même si, pour reprendre l’analogie, nous continuons à subir le tabagisme passif).
+
+Alors, oui, Signal n’est pas parfait. Mais il est très bien alors installez-le par simple soutien citoyen envers ceux qui ne souhaitent pas être totalement pistés par Facebook. C’est bien leur droit, non ? En fait, la question est plutôt inverse : en quoi auriez-vous le droit d’imposer Whatsapp à vos contacts qui ne le souhaitent pas ?
+
+=> https://standblog.org/blog/post/2021/01/13/Par-quoi-remplacer-WhatsApp
+
+
+Si vous voulez aller plus loin dans l’exploration de la protection de la vie privée, voici le plug-in pour navigateur que j’attendais : Privacy Redirect. Il redirige Twitter, Instagram, Youtube, Reddit, Google Maps et Google vers des « miroirs » ou des alternatives qui préservent la vie privée tout en vous permettant d’accéder au contenu. C’est bien entendu complètement configurable et il est facile de désactiver un filtre particulier temporairement. J’utilise Teddit pour accéder aux liens Reddit et j’ai installé le logiciel Freetube, qui s’ouvre en dehors du navigateur, et permet de visualiser les vidéos Youtube rapidement et sans pub! J’ai également découvert que si l’interface d’Open Street Maps n’est pas aussi facile que celle de Google Maps, les résultats sont tout à fait utilisables. Je n’ai même pas besoin de me forcer : je tape machinalement « maps » et arrive sur openstreetmaps. Bon, pour la recherche, je reste à Duckduckgo parce que Searx est vraiment très expérimental.
+
+Bref, un excellent outil pour tenter de changer ses habitudes à moindre effort.
+
+=> https://github.com/SimonBrazell/privacy-redirect
+
+
+## S’informer hors des monopoles
+
+Pour s’informer en dehors des réseaux sociaux, il reste les bons vieux flux RSS, les mailings-liste et même… Gemini. Je vous explique ma routine matinale pour lire Gemini grâce au client en ligne de commande AV-98. C’est très geek, ce n’est pas pour tout le monde, mais ça me change des onglets ouverts dans tous les sens.
+
+=> https://linuxfr.org/users/ploum/journaux/augmenter-le-rendement-de-votre-moulage-de-pres-de-174
+
+
+J’ai d’ailleurs lancé mon gemlog, en anglais.
+
+=> gemini://rawtext.club/~ploum/
+
+Si Gemini ne vous intéresse pas, vous pouvez vous en passer sans soucis. Si vous avez raté mon billet expliquant ce qu’est Gemini, le voici.
+
+=> /gemini-le-protocole-du-slow-web/
+
+Ce qu’il y’a de rafraichissant avec Gemini, c’est l’impression de lire des textes tout simplement humains. Il n’y a pas de volonté de convaincre, pas de followers, pas de likes, pas de statistiques. Il y’a un plaisir calme à lire des avis, même complètement divergents, sur Gemini. Le fait d’être en ligne de commande et sans images y est également pour beaucoup.
+
+Mais j’avoue que Gemini est encore limité. Je m’informe et m’inspire principalement par flux RSS.
+
+Si je ne devais garder qu’un seul flux RSS, ce serait le Pluralistic de Cory Doctorow. Chaque jour, Cory poste un long billet composé de plusieurs sujets qu’il développe brièvement. C’est super intéressant, super bien résumé. Comme il poste ça sur Twitter, Mastodon, sa mailing-liste, son site web et Tumblr, que chaque billet vient avec des images et un colophon, je lui avais demandé quelle était sa technique de travail. Il m’avait répondu qu’il comptait justement en parler pour fêter le premier anniversaire de Pluralistic.
+
+Je trouvais que, même avec de bons outils et bien automatisé, le tout devait être un travail de titan. Il s’avère que Cory n’utilise pas d’outils particuliers. Pire, il se complique la vie en postant tout d’abord dans Twitter puis en copiant/collant dans Mastodon et Tumblr puis en remettant tout dans un fichier XML qu’il édite à la main. Il va jusqu’à écrire à la main le code HTML pour la licence Creative Commons. Et faire ses montages photos dans Gimp. Et ça, tous les jours !
+
+Insupportable pour un programmeur. Un lecteur l’a tellement pris en pitié qu’il lui a fait un script python pour simplifier certaines opérations. Cela reste néanmoins complètement inefficace. Mais une petite référence a attiré mon attention. Son père faisait de la mise en page de publications à la main, en coupant des morceaux de papier et les collant pour faire des compositions. Cory a l’impression de refaire le même travail.
+
+Et peut-être que cette inefficacité est essentielle pour lui permettre de digérer ce qu’il a lu, de relire ce qu’il écrit. En étant inefficace, il est immergé plusieurs heures dans ce qu’il a écrit. Il ne cherche pas à optimiser ses clicks, ses visiteurs. Il ne cherche pas à poster rapidement, à être efficace. Il est tailleur et non pas producteur de vêtements. Force est de constater que cela se sent.
+
+=> https://pluralistic.net/2021/01/13/two-decades/
+
+
+## Bds et pub obligatoire pour Printeurs
+
+Outre les flux et les biographies de Condorcet, je lis aussi des Bds.
+
+Je viens de terminer le 4e tome d’Aspic, par Gloris et Lamontagne. Une série vraiment brillante. Ce n’est pas un chef-d’œuvre absolu, mais lorsqu’un très bon dessin se met au service de personnages particulièrement attachants et d’une véritable histoire, il serait malvenu de bouder notre plaisir.
+
+Loin d’être une série à rallonge avec une intrigue infinie (coucou XIII et Sillage), Aspic propose plutôt des enquêtes en deux tomes, enquêtes qui mélangent allègrement un côté enfantin et un côté adulte assez sombre.
+
+À propos de livres adultes et sombres, Tonton Alias a fait une critique de Printeurs où il me compare… à Cory Doctorrow !
+
+> Je rapprocherais Printeurs des romans d’anticipation technologiques de Cory Doctorow. J’y ai trouvé quelques idées vraiment brillantes, comme l’idée du ciblage publicitaire comme outil de drague ou de surveillance.
+> 
+> Il a aussi quelque chose qui manque souvent aux bouquins de Doctorow: une intrigue trépidante. C’est un bon page-turner.
+
+=> https://alias.erdorin.org/printeurs-de-ploum/
+
+
+Il émet également des remarques négatives avec lesquelles je suis relativement d’accord. Pour les véritables amateurs de SF, Printeurs est un brin désuet. C’était assumé, car pensé au départ comme un hommage aux séries pulp des années 50. Je prends note pour m’améliorer.
+
+Ceci dit, si vous n’êtes pas convaincu, je vous invite à lire ce qu’en disent Sebsauvage et d’autres mastonautes :
+
+=> https://sebsauvage.net/links/?SlHGmQ
+
+
+Notamment Sebiii et Pyves, qui se plaignent d’avoir failli faire une nuit blanche à cause de moi.
+
+=> https://mastodon.social/@Sebiiiii/105321398407717687
+=> https://framapiaf.org/@Pyves/105389956170119860
+
+=> https://mastodon.social/@Sebiiiii/105321398407717687 https://mastodon.social/@Sebiiiii/105321398407717687
+=> https://framapiaf.org/@Pyves/105389956170119860 https://framapiaf.org/@Pyves/105389956170119860
+
+Purexo m’a également fait le plaisir de publier une critique de Printeurs… sur Gemini ! Je me demande si Printeurs est le premier roman critiqué sur Gemini.
+
+=> gemini://purexo.mom/blog/2020/12-16-critique-printeurs.gmi
+
+Si cela vous a convaincu, voici le lien pour commander :
+
+=> https://pvh-editions.com/shop/38-ploum
+
+
+Mais si ce genre de SF n’est pas votre truc, je comprends parfaitement. J’espère vous surprendre agréablement avec mes futurs écrits.
+
+Je vous remercie d’avoir accordé du temps pour me lire. Vous écrire à vous, mes abonnés ou lecteurs occasionnels, est à la fois un plaisir et un processus intellectuel important pour moi. J’espère que ce plaisir est partagé et je vous souhaite une excellente journée.
+
+Image : Mort de Condorcet, musée de la Révolution Française.
+
+=> https://commons.wikimedia.org/wiki/File:N._de_Condorcet_28_mars_1794,_Mus%C3%A9e_de_la_R%C3%A9volution_fran%C3%A7aise_-_Vizille.jpg?uselang=fr Mort de Condorcet

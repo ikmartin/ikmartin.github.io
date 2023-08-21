@@ -1,0 +1,94 @@
+# Donnez-moi la liberté de vous payer…
+
+Et si nous faisions en sorte qu’Internet nous permette de payer en toute liberté ?
+
+Que nous sortions du double carcan de la somme fixe et unique pour tout le monde et du poids moral négatif induit par l’usage (de la copie) sans rétribution ?
+
+=> https://framablog.org/public/_img/flickr/flattr_cc-by.jpg Flattr - CC by
+
+Si c’est possible de le copier, alors vous le trouverez gratuitement sur Internet. Ceci n’est pas un slogan publicitaire mais une constatation. Nous vivons dans un monde où le contenu s’est affranchi de son support matériel et des limites inhérentes. Dans ce monde, les barrières de l’accès à la connaissance sont tombées. Tout le monde peut partager une réflexion philosophique, une analyse d’une œuvre de Monet. Ou une vidéo de chatons et le dernier clip d’un chanteur à la mode.
+
+Au fond, c’est merveilleux. Cela devrait nous émerveiller tous les matins. Aucun auteur de Science-Fiction n’avait osé en rêver. C’est génial ! Sauf si on gagne sa vie à vendre du contenu sur un support physique. Auquel cas, la perspective est un peu inquiétante.
+
+=> /lorsque-lindustrie-fait-son-deuil un peu inquiétante
+
+Alors que le support physique n’était jamais qu’un moyen comme un autre de diffuser de l’information, les vendeurs ont tout d’abord tenté de lier irrémédiablement le contenu avec son contenant. Voire de distribuer le contenu de manière virtuelle mais en ajoutant artificiellement les contraintes du matériel, quand bien même ce matériel n’existait plus.
+
+Après cet échec prévisible, les industries du contenu cherchèrent d’autres méthodes de rentabilisation. Après tout, il existe des journaux gratuits, des chaînes de télévision gratuites. Le dénominateur commun étant le financement par l’ajout de publicité.
+
+=> /145-do-i-have-to-protect-my-content-with-drm-the-drm-equation échec prévisible
+
+Outre les questions qu’elle pose, la publicité a le problème de dégrader l’expérience du contenu. Apprécierez-vous d’être interrompu au milieu d’une fugue de Bach par un slogan ventant des croquettes pour chat ? Pire : tout comme il est possible de tout trouver gratuitement, il est également possible de bloquer la publicité.
+
+=> /mais-qui-paie-la-publicite les questions qu’elle pose
+=> https://framablog.org/index.php/post/2012/02/10/adblock-plus-arme-destruction-massive-internet bloquer la publicité
+
+Un monde virtuel qui ne vivrait que de la publicité serait fortement limité. En effet, la publicité devrait forcément faire référence aux produits du monde réel, celui au grand plafond bleu, produits limités en quantité par le monde réel lui-même. À l’heure où l’on parle de décroissance, on ne peut imaginer augmenter à l’infini les publicités.
+
+=> https://framablog.org/index.php/post/2009/03/09/andre-gorz-sortie-du-capitalisme-et-logiciel-libre décroissance
+
+Lorsqu’il n’est physiquement plus possible de forcer quelqu’un à vous donner de l’argent, la seule solution est de faire appel à son sens moral. De le convaincre. Deux choix s’offrent au vendeur : la voie positive « C’est bien de donner » et celle négative « Ne pas donner, c’est mal ! ».
+
+Devinez laquelle a été choisie ? Nous vivons dans un monde merveilleux où le partage est possible instantanément à travers la planète et nous avons réussi à transformer cette utopie futuriste, cette réalisation extraordinaire en un péché moral : « Ne pas payer, c’est mal ! », « Ne pas payer est illégal », « Si vous ne payez pas, vous serez poursuivi en justice », « Si vous ne payez pas, vos artistes préférés vont mourir de faim ».
+
+Mais toute cette rhétorique négative se fonde sur une série de postulats.
+
+##### 1. Un artiste doit être payé pour ses réalisations.
+
+FAUX. Cette vision se base sur une séparation nette entre les artistes d’un côté et les consommateurs de l’autre. Internet a démontré que nous sommes tous, à différents degrés, des artistes. Comme le dit Rick Falkvinge, un artiste c’est quelqu’un qui produit de l’art. À partir du moment où cette personne cherche à en tirer du profit, elle devient un entrepreneur. Et, à ce titre, c’est à elle de mettre en place un business model. On pourrait également appliquer cet argument au logiciel libre et dire que tout codeur doit être payé pour ses contributions. Pourtant, le logiciel libre prouve que c’est loin d’être le cas.
+
+=> http://falkvinge.net/2011/01/31/how-shall-the-artists-get-paid/ Rick Falkvinge
+=> /je-nai-faire-de-votre-business-model un business model
+
+##### 2. Tout travail mérite salaire.
+
+FAUX. Le client paie généralement le produit d’un travail, pas le travail lui-même. Creuser un trou dans votre jardin est un travail dur. Le reboucher l’est tout autant. Pourtant, personne ne vous paiera pour cela. Le travail n’est donc rémunéré que lorsque quelqu’un estime intéressant de le faire, quelle que soit sa raison.
+
+=> /creusez-un-trou Creuser un trou dans votre jardin
+
+##### 3. Il faut payer avant de consommer.
+
+FAUX. Imaginez que vous puissiez entrer dans un restaurant, manger et que le prix soit laissé à votre appréciation. Si vous avez aimé, vous payez beaucoup. Sinon, vous payez moins ou juste assez pour couvrir le prix des produits. Utopiques ? C’est pourtant dans ce monde que nous vivons de plus en plus. La musique en est l’exemple le plus marquant : il n’est pas rare de rencontrer des audiophiles qui achètent un album qu’ils ont téléchargé depuis six mois sous prétexte : « C’est vraiment un bon CD, je l’adore, je l’écoute en boucle. Du coup, je l’achète pour soutenir l’artiste. ».
+
+##### 4. Il est obligatoire de payer.
+
+FAUX. Contrairement à l’exemple du restaurant, la reproduction de l’information à un coût tout à fait nul. Il n’y a donc aucune raison particulière de payer pour consommer du contenu. Nous écoutons de la musique chez des amis, nous lisons un livre trouvé sur un banc, nous entendons un voisin expliquer le sens de la vie par dessus sa haie : nous consommons en permanence du contenu sans le payer. Pire, un même contenu peut être consommé gratuitement à titre promotionnel puis rendu payant par après. Les distributeurs de contenu sont donc dans la position schizophrénique de devoir diffuser le contenu autant que possible tout en empêchant… qu’il soit trop diffusé.
+
+Pourtant, cet argument de l’obligation de payer est tellement tenace qu’il en est devenu « Si c’est gratuit, c’est nul » jusqu’à un extrème « Si c’est cher, c’est bien » exploité par les grandes marques.
+
+##### 5. Chacun doit payer le même prix pour accéder au même contenu.
+
+FAUX. De nouveau, aucune loi naturelle n’oblige à ce que chacun paie la même chose pour le même service. Nous sommes pourtant habitués à ce genre de choses : les militaires, les jeunes et les pensionnés ont des réductions dans les transports en commun. Les journalistes et les professeurs ont des entrées gratuites dans certains musées.
+
+Quand on y pense, payer le même prix est foncièrement injuste. Une personne qui adore un contenu paiera autant que quelqu’un qui n’a agit que par réflexe suite à une publicité et ne le consommera qu’une ou deux fois.
+
+Si nous arrivons à remettre en question ces postulats, alors peut-être arriverons-nous à sortir de cette pernicieuse morale négative. Peut-être pourrons-nous enfin être fiers de cet accomplissement humain : le partage du savoir à tous les niveaux.
+
+Et des solutions commencent à se mettre en place. Ma préférée étant Flattr qui, justement, permet de donner une petite somme d’argent aux contenus que l’on apprécie et ce parfois automatiquement. Avec la subtilité que la somme donnée par mois est fixe, quelque soit la quantité de contenu consommé. Framasoft est sur Flattr et je milite activement pour qu’on puisse Flattrer les billets individuels ! Certes, Flattr est centralisé mais tout service gérant des transferts d’argent le restera tant que Bitcoin ne sera pas généralisé !
+
+=> https://flattr.com Flattr
+=> https://flattr.com/thing/68412/Soutenez-Framasoft Framasoft est sur Flattr
+=> https://framablog.org/index.php/post/2011/08/08/bitcoin Bitcoin
+
+Les artistes eux-mêmes commencent à bouger. Après l’expérience de Radiohead en 2007, c’est au tour d’Amanda Palmer de voir dans le « Payez ce que vous voulez » l’avenir des artistes. Et pour ceux qui souhaitent vraiment s’investir dans la réussite d’un artiste, les plateformes de « crowdsourcing » comme Kickstarter sont en train de contourner de plus en plus le rôle des gros producteurs, de décentraliser les industries du contenu.
+
+=> http://fr.wikipedia.org/wiki/In_Rainbows l’expérience de Radiohead
+=> http://www.billboard.com/biz/articles/news/indies/1533797/amanda-palmer-qa-why-pay-what-you-want-is-the-way-forward-and-more « Payez ce que vous voulez »
+=> http://www.kickstarter.com/ Kickstarter
+
+À ce genre de discours, il est courant d’objecter que, si ils ont le choix, les consommateurs vont éviter de payer. Pourtant, le choix est déjà là. La majorité des consommateurs choisit de payer pour des raisons morales le plus souvent négatives. Il existe également des domaines où le fait de donner volontairement est considéré comme normal : c’est le principe du pourboire. Je vous propose de tester le web payant pour vous faire votre propre idée.
+
+=> /si-vous-testiez-le-web-payant tester le web payant
+
+Transformer Internet en une économie du « Payez ce que vous voulez » ne serait donc que transformer les raisons morales afin de les rendre positives. Et, à ce titre, rendre complètement obsolètes tous les fichages, les surveillances et autre HADOPI. Un retour à la liberté.
+
+Flattr ne différencie pas les consommateurs des producteurs de contenu. Nous sommes tous des producteurs de contenu, nous somme tous des artistes. Et nous sommes tous également avides de nouveautés, d’art et d’idées. Finalement, n’est-ce pas un des fondement de l’égalité ?
+
+Contrairement à un achat, où je me sens toujours extorqué de mon argent durement gagné, faire un micro don me réchauffe le cœur, me donne le sentiment d’être, à mon échelle, un contributeur. Un sentiment de fraternité.
+
+Liberté, égalité, fraternité. C’est peut-être la définition du web et de l’art de demain.
+
+Crédit photo : Flattr (Creative Commons By). Initialement publié sur le Framablog.
+
+=> http://www.flickr.com/photos/flattr/5523494529/ Flattr
+=> https://framablog.org/2013/02/01/payer-en-liberte-ploum/ Framablog

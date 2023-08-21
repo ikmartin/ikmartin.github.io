@@ -1,0 +1,279 @@
+# Les 10 logiciels indispensables sous Windows
+
+Vaincu par les virus, les plantages incessants, les adwares, les spywares et toutes ces saloperies en -wares, vous avez fini par reformater votre disque et réinstaller Windows[1].
+
+Vous voilà donc avec un beau Windows tout propre, tout neuf et surtout tout vide. Il faut le reconnaître, Windows fraîchement installé ne fait pas grand chose. Voici donc les 10 logiciels à installer direct après une réinstallation. Tous les logiciels présentés sont des logiciels libres : vous pouvez donc légalement les copier, les redistribuer, les graver sur un CD de sauvegarde ou un CD à destination de vos amis. Vous êtes d’ailleurs encouragés à le faire. Tous ces logiciels sont aussi garantis sans virus, sans spywares, sans ajouts indésirables.
+
+=> /62-de-la-liberte-la-face-meconnue-de-l-informatique logiciels libres
+
+#### Notes
+
+[1] toute ressemblance avec des faits existants ne serait pas tout à fait fortuite
+
+--------------------------------------------------------------------------------
+
+On commence en force avec les indispensables de chez indispensable.
+
+=> http://www.mozilla-europe.org/fr/ 
+=> ../files/old/firefox-logo.png logo Firefox
+
+##### Firefox, le navigateur Internet
+
+Que les choses soient claires : Internet Explorer, le navigateur par défaut de Windows, ne doit servir qu’à une seule chose : télécharger Firefox. Comme je le disais dans mon dernier podcast PureBlog, Firefox est aujourd’hui utilisé par plus de 20% des internautes en Europe. Et j’en ai déjà parlé à plusieurs reprises.
+
+=> http://pureblog.purefm.be/2007/04/le_podcast_et_l.html mon dernier podcast PureBlog
+=> /19-surtout-ne-vous-laissez-pas-avoir-cest-une-arnaque à plusieurs
+=> /24-un-pays-sympathique-mais-aux-moeurs-parfois-etranges reprises
+
+=> ../files/old/screenshot-firefox.png Firefox
+Une fonctionnalité dont on ne peut plus se passer après quelques jours est la navigation par onglet. Pour ouvrir un lien, au lieu de cliquer bêtement dessus, cliquer avec la roulette (« middle-clic »). Cela ouvrira un lien dans un nouvel onglet et, si ça peut paraître déroutant au début, un navigateur internet ne se conçoit plus sans cette fonction tellement c’est pratique. Après, vous pouvez en plus le personnaliser avec les plugins et thèmes.
+
+=> http://www.mozilla.org/press/image-library/screenshot-firefox-mozorg.png 
+
+=> https://addons.mozilla.org/fr/firefox/ plugins et thèmes
+
+=> http://www.mozilla-europe.org/fr/ Télécharger Firefox
+
+=> ../files/old/thunderbird-logo.png logo thunderbird
+
+##### Thunderbird, pour lire vos emails
+
+L’équivalent à Firefox mais pour le mail cette fois-ci. Thunderbird intègre de plus un très performant filtre anti-spams et pleins d’autres bonnes choses. Thunderbird est par exemple capable de lire les flux RSS, vous permettant de voir en un coup d’oeil les nouveautés sur vos sites et blogs préférés.
+
+=> /89-the-ploum-s-ultimate-anti-spam-solution filtre anti-spams
+=> /79-ne-perdez-plus-le-fil-syndiquez-vous les flux RSS
+
+=> ../files/old/thunderbird-screen.png Thunderbird
+Bon, je vais vous sembler un peu dur, mais c’est du pur réalisme : aujourd’hui, utiliser Internet Explorer et Outlook Express, c’est comme se balader en slip sur la banquise ou boire de l’eau du robinet au Mexique. Ce n’est pas un risque d’attraper une myriade de virus et autres parasites, c’est une garantie absolue ! Ces 2 logiciels sont des passoires en terme de sécurité (et en termes d’ergonomie aussi). Donc, si vous n’êtes pas un administrateur hors pair qui jongle avec 3 anti-virus, 5 firewalls et autres machins incompréhensibles, le minimum requis est d’utiliser Firefox et Thunderbird.
+
+=> http://www.mozilla.org/press/image-library/screenshot-thunderbird-rss.png 
+
+=> http://www.mozilla-europe.org/fr/products/thunderbird/ Télécharger Thunderbird
+
+=> http://www.xiph.org/ 
+=> ../files/old/logo_vorbis.png Logo Xiph
+
+##### Les codecs Ogg Vorbis et Theora
+
+Le son et la vidéo sont encodés dans différents formats avec ce qu’on appelle des « codecs » (COmpression-DECompression). Le package suivant vous fournira les 3 codecs libres les plus employés : Ogg Vorbis, pour les musiques, qui offre une bien meilleure qualité que le MP3, Ogg Theora, pour les vidéos et Ogg Flac, qui s’utilise pour les fichiers audio dont on veut préserver la qualité originale sans la moindre perte (lossless compression).
+
+Une fois ce package installé, les fichiers dans ces 3 formats se liront dans la plupart des lecteurs multimedia Windows.
+
+Télécharger les codecs Ogg (ou depuis cette page)
+
+=> http://www.illiminable.com/ogg/oggcodecs_0.71.0946.exe Télécharger les codecs Ogg
+=> http://www.illiminable.com/ogg/ cette page
+
+=> http://www.7-zip.org/ 
+=> ../files/old/7ziplogo.png Logo 7-zip
+
+##### 7-zip, pour compresser/décompresser les archives
+
+Le format d’archivage le plus courant est le célèbre .zip. Mais vous allez un jour ou l’autre être confronté à des obscurs tar.gz, tar.bz2, .rar et autres .cab. Plutôt que d’installer un logiciel différent pour chacun de ces formats, 7-zip vous permet de faire tout en un. À ne pas manquer…
+
+Télécharger 7-zip (ou depuis le site)
+
+=> http://umn.dl.sourceforge.net/sourceforge/sevenzip/7z442.exe Télécharger 7-zip
+=> http://www.7-zip.org/ le site
+
+--------------------------------------------------------------------------------
+
+Et bien voilà, cela commence à prendre forme. Vous êtes toujours là ? Bravo ! On continue avec quelques logiciels qui ne sont peut-être pas indispensables mais qui sont malgré tout des « must have ».
+
+=> ../files/old/ooo_logo.png logo OpenOffice
+
+##### OpenOffice.org, la suite bureautique
+
+OpenOffice.org est une suite bureautique très complète qui vous permettra de remplacer complètement Microsoft Office. OpenOffice.org comporte un traitement de texte très puissant (writer), un tableur (calc), un utilitaire de présentation (impress), un outil de dessin vectoriel (draw). Outre sa gratuité (et si pour une fois, on se décidait à ne pas pirater Microsoft Office ?), OOo possède pas mal de petites fonctionnalités qui raviront les amateurs comme la possibilité de créer des PDF en un clic. Notons aussi que OpenOffice lit le format OpenDocument, qui est le nouveau format standard pour les fichiers bureautiques. Les fichiers texte sont .odt, les fichiers classeurs (tableurs) sont en .odc et les fichiers présentation sont en .odp. Mais OOo lit très bien aussi le format Office (.doc, .xls, .ppt).
+
+=> http://fr.wikipedia.org/wiki/OpenDocument OpenDocument
+
+=> ../files/old/ooo_screen.png Screenshot OOo
+Même si vous êtes un aficionado de Microsoft Office, c’est une bonne idée d’installer OpenOffice.org sur votre ordinateur, histoire de pouvoir ouvrir les fichiers au format OpenDocument. Et puis de tester autre chose. Les grands nerveux apprécient beaucoup OpenOffice.org pour l’absence de cet insupportable trombone…
+
+Télécharger OpenOffice.org (ou depuis le site francophone)
+
+=> ftp://ftp.free.fr/mirrors/ftp.openoffice.org/localized/fr/2.2.0/OOo_2.2.0_Win32Intel_install_wJRE_fr.exe Télécharger OpenOffice.org
+=> http://fr.openoffice.org/about-downloads.html le site francophone
+
+=> http://www.videolan.org/ 
+=> ../files/old/vlc_logo.png logo VLC
+
+##### VLC, le lecteur vidéo tout puissant
+
+VLC est un lecteur de fichiers multimédias. Point à la ligne. Rien de plus et c’est exactement ce qu’on lui demande : pas de boutons dans tous les sens, de proposition de téléchargements payants, de publicités.
+
+=> ../files/old/vlc_screen.png Screen VLC
+En plus, contrairement à beaucoup d’autres logiciels, VLC supporte nativement la plupart des formats courants de vidéo/audio et n’a donc pas besoin de codecs supplémentaires. Si vous utilisiez que VLC, le téléchargement ci-dessus des codecs Ogg Theora/Vorbis n’aurait pas été nécessaire.
+
+=> http://www.videolan.org/vlc/screenshots.html 
+
+Simple, léger, ergonomique, vous ne pourrez plus vous en passer.
+
+Télécharger VLC (ou depuis le site)
+
+=> http://downloads.videolan.org/pub/videolan/vlc/0.8.6a/win32/vlc-0.8.6a-win32.exe Télécharger VLC
+=> http://www.videolan.org/vlc/download-windows.html le site
+
+=> http://jabberfr.org 
+=> ../files/old/jabber_logo.png Jabber
+
+##### Chattez avec Jabber
+
+=> ../files/old/gajim_roster.png Gajim
+Pour chatter avec vos amis sur le réseau Jabber, vous avez besoin d’un client Jabber. Jabber est le nom d’un protocole de messagerie instantanée. Si vous possédez un compte GMail, et bien votre adresse gmail est aussi une adresse Jabber ! Il existe une multitude de serveurs Jabber, tout comme il existe une multitude de serveurs emails qui peuvent tous communiquer entre eux. Pour plus d’informations sur Jabber, je vous redirige vers le site Jabber francophone.
+
+=> http://gajim.org/screenshots.php?lang=fr 
+
+=> /39-jabber-pour-marie-et-les-non-ordinateuriens protocole de messagerie instantanée
+=> http://mail.google.com GMail
+=> http://www.jabberfr.org/ Jabber francophone
+
+Google Talk est un exemple de client Jabber que vous utilisez peut-être déjà. Cependant, il existe une multitude d’autres clients. Si vous n’êtes pas pleinement satisfait de Google Talk, je vous recommande d’essayer Gajim, qui fonctionnera très bien avec votre compte gmail.
+
+=> http://www.google.com/talk/ Google Talk
+=> http://wiki.jabberfr.org/Clients autres clients
+=> http://gajim.org/ Gajim
+
+Notons aussi le logiciel Pidgin qui a la particularité de supporter votre compte Jabber, Gmail mais aussi MSN ou ICQ. Cependant, on ne le repetera jamais assez : il est important d’utiliser des protocoles libres et standardisés. Rien n’empêche, cependant, de continuer à utiliser MSN messenger en parallèle avec votre client Jabber.
+
+=> http://www.pidgin.im/ Pidgin
+=> /107-the-captive-clown protocoles libres et standardisés
+
+Télécharger Gajim – Télécharger Pidgin
+
+=> http://gajim.org/downloads/gajim-0.11.1+gtk-1.exe Télécharger Gajim
+=> http://umn.dl.sourceforge.net/sourceforge/gaim/gaim-2.0.0beta6.exe Télécharger Pidgin
+
+PS : à ma connaissance, ni Gajim ni Gaim ne supportent pour le moment les conversations vocales. Si vous utilisez cette fonctionnalité, alors mieux vaut continuer à utiliser le logiciel Google Talk.
+
+=> http://talk.google.com Google Talk
+
+--------------------------------------------------------------------------------
+
+Ouf ! Et bien, on a pas mal avancé non ? Le système est tout beau, tout propre et plein de fonctionnalités. Je ne résiste pas à vous donner 3 derniers logiciels complètement craquants. Vous voulez faire une petite pause ? Ok, pas de problème, je vous attend ici, on se retrouve dans 5 minutes.
+
+C’est bon ? Allez, on replonge, c’est presque terminé !
+
+=> http://abiword.org 
+=> ../files/old/abiword_logo.png Abiword logo
+
+##### Abiword, le traitement de texte ultra-léger
+
+=> ../files/old/abi-win32.jpg Screenshot Abiword
+Si vous n’êtes pas un utilisateur ultra poussé du traitement de texte, que les macros et les tableaux complexes vous sont inconnus, OpenOffice ou MS Word vous semblent sans doute énormes, complexes et lourds à utiliser.
+
+=> http://abiword.org/screenshots/ 
+
+Si vous êtes dans ce cas, Abiword est fait pour vous : rapide,léger et, surtout, ultra simplissime d’utilisation.
+
+Vous voulez taper du texte ? Juste taper du texte ? La plume vous démange ? Un seul mot : Abiword ! Abiword dispose de son propre format de fichier (.abw) mais supporte les .doc de MS Word et les .odt OpenDocument après installation d’un simple plugin (à installer après Abiword).
+
+=> http://www.abisource.com/downloads/abiword/2.4.6/Windows/abiword-plugins-impexp-2.4.6.exe d’un simple plugin
+
+Télécharger Abiword (ou depuis le site) – Télécharger le dictionnaire français (et les autres langues) – Plugins de support du format ODT
+
+=> http://abiword.org/downloads/abiword/2.4.6/Windows/abiword-setup-2.4.6.exe Télécharger Abiword
+=> http://abiword.org/download/ le site
+=> http://abiword.org/downloads/dictionaries/Windows/AbiWord_Dictionary_Francais.exe Télécharger le dictionnaire français
+=> http://abiword.org/downloads/dictionaries/Windows/ les autres langues
+=> http://www.abisource.com/downloads/abiword/2.4.6/Windows/abiword-plugins-impexp-2.4.6.exe Plugins de support du format ODT
+
+=> http://www.gimp.org/ 
+=> ../files/old/gimp.jpg Gimp
+
+##### Gimp, la retouche photo avancée
+
+Gimp est un logiciel ultra complet et très complexe de dessin et de retouche photo. Autant le dire de suite, c’est un équivalent complet à des logiciels comme Photoshop ou Paint Shop Pro. À la différence qu’il est libre, qu’il tourne sur Linux/Windows/MacOS et qu’il est gratuit.
+
+=> http://www.gimp.org/screenshots/ 
+
+J’aime autant vous prévenir : ce n’est pas un logiciel simple d’accès. Si vous n’avez jamais fait de retouche photo et que vous êtes motivé, il existe une documentation très complète en français. Mais durant les premières semaines, vous serez sans doute perdu. Qu’à cela ne tienne, en persévérant, vous serez peu à peu ébahi par vos résultats.
+
+=> http://docs.gimp.org/fr/ documentation très complète en français
+
+Si vous connaissez bien Photoshop, la transition risque d’être douloureuse. En effet, vous perdrez vos repères. Cependant, encore une fois, la persévérance est le maître mot. Au bous de quelques semaines, vous découvrirez des fonctionnalités insoupçonnées et, au bout de quelques mois, vous vous demanderez comment vous avez pu utiliser autre chose. À essayer donc.
+
+Particularité : ce logiciel s’installe en 2 parties. Il faut d’abord installer ce qui porte le nom barbare de GTK+ 2 Runtime Environment avant d’installer Gimp proprement dit.
+
+Télécharger GTK+ machin truc – Télécharger Gimp (ou depuis le site)
+
+=> http://superb-east.dl.sourceforge.net/sourceforge/gimp-win/gtk+-2.10.6-1-setup.zip Télécharger GTK+ machin truc
+=> http://easynews.dl.sourceforge.net/sourceforge/gimp-win/gimp-2.2.13-i586-setup-1.zip Télécharger Gimp
+=> http://gimp-win.sourceforge.net/stable.html le site
+
+=> http://www.musikcube.com 
+=> ../files/old/musikcube_logo.png musikcube
+
+##### Muzikcube, transformez votre PC en jukebox
+
+Pour terminer, un logiciel qui vous permettra de transformer votre PC en véritable Juke box : Musikcube. Disposant de nombreux plugins (dont un plugin Audioscrobbler), supportant le Ogg Vorbis et le Ogg Flac en plus du MP3, c’est le lecteur de musique idéal.
+
+=> http://www.last.fm/ Audioscrobbler
+
+Télécharger MusikCube (ou sur le site)
+
+=> http://www.musikcube.com/action/download/mcube_winbuild_stable Télécharger MusikCube
+=> http://www.musikcube.com/page/main/download le site
+
+--------------------------------------------------------------------------------
+
+Et pour le reste ? J’ai besoin de plus de 10 logiciels moi !
+
+=> http://www.framasoft.net/ 
+=> ../files/old/frama.png Framasoft
+
+##### Le réflexe Framasoft
+
+Au court du temps, vous allez avoir envie ou tout simplement besoin de nouveaux logiciels, de nouvelles fonctionnalités. Plutôt que de payer des milles et des cents pour un logiciel soi-disant 4 étoiles dans PC-arnaque magazine ou bien de télécharger illégalement un truc louche et sa floppée de virus, prenez le temps de faire un tour dans l’annuaire Framasoft. Tous les logiciels présentés sont testés et garantis 100% libres sans spyware, sans phosphate ni agent blanchissant ajouté. Alors, vous aussi faîtes une fleur à la nature…
+
+=> http://www.framasoft.net/rubrique2.html l’annuaire Framasoft
+
+=> http://www.framasoft.net Framasoft, parce que je le vaux bien
+
+--------------------------------------------------------------------------------
+
+Et voilà, c’est terminé. Terminé ? Vraiment ?
+
+Vous aurez remarquer que, dans la liste, il n’y a aucun antivirus, antispyware ou antimachinbrol. Logique, moi personnellement j’utilise Ubuntu Linux. Sous Linux, il n’y a pas de virus, pas de machin. On ne passe pas son temps à se battre contre son ordinateur et à essayer de s’en protéger. On se contente d’installer les logiciels dont on a besoin ! Sous Windows, l’ordinateur a une vie indépendante, chaque journée d’utilisation est une lutte sans fin pour mettre à jour l’antivirus, pour nettoyer tous les adwares, pour tenter vainement de prendre le contrôle de votre ordinateur. Et vous le savez aussi bien que moi, ce combat est perdu d’avance. D’ici un mois, deux mois, 6 mois si vous êtes vraiment très doué, il faudra tout réinstaller, tout reprendre à zéro.
+
+=> http://www.ubuntu.com/ 
+=> ../files/old/ubuntulogo.png Ubuntu
+
+##### Ubuntu, un Linux complet, simple et agréable
+
+Je vous entend déjà marmonner : « Linux, mais c’est très compliqué« . Non. C’est juste différent. C’est même beaucoup plus simple que Windows. Vous trouvez ça simple vous de devoir chercher des programmes un peu partout, de tout installer, de tout mettre à jour un peu au pif, de réinstaller tous les 6 mois, de ne pas savoir désinstaller un programme qui affiche des pubs dans votre navigateur internet ? Avec Linux, vous installer le système et la majorité de ce dont vous avez besoin est déjà présent : Firefox, OpenOffice.org, Gaim, Gimp, les codecs… Vous voulez installer Abiword ou Thunderbird ? Cliquez simplement dans la liste et voilà. Vos programmes sont automatiquement téléchargés, installés, configurés. Il apparaissent aussi dans le menu approprié (parce que le menu démarrer kilométrique de Windows avec les programme classés par ordre alphabétique des noms des sociétés productrices, c’est pas vraiment le pied).
+
+=> http://polishlinux.org/reviews/gnome-app-install/gnome-app-install_thumb.png dans la liste
+
+=> ../files/old/30.png Screenshot Ubuntu
+Tiens, quand vous achetez du matériel, il est toujours livré avec des CD-roms desquels il faut installer un tas de trucs. Puis, la version du CD-rom étant trop ancienne, il faut télécharger un « driver » mis à jour. Oui, vraiment, c’est facile Windows. Sous Ubuntu, c’est ultra complexe : on branche le matériel et ça marche. J’admets que pour les imprimantes, en plus de la brancher, il faut cliquer sur « Ajouter une nouvelle imprimante » dans le menu d’administration.
+
+=> http://ubuntu-fr.org/galerie/30.png 
+
+« Oui, mais j’ai pas le temps d’apprendre Linux« . Si vous êtes un utilisateur normal de votre ordinateur, l’apprentissage se résumera à savoir où sont les icônes de vos programmes préférés et comment installer des applications. Une grosse heure de travail. Disons une journée pour les cas difficiles. Puis, une petite semaine pour retrouver vos marques. Mais à côté de cela, plus de virus, plus de spywares, des mises-à-jours automatiques et centralisées pour « tout » vos programmes en même temps. Oui, vous risquez de perdre une journée. Mais combien de temps vous a pris la dernière réinstallation de Windows ? Combien de temps passez-vous par jour rien qu’à nettoyer, rebooter ou tenter de déplanter votre ordinateur ? Mon petit doigt me dit que l’apprentissage de Linux sera vite rentabilisé.
+
+=> ../files/old/41.png Screenshot Ubuntu
+Pratiquement, les deux seules choses qui peuvent encore vous retenir de ne pas utiliser Ubuntu sont : besoin d’une application très spécifique dont il n’y a pas d’équivalent sous Ubuntu ou bien un matériel spécifique qui n’est pas reconnu sous Ubuntu. Mais la meilleure façon de le savoir, est de tester : Téléchargez votre version Ubuntu, gravez-la sur un CD, insérez le CD dans le lecteur et redémarrez votre ordinateur. Voilà, vous pouvez tester Ubuntu sans rien installer ! Magique non ? Ça s’appelle un Live CD.
+
+=> http://ubuntu-fr.org/galerie/41.png 
+
+=> ftp://ftp.free.fr/mirrors/ftp.ubuntu.com/releases/edgy/ubuntu-6.10-desktop-i386.iso Téléchargez votre version Ubuntu
+
+Bien évidemment, passer à Linux implique un changement. On éprouve tous des difficultés à changer des habitudes bien établies, surtout depuis plusieurs années. Certains personnes s’adaptent facilement, d’autres ont beaucoup de mal. On a même vu des anciens utilisateurs Windows refuser d’utiliser Linux car il n’y avait pas d’antivirus ! On a eu beau leur expliquer que ce n’était pas nécessaire, ils n’en démordaient pas. Finalement, un éditeur de logiciels pour Linux a sorti un antivirus pour Linux qui, de l’aveu du concepteur, ne faisait rien du tout que d’afficher une icône « antivirus activé ». Et cela a suffit…
+
+Bref, si vous décidez de sauter le pas et d’installer Linux (en parallèle de votre Windows, c’est tout à fait possible), attendez une période tranquille, où vous n’avez pas de stress important, où vous pouvez prendre un peu le temps d’apprécier vos découvertes. D’ailleurs, je ne peux que vous conseiller d’attendre encore 2 petites semaines avant une installation définitive, la prochaine version d’Ubuntu doit bientôt sortir. Cela vous permettra d’installer le tout dernier cri en matière d’Ubuntu 😉
+
+Et puis, vous n’êtes pas seul ! Pour vous aider, il existe un excellent site en français nanti d’une communauté très sympathique. Passez nous dire bonjour sur le forum. Si vous souhaitez une documentation complète, qui vous guidera pas-à-pas et vous permettra de faire une transition vers Ubuntu en douceur, je ne peux que vous conseiller cet excellent livre sur le sujet[1].
+
+=> http://ubuntu-fr.org/ un excellent site en français
+=> http://forum.ubuntu-fr.org/ sur le forum
+=> http://www.eyrolles.com/Accueil/Livre/9782212120035/livre-ubuntu-efficace.php cet excellent livre sur le sujet
+
+Voilà, c’est vraiment fini. Je suis embêtant avec mes trucs à rallonge et mes logiciels libres, hein ? Mais je vous assure que ça me fait très plaisir que vous ayez réussi à lire jusqu’ici. Ça me ferait encore plus plaisir que vous passiez à Ubuntu, mais bon, on va pas non plus se faire la tête pour des bêtes questions d’ordinateur non plus. Bonne journée et bon amusement 🙂
+
+=> http://www.scoopeo.com/software/les-10-logiciels-indispensables-sous-windows Scoopez cet article
+
+#### Notes
+
+[1] Non je n’ai pas honte, pourquoi ? Personne n’a rien remarqué !

@@ -1,0 +1,106 @@
+# The Bitcoin Bubble
+
+=> ../files/old/bubbles.jpg bubble bubble
+
+Currency is a way for people to exchange value. By itself, the currency does not have a real value. It only carries the symbolic value that people want to put in it. Try to pay with gold or euro in a Papuan tribe and you will understand what I mean.
+
+=> ../files/old/moneysecurity.jpg Money through UV
+In order to keep this value to a certain level, the currency should be scarce. The first solution was to use naturally scarce elements like gold. In a more modern way, a central authority « emit » the currency in a limited quantity. To avoid counterfeit money, a bunch of technical measures are taken, including a serial number. You can see those measure on any modern banknote.
+
+But the money becomes increasingly virtual. For most of us, our salary is only a number on a computer screen. One might ask: how to avoid counterfeit money if it’s only a number in a computer?
+
+It’s indeed a very hard problem. To tackle it, the central authority is constantly watching banks and institutions. There are central regulations. And do you know what? The system is producing counterfeit money anyway but in a legal way. Banks lend more money than what they own. It is easy: just adding some number on a computer. The quantity is regulated by the law but it is counterfeit money anyway.
+
+As we see, virtual money cannot work without a central institution ensuring that there is no double-spending.
+
+Here comes bitcoin. Bitcoin is a free software and a peer-to-peer network when every participant hold a certain number of mathematical objects. Thanks to some cryptographic algorithms, the network ensures that a given mathematical object belongs to one and only one participant. Participants are of course free to exchange those objects, called bitcoins, between themselves.
+
+=> http://www.weusecoins.com/ bitcoin
+=> http://www.bitcoin.org/ Bitcoin
+=> https://bitmarket.eu/market exchange
+
+=> http://www.weusecoins.com/ 
+=> ../files/old/bitcoinbig.png bitcoin
+
+Without the need for a central authority, bitcoins are in limited quantity and cannot be counterfeit. If only they had some value, we could use them as money.
+
+Wait!
+
+As we said, money has value only because people are willing to accept it against goods. As soon as someone is willing to accept bitcoins for goods, work or anything else, bitcoins start to have a value.
+
+And this is clearly what is happening right now: some people accept bitcoins for webhosting, sextoys or aikido lessons.
+
+=> https://en.bitcoin.it/wiki/Trade accept bitcoins
+=> http://fritalk.com/post/btc-offer webhosting
+=> http://www.bitcoinsextoys.com/ sextoys
+=> http://utrecht.sanshinkai.eu/club/fee-and-contribution/?lang=en aikido lessons
+
+The more stuffs you might buy with bitcoin, the more value a bitcoin has.
+
+Anticipating this trend, some people are buying bitcoins now thinking that bitcoin value will raise in the future. As there’s a lot of demand to buy bitcoin, the value of bitcoin raise ever more. You probably know that principle: it’s called speculation.
+
+In less than 10 months, the bitcoin raised from 0,01€ to nearly 1,3€. But how much of this value is due to the market and how much is due to speculation? What will happen in the future?
+
+=> https://bitmarket.eu/ nearly 1,3€
+
+There are three possible scenarios: infinite expansion, stable universe or big crunch.
+
+##### The infinite expansion
+
+That’s what die-hard bitcoin fans are expecting. More and more people accept bitcoins as payment, bitcoin value raises a lot in the coming years before stabilizing when it becomes the official money for the entire planet. Governments tries to ban bitcoins to keep their own local economic power but fail to do so.
+
+=> http://www.bitcoin.org/smf/index.php?topic=6652.0 Governments
+
+It looks like a very improbable scenario but, who knows?
+
+##### The big crunch
+
+=> ../files/old/bubble.jpg Bubble is fun
+Like every speculative bubble, it inflates, it inflates until someone wakes up one morning and thinks: « What am I doing? I’ve spent all my savings into virtual mathematical objects! Let’s sell that quickly ». As people start to sell, prices decrease. Seeing the decrease, those with the biggest shares panic and think « I’ve to sell quickly before everyone else » and prices go down at an insane rate. It might look completely stupid but if people are doing that with startups, why not with bitcoins? Hence came the .com era and the trend to buy for billions companies that don’t even have a business model (who said Twitter?).
+
+=> /no-proprietary-service.html Twitter
+
+It could also happen in a more subtle way: people start to get bored. They have enough sextoys and aikido lessons, they don’t see what to do with all bitcoins they have. They sell.
+
+##### The flat universe
+
+Where goes the money in case of a crash? For the .com crash, money was spent paying the rent, the employees and the subcontractors. This money cannot be returned, of course. People worked for you, they were paid. The fact that you asked them to do useless stuffs is not their problem.
+
+With bitcoin, the situation is slightly different in the sense that there’s little money actually spent. It means that, if bitcoin explodes as a bubble, there will still be the exact amount of money[1]. In an ideal world, everybody will sell at more or less the price he bought. In the real world, some will be richer, some will be poorer but there will be some kind of balance.
+
+Having a minimal risk makes a panic less likely to happen. Most of people who buy bitcoins are doing it in a reasonable range. Losing all their bitcoins right now would not be more annoying than losing their wallet. When an Aikido teacher accept a student for bitcoins, it’s only one more student. Not a big risk.
+
+=> http://utrecht.sanshinkai.eu/club/fee-and-contribution/?lang=en Aikido teacher accept a student for bitcoins
+
+Once the speculative bubble pops out, it is certain that prices will decrease, allowing bitcoin detractors to call it a failure or a ponzi scheme[2]. Some will even lose some money, some will earn a lot.
+
+=> ../files/old/pilemoney.jpg Pile of money
+
+But, in the end, bitcoin market will stabilize itself. The bitcoin community is here to stay, exchanging goods between themselves. At which rate? At which size?
+
+That’s a good question. If I only had the slightest idea, I would be buying/selling bitcoins right now.
+
+But there’s one thing I’m sure: who would have guessed, in 1887, that Esperanto would be spoken by millions of people? Who would have guessed in 1991 that Linux would have more than 1% market share on desktop computers? That XMPP would be widely used despite MSN/ICQ domination only a few years ago?
+
+=> http://en.wikipedia.org/wiki/Esperanto Esperanto
+=> http://en.wikipedia.org/wiki/Linux Linux
+=> http://xmpp.org/ XMPP
+
+=> ../files/old/bitcoins.png bitcoins
+If you liked the article, tips are welcome on the following bitcoin address: 18khU9QhmxoSsLpjj3jWYMmdvS9zrTS4WT
+
+If you want to try to earn some bitcoin, please offer your services against bitcoin. You certainly have some talents that people need.
+
+=> http://www.bitcoin.org/smf/index.php?board=5.0 offer your services against bitcoin
+
+Pictures credits: silly_a1804, epsos.de, melisdramatic
+
+=> http://www.flickr.com/photos/silly_a1804/2470580558/ silly_a1804
+=> http://www.flickr.com/photos/epsos/5394616925/ epsos.de
+=> http://www.flickr.com/photos/melisdramatic/270979952/sizes/o/ melisdramatic
+
+#### Notes
+
+[1] except some electricity fees
+
+[2] despite the fact that speculation has nothing to do with a ponzi scheme, it is now usual for any economy illiterate to call anything that involves risks a ponzi scheme. If you can lose money, it’s ponzi. First, you have to explain them than Ponzi is not a pasta brand.

@@ -1,0 +1,54 @@
+# Dreaming of subscript.io
+
+I find myself dealing with more and more subscriptions to web services. This year, I had a peak at 16 subscriptions running at the same time. When I subscribe to a service, I always do it for a full year. That’s usually way cheaper than a monthly subscription and, also, it allows me to see how I will use the service in the long run. When I’m convinced by the free version, it often takes more than 2–3 months before I settle down.
+
+This means that, nearly every three weeks, I’ve to deal with the question : should I renew this subscriptions or not? I have to remember to cancel subscriptions, I have to decide. And I have to keep track of how much it costs me per year.
+
+I also like bundles which allow me to test some services while extending my current favourites for free.
+
+Not to mention that I sometimes receive gifts: a few months of subscription for a service that I already use. Or a new service to test.
+
+Those gifts/bundles/extensions can come in multiple formats : sometimes it extends automatically my current end of subscription, sometimes it requires me to wait for the last month of my current subscription before being activated or, worst of all, it may even requires to cancel my subscription and to reopen a new one with the code while having someone of the support staff transferring the credit left on my account.
+
+Not to mention that every single subscriptions has a different payment processor. I need to update my credit card on many websites, I sometimes use Paypal or Bitcoin when I can.
+
+What if I could have one interface to manage all my subscription with all the deadlines?
+
+I’ve called that dream subscript.io.
+
+For each service, you could see :
+
+* Your current subscription level
+* How much it costs you per year
+* When it expires
+* What should be done once it expires (cancel or renew).
+
+Gifts and bundles would have one simple effect : moving the expiration date further in the future.
+
+In fact, the platform would become a great bundler by itself. We could also imagine gifts that can be used on any service of your choice!
+
+## From MVP to our wildest dream
+
+The first prototype would allow you to connect all your account in order to have a simple view of all your subscriptions.
+
+That would require to work with all the API and, for the user, to connect every single account.
+
+But at some point, such a service would require cooperation from all the service providers. You would simply connect to the subscript.io website and all accounts with the same email would be immediately listed.
+
+Payments could be done through subscript.io and services could outsource everything involving payment processor, subscription handling. If a service trust subscript.io, it would become trivial for them to create multiple levels of user experience : pro, premium, free, etc.
+
+For companies, it would become trivial to offer a subscription to a given service to an employee and to cancel it when the employee leave.
+
+But things can go wilder : users of subscript.io would have the possibility to sell months of subscription they don’t plan to use or to exchange it. There could be a true market for months of service which, for example, some some service valued more than other.
+
+## Bootstrapping
+
+The only problem is bootstrapping such a product. How create a service so valuable and trustworthy than service providers will allow to themselves to delegate such an important part of their business?
+
+As an end user, I strongly need a tool like subscript.io.
+
+Subscript.io would also lower the bar for new services and startups. It’s one thing less to develop and to design.
+
+For existing services, subscript.io would also be a simplification that worths it.
+
+There’s only one question left: how to start subscript.io?

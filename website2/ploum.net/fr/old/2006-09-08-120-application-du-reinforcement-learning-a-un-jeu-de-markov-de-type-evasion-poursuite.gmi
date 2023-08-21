@@ -1,0 +1,33 @@
+# Application du Reinforcement Learning à un jeu de Markov de type évasion-poursuite
+
+Voici un billet qui risque de ne pas passionner les foules mais qui vaut la peine d’être donné en patûre aux avides robots de Google, juste au cas où un jour, on ne sait jamais, il pourrait venir en aide à quelqu’un à la recherche d’informations sur le Reinforcement Learning et les jeux de Markov.
+
+Et puis je suis quand même un petit peu fier…
+
+=> ../files/old/memoire/chat.png Chat
+
+J’ai donc terminé, rendu et défendu avec succès mon mémoire, mémoire dans le domaine de l’Intelligence Artificielle et plus particulièrement du Reinforcement Learning, une des nombreuses techniques propre à l’IA.
+
+Ce mémoire étudie le problème évasion-poursuite dans le cas d’un « Markov Decision Process » et dans le cas d’un jeu de Markov. Le problème est ici symbolisé par un ou plusieurs chats cherchant à attraper une souris dans un espace discret torique. La méthode de « Q-Learning » pour résoudre ce problème de « Reinforcement Learning » est étudiée. Il est aussi nécessaire de prévoir une coopération entre les chats afin d’atteindre l’objectif. Une méthode de coopération dite « agent et sous-agents » est développée et testée.
+L’implémentation en Python d’un framework généraliste typique pour ce genre de problème est ensuite décrite en détails avec les résultats obtenus pour la méthode de coopération proposée.
+
+Pas mal hein ? Ça vous la coupe non ?
+
+Bon, d’accord, quand on entend « Intelligence Artificielle », on pense tout de suite à des robots qui disent « Bonjour Monsieur » et qui volent en évitant les avions. C’est en fait pas encore exactement de ça, en tout cas pas dans mon mémoire. L’Intelligence Artificielle est pour le moment un ensemble de méthodes qui permettent de donner à un ordinateur une certaine « intelligence ». Le Reinforcement Learning se concentre sur donner à un ordinateur la faculté d’apprendre et donc de ne plus retomber dans les mêmes pièges.
+
+Mon mémoire tentait de réaliser un programme qui dirigeait des chats (en fait des pions noirs) sur une souris (un pion blanc). La difficulté étant que la souris cherchait à s’échapper et que donc le chat devait « apprendre » comment réagissait la souris pour prévoir ses réactions et la bloquer. Pour ce faire, les chats devaient réussir à coopérer car ce mémoire démontre aussi que si chaque chat cherche à attraper la souris tout seul, il n’y arrivera jamais ou alors par chance. Oui, je sais, dit comme ça, c’est moins impressionnant. N’empêche, j’aimerais vous y voir moi !
+
+=> ../files/old/icones/pdf2.png PDF
+Le mémoire au format PDF (550 ko) (les deux premiers chapitres et la bibliographie peuvent se révéler utiles pour qui cherche un résumé sur le Reinforcement Learning, les Markov Decision Process et les jeux de Markov).
+
+=> ../files/old/memoire/memoire_dricot.pdf 
+=> ../files/old/icones/pdf2.png PDF
+
+=> ../files/old/memoire/memoire_dricot.pdf Le mémoire au format PDF (550 ko)
+
+– La présentation au format PDF (230 ko) ou au format Open Document (420 ko).
+– Le logiciel Python (.zip, 200 ko)
+
+=> ../files/old/memoire/memoire.pdf La présentation au format PDF (230 ko)
+=> ../files/old/memoire/memoire.odp format Open Document (420 ko)
+=> ../files/old/memoire/python.zip Le logiciel Python (.zip, 200 ko)

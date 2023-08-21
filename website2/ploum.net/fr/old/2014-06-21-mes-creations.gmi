@@ -1,0 +1,113 @@
+# Mes créations
+=> files/old/Lionel-DRICOT2-150514-IHECS-EAM-TJ_.jpg
+
+La liste de mes créations, ma bibliographie et ma scénographie. Désolé si cette liste un peu indigeste semble prétentieuse.
+
+Créations
+
+En 2001, j’ai été à la base du projet Equimass composé de 4 étudiants et d’un professeur. Nous avons pris part à la 4ème campagne de vols parabolique pour étudiants de l’Agence Spatiale Européenne.
+
+Fin 2001, j’ai créé le studio de cinéma amateur Frimouvy qui réalisa une série de court-métrages amateurs entre 2001 et 2004.
+
+En 2002, j’ai co-fondé le Forum des Vidéastes Amateurs dont je fus le premier hébergeur et administrateur. Le forum existe encore aujourd’hui.
+
+=> http://www.videastes-amateurs.net/ Forum des Vidéastes Amateurs
+
+En 2004, j’ai lancé Fritalk.com, un service web de chat XMPP, mail et hébergement de blogs. Ce service hébergea plus de 2000 utilisateurs gratuits financés par plusieurs utilisateurs premium. Fritalk n’a été arrêté qu’en 2013.
+
+=> /adieu-fritalk/ arrêté qu’en 2013
+
+En 2004, j’ai repris les rênes du LouvainLiNux LUG initialement lancé par Fabien Pinckaers comme une organisation informelle. En 2005, mon ami Bertrand Rousseau et moi avons décidé de recréer le projet en partant de zéro afin d’en faire un projet durable soutenu par l’université (Kot-à-projet). Le Kot-à-projet LouvainLiNux est encore actif aujourd’hui et je suis parfois considéré comme son premier président.
+
+=> https://www.linkedin.com/pub/fabien-pinckaers/17/172/261 Fabien Pinckaers
+=> http://www.louvainlinux.be/ LouvainLiNux
+
+En 2004, j’ai créé le blog Ploum.net (alors appelé « Where is Ploum? »). Ce blog est aujourd’hui considéré comme un blog influent en francophonie et régulièrement repris dans la presse comme l’un des blogs belges les plus importants.
+
+En 2005, j’ai été co-auteur du premier livre papier traitant d’Ubuntu, toute langue confondue : « Ubuntu, une distribution facile à utiliser » aux éditions Eyrolles. Le livre fut un succès en francophonie.
+
+En 2005 et 2007, sous la supervision du professeur Lemaire, je réalise un logiciel de simulation des mouvements de la plasmasphère qui est toujours utilisé par l’Institut d’Aéronomie Spatiale de Belgique.
+
+=> http://plasmasphere.aeronomie.be/plasmaspherewindsimulation.htm logiciel de simulation des mouvements de la plasmasphère
+
+En 2006, j’ai été l’instigateur et le créateur d’Ubuntu Belgium. Après les premières réunions et constatant que le projet était en de bonnes mains, je me suis retiré. Le projet existe encore aujourd’hui.
+
+=> http://www.ubuntu-be.org/fr Ubuntu Belgium
+
+En 2006, j’ai entièrement réécrit mon livre sur Ubuntu et publié « Ubuntu Efficace » aux éditions Eyrolles. Le livre fut un succès et réimprimé. Je publiai une réédition en 2009.
+
+En 2009, j’ai co-créé le logiciel Getting Things GNOME avec mon ami Bertrand Rousseau. J’en suis resté le mainteneur jusqu’en 2013, gérant une communauté qui attira une centaine de contributeurs. GTG devint un logiciel très populaire, attirant l’attention de blogs comme LifeHacker et Ars Technica. GTG fut également mis en valeur comme logiciel phare dans l’Ubuntu App Store. TechRadar désigna GTG comme la 7ème meilleure application Linux de 2011.
+
+=> http://fr.wikipedia.org/wiki/Gtg Getting Things GNOME
+=> http://lifehacker.com/5313199/getting-things-gnome-manages-your-gtd-to-do-list LifeHacker
+=> http://arstechnica.com/information-technology/2009/07/getting-things-done-with-linux-todo-list-programs/ Ars Technica
+=> http://www.techradar.com/news/software/applications/top-50-best-linux-apps-2011-1014373 TechRadar
+
+De 2009 à 2012, j’ai été chaque année mentor pour le Google Summer of Code, encadrant des étudiants et leur apprenant à contribuer à Getting Things GNOME. En 2009, j’ai participé au GSoC Mentor Summit dans les locaux de Google à Mountain View.
+
+En 2010, j’ai lancé un service de consultance afin d’aider les petites entreprises à améliorer leur présence sur le web et à développer des services web adaptés à leurs besoins. J’ai arrêté cette activité en 2013.
+
+En 2011, avec Nico et Gauthier Zarmati, j’ai co-créé le Parti Pirate Brabant-Wallon et j’ai tiré la liste communale à Ottignies Louvain-la-Neuve qui a obtenu 5,16% des suffrages lors des élections de 2012.
+
+=> http://artimuses.be/ Nico
+=> /for-a-fistfull-of-votes/ 5,16% des suffrages
+
+En 2013, j’ai créé « Le blog d’un condamné », un blog de fiction racontant l’histoire d’un homme atteint du cancer. Sans aucune promotion, le blog devint une sensation et attira 8000 followers sur Twitter en 2 jours et fut l’objet de spéculations et d’articles dans la presse, y compris papier. Il lança un débat sur la nécessité d’avertir ou non les lecteurs sur le caractère fictif d’une œuvre.
+
+=> /cest-la-vie/ « Le blog d’un condamné »
+
+Bibliographie
+
+1999 : « Jetons l’encre », éditions Collège Cardinal Mercier. Publication de la nouvelle « L’ombre intemporelle ».
+
+2005 : « Ubuntu, une distribution facile à utiliser », éditions Eyrolles. Co-écrit avec Joyce Markoll et Benoît Caccinolo.
+
+2006 : « Application du Reinforcement Learning à un jeu de Markov de type évasion-poursuite », Université Catholique de Louvain. Mémoire de fin d’étude présenté en vue de l’obtention du grade d’ingénieur civil.
+
+=> /120-application-du-reinforcement-learning-a-un-jeu-de-markov-de-type-evasion-poursuite/ Application du Reinforcement Learning à un jeu de Markov de type évasion-poursuite
+
+2006 : « Ubuntu efficace », éditions Eyrolles.
+
+2007 : « Linux Identity Set », en temps que rédacteur en chef et auteur principal.
+
+2009 : « Ubuntu efficace 9.04 », éditions Eyrolles.
+
+2013 : « C’est la vie », auto-publié. Recueil de nouvelles contenant le blog d’un condamné.
+
+=> /cest-la-vie/ C’est la vie
+
+2014 : « Contes et légendes », auto-publié. Recueil de contes et de courtes histoires.
+
+=> /contes-et-legendes/ Contes et légendes
+
+Depuis 2013 : auto-publication de nouvelles de science-fiction sur Ploum.net.
+
+=> /tag/epub/ nouvelles de science-fiction
+
+Filmographie et Scénographie
+
+=> ../files/old/DSC_9790.jpg 
+
+1999 : « Une vie d’humain » de Lionel Dricot et Yung Gascard, moyen métrage, 26 minutes. Scénariste, co-réalisateur et acteur : Brian Leplat.
+
+2001 : « Je suis un assassin », court métrage, 4 minutes. Scénariste, co-réalisateur et acteur : voix off.
+
+2002 : « Revue des ingénieurs » au Centre Culturel d’Ottignies. Acteur : Léon Bolle.
+
+2003 : « Cyclo », court métrage, 4 minutes. Scénariste et réalisateur.
+
+2003 : « Envoûtement », moyen métrage, 16 minutes. Scénariste, réalisateur et acteur : le sorcier.
+
+2003 : « L’homme qui ne savait pas », moyen métrage inachevé. Scénariste, réalisateur et acteur.
+
+2008 : « La Royale Revue du Grand Waterloo » au Royal Waterloo Golf Club, Lasne. Co-auteur, acteur et danseur.
+
+2014 : « Le bateau ivre », de Youri Najdovski. Court métrage, 4 minutes. Acteur : le capitaine.
+
+2014 : « Lily et Lily » à l’école du Petit-Ry, Ottignies. Acteur : Vladi.
+
+2015 : « Je suis un prisonnier », de Thomas van der Straeten. Court métrage, 2 minutes. Scénariste.
+
+=> /je-suis-un-prisonnier/ Je suis un prisonnier
+
+2015 : « Pyjama pour six » au Collège du Christ-Roi, Ottignies. Acteur : Bertrand.

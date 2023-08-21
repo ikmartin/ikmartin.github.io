@@ -1,0 +1,17 @@
+# Modern AI and the end of privacy
+
+When you think about it, the gigacorps currently developing consumer-facing AI chatbots are also the same companies which are spying the most heavily on our private life.
+
+Well, it’s obvious because every single company is now trying to spy on you as much as it can and gathering so much data that they can’t even handle it (no later than last week, I have asked to be removed from some shop databases, received a reply telling me that everything was erased yet I’m still receiving daily spam from them). Companies have so many data, duplicated in many backups, they don’t even know what to do with it.
+
+And those data, sooner or later, will be used to train AI. In fact, they already were for years: look no further than reply suggestions from Gmail.
+
+The first consequence is that AI chatbot will quickly start to argue with you, insult you or, why not, send you dick pics. Those are, after all, a huge part of written human communications.
+
+But the terrifying part is probably that there’s no way to prevent leaks. Anybody using a trained chatbot will quickly find ways to ask if Alice and Bob were exchanging emails and what it was about. If Eve was sick or not.
+
+Worst of all, most of it will probably be hallucinations: false data invented by the AI itself. But a few clickbait stories with real information leakage will be enough to cast a doubt that any answer by an AI "might be true".
+
+Despite many warnings, we have offered total control of our lives to a few monopolies. Even if you were careful enough, public data about you are probably enough to "sounds mostly true". Most of your emails ended in a Gmail or Outlook inbox even if you don’t use those services yourself.
+
+In my latest book, the short story "Le jour où la transparence se fit" is about the brutal and sudden disappearance of privacy. I’m glad the book is now in stores because, in a few months, it will probably not sound like science fiction any more…

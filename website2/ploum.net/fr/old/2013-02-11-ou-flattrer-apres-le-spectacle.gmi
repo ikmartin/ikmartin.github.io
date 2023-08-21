@@ -1,0 +1,151 @@
+# Où Flattrer après le spectacle ?
+=> files/old/planting_money.jpg
+
+EDIT du 4 juillet 2014 : ajout de nouveaux contenus.
+
+Vous êtes incroyablement nombreux à relever mon défi de tester le web payant avec Flattr. Mais je reçois beaucoup de remarques me disant que, à part mon blog, il n’y a pas grand chose à Flattrer.
+
+=> /si-vous-testiez-le-web-payant tester le web payant avec Flattr
+
+Allez, je vous donne un coup de main parce qu’il est vrai que certains se font discrets…
+
+Activisme numérique
+
+On ne présente plus Framasoft, promoteur acharné du logiciel et de la culture libre. Framasoft est bel et bien sur Flattr et vous pouvez envoyer un Flattr pour chaque billet du framablog.
+
+=> https://flattr.com/thing/68412/Soutenez-Framasoft Framasoft est bel et bien sur Flattr
+=> http://www.framablog.org/index.php chaque billet du framablog
+
+Notons aussi la présence de La Quadrature Du Net et de son pendant belge, la NURPA. Enfin, une telle liste ne peut passer à côté de l’Electronic Frontier Foundation.
+
+=> https://flattr.com/profile/laquadrature La Quadrature Du Net
+=> https://flattr.com/profile/nurpa la NURPA
+=> https://flattr.com/profile/eff Electronic Frontier Foundation
+
+Et pour les non geeks ?
+
+Il n’y a pas que le numérique dans la vie. Envie de prendre des vacances loin de votre clavier ? Abonnez votre Flattr à Greenpeace, WWF ou Amnesty International. Il faut savoir que ces organisations ne paient pas les 10% Flattr. Votre argent leur est donc dédié à 100%.
+
+=> https://flattr.com/thing/130117/Greenpeace Greenpeace
+=> https://flattr.com/thing/130118/World-Wildlife-Fund WWF
+=> https://flattr.com/thing/130120/Amnesty-International Amnesty International
+
+N’hésitez pas à contacter les associations en leur conseillant d’ouvrir un simple compte Flattr sur lequel vous verserez, tous les mois, une petite somme. C’est certes symbolique au début mais les petits ruisseaux ne font-ils pas les grandes rivières ?
+
+Projets en ligne
+
+Si vous vous intéressez au monde du logiciel libre, alors peut-être suivez-vous le Planet Libre. Pourquoi ne pas le Flattrer ? Si, comme moi, vous dévorez les livres électroniques du domaine public, alors ne ratez pas le Project Gutenberg. Et si vous appréciez les tentatives de concurrencer Google, vous êtes peut-être un utilisateur de DuckDuckGo ou d’OpenStreetMap.
+
+=> https://flattr.com/thing/369893/Planet-Libre le Planet Libre
+=> https://flattr.com/thing/509045/Project-Gutenberg Project Gutenberg
+=> https://flattr.com/thing/38589/DuckDuckGo DuckDuckGo
+=> https://flattr.com/profile/openstreetmap OpenStreetMap
+
+Journalisme et actualité
+
+Même si le bouton n’est plus intégré à chaque article, vous pouvez toujours Flattrer Numérama. Mais, tant qu’à faire, pourquoi ne pas soutenir une presse indépendante et sans publicité ? Au hasard, je propose Reflets ou, plus étonnant, le Monde Diplomatique.
+
+=> https://flattr.com/profile/Numerama Numérama
+=> https://flattr.com/thing/1095032/Reflets Reflets
+=> https://flattr.com/thing/588494/mdiplo-on-Twitter le Monde Diplomatique
+
+Question : Je mets Damien Van Achter dans les blogs ou dans le journalisme ?
+
+=> https://flattr.com/profile/davanac Damien Van Achter
+
+Blogs
+
+Bon, il y a évidemment ce blog mais il est loin d’être le seul. Les poids lourds Korben et JCFrog sont sur Flattr, Sebsauvage et, depuis peu, Le Hollandais volant. Rick Falkvinge, fondateur du premier Parti Pirate et Paul Da Silva, pirate français, sont également sur Flattr. D’une manière générale, n’hésitez pas à insister auprès de votre blogueur favori pour qu’il ouvre un compte. Astuce : Flattrez son compte Twitter (à droite de la page) avant même qu’il ne soit sur Flattr.
+
+=> https://flattr.com/thing/76498/Where-is-Ploum ce blog
+=> https://flattr.com/thing/334/Korben-High-Tech-Blog Korben
+=> https://flattr.com/profile/jcfrog JCFrog
+=> https://flattr.com/profile/sebsauvage Sebsauvage
+=> https://flattr.com/thing/1128883/timo-le-hollandais-volant Le Hollandais volant
+=> https://flattr.com/thing/136246/Falkvinge-on-Infopolicy Rick Falkvinge
+=> https://flattr.com/thing/14213/Blog-perso-de-Paul-Da-Silva Paul Da Silva
+=> https://flattr.com/catalog Flattrez son compte Twitter
+
+Si vous êtes blogueur vous-même, mettez votre bouton Flattr de manière visible sur chaque article et dans votre flux RSS. Parmi les blogs intéressants, notons Souquez les artimuses, l’Antre du Greg ou Saint-Épondyle. Ainsi que Debout les gens qui donne des conseils pertinents pour améliorer sa vie.
+
+=> https://flattr.com/thing/1132368/Souquez-les-Artimuses Souquez les artimuses
+=> http://www.antredugreg.be/ Antre du Greg
+=> http://saint-epondyle.net/blog/ Saint-Épondyle
+=> http://deboutlesgens.com/ Debout les gens
+
+Certains blogueurs, comme Alias, publient chaque mois un rapport d’activités Flattr. L’occasion de découvrir du contenu.
+
+=> https://flattr.com/thing/127465/Blog-part-troisime-poque Alias
+=> http://alias.codiferes.net/wordpress/index.php/flattr-bilan-pour-janvier-2013/ un rapport d’activités Flattr
+
+Logiciels
+
+Si vous êtes un utilisateur de logiciels libres, il y a de grandes chances que certains de vos favoris acceptent les dons Flattr. Getting Things GNOME, bien entendu, mais également Gimp ou Adblock. Pendant quelques temps, Raphaël Hertzog recommandait une sélection de logiciels libres à Flattrer. N’oubliez pas que n’importe quel projet GitHub est Flattrable !
+
+=> https://flattr.com/thing/1107756/Getting-Things-GNOME Getting Things GNOME
+=> https://flattr.com/thing/707850/GIMP-is-the-GNU-Image-Manipulation-Program Gimp
+=> https://flattr.com/thing/118424/AdBlock-For-Chrome Adblock
+=> https://flattr.com/profile/rhertzog Raphaël Hertzog
+=> http://raphaelhertzog.com/category/flattr/ une sélection de logiciels libres à Flattrer
+
+N’oublions pas les jeux ! Étant un peu old school, j’aime bien Battle for Wesnoth et FreeCiv. Mais il y a également des tubes, comme Minecraft. Mon coup de cœur va à Heriswap.
+
+=> https://flattr.com/thing/56371/The-Battle-for-Wesnoth Battle for Wesnoth
+=> https://flattr.com/thing/21751/Freeciv-net-online-multiplayer-strategy-game FreeCiv
+=> https://flattr.com/thing/2187/Minecraft-a-game-Im-working-on Minecraft
+=> https://flattr.com/thing/2749749/Heriswap-the-little-cute-hedgehog Heriswap
+
+Vous pouvez également soutenir l’Open Source Initiative ou la Free Software Foundation Europe.
+
+=> https://flattr.com/thing/448050/Open-Source-Initiative-OSI Open Source Initiative
+=> https://flattr.com/thing/96089/Free-Software-Foundation-Europe Free Software Foundation Europe
+
+Lectures
+
+Personnellement, je suis un grand fan de TheOatmeal mais la liste des web comics sur Flattr est impressionnante. Si on n’y trouve pas XKCD, les Geekscottes y sont !
+
+=> https://flattr.com/profile/TheOatmeal TheOatmeal
+=> https://flattr.com/catalog/comics web comics sur Flattr est impressionnante
+=> https://flattr.com/thing/52412/Geekscottes les Geekscottes
+
+Je vous ai offert quelques courtes nouvelles Flattrables mais force est de constater que l’écriture est encore un domaine peu exploré par Flattr. Je rêve d’un lecteur d’ebook avec un catalogue ouvert où l’on pourrait se recommander des textes et Flattrer immédiatement à la fin de la lecture.
+
+=> /tag/plume quelques courtes nouvelles Flattrables
+
+Notons tout de même le blog des écrivains Thierry Crouzet, Neil Jomunsi et Pouhiou. Inspiration de survie est également un blog littéraire qui accepte Flattr. Notons aussi les fiches Lectures libres.
+
+=> http://blog.tcrouzet.com/ Thierry Crouzet
+=> http://page42.org/ Neil Jomunsi
+=> http://noenaute.fr/ Pouhiou
+=> http://inspirationdesurvie.net/blog/ Inspiration de survie
+=> http://lectureslibres.blogspot.ch/ Lectures libres
+
+Musique
+
+Si on trouve quelques musiciens sur Flattr et si tout SoundCloud est Flattrable, il y en a peu que j’écoute régulièrement. J’ai donc activé le Flattrage automatique sur Grooveshark en espérant inciter les artistes à la création d’un compte Flattr.
+
+=> https://flattr.com/catalog/music quelques musiciens sur Flattr
+=> http://blog.flattr.net/2012/03/everything-on-soundcloud-can-now-be-flattred/ tout SoundCloud est Flattrable
+=> https://flattr.com/thing/522576/Grooveshark Grooveshark
+
+Vidéo
+
+Dans les préférences de votre compte Flattr, vous pouvez faire en sorte que chaque vidéo que vous aimez sur Youtube reçoive automatiquement un Flattr si l’auteur est inscrit sur Flattr.
+
+Parmi les chaînes qui acceptent Flattr, on retrouve Doxa et Et mon cul, c’est du Pouhiou ?.
+
+=> https://www.youtube.com/channel/UCxJka_qnTVquoIL-PQV5POg Doxa
+=> https://www.youtube.com/channel/UCc85I0QXnwEjEDmpbN7sI_g Et mon cul, c’est du Pouhiou ?
+
+Conclusion
+
+Voilà, j’espère qu’avec cette liste, vous ne pourrez plus me dire qu’il n’y a rien à Flattrer. Bien entendu, elle est loin d’être exhaustive et j’ai certainement raté des tas de contenus pertinents. N’hésitez pas à le dire et à partager ce que vous Flattrez ! Signalez moi également tout contenu qui mériterait d’être ajouté à cette page.
+
+N’oubliez pas : chaque Flattr est un encouragement et, après le premier Flattr du mois, ne vous coûte rien. Dans le doute, Flattrez ! Et si vous n’êtes pas encore convaincu par Flattr, je vous renvoie vers Et si vous testiez le web payant et Donnez-moi la liberté de vous payer.
+
+=> /si-vous-testiez-le-web-payant Et si vous testiez le web payant
+=> http://www.framablog.org/index.php/post/2013/02/01/payer-en-liberte-ploum Donnez-moi la liberté de vous payer
+
+Photo par Chris Potter
+
+=> http://www.flickr.com/photos/86530412@N02/8265346995 Chris Potter

@@ -1,0 +1,3 @@
+# [Oneliner 11]
+
+Les erreurs de compilation ? Gcc de m’en préoccuper !

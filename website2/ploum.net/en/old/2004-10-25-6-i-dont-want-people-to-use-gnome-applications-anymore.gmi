@@ -1,0 +1,65 @@
+# I don’t want people to use Gnome applications anymore…
+
+I read today that Damien Sandras is in doubt about working on Gnomemeeting. That’s human being and that’s understandable. But, whatever, Damien has doing a really great job for Gnome and for the OpenSource community. His application is really great. I’m using it to speak with Beber in Sweden, using my DV camcorder, and it’s fun!
+
+=> http://www.advogato.org/person/dsandras/diary.html?start=40 Damien Sandras
+=> http://www.gnomemeeting.org/ Gnomemeeting
+=> http://beber.frimouvy.org/weblog/ Beber
+
+We could consider Gnomemeeting as a finished software : polished, useful and working without major bug or annoyance. So, why working on it anymore ? Most people are using skype and its proprietary protocol. What can Gnomeeting do more ?
+
+In my opinion, the bare works begin now! And it will be exciting. Damien, you’ve done a great job with a almost perfect application (technically speaking), but now it’s time for more fun and more innovations ! Gnome should innovate, Gnome should be the best (or is it already?) and that’s with developpers like you than you will achieve this goal. I hear you answering : « you speak, you speak.. But what can we do ? ».
+
+A lot of stuff can be done and pgo is full of ideas but, well, here’s mine : I don’t want people to use Gnomemeeting anymore I don’t want them to use any gnome application anymore ! No more Gossip, no more Sound-Juicer, no more Epiphany. Or, at least, I don’t want that they know they are using it…
+
+=> http://planet.gnome.org pgo
+
+Let me explain : Gnome’s stuff are becoming more and more integrated from the user point of view, and that’s a good thing. When thinking about Instant messaging in gnome (english translation), we conclude that we don’t want to use an IM client anymore ! We just want to easily access to our contacts and start chatting, sending an email or to have a video conference.
+
+=> http://beber.frimouvy.org/weblog/index.php?2004/10/13/53-petite-reflexion-sur-les-messageries-instantannees Instant messaging
+=> http://beber.frimouvy.org/weblog/index.php?2004/10/14/54-im-qlq-images in gnome
+=> http://frimouvy.org/wiki/GnomeInstantMessagingSystem english translation
+
+Gnome has the technology !
+
+A perfect illustration of this concept is the actual Gnomemeeting. In order to use it, you must know at least the IP of your friend or be registered on a server (and I don’t really understand how to do this). This is not very user friendly. Also, the chat tool is not useful if you are already using Jabber. Those things are also a bit tricky if you are behind a NAT or a proxy. So the next logical step is to allow user to make videoconference simply with a button. (if Microsoft can do it, Gnome can do better).
+
+=> http://beber.frimouvy.org/weblog/images/im_mookup.png 
+
+In the Perfect Desktop, users will not be aware that they are using Gnomemeeting, nor they will be aware that they are using Jabber or another protocol. That doesn’t mean that the Gnomemeeting application itself must disappear. The application will remain for specific use (phone over Internet and such things, use in another OS or environment like a minimalist WM or, why not, in Windows ). But in Gnome, it will appears like a « Gnome Tool ». Take a look to the future of Sound-Juicer. It will popup when you insert a CD, allowing you to listen or to rip it. There’s no more « Sound-Juicer application » in the user’s mind, only the right tool at the right moment.
+
+=> http://frimouvy.org/wiki/ThePerfectDesktop the Perfect Desktop
+=> http://www.burtonini.com/blog/2004/09/17/ the future of Sound-Juicer
+
+There’s a lot of new stuff that seems to follow this rule : evolution-data-server can be seen from your panel or from evolution but doesn’t exist in itself, the really useful Tomboy is also a « main-windowless » application ». Once you’ve started it, it looks naturally integrated in Gnome. And so must be as many gnome application as we can.
+
+=> http://www.beatniksoftware.com/tomboy/ Tomboy
+
+I hear laughs in the background : « Hey ! Are you saying that Gnome must be as bloated and integrated as Windows ? ». Tight integration of all software is like the MS nightmare…
+
+Windows is technically a lot of integrated applications. But from the users point of view, Windows is full of really distinct apps. IE, OE or WMP are really bad because they depend of each others but look like they are very different. Install MS Word XP, WMP and OE. Funny, they all look completely different.
+
+Gnome, au contraire, must keep the beautiful Unix way : one task, one software. But we want they look integrated for the user. Just the opposite of Windows. So Gnomemeeting would remain a separate app, but will offer an interface to use it throught Gnome.
+
+Integration is also why I think that Gnome and Ubuntu should work on GnomeOffice instead of OpenOffice. Gnumeric is a perfect spreadsheet. It just needs to import/export sxc easily. Abiword needs a bit more feature, but here I ask what do you need for abiword. I really hope that Abiword will become quickly as good as Word97 because Word97 is still a reference and run on a lot of old computers. Well, indeed, Gnome will need a presentation tool (Criawips?), to read and make ppt and sxi.
+
+=> http://frimouvy.org/wiki/ImproveAbiword I ask what do you need for abiword
+=> http://www.nongnu.org/criawips Criawips
+
+Integration of applications like Abiword is not as tight as my example with gnomemeeting. But it can be improved, allowing for example people to easily send and share files.
+
+So, what do I hope for Gnome 2.10 ?
+
+* integration. integration. integration. Gnome has a lot of sparse features, I think 2.10 should concentrate on integrating it instead of making new things.
+* optimisation. I hope to see Gnome smoother than ever on older computers.
+* gnome office integration, Abiword and Criawips development.
+
+But all those features are not compatible with performance. But as I was saying earlier (Unix way), removing a feature is fairly as trivial as removing the software. So, I think that it would be a really could thing for Ubuntu Hoary : « I detect that your system has little memory and little ressources. Do you want that I install a lighter system ? ». With the quote : « If it can run Win98, it can run Hoary 😉 ». And, indeed, do you imagine playing a DVD or making a videoconference under a Pentium 300MHz ?
+
+=> http://frimouvy.org/wiki/ThePerfectDesktop4 gnome office integration
+
+Easy to say.. It’s just ideas. I wish to be a good programmer to help gnome’s hackers. But whatever happens, Gnome and Ubuntu people are doing a great job. And I personnaly highly appreciate Damien’s work. There’s so many things to do, so little time, and all I can say to all those people is just : Thanks !
+
+PS : sorry for my bad english. Don’t hesitate to correct me, I must learn !
+
+PPS : Thanks to Bertand, bader, toady, informacer, zefredz and #gnomefr folks for the english lesson. 😉

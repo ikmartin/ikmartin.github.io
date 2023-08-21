@@ -1,0 +1,63 @@
+# En partance pour ma déconnexion…
+=> files/old/nicholas-barbaros-633170-unsplash.jpg
+
+*Pourquoi je compte retourner dans ma Thébaïde et partager avec vous mon expérience de déconnexion totale des réseaux sociaux et des informations.*
+
+Depuis le temps que je suis Thierry Crouzet sur les réseaux sociaux, que je lis ses livres, j’avoue ne jamais avoir été intéressé par son “J’ai débranché”, récit où il raconte son overdose d’Internet et sa déconnexion totale pendant 6 mois.
+
+=> https://tcrouzet.com Thierry Crouzet
+=> https://tcrouzet.com/jai-debranche/ J’ai débranché
+
+Un soir, alors que je checkais compulsivement mon flux Twitter pour me récompenser d’avoir accompli un travail ennuyeux, le titre m’est revenu à l’esprit et j’ai subitement eu envie de le lire. Miracle de la génération Internet/pirates, il me fallu moins d’une minute pour que les caractères s’impriment sur l’écran de ma liseuse.
+
+L’histoire de Thierry me parle particulièrement car j’ai découvert que je partage énormément avec lui. Par certains aspects, j’ai même l’impression d’être une version belge du Crouzet grande gueule franchouillard. Asocial limite misanthrope (sauf pour donner des conférences), en colère contre la bêtise du monde (mais moins que lui), accro à la lecture et à Internet (mais moins que lui), écrivain électronique (mais moins que lui). Comme lui je ne sais pas discuter sans placer d’incessantes références à mes écrits (bon moi ce sont des billets de blogs, lui des livres) et comme lui je suis amoureux de vélo et d’admirer de vastes étendues d’eau (mais moi je n’ai pas la chance de l’avoir dans mon jardin, ce qui me rend mortellement jaloux).
+
+Bref, je reconnais dans son texte une caricature de ce que j’ai l’impression d’être : chevalier blanc parti sauver le monde sur Internet. Les premiers chapitres sont sans concession : le premier pas vers la guérison est l’acceptation que l’on est malade. Crouzet était malade d’Internet. Le suis-je également ?
+
+Pourtant je trouve Internet tellement merveilleux. Tellement magnifique. Je pense encore qu’Internet représente le futur de l’humanité, que notre salvation passera par l’évolution d’un Homo Sapiens en Homo Collaborans, cellule d’un gigantesque être vivant dont la colonne vertébrale sera Internet.
+
+Du coup, encore une fois, je trouve Crouzet un peu trop extrême : se déconnecter d’Internet au point d’aller chercher des numéros de téléphone dans un papier, c’est rigolo pour la télé-réalité type “Mon Crouzet chez les non-connectés” mais est-ce constructif ?
+
+Pour moi, le cœur du problème reste avant tout la publicité. Outre son effet destructeur indéniable sur notre cerveau, la publicité a introduit un effet particulièrement pervers : la course au clic. Même si ce n’est plus réellement rentable, les sites webs doivent désormais vendre des clics et du temps passés en ligne. Ils s’optimisent donc tous sur ce modèle : rendre les utilisateurs le plus accro possible pour qu’ils viennent souvent et qu’ils cliquent le plus sur les publicités. Le clic est devenu l’observable (je vous avais dit que je faisais des autoréférences) qui fait tourner le web au point que peu sont ceux qui osent même imaginer un modèle de rémunération non lié à la publicité ou au clic.
+
+=> /mefiez-vous-des-observables/ l’observable
+
+Cette forme de monétisation à introduit toute sorte d’innovations particulièrement délétères pour notre cerveau : notifications rouges pour donner envie de cliquer, flux infini, pour avoir l’impression qu’on va rater quelque chose si on quitte la page, “likes” surdimensionnés pour être facile à envoyer en un clic et pour entrainer un shoot de dopamine chez le posteur (alors qu’ils sont fondamentalement inutiles, tout comme les “pokes” ou le défunt réseau social “yo”).
+
+=> /quelle-est-la-valeur-de-votre-temps-de-cerveau/ délétères pour notre cerveau
+=> /pour-labolition-du-like/ fondamentalement inutiles
+
+Je me rends compte que je préfère chercher de nouveaux articles à lire et à ajouter à Pocket que de les lire pour de bon ! Je rêve également de lire attentivement certains livres sur mon étagère mais je les pose à côté de mon ordinateur. Lorsque je les feuillette, ordinateurs et téléphones semblent clignoter, m’appeler !
+
+Au départ, je pensais qu’une simple prise de conscience suffisait. Que je n’étais pas si addict. Puis, j’ai installé un bloqueur temporaire (SelfControl). J’ai découvert que, alors que je savais pertinemment que certains sites étaient bloqués, mes doigts tapaient l’URL par réflexe lorsque j’en avais marre de ce que je faisais. J’ai été ébahi de voir une page d’erreur de connexion pour Twitter alors que je n’avais jamais consciemment décidé d’aller sur Twitter. Le cerveau a tellement renforcé ces connexions et lié cela à de petites décharges de plaisir que j’ai perdu le contrôle.
+
+=> https://selfcontrolapp.com SelfControl
+
+J’ai donc décidé de tenter une expérience de déconnexion. Non pas d’Internet mais des réseaux sociaux et des médias en général. De reconstruire ma Thébaïde qui s’est fait largement envahir ces dernières années. Contrairement à Thierry, je n’ai pas eu d’alerte médicale. Ma motivation est toute autre : je me rends compte que le temps passé en ligne n’est plus productif. Je n’écris plus de formats longs, mes textes croupissent, je préfère l’immédiateté d’un Tweet qui recevra 2 ou 200 likes.
+
+=> /bienvenue-dans-ma-thebaide/ ma Thébaïde
+
+J’ai besoin et envie d’écrire. Mais j’ai également besoin et envie d’être lu car un texte n’existe que dans l’esprit du lecteur. Ma déconnexion concernera les réseaux sociaux et tous les sites qui tentent de “m’informer”, de me prendre du temps de cerveau. J’ai n’ai pas besoin ni envie de savoir ce qui se passe dans le monde. C’est certes amusant, souvent énervant mais cela me donne envie de rebondir immédiatement. Cela me fait perdre du temps, de l’énergie mentale et cela manipule mes émotions.
+
+=> /quelle-est-la-valeur-de-votre-temps-de-cerveau/ du temps de cerveau
+=> /echappez-a-la-manipulation-de-vos-emotions/ mes émotions
+
+Le but est d’arriver à trouver un ensemble de règles, de sites à bloquer, et un setup qui me permettent de profiter d’Internet sans en être esclave. Avoir les bons côtés sans les désagréments. C’est pourquoi je partagerai sur ce blog mes ressentis et mes résultats.
+
+Depuis plusieurs années, il n’y a pas de statistiques ni de commentaires sur ce blog. Deux décisions que je n’ai jamais regrettées. Mais les statistiques et les commentaires se sont finalement déplacés vers les réseaux sociaux. En m’en coupant une nouvelle fois, je ne fais que mettre en place ce que j’ai toujours prôné. Le plus amusant c’est que, à part si vous m’envoyez un mail direct, je ne saurai jamais si ce que j’écris est populaire, utile à d’autres, repartagé ou ignoré. Mais c’est cela la beauté de l’expérience ! Ma seule observable sera de voir le nombre de contributeurs augmenter sur Tipeee et Liberapay.
+
+=> /comment-jai-appris-a-ne-plus-men-faire-et-a-aimer-le-web/ pas de statistiques
+=> /la-fin-des-commentaires/ commentaires
+=> /no-proprietary-service.html Tipeee
+=> https://liberapay.com/ploum/ Liberapay
+
+Le temps de boucler mes bagages et je suis en partance pour cette expérience que je partagerai en intégralité avec vous sur ce blog et, ironiquement, sur les réseaux sociaux où mes billets seront partagés automatiquement sans intervention de ma part.
+
+Je suis curieux et impatient même, si je l’avoue, la communauté Mastodon va peut-être me manquer un peu.
+
+=> /mastodon-le-premier-reseau-social-veritablement-social/ la communauté Mastodon
+
+Photo by Nicholas Barbaros on Unsplash
+
+=> https://unsplash.com/photos/YoF79VE9Sec?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Nicholas Barbaros
+=> https://unsplash.com/search/photos/alone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

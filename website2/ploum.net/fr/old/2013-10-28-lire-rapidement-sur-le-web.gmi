@@ -1,0 +1,98 @@
+# Lire rapidement sur le web
+=> files/old/reading.jpg
+
+Internet met à notre disposition une quantité illimitée de contenus et d’idées. Mais encore faut-il pouvoir les consulter et les exploiter. Beaucoup de lecteurs m’écrivent en me disant apprécier mes textes sans avoir le temps de me lire. Dommage ! Aussi, je me propose de partager avec vous ma méthode. Je suis bien conscient que chaque individu est différent mais peut-être cela vous donnera-t-il des idées afin d’améliorer votre consommation de contenu.
+
+Concentrez-vous sur la lecture
+
+Personnellement, je ne regarde que très peu de vidéos et je n’écoute jamais de podcasts. Une vidéo force le public à suivre le rythme du narrateur. Beaucoup d’énergie est consacrée à construire des effets de narration, à introduire une tension dramatique pour, au final, très peu d’idées. De plus, une vidéo ne permet pas facilement de s’approprier certains passages, d’y faire des références explicites, de relire un paragraphe important.
+
+Si une vidéo contient des idées vraiment intéressantes, elles se retrouveront forcément dans un texte écrit. Je laisse donc tomber la majorité des vidéos. Ceci dit, les podcasts peuvent avoir une grande utilité pour, par exemple, les trajets en voiture, les personnes souffrant de troubles visuels voire, tout simplement, pour les moments où nous souhaitons reposer nos yeux.
+
+La collecte de contenu
+
+Sur les réseaux sociaux ou au gré de nos pérégrinations sur le web, nous sommes confrontés à des articles, des textes voire des histoires qui « semblent intéressantes ». Mais, très souvent, nous n’avons ni le temps ni l’envie de nous arrêter pour nous concentrer et lire. J’appelle cette étape « la collecte ». Je n’essaie jamais de lire, je ne passe pas plus de quelques secondes sur un article. À la place, je sauve l’article dans ma liste de lecture.
+
+Séparer la collecte de la lecture permet de bien se concentrer sur ce qu’on souhaite réellement lire tout en évitant de passer du temps sur un article peu intéressant mais qui avait pour unique mérite d’être sous notre souris au bon moment.
+
+Pour réaliser cela j’utilise le service Pocket. Grâce à une extension, je peux ajouter une page en un clic à ma liste de lecture, que ce soit depuis mon navigateur ou mon smartphone. Notons que si Pocket est propriétaire et centralisé, il existe un équivalent libre et installable sur votre serveur appelé Poche, que je vous invite à essayer.
+
+=> http://getpocket.com/ le service Pocket
+=> http://inthepoche.com/ Poche
+=> http://app.inthepoche.com/ invite à essayer
+
+En passant par un service intermédiaire, appelé IFTTT, il est possible de mettre automatiquement tous les articles d’un flux RSS dans votre liste de lecture Pocket. Si, par exemple, vous souhaitez que chacun de mes articles en français soit dans votre liste de lecture, il suffit d’utiliser cette recette. Il est également possible de s’envoyer des articles à lire par email. Pratique pour, par exemple, ne pas installer l’extension Pocket sur votre ordinateur de travail.
+
+=> https://ifttt.com IFTTT
+=> https://ifttt.com/recipes/114452 utiliser cette recette
+=> http://help.getpocket.com/customer/portal/articles/482759 des articles à lire par email
+
+L’instant lecture
+
+Grâce à l’application Pocket, ma liste de lecture est automatiquement téléchargée sur mon smartphone. Cela me permet de ménager des instants lecture. Afin de ne pas être dérangé, je peux même mettre mon téléphone en mode avion et continuer ma lecture. Un autre avantage de l’application Pocket est que je peux interrompre ma lecture quand je veux. Au lancement suivant, l’application se met par défaut à l’endroit précis que j’étais en train de lire.
+
+Quand je suis dans un instant lecture, que ce soit dans la salle d’attente de médecin, dans un train, le soir dans mon lit ou debout dans la file du supermarché, je choisis au hasard parmi ma liste de lecture, selon l’intérêt des titres et mes envies. S’il ne s’agit pas d’une fiction, je lis rapidement le premier paragraphe puis je descends jusqu’au dernier et j’essaie de me faire une idée du contenu global de l’article.
+
+À ce moment, plusieurs solutions s’offrent à moi. Soit l’article n’est finalement pas très intéressant ou est dépassé (par exemple si je l’ai ajouté dans ma liste plusieurs semaines auparavant), auquel cas je marque l’article comme lu. Soit lire l’introduction et la conclusion m’a donné une idée assez fidèle du contenu sans éprouver le besoin pressant de lire tous les détails : je marque comme lu. Enfin, l’article semble être vraiment digne d’intérêt : je commence à le lire. Un dernier cas de figure se présente lorsque l’introduction et la conclusion ne révèle aucune information sur le contenu. Dans ce cas, je considère que l’article est mal structuré et qu’il n’a donc presqu’aucune chance d’être réellement intéressant. Il s’agira très certainement de blabla. Dans le doute, je préfère économiser mon temps précieux.
+
+Durant la lecture
+
+Après ce premier filtre qui, avec l’habitude, peut se faire en quelques secondes, j’ai déjà éliminé une foule d’articles. Il me reste donc les articles qui semblent a priori intéressant et les fictions. Pour ceux là, je commence à lire, sur mon smartphone, de manière très linéaire. Cela fonctionne encore mieux sur une tablette.
+
+Je m’autorise sans scrupule à sauter des paragraphes quand le texte me semble redondant ou lorsque je souhaite accélérer. Avec mon doigt, j’imprime une vitesse au défilement du texte et, sauf pour les textes particulièrement savoureux, je me force à ne pas ralentir avant d’avoir fini l’article. Cette vitesse peut, bien entendu, varier avec les articles. Au début, commencez avec une vitesse confortable mais, surtout, ne vous arrêtez pas ! Si vous avez l’impression de rêvasser et de rater des parties du texte, c’est que vous allez trop lentement. Accélérez !
+
+Dans le pire des cas, vous pourrez toujours procéder à une seconde lecture. Mais en vous forçant à tenir le rythme durant la première lecture, vous saisirez l’essence du texte. Pour l’immense majorité des textes, une seconde lecture n’est en fait pas nécessaire. Lorsque c’est le cas ou lorsque le texte est tellement marquant que je veux le relire ou l’utiliser, je le marque comme favori dans Pocket. Et puis je le marque comme lu. Je peux ainsi le retrouver facilement sans qu’il envahisse ma liste de lecture.
+
+Ceci dit, il arrive très souvent qu’un texte s’avère peu intéressant après quelques paragraphes. Je l’abandonne alors sans scrupule et le marque comme lu. Je fais de même avec les textes que j’ai déjà commencés plusieurs fois sans être parvenu à les terminer. C’est que le texte ne me convient vraiment pas.
+
+Lectures plus conséquentes
+
+Pour les textes plus conséquents, généralement les livres, je tente alors de me procurer une version au format Epub. À ce sujet, je recommande le site Team Alexandriz. Il existe une myriade d’applications permettant de lire les epubs sur votre smartphone ou tablette. Citons Aldiko, qui est très simple, et FBReader, qui est très complet et libre. Mais chaque lecteur a son logiciel fétiche !
+
+=> http://www.teamalexandriz.org/ Team Alexandriz
+=> http://www.aldiko.com/ Aldiko
+=> http://fbreader.org/ FBReader
+
+Le problème de l’epub sur smartphone c’est que l’écran est très lumineux, souvent petit et que la lecture consomme beaucoup de batterie. Pour cela, je recommande très chaudement, si c’est possible, l’achat d’une liseuse électronique.
+
+Pour le choix d’une liseuse électronique, un critère est primordial : il doit pouvoir lire vos propres epubs et ne pas imposer un catalogue précis. Pour le reste, tout est une question de goût. Mon choix s’est porté sur le Kobo Glo et j’en suis extrêmement satisfait. Il a néanmoins un défaut particulièrement irritant : si vous l’achetez via la FNAC, le Kobo remplace la couverture des livres par un logo FNAC lorsqu’il est en veille. Une petite manipulation permet d’éviter ce désagrément mais elle est à refaire à chaque redémarrage ou branchement de l’appareil. Rien que pour cette raison, j’ai décidé de boycotter définitivement les produits FNAC.
+
+=> http://fr.kobo.com/koboglo Kobo Glo
+=> http://neosting.net/kobo-fnac-affiliate-conf-couverture-livre-veille petite manipulation
+
+Notons que, pour mon plus grand bonheur, Pocket a annoncé une intégration future avec certains Kobo dont le Glo. Cette intégration n’a pas encore été déployée. Je le répète : le seul critère déterminant dans l’achat d’une liseuse est le support de vos fichiers Epub personnels. Tout le reste relève de vos goûts.
+
+=> http://getpocket.com/blog/2013/08/pocket-comes-to-the-e-reader-pocket-now-built-into-all-kobo-devices/ une intégration future avec certains Kobo
+
+Update du 15 novembre 2013 : Vous pouvez télécharger la version 3.0 du firmware Kobo qui contient l’intégration avec Pocket et qui résout tous les problèmes que j’avais. Notons aussi que depuis cette mise à jour, je n’ai plus jamais vu réapparaître le logo FNAC. Je suis donc particulièrement heureux. L’intégration avec Pocket est encore meilleure que ce que j’imaginais !
+
+=> http://www.mobileread.com/forums/showthread.php?t=185660 la version 3.0 du firmware Kobo
+
+Après la lecture
+
+Une fois un texte marqué comme lu, il me semble logique de vouloir remercier l’auteur. Je me rends alors sur la page à la recherche d’un bouton Flattr. Pour les livres, j’ai récemment décidé d’envoyer une lettre aux auteurs encore en vie.
+
+=> /a-mes-ecrivains-favoris/ une lettre aux auteurs encore en vie
+
+Je réfléchis également à l’opportunité de partager le texte, que ce soit publiquement, avec un cercle restreint voire à une personne précise. Certains de mes amis utilisant Pocket, je peux même ajouter du contenu directement dans leur liste de lecture. Si un texte est intéressant, il me semble important de le faire connaître autour de moi.
+
+Une fois cette étape achevée, il ne reste plus qu’à… GOTO Collecte !
+
+À vous !
+
+Grâce à mon smartphone, Pocket et le processus que je viens de vous décrire, j’ai pu augmenter la quantité d’articles lus tout en y passant moins de temps et en y prenant du plaisir. J’ai appris à aimer les textes de fiction découverts au hasard d’un site web. Les temps morts du quotidien ne sont plus des instants perdus : je les ai transformés en une opportunité de lire, de découvrir des nouvelles choses. Comme vous avez pu le constater, nul besoin d’être un expert de la lecture rapide pour mettre en place cette stratégie. Si vous vous imposez une certaine rigueur au début, notamment dans la vitesse constante de défilement et dans le fait de ne jamais retourner en arrière durant une première lecture, vous constaterez que ce type de lecture deviendra un réflexe tout en apportant une nette amélioration de votre vitesse et de votre compréhension des textes.
+
+=> /changez-de-vie-apprenez-a-lire/ un expert de la lecture rapide
+
+Si, à cela, vous ajoutez un livre électronique que vous emporterez partout, vous vous découvrirez soudainement du temps pour lire ce que vous n’avez jamais réussi à caser dans votre emploi du temps, depuis l’epub de SF sous licence libre au grands classiques téléchargés sur le projet Gutenberg.
+
+=> http://framabook.org/les-romans/ epub de SF sous licence libre
+=> http://www.gutenberg.org/ le projet Gutenberg
+
+À vous de tester, bonne lecture !
+
+Photo par Mo Riza. Relecture par Pit et Sylvestre. Précision : je n’ai aucun intérêt envers Pocket, Poche ou Kobo.
+
+=> http://www.flickr.com/photos/44373968@N00/96724309 Mo Riza
+=> http://namok.be/blog Pit
+=> http://sylvestre.org Sylvestre

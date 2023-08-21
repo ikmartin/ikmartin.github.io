@@ -1,0 +1,39 @@
+# La liberté, c’est la poubelle !
+=> files/old/2353540461_0099f2a957_z.jpg
+
+Comment le développement logiciel m’a appris à réfréner mes envies de consommation en jetant à la poubelle.
+
+Il est tard, vous avez travaillé toute la journée, vous avez faim. Vous ouvrez le frigo : il contient divers récipients et une dizaine de produits variés. Non, décidément, rien. Vous vous résignez à commander une pizza.
+
+C’est une journée importante. Vous voulez faire une bonne impression. Vous ouvrez votre garde-robe. Elle déborde. Deux t-shirts en tombent. Vous la refermez : non, décidément, vous n’avez plus rien à vous mettre. Il devient urgent d’aller au magasin. Et justement ce sont les soldes…
+
+Le point commun de ces deux situations ? Le paradoxe du choix !
+
+Bien connu des concepteurs de logiciels, le paradoxe du choix stipule que présenter des choix à l’utilisateur offre une mauvaise expérience. En effet, lorsque nous sommes confrontés à une décision, nous avons inconsciemment la conviction qu’il existe une solution meilleure que les autres, optimale. Nous ne voyons pas un choix comme une option mais bel et bien comme un test qui nous met au défi de retrouver la meilleure solution. Avec la crainte sous-jacente de ne pas choisir la bonne.
+
+Le stress induit par le choix est particulièrement flagrant auprès des débutants en informatique : confrontés à une boîte de dialogue, ils paniquent au point d’être incapable de lire rationnellement. En désespoir de cause, ils ferment la boîte de dialogue en utilisant la croix afin d’éviter de faire un choix.
+
+Ce stress du choix est omniprésent dans notre société de consommation. Des milliers de produits, des milliers de marques qui célèbrent « la liberté de choix ». Or, comme dit ci-dessus, cette liberté n’est que factice et est au contraire contraignante.
+
+Face à tant de choix, nous préférons nous laisser guider, rôle rempli à merveille par la publicité. Plus subtilement, le fait d’avoir trop de choix au sein même de notre maison nous découragera, découragement que nous interpréterons comme un manque. Et qui nous poussera donc à remplir encore plus notre maison. Ce qui augmentera notre découragement et notre insatisfaction.
+
+Plus nous achetons, plus nous possédons, plus nous éprouvons un manque et le besoin d’acheter !
+
+Ayant pris conscience de cela, chaque fois que j’ai l’impression d’avoir un manque de vêtements, que j’éprouve le besoin d’acheter du neuf, je trie et je jette ou je porte à donner une grande partie (parfois jusqu’à la moitié) de mes vêtements existants. L’effet est saisissant : j’ai réellement l’impression d’avoir renouvelé ma garde-robe. Réduire mes choix me procure une impression paradoxale d’avoir désormais plus de choix.
+
+Sans que nous nous soyons concertés, ma compagne a fait de même avec les armoires de la cuisine, jetant ce qui était périmé et non-mangeable, donnant ce que nous ne consommerions sans doute jamais, cuisinant ce qui était périmé mais mangeable. Le résultat a été également sans appel : nous avons beaucoup moins le besoin de commander ou de manger à l’extérieur. Le frigo, qui n’a jamais été aussi vide, contient toujours de quoi préparer un repas.
+
+Jeter, c’est regagner sa liberté, ses choix ! Jeter est une véritable satisfaction et procure un réel sentiment de libération.
+
+Par un amusant retour aux sources, j’ai réalisé que cette conclusion s’appliquait également… au développement logiciel ! J’ai vécu récemment l’exemple d’un client demandant à chaque fois des nouvelles fonctionnalités puis, après plusieurs mois, se plaignant que l’interface était trop complexe.
+
+Il est facile de remettre la faute sur le client, de dire qu’il ne sait pas ce qu’il veut. Mais, au fond, nous sommes en tant qu’utilisateurs face à un logiciel comme face à un frigo ou une garde-robe : si nous éprouvons le besoin de rajouter une fonctionnalité, c’est que le logiciel en comporte trop. Il est temps de jeter des fonctionnalités, de le simplifier.
+
+Finalement, faire des économies ou regagner sa liberté est assez simple : Jetez lorsque vous avez envie de consommer, simplifiez lorsque vous éprouvez le besoin de rendre complexe.
+
+Jetez pour consommer moins !
+
+Photo par Jes. Vous pourriez être également intéressé par la cueillette des biens matériels.
+
+=> https://www.flickr.com/photos/mugley/2353540461 Jes
+=> /la-cueillette-des-biens-materiels/ la cueillette des biens matériels

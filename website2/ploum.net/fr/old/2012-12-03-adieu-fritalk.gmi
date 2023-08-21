@@ -1,0 +1,60 @@
+# Adieu Fritalk
+
+Régulièrement, j’ai besoin de faire de l’introspection, de relire ou de recentrer mes objectifs et d’identifier les vaches que je peux libérer.
+
+=> /180-methode-vie-partouane-ecrire-ses-objectifs mes objectifs
+=> /210-methode-vie-partou-fetchez-la-vache les vaches que je peux libérer
+
+Fritalk est devenu une de ces vaches.
+
+=> http://fritalk.com Fritalk
+
+=> ../files/old/vache_nico_petit.jpg Une vache
+
+En 2004, ardent promoteur de XMPP, je loue un serveur et y installe Fritalk.com, un serveur Jabber libre d’accès.
+
+=> /17-les-deux-crabes-le-cocotier-et-lutilisateur-de-jabber XMPP
+
+Au fil des années, le service commencera à proposer une adresse mail, un blog basé sur Dotclear, un lecteur RSS. J’investigue des nouveautés, je tente des expériences. Fritalk montera jusqu’à 2000 utilisateurs actifs. Il est même cité dans les exemples de la page Wikipédia traitant d’XMPP. Plusieurs utilisateurs m’ont avoué avoir découvert XMPP à travers Fritalk.
+
+=> http://fr.dotclear.org/ Dotclear
+=> http://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol#Transports Wikipédia traitant d’XMPP
+
+Mais administrer un serveur prend un temps énorme. Il faut se former à l’administration, à la gestion des performances, à la sécurisation. Le tout en apprenant les divers outils dont certains sont tout bonnement absurdes dans leur interaction avec l’utilisateur (qui a dit LDAP?).
+
+C’est également un stress énorme lorsqu’un utilisateur envoie un message pour dire que le service est indisponible. À chaque fois qu’une mise à jour du noyau se fait et qu’un reboot est nécessaire, je frôle l’apoplexie. Dès que je vois dans mes flux l’annonce pour une faille de sécurité, je dois immédiatement trouver une connexion pour vérifier si je suis concerné. Et la première chose que je fais chaque matin c’est de vérifier si tout tourne bien.
+
+Je sais qu’arrivera un jour où mon serveur sera complètement piraté. Qu’un jour ma stratégie de backup se révélera justement défaillante pour la situation rencontrée. Que la responsabilité est énorme vis-à-vis de tous mes utilisateurs.
+
+Ajoutons à cela que, financé par quelques utilisateurs payants, Fritalk n’arrive que très rarement à l’équilibre et que je dois donc y mettre de ma poche. Que chaque utilisateur payant implique de ma part une responsabilité et un devoir de réactivité face aux questions/mails.
+
+Pour conclure, je me suis rendu compte que je n’étais plus du tout intéressé par tout cela. Je faisais quelque chose de stressant, qui ne m’intéressait plus, qui ne correspondait à aucun de mes objectifs personnels et je payais pour cela. Je me suis donc donné un an pour évaluer la situation, pour choisir entre éteindre Fritalk ou en faire quelque chose de vraiment motivant. Le dernier crash disque a achevé de me convaincre.
+
+=> http://fritalk.com/post/2012/09/26/Chronique-d-un-crash-disque-%21 dernier crash disque
+
+Fritalk.com va donc disparaitre. J’ai reçu une proposition de reprise du nom de domaine et des utilisateurs par Kazar mais j’attends encore de voir si les utilisateurs en éprouvent le besoin. Très peu de comptes semblent encore actifs.
+
+=> http://kazar.asso.fr/ Kazar
+
+Néanmoins, je tiens à remercier tous ceux qui, à un moment ou un autre, ont fait confiance à Fritalk. Ce fut un plaisir de faire avec vous ce bout de chemin. J’en sors énormément instruit et armé de nombreux outils pour la suite. J’espère que ce service vous aura été utile.
+
+#### L’avenir de ploum.net
+
+La question que je dois encore résoudre est : où vais-je mettre mon blog ?
+
+Pascale, ancienne utilisatrice de Fritalk, ne tarit pas d’éloges sur le couple WordPress/Hostpapa. Je me sens moi-même un peu limité par Dotclear au niveau des thèmes et des plugins. Je tenterais bien l’expérience si je trouvais une manière de migrer tout mon contenu (y compris les URLs) vers WordPress, ce que Pascale n’a pas réussi à faire (mais comme elle repart à zéro tous les trois mois, ce n’est pas dramatique).
+
+=> http://lespascaleries.be/ Pascale
+=> http://www.hostpapa.eu/ Hostpapa
+
+=> ../files/old/wordpress-questions.gif Passer à WordPress ? Mais comment ?
+
+C’est donc à ce moment que je fais appel à vous, amis lecteurs : avez-vous des conseils pour migrer mon blog vers WordPress et trouver un bon hébergeur, souple et performant ? Vous pouvez également me contacter par mail/xmpp (nouvelle adresse : lionel sur ploum.net) ou commenter sur G+.
+
+=> /no-proprietary-service.html sur G+
+
+Merci à tous ceux qui me lisent et, pour certains, depuis le début, alors que l’adresse était encore ploum.frimouvy.org. Pour la petite histoire, Frimouvy.org est sur le point d’expirer et je ne vais pas le renouveler. Une vache de moins 😉
+
+Photo de Epoxides
+
+=> http://epoxides.deviantart.com/art/Serious-talk-368206859 Epoxides

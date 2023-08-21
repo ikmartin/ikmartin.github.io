@@ -1,0 +1,28 @@
+# Ubunterview
+
+Peu de temps après avoir signé la première dédicace de ma vie, voici mon premier interview, interview mené par les éditions Eyrolles sur la distribution Ubuntu. Au menu : le projet Ubuntu, le livre Ubuntu, la guerre Linux-Windows et le futur d’Ubuntu, en étant parfois un peu technique. Je vous encourage à la lire et à me dire honnêtement ce que vous en pensez.
+
+=> http://www.editions-vm.com/Interview/Lionel-Dricot/ premier interview
+=> /2006/01/06/88-ubuntu-le-livre le livre Ubuntu
+
+Pour ceux qui sont impatients de savoir à quoi ressemblera Ubuntu 6.04 Dapper Drake et comprendre un peu mieux ce que je raconte à la fin de l’interview, quelques liens en anglais :
+– Une petit avant-goût de GNOME 2.14
+– Ce que vous apportera GStreamer 0.10
+
+=> http://www.gnome.org/~davyd/gnome-2-14/ Une petit avant-goût de GNOME 2.14
+=> http://www.gnomejournal.org/article/37/gstreamer-010---whats-in-it-for-the-users Ce que vous apportera GStreamer 0.10
+
+Enfin, quand je dis que les performances sont améliorées, il n’y a pas seulement GNOME : le temps de démarrage de mon ordinateur a été divisé par 3 ! Franchement, j’ai un peu honte de vous mettre l’eau à la bouche comme ça, mais ça donne envie d’être déjà en avril. Rappelez moi que, à ce moment là, je devrais vous expliquer comment utiliser bogofilter dans Evolution (bien plus rapide et efficace que SpamAssassin), comment installer et utiliser Xgl pour épater ses voisins, comment installer Network-Manager sur son laptop, d’installer les icônes Tango pour être hype, bref plein de trucs vraiment chouettes !
+
+Enfin, si vous venez samedi 25 au FOSDEM à Bruxelles et qu’un groupe des utilisateurs belges d’Ubuntu vous intéresse, contactez-moi !
+
+=> http://www.fosdem.org/2006 FOSDEM
+=> https://wiki.ubuntu.com/BelgianTeam groupe des utilisateurs belges d’Ubuntu
+=> /contact contactez-moi
+
+Voor lezers van Planet.grep.be : Als je in een Ubuntu-be groep geinteresseerd bent en dat je naar FOSDEM komt, neem ik contact op.
+
+=> http://planet.grep.be/ Planet.grep.be
+=> https://wiki.ubuntu.com/BelgianTeam Ubuntu-be groep
+=> http://www.fosdem.org/2006 FOSDEM
+=> /contact contact op

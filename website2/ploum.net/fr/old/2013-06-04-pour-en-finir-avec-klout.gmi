@@ -1,0 +1,97 @@
+# Pour en finir avec Klout
+=> files/old/astrologist.jpg
+
+Et toutes cette sorte de statistiques
+
+Rick Falkvinge est le fondateur du premier Parti Pirate de l’histoire. Il est devenu l’un des idéologues de la mouvance Pirate. Il a un blog qui est très lu, une page Wikipédia dans la plupart des langues. Il a donné des conférences TED (avant que ça ne devienne des foires aux boudins locales pour hipsters sous le nom TEDx), il a été élu en 2011 parmi les « 100 penseurs globaux » du magazine Foreign Policy et, en 2012, parmi les personnes les plus influentes du monde par le TIME Magazine.
+
+=> http://fr.wikipedia.org/wiki/Rick_Falkvinge Rick Falkvinge
+
+C’est également un utilisateur acharné des réseaux sociaux dont il maîtrise les ficelles. Sur Klout, où il est actif, son score était de 71 en janvier 2013.
+
+Le même que mon score à cette époque. Et non, il n’y a pas de page Wikipédia à mon nom.
+
+Si l’algorithme de Klout est secret, il est facile d’en déterminer les facteurs importants. En gros, Klout va se baser sur les chiffres suivants :
+
+* Le nombre de vos followers sur Twitter
+* Le nombre de mentions, réponse et retweets sur les derniers 90 jours
+* Le nombre d’amis Facebook
+* Le nombre de likes, de partages et de commentaires sur vos publications Facebook des derniers 90 jours
+
+L’hypothèse de base faite par Klout est que ces indicateurs sont corrélés à votre influence. J’ai déjà expliqué à quel point la corrélation des observables avec ce qu’on veut observer est primordiale.
+
+=> /mefiez-vous-des-observables la corrélation des observables
+
+Les followers Twitter
+
+La première des solutions pour avoir des followers sur Twitter, c’est tout simplement de les acheter. Plus laborieusement, vous pouvez vous contentez de suivre beaucoup de gens. Une grande partie des utilisateurs « follow back », suivent ceux qui les suivent. Vous pouvez ajouter n’importe qui, de toutes façons, quand vous suivez 10.000 personnes, une de plus ou une de moins. Enfin, postez souvent, sur des sujets précis en utilisant des hashtags. Beaucoup de robots suivent automatiquement toute personne qui parle d’un domaine, espérant un follow back. Tentez un tweet à propos de #seo. 10 followers garantis dans la journée.
+
+=> http://www.huffingtonpost.fr/2012/10/20/achat-followers-twitter-abonnes-test_n_1992666.html les acheter
+
+Ou alors, il suffit d’être très connu et influent en dehors de Twitter.
+
+Les mentions/retweets
+
+Pour avoir des mentions/réponses/retweets, postez tout le temps. Soyez actifs, répondez à des tweets, engagez la conversation. Vous finirez bien par poster quelque chose qui sera repris par d’autres. Essayez de lancer des blagues, des petites phrases accrocheuses. Souvent, je vois passer un tweet d’un illustre inconnu retweeté des centaines voire des milliers de fois.
+
+Ou alors, il suffit d’être très connu et influent en dehors de Twitter. Si Justin Bieber dit qu’il va faire pipi, il aura des centaines de retweets. Pas vous.
+
+Les amis Facebook
+
+Pour avoir des amis sur Facebook, c’est très simple. Il suffit de le demander. Demandez à tout le monde, sans hésiter. Vous aurez vite quelques centaines puis milliers d’amis.
+
+Ou alors, vous êtes très connu en dehors de Facebook. Vous avez une page que vos fans suivent.
+
+Les likes/partages/commentaires
+
+Une fois que vous avez beaucoup d’amis, rien de plus simple. Postez des photos de chats, des blagues, des trucs que tout le monde aime. Si vous en fait en grosse quantité, il y en a bien un ou deux par jour qui deviendront populaires.
+
+Ou alors, vous êtes très connu en dehors de Facebook. Le monde est suspendu à votre mur.
+
+Des fondamentaux erronnés
+
+Cette simple analyse permet de montrer que les observables choisies par Klout mesurent en fait deux choses : votre célébrité (on dit influence) ou votre utilisation des réseaux sociaux.
+
+Les deux sont bien entendus complètement distincts. On peut être un utilisateur acharné des réseaux sociaux tout en étant associal dans sa cabane en Corrèze.
+
+En toute logique, être célèbre implique une certaine activité autour de vous sur les réseaux sociaux. Klout, par un superbe techno-sophisme, nous a fait croire que l’activité sur les réseaux sociaux implique la célébrité. Génial, non ?
+
+Un algorithme bancal et malhonnête
+
+Non content de construire sur des fondations inexistantes, Klout se paie le luxe d’être complètement bancal.
+
+Le score Klout ne se compare… qu’entre utilisateurs de Klout. En effet, si vous n’avez pas créé de compte Klout, Klout ne fera pas le lien entre votre Facebook et votre Twitter, divisant votre score par deux. Le corollaire est simple: si vous n’avez pas de compte Klout, c’est que vous n’êtes pas influent ou célèbre.
+
+Car, en dehors de Facebook et de Twitter, point de célébrité ni d’influence. Étant particulièrement actif sur Google+, j’ai été étonné d’apprendre que la contribution totale de ce réseau à mon score Klout était inférieure à celle d’Instagram où j’avais posté… deux photos en nonante jours. De plus, Klout ignore également complètement les blogs, les articles de journaux, bref tout ce qui peut potentiellement exprimer l’influence.
+
+Ajoutez à cela cet influenceur qui, fier de sa position, vit soudainement son score perdre 10 points. Cela faisait 91 jours qu’il avait posté cette vidéo de chats qui avait fait le tour de Facebook.
+
+L’utilisation d’une échelle logarithmique vous fait croire que vous n’êtes qu’à deux ou trois points de tel personnage. Klout n’est donc pas conçu comme un outil de mesure référentiel mais bien comme une drogue addictive, un jeu vidéo un peu complexe.
+
+Les pages vues et ebuzzing
+
+Les blogueurs traditionnels, délaissés par le Klout, optent pour d’autres outils. Il y a les traditionnelles statistiques, avec le nombre de pages vues et de visiteurs uniques.
+
+Mais, ici encore, la meilleure manière de faire du chiffre, c’est le racolage. En termes de SEO, placer quelques phrases à caractère sexuel dans un billet est le meilleur investissement pour attirer des visiteurs. Car on ne parle pas de lecteurs.
+
+Des classement de blogs existent, le plus connu étant Ebuzzing (anciennement Wikio). Il se contente de compter le nombre de like/tweet reçu par billet d’un blog et de les additionner. Du coup, il existe une solution simple pour monter dans le classement : poster beaucoup. J’ai ainsi découvert des blogs inconnus, qui ne dépassaient pas les 10 likes par billet mais qui tenaient le haut du pavé grâce à une fréquence de publication dépassant la vingtaine de billets par jour.
+
+Un de mes meilleurs taux de likes, visites, partages Facebook et points ebuzzing a été atteint avec ce billet. La plupart des commentaires que j’ai observé sur les réseaux sociaux parlaient de la photo. Les commentateurs n’avaient même pas lu le titre du billet.
+
+=> /10raisons-de-preferer-un-chat-a-un-bebe ce billet
+
+Moralité
+
+Le Klout, c’est l’horoscope des réseaux sociaux. Ebuzzing, le marabout africain. En soit, cela pourrait être amusant si de nombreux professionnels ne basaient pas leurs décisions sur ces outils. L’expert en réseaux sociaux qui parle sérieusement du Klout, c’est un peu comme un chirurgien qui invoque les esprits avant de vous opérer : il est temps d’aller voir ailleurs.
+
+Comme le SEO, ces outils flattent notre égo. Ils tentent de nous faire croire que la célébrité ou le succès commercial sont faciles, qu’il suffit d’appliquer quelques règles. Que lorsque vous aurez le Klout de Lady Gaga, vous aurez également ses millions. Vous ne voulez pas le poste de président des USA avec le Klout d’Obama en prime ?
+
+=> /arnaque-seo appliquer quelques règles
+
+C’est prendre le problème à l’envers : vous voulez de la reconnaissance ? Vous voulez des visiteurs ou des clients ? Vous voulez du succès ? De la gloire ? Alors sortez-vous les doigts du Facebook et produisez du p*** de contenu original. Soyez créatifs, innovez, apportez votre pierre à la société virtuelle !
+
+Oui, je suis le premier concerné par cette dernière phrase.
+
+Photo par Kevin Harber
+
+=> http://www.flickr.com/photos/16151021@N00/3900449706 Kevin Harber

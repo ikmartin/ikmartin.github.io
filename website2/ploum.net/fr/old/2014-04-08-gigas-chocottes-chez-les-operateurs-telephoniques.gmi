@@ -1,0 +1,62 @@
+# Gigas chocottes chez les opérateurs téléphoniques
+=> files/old/zombiephone.jpg
+
+Depuis des années, les opérateurs téléphoniques s’evertuent à proposer des plans tarifaires d’une complexité post-relativiste soit-disant pour être plus adaptés à vos besoins : 15 centimes la minute en heures creuses les jeudis de pleine lune, 3000 SMS par semaine de quatre jeudis, gratuité pour les appels vers les numéros qui sont un nombre premier et… 20 Mo de transfert par mois. Youpie !
+
+Sauf que j’envoie à tout casser 15 SMS et que je passe 10 coups de fils de moins d’une minute par mois. La seule chose qui compte pour les utilisateurs comme moi ? Le prix du Giga ! C’est pour ça que je prends le plan 15€ de Mobile Vikings, qui me met le Giga à 7,50€ (et que je ne prends pas les plans à 25€ ou 50€).
+
+=> http://www.davanac.me/blogging_the_news/2014/04/en-attendant-la-fin-du-roaming.html les utilisateurs comme moi
+=> /simplifiez-vos-services-pour-payer-moins/ le plan 15€ de Mobile Vikings
+
+Le Giga-octet est infacturable
+
+Pour les opérateurs, un problème de taille se pose. Le Go n’est pas du tout intuitif. Dès qu’on sort du milieu geeko-geek, le client n’a aucune idée de ce qu’est un Go. Certains ont 20Mo par mois. D’autres 1 Go. Et ils ne comprennent pas la différence ni ce qu’ils peuvent faire avec ça. Au final, beaucoup bloquent la 3G, par crainte de payer sans comprendre.
+
+Mais même pour un technicien, le Go n’est pas contrôlable. Vous pouvez toujours surveiller la durée d’un appel et raccrocher. Ou arrêter d’envoyer un SMS. Mais vous ne pouvez pas contrôler, en cliquant sur un lien, si votre navigateur va télécharger une version haute-résolution d’une photo ou une version optimisée. Sans compter les publicités qui, en plus de vous corrompre le cerveau, vous coûtent directement de l’argent !
+
+Actuellement, la plupart des services de nos smartphones reposent sur la possibilité d’un accès permanent à Internet. Parfois, un bug ou une application mal codée entraine un pic de connexions. Pourriez-vous être tenu responsable des connexions de votre smartphone et vous voir infliger une facture astronomique ? La plupart des fois où ce problème s’est posé, l’opérateur a préféré poser « un geste commercial » plutôt que d’aller en justice.
+
+=> http://belgium-iphone.lesoir.be/2011/08/01/une-facture-de-5-000e-pour-avoir-utilise-son-iphone-en-turquie/ un geste commercial
+
+Bref, le Giga est, en tant que tel, infacturable.
+
+La mort de la compétition
+
+Ce n’est pas tout ! La complexité des offres entretenait la compétition. Personne n’y comprenant rien, on se retrouvait finalement chez celui qui avait les vendeurs les plus persuasifs. Avec le « tout-au-net » que nous sommes en train de vivre, la concurrence se fait uniquement sur le coût du Giga. Plus besoin d’un doctorat en mécanique quantique pour comprendre quelle offre est la plus intéressante !
+
+Pour les opérateurs, se battre pour les prix implique de rogner sévèrement sur les marges. Et cela risque d’entraîner la disparition progressive de la concurrence. Au final, tout le monde sera chez le moins cher qui pourra, par économie d’échelle, baisser encore un peu plus le prix de son Giga.
+
+La neutralité du net
+
+C’est pour lutter contre ces deux énormes failles dans leur business model que les opérateurs souhaitent avec tant d’insistance pouvoir discriminer les paquets du réseau en fonction du site et du contenu. Histoire de pouvoir offrir des abonnements « Facebook illimité et 3h de vidéo Youtube par mois ».
+
+=> http://artimuses.be/2012/08/la-neutralite-du-net-ou-cela-commence/ Facebook illimité et 3h de vidéo Youtube par mois
+
+Cette discrimination permettrait de garder artificiellement une complexité sur un produit devenu trop simple, de maintenir la concurrence (tel opérateur est meilleur si tu es beaucoup sur Facebook mais sinon utilise untel) et de ne pas mettre au chômage cette armée de commerciaux qui nous concoctent chaque année ces formules ultra complexes mais tellement adaptées à mon usage quotidien que mes dents blanchissent et que je saute en l’air ! (C’est en tout cas ce que promettent les pubs)
+
+Bien sûr, mettre à mal la neutralité du net pourrait avoir des conséquences dramatiques en termes de censure, de liberté d’expression et de démocratie. Cela renforcerait un réseau à plusieurs vitesses où quelques acteurs auraient le contrôle absolu. Mais, aux yeux des opérateurs, ces considérations sont accessoires face à la remise en question de leur business model. Surtout que ce sont eux qui seraient au pouvoir.
+
+=> http://fr.wikipedia.org/wiki/Neutralit%C3%A9_du_r%C3%A9seau#Les_arguments_pour_la_neutralit.C3.A9_du_Net en termes de censure, de liberté d’expression et de démocratie
+
+Je n’aimerais pas être un opérateur
+
+Ce que j’aime beaucoup avec cette histoire, c’est qu’il s’agit d’un exemple particulièrement édifiant de la manière dont Internet remet en cause un business bien implanté. Pour l’utilisateur comme vous et moi, Internet bon marché et partout est une bénédiction. Plus de soucis à communiquer avec une personne qui se trouve à l’autre bout du monde. Pas d’obligation de couper les données mobiles dès qu’on s’approche trop près d’une frontière. Plus de limitations arbitraires dans la manière dont nous communiquons. Un choix clair et évident pour un service bon marché.
+
+Si on se met à la place des opérateurs, ces bienfaits deviennent des fléaux. On comprend mieux le lobbying intensif contre la neutralité des réseaux. On perçoit la peur de disparaître dans les menaces à peine voilée « sans nous, il n’y aura plus d’infrastructure, plus d’investissements ». On réalise tout l’intérêt économique que représente toutes les frontières qui justifient le roaming dès qu’on s’en approche. Bref, les opérateurs téléphoniques sont devenus des adversaires de leurs propres utilisateurs. Ils se battent pour que nos vies ne deviennent pas meilleures !
+
+Mais, pour une fois, et cela fait plaisir de le souligner, le monde politique ne s’y est pas laissé prendre. Le Parlement Européen soutient la neutralité du net et une interdiction des frais de roaming.
+
+=> http://www.numerama.com/magazine/28966-victoire-pour-la-neutralite-du-net-au-parlement-europeen.html Parlement Européen soutient la neutralité du net
+
+Bien sûr, la victoire est loin d’être acquise. Mais les opérateurs téléphoniques sont désormais officiellement en train de faire leur deuil. Et, contrairement à de nombreuses industries zombies, on dirait que, cette fois, les politiques ne vont pas faire dans l’acharnement thérapeutique.
+
+=> http://www.numerama.com/magazine/28983-neutralite-du-net-pourquoi-la-victoire-est-loin-d-etre-acquise.html la victoire est loin d’être acquise
+=> /lorsque-lindustrie-fait-son-deuil/ de faire leur deuil
+=> /la-vaine-resistance-des-entreprises-zombies/ de nombreuses industries zombies
+
+Bref, sortez les popcorns. Les années qui viennent vont être giga passionnantes !
+
+Photo par Pete. Relecture par Sylvestre.
+
+=> https://www.flickr.com/photos/93452626@N00/38008649 Pete
+=> http://sylvestre.org Sylvestre

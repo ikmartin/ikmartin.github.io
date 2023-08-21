@@ -1,0 +1,10 @@
+# $TITLE
+$DATE
+$CONTENT
+----
+Email: 
+=> mailto:gemini23@ploum.eu gemini23@ploum.eu
+
+permalinks:
+=> $GEMLINK
+=> $HTMLLINK

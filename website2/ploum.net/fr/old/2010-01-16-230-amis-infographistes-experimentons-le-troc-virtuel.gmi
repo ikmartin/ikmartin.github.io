@@ -1,0 +1,79 @@
+# Amis infographistes : expérimentons le troc virtuel !
+
+Ceci est un message adressé à tous les designers webs.
+
+Premièrement, je vous admire. Cela fait 6 mois que je souhaite migrer mon blog vieillissant sur ma plateforme d’hébergement utilisant l’excellentissime Dotclear 2. Pour cela, je dois faire un thème Dotclear 2.
+
+=> http://fritalk.com plateforme d’hébergement
+=> http://www.dotclear.net Dotclear 2
+
+Et bien, après 6 mois, je dois me rendre à l’évidence : je suis nul ! C’est un travail gigantesque qui me semble complètement impossible. Je passe des heures et je n’arrive à rien. Quand je vois que certains pondent de superbes thèmes à la pelle, je suis réellement impressionné.
+
+=> ../files/old/typewriter.jpg Typewriter
+
+Il faut se rendre à l’évidence : je suis fait pour écrire des conneries, pas pour les mettre en page ni les rendre belles.
+
+Si je vous flatte tellement, c’est que je vais forcément vous demander quelque chose. Et vous avez raison ! Damned, Je suis démasqué.
+
+Comme je me révèle incapable de faire un beau thème moi-même, pourquoi ne pas simplement demander à un infographiste de le faire pour moi ? Tout simplement.
+
+Rassurez-vous, je lis trop le blog de Marie//Julien pour organiser un concours à truffe.
+
+=> http://www.mariejulien.com/ Marie//Julien
+=> http://www.mariejulien.com/?post/2007/12/09/Ceci-nest-pas-un-concours concours à truffe
+
+Au lieu d’un concours, je vous propose un appel au troc. En effet, si je suis nul en design, il y a d’autres domaines où je me débrouille pas mal. Aussi, le principe est simple : je fournis un cahier des charges (relativement libre, je suis toujours ouvert à toute modification) et, si vous êtes intéressé, vous m’envoyez par écrit une proposition ainsi que votre prix.
+
+=> http://www.mariejulien.com/?post/2007/09/06/Les-concours-de-graphisme-pourquoi-ca-craint-en-general concours
+
+Votre « prix » est quelque chose que je ferai pour vous en échange du design. À vous d’estimer la valeur de votre travail et d’être original dans ce que vous me demandez. Cela peut comprendre, entre autres, un texte en prose publié sur ce blog, une nouvelle personnalisée, un engagement de ma part à participer à Polar Geek, un programme python, un plugin Getting Things GNOME!, un hébergement blog/mail/jabber/django sur Fritalk, dix exemplaires dédicacés de Ubuntu Efficace, un aveu public sur mon blog que Windows Seven est le meilleur système d’exploitation, un mélange de tout ça, que sais-je ?
+
+=> http://polar-geek.org/ Polar Geek
+=> http://gtg.fritalk.com Getting Things GNOME!
+=> http://fritalk.com Fritalk
+=> /223-ubuntu-efficace-3eme-edition Ubuntu Efficace
+
+Si je reçois plusieurs réponses, Je choisirai la proposition qui me semble la plus intéressante et surtout la plus amusante pour moi à réaliser[1]. Votre proposition peut également contenir un aspect payant en espèces sonnantes et trébuchantes mais c’est moins rigolo.
+
+J’estime qu’il s’agit d’un troc honnête car tout le monde est libre de participer et d’estimer la valeur de son travail. De plus, contrairement aux concours, je ne demande pas de réaliser le travail avant la sélection ! Le principe du troc me semble sympathique et peut-être un peu trop oublié en ces temps de crise. Pourquoi ne pas tenter l’expérience ?
+
+Tant qu’à faire, envoyez-moi également le type de travaux que vous réalisez ainsi que votre grille tarifaire « normale ». De cette manière, je met à jour ma base de donnée privée qui me sert quand je dois conseiller un infograhiste à un client. Note : vous pouvez m’envoyer vos infos sans pour autant participer à mon troc, les deux ne sont pas liés.
+
+Mon cahier des charges, qui est entièrement discutable :
+
+* Un thème Dotclear 2 qui puisse être utilisé sans modification de code (il doit pouvoir être utilisé sur un thème multiblog)
+* Un thème sur une seule colonne de taille fixe qui favorise la lisibilité du texte avant tout (foncé sur fond clair)
+* Un thème assez proche du thème actuel pour bien marquer la continuité
+* Un menu personnalisable en haut de page (par exemple avec le plugin Freshy)
+* Du rouge, de la vie !
+* Ma tête qui dépasse du haut quelque part avec 2 petites mains (c’est ma marque de fabrique)
+* Un bandeau de titre rouge avec, si possible l’image Soleil Plongeant mais l’image actuelle de l’Airbus ZERO-G est également possible.
+* Une licence libre
+* L’acceptation de faire une ou deux itérations avec moi (avec toujours la possibilité de m’envoyer chier).
+* Pas de flash, pas de JS inutile (voire pas du tout), pas d’effet : simple et léger.
+* Respect des standards. Et pas besoin de tester sur IE6, je m’en fous complètement.
+* Que faire ce thème vous amuse.
+
+Ce cahier des charges n’est qu’une idée. Vous pouvez également me proposer d’autres choses avec le prix que vous demandez.
+
+=> http://plugins.dotaddict.org/dc2/details/menuFreshy plugin Freshy
+=> /225-impression-soleil-plongeant Soleil Plongeant
+=> /2004/11/07/19-surtout-ne-vous-laissez-pas-avoir-cest-une-arnaque je m’en fous complètement
+
+Je ne demande pas un travail original. Reprendre un thème existant ou une CSS libre de droit et faire quelques modifs est bien entendu tout à fait recommandé (dans le respect des licences).
+
+Un exemple de ce que j’avais en tête est visible sur Ploum.net, thème basé sur BattleStar de l’excellent David Yim.
+
+=>  Ploum.net
+=> http://themes.dotaddict.org/galerie-dc2/details/Battlestar BattleStar
+=> http://davidyim.fr/ David Yim
+
+Si vous avez des questions, des remarques, n’hésitez pas à me contacter. Vos propositions sont à envoyer à l’adresse ploum (at) ploum.net. Merci de mettre [Proposition Thème WiP?] dans le titre du mail. Vous pouvez en envoyer autant que vous voulez, bien entendu, si possible avant le 31 janvier.
+
+Je ne sais pas comment mes lecteurs vont réagir, je n’ai aucune idée de si je vais faire un flop total mais, comme une bouteille à la mer, je trouve que le principe du troc virtuel est à tenter.
+
+Merci de me lire et bonjour chez vous !
+
+#### Notes
+
+[1] Même si le sexe est très amusant, il y a peu de chance que j’accepte les propositions de ce type 😉

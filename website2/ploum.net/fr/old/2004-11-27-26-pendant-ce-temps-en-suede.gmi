@@ -1,0 +1,16 @@
+# Pendant ce temps en Suède…
+
+00:42:59  Et parfois l’upload fait des pointes à 5Ko
+ 00:43:07  autant que tu m’envoies un cd non? le débit sera meilleur?
+ 00:43:41  envoyer un cd par la poste, c quoi? c du 650Mo/(nombre d’heure livraisons)
+ 00:43:56  Disons 72h
+ 00:44:06  650Mo/72h
+ 00:44:14  On arrondit à 10Mo par h
+ 00:44:24  ça fait du 3ko/s
+ 00:44:46  Mais on peut envoyer plusieurs CD en même temps
+ 00:44:51  en plus
+ 00:45:00  c un bon débit
+ 00:45:17  finalement c jamais qu’un envoi en burst de 650Mo une enveloppe
+ 00:46:16  TCP/IP: Transfer of CD by Public/International Post
+
+PRIVATE : Ce qui est bien avec Bertrand, c’est que j’ai pas l’impression que mon état est si grave que ça. Mais bon, si Marie tombe sur cette conversation, j’ose pas imaginer ce qu’elle va imaginer …

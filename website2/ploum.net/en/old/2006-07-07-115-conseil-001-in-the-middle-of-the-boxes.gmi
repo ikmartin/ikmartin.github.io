@@ -1,0 +1,41 @@
+# Conseil 0.0.1 « In The Middle of The Boxes »
+
+=> ../files/old/conseil/20000_squid.jpg 20.000 squid
+In the eighty-ninth genus of fishes, classed by Lacepede, belonging to the second lower class of bony, characterised by opercules and ronchial membranes, I remarked the scorpaena, the head of which is furnished with spikes, and which has but one dorsal fin; these reatures are covered, or not, with little shells, according to the sub-class to which they belong. The second sub-class gives us specimens of didactyles fourteen or fifteen inches in length, with yellow rays, and heads of a most fantastic appearance. As to the first sub-class, it gives several specimens of that singular looking fish appropriately called a ‘seafrog,’ with large head, sometimes pierced with holes, sometimes swollen with protuberances, bristling with spikes, and covered with tubercles; it has irregular and hideous horns; its body and tail are covered with callosities; its sting makes a dangerous wound; it is both repugnant and horrible to look at.
+
+Conseil, servant of Professor Pierre Aronnax, describing bug #1 in « Twenty Thousand Leagues under the Sea » of Jules Verne.
+
+=> https://launchpad.net/distros/ubuntu/+bug/1 bug #1
+
+I’m happy to announce you the birth of Conseil 0.0.1 « In The Middle of The Boxes » release, a GNOME application aimed to manage bugs on Launchpad (and other BTS in the future, like bugzilla). This include searching, reading, triaging, modifying, commenting, …
+
+=> http://conseil.fritalk.com/conseil/ Conseil
+=> http://conseil.fritalk.com/downloads/conseil_0.0.1.tar.gz 0.0.1 « In The Middle of The Boxes » release
+=> http://launchpad.net Launchpad
+
+I’m developing Conseil as part of my Google Summer of Code. This 0.0.1 is far from usable or even useful at all. It’s only a preview of a preview of a preview beta release to let people know what I am doing. And this is really harder than expected given that there’s NO XML-RPC or whatever in Launchpad ! I’m parsing plain HTML pages and this is ugly[1]. Thank a lot to the people of BeautifulSoup for their wonderful html parser.
+
+=> http://code.google.com/soc/ Google Summer of Code
+=> http://www.crummy.com/software/BeautifulSoup BeautifulSoup
+
+=> ../files/old/conseil/screenshot0014.png Screenshot rev 14
+Screenshot of Conseil rev.14
+
+=> http://conseil.fritalk.com/conseil/ 
+
+At the moment, only bug searching and displaying is more or less available. Bookmarks are not stored between sessions ! I know that you are used to beta releases (thanks web 2.0) but this is NOT. This is pre-alpha-unstable-might-crash-your-system-and-kill-your-dog-preview with nearly nothing to see.
+
+Comments, ideas, mockups and bug reports are welcome ! If you are a regular bug triager on Launchpad, you probably have things you want to see or not in such a software. So drop me a word.
+
+=> http://conseil.fritalk.com/conseil/newticket bug reports
+=> /contact drop me a word
+
+Conseil website – 0.0.1 download – Bugs
+
+=> http://conseil.fritalk.com/conseil/ Conseil website
+=> http://conseil.fritalk.com/downloads/conseil_0.0.1.tar.gz 0.0.1 download
+=> http://conseil.fritalk.com/conseil/report/1 Bugs
+
+#### Notes
+
+[1] It’s even uglier once you’ve seen the HTML produced by Launchpad. sigh!

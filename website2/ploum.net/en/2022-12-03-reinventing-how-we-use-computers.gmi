@@ -1,0 +1,75 @@
+# Reinventing How We Use Computers
+
+Nearly two years ago, I put into words the dream I had for a durable computer. A computer that would be built for a lifetime. A computer that would not do everything but could do 80% of what I expect from it. I called this idea the Forever Computer.
+
+=> /the-computer-built-to-last-50-years/index.gmi The computer built to last 50 years
+
+I expected to launch a conversation about what we really expect from computers. What do we really want from them? What are some limitations that could free us? What if we didn’t have a pointer but still wanted to be user-friendly by avoiding cryptic key combinations? What if we only had rare and intermittent connections? What if we didn’t have a high-resolution screen? Thinking about that gave birth to Offpunk, a command-line and offline web browser.
+
+=> https://sr.ht/~lioploum/offpunk/ Offpunk
+
+Unsurprisingly, most of the reactions I had from my Forever Computer dream where about hardware. Every idea, every project I saw could be summarised as "How to make hardware we can repair while not questioning what we do with this hardware?" The (very interesting) Framework laptop is available as… a Chromebook. This is like transitioning to electric cars while having electricity generated from coal and not questioning why we ride in the first place. Oh, wait… 
+
+By developing and using Offpunk, I had to think about what it means to use a computer. I ended up putting my fingers on a huge paradigm problem : we don’t have computers any more. We have "content consuming devices".
+
+## The Consuming Screen
+
+On my typewriter, two small retractable metal holders allow the page to stand up while being written. It’s fairly common. I realised that I retract them to keep the paper flowing horizontally. Instead of building a wall of text between me and my environment, I stay open to my surroundings, I catch the ideas that are besides the machine, further away. On the Freewrite, the horizontal e-ink screen does exactly the same. And it works great. It allows me to see what I’m writing without being absorbed by it.
+
+On our computers, the screen is always bigger, shinier, brighter. It is designed to consume you while you consume content. It is a wall to lock you in, to make you prisoner of your little space. Developers need three screens to inhabit this virtual space. Meetings are now little rooms where everyone put a screen behind himself and others while pretending to listen to someone who connected his own screen to a projector (because the only way to have us outside of our own little screen is a bigger shared screen). Tablets and phones are screen-only computers designed to take our attention, to make us consume more and more contents even when we are with beloved ones.
+
+Browsing the Gemini network with Offpunk allowed me to realise how "consuming and producing content" was a disease and not something we ever wanted to do as humans.
+
+=> /2022-10-05-there-is-no-content-on-gemini.gmi There is no content on Gemini
+
+## The Lost Input
+
+But while computers were transformed into screens, we completely lost the main input mechanism: the keyboard. It is not that the inefficient and absurd misaligned qwerty keyboard didn’t evolve. It actually worsened. We lost the mechanical keys in the search for flatness. We lost comfort. We lost any ergonomics. The only point was to make a keyboard as flat as possible and the same size as the screen to fit it in a laptop. With its infamous butterfly keyboard, Apple even managed to make it painful to type. And I’m not talking about those small touchscreen keyboards which still mimic a full, often misaligned, qwerty keyboard.
+
+We know what a good keyboard is. Independent tinkerers managed to build awesome stuff. There were some really interesting experiments but, in the end, it looks like every attempt at reinventing the keyboard ends in some kind of split orthogonal form with alternative layout (Dvorak, Colemak or, for me, Bépo). 
+
+=> https://ergodox-ez.com/ The Moonlander keyboard
+=> http://typematrix.com/ The Typematrix keyboard
+
+Why haven’t we seen a single computer with such a built-in keyboard? Because computers are not built to type any more. There are built to consume content. Even professional coders spend more time consuming Slack messages and Github badge notifications than writing code.
+
+## The Clamshell Compromise
+
+When you add a bright screen to a cramped keyboard, you end up with the worst possible design: the clamshell laptop.
+
+The clamshell is perfect to close it and put it in a bag. It is awful to use. It is like giving a triangle to a cello player before a concert because, hey, the triangle is easiest to travel with.
+
+With a clamshell, the keyboard and the screen are never where there should be. The keyboard is too high, forcing our arms and shoulders in a stressful position while the screen is too low and deforms our neck. Our body is suffering because we don’t want to think about what we do with our computers.
+
+As I was thinking why it was so relieving to let the paper roll horizontally on my typewriter, I realised that it allowed me not to read it all the time. I was encouraged to look outside while typing, having only glances at the paper. When lying lower, text is more comfortable to read  horizontally. You only need a really slight angle to read a book open on a table. 
+
+## What it means for the Forever Computer
+
+All those points made me realise that a true Forever Computer should be built "keyboard first". The keyboard should be the most important part, with a housing for travel. The same housing could host a small screen, possibly an e-ink one. While travelling, that would allow you to read deeply (with the screen in your hand, like an e-reader) or to attach it to the keyboard to write while not being absorbed by the screen. You separate the action of reading and writing instead of being always between two chairs.
+
+The keyboard would feature a port to plug a bigger screen that you could have at home or in your office. Those screens could be put on the wall or, like any external monitor, configured to be at eye level.
+
+When you think about it, it allows us to reintroduce the locality of action. Want to watch videos? Go to the living room and plug to the big screen. Want to code in an IDE or do some graphic work? Go to the office and plug into your desk’s screen. Not at your desk? You can read, takes notes, answer your emails (that will we synchronised when needed). But don’t pretend to code a little, answer a message, watch a video while eating at a restaurant. 
+
+## Flipping the trend
+
+We currently own a screen with very minimal input to allow us to consume content and access our own data which are on some company servers. The only thing we own, the only thing we pay for is a screen. Sometimes with a bad keyboard.
+
+What I call the Forever Computer is exactly the opposite. You own your input (your favourite keyboard and trackball). You own your data (stored with the computer itself in the keyboard housing). The screen is only a commodity. You can share the screen, you can use someone else screen, you can plug to the one in your hotel room.
+
+This is the point where my dream made me realise what a nightmare our tech dystopia has become. When did building the same old laptop or phone with a handful of replaceable part became the epitome of sustainability and innovation? Why is cramming a few more pixels and a few more CPU cycles to allow hundred megabytes of JavaScript to render some text using a cool new font seen as "a revolution". Like any other tool, we should accept that you need to learn how to use a computer. Short-term UX marketing and regular updates with arbitrary changes in the interface have killed the very notion of "learning to use a computer". People have been reduced to "consumers having to adapt to the change of their consuming machine". We forgot that a computer should not hide how it works to be easy but instead allow its user to learn gradually about it. If we want durability, learnability is the key. When you learn something, you take care of it. You start to like it, to maintain it. It’s the opposite of forced upgrade cycles.
+
+I don’t know if there will be something like my "Forever Computer" in my lifetime. But there’s one thing I’m now certain: the ethical computer will be radically different of what we have in 2022. Or it will never be.
+
+
+## Links and further resources
+If you want to discuss the Forever Computer, I’ve opened a mailing-list on the subject. Join us!
+=> https://lists.sr.ht/~lioploum/forevercomputer Forever Computer Mailing-list.
+
+I’m closely following the work done by MNT on its Reform and its future Reform Pocket computers. People like them are probably those that could reinvent computing and free us from the current paradigm.
+=> https://mntre.com/ MNT Research
+=> https://mntre.com/media/reform_md/2022-07-01-july-update.html MNT Reform Pocket.
+
+While not radical at all, the Framework is probably the most interesting project for regular computer users.
+=> https://frame.work/fr/en Frawework laptops
+

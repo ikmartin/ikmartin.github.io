@@ -1,0 +1,9 @@
+# [Onliner 15]
+
+– Une forme de skolem est une formule prédicative sous forme prénexe dans laquelle toutes les quantifications existentielles du préfixe ont été éliminée par skolémisation.
+
+issu de mon syllabus de Mathématiques Discrètes[1].
+
+#### Notes
+
+[1] En théorie, j’ai su ce que cette définition signifiait… à l’époque.

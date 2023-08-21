@@ -1,0 +1,14 @@
+# Aborting Instead of Getting Stuck
+(written on January 3rd)
+
+I just connected myself to push a new blog post, a new gemlog post. Another goal was to setup a git repository on rawtext.club so I could simply git push my gemlog in the future instead of sshing into rawtext.club.
+
+This simple objective turned into a whole fiasco as I discovered that I was not able to push onto a repository which was not init with "--bare". As far as I know, bare repositories don’t expose their content to the file system meaning I can’t simply "git push". The whole process is a lot more complicated than what I thought. I need to learn a lot about git.
+
+In the process, hitted the infamous gemfeed.py bug which means that my atom.xml file broke. I planned to announce Offpunk and my year offline. Instead, I spent 27 minutes connected, messed stuff and didn’t managed to announce Offpunk on Antenna or the Gemini mailing-list.
+
+What is interesting is that I know that, if I was not supposed to be offline, I would have tried and tested many things by scrambling through the web, searching, copy, pasting. In the end, I may have succeeded but without knowing exactly how and why. It would have take me lot of hours. After all, I didn’t even realize I already spent 27 minutes ssh-ing rawtext.club (this also include posting on my blog). Time flies when you are online.
+
+Forcing me to disconnect allows me to think more about what I want. Do I really want a git repository on rawtext.club ? Maybe I could investigate rsync instead. Maybe there’s a reason why git --bare are different. Maybe I should try to understand what I’m trying to do.
+
+I learned a lesson here. Anything I need to do online should have a clear ABORT path. If things don’t work as expected, I should abort immediately and reconsider later.

@@ -1,0 +1,54 @@
+# En retard…
+
+Vous avez déjà sans doute remarqué que lorsqu’on est pressé, on agit d’une manière totalement différente sans véritable logique. Ce qui est amusant c’est que ce changement de comportement induit des effets inattendus et pour le moins comique (pour les autres).
+
+=> http://commons.wikimedia.org/wiki/Image:Alice-white-rabbit.jpg 
+=> ../files/old/alice_rabbit.jpg Rabbit
+
+### Exemple 1 : le sac pour partir en Week-end
+
+Situation : Vous devez partir en week-end avec un ami. Vous étiez très occupé, vous n’avez pas fait votre sac et voilà que l’ami en question sonne et rentre en disant : « on y va ? ».
+
+Théorie : Vous passez mentalement en revue le déroulement du week-end et notez ce dont vous avez besoin. Vous réunissez le tout et puis répartissez dans le sac pour optimiser l’équilibre et le volume. Vous êtes en retard ? Et bien prendre un sac prend 10 minutes, on est pas à 10 minutes quand même. Autant faire le sac calmement.
+
+Pratique : Vous prenez le premier sac qui passe et commencez à tourner en rond dans la maison en criant : « vite vite, je suis en retard, vite, vite ». Le fait de dire « vite vite » semble primordial. N’hésitez pas non plus à réprimander votre compagnon de voyage qui reste silencieux : « Arrête de me stresser ! ». Prenez les objets dont vous avez besoin et déplacez-les en divers endroits : sur le lit, la table et le sac. Criez parce que vous ne retrouvez plus un des objets déjà déplacé. Afin d’être certain d’oublier la moitié du sac, invoquez le mantra : « Je vais oublier quelque chose, je vais oublier quelque chose, je le sens ». Afin de gagner approximativement 2 secondes et demi, ne fermez pas le sac et balancez-le ouvert dans la voiture.
+
+Temps gagné : 1 minute et demi. Mais il faut rajouter les 5 minutes perdues pour rechercher le-truc-perdu-indispensable-justement-oublié. Total : -4 minutes.
+
+Effets secondaires : Vous êtes en nage et copieusement énervé contre toute personne qui vit sous le même toit que vous pour leur responsabilité presque criminelle dans le déplacement du tube de dentifrice que vous avez mis 15 secondes à retrouver. De plus, vous avez oublié la moitié du matériel nécessaire pour le week-end. De la moitié restante, un bon quart est resté sur le lit ou la table et vous avez tout simplement oublié de les mettre dans le sac. Vous devrez donc emprunter une brosse à dent, un pyjama et passer le week-end sans vous coiffer.
+
+### Exemple 2 : le trajet en voiture
+
+Situation : Vous avez rendez-vous à 45 minutes de voiture d’ici. Vous consultez votre montre : le rendez-vous est dans 20 minutes !
+
+Théorie : Qui veut arriver à temps part à temps. Voyant que vous êtes un peu tard, vous envoyer un message pour signaler que vous partez seulement maintenant en estimant confortablement votre heure d’arrivée. Vous roulez calmement.
+
+Pratique : Vous courez jusqu’à la voiture (temps gagné : 7 secondes), vous accélérez brutalement, vous ne respectez pas limitations de vitesse et trouvez le moindre espace pour dépasser la voiture devant vous. Pendant la durée du trajet, criez à haute voix : « vite vite vite ». Si une voiture vous bouche le passage, hurlez : « mais avance ! » en tapant les paumes sur votre volant. Cette technique n’a jamais été démontrée scientifiquement mais tous les conducteurs en retard la pratique pourtant.
+
+Temps gagné : de 0 (dans le cas d’une route à feu rouge) à 4-5 minutes (très long trajet sur l’autoroute). En cas d’accident par contre, le retard devient définitif.
+
+Effets secondaires : Nervosité, une dizaine d’euros d’essence gaspillée. Éventuellement : de la centaine d’euros pour la contravention à quelques centaines de milliers (accident ayant entraîné des blessures graves).
+
+### Exemple 3 : le réveil tardif
+
+Situation : Le réveil sonne, vous ouvrez un oeil puis le refermez pour quelques secondes. Vous regardez votre montre : votre clignement d’oeil à duré 50 minutes !
+
+Théorie : Vous vous levez et vous appelez pour prévenir d’un retard dont vous déterminerez la cause plus tard. Vous sélectionnez mentalement les actions absolument nécessaire de votre rituel matinal. Vous préparez un petit déjeuner que vous pourrez manger en route.
+
+Pratique : Vous bondissez comme un diable de votre lit en soulevant la couette (alors qu’il vous faut généralement un bon quart d’heure pour glisser timidement un orteil à l’extérieur avant de faire « brrr » et le rentrer aussitôt). Vous courez vers la salle de bain (temps gagné : une demi seconde), vous glissez sur le carrelage, vous jurez. Vous enfilez une jambe dans un pantalon et sautillez vers la cuisine tout en essayant d’enfiler la seconde jambe. Vous enfournez une tartine en bouche en préparant votre sac et vous vous brossez les dents avant de remarquer que la tartine est encore là. Si vous êtes un geek, vous vérifiez tout de même si vous avez un email. Vous sortez en enfilant votre veste, la tartine toujours en bouche, avant de revenir chercher votre sac finalement oublié. Le fait d’introduire la clé dans la serrure vous semble soudain la plus grande perte de temps de l’univers.
+
+Temps gagné : Aucun
+
+Effets secondaires : Un noeud dans l’estomac durant une partie de la matinée. Une journée passée avec deux chaussettes dépareillées et un caleçon enfilé à l’envers.
+
+### Exemple 4 : le geek en retard
+
+Situation : Vous êtes sur votre ordinateur et devez bientôt partir. Votre ordinateur affiche l’heure, vous n’avez aucune excuse.
+
+Théorie : L’heure arrivée, vous éteignez l’ordinateur et partez. Éventuellement, vous étiez absorbé dans votre tâche et n’avez pas vu le temps passer. Vous pouvez donc oublier d’éteindre l’ordinateur et partir immédiatement.
+
+Pratique : Vous surveillez l’heure de manière permanente. Comme vous avez encore 3 minutes de disponibles, vous rafraîchissez vos flux RSS et commencez à répondre à un mail. D’un seul coup, le temps passe de « j’ai encore le temps » à « je suis en retard » (la notion temporelle du geek ne connaît pas d’intermédiaire). Vous commencez donc à vous lever tout en continuant à taper. Ainsi pencher, les doigts rivés au clavier, le dos courbé sur l’écran, vous tentez d’attraper votre chaussure avec le pied droit. Vous l’enfilez et enfilez votre veste, ne lâchant le clavier que pour passer un bras dans une manche. Si vous n’êtes pas seul à partir, vous lancez un tonitruant « J’arrive » (même si on ne vous a rien demandé, c’est juste un réflexe). Juste quand le mail est enfin envoyé, vous êtes levé, prêt à partir, vous trouvez encore une demi seconde pour appuyer une dernière fois sur le bouton « rafraîchir » de votre lecteur RSS.
+
+Temps gagné : Aucun
+
+Effets secondaires : Vous pourrez parler de la toute dernière nouvelle publiée sur Slashdot car personne ne l’aura encore lue.

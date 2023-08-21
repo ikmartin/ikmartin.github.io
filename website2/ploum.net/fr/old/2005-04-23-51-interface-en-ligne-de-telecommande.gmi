@@ -1,0 +1,24 @@
+# Interface en ligne de télécommande
+
+=> ../files/old/17094.jpg télécommande
+Force est de constater qu’une maison « normale » est devenu un espace très prolifique pour les télécommandes : la télécommande de la chaîne hi-fi, de la télévision, du magnétoscope, de l’air conditionné, etc. Parfois, en se levant le matin, on jurerait qu’elles se sont reproduit pendant la nuit !
+
+Rajoutons à cela les téléphones portables, sensiblement au même format, plus le téléphone fixe sans-fil.
+
+Le but de tout cet attirail hétéroclite est, en théorie, d’éviter les mouvements inutiles : Je veux écouter de la musique ? Pas besoin de me lever pour allumer la radio ! Je veux allumer la télé[1] ? Mon téléphone sonne ? Les télécommandes sont là pour ça…
+
+En théorie…
+
+#### Notes
+
+[1] bon, il s’agit bien sûr d’un exemple. Ceux qui me connaissent savent bien que je n’ai jamais eu et n’aurai jamais de télévision
+
+Je sais pas pour vous, mais chez moi la télécommande de la chaîne hi-fi est toujours rangée sur la chaîne en question, le téléphone sans fil est juste à coté du combiné téléphone/fax et toutes les télécommandes de télévision/magnétoscope sont toujours rangées sur l’engin qu’elles doivent commander. Et effectivement, vous vous rendrez vite compte qu’en essayant de les ranger ailleurs, vous passerez un quart d’heure à chercher la télécommande plutôt que de faire les deux mètres qui vous séparent de l’engin à commander pour l’allumer à la main.
+
+L’idéal serait une télécommande qui ferait sonner la télécommande voulue afin de la localiser, un peu comme quand on se fait un appel en absence pour retrouver son GSM[1].
+
+Mais du coup, cette meta-télécommande, on la rangerait où ?
+
+#### Notes
+
+[1] Que celui qui ne l’a jamais fait me jette la première bière !!

@@ -1,0 +1,37 @@
+# Crosscompiling LibreOffice for Windows on Linux
+
+LibreOffice heads to become one of the most prominent Free Software in the desktop ecosystem. Despite an increasing trends towards alternatives, most of desktop users out there are using a Windows operating system. The implication is straightforward: most of LibreOffice users and potential users are running Windows.
+
+=> http://www.libreoffice.org/ LibreOffice
+
+On the other hand, most of LibreOffice developers are currently under Linux. Which means that early testing, nightly builds and debugging mostly happens on Linux.
+
+This is a known problem in free cross-platforms software. Tristan Nitot, head of Mozilla Europe, explained several times that he was using Windows not as a choice but to experience what most of Firefox users are experiencing.
+
+=> http://standblog.org/blog/ Tristan Nitot
+
+Without being as brave and dedicated as Tristan, there is still some way to improve the situation. The first one is to allow Linux developers to easily produce a Windows build from a Linux machine. It will make the Windows testing community feel like a first class-citizen, allowing them to catch bugs early and have access to automated nightly builds.
+
+To achieve that, two steps are mandatory: cross-compiling and building the installer.
+
+#### Cross-compiling
+
+The LibreOffice community did an awesome job in order to make the project cross-compilable. I wrote a step-by-step guide to cross-compile LibreOffice on my wiki page. Everything was done on an OpenSuse 12.1 although it should not be hard to transpose it to other distribution.
+
+=> https://wiki.documentfoundation.org/User:Ploum a step-by-step guide to cross-compile LibreOffice
+
+Feedback is appreciated, especially on 64-bits installation.
+
+#### Building the installer
+
+Having the Windows binaries is not enough to do a good testing job. Indeed, LibreOffice is composed of hundred of files, scattered everywhere. In order to test it properly, you need to install LibreOffice with a proper installer.
+
+LibreOffice comes as a MSI installer. Of course, building such an installer requires lot of Windows tools. The LibreOffice community then had this idea: why don’t we use Wine to build a MSI from Linux?
+
+=> http://en.wikipedia.org/wiki/Windows_Installer MSI installer
+
+This is a great idea and that’s what Lanedo is currently working on. We are currently in the process of refactoring the whole MSI make process, in order to put every Windows specific call under one interface. The next step will be to implement that interface with Wine tools.
+
+=> http://www.lanedo.com Lanedo
+
+Stay tuned, I hope to have some good news for you in the coming weeks!

@@ -1,0 +1,83 @@
+# Printeurs 17
+=> files/old/kaput.jpg
+
+Avant de m’engager franchement vers la porte de l’immeuble qui abrite notre laboratoire, je regarde une dernière fois au dessus de ma tête. Pas de drone. Pas de bruit suspect. Les vêtements d’Isa et un peu maquillage anti-reco ont fait merveille. Ils doivent me chercher partout sauf ici. Pour les algos d’analyse, ce lieu n’existe pas.
+
+Je regarde la serrure rouillée de la porte en souriant. Eva n’avait qu’une clé. Aussi m’étais-je amusé, pendant nos pauses, à comprendre le fonctionnement de l’antique mécanisme. J’avais réussi, sous le regard amusé d’Eva, à ouvrir la porte avec un simple morceau de métal. Eva ! Son souvenir m’envahit. Je ne comprends plus. Pourquoi avoir tué Max avant de te sacrifier pour moi ?
+
+Une main se pose sur mon épaule, je pousse un cri de surprise en me retournant, brandissant mon poing serré.
+— Arrêtez !
+Le clochard de la ruelle ! Le visage toujours caché par sa capuche, il tend vers moi sa main gantée pour arrêter mon bras. Sa voix a résonné comme un tintement rauque, mécanique.
+— Vous ! crié-je, surpris. Qui êtes-vous ? Pourquoi m’aidez-vous ?
+Sans ajouter un mot, il me tend un morceau de papier. Je m’en empare. Un simple fragment d’une feuille arrachée dans un carnet quelconque. Le papier est froissé, brûlé par endroits. J’arrive néanmoins à déchiffrer une phrase au crayon : « Clé Wifi maman » suivi d’une série de chiffres et de lettres qui me semblent être de l’hexadécimal.
+— L’adresse du chan IRC que m’avait donnée Max ! Comment avez-vous…
+Je lève la tête. La rue est déserte. Une fois de plus, mon muet ange gardien vient de me filer entre les doigts.
+
+Je prends une profonde inspiration. Ce mystérieux personnage m’a sauvé une fois, en m’avertissant du danger des publicités. Il m’a évité de me jeter dans la gueule du loup. S’il voulait me faire du tort, il n’aurait pas besoin de s’encombrer de tant de précautions. Mais le fait qu’il soit ici prouve qu’il m’observe, me suit. Il est sans doute tout proche. Soit, faisons comme si je ne soupçonnais pas un instant qu’il puisse rester dans les parages.
+
+M’emparant du morceau de fer que j’avais volontairement caché dans une fissure de la façade, j’ouvre la porte mais prends garde à ne pas la refermer derrière moi.
+
+La petite pièce qui nous servait de salon ne semble pas avoir bougé. Avec émotion, je me remémore ma première rencontre avec Georges Farreck. C’était il y a des années, des siècles. Comment ma vie a-t-elle pu basculer en si peu de temps ?
+
+Sans m’attarder, je pénètre dans le laboratoire. Je ne parviens pas à réprimer une exclamation de surprise.
+— Bon sang !
+Le labo est sans dessus dessous. La plupart de l’équipement semble manquant ou en morceaux sur le sol. Les armoires sont renversées. Des petits tas de cendres marquent l’emplacement où se sont consumées des liasses de papiers. Tous les prototypes de printeurs sont bien entendu manquants, de même que les ordinateurs.
+
+Le labo a donc été localisé ! Et il n’y a qu’une seule personne qui a pu parler. Georges ! A-t-il été contraint ? Ou bien… Non, je me refuse d’envisager l’autre possibilité. Pas Georges ! Quel serait son intérêt ?
+
+Il faut que je me connecte à IRC et que je demande de l’aide à FatNerdz ! Fouillant les décombres, soulevant des armoires renversées, je me mets à la recherche d’un ordinateur encore fonctionnel. Rien ! Ceux qui ont fait le nettoyage du laboratoire n’ont rien laissé au hasard.
+
+En tout cas, dans le labo. Mais j’avais l’habitude de laisser traîner une tablette sous le fauteuil de notre salon. De quoi lire et jouer pendant les pauses. Et si…
+
+Comme un fou, je me rue hors du laboratoire. Je soulève le fauteuil. Victoire ! La tablette est là. Une petite LED verte me signale que la batterie est toujours chargée et fonctionnelle. D’un mouvement du doigt, je l’allume et lance la connexion Tor2. Je trépigne. Et si le bâtiment n’était plus raccordé ? Et si une connexion Tor2 dans ce quartier attirait soudainement l’attention ?
+
+Comme des millions d’utilisateurs depuis des décennies, je ne peux m’empêcher d’encourager à haute voix la petite icône qui tournoie afin de me faire patienter.
+— Allez ! Connecte-toi ! Vas-y ! Tu peux le faire !
+
+L’icône disparaît. Je suis connecté. Je pousse un soupir de soulagement et lance un client IRC. Je commence à taper le code hexadécimal griffonné au crayon. Pour les chiffres, rien de plus simple. Mais pour les lettres, je dois prendre garde à utiliser la lettre opposée dans l’alphabet, treize positions plus loin. Max a bien insisté sur le fait que le nom du salon était en rot13. Connaissant un peu les maniaques de son calibre, je suis certain que se connecter sans convertir le nom réserverait une surprise. Un bannissement permanent de tous les nœuds Tor2, par exemple.
+
+Sans plus de cérémonie, je me retrouve dans le salon. Il y a bel et bien un op du nom de FatNerdz.
+— FatNerdz : ping.
+— T’es qui man ?
+— Je suis un ami de Max.
+— Où est Max ?
+— Mort. Explosion de son appartement.
+
+Rien ne bouge sur le chan. J’attends quelques secondes. FatNerdz est le premier à réagir.
+— Peux-tu prouver que tu es un ami ?
+— J’étais avec lui juste avant l’explosion. Il t’a demandé des infos sur une certaine Eva. Il m’a dit de te contacter si j’avais un problème.
+— Je suppose donc que tu as un problème.
+— Oui. Ils ont eu Max. Ils ont eu Eva. Je suis le suivant. Tu peux m’aider ?
+— Au sujet de ton Eva, man, j’ai fait la recherche. Ça a été plus long que prévu.
+— Ah bon ? Et qu’as-tu trouvé ?
+— Tu t’es moqué de moi, man. Cette fille n’existe pas. J’ai fait tous les dossiers. Elle n’existe pas.
+— Quoi ? Elle m’aurait donné un faux nom ?
+Je reste un instant sans voix. Eva !
+— Pas seulement, man. En cherchant dans les réseaux publics, on trouve des photos d’elle. Cheveux noir, peau matte, mince ?
+Il m’envoie une image un peu floue, récupérée sur un réseau quelconque. Je pousse un soupir de soulagement.
+— C’est bien elle ! Tu vois bien qu’elle existe !
+— Sauf que j’ai accès à plusieurs bases mondiales de reco. J’ai lancé plusieurs recherches sur sa photo et sur sa description.
+— Et ?
+— Aucun résultat. Elle n’existe pas. Personne sur terre ne lui correspond.
+J’ai du mal à déglutir. Puis-je vraiment faire confiance à cette personne que je n’ai jamais vue et qui communique avec moi uniquement par messages écrits ? Eva existe. Eva existait. Je le sais. Je l’ai touchée, goûtée, désirée.
+— Il y a autre chose, man. Avec les photos du visage, on peut inférer assez facilement une partie de l’ADN codant de la personne afin de faire des recherches génétiques.
+— Et ?
+— Rien, sauf dans une base de données complètement obscure. Un truc tordu. Il y avait un nom. Pas de description, pas de metadata, pas d’existence. Juste un nom absurde.
+— Quel nom ?
+— Derrière Lazote.
+— Quoi ? Mais c’est absurde !
+— Je sais man. C’est bizarre. Cela sent le coup fourré. Du coup, mon aide n’ira pas plus loin. Je t’ai dit ça en mémoire de Max. À présent, je te laisse. Rien de personnel mais je ne peux pas te faire confiance.
+
+Je n’ai pas le temps de réagir que je suis exclu du chan. Suis-je en train de rêver ? Est-ce un cauchemar particulièrement surréaliste ? Qui était Eva ?
+
+Machinalement, je me lève pour faire quelques pas, pour réfléchir. Pénétrant dans le laboratoire, je sens crisser les débris de composants électroniques sous mes pas. Je lève les yeux. Au fond de la pièce, le grand frigo noir qui contenait les réserves d’azote liquide… Bon sang ! Derrière l’azote !
+
+Un crissement a retentit dans mon dos. Je ne suis plus seul dans le laboratoire. L’inconnu est tout proche. Sans hésiter, je me retourne et bondit dans la direction du bruit. Une voix rauque retentit.
+— Arrêtez !
+Emporté par mon élan, je percute l’inconnu de plein fouet et roule sur le sol avec lui. Saisissant un de ses poignets, je tente de le maîtriser. Il se débat dans le silence le plus effroyable. D’un coup de genou dans le ventre, il me repousse et parvient à se relever. Dans le mouvement, j’ai réussi à lui ôter son capuchon. Je me prépare à bondir lorsqu’il tourne son visage vers moi.
+
+Mon corps se fige tandis qu’un cri d’effroi vient mourir dans ma gorge.
+
+Photo par Peter Kemmer.
+
+=> http://www.flickr.com/photos/7255089@N05/6668661125 Peter Kemmer

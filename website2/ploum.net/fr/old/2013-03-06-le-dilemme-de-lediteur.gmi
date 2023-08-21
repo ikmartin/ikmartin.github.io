@@ -1,0 +1,76 @@
+# Le dilemme de l’éditeur
+=> files/old/books.jpg
+
+=> /publishers-dilemma This text in English
+
+Je suis un éditeur de livres. Devrais-je dire « J’étais un éditeur » ? Ou « Je suis encore un éditeur ? ». En fait, je ne suis plus certain d’avoir encore un travail. Tout ce que je sais c’est que je suis au prise avec « Le dilemme de l’éditeur ». Dois-je m’en réjouir ? Ou, au contraire, être désespéré ? Aucune idée…
+En 2016, les ventes de magazines électroniques dépassèrent pour la première fois les ventes papier. Une évolution rendue possible grâce à l’existence de liseuses numériques bon marché, étanches et en couleurs. Sans même parler de l’arrivée des écrans mixtes, combinant amoled et e-ink sur les smartphones et les tablettes.
+
+Néanmoins, les ebooks étaient toujours aussi chers que leurs équivalents papier, encourageant de ce fait le téléchargement illégal. Ou encourageant l’achat de la version papier auprès des utilisateurs ayant toujours le besoin irrationnel de « posséder un objet ».
+
+Tout cela, c’était avant l’apparition de ReadR. Dès sa première année, la startup fut encensée par la presse spécialisée et appelée « le Spotify pour ebooks ». Le business model était simple : vous achetiez un abonnement mensuel et vous pouviez lire autant de livres que vous le souhaitiez. Leur slogan ? « Lire sans contrainte ».
+
+Vous avez probablement déjà utilisé ReadR et vous en connaissez les avantages : une bibliothèque virtuelle synchronisée vers tous vos terminaux. Vous commencez à lire un livre sur votre liseuse à la maison, vous le continuez sur votre smartphone dans la file au supermarché avant de le terminer sur l’écran de l’ordinateur du bureau pendant votre pause déjeuner. Oui, vous pouvez même télécharger une version sans DRM de chacun des livres que vous avez lu.
+
+L’expérience est parfaite. Mais le meilleur reste à venir : vous pouvez ajouter vos propres ebooks sur votre compte ReadR, par exemple ceux achetés sur une autre plateforme. Vous pouvez ensuite les partager avec vos amis. Vous venez de terminer un roman ? Voici automatiquement une liste des livres du même auteur recommandés par vos amis. ReadR fait disparaître les limitations du monde réel. Lire sans contrainte.
+
+La possibilité d’envoyer ses propres ebooks combinée avec les recommandations fut immédiatement perçue comme un appel au piratage. Heureusement, l’industrie du livre décida de ne pas reproduire les erreurs de l’industrie du disque et, au contraire, de marcher dans le sens du progrès.
+
+Après de longues négociations, la plupart des éditeurs, y compris ma propre société, accepta de publier l’entièreté de son catalogue sur ReadR. Chaque livre recevrait une certaine somme à chaque fois qu’il serait lu. Mais, au lieu d’une somme fixée, il fut décidé de s’inspirer de Flattr, une société suédoise permettant les micro-dons.
+
+=> http://flattr.com Flattr
+
+ReadR offre donc maintenant quatre types d’abonnements : le gratuit, qui vous donne accès au contenu gratuit y compris l’entièreté du Projet Gutenberg, le mini, à 2€ par mois, le normal à 5€ par mois et le premium à 10€ par mois. En fait, 10€ est une somme minimale pour avoir accès au premium mais vous pouvez très bien décider de verser plus.
+
+=> http://www.gutenberg.org/ Projet Gutenberg
+
+Chaque livre que vous ouvrez au cours du mois récolte un point ReadR. Si vous avez fait une recommandation pour ce livre, il reçoit un second point ReadR pour ce mois. À la fin du mois, votre abonnement est divisé par le nombre de points que vous avez donné. Si, en janvier, vous avez ouvert trois livres et recommandé un des trois, cela fait un total de quatre points ReadR. Avec l’abonnement mini, chaque point vaut donc 50 centimes. Le livre recommandé recevra 1€ (50 centimes pour la lecture plus 50 centimes pour la recommandation). Nonante pourcent de cette somme va directement à l’auteur.
+
+Secrètement, les auteurs espèrent donc que vous commencerez un livre à la fin du mois et mettrez cinq semaines à le lire, histoire de recevoir trois points ReadR de trois mois différents. Certains commencent même à publier les chapitres séparément.
+
+L’industrie du livre accepta cet accord à une condition : chaque auteur pourrait choisir de ne publier son livre qu’à partir d’un niveau d’abonnement pré-défini. On calcula qu’un lecteur lisant en moyenne deux livres par mois, il serait rentable de n’avoir que des lecteurs abonnés à 5€ ou à 10€ par mois. On réserverait les courtes nouvelles ou les textes à caractère promotionnel pour les abonnés gratuits ou mini.
+
+Tout le monde était enchanté par l’accord. Il nous semblait que, contrairement au disque, le livre avait réalisé une transition en douceur du papier vers le virtuel. Nous avons fait la fête toute la nuit, le futur nous souriait et les auteurs étaient enchantés. L’alcool aidant, on s’est lâchés sur le dos de ces crétins de l’industrie musicale.
+
+Ce que je n’avais pas réalisé c’est qu’une nouvelle génération d’auteurs avait fait son apparition durant les dix dernières années. Des auteurs qui vivaient dans la virtualité pure bien avant nous : les blogueurs, les journalistes, les auteurs amateurs. La plupart d’entre eux n’ayant jamais publié un « vrai » livre papier, nous ne les considérions pas comme de « vrais » auteurs. C’était juste quelques amateurs sans talent et nous n’y prêtions pas attention. Néanmoins, ils écrivaient et avaient une audience grandissante.
+
+Ils se ruèrent sur ReadR dès le début, sans prendre la peine de négocier quoi que ce soit. Ils publiaient de tout : depuis des courts articles jusqu’à des romans de centaines de pages. Les journalistes publiaient leurs enquêtes en direct. Grâce aux recommandations et aux réseaux sociaux, ils attiraient des lecteurs sans avoir rencontré un seul éditeur ou un seul rédacteur en chef de magazine.
+
+Ils diffusaient leur contenu aux lecteurs sans avoir besoin de nous ! Ils étaient payés sans notre intermédiaire.
+
+Mais au fond, qui est un écrivain ? Qui est un journaliste ? Qui est un blogueur ? Qui est un adolescent écrivant sur Internet ? Pourquoi se poser la question ? Lisons sans contraintes…
+
+=> /le-blogueur-venu-de-demain-premiere-partie un blogueur
+
+Lire sans contrainte !
+
+C’est à ce moment que j’ai réellement compris le slogan de ReadR.
+
+Le concept même du « livre » est en train de changer et nous sommes les témoins de ces expériences mêlant la vidéo, l’écriture, les images, les sons. Le manuscrit papier du livre à publier qui est à côté de mon clavier me fait de plus en plus penser à un grimoire antique. Je me sens moi-même obsolète, racorni comme une vieille page jaunie.
+
+Deux ans après le lancement de ReadR, l’industrie du livre ne souriait plus. La panique commençait à se faire sentir. Certains des best-sellers des dernières années ne se vendent pas bien du tout sur ReadR. Il y a tellement d’alternatives que chacun lit ce qui lui plaît, suivant plus les recommandations de ses amis que la publicité. Nous devons radicalement repenser notre infrastructure marketing afin que les gens lisent ce que nous voulons qu’ils lisent.
+
+Nous pensions que les abonnements ReadR nous garantissaient un revenu. Les gens ne pourraient pas lire nos livres sans payer. Mais au lieu de payer ou de pirater, ils décidèrent tout simplement de lire autre chose.
+
+Fallait-il publier gratuitement sur ReadR dans l’espoir d’avoir le plus de recommandations et donc de lecteurs (y compris les abonnés premium) ou se réserver uniquement aux abonnés ?
+
+La réponse est évidente : il est toujours préférable de publier gratuitement. C’est le meilleur moyen d’attirer des lecteurs premium. Mais si chaque auteur décide de faire pareil, pourquoi acheter un abonnement ? Quel serait l’incitant ? Nous avons appelé cette question « Le dilemme de l’éditeur » et j’en ai de sérieuses migraines.
+
+Au fond, peut-être aurait-il été préférable de suivre les traces de l’industrie du disque : corrompre des politiciens, faire du lobbying, attaquer en justice et faire le maximum d’argent pendant quelques années même si cela devait être fait au prix d’une corruption morale. Ou alors faire comme la presse et mendier auprès de Google.
+
+=> /lettre-ouverte-aux-artistes-pirates une corruption morale
+
+Mais je me dis qu’il doit y avoir une autre solution. Je me souviens d’avoir entendu un conversation ce matin dans la rue. Une jeune femme disait « C’est marrant… » à sa petite amie. Quelque chose comme « C’est marrant, j’ai un abonnement premium sur ReadR et je ne lis que des livre du catalogue gratuit. Mais je m’en fiche, je suis même plutôt contente de contribuer quelques euros aux auteurs que j’aime et qui partagent gratuitement leur talent. » Oui, c’était quelque chose dans ce genre là…
+
+Il faut que j’y réfléchisse. Il doit bien y avoir une solution pour lire sans contraintes. Lire sans contrainte…
+
+=> /si-vous-testiez-le-web-payant une solution
+
+This text in English.
+
+=> /publishers-dilemma This text in English
+
+Photo par Kevin Raybon. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/34876780@N08/4708236332 Kevin Raybon
+=> http://sylvestre.org Sylvestre

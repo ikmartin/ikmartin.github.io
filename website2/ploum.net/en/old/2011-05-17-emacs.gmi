@@ -1,0 +1,5 @@
+# Emacs Intosh
+
+=> ../files/old/emacs.png 
+
+It always astonished me that pressing an apparently random combination of several keys, including a « Meta » one, is called a « shortcut ».

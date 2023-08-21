@@ -1,0 +1,117 @@
+# Payer pour des services sur Internet ? Vraiment ?
+=> files/old/cats2.jpg
+
+Nous allons de plus en plus payer ce que nous utilisons. Et c’est, au fond, une excellente chose…
+
+Dans « Vers la fin de la publicité », j’expliquais le caractère destructeur des services gratuits financés par la publicité. Car la publicité n’a de sens que si, à un moment ou un autre, nous achetons des services payants. Au plus les services tenteront de se financer par la publicité, au moins il y aura de services payants et au moins la publicité sera rentable. D’ailleurs, à la surprise générale, la publicité s’avère en effet beaucoup moins rentable qu’initialement espérée.
+
+=> /vers-la-fin-de-la-publicite/ Vers la fin de la publicité
+
+Comme le souligne Cory Doctorow, même la publicité ciblée s’avère très peu rentable et la seule solution pour des géants comme Facebook ou Google afin de justifier le prix de leurs emplacements publicitaires est de rendre le ciblage de plus en plus efficace et intrusif.
+
+=> http://www.locusmag.com/Perspectives/2016/09/cory-doctorowthe-privacy-wars-are-about-to-get-a-whole-lot-worse/ le souligne Cory Doctorow
+
+Selon moi, le modèle publicitaire est appelé à se cantonner à quelques acteurs géants. Les « petits » vont soit disparaître soit devenir complètement dépendants de ces géants.
+
+## La perversion du modèle publicitaire
+
+Malheureusement, de nombreux services sont dans une dynamique “publicitaire”. Les créateurs de contenus, les plateformes et même les services gratuits qui n’affichent pas (encore) de publicité. Exemple frappant : les startups qui cherchent à capter le plus possible d’utilisateurs sans réfléchir au business model.
+
+=> ../files/old/cat1.jpg 
+
+Des milliers de services sont ainsi offerts gratuitement et sans publicité, financés uniquement par les investisseurs. Le résultat ? Soit une faillite pure et simple du service, soit un modèle publicitaire soudain, comme Medium, soit un rachat par une plus grosse structure qui n’a que faire du service mais veut intégrer l’équipe et ses talents à son personnel. On parle alors de « acqui-hire ».
+
+Dans le cas de Medium, cela signifie qu’il faut désormais considérer tout contenu sur Medium comme étant potentiellement une publicité déguisée (native advertising).
+
+=> https://blog.medium.com/revenue-on-medium-5e7e6218f70c#.moan0vov2 tout contenu sur Medium comme étant potentiellement une publicité
+
+Pour les acqui-hire, citons Mailbox, un service de mail et Sunrise, un calendrier en ligne. Deux services que je trouvais absolument géniaux et qui se sont fait racheter avant d’être définitivement coupés. Moralité : un service gratuit n’offre aucune garantie de continuité.
+
+Il ne reste donc plus qu’une solution, une solution considérée comme indigne d’Internet : faire payer l’utilisateur.
+
+## La main au portefeuille
+
+Finalement, rien de plus logique ! Si on trouve un service utile, nécessaire et qu’on veut s’assurer une certaine pérennité, il faut mettre la main au portefeuille. Cette simple constatation m’a poussé à prendre un abonnement payant pour le service Pocket alors que mon compte gratuit me suffisait amplement.
+
+=> /no-proprietary-service.html le service Pocket
+
+C’est un basculement qui est en train de se faire sur le web, non sans douleur. Le cas le plus marquant chez les géants est certainement Evernote, qui, après des années à tester des business models alternatifs (comme vendre des sacs à dos et des carnets de notes) a soudainement augmenté ses tarifs tout en se séparant d’une bonne partie de son personnel.
+
+=> https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/ augmenté ses tarifs
+
+Les utilisateurs grondent, les blogs posts se multiplient pour présenter des alternatives gratuites. Mais le fait est là, indéniable. Désormais, il va falloir payer ce qu’on aime.
+
+## Le cas de Newton
+
+Un exemple que je trouve emblématique est celui de CloudMagic/Newton, service d’email et calendrier, car je vois justement ce service comme un remplaçant possible des défunts Mailbox et Sunrise.
+
+=> https://cloudmagic.com/k/newton CloudMagic/Newton
+
+Au départ, CloudMagic était une application mail comme il en existe tant d’autre. Une interface à votre compte Gmail ou Outlook. Cette interface offrait certaines fonctionnalités payantes. L’utilisateur payait une seule fois pour activer une fonctionnalité particulière, un modèle très courant dans le monde des apps et popularisé par les App Store.
+
+Récemment, CloudMagic s’est renommé Newton et est passé au tarif assez important de 50$ par an.
+
+=> https://blog.cloudmagic.com/2016/09/14/cloudmagic-is-now-newton-and-its-a-big-change/ CloudMagic s’est renommé Newton
+
+50$ par an uniquement pour avoir une interface mail. À ce prix là, les mails ne sont même pas hébergés, ils restent chez Google, Microsoft ou tout autre serveur. Payer 50$ par an pour une simple interface mail me semblait une hérésie alors qu’un compte Protonmail qui héberge et sécurise vos emails coûte le même prix.
+
+=> https://protonmail.com/fr/ Protonmail
+
+=> ../files/old/newton-mail.jpg 
+
+Exemple de fonctionnalités de Newton
+
+Poussé par la curiosité, j’ai contacté les développeurs de Newton pour en savoir un peu plus. Leur réponse est assez candide : vu le travail qu’ils fournissent et le coût que leur engendre l’infrastructure, un tarif de 1$ par semaine leur semble tout à fait honnête. Ils soulignent également l’hérésie du « one-time payment » imposé par l’appstore. Cela rend le développement de l’application impossible sur le long terme à moins de sortir des nouvelles versions payantes tous les ans, ce qui oblige à généralement maintenir deux versions et fait râler les utilisateurs qui viennent d’acheter une ancienne version lorsque la nouvelle sort.
+
+Mais, sans étonnement, la nouvelle du modèle payant a été très mal perçue par les utilisateurs de CloudMagic qui se sentent pris en otage. À tel point que l’équipe de Newton a dû se fendre d’un mail explicatif soulignant que les seules alternatives au modèle payant sont la publicité et la vente des données utilisateurs à des services publicitaires, modèles qu’ils souhaitent éviter.
+
+Sachant qu’en utilisant Newton, vous leur confiez le mot de passe de vos emails, mieux vaut avoir confiance ! Payer me semble donc une condition nécessaire pour établir une relation de confiance (mais pas suffisante).
+
+La conclusion est simple : si vous ne payez pas un service que vous utilisez, c’est que vous en êtes le produit. Facebook vient immédiatement à l’esprit ! Google, par contre semble sentir le vent tourner. Le géant dispose en effet d’une version payante sans pub de son service mail (Google App) et lance une version payante de Youtube qui permet de retirer les pubs et de rétribuer les créateurs de contenu (Youtube Red) .
+
+## L’inéluctabilité du modèle payant ?
+
+Les utilisateurs ne sont pas prêts à payer pour un service ? Et bien, il faut désormais vous y faire : soit votre service va disparaître, soit il va être bardé de publicités et revendre vos données, soit il va devenir payant. Les services très populaires seront les moins chers mais les services plus spécifiques se concentreront sur un petit nombre de clients qui paieront un abonnement important.
+
+L’exemple de Newton (que j’ai vécu à l’identique avec le service Postach.io) démontre l’immaturité à la fois des utilisateurs, qui ne veulent pas payer, et des créateurs de service, pensant naïvement que les utilisateurs vont payer n’importe quel prix choisi au hasard. Et comme je le démontre dans « Quelle est la valeur de votre temps de cerveau », les pubs coûtent énormément à l’utilisateur mais ne reversent qu’une infime aumône au service.
+
+=> https://postach.io/site/ Postach.io
+=> /quelle-est-la-valeur-de-votre-temps-de-cerveau/ Quelle est la valeur de votre temps de cerveau
+
+=> ../files/old/cats3.jpg 
+
+Au final, je trouve la perspective de payer pour ce qu’on utilise très saine. Cela devrait permettre l’éclosion de services plus petits, plus locaux, plus spécialisés et moins orientés sur la croissance à tout prix.
+
+C’est d’ailleurs, je pense, une superbe occasion de promouvoir le prix libre. Un concept que les développeurs de Newton n’ont même pas envisagé car ils ne le connaissaient pas. Le prix de 50$ par an a été, ils le reconnaissent, choisi un peu au pifomètre en espérant trouver un équilibre entre les coûts réels et ce que les utilisateurs sont prêts à payer. Alors, pourquoi ne pas laisser les utilisateurs le fixer ?
+
+## L’alternative du prix libre
+
+Le prix libre serait-il un moyen de conscientiser les utilisateurs ? Je l’espère. Contrairement à l’abonnement fixe, il est également plus juste. Un tarif fixe peut être raisonnable dans un pays et outrancier dans un autre. Enfin, le prix libre est également un bel indicateur de la qualité de votre service. On pourrait même imaginer un abonnement libre à un prix suggéré et de proposer de l’augmenter avec chaque nouvelle fonctionnalité.
+
+Après tout, est-ce que tous ceux qui soutiennent ma page Tipeee ne sont pas en train de payer pour la pérennité d’un service que je leur rends et qu’ils trouvent utile ? Wikipédia et toute la Framagalaxie ne sont-ils pas justement des services à prix libre qui camouflent leur prix libre sous l’appellation « don » ?
+
+=> /no-proprietary-service.html soutiennent ma page Tipeee
+=> https://framasoft.org/#topPgCloud Framagalaxie
+
+L’exemple de Framasoft est pour moi particulièrement éclairant : une panoplie de services gratuits financés par des campagnes de dons ponctuelles. Le tout avec une éthique notable et malheureusement trop rare : code open source uniquement et garantie de la confidentialité de vos données. Dernier exemple en date de leur campagne pour « dégoogliser Internet » ? Une alternative à Evernote, justement.
+
+=> https://degooglisons-internet.org/ dégoogliser Internet
+=> https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/ Une alternative à Evernote
+
+=> ../files/old/cloud.jpg 
+
+La mission de Framasoft illustrée par Gee.
+
+=> https://www.tipeee.com/gee-bd Gee
+
+Et si au lieu d’un don ponctuel ou annuel à Wikipédia, à Framasoft, JCFrog ou même à ce blog, nous pensions ces dépenses comme un abonnement annuel à prix libre pour des services utiles ? Un abonnement pour dire « J’aime ce que vous faites et ça m’est utile, continuez ! ».
+
+=> https://www.tipeee.com/jcfrog JCFrog
+
+Au fond, c’est ce que devrait être toute dépense que nous faisons, sans exception. Une manière de dire « J’aime ce que vous faites ». Vu comme ça, acheter un concombre dans une grande surface et faire le plein d’essence chez Total deviennent soudainement des actes moralement difficiles…
+
+Précision : lors de nos échanges par mail, les développeurs de Newton m’ont spontanément offert un abonnement à vie à leur service, sans que je leur aie demandé. C’était complètement inattendu mais je les remercie. J’ai également reçu la possibilité d’offrir 3 abonnements d’un an aux lecteurs qui m’en feront la demande.
+
+Les photos sont issues d’une action citoyenne crowdfundée sur Kickstarter visant à remplacer toutes les publicités d’une station de métro londonienne par des photos de chat.
+
+=> https://www.kickstarter.com/projects/1115177097/the-citizens-advertising-takeover-service-cats crowdfundée sur Kickstarter

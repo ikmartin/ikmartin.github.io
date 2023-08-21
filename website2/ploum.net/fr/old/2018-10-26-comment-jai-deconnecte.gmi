@@ -1,0 +1,174 @@
+# Comment j’ai déconnecté
+=> files/old/kyle-glenn-600286-unsplash.jpg
+
+Cela fait maintenant trois semaines que j’ai commencé ma déconnexion, trois semaines pleines de surprises. Trois semaines tellement surprenantes que je trouve intéressant de partager avec vous « comment » j’ai déconnecté et ce que j’ai mis en place exactement. Car il n’y a pas de secret : pour atteindre des objectifs, il faut se construire des outils.
+
+=> /en-partance-pour-ma-deconnexion/ commencé ma déconnexion
+
+1. Prise de conscience.
+
+--------------------------------------------------------------------------------
+
+Avant toute chose, il est nécessaire de prendre conscience du problème que vous souhaitez régler. L’accepter. Avoir envie de changer des choses. Être motivé. Si vous ne voyez pas de problème à votre utilisation actuelle d’Internet, il n’y a pas de raison de la changer.
+
+La technologie ne peut qu’aider la motivation, la soutenir. Toute seule, est elle inutile. Vous pouvez installer 15 apps pour détailler votre temps passé en ligne, pour bloquer pendant 25 minutes l’accès à votre navigateur, encore faut-il que vous l’utilisiez. Et que cette utilisation ne soit pas contre-productive : si le fait d’avoir fait une séance de 25 minutes pseudo-productive vous permet de vous auto-récompenser en passant le reste de la journée à glander, le problème n’est pas résolu. Peut-être qu’il est nécessaire de remonter à la racine du problème plutôt que de le camoufler.
+
+2. Établir les règles de votre déconnexion.
+
+--------------------------------------------------------------------------------
+
+Même si elles vont forcément changer et être adaptées, il est important de clarifier vos règles. Pour Thierry Crouzet, c’était “pas d’accès à Internet direct” mais il ne s’empêchait pas de regarder la télévision, de lire les journaux ou de demander à sa femme de lui télécharger ce dont il avait besoin.
+
+=> https://tcrouzet.com Thierry Crouzet
+
+Pour moi les règles initiales étaient :
+
+* pas de réseaux sociaux
+* pas de sites d’actualités
+* pas de sites ou d’app avec un “flux” infini
+* pas de sites ou d’app avec de la publicité
+
+Au final, ces règles ont rapidement évolué pour devenir :
+
+* Pas de site ni d’app où je vais sans avoir une idée de ce que je cherche. Donc pas de “découverte”.
+* Pas de site ni d’app qui m’alimente en contenu.
+* Ni télévision, ni radio, ni médias quelconques. Mais ça, c’est une règle que je suis depuis des années.
+
+L’app Refind, qui propose les meilleurs liens partagés par vos contacts Twitter, est ainsi passé à la trappe dès le deuxième jour alors que je pensais en faire un outil important de ma déconnexion. À ma grande surprise, Pocket a également disparu de mon téléphone. Je le garde cependant sur mon Kobo mais n’étant pas alimenté en contenu, son utilisation est exceptionnelle. Je réfléchis à réintroduire un lecteur RSS uniquement sur mon ordinateur (les suggestions de flux à suivre sont les bienvenues, je ne souhaite pas de l’actualité mais au contraire des réflexions nouvelles, différentes).
+
+=> https://refind.com Refind
+=> /le-jour-ou-jai-desinstalle-mon-app-preferee/ Pocket a également disparu de mon téléphone
+
+3. Mise en place d’une solution technique de blocage
+
+--------------------------------------------------------------------------------
+
+Il est primordial de comprendre que la volonté d’un humain est limitée. Se fixer des règles est une chose mais il est illusoire de se faire confiance pour “respecter les règles”. Les automatismes ont la vie dure et il m’arrive encore, sans réfléchir, d’ouvrir un navigateur et de taper une URL d’un site interdit, par réflexe.
+
+Sur Facebook, j’avais déjà mon système depuis plusieurs mois, inspiré par Pierre Valade. L’idée est de se désabonner d’absolument tous vos amis Facebook et de toutes les pages que vous likez (en fait, vous pouvez déliker absolument tout, les likes ne servent qu’à vous profiler publicitairement. Oui, vous pouvez même enlever le like que vous aviez gentiment mis sur ma propre page, je suis suicidaire à ce point là !). Cela va rendre votre flux complètement vide tout en préservant vos liens d’amitié. Attention, pour que cela fonctionne, il est indispensable de se désabonner de tout le monde et de le faire à chaque nouvel ami. Il suffit d’avoir quelques amis pour que Facebook aie assez de matériel pour remplir votre flux. Une fois que c’est fait, vous pouvez désinstaller l’app Facebook et utiliser la version Messenger Lite pour chatter.
+
+=> https://medium.com/@pierrevalade/how-to-disable-facebook-newsfeed-in-3-minutes-a79af7e62c02 inspiré par Pierre Valade
+=> /comment-facebook-gagne-de-largent/ à vous profiler publicitairement
+
+La beauté de cette solution c’est que vous êtes officiellement sur Facebook mais quand on vous parle d’un truc, vous répondez que vous ne l’avez pas vu et tout le monde trouve ça normal car il est évident que tout le monde ne peut pas tout voir.
+
+Mais si, comme moi, vous optez pour la déconnexion totale, cette étape n’est même pas nécessaire (elle peut cependant être vue comme une étape temporaire pour adoucir la déconnexion).
+
+Le jour choisi pour le grand saut, déconnectez-vous de chacun de vos comptes ! J’ai commis l’erreur de ne pas le faire immédiatement ce qui a fait que la première fois que j’ai levé le blocage pour une bonne raison (de type aller chercher une adresse pour un restaurant qui n’a qu’une page facebook), les notifications m’ont sauté au visage.
+
+Pour le blocage proprement dit, j’ai choisi Adguard, car disponible sur Android et MacOS, avec la liste de blocage suivante :
+
+=> https://adguard.com/en/welcome.html Adguard
+
+> ||dhnet.be^$empty,important
+> ||lalibre.be^$empty,important
+> ||9gag.com^$empty,important
+> ||facebook.com^$empty,important
+> ||lesoir.be^$empty,important
+> ||rtbf.be^$empty,important
+> ||lavenir.net^$empty,important
+> ||sudpresse.be^$empty,important
+> ||linkedin.com^$empty,important
+> ||twitter.com^$empty,important
+> ||mamot.fr^$empty,important
+> ||macrumors.com^$empty,important
+> ||numerama.com^$empty,important
+> ||plus.google.com^$empty,important
+> ||joindiaspora.org^$empty,important
+
+J’ai commencé par bloquer un site que je ne visitais jamais (dhnet.be) pour tester puis j’ai ajouté ceux que je fréquentais régulièrement (précision, la liste est dans le désordre). Durant les trois premiers jours, cette liste s’est un peu allongée. Mais elle reste remarquablement courte ! Il va sans dire que les applications respectives sont également désinstallées de mon smartphone.
+
+Le seul blocage auquel j’ai renoncé est medium.com car beaucoup de sites légitimes l’utilisent et je devais sans cesse désactiver Adguard pour accéder au résultat de ma recherche. Mais je me suis déconnecté et je ne visite jamais Medium directement, je n’y accède que lorsque le lien que je suis y est hébergé.
+
+Car, oui, je m’autorise de couper mon filtrage si l’information que je cherche le rend nécessaire. Le but n’est pas de me “priver” arbitrairement mais d’utiliser Internet avec la conscience de ce que je souhaite obtenir. Devoir couper Adguard me force à prendre conscience de ce que je fais.
+
+4. Configuration de l’ordinateur et du téléphone.
+
+--------------------------------------------------------------------------------
+
+J’ai également éprouvé, après quelques jours de déconnexion, le besoin de changer l’interface de mon smartphone pour le rendre moins “sexy”, pour ne plus me procurer de plaisir à le dégainer, à chercher machinalement l’icône Twitter. Exit donc la couleur et les jolies icônes. Le launcheur AIO s’est révélé absolument parfait. D’ailleurs, si vous connaissez un moyen pour arriver à ce genre de résultat sur un Iphone, je suis preneur de tout conseil. Le fait d’avoir de la couleur sur mon écran me semble désormais ultra agressif.
+
+=> https://play.google.com/store/apps/details?id=ru.execbit.aiolauncher&amp;hl=en_US Le launcheur AIO
+
+=> ../files/old/Screenshot_20181026-142457-1.jpg 
+Voilà ce que je vois désormais quand je dévérouille mon téléphone. Et si l’app souhaitée n’est pas dans mes raccourcis (vers le bas de de l’écran), je dois chercher en tapant le nom de l’app. Pas moyen de lancer une app sans réfléchir !
+
+J’ai activé les notifications pour les applications suivantes : mail, Whatsapp, Signal et agenda. J’avais initialement désactivé les mails mais, du coup, à chaque fois que je regardais mon téléphone, je lançais l’app. Désormais, un coup d’œil me permet de voir si je dois traiter quelque chose. Tout le reste est en théorie désactivé. Grâce à un bouton hardware, le téléphone est en permanence en silencieux sauf si j’attends un coup de fil. Je ne mets donc pas mon téléphone en silencieux, c’est le contraire : je le mets en mode bruyant lorsque j’en ai besoin. Conséquence directe : je ne vois les notifications que sur l’écran et seulement si je le consulte volontairement. Elle ne m’interrompent pas.
+
+L’agenda et les appels téléphoniques ont la permission de faire vibrer ma montre et donc de m’interrompre.
+
+Pour mon ordinateur, j’ai également fait du nettoyage dans la barre de lancement rapide, ne laissant que le calendrier et ma liste de todo. Pour le reste, je dois taper le nom de l’application dans Alfred, ce qui m’oblige à réfléchir et ne pas être dans le réflexe de cliquer sur une icône. De ce fait, je n’accède à mon navigateur qu’en tapant une recherche DuckDuckGo dans Alfred.
+
+=> ../files/old/Screenshot-2018-10-26-at-15.03.06-1.png 
+Alfred, mon lanceur de recherches
+
+=> ../files/old/Screenshot-2018-10-25-at-00.27.50-2.png 
+Ma barre d’icônes
+
+Au fait, mon ordinateur est en permanence en mode Do Not Disturb. Je sais bien que MacOS ne permet pas d’être en permanence dans ce mode mais il permet de fixer Une plage horaire. La mienne s’étant de 4h du matin à 3h du matin. En théorie, entre 3h et 4h, je recevrai les notifications mais je suis rarement devant mon ordinateur à cette heure là.
+
+=> ../files/old/Screenshot-2018-10-24-at-22.40.30.png 
+Do not disturb
+
+Cette déconnexion s’est également accompagnée d’un besoin pressant de minimalisme. J’ai donc désinstallé énormément d’apps et de logiciels. Exit tous les outils de tracking (hors Strava) ou de statistiques. RescueTime, par exemple, s’est révélé particulièrement retors : en quelques jours d’utilisation, j’avais pris le réflexe de consulter mes statistiques de “productivité”, d’ouvrir les apps dites “productives” sur mon écran lorsque je réfléchissais dans le vide. Bref, tout le contraire de ce que je cherchais.
+
+=> https://www.rescuetime.com RescueTime
+
+5. Au sujet des emails
+
+--------------------------------------------------------------------------------
+
+Cela fait des années que j’applique la méthode Inbox 0 et me désabonne de tout ce qui contient un lien “unsubscribe”. Par définition, s’il y’a un lien pour se désinscrire, c’est que ce n’est pas critique et je peux m’en passer. J’ai également un filtre qui envoie directement dans les archives les mails pour lesquels je ne suis pas explicitement dans le champs “to”. Pour l’anecdote, l’université dans laquelle j’enseigne produit une quantité invraisemblable de newsletters et de listes de diffusion dont il est impossible de se désinscrire. Il y’a d’ailleurs toute une équipe uniquement en charge de produire ces newsletter. Avant mon filtre automatique, mes journées étaient un combat permanent entre l’équipe chargée de remplir mon inbox et moi, tentant de la vider, de trouver les bons filtres pour n’avoir que ce qui m’intéressait. J’ai fini par gagner même s’ils ne le savent pas encore.
+
+=> /pourquoi-vous-devriez-viser-inbox-0/ la méthode Inbox 0
+
+J’envoie également une réponse automatisée (via un snippet Alfred) pour réclamer ma suppression de tout envoi de type “marketing” (en citant la RGPD), même personnalisé. J’en profite pour demander d’où vient mon adresse ce qui m’a permis de remonter à la source et de me faire supprimer de plusieurs bases de données (la plus pénible étant un certain « hors antenne »). Je fais désormais la même chose avec les mailings papiers.
+
+Avec ma déconnexion, j’ai simplement décidé d’être encore plus sévère et d’appliquer systématiquement ces règles que je suivais déjà mais avec un certain laxisme. En 3 semaines, mon inbox s’est incroyablement calmée à tel point que, désormais, je peux passer plusieurs jours sans “traiter mes mails”.
+
+Alors oui, ce système extrême possède le risque de me faire “rater” quelque chose. Mais toute l’expérience réside justement en ne plus avoir peur de rater quelque chose. Avant, je ratais 100 infos par jour, aujourd’hui j’en rate peut-être 150. L’univers finit toujours bien par trouver une façon de nous prévenir de ce qui est réellement important. De toutes façons, l’excuse “Ah non, je n’ai pas vu passer cet email. Il doit être dans mes spams” est désormais universellement admise.
+
+6. Poster sur les réseaux sociaux
+
+--------------------------------------------------------------------------------
+
+Ma particularité dans cette expérience est que je suis producteur de contenu web, que la majorité de mon audience provient des réseaux sociaux. Je ne peux donc pas simplement arrêter de poster. Enfin, si, je peux mais ne le souhaite pas.
+
+La solution la plus connue pour poster sur différents réseaux sociaux est Buffer mais l’abonnement coûte fort cher et l’interface très complexe pour mes maigres besoins. J’ai découvert l’alternative Friends+Me grâce à Balise. C’est vachement moins abouti mais beaucoup plus simple. Le plan gratuit me permet de poster sur ma page Facebook et sur Twitter, ce qui envoie également le post sur Mastodon.
+
+=> https://buffer.com Buffer
+=> https://friendsplus.me Friends+Me
+=> https://blog.pasithee.fr Balise
+
+Je poste donc sur ces réseaux mais en différé (l’heure est programmée à l’avance) et je ne vois pas les réactions, les réponses ou les partages. Bref, rien du tout.
+
+Diaspora, Google+ et Linkedin sont abandonnés, tout comme mon compte Facebook personnel. De toutes façons, entre nous, ce n’est pas comme si ces réseaux étaient importants. Pour l’anecdote, j’ai du aller chercher une info sur Linkedin et, comme j’avais oublié de me déconnecter, un popup de chat m’a sauté au visage avec une dizaine de nouveaux messages.
+
+La plupart concernaient des félicitations pour un vague anniversaire de travail (ça se fête, ça ?) et provenaient de gens que je ne connaissais pas ou d’ex-collègues que je n’ai plus vu depuis une bonne décennie. Les autres messages tentaient d’obtenir que je fasse de la pub pour des projets obscurs liés à la blockchain ou que me proposait des entretiens d’embauche pour devenir développeur sous-payé dans de grandes institutions bancaires. Linkedin est décidément sa propre parodie.
+
+6. S’engager
+
+--------------------------------------------------------------------------------
+
+Engagez-vous vis-à-vis de vos proches et de vos contacts, rendez votre déconnexion publique avec une date de début et une date de fin. Cet engagement peut servir de garde fou moral. Le fait d’avoir une date de fin est également un bon objectif afin de tester en profondeur. Sans date de fin, il serait facile après 2 semaines de dire “ça ne me convient pas”. Plusieurs mois me semble un minimum. J’ai personnellement fixé le 31 décembre car c’était une symbolique facile et que ça donnait une durée de 3 mois à l’expérience.
+
+Le fait de rendre la nouvelle publique, surtout sur les réseaux où vous êtes habituellement actifs, permet à vos contacts de ne pas s’inquiéter voire, de vous contacter pour ce qu’ils estiment important.
+
+J’ai déjà reçu plusieurs mails d’amis proches, de “connaissances virtuelles” ou de lecteurs de mon blog avec en lien un article qui “devrait m’intéresser”. Dans tous les cas ça s’est révélé intéressant et j’ai été très touché par cet échange direct. Peut-être parce que j’avais également l’espace mental pour apprécier le message plutôt que pour voir cela comme “un mail de plus à traiter”.
+
+## Au final…
+
+Bien entendu, ces solutions ont leurs limites. Elles ne s’appliquent qu’à mon cas particulier (je n’aurais jamais abandonné les réseaux sociaux si je devais pointer 8h par jour dans un open space grisonnant. Les réseaux sociaux sont un parfait échappatoire pour avoir l’air concentré sur son ordinateur). De plus, ces règles ne sont en place que depuis 3 semaines et doivent encore être testé dans la durée.
+
+Mais s’interroger sur son utilisation des technologies, sur sa dépendance est toujours un questionnement sain. Le petit système que je viens de vous partager me semble un excellent point de départ pour ceux qui souffrent des mêmes problèmes que moi et souhaiteraient tenter le même genre de solution.
+
+Entre nous, j’ai déjà tenté de me désintoxiquer de Facebook il y’a exactement 8 ans. À relire l’article, je constate que rien n’a changé. Le fait d’être candidat aux élections m’a fait rechuter.
+
+=> /facebook-la-pause-clope-2/ déjà tenté de me désintoxiquer de Facebook il y’a exactement 8 ans
+
+Cette tentative sera-t-elle la bonne ? Les paris sont ouverts !
+
+Photo by Kyle Glenn on Unsplash
+
+=> https://unsplash.com/photos/ynrPyLpFMm8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Kyle Glenn
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

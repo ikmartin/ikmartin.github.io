@@ -1,0 +1,42 @@
+# Les connaissances sont-elles desuètes ?
+
+=> http://frimouvy.org/images/energy_star.png 
+
+Où l’on considère l’aspect révolutionnaire que la société de communication a apporté à la marchandisation des connaissances. Et où l’on reste optimiste sur l’avenir parce que finalement, on va pas se prendre la tête, sans blague.
+
+=> http://frimouvy.org/images/gnutella.png 
+Au cours des dernières décennies, notre société a connu un profond chamboulement. L’information et la connaissance qui était, jusque là, d’une valeur inestimable et grandement marchandable, ont innondé le monde, saturant tous les réceptacles humains.
+
+=> http://frimouvy.org/images/enhanced_browsing.png 
+Depuis l’aube des temps, les anciens, sages et professeurs transmettent le savoir immuable aux élèves, ceux-ci devenant à leur tour professeurs et ajoutant à la somme totale des connaissances les récentes découvertes. D’ailleurs, les études se sont allongées, les formations se sont compliquées. Quel rapport entre la tradition orale d’un compagnon bâtisseur (constructeur de cathédrales) et la formation d’un ingénieur civil (constructeur de ponts suspendus) ? Peu à peu cette information est donc devenue abondante, mais aussi de plus en plus raffinée (quoique, quel serait les architectes d’aujourd’hui capable de reconstruire Chartres ?). L’imprimerie a néanmoins été une soupape, permettant d’emmagasiner plus vite les connaissances et donc de découvrir plus vite. Malheureusement, les informations erronées sont devenues d’autant plus nombreuses ! Puis, quelques sièces à peine plus tard, vint Internet, les réseaux de communication, les gigantesques bibliothèques électroniques. Entre l’apparition de l’homme et l’écriture, il s’est écoulé million d’années ! Entre l’écriture le l’imprimerie, 5000ans. Et entre l’imprimerie et Internet, 500 ans…
+
+=> http://frimouvy.org/images/xmag.png 
+Les temps ont changé ! On valorisait la connaissance en temps que telle, on valorisait le contenu rare et presque introuvable et voilà que nous sommes maintenant noyés sous des montagnes d’informations. On ne cherche plus celui qui possède l’information mais bel et bien celui qui peut trouver l’information.
+
+Aujourd’hui, on ne demande pas à quelqu’un d’avoir des banques de données d’images, on lui demande de savoir se servir de Google Image. Les outils informatiques les plus prometteurs actuellement sont ceux qui cherchent l’information sur votre ordinateur lui-même et qui est donc de l’information que vous possédez déjà ! (Google Desktop, Beagle ) N’avez-vous jamais sauvé un lien, un texte sur votre ordinateur car « ça pourrait servir plus tard » et puis, le jour venu, l’avez recherché à nouveau sur Internet car vous ne saviez même plus que vous l’aviez déjà ? Autre exemple : une des sciences informatique les plus à la pointe est le data-mining, l’art de sortir des infos d’un monceau de données inexploitables.
+
+=> http://www.gnome.org/projects/beagle/ Beagle
+
+=> http://frimouvy.org/images/package_toys.png 
+Depuis quelques années, on assiste à des tentatives déséspérées des professeurs de restructurer l’enseignement, que ce soit à l’école ou à l’université. Et tous échouent, trop théoriques, pas assez théoriques…
+
+En fait, la raison est simple : le système scolaire gave les élèves d’une information inutile, la connaissance à l’état pur ! Or ce qu’il faut actuellement est la capacité à trouver l’information, pas la connaissance de cette information dès le départ. Quel est l’intérêt de connaitre Charlemagne, google me dit tout sur lui ! Copier-coller dans OpenOffice, impression et hop, je rend le travail au prof sans même l’avoir lu moi-même. Mais suis-je plus bête ? Non, je suis simplement adapté à ma société : je fournis ce qu’on me demande !
+
+=> http://frimouvy.org/images/knode.png 
+Cette approche est donc à la fois positive et négative. On peut désormais en finir avec le par coeur infinissable, les montagnes de syllabi. Nous devons développer notre capacité à chercher l’information mais aussi à la vérifier et à rester critique vis-à-vis de toute information, quelle que soit la source. Nous devons garder notre potentiel de création, notre capacité à générer une nouvelle information à partir de tout ce qui est notre histoire, à savoir la somme de nos connaissances durant notre vie.
+
+=> http://frimouvy.org/images/package_edutainment.png 
+Cette révolution s’applique aussi étonnement avec une incroyable réussite aux grands débats actuels. Les internautes piratent de la musique ? La musique n’est qu’une information et l’information en soi n’a plus de valeur ! Il faudra s’habituer à ça. On peut donc estimer que les gens qui achètent le CD dépensent en fait leur argent parce qu’il n’ont pas cette capacité à trouver l’information (en ne tenant pas compte du sentiment d’honnêteté et de la plus value apportée par le CD objet). Autre exemple : Roger travaille dans une boite de logiciels propriétaires. Il lui est formellement interdit de jeter un oeil à un code source sous license GPL. En effet, son subconscient lui jouant des tours, Roger pourrait sans le faire exprès introduire du code qu’il a retenu dans un logiciel propriétaire. Le code et les méthodes sont une information et malgré ces barrières artificielles (Attention Roger, ne regarde pas du code GPL !), on doit se rendre à l’évidence : les logiciels n’ont plus aucune valeur marchanche. Comme pour la musique, la capacité à trouver le crack est suffisant. Les sociétés faisant du logiciel libre, les groupes vivant surtout de leurs concerts l’ont bien compris : la valeur vient du support, du contact personnel, pas de l’information. On veut empêcher de copier de la musique, de répandre l’information ? Mais on peut toujours l’écouter, la chantonner, la partager. Toutes ces barrières ne sont que les derniers barrages d’un système qui s’écroule. Les brevets, exemples typiques, tentent de murrer le monde des idées, d’éviter cet inévitable partage des pensées…
+
+=> http://frimouvy.org/images/package_network.png 
+L’information n’a donc plus de réelle valeur. Aujourd’hui, séquencer un génôme est devenu limite trivial. Par contre l’analyser pour en tirer de nouvelles connaissances est extrêmement difficile. L’information en elle même ne vaut plus rien, mais sa création coûte donc très cher ! Et il faut soutenir les initiatives qui visent à créer de la connaissance tout en la laissant ensuite librement (et sans pseudo-barrières) à disposition de l’humanité.
+
+Université, grands groupes musicaux, éditeurs de logiciels, toutes ces institutions avaient et ont aujourd’hui un pouvoir énorme. Ces dirigeants auraient-ils creusés leur propre tombe en soutenant la création d’internet ? Sans doute… Accrochées à leur immobilisme, elles n’ont pas senti l’aspect révolutionnaire de ce qui se préparait et tentent aujourd’hui de contrecarrer vainement le raz-de-marée. Les USA possédait l’information qu’ un attentat se préparait pour le 11 septembre. Les gendarmes belges savaient que Dutroux était un pédophile et était suspect. Tout le monde crie par après, mais c’est normal : il y’a tellement d’informations. Celles-là étaient noyées et c’est facile, après coup, de mettre le doigt dessus.
+
+=> http://frimouvy.org/images/xeyes.png 
+
+La connaissance en soi ne vaut plus rien… Seule la capacité à trouver la connaissance est importante. Mais cette capacité n’est-elle pas elle-même une connaissance ?
+
+C’est bien ce que je me disais, tout ça ne nous avance pas dans notre quête de la serviette de bain du Grand Cthulhu !
+
+Bonjour chez vous!

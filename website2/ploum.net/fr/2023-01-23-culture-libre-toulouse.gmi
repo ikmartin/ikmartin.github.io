@@ -1,0 +1,100 @@
+# Libérons la culture pour cultiver la liberté
+=> /files/toulouse2022.jpg
+
+> Cette conférence a été donnée le 19 novembre 2022 à Toulouse dans le cadre du Capitole du Libre.
+> Le texte est ma base de travail et ne reprend pas les nombreuses improvisations et disgressions inhérentes à chaque One Ploum Show.
+
+=> https://www.orion-hub.fr/w/sgKaReLMskngF6EsYCRq8o Visionner la conférence en vidéo (56 minutes)
+
+> Attention ! Cette conréfence n’est pas une conréfence sur le cyclimse. Merci de votre compréhension.
+
+Qui d’entre vous a compris cette référence à « La classe américaine » ? Ça me fait plaisir d’être là. Je suis content de vous voir. On va manger des chips. Quoi ? C’est tout ce que ça vous fait quand je vous dis qu’on va manger des chips ?
+
+Sérieusement, je suis très content d’être là parmi vous. Je me sens dans mon élément. J’ai fréquenté le monde de l’industrie, celui des startups, de l’académique et même un peu de la finance. Mais il n’y a que parmi les libristes que je me sens chez moi. Parce que nous partageons la même culture. Parce que nous sommes d’accord sur le fait que Vim est bien meilleur qu’Emacs. (non, pas les tomates !)
+
+La culture c’est ça : des références qui font qu’on se comprend, qu’on exprime une certaine complicité. Un des moments forts de mon mariage a été de montrer « La cité de la peur » à mon épouse. Elle n’a pas adoré le film. Bof. Mais nous avons étendu notre vocabulaire commun.
+
+— J’ai faim ! J’ai faim ! J’ai faim !
+— On peut se tutoyer ? T’es lourd !
+
+("oui, mais j’ai quand même faim" répond quelqu’un du public)
+
+La culture, c’est ça : une extension du vocabulaire. Il y’a des programmeurs dans la salle ? Et bien la langue, comme le français en ce moment, correspond au langage de programmation. La culture correspond aux bibliothèques. Langage et bibliothèque. La bibliothèque est la culture. Les mots sont magnifiques !
+
+Pour s’exprimer, pour communiquer, pour être en relation bref pour être humain, la culture est indispensable. Lorsque deux cultures sont trop différentes, il est facile de considérer l’autre comme inhumain, comme un ennemi. La culture et le partage de celle-ci sont ce qui nous rend humains.
+
+La culture est pourtant en danger. Elle est menacée, pourchassée, interdite. Remplacée par un succédané standardisé.
+
+Étendre sa culture, c’est augmenter son vocabulaire, affiner sa compréhension du monde. La culture sert de support à la manière de voir le monde. Prêter un livre qu’on aime est un acte d’amour, d’intimité. C’est littéralement se mettre à nu et dire : « J’aimerais que nous ayons une compréhension mutuelle plus profonde ». C’est magnifique !
+
+Mais combien de temps cela sera-t-il légal ? Ou même techniquement possible ? Une fois l’auteur mort, son œuvre disparait pendant 70 ans, car, pour l’immense majorité d’entre eux, il n’est pas rentable de les réimprimer et de payer les droits aux descendants. Nous tuons donc la culture avec l’auteur.
+
+La transmission est pourtant indispensable. La culture se nourrit, évolue et se transforme grâce aux interactions, aux échanges. Or les interactions sont désormais surveillées, monétisées, espionnées. Du coup, elles sont fausses, truquées, inhumaines. Les comptes Twitter et LinkedIn sont majoritairement des faux. Les likes Facebook s’achètent à la pelle. Les visites sur votre site web sont des bots. Les contenus Tiktok et YouTube sont de plus en plus générés automatiquement. Les nouvelles dans les grands médias ? Des journalistes sous-payés (non, encore moins que ça) qui sont en compétition avec des algorithmes pour voir le contenu qui rapportera le plus de clics. Les rédactions sont désormais équipées d’écrans affichant en temps réel les clics sur chaque contenu. Le job des journalistes ? Optimiser cela. Même le code Open Source est désormais généré grâce à Github Copilot. Ces algorithmes se nourrissent de contenu pour en générer de nouveaux. Vous la voyez la boucle ? Le « while True » ?
+
+Pendant des millénaires, notre cerveau était plus rapide que les moyens de communication. Nous apprenions, nous réfléchissions. Pour la première fois dans l’histoire de l’information, notre cerveau est désormais le goulot d’étranglement. C’est lui l’élément le plus lent de la chaîne ! Il ne peut plus tout absorber. Il se gave et s’étouffe !
+
+Lorsque nous sommes en ligne, nous alimentons cet énorme monstre qui se nourrit de nos données, de notre attention, de notre temps, de nos clics. Nous sommes littéralement la chair exploitée du film Matrix. Sauf que dans Matrix, les corps sont nourris, logés dans leur cocon alors que nous bossons et payons pour avoir le droit d’être exploités par cette gigantesque fabrique d’attache-trombones.
+
+Vous connaissez l’histoire de la fabrique d’attache-trombones ? C’est un concept inventé par le chercheur Nick Bostrom dans un papier intitulé « Ethical Issues in Advanced Artificial Intelligence ». Le concept est que si vous créez une intelligence artificielle en lui demandant de fabriquer le plus possible d’attache-trombones le plus rapidement possible, cette intelligence artificielle va rapidement s’arranger pour éliminer les humains qui pourraient la ralentir avant de transformer la planète entière en une montagne d’attache-trombones, ne gardant des ressources que pour coloniser d’autres planètes afin de les transformer en attache-trombones.
+
+=> https://nickbostrom.com/ethics/ai L’article de Nick Bostrom sur les attache-trombones.
+
+Dans une conférence de 2018, l’auteur de science-fiction Charlie Stross a montré qu’il n’était pas nécessaire d’attendre des intelligences artificielles très avancées pour voir se poser le problème. Qu’une entreprise est, par essence, une fabrique d’attache-trombones : une entité dont le seul et unique objectif est de générer de l’argent, quitte à détruire ses créateurs, l’humanité et la planète dans la foulée.
+
+=> http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html La conférence de Charlie Stross.
+
+Le concept est parfaitement illustré par cette magnifique scène dans « Les raisins de la colère » de John Steinbeck où un fermier s’en prend à un représentant de la banque qui l’exproprie de son terrain. Il veut aller tuer le responsable de son expropriation. Le banquier lui dit alors : « La banque a une volonté à laquelle nous devons obéir même si nous sommes tous opposés à ses actions ». Bref, une fabrique d’attache-trombones.
+
+La fabrique d’attache-trombones nous fait dépenser, devenir des zombies. Vous avez déjà vu un zombie ? Moi oui. Quand je fais aller la sonnette de mon vélo face à des gens qui tendent un téléphone au bout de leur bras. Ils sont dans un monde virtuel. Ils ont même délégué leur sens auditif à Apple avec ces écouteurs qui ne se retirent plus et qui ont la faculté de transmettre le son réel dans l’oreille. En mettant Apple comme intermédiaire. Comme dans Matrix, les gens vivent dans un monde virtuel. Ça a juste commencé par l’audition au lieu des gros casques devant les yeux comme on l’imaginait.
+
+Pour nous échapper de la fabrique, pour ne pas être transformés en attache-trombones, nous devons créer, entretenir et occuper des espaces réservés aux humains. Pas des algorithmes. Pas des entreprises. Des humains. Et posez-moi ce smartphone qui vous fait littéralement perdre 20 points de QI. Ce n’est pas une blague : quand on dit que les entreprises se nourrissent de notre temps de cerveau, c’est littéral. On perd littéralement l’équivalent de 20 points de QI par le simple fait d’avoir un téléphone à proximité. Le simple son d’une notification distrait autant un conducteur que de ne pas regarder la route pendant une dizaine de secondes. Ces engins nous rendent cons et nous tuent ! Ce n’est pas une image.
+
+=> https://www.journals.uchicago.edu/doi/epdf/10.1086/691462 Article « The Mere Presence of One’s OwnSmartphone Reduces Available Cognitive Capacity ». 
+=> https://www.seuil.com/ouvrage/la-fabrique-du-cretin-digital-michel-desmurget/9782021423310 « La fabrique du crétin digital », de Michel Desmurget
+
+Vous avez remarqué comme la déshumanisation du travail nous force de plus en plus à agir comme des automates, comme des algorithmes ? Métropolis, de Fritz Lang, et les Temps Modernes, de Charlie Chaplin, dénonçait l’industrialisation qui transformait nos corps en outils au service de la machine. 100 ans plus tard, c’est exactement pareil avec les cerveaux. On les transforme pour les mettre au service des algorithmes. Algorithmes qui, eux, prétendent se faire passer pour des humains. Nous sommes en train de fusionner l’homme et la machine d’une manière qui n’est pas belle à voir.
+
+Ce qui fait l’humain, c’est sa diversité, sa différence d’un individu à l’autre, mais aussi d’un moment à l’autre. Quel est le connard qui pense sérieusement que comme t’as envoyé un jour un mail à une entreprise, cinq ans plus tard tu souhaites être spammé tous les jours avec leur newsletter ? Je n’invente rien, ça m’est arrivé récemment. L’humain évolue et la culture humaine doit être diverse. Comme la nourriture. Qui pense que manger tous les jours au macdo au point d’en vomir est une bonne idée ? Alors pourquoi accepte-t-on de le faire pour notre cerveau ?
+
+L’archétype de l’industrialisation et de l’uniformisation de la culture est pour moi représenté par les superhéros. On réduit la culture à un combat entre exégètes Marvel ou DC. Ce n’est pas anodin. Vous avez déjà réfléchi à ce que représente un superhéros ? C’est littéralement un milliardaire avec des superpouvoirs innés. Il est supérieur au peuple. Il est également son seul espoir. Il est parfois injustement mal compris, car il est bon, même quand il dézingue toute une ville et ses habitants. Ce sont juste des dommages collatéraux. Le peuple a juste le droit de la fermer. C’est littéralement l’image du monde qu’ont les milliardaires d’eux-mêmes. À titre de comparaison, dans les années 90, la mode était aux films catastrophes. La terre était en danger et les humains normaux (on insistait sur la normalité, sur le fait que leur couple allait mal, qu’ils étaient blancs ou bien Will Smith) s’associaient pour accomplir des actions héroïques et sauver la terre d’un ennemi figurant la pollution. Les héros de Jurassique Park? Des gamins normaux et des scientifiques un peu dépassés. Aujourd’hui, l’humain normal a juste le droit de fermer sa gueule et d’attendre qu’un milliardaire vienne le protéger. Sans milliardaire, l’humain normal est forcé de se battre contre les autres normaux, car les milliardaires nous ont appris que la collaboration était morte ces 20 dernières années. Ils nous ont enseigné à voir tout humain comme un ennemi, un concurrent potentiel et à tenter d’accaparer ce qu’on peut avant une destruction finale. C’est ce qu’on appelle le survivalisme.
+
+Cette vision du monde, nous la devons à la monopolisation de la culture. À la monoculture. Mais il y’a pire ! La culture indépendante est devenue illégale, immorale. Les gens s’excusent de pirater, de partager. À cause d’une des plus grosses arnaques intellectuelles : la propriété intellectuelle. Un concept fourre-tout assez nouveau dans lequel on balance brevets, secrets commerciaux, copyrights, trademarks…
+
+L’intellect est un bien non-rival. Si je partage une idée, cela donne deux idées. Ou 300. Au plus on la partage, au plus la culture croît. Empêcher le partage, c’est tuer la culture. Les fabriques d’attache-trombones ont même réussi à convaincre certains artistes que leurs fans étaient leurs ennemis ! Qu’empêcher la diffusion de la culture était une bonne chose. Que le fait qu’ils crèvent de misère n’était pas dû aux monopoles, mais au fait que les fans se partagent leurs œuvres. Spotify reverse aux artistes un dixième de centime par écoute, mais les pirates seraient responsables de l’appauvrissement des artistes. Pour toucher l’équivalent de ce qu’il touchait avec une vente de CD, vous devez écouter chaque chanson de l’album un millier de fois sur Spotify !
+
+Le libre a tenté de répliquer avec les licences. GPL, Creative Commons. Mais nous sommes trop gentils. Fuck les licences ! Partagez la culture ! Diffusez-la ! Si vous le faites de bon cœur, partagez entre êtres humains. Boycottez Amazon et tentez de découvrir autour de vous des artistes locaux, indépendants. Partagez-les. Diffusez-les. Écrivez des critiques, filmez des parodies. Vous connaissez JCFrog et ses vidéos ? Et bien c’est exactement ça la culture humaine. C’est magnifique. C’est génial.
+
+=> https://aperi.tube/a/jcfrog/videos Les vidéos de JCFrog
+
+Ne dites plus « Je veux juste me vider la tête avec une série débile ». On ne se vide pas la tête. On la remplit. Avec de la merde industrielle ou du bio local artisanal, au choix. Faites des références. L’autre jour, j’ai vu sur Mastodon quelqu’un parler de son trajet dans le métro à Paris : « J’ai l’impression d’être dans Printeurs ! ». C’est le plus beau compliment qu’on puisse à un auteur. Merci à cette personne !
+
+Dans Printeurs, tout est publicité. Ce n’est pas un hasard. Vous avez vu comme tout ressemble à une publicité désormais ? Comme le moindre film, le moindre clip vidéo en adopte les codes ? Comme chaque vidéo YouTube n’a plus qu’un objectif : vous faire vous abonner. Fabriquer des attache-trombones.
+
+La culture bio et libre n’est pas une culture de seconde zone. Elle n’est juste pas standard. Et c’est tout son intérêt.
+
+Pour exister, la culture libre a besoin de plateformes libres. Les plateformes propriétaires ont été conçues par le marketing pour le marketing. Pour vendre des cigarettes et de l’alcool à des gamins de 10 ans (c’est la définition du marketing. C’est juste leur métier de prétendre qu’ils font autre chose. Comme disait Bill Hicks, si vous travaillez dans le marketing, « please kill yourself »). Une fois qu’on fume, le marketing cherche à nous prétendre que c’est notre liberté et nous faire oublier que nous polluons afin que nous perdions encore plus de libertés et que nous polluions encore plus. Comme l’alcoolique boit pour oublier qu’il est alcoolique, nous consommons pour oublier que nous consommons. Le simple fait d’être sur une plateforme marketing nous force donc à faire du marketing. Du personal branding. De l’engagment. Des KPI. Promouvoir la culture libre sur Facebook, c’est comme aller manifester pour le climat en SUV. Oui, mais j’ai un vélo électrique dans le coffre, je suis écolo ! Oui, mais Facebook, Insta, c’est là que tout le monde est !  Non, c’est là que sont certains. Mais c’est sûr que sur Facebook, on ne trouve que des gens qui sont… sur Facebook. Il y’a des milliards de gens qui n’y sont pas, pour des raisons très diverses. La manière la plus simple et la plus convaincante de lutter contre ces plateformes est de tout simplement ne pas y être.
+
+Les plateformes libres existent. Comme un simple blog. Mais elles ont besoin de choses à raconter, d’histoires. Le mot « libre » à lui tout seul raconte une histoire. Une histoire qui peut faire peur, être inconfortable. Alors on a essayé de dépolitiser le libre, de l’appeler « open source », de le dépouiller de son histoire. Le résultat, il est dans votre poche. Un téléphone Android tourne sur un Linux open-source. Pourtant, c’est le pire instrument de privation de liberté. Il vous espionne, vous inonde de publicités, vous prive de tout contrôle. RMS avait raison : en renommant le libre « open source », nous avons fait une croix sur la liberté.
+
+La leçon est que la technologie ne peut pas être neutre. Elle est politique par excellence. Se priver de raconter des histoires pour ne pas être politique, c’est laisser la place aux autres histoires, à la publicité. C’est prétendre, comme le disaient Tatcher et Reagan, qu’il n’y a pas d’alternative. Je le disais, mais je gardais moi-même mon compte Facebook. Cela me semblait indispensable. J’ai eu du mal à le supprimer, à me priver de ce que je croyais être un outil incontournable. À la seconde où le compte a été supprimé, le voile s’est levé. Il m’est apparu évident que c’était le contraire. Que pour exister en tant que créateur, il était indispensable de supprimer mon compte.
+
+J’avais beau dire que je ne l’utilisais pas, le simple fait de savoir qu’il y’avait plusieurs milliers de followers liés à mon nom me donnait une illusion de succès. Mes posts avaient beau ne pas avoir d’impact (ou très rarement), je les écrivais pour Facebook ou pour Twitter. Je me suis un jour surpris sous la douche à réfléchir en tweets. Je me suis séché et j’ai effacé mon compte Twitter, effrayé. Je ne faisais que produire des attache-trombones en vous encourageant à faire de même. Ma simple présence sur un réseau permettait à d’autres d’y justifier la leur. Leur présence justifiant la mienne… J’étais plongé dans les écrits de Jaron Lanier et Cal Newport lorsque j’ai réalisé qu’aucun des deux n’avait la moindre présence sur un réseau social propriétaire. Je les lis, j’admire leur pensée. Ils existent. Ils ne sont pas sur les réseaux sociaux. Ce fut une grande inspiration pour moi…
+
+Il faut casser le « pas le choix » ou « TINA (There’Is No Alternative) ». Il y’a 8 milliards d’alternatives. Nous les créons tous les jours, ensemble. Notre rôle n’est pas d’aller convaincre le monde entier de passer à autre chose, mais de créer des multitudes de cocons de culture humaine, d’être prêts à accueillir ceux qui sont dégoutés de leur macdo quotidien, ceux qui, à leur rythme, se lassent d’être exploités et soumis à des algorithmes publicitaires. Il suffit de voir ce qui se passe entre Twitter et Mastodon.
+
+Ces plateformes libres, cette culture libre, il n’y a que nous qui pouvons les préparer, les développer, les faire exister, les partager.
+
+À ceux qui disent que la priorité est la lutter contre le réchauffement climatique, je réponds que la priorité est à la création de plateformes, techniques et intellectuelles, permettant la lutte contre le réchauffement climatique. On ne peut pas être écolo dans un monde financé par la publicité. Il faut penser des alternatives, les inventer. Créer des histoires pour sauver la planète. Une nouvelle forme de culture. Une permaculture !
+
+Mon outil à moi, c’est ma machine à écrire. Elle me libère. Je l’appelle ma « machine à penser ». À vous d’inventer vos propres outils. (oui, même Emacs…) Des outils indispensables pour inventer et partager votre nouvelle culture, ce mélange de code et d’histoires à raconter qui peut sauver l’humanité avant que nous soyons tous transformés en attache-trombones !
+
+Merci !
+
+Et don’t forget to subscribe to my channel.
+
+D’ailleurs, je profite de cette conférence contre la publicité pour faire de la publicité pour mon nouveau livre. Est-ce de la culture libre ? Elle est déjà libre sur libgen.io. Mais pas que ! Car mon éditeur a annoncé que toute la collection Ludomire (dans laquelle sont publiés mes livres) passera en 2023 sous licence CC By-SA.
+
+=> http://www.pvh-editions.com/site/annonce-la-liberation-de-la-collection-ludomire/ Annonce de la libération de la collection Ludomire
+
+
+> Photo : David Revoy, Ploum, Pouhiou et Gee dédicaçant lors du Capitole du Libre à Toulouse le 19 novembre 2022.

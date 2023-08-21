@@ -1,0 +1,59 @@
+# Mises en demeure, un racket légal
+=> files/old/rat_mort.jpg
+
+L’agence de création web Linkeo a posté, le 20 mars, une annonce de recrutement dans les forums du site Linuxfr.
+
+=> http://web.archive.org/web/20130518062015/http://linuxfr.org/forums/general-petites-annonces/posts/offre-d-emploi-cdi-paris-administrateur-systeme-et-reseau-open-source les forums du site Linuxfr
+
+Cette annonce a généré une réaction dans laquelle Mackwic, le commentateur, s’inquiète de travailler pour une boîte web dont le site web lui semble atroce. Il liste les reproches techniques faits au site, imagine le type de boîte que cela doit être (cela respire le vécu) et conclut « Rassurez-moi ! ». Il n’a pas reçu de réponse.
+
+Je n’ai pas moi-même analysé le site web ni vérifié si les conditions de travail chez Linkeo sont telles que Mackwic les imagine. Mais force est de constater qu’il semble avoir visé dans le mille car Linuxfr a reçu une mise en demeure lui demandant de supprimer le commentaire et exigeant un paiement.
+
+=> http://linuxfr.org/news/premiere-mise-en-demeure-pour-l-association-linuxfr#comment-1455874 Linuxfr a reçu une mise en demeure
+
+Si vous postez sur Internet, vous risquez un jour d’être confronté à ce procédé, fondamentalement malhonnête (d’un point de vue moral, je ne suis pas juriste). Tout est fait pour vous faire peur, pour vous convaincre que vous êtes dans votre tort et que la seule solution est de payer immédiatement une somme tout en vous pliant aux injonctions. En Belgique, la SABAM procède de la même manière vis-à-vis des indépendants en envoyant d’effrayants rappels (et faisant l’amalgame entre « musique » et « musique du répertoire de la SABAM » mais c’est une autre histoire, d’ailleurs j’ai jeté cette lettre).
+
+Ne payez jamais une facture inattendue ou sous le coup de l’émotion.
+
+Toute lettre inattendue vous enjoignant de payer quelque chose doit vous mettre la puce à l’oreille. N’importe qui peut vous envoyer une lettre exigeant un paiement pour une raison quelconque. C’est un véritable business. Seul l’état peut exiger un paiement en condamnation d’une faute de votre part. Seul un fournisseur avec qui vous avez un contrat peut vous envoyer une facture.
+
+Dans tous les cas, dans le doute, demandez des avis extérieurs. Laissez passer un jour ou deux pour y réfléchir.
+
+Plus c’est effrayant, plus c’est suspect
+
+Si la partie d’en face souhaite réellement résoudre un problème, elle va commencer par vous contacter informellement. Son avocat lui coûte cher et une solution à l’amiable est préférable. Ainsi, lorsque j’ai posté ce billet humoristique, j’avais sans le savoir utilisé le nom d’une société existante. J’ai reçu un coup de fil très sympathique du propriétaire de la société. Il m’a dit que mon billet était très drôle mais que ses clients arrivaient maintenant sur ma page en tapant son nom dans Google. C’était sympa, c’était honnête. J’ai accepté de changer et j’ai proposé de moi-même de faire un lien vers son site. Il a conclu : Continuez à poster des trucs amusants !
+
+=> /89-the-ploum-s-ultimate-anti-spam-solution ce billet humoristique
+
+Si vous recevez une mise en demeure sans le moindre avertissement préalable, il y a de grandes chances que la partie adverse sache qu’elle n’a pas de pouvoir de négociation et qu’elle essaie donc la peur et la réaction émotive. Elle cherche à créer un problème plutôt qu’à le résoudre. Appelez-les. Ils font généralement moins les fiers au téléphone.
+
+Portez l’affaire sur la place publique
+
+Si vous avez l’impression que vous n’avez rien fait de mal, n’hésitez pas à rendre l’affaire publique. Par sécurité et par respect, supprimez les noms des personnes impliquées. Publiez et demandez l’avis de la communauté. Soyez entièrement factuel. Mais ne restez pas seul.
+
+Demandez autour de vous si quelqu’un connaît un avocat ou un juriste professionnel qui pourrait vous aiguiller. Vous avez aussi des droits.
+
+Mais ne perdez pas de vue qu’il est possible que vous soyez dans votre tort. Si c’est le cas, réparez l’erreur mais ne payez pas.
+
+Ils ne veulent pas non plus aller en justice
+
+Souvenez-vous que même une grosse société à autre chose à faire que d’aller en justice. Cela dure longtemps, cela coûte cher et cela peut même se retourner contre eux.
+
+Le but de l’avocat, dans le cas de la lettre de Linkeo, est tout simplement de se faire un peu d’argent en jouant sur la peur. C’est du racket pur et simple. Il n’y a rien à perdre et si jamais le pigeon est assez con pour payer, c’est 1500€ qui rentre directement (peut-être même pas déclarés et considérés comme « arrangement à l’amiable »).
+
+C’est une menace grave pour la liberté d’expression
+
+Si Linuxfr a bien joué la partie en se conformant aux injonctions tout en rendant le tout public, force est de constater que le fait de se conformer est très dérangeant pour la liberté d’expression.
+
+Le principe des mises en demeure par une partie privée m’inquiète. Il s’agit de rouler des mécaniques, d’avoir l’air fort et effrayant. Dans bien des cas, cela fonctionne. Ici, un commentaire comportant une critique technique factuelle est censuré simplement parce qu’un avocat menace.
+
+L’atteinte à la liberté d’expression me semble manifeste et crée un très dangereux précédent.
+
+La seule différence entre une mise en demeure et une douille ou un rat mort dans votre courrier ? On ne peut pas porter plainte pour une mise en demeure. On devrait.
+
+Avertissement: Je ne suis pas juriste. Je n’ai aucune connaissance juridique. J’ai simplement eu plusieurs fois affaire, directement ou indirectement, à ce genre de menaces.
+
+Photo par Zak Zavada. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/21616059@N00/5435104108 Zak Zavada
+=> http://sylvestre.org/ Sylvestre

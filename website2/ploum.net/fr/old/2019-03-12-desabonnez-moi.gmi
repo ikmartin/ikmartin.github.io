@@ -1,0 +1,66 @@
+# Désabonnez-moi !
+=> files/old/franck-v-787297-unsplash.jpg
+
+Bonjour,
+
+En vertu de la loi RGPD, pourriez-vous m’informer de la manière par laquelle vous avez obtenu mes coordonnées et effacer toutes données me concernant de vos différentes bases de données. Si vous les avez acquises, merci de me donner les coordonnées de votre fournisseur.
+
+Bien à vous,
+
+Il y’a 15 ans, le spam était un processus essentiellement automatisé qui consistait à repérer des adresses email sur le web et à envoyer massivement des publicités pour du Viagra. Les filtres intelligents sont finalement venus à bout de ce fléau, au prix de quelques mails parfaitement légitimes égarés. Ce qui a donné une excuse parfaite à toute une génération : « Quoi ? Je ne t’ai pas répondu sur le dossier Bifton ? Oh, ton mail était dans mes spams ! ».
+
+Mais aujourd’hui, le spam s’est institutionnalisé. Il a gagné ses lettres de noblesse en se rebaptisant « newsletter » ou « mailing ». Les spammeurs se sont rebrandés sous le terme « email marketing » ou « cold mailing ». Désormais, il n’est pas une petite startup, une boucherie de quartier, un club de sport, une institution publique qui ne produise du spam.
+
+Comme tout le monde le fait, tout le monde se sent obligé de le faire. À peine est-on inscrit à un service dont on a besoin, à peine vient-on de payer un abonnement à un club qu’il vient automatiquement avec sa kyrielle de newsletters. Ce qui est stupide, car on vient juste de payer. La moindre des choses quand on a un nouveau client, c’est de lui foutre la paix.
+
+Le pire reste sans conteste le jour de votre anniversaire. Tous les services qui, d’une manière ou d’un autre, ont une date de naissance liée à votre adresse mail se sentent obligés de vous le rappeler. Le jour de son anniversaire, on reçoit déjà pas mal de messages des proches alors que, généralement, on est occupé. Normal, c’est la tradition, c’est chouette. Facebook nous envoie des dizaines voire des centaines de messages de gens moins proches voire d’inconnus perdus de vue. Passons, c’est le but de Facebook. Mais que chaque site où j’ai un jour commandé une pompe à vélo à 10€ ou un string léopard m’envoie un message d’anniversaire, c’est absurde ! Joyeux Spamniversaire !
+
+Le problème avec ce genre de pourriel c’est que, contrairement au spam vintage type Viagra, il n’est pas toujours complètement hors de nos centres d’intérêt. On se dit que, en fait, pourquoi pas. On le lirait bien plus tard. La liste produira peut-être un jour un mail intéressant ou une offre commerciale pertinente. Surtout que se désabonner passe généralement par un message odieusement émotionnel de type « Vous allez nous manquer, vous êtes vraiment sûr ? ». Quand il ne faut pas un mot de passe ou que le lien de désinscription n’est pas tout bonnement cassé. De toute façon, on ne se désinscrit que de « certaines catégories de mails ». Régulièrement, de nouvelles catégories sont ajoutées auxquelles on est abonné d’office. La palme revient à Facebook, qui m’envoie encore 2 ou 3 mails par semaine alors que, depuis plusieurs mois, je clique à chaque fois, je dis bien à chaque fois, sur les liens de désinscription.
+
+=> ../files/old/Screenshot-2019-03-09-at-22.10.53-600x76.png 
+Un magasin en ligne bio, écolo, ne vendant que des produits durables mais qui applique les techniques de marketing les plus anti-éthiques.
+
+Si vous n’êtes pas aussi extrémiste que moi, il est probable que votre boîte mail soit bourrée jusqu’à la gorge, que votre inbox atteigne les 4 ou 5 chiffres. Mais de ces milliers de mails, combien sont importants ?
+
+Plus concrètement, combien de mails importants avez-vous perdus de vue parce que votre inbox a été saturé par ces mailings ? L’excuse est toujours valide, le mail de votre collègue est bien dans les spams. Tout votre inbox est devenu une gigantesque boîte à spams.
+
+Ceux qui me suivent depuis longtemps savent que je suis un adepte de la méthode Inbox 0. Ma boîte mail est comme ma boîte aux lettres physiques : elle est vide la plupart du temps. Chaque mail est archivé le plus vite possible.
+
+=> /pourquoi-vous-devriez-viser-inbox-0/ la méthode Inbox 0
+
+Au fil des années, j’ai découvert que la stratégie la plus importante pour atteindre régulièrement Inbox 0 est d’éviter de recevoir des mails dont je n’ai pas envie. Même s’ils sont potentiellement intéressants. Le simple fait de recevoir le mail, d’être distrait par lui, de le lire, d’étudier si le contenu vaut la peine nécessite un effort mental total qui n’est jamais compensé par un intérêt tout relatif et très aléatoire. En fait, les mails « intéressants » sont les pires, car ils font hésiter, douter.
+
+Réfléchissons une seconde. Si des gens sont payés pour m’envoyer un mail que je n’ai pas demandé, c’est qu’à terme ils espèrent que je paie d’une manière ou d’une autre. Pour qu’une mailing liste soit réellement intéressante, il y’a un critère simple : il faut payer. Si vous ne payez pas le rédacteur de la newsletter vous-même, alors vous le paierez indirectement.
+
+J’ai décidé d’attaquer le problème frontalement grâce à un merveilleux outil que nous offre l’Europe, la loi RGPD.
+
+=> https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es la loi RGPD
+
+À chaque mail non sollicité que je reçois, je réponds le message que vous avez pu lire en entête de ce billet. Parfois, j’ai envie de juste archiver ou mettre dans les spams. Parfois je me dis que ça peut être intéressant. Mais je tiens bon : à chaque mail, je me désabonne ou je réponds (parfois les deux). Si une information est réellement pertinente, l’univers trouvera un moyen de me la communiquer.
+
+Cela fait plusieurs mois que j’ai mis en place cette stratégie en utilisant un outil qui complète automatiquement le mail quand je tape une combinaison de lettres (j’utilise les snippets Alfred pour macOS). L’effet est proprement hallucinant.
+
+Tout d’abord, cela m’a permis de remonter à la source de certaines bases de données revendues à grande échelle. Mais, surtout, cela m’a permis de me rendre compte que les apprenti-marketeux savent très bien ce qu’ils font. Ils se répandent en excuses, ils se justifient, ils me promettent que cela n’arrivera plus alors que mon mail n’est aucunement critique. La simple mention du RGPD les effraie. Bref, tout le monde le fait, mais tout le monde sait que ça emmerde le client et que c’est désormais à la limite de la légalité.
+
+Et mon inbox dans tout ça ? Il n’en revient toujours pas. À force de me désinscrire de tout pendant plusieurs mois, il m’est même arrivé de passer 24h sans recevoir le moindre mail. Cela m’a permis de détecter que certains mails vraiment importants passaient parfois dans les spams vu que, étonné de ne rien recevoir, j’ai visité ce dossier.
+
+Soyons honnêtes, c’était un cas exceptionnel. Mais je reçois moins de 10 mails par jour, généralement 4 ou 5, ce qui est tout à fait raisonnable. Je reprends même du plaisir à échanger par mail. Je préfère en effet cette manière de correspondre au chat qui implique une notion stressante d’immédiateté.
+
+Maintenir mon inbox propre nécessite cependant une réelle rigueur. Il ne se passe pas une semaine sans que je découvre être inscrit à une nouvelle mailing liste, parfois utilisant des données anciennes et apparaissant comme par magie.
+
+Aussi je vous propose de passer avec moi à la vitesse supérieure en appliquant exactement ma méthode.
+
+À chaque mail non sollicité, répondez avec mon message ou un de votre composition. Copiez-collez-le ou utilisez des outils de réponses automatiques. Surtout, n’en laissez plus passer un seul. Vous allez voir, c’est fastidieux au début, mais ça devient vite grisant.
+
+Plus nous serons, moins envoyer un mailing deviendra rentable. Imaginez un peu la tête du marketeux qui, à chaque mail, doit répondre non plus à un ploum un peu excentrique, mais à 10 voire 100 personnes !
+
+Ne soyez pas agressifs. Ne jugez pas. N’essayez pas d’entrer dans un débat (je l’ai fait au début, c’était une erreur). Contentez-vous du factuel et inattaquable : « Retirez-moi de vos bases de données ». Vous n’avez pas à vous justifier plus que cela. N’oubliez pas de mentionner les lettres magiques : RGPD.
+
+Qui sait ? Si nous sommes assez nombreux à appliquer cette méthode, peut-être qu’on en reviendra au bon vieux principe de n’envoyer des mails qu’à ceux qui ont demandé pour les recevoir.
+
+Je rêve peut-être, mais la rigueur que je me suis imposée pour commencer cet exercice s’est transformée en plaisir de voir ma boîte mail si souvent vide, prête à recevoir les messages et les critiques de mes lecteurs. Car, ces messages-là, je n’en ai jamais assez…
+
+Photo by Franck V. on Unsplash
+
+=> https://unsplash.com/photos/oIMXkEuiXpc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Franck V.
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

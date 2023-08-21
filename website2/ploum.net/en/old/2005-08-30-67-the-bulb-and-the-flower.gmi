@@ -1,0 +1,50 @@
+# The bulb and the flower…
+
+=> ../files/old/hulajab.png Hula-Jabber
+I’m running the Fritalk public Jabber server for nearly 10 months now. I highly recommend you this wonderful Jabber server with all services you ever dreamed about and a bunch of friendly admins. (Watch out! The 1.0 release is coming shortly…)
+
+=> http://fritalk.com Fritalk public Jabber server
+=> http://fritalk.com/index.php?page=services services
+
+But since a few days, we have a new big concurrent : Google Talk. I’m very pleased that google is using Jabber. Maybe we will soon see a world where IM is like email : standardized and not centralized.
+
+=> talk.google.com Google Talk
+
+I was really happy until I saw that the Google Talk Jabber server is closed to other servers. It’s just like Gmail would only allow you to send and receive mails to and from a Gmail account!
+
+Unacceptable.
+
+So, following the sentence We look forward to federating with any service provider who shares our belief in enabling user choice and open communications seen on the Google Talk website, I’ve send an email, asking how fritalk.com users can talk with Gtalk users. And I just received the answer :
+
+> Hello Lionel,
+> 
+> Thanks for your interest in federating with the Google Talk service. While this is not something that is enabled today with our beta service, we hope to enable it shortly.
+> 
+> When we have more information to share, it will be posted to http://www.google.com/talk/developer.html .
+> 
+=> http://www.google.com/talk/developer.html http://www.google.com/talk/developer.html
+> 
+> 
+> I’ll also follow up again on this mail with details when we have them.
+> 
+> Regards,
+> 
+> The Google Talk Team
+
+Well, wait and see, I will believe it when I see it, but it’s good news anyway. I’m optimist on this.
+
+=> ../files/old/fritalk.png Fritalk
+
+But back to Fritalk. How can we offer something good, something better than Gtalk ? (we don’t earn any penny on Fritalk, worse, it costs us money, but competition is fun) Since early march, Fritalk is running the wonderful Hula mail server. Thanks to people that are hacking Hula, it will become even cooler shortly. So, I’ve thought about Jabber & Hula integration, planning to work on it in a few weeks.
+
+=> http://hula-project.org Hula
+=> http://www.evolutioncolt.com/~spayne/blog/?p=146 hacking Hula
+=> http://primates.ximian.com/~gasman/hulavideo.html even cooler
+=> http://hula-project.org/JabberIntegration Jabber & Hula integration
+
+Guess what ?
+
+It happens! The future seems so bright…
+
+=> http://www.livejournal.com/users/drakul/22729.html It happens
+=> http://teichman.org/blog/2005/08/jabber_synergy.html future

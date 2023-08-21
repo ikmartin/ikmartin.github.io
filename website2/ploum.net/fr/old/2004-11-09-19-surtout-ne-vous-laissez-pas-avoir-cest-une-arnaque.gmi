@@ -1,0 +1,65 @@
+# Surtout ne vous laissez pas avoir ! Utilisez Internet Explorer !
+
+Vous avez peut-être entendu des gens autour de vous vous conseillant à tout prix de changer de navigateur internet.
+
+=> http://frenchmozilla.org/firefox/pourquoi/ changer de navigateur internet
+
+=> http://www.mozilla-europe.org/fr/products/firefox/ 
+=> ../files/old/trust_white.png 
+
+Ces personnes prononcent des mots bizarres tels que « Mozilla » ou « Firefox » (le renard de feu ! Je vous demande un peu si ça fait sérieux !). Faites attention, elles vont essayer de vous convaincre d’abandonner Internet Explorer. Leurs attaques risquent de se redoubler car « la version 1.0 de Mozilla Firefox vient de sortir(sic) » et que nous sommes « à l’aube d’un grand jour« .
+
+=> http://www.mozilla-europe.org/fr/products/mozilla1x/ Mozilla
+=> http://www.mozilla-europe.org/fr/products/firefox/ Firefox
+=> http://standblog.org/blog/2004/11/09/93113779-a-laube-dun-grand-jour à l’aube d’un grand jour
+
+```
+
+```
+
+Surtout, n’en faites rien ! Ne vous laissez pas avoir ! Ne les écoutez pas ! Internet Explorer est tellement profitable…
+
+* Internet Explorer permet notamment à un concepteur de site web d’ouvrir des nouvelles fenêtres (popup). Mozilla et Firefox disposent d’un dispositif visant à bloquer ces popups. Au prix ou vous payez votre abonnement internet, c’est tout de même dommage de ne pas profiter à 100% du web et de toutes ces publicités colorées choisies avec soin par le concepteur du site que vous visitez.
+
+* En utilisant Internet Explorer, vous pouvez garder cette jolie icône bleue et faire montre de votre connaissance informatique en disant « Internet a planté ! ». De cette manière, vous êtes sûr que la personne de l’assistance téléphonique devra se concentrer sur votre problème. (Est-ce l’OS qui a planté ? le navigateur ? la connexion qui a été coupée ? En tout cas, si Internet était planté, ça se saurait…)
+
+* En utilisant Internet Explorer, vous permettez à des dizaines de petits programmes de s’installer joyeusement sur votre ordinateur toutes les semaines. Ces petits programmes apportent de la gaieté dans la grisaille quotidienne, vous affichant des images coquines à tout bout de champ, rajoutant des boutons vous permettant de voir la météo à Ouagadougou en permanence, bref que du bonheur. Pourquoi vouloir s’en priver ? Certes, cela ralentit votre ordinateur, mais vous avez justement de la puissance en trop !
+
+* En utilisant Internet Explorer, vous n’êtes jamais sûr de l’adresse réelle du site sur lequel vous vous trouvez. N’est-il pas amusant de savoir que votre numéro de carte de crédit a été envoyé à une adresse mail en Chine plutôt qu’à votre site de vente ? En tout cas, ça brise la monotonie quotidienne et vous oblige à vérifier vos extraits de comptes.
+
+* En utilisant Internet Explorer, vous vous assurez de recevoir une aide chaleureuse des vos amis doués en informatiques ( N’ont-ils pas justement murmuré : « Oulala, il utilise encore IE… Il est loin lui! » ). Sur les forums de discussion, tout message d’aide relatif à Internet Explorer vous vaudra un chaleureux surnom de « N00b ». Autant mettre la communauté de son coté.
+
+* Et oui, certains liens dans Internet Explorer font s’exécuter des petits programmes malicieux appelés « virus ». Rien de grave, rassurez-vous ! Cela vous permettra justement d’inviter votre cousin Robert, qui s’y connait en informatique, afin de passer une après-midi de rêve où vous regarderez la télé pendant que Robert s’occupera de votre ordinateur. Quand vous reviendrez, tout sera tout propre, tout neuf et plus rapide qu’avant. (Assurez-vous de lancer de temps en temps un « ça va Robert ? » pour qu’il ne soit pas de trop mauvaise humeur en cette fin de dimanche)
+
+* Mozilla et Firefox utilisent un système d’onglets, qui permet de naviguer cinq fois plus vite et de charger les pages pendant que vous en lisez d’autres. Mais voulez-vous vraiment cela ? Le web doit se savourer ! Vous cliquez sur une page et vous avez l’émerveillement de voir cette page apparaitre lentement sous vos yeux ! C’est ça la beauté du web…
+
+* Firefox en est seulement à la version 1.0 et n’a été testée ces dernières semaines que par 7 millions de personnes. Internet Explorer en est lui déjà à sa version 6.0, est testée depuis plusieurs années par un milliard de personnes sans qu’on y ait apporté la moindre modification. Cela prouve bien que le logiciel est parfait non ?
+
+* Internet Explorer aime vous faire des surprises ! Ne vous a-t-il jamais surpris par un « Error dll in 0x863a5c9 » ou un « kernel32.dll exception » ? Ces petits messages font la joie des décrypteurs de mystères. Et puis ils apportent une touche de connivence, c’est un peu comme si ils étaient de la famille. Certes on ne les comprend pas, mais qui pourrait s’en passer finalement ?
+
+=> ../files/old/plantageunkwon.jpg 
+
+* Méfiez-vous ! Beaucoup de personnes commencent simplement par installer Mozilla et finissent un an plus tard sous Linux avec OpenOffice et Mozilla Thunderbird. Cela signifierait donc la fin de tous vos virus, de cette si jouissive angoisse et poussée d’adrénaline qui vous prend chaque fois que vous ouvrez une pièce jointe dans un mail. Fini ce sentiment permanent de danger, si excitant, qui vous fait craindre un popup explicitement sexuel quand votre conjoint est à vos cotés. Que diable! Luttons contre l’informatique en charentaises ! Refusez de faire le premier pas !
+
+=> /2004/10/21/4-ensemble-les-yeux-leves-vers-le-ciel Linux
+=> http://fr.openoffice.org/ OpenOffice
+=> http://www.mozilla-europe.org/fr/products/thunderbird/ Mozilla Thunderbird
+
+* Finalement, Internet Explorer vous permet vous aussi de participer à l’hégémonie commerciale sur le web. Ce serait quand même tellement plus facile qu’une seule société contrôle Internet, le web et toute l’informatique ! Comme ce serait plus facile qu’une seule et unique société décide de tout pour nous et nous comble de ses bienfaits et de ses merveilles technologiques. Refusez en bloc l’ouverture à d’autres sociétés. Ce serait tellement plus facile si tout le monde avait exactement le même ordinateur avec la même taille d’écran, les mêmes icones… Luttez !
+
+Lorsque quelqu’un vous proposera d’installer Mozilla ou tout autre navigateur conforme aux standards, rétorquez que vous êtes pour l’unicité du web et qu’il n’y a qu’un seul standard, celui de la société à qui vous avez payé votre dîme en achetant votre ordinateur !
+
+=> http://www.mozilla-europe.org/fr/products/firefox/ 
+=> ../files/old/takebacktheweb_125x50.png 
+
+PS : certains d’entre-vous ont certainement déjà lu ce texte que j’avais publié sur le FriWikiWiki et dans un obscur journal linuxfr. J’ai un peu dépoussiéré le texte et ajouté quelques fautes d’orthographe afin d’honorer à ma façon la sortie de Firefox 1.0 (oui, à ma façon, ça veut dire « en écrivant des conneries »). Un grand merci et un tout grand bravo aux développeurs et à tous les contributeurs. Une version anglophone est disponible
+
+=> http://wiki.frimouvy.org/GeckoVsIE FriWikiWiki
+=> http://linuxfr.org/~ploum/13587.html journal linuxfr
+=> /2004/11/09/20-dont-be-fooled-keep-internet-explorer-at-all-cost version anglophone est disponible
+
+»PPS : Les copies d’écran de plantages sont issus de ma collection personnelles et me sont réellement arrivés à l’époque où j’utilisais IE (il y’a un peu plus de 5 ans). Que ce soit pour faire 2 fois la même action en même temps ou d’afficher plusieurs pages en même temps. 😉 Il faut reconnaitre qu’il s’agissait de IE 5.0 sous Win98. Pour ma défense, j’aimerais dire que j’avais un Netscape 3.0 installé et que je testais tous les sites que je faisais sous les deux navigateurs… »
+
+=> ../files/old/erreur.gif copies d’écran de plantages
+=> ../files/old/plantgedouble.jpg 2 fois la même action en même temps
+=> ../files/old/plantage2.gif afficher plusieurs pages en même temps

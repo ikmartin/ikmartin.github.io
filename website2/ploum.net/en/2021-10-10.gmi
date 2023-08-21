@@ -1,0 +1,77 @@
+# Offmini, My Dream of Making Gemini Offline and Distributed
+
+For a long time, I went to bed really late. Sometimes, my screen having been just shut down, my eyes would stay open in the dark and I would welcome a stream of fresh ideas and undisturbed consciousness.
+
+I would ask myself : Why is everything so clear now? Why is it never happening sooner in the day? Why should every day be wasted like that? Why do creativity and energy only occur when I finally unplug and call it a day?
+
+The answer in my case looks deceptively simple: online.
+
+In my workflow, I identified three different stages of work: 1) exploring for new things to know and collecting stuff to read later (aka serendipity), 2) reading, studying stuff and 3) building (aka writing or coding).
+
+The online world made that first stage so good, so fun, so infinite that I spend my day stuck in it. It’s like a cigarette ritual: each excuse is good to say "let’s take a break and explore". Each minute spent reading or building is the justification for ten minutes of exploration.
+
+Exploration is specially rewarding when what is discovered is small, easy, predigested chunk of contents. Longer content is saved for the "reading stage" and orgiasticly piled in my "to read" list (the Pocket app in this case).
+
+The addictiveness of modern social networks coupled with the availability of mobile connectivity quickly invaded every single minute of nothingness. From the toilet to the recovery after a jog in the park or the wait in a queue at the grocery, every minute previously "intellectually wasted" could now be filled with random newness.
+
+Not only the wasted minutes. The hours spent seated in front of a desk could, suddenly, be filled in a similar fashion. Each difficulty prompted my brain to suggest me something sweet, easy and rewarding that was a mouse click away. In the end, only the urgency allowed me to get the minimal things done.
+
+Unfortunately, ideas require lots of nothingness. You can’t have good ideas in urgency. You can quickly extinguish a fire but you cannot design fireproof buildings. Which seems fine in the modern industry where nothing is built anymore and everything is about extinguishing fires. Which leads to more fires. 
+
+I stopped reading offline documentation. Instead of thinking about my problems, I started to immediately look after solutions posted online. Sometimes, very simple technical solutions were only found in videos. People even seem to forget how to write and read, forcing themselves to spend even more time on their screen in order to make and watch videos. If no solution was found, I posted requests on several forums. Retrospectively, this worked very rarely (if any). After posting, I would refresh compulsively to get answers. And be dragged in argumentation about why I was having this problem in the first place. The rare times when a smart answerer gave me the solution, I often realised that I had it in front of me all the time.
+
+While it’s good for the economy (more fires and cheap short-term solutions = more jobs), I wanted to get out of that loop. I decided to act.
+
+First by blocking every time-consuming website. Like news and popular social networks. I started a "3 months without media/social network" fast. Writing about it was a good way to attract attention to my blog. Talk about irony.
+
+But something strange happened : instead of suddenly having lots of free time, I started to find alternatives. My brain circuitry quickly adapted to fill the void by finding other very interesting websites.
+
+Over the years, I gradually improved the quality of my lost time. Instead of hanging on Facebook, I’m now reading gemlogs. It’s a lot better, content-wise. I found people with really similar interests. But did I really change anything? I’m still stuck in the exploring stage.
+
+The structural problem with the online word is that it can change at any time. As soon as a window is closed, you might be missing something. Better check once more. If you know you may be interrupted (because you have colleagues or kids), doing very shallow work makes a lot of sense. To the focused one, a small interruption is very painful and usually ruin your day. To avoid this pain, the shortest path is to never be focused at all. 
+
+Think about it for a second: let’s say you received an email. You want to take the time to reply. You think about it while meditating. You open your mail client to read it once again and be sure about its content. Notifications pop up. New mails are all over the inbox. Some can be dealt quite quickly so why not doing it immediately? Another mail makes your mind wander to Wikipedia. Voilà, you never get that chance to a second read of that important email.
+
+All our computer infrastructure is designed so each change, however tiny, is considered as the most important and urgent thing to consider. The "notification" concept, which started with the very first phone, is a testament to deep thinking. How a message from someone not there or a random software upgrade could ever be more urgent than what I’m doing right now?
+
+I started to dream about living offline most of the day. I would simply connect every morning to receive everything from the last 24h (mails, RSS) and send mail or potential blog posts. 
+
+I’m still working on the setup for such experiment which is a lot harder than previously thought as most software expect a permanent connection. I’m currently trying to set up mail with notmuch/alot/astroid in a usable way on a day-to-day basis. Still have to figure out a replacement for Pocket and a way to store the URL I want to open offline so all those URLs are downloaded for at the next connection. My ambition is, while being offline, having a full-screen telling me what is happening in the background but preventing me from using the computer. My computer could be online, I could use my computer. But never both at the same time. If I needed to bypass this limit (like for banking operations), I would have to provide a reason. At the end of the month, I could have statistics about the  time I really spent online. At least, that’s the plan.
+
+The work is at the very early stage of progress but this led me to think about how I could use Gemini offline.
+
+I could probably hack a bit on AV-98 and make it download everything in a "tour" so I can read it offline. I would also need to do something to subscribe to my favourite gemlogs.
+
+I really like the intuition behind Gemini. But Gemini assumes a strong infrastructure : IP networks, TLS and permanent connectivity (this even prompted Soderpunk to think about a Mercury project). I can’t count the number of gemlog posts I missed because, at the time I wanted to access it, the server was not responding.
+
+I started to dream.
+
+Could we imagine a decentralised and delay-tolerant network simple enough so you could implement it in a day?
+
+Weirdly enough, I quickly found a name: Offmini, short for "Offline Gemini". Then, I thought that it could also mean "Offline Minimalist Protocol". Whatever. Pure bikeshedding.
+
+The goal of Offmini is to access and transfer folders filled with markdown files. Nothing else. Each "root" folder would be a capsule (which could contain subfolders) named after the fingerprint of a GPG key. Each file in a folder has to be signed by this particular GPG key. In fact, this is how you publish a file : by signing it and putting the signature in the same folder. Files without a signature by the root-folder key will not be transmitted (this prevents adding non-authorised content in a given capsule).
+
+You can browse locally all the capsules you have on a local disk. You can subscribe to a particular capsule (or a subfolder in that capsule) to receive every new signed markdown file added to this capsule. A file will also store the addresses of the capsules you tried to reach.
+
+Each time there’s a connection with another offmini pod, through the Internet, through a local network or even through an USD thumb, your offmini pod will try to get everything new in subscribed capsules and get the capsules you tried to access while offline. There’s no client or server. Only "pods" that allow you to browse a local directory and try to get content each time a new pod is met.
+
+With such a protocol, by essence, browsing will become an offline experience. You would only need to sync when you want or can. For people like me, connecting once a day would remove the permanent rewarding randomness while still providing content and serendipity. A snapshot of a part of the Gemini space would be the newspaper for my day.
+
+But wait, there’s more! By putting encrypted files in a capsule, you could send messages to the owner of that capsule.  Oh My Goodness! Being able to communicate without that awful mail stack (IMAP/SMTP/MIME are insane protocols and, as a result, no software handle them correctly).
+
+This would mean blogging, reading and messaging only via simple text files. Even if it were very limited (only text files), this would be awesome. Something that could be perfect for really slow or old devices (the use of GPG might be the bottleneck here).
+
+Of course, I didn’t really create that protocol so far. There are plenty of really hard problems to solve first (like routing, storage rules, etc.). Real solutions already exist (like Scuttlebutt or the nice way John Goerzen talks about Syncthing/NNCP).
+
+But all those solutions are quite complex. Except a handful of developers, everybody would use them like a magical black box. 
+
+My goal is to make Offmini something usable while still being simple and intuitive enough to be handled by hand. In fact, I foresee only one "action" : pushing a file to a directly connected pod. One pod would push requests to another and push capsules requested in its own "requests" folder (while cleaning it). Connection to another pod could be done using a "connection module" which would be a separate piece of code. The most obvious would be the TCP/IP and the mass-storage ones.
+
+Shortcomings and limitations are part of the exercise. In fact, like for Gemini, limitations would be part of the features.
+
+Before investing more time in this, I still need to figure out why I’m doing it. Am I really trying to solve a genuine problem? Or am finding yet another way to procrastinate and avoid the hard work I need to do?
+
+What if online was never the problem in the first place but only a symptom?
+
+=> https://changelog.complete.org/archives/10219-a-simple-delay-tolerant-offline-capable-mesh-network-with-syncthing-optional-nncp John Goerzen on Syncthing and NNCP

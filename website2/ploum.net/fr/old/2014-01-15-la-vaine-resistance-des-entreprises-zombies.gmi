@@ -1,0 +1,41 @@
+# La vaine résistance des entreprises zombies
+=> files/old/zombies.jpg
+
+Cet hiver, j’ai décidé d’acheter un gadget informatique. Pour une raison administrative quelconque, je ne l’ai pas commandé sur le web mais je me suis rendu dans le magasin d’une grande chaîne (VandenBorre, pour ne pas la nommer). Dans ce magasin, alors que j’attendais mon tour pour payer, j’ai surpris une discussion entre un client énervé et un vendeur :
+
+— C’est un scandale, se plaignait le client, c’est beaucoup plus cher que le prix indiqué sur votre site.
+— Notre site est mis à jour régulièrement pour tenir compte des variations de prix. Il est possible que le prix actuel soit différent de celui que vous avez vu si vous avez consulté le site hier.
+— Mais c’est scandaleux (le prix était 20% plus cher) ! Je suis venu car c’était légèrement moins cher que sur Amazon. Mais maintenant, c’est clairement plus cher. Si j’avais su, j’aurais directement commandé chez Amazon.
+
+À ce moment, le vendeur se fit particulièrement hautain et désagréable. Il répliqua très sèchement.
+— Sauf que chez nous, au moins, vous avez le service qui va avec.
+C’est certain que se faire engueuler, c’est un service qui vaut la différence de prix, pensai-je.
+— Et puis, poursuivit le vendeur sans se démonter, c’est plus facile pour vous de venir ici !
+— Bien sûr que non, repris le client, j’ai du prendre ma voiture, j’ai du me garer. Avec Amazon, j’ai le paquet devant ma porte.
+— Mais avec Amazon, vous êtes coincé si vous avez le moindre soucis ou si vous devez renvoyer.
+— Peut-être répondit le client. Mais tant que ça marche…
+
+Cette conversation est absolument véridique. Elle illustre bien le problème actuel des magasins qui sont plus chers et offrent un service nettement inférieur à Amazon. Car, dans ce cas-ci, le client désabusé ignorait que la politique de retour d’Amazon fonctionne extrêmement bien. Si vous êtes déçu, que le produit est défectueux ou que vous changez tout simplement d’avis, il suffit d’imprimer une étiquette fournie au format PDF par Amazon, de la coller sur la boîte originale et de vous rendre dans le point Poste le plus proche. Pour moi qui habite à quelques enjambées de la librairie de mon quartier, qui fait point Poste, les retours Amazon sont nettement plus simples que les retours via le magasin où il faut prendre sa voiture, se garer, trouver le vendeur qui connaît la procédure, se justifier, retrouver le ticket de caisse, etc. Sans compter qu’Amazon rembourse comptant là où la plupart des magasins offrent des bons d’achats.
+
+Après avoir assisté à une scène de ce type, il faut être bien aveugle pour croire que ces magasins existeront encore dans quelques années. Il est évident que leur business model est condamné. Victime du grand méchant Amazon-Ken, ils sont morts mais ne le savent pas encore. Ce sont des entreprises zombies.
+
+Car ce vendeur n’est pas un cas isolé. Il y a quelques mois, j’entendais l’interview d’un responsable de la FNAC Belgique. À la question « N’êtes-vous pas menacés par Amazon ? », il répondait « Nos clients nous sont fidèles. Ils viennent avant tout pour l’ambiance du magasin, pour découvrir. ». J’ai souri intérieurement : il s’agissait presque mot pour mot d’une phrase que j’avais utilisée pour décrire l’étape du déni dans le processus de deuil d’un business model. Sans compter l’allusion à la tellement merveilleuse « ambiance » de la FNAC. J’en rigole encore.
+
+=> /lorsque-lindustrie-fait-son-deuil/ pour décrire l’étape du déni dans le processus de deuil d’un business model
+
+Après le déni, la colère et le marchandage pour obtenir un acharnement thérapeutique de la part de l’état, comme les taxis ou le secteur du livre en France, nous entrons dans une nouvelle ère cruciale du deuil des entreprises : la dépression. Les entreprises menacées par une solution nouvelle et extrêmement efficace (Amazon, Uber) se lancent dans des attaques en règle, faisant surgir des scoops sur les rythmes inhumains infligés aux travailleurs d’Amazon. Mais, entre nous, que savez-vous des conditions de travail des employés et des fournisseurs de la FNAC, de VandenBorre ou de PriceMinister ?
+
+=> http://actualitte.com/blog/projetbradbury/faut-il-laisser-mourir-les-librairies/ le secteur du livre en France
+=> /lorsque-lindustrie-fait-son-deuil/ deuil des entreprises
+
+Pire, les entreprises zombies mettent en place des stratégies qui vont à l’encontre de l’intérêt du client. Tout comme les véritables zombies, elles n’ont plus aucun espoir si ce n’est vous soutirer tout ce qu’elles pourront, de vous sucer la dernière goutte de cerveau avant de pourrir définitivement. Elles tenteront à tout prix de vous convaincre du bien fondé moral d’acheter chez eux plutôt que mieux et moins cher ailleurs.
+
+À la FNAC, par exemple, j’avais acheté ma liseuse Kobo. Quelle ne fut pas ma surprise de constater que le prix que j’avais payé en magasin était plus cher que le prix en ligne sur le site de la FNAC elle-même, me laissant un goût amer en bouche ! De plus, la liseuse forçait l’affichage d’un logo FNAC en lieu et place de la couverture de mes livres. Introduire une telle « contre-fonctionnalité » illustre à quel point l’entreprise est désespérée. Le résultat fut, évidemment, de conseiller mes amis d’acheter une liseuse Kobo partout sauf à la FNAC, un avis qu’au moins un de mes amis a suivi.
+
+Les magasins physiques ne sont pas les seuls menacés par Amazon: depuis PriceMinister (à éviter à tout prix!) qui vous abonne contre votre gré à une quinzaine de mailing lists aux vendeurs qui refusent d’annuler une commande confirmée par erreur deux minutes plus tôt en passant par ceux qui vous font payer le retour de la marchandise ou ajoutent, à la dernière étape, des frais de port prohibitifs en espérant que vous n’ayez pas le courage d’annuler toute la procédure. Le point commun ? Le désespoir de voir Amazon fournir un service de meilleure qualité et une volonté de soutirer autant que possible d’un client qui s’est, par hasard, un peu éloigné d’Amazon.
+
+Depuis quelques années, chaque fois que j’entre dans un de ces magasins, le vendeur tente à tout prix de me vendre des accessoires ou des extensions de garanties, fait la moue lorsque je refuse, me soutient que les produits qui ne sont pas disponibles en magasin n’existent pas et sont le produit de mon imagination. Les sites de vente m’innondent de spam alors que, sur Amazon, j’ai la paix. Mais peut-être que le pire est de voir des personnes influentes et éduquées soutenir cette horde de zombies en espérant arrêter, avec quelques lois absurdes et quelques arguments moraux douteux, le progrès technologique. Afin de rester dans ce bon vieux monde statique qu’elles connaissent si bien et qui a fait leur fortune.
+
+Photo par Caio Shiavo.
+
+=> http://www.flickr.com/photos/46061102@N00/6309585830 Caio Shiavo

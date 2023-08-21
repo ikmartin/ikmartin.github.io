@@ -1,0 +1,57 @@
+# De l’orthographe et de la publication en ligne
+=> files/old/writing_pen.jpg
+
+Chers amis lecteurs,
+
+Si vous me lisez aujourd’hui, vous savez certainement que l’un des principaux problèmes de ce blog est l’orthographe (avec la mauvaise foi et la prétention mais, chez un blogueur, c’est normal voire recommandé).
+
+Ai-je un souci avec l’orthographe et la langue française ? Au contraire ! Si je m’applique spécialement, je me targue même d’avoir une orthographe passable. Pire : j’apprécie tout spécialement les discussions sur l’orthographe ou la typographie. Mon passage à la disposition Bépo m’a fait prendre goût aux belles lettres dans leur juste écrin typographique.
+
+=> /216-le-bepo-sur-le-bout-des-doigts/ la disposition Bépo
+
+Mon problème est autre : je jette les mots sans réfléchir et puis je triture, je mélange. Un complément d’objet direct est déplacé mais l’accord de la tournure précédente est gardé, un mot féminin est remplacé par un synonyme masculin sans changement dans les adjectifs. Je procède également à des relectures à haute voix, afin de mieux percevoir le rythme et la musicalité des mots. Procédé très efficace mais qui a le défaut de me faire souvent écrire des homonymes ou des verbes mal conjugués.
+
+La solution est, en théorie, très simple : la relecture attentive. Mais lorsque je relis, j’ai la fâcheuse tendance de réécrire. Mes professeurs de français craignaient d’ailleurs les exercices d’écriture avec moi au point de préciser dans les consignes : « Écrire une nouvelle de minimum deux pages. Et, pour Lionel, de maximum dix pages. » Ce à quoi je répliquais avec vingt pages, les dix premières étant mon brouillon et les dix suivantes « la mise au propre » n’ayant que les premiers paragraphes en commun avec l’original.
+
+En fait, entre nous, toutes ces laborieuses explications se réduisent à une seule : je suis trop feignant pour effectuer une relecture digne de ce nom.
+
+Il s’en suit que je peux, au choix, écrire et réécrire sans jamais publier, n’étant jamais satisfait. Si j’étais un auteur professionnel, je pourrais certainement faire appel à un relecteur. Mais j’ai choisi une troisième solution : je publie sur le net.
+
+De votre importance de lecteur
+
+Internet est un outil magique. Contrairement à un livre papier, un texte ne doit pas être finalisé pour être publié et lu. Les erreurs sont acceptables et peuvent être corrigées après publication. La publication n’est plus définitive mais une étape parmi d’autres dans le processus d’écriture.
+
+Dans mon cas précis, j’ai la chance d’avoir dans mon lectorat des personnes extrêmement cultivées et maniaques de l’orthographe qui n’hésitent pas à passer du temps pour me signaler les fautes. Mais, souvent, je sens comme une gêne, une crainte qu’un message soit perçu comme une critique négative plutôt qu’une simple volonté d’apporter une amélioration.
+
+Pourtant, il n’en est rien. C’est un honneur pour moi de voir qu’un lecteur a pris le temps de m’envoyer une correction. Je voudrais d’ailleurs publiquement remercier ceux d’entre vous qui, dans l’ombre, me relisent et m’envoient des relectures précises et détaillées pour presque chaque billet. Les lecteurs deviennent partie intégrante du processus de création littéraire, de finalisation du texte.
+
+Étendre la collaboration ?
+
+Régulièrement, certains lecteurs me proposent, pour faciliter la correction, d’adopter un système de type wiki ou de contrôle de version. D’automatiser le processus.
+
+Si, en théorie, l’idée est très belle, en pratique mon expérience me démontre que le procédé n’est pas efficace. De simples corrections, les remarques dérivent très rapidement sur le style, sur la meilleure manière d’écrire une phrase. La différence entre les goûts du relecteur et de l’auteur entraîne un débat chronophage. L’auteur se sent obligé d’accepter une modification pour ne pas vexer le relecteur. Parfois, une grosse modification remanie totalement un paragraphe, forçant l’auteur à analyser chaque différence afin de décider ce qu’il trouve pertinent. Enfin, dans certains cas extrêmes, les relecteurs vont jusqu’à modifier le fond du texte, discuter la pertinence de tel ou tel aspect.
+
+Outre la débauche d’énergie nécessaire à maintenir un tel processus, je dois avouer être personnellement très peu convaincu par la création littéraire collaborative. J’ai été personnellement invité à collaborer à des dizaines de projets de ce type. Aucun, à ma connaissance, n’a jamais été achevé de manière satisfaisante. Même dans le monde professionnel, j’ai été témoin de communiqués de presse, dont j’avais rédigé l’original en quelques heures, qui ont mis plus d’un an pour être finalement publiés, perdus entre les discussions, les arguties sur la mise en page ou les critiques sur la tournure d’une phrase.
+
+Signaler une faute
+
+Au final, j’ai toujours privilégié la publication de billets imparfaits plutôt que pas de billets du tout. Et je laisse le temps bonifier les textes qui en valent la peine.
+
+Une poignée de lecteurs appliquent la méthode qui me semble la plus efficace pour signaler les fautes. Le principe est simple : un billet = un mail avec le titre « [Corrections] Titre du billet à corriger ». Pas de corrections de plusieurs billets dans le même mail. Ensuite, outre des paragraphes de discussion, une ligne par faute avec la convention « partie de phrase telle qu’actuellement écrite (retour à la ligne) partie de phrase telle qu’elle devrait être ». Éventuellement, une explication ou une question. De mon côté, cela me permet de faire une recherche dans le texte du billet pour repérer facilement l’endroit fautif. Je peux également répondre à chaque correction suggérée ou la refuser en explicitant ma raison.
+
+Parfois, de longues discussions s’ensuivent sur un point qui ne peut définitivement être tranché. C’est à la fois passionnant et instructif. J’aime la perversité de la langue française et le sado-masochisme de ses adeptes les plus puristes. Mon seul regret : ne pas pouvoir honorer les corrections typographiques à cause des limitations de WordPress. Par contre, la mise en forme générale d’un ebook est clairement un domaine où les suggestions sont les bienvenues car, sans pouvoir m’expliquer pourquoi, je suis assez peu satisfait de mes epubs.
+
+=> /cest-la-vie2/ un ebook
+=> /tag/epub/ mes epubs
+
+Remerciements
+
+La solution présentée a néanmoins un défaut. Elle relègue dans l’ombre le travail des relecteurs. Pourquoi ne pas montrer, sous la rude écorce de l’auteur solitaire, une pointe de gratitude ? Je propose donc, à ceux qui m’envoient des corrections, de préciser dans votre mail si vous souhaitez voir votre nom ajouté à la liste publique des relecteurs en bas de chaque billet, avec éventuellement un lien vers votre site ou votre compte Twitter.
+
+Ce n’est pas grand chose mais c’est ma manière à moi de vous dire : « Merci ! »
+
+Photo par Butch Dalisay. Corrections de François Martin et HLFH.
+
+=> http://www.flickr.com/photos/10966462@N02/7459308750 Butch Dalisay
+=> /no-proprietary-service.html François Martin
+=> https://twitter.com/HLFH_Space HLFH

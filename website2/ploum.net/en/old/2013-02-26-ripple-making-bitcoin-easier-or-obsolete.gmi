@@ -1,0 +1,44 @@
+# Ripple, making Bitcoin easier (or obsolete)
+=> files/old/ripples.jpg
+
+Who needs borders and local regulations when you have internet? The answer to this question is why I like Bitcoin so much. It is a trully decentralized currency.
+
+=> /bitcoin-bubble Bitcoin
+
+But Bitcoin has some major issues, something which was covered by Rick Falkvinge on his blog.
+
+=> http://falkvinge.net/2011/06/04/bitcoins-four-hurdles-part-one-usability/ his blog
+
+The first problem that hits any Bitcoin user is usability. Using Bitcoin is complicated and cumbersome. You can’t send a simple payment with a comment to someone without asking him first to create a dedicated Bitcoin address. You have to care about making a secure backup of your wallet. This makes things nearly impossible to use for a huge percentage of the population.
+
+The second problem is trust: how do you know that the Bitcoin address is valid and was not replaced through a man-in-the-middle attack? How do you know that you will well receive the goods or the service? Sure, many escrow services appeared but they make a Bitcoin transaction even more cumbersome.
+
+The third problem is the power of the exchanges. The whole Bitcoin economy runs with only a handful of Bitcoin exchange services, MtGox being the bigger. This de-facto centralisation is a big weakness for Bitcoin. MtGox has the power to control the price. If MtGox has any problem, the whole value plummets.
+
+Last but not least, people have to trust bitcoins. Except when Internet Archives offers its employees to receive a Bitcoin salary, most services accepting bitcoins are in fact converting them immediately to dollars/euros. It means that Bitcoin is seen as a transport, not a currency.
+
+=> http://thenextweb.com/insider/2013/02/21/after-employees-opt-to-be-paid-in-bitcoin-the-internet-archive-asks-for-donations-in-the-digital-currency/ Internet Archives offers its employees to receive a Bitcoin salary
+
+I even drafted a proposed solution as a Bitcoin-banking decentralized protocol. Recently a quite old project called Ripple surfaced and brought the idea to a whole new level: what if every one of us was a bank and we decide who we trust and at what level.
+
+=> /bitcoin-banking Bitcoin-banking decentralized protocol
+=> https://ripple.com Ripple
+
+Remember when you go on a trip with a bunch of friends. Everybody pays for some stuff and, at the end, you try to equilibrate the balance. It was a nightmare until you discovered Tricount. Well, Ripple is basically a decentralised Tricount at the scale of the internet. We are 7 billions friends on the same trip. We pay for each other, we owe some people money and that’s it.
+
+=> http://tricount.com Tricount
+=> http://www.screenr.com/c5K a decentralised Tricount at the scale of the internet
+
+The beauty of it is that it solves all Bitcoin’s hurdles as long as there are enough people in the network. It is easy, decentralized. It will also make money exchanges completely obsoletes. It has the potential to create a true P2P economy.
+
+Now, it is only a proof of concept. Firstly, if the client is opensource, the server is not (yet). And that’s a problem because there’s no competition to ripple.com at the moment. It means it is hugely centralised.
+
+=> https://github.com/rippleFoundation/ripple-client the client is opensource
+
+Also, you still have to exchange weird addresses like rKXFsg5EuG4BzLxdTBFXJq2a6iNfyx1hRX (this is my actual Ripple address). In order to become popular, Ripple should allow you to directly connect with your Facebook/G+/Twitter friends so you can trust them or send them money. After creating the Ripple wallet, the process is still very mysterious.
+
+Ripple also raises a few questions. Is its own internal money (XRP) making Bitcoin obsolete? Or is Bitcoin going to stay? And what about the Dollar or the Euro? At least, an interesting experiment to follow.
+
+Picture by Lee Haywood
+
+=> http://www.flickr.com/photos/leehaywood/4359067703/in/photostream/ Lee Haywood

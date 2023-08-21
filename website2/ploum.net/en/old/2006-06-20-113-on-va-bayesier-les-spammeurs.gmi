@@ -1,0 +1,221 @@
+# Les spammeurs vont se faire bayeser !
+
+This article is only intended for people who have or want to have a self-administrated mail server. Normal people can safely ignore this and read something else.
+
+=> /110-the-long-time-support-flying-car something else
+
+You have set a mail server on a Debian/Ubuntu box and you are proud of it. This is fine. You followed some tutorials and have a working SpamAssassin integration. Fine ! But there is still a problem : most spam emails are not considered as spam because they are beneath the 5.0 threshold. You thought about lowering the threshold but you had too many false-positive, especially from your hotmail/yahoo friends. So, we will polish a bit your SA installation and add some cool anti-spam stuffs.
+
+First of all : stop your spamassassin daemon:
+
+```
+ /etc/init.d/spamassassin stop 
+```
+
+All sections described below are independents. You can safely choose to ignore one.
+
+### Running SpamAssassin as nobody
+
+By default, SA is running as user root. This is not really a problem and the installation is working. Anyway, this is not very good because if anyone have access to the spamassassin process, he will gain access to the whole computer. Be paranoid, always !
+Also, you will quickly see that your log if full of :
+
+```
+ Jun 15 06:32:01 localhost spamd[30880]: Still running as root: user not specified with -u, not found, or set to root.  Fall back to nobody. 
+```
+
+This is a SA bug that we will address. We will choose to run SA with the user « nobody ». Feel free to choose any user with restricted right but nobody is fine. Modify the /etc/default/spamassassin file and add « -u nobody » in the OPTIONS variable.
+
+SA needs a pid file to know if it’s already running or not. This pid file is, by default, in /var/run. But user nobody doesn’t have write access to this folder ! SA cannot write his pid file anymore ! No worries, we will then put the pid file in a /var/run/spamd folder.
+
+You /etc/default/spamassassin will look like :
+
+```
+ ENABLED=1 OPTIONS="--create-prefs --max-children 5 --helper-home-dir -u nobody" PIDFILE="/var/run/spamd/spamd.pid" 
+```
+
+Don’t forget to create the folder and make it writable by nobody :
+
+```
+ # mkdir /var/run/spamd/ # chown nobody:nogroup /var/run/spamd 
+```
+
+Spamassassin needs his own directory. As you have run SA as root, this directory is currently /root/.spamassassin. But this folder is for root only ! Not for nobody ! Let’s change this :
+
+```
+ # chown -R nobody:nogroup /root/.spamassassin 
+```
+
+Open the file /etc/passwd with your text editor and find the nobody line. You will see that $HOME is set to non-existent or something like that. Change it to /root. User nobody doesn’t need a shell so the line must be something like :
+
+```
+ nobody:x:64434:64434:nobody:/root:/bin/false 
+```
+
+(with other numbers, of course).
+
+### Razor, pyzor, dcc
+
+The principle or razor is very simple : each time it receives a mail, it computes a hash of the mail and compares it with a « known-spam-hash-list » available on the web. If there is a match, the SA score is increased. Pyzor and DCC are the same principle but with another implementation and database.
+
+In order to use one of them, you simply have to install it. You can install the three but it will cost a bit more in CPU time for each email.
+
+```
+ # apt-get install razor pyzor dcc-client 
+```
+
+Yes, that’s all ! Or nearby…
+
+In order to use pyzor as nobody, you have to :
+
+```
+ # mkdir /root/.pyzor # chown nobody:nogroup /root/.pyzor # sudo -u nobody pyzor discover 
+```
+
+Edit : if you see the following error in your logs :
+
+```
+ localhost dccifd[14909]: socket(UDP): Address family not supported by protocol 
+```
+
+then dcc is not working correctly. In a root shell type the following command :
+
+```
+ # cdcc "ipv6 off" 
+```
+
+You might want to add this command to your startup script. You can also install the dcc-server but I haven’t configured it yet and it seems a bit overkill. If you don’t plan to install your own dcc-server, you can safely type :
+
+```
+ # cdcc "delete 127.0.0.1" # cdcc "delete 127.0.0.1 Greylist" 
+```
+
+### Uribl
+
+Uribl is a database that contains a list of URL. The Uribl filter will not check if the mail come from one of those URL but, instead, check if the URL is in the body of the mail. Indeed, the goal of a spammer is, most of the time, that you click on a link in the email.
+
+=> http://www.uribl.com/about.shtml Uribl
+
+Open the /etc/spamassassin/local.cf file and add the following lines :
+
+```
+ #http://www.uribl.com/usage.shtml urirhssub       URIBL_BLACK  multi.uribl.com.        A   2 header          URIBL_BLACK  eval:check_uridnsbl('URIBL_BLACK') describe        URIBL_BLACK  Contains an URL listed in the URIBL blacklist tflags          URIBL_BLACK  net score           URIBL_BLACK  3.0 urirhssub       URIBL_GREY  multi.uribl.com.        A   4 header          URIBL_GREY  eval:check_uridnsbl('URIBL_GREY') describe        URIBL_GREY  Contains an URL listed in the URIBL greylist tflags          URIBL_GREY  net score           URIBL_GREY  0.25 
+```
+
+If you are using SpamAssassin 3.1 or greater (Ubuntu 6.06), add the following instead :
+
+```
+ #http://www.uribl.com/usage.shtml urirhssub       URIBL_BLACK  multi.uribl.com.        A   2 body            URIBL_BLACK  eval:check_uridnsbl('URIBL_BLACK') describe        URIBL_BLACK  Contains an URL listed in the URIBL blacklist tflags          URIBL_BLACK  net score           URIBL_BLACK  3.0 urirhssub       URIBL_GREY  multi.uribl.com.        A   4 body            URIBL_GREY  eval:check_uridnsbl('URIBL_GREY') describe        URIBL_GREY  Contains an URL listed in the URIBL greylist tflags          URIBL_GREY  net score           URIBL_GREY  0.25 
+```
+
+### Efficient bayesian training in SA
+
+Well, frankly, my home-made bayesian filter is not working as expected. So we will use the SA’s one.
+
+=> /89-the-ploum-s-ultimate-anti-spam-solution home-made bayesian filter
+
+Firstly, you need to train the bayesian filter. Find a mailbox full of spam and run :
+
+```
+ sa-learn --spam --mbox /var/lib/hula/users/fritalk/ploum/spam.box 
+```
+
+(this example is my spam folder on my Hula server. You might want to adapt it to your own needs. See man sa-learn for more informations).
+You also have to teach SA what mails are ham (=not spam) :
+
+=> http://hula-project.org/Hula_Server Hula server
+
+```
+ sa-learn --ham --mbox /var/lib/hula/users/fritalk/ploum/inbox.box 
+```
+
+You can use those commands whenever you want. It’s particularly useful if some spam is still not detected and if you have false positive. But don’t do it if you don’t need it, it can cause overfitting and, believe me, you don’t want it to happen.
+
+By default, the bayesian filter doesn’t work if you don’t teach him at least 200 spams and 200 hams. That’s quite a high number and you may want to use the filter anyway. Simply add the following lines in /etc/spamassassin/local.cf :
+
+```
+ bayes_min_ham_num 100 bayes_min_spam_num 100 
+```
+
+Oh, and don’t use auto_learn ! Never ! It can cause overfitting. That’s bad.
+
+### Personal SA tweaks and settings
+
+SpamAssassin runs a wide number of tests on each received email. It can be quite interesting to see which ones are frequently used. Dallas Engelken wrote a little perl tool that we will use.
+According to your SA version, download the 3.0 script (Debian Sarge) or the 3.1 version (Ubuntu 6.06). Move the file in /usr/local/bin, rename it « sa-stats.pl » and chmod +x it.
+
+=> http://spamassassin.apache.org/tests.html wide number of tests
+=> http://www.rulesemporium.com/programs/sa-stats.txt the 3.0 script
+=> http://www.rulesemporium.com/programs/sa-stats-1.0.txt the 3.1 version
+
+This script will parse your logs and summarize all SA related informations. Very useful.
+
+In order to use it easily, I wrote a tiny bash script :
+
+```
+ #!/bin/bash HTML_OUTPUT="/var/www/spamassassin.html" L_DIR="/var/log" ZELOG="syslog" rm -f $HTML_OUTPUT /usr/local/bin/sa-stats.pl -l $L_DIR -f $ZELOG -n 100  -w > $HTML_OUTPUT 
+```
+
+Launch this script in a cronjob every hour. Your SA statistics will be available at http://localhost/spamassassin.html. If you don’t want it to be displayed in a web page, simply remove the -w trigger.
+
+=> http://localhost/spamassassin.html http://localhost/spamassassin.html
+
+Now, we have more informations about tests. You may want to adjust the value of a specific test. We will do this in the /etc/spamassassin/local.cf file. Open it with a text editor.
+
+Let assume that we want to lower the value of FORGED_MUA_OUTLOOK test but we want to add more weight to HTML_IMAGE_ONLY_12. In local.cf, simply add the following lines :
+
+```
+ score FORGED_MUA_OUTLOOK 1.0 score HTML_IMAGE_ONLY_12 2.0 
+```
+
+This way, we can control the absolute value of a given test. But, most of the time, you don’t know the current value and you simply want to add/decrease the current weight. This is the relative value and is achieved by putting numbers between parenthesis.
+
+```
+ score FORGED_MUA_OUTLOOK (-1.0) score HTML_IMAGE_ONLY_12 (1.0) 
+```
+
+This settings can be really useful but use it with parsimony.
+
+If you are sure that nobody on your server want to receive Japanese or Chinese emails, we have two ways to let SA know about it.
+The first one is to tell SA that we only accept western locales :
+
+```
+ ok_locales en 
+```
+
+We can be more aggressive and set only a list of accepted languages. If you only receive emails in French, English and Dutch, it would be :
+
+```
+ ok_languages en fr nl 
+```
+
+The full list is available in the man page with the perldoc Mail::SpamAssassin::Conf command. (apt-get install perl-doc might be required)
+
+That’s all for SpamAssassin. You can restart it with :
+
+```
+ /etc/init.d/spamassassin start 
+```
+
+The first day, it’s a good idea to monitor the log with :
+
+```
+ tail -f /var/log/syslog 
+```
+
+### Conclusion
+
+You might want to add more stuffs to your server like dynamical blacklisting (RBL, XBL,…) and greylisting. As those methods can result in mail loss (or big delays), try without them first.
+
+=> http://www.greylisting.org/ greylisting
+
+Also, as we added a lot of rules, you might want to set your SA threshold higher. Ask your users to send you any false-positive and adjust your rules if needed. It’s also a good practice to never drop an email, even if the spam score is really high. Simply make a filter that will put any spam in a special folder.
+
+If you have catched a lot of non-detected spams, keep them in a special folder a run them once with the following script :
+
+```
+ #!/bin/bash BOX=/var/lib/hula/users/fritalk/ploum/spam.box sa-learn --spam --mbox $BOX #we share our spams with others pyzor report --mbox < $BOX 
+```
+
+And if you are in doubt, read « why we must fight spam » (in french).
+
+=> /54-egg-bacon-sausage-et-extra-dimensionnement-penien why we must fight spam

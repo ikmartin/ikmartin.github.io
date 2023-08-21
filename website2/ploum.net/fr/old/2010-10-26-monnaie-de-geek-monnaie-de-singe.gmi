@@ -1,0 +1,135 @@
+# Monnaie de geek, monnaie de singe ?
+
+Si il y a une quelconque constante dans ma recherche du monde parfait, c’est certainement la décentralisation.
+
+En effet, j’estime qu’un bon service doit généralement être un service pour lequel on n’est pas dépendant d’un unique fournisseur. Raison pour laquelle je suis un apôtre de Jabber depuis tant d’années, pour laquelle je milite pour l’utilisation d’un service comme identi.ca en lieu et place de Twitter.
+
+=> /39-jabber-pour-marie-et-les-non-ordinateuriens apôtre de Jabber depuis tant d’années
+=> http://identi.ca/ploum identi.ca
+=> /no-proprietary-service.html Twitter
+
+À propos, un problème qui me hante depuis plusieurs années est l’argent. Parce que je n’en ai pas assez ? Un peu oui, mais je suis loin d’être le seul. Également parce que le modèle actuel d’échange monétaire est très peu compatible avec le monde connecté, monde qui me tient particulièrement à cœur[1].
+
+=> http://fr.wikipedia.org/wiki/Fichier:Solidus_Honorius_402_76001657.jpg 
+=> ../files/old/monnaie1.jpg Des sous, des sous, des sous
+
+Quelques ténors hyper centralisés ont réussi à s’imposer en ligne : Visa, Paypal. Résultat ? Un coût transactionnel prohibitif ! Frais bancaires mensuels, frais fixes par transaction, pourcentage sur chaque transaction, taux de change. En fin de compte, on en vient à payer plus cher les transactions elles-mêmes que les produits ou services. Exit également les petites sommes. 1€ pour soutenir Framasoft ? Si ça se transforme en 0,20€ pour eux et 0,80€ pour Paypal/Visa, merci bien.
+
+=> http://www.framablog.org/index.php/post/2010/10/12/1000-10-1-:-une-campagne-originale,-un-soutien-indispensable soutenir Framasoft
+
+Fort logiquement, j’ai été interpellé par l’initiative Flattr dont l’objectif est de permettre des micros dons à des projets qu’on aime. Au point de dépenser quelques euros pour tester le bazar. *** Instant Pub *** Dans le cadre purement scientifique de cette expérience, pour pouvez d’ailleurs me « flatter », merci pour l’artiste ! *** Retour à nos programmes ***.
+
+=> /no-proprietary-service.html Flattr
+=> https://flattr.com/thing/76498/Where-is-Ploum « flatter »
+
+=> http://flattr.com/thing/76498/Where-is-Ploum 
+=> http://api.flattr.com/button/button-static-50x60.png Flattr Where is Ploum?
+
+Flattr, c’est pas mal mais ça reste centralisé et avec beaucoup de frais. On verra à l’usage, je vous dirai si j’ai pu récupérer ma mise initiale, ce qui est mon objectif (en attendant, je flatte les projets que j’aime bien, ça me fait plaisir).
+
+Bref, on est encore loin de notre monnaie électronique décentralisée.
+
+#### Notes
+
+[1] hacker, hihi, …
+
+=> ../files/old/ruelleglauque.jpg Un coin mal famé de l'internet
+Tout en ruminant ces quelques pensées à relents économique, je laissais mes pas errer dans un de ces coins obscurs et mal famé de l’internet, ce genre de lieu ou vous ne laisseriez pas votre petit windowsien se promener seul le soir. Par le plus grand des hasards, je levai les yeux et vit un grand panneau clignotant dont quelques ampoules à moitié arrachées grésillaient dans le crépuscule : Bitcoin.
+
+=> https://linuxfr.org//2010/09/30/27430.html mal famé
+=> http://www.bitcoin.org/ Bitcoin
+
+Bitcoin était exactement ce que je cherchais, juste en plus geek et en un peu plus underground[1].
+
+Reprenons depuis le début. L’économie, ce n’est jamais que des maths sur un axe à une seule dimension et une seule unité : les sous. Le reste, ce sont les quatres opérations de base, tout économiste qui vous prétendra le contraire est un charlatan[2].
+
+La seule et unique chose qui a de le valeur en ce bas monde est le travail. Tout autre chose n’est que le fruit d’un travail. Même la matière première comme l’or est le fruit d’un travail : extraction, raffinement, transport, stockage. Ce n’est pas la matière que l’on paye, c’est le travail effectué.
+
+Lorsque les hommes commencèrent à se spécialiser, ils durent bien s’échanger les fruits de leur travail : le troc.
+
+Mais que faire si je veux un poulet mais que le marchand de poulets n’a que faire de mes souris USB ? (nous sommes au néolithique, on utilisait encore des souris PS2)
+
+On se met d’accord sur un système de base. Pour que cela marche, il faut que ce système soit très difficile à produire. Prenons l’or par exemple. On me donne un peu d’or pour mes souris USB et avec cet or, je peux acheter des poulets. Comme l’or est rare, cela fonctionne bien. Si on avait utiliser des cailloux, cela n’aurait pas fonctionné car n’importe qui peut devenir riche en ramassant des cailloux, cailloux qui perdent aussitôt leur valeur. On appelle ça la dévaluation. Du coup, le marchand de poulets ne voudra pas de mes cailloux.
+
+=> ../files/old/travail.jpg Le travail
+
+En effet, là seule chose que le marchand de poulets veut, c’est être sûr de pouvoir lui-même échanger ce que je lui propose auprès d’un autre marchand, que ce soit de l’or, des diamants ou de la viande de caribou.
+
+L’or n’a donc plus sa valeur intrinsèque liée au travail d’extraction, il a la valeur que le marchand de poulets espère pouvoir en tirer !
+
+Jusque là, nous n’avons fait qu’ajouter une étape intermédiaire au troc car l’or a réellement de la valeur. Mais cette valeur n’est plus tout à fait matérielle. Hm, ça commence à partir en sucette.
+
+L’or étant lourd, peu pratique, on décide de laisser l’or dans des coffres. On va s’échanger des papiers certifiant la propriété de cet or. De fil en aiguille, ce papier finira par s’échanger sans que plus personne ne se préoccupe de savoir si oui ou non il y a de l’or dans les coffres. C’est ce qu’on appelle la dématérialisation de la monnaie.
+
+=> ../files/old/pq.jpg des ptits bouts de papier comme monnaie
+La monnaie devient donc virtuelle ! Depuis la seconde moitié du vingtième-siècle, nous utilisons donc tous de la monnaie virtuelle. Pour empêcher n’importe qui d’en fabriquer (car rien ne s’y oppose, tout comme dans le cas des cailloux), il faut des tas de protections artificielles (sur les billets de banques par exemple).
+
+Mais cela va plus loin. Les billets eux-mêmes ne sont plus pratiques. Du coup, vous les confiez à une banque qui, en échange, affiche des chiffres sur votre écran d’ordinateur. Vous voulez acheter de la musique en ligne ou commander un zinzogène à pistons ? Il suffit de soustraire quelques chiffres à l’écran. Vous travaillez comme un fou tout le mois pour quoi ? Voir quelques chiffres s’additionner sur votre écran.
+
+En conséquence, difficile pour votre argent d’être plus virtuel que ce qu’il n’est à présent. N’importe qui avec un ordinateur pourrait donc créer de l’argent ? Non, car des mécanismes très complexes et très coûteux ont été mis en place par chacune des banques. Et le problème des système centralisé s’est bien fait sentir : une arnaque quelque part et tout le monde en pâtit.
+
+Cela ne vout fait penser à rien vous ces gros systèmes centralisés bardés de sécurités artificielles et qui, en tant qu’intermédiaires, pompent 80% de l’argent que vous envoyez à votre destinataire ? Gagné, l’industrie du disque et ses DRMs.
+
+=> /213-le-piratage l’industrie du disque
+=> /123-un-petit-air-de-liberte ses DRMs
+
+Voici donc venu le bitcoin. Tout comme les euros sur votre compte en banque, le bitcoin est une monnaie virtuelle mais complètement décentralisée. C’est un peu le BitTorrent de la monnaie.
+
+=> http://www.bitcoin.org/fr bitcoin
+=> http://fr.wikipedia.org/wiki/Bittorrent BitTorrent
+
+=> ../files/old/bitcoin.png Bitcoin
+
+Un algorithme complexe (et entièrement opensource) assure que l’argent ne sort pas de nul part. Ce n’est pas tout à fait vrai car, dans une période de démarrage de plusieurs années, il est possible de créer des bitcoins en laissant tourner son ordinateur assez longtemps (vraiment très longtemps, de l’ordre du mois). Au fil du temps, il est de plus en plus difficile de créer des bitcoins, jusqu’au jour où la limite de 21.000.000 de bitcoins en circulation sera atteinte. Mais c’est anecdotique en ce qui nous concerne.
+
+Cela peut sembler peu mais le bitcoin se divisant à l’infini, cela ne devrait pas être un problème pratique.
+
+Parlons pratique, justement. Pour utiliser les bitcoins, il faut soit avoir un compte dans une banque de bitcoin comme MyBitcoin, soit installer le petit logiciel (on est alors sa propre banque).
+
+=> https://www.mybitcoin.com/ MyBitcoin
+
+Pour envoyer un bitcoin (ou 0,1 BC ou 0,01BC), il suffit de demander au bénéficiaire une adresse. Par exemple, ceci est une adresse valide :
+
+1Pyaf6jvBFWqtqwbuohggoW9GBoyhETZF4
+
+Si vous copiez/coller cette adresse dans votre logiciel bitcoin ou votre banque bitcoin, je recevrai automatiquement l’argent.
+
+Pour vous lancer, un bonne âme a créé un site de don de bitcoin. Essayez-le et vous recevrez automatiquement 0,5BC. Pour continuer, vous pouvez m’envoyer 0,1BC ou moins, juste histoire de voir si ça marche (attention, si vous installez le software, votre première transaction peut mettre plusieurs heures a être reçue, c’est normal).
+
+=> https://freebitcoins.appspot.com/ un site de don de bitcoin
+
+Les avantages de ce système sont absolument énormes : transactions instantanées partout dans le monde sans le moindre frais, anonymat garanti (chaque bénéficiaire dispose d’un nombre illimité d’adresses de réception), possibilité de faire de micros dons.
+
+C’est cool et encore très (trop) geek, je l’admets.
+
+Cela n’a aucune valeur autre que ludique ?
+
+Pas tout à fait. Souvenez-vous de notre marchand de poulets qui était prêt à accepter pour tout paiement un simple bout de papier à condition que ce bout de papier lui permette d’acheter d’autres biens ou services. Pour le bitcoin, c’est pareil.
+
+=> ../files/old/gold.jpg de l'or contre des bitcoin ?
+Quelques sites permettent d’ores et déjà de payer en bitcoin[3]. Certains spéculateurs achetent des bitcoins, l’échangent contre de l’or, plusieurs sites boursiers existent déjà et un type de Sydney tond votre pelouse pour des bitcoins.
+
+=> http://www.bitcoin.org/fr/node/15 payer en bitcoin
+=> http://bitswap.cz.cc/index.php?p=tagResults&amp;tag=mowing sites boursiers
+
+Actuellement, un bitcoin vaut plus ou moins 0,07€. Donc, en vous proposant de tester le bazar et de me virer 0,1 BC, je vous ai arnaqué de 0,007€. J’ai la fibre commerciale dans la peau moi poupée.
+
+Bon, le point noir c’est que cela reste fort geek. Cela manque d’une interface conviviale (mais cela va sans doute venir). Il y a peut-être également des problèmes de conception que je n’ai pas encore vu et, si un jour ça marche à grande échelle, pas sûr que les gouvernements voient ça d’un bon œil.
+
+Je n’y investirai donc pas toutes mes économies mais j’adore le principe. Je suis ouvert à tout proposition de petit boulot rétribué en bitcoin, juste pour le fun de lancer une économie alternative.
+
+Parce que, entre nous, à l’heure où nos gouvernements (pour ceux qui ont la chance d’en avoir) s’étripent sur des combats d’arrières gardes, tentent d’imposer leur régulation sur tout, il est peut-être temps que la nation internationale des internautes commence tout doucement à penser à son indépendance. Non ? J’ai dit une connerie ?
+
+Je peux, je suis (encore) belge.
+
+UPDATE : Il y a même déjà un site de ventes aux enchères type Ebay !
+
+=> http://www.biddingpond.com/ site de ventes aux enchères type Ebay
+
+#### Notes
+
+[1] ça a été créé par un geek japonais, c’est donc forcément underground
+
+[2] J’assume. Si, pleinement.
+
+[3] l’anonymat garanti et la possibilité de petites sommes en font une aubaine pour le porno

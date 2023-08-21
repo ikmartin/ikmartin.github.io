@@ -1,0 +1,24 @@
+# New features for AV-98-offline
+
+I’m back for three days in a cabin with the family and no network at all. A good opportunity to test my offline setup. And, yes, I’m damn pleased by AV-98-offline. It works exactly like I want it to do.
+
+## Fun new features
+
+As the whole offline browsing experience starts to be really good, I added a couple of "fun" features that are really useful.
+
+First, if you have "xsel" installed, you only need to type "go" to access an URL in your clipboard. Both X clipboard and permanent clipboard are supported. If both contain an URL, AV-98 will ask you which one you want to visit.
+
+Secondly, inspired by Lagrange, AV-98 now displays a "smart title" in red at the start of everypage. It’s really useful while on a tour to know where you are. It adds a form of "personality" to a capsule. If offline, the last accessed time for that page is also displayed. It looks like a minor feature but it really does improve my Gemini experience.
+
+## Changing terminal
+
+I’m currently reading a book recommended by a reader of this gemlog : "From Bash to Z Shell". It’s exactly what I needed to really start understand what I’m doing with the shell. I’m really grateful, thanks for the recommendation, mate!
+
+I discovered that some Gemlogs were crashing not only my shell but also my whole terminal. It seems that displaying some emojis in st-terminal without the proper font package installed makes the whole thing crash. I switched from st/bash to kitty/zsh. Still a lot to learn but it’s fun.
+
+## Crashing forges
+
+AV-98-offline was originally pushed to the notabug.org forge. As it was unavailable for a couple of days, I pushed to tildegit, home of AV-98. Tildegit is unavailable right now so the latest changes are on notabug. I will probably take a paying account on sr.ht and publish a real version of my fork with a clear new name to not confuse users. I’m curious about sr.ht and how to use it more by email and less by web.
+
+=> https://notabug.org/ploum/AV-98-offline/ AV-98-offline on Notabug
+=> https://tildegit.org/ploum/AV-98-offline/ AV-98-offline on Tildegit

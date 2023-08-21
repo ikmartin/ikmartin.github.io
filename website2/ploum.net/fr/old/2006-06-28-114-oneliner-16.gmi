@@ -1,0 +1,5 @@
+# [Oneliner 16]
+
+=> ../files/old/trolley.png Trolley bus
+
+Je m’appelle Minus, je suis un trolley-bus

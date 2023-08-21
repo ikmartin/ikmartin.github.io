@@ -1,0 +1,81 @@
+# How to Kill a Decentralised Network (such as the Fediverse)
+=> /files/metadeath.jpg
+
+The year is 2023. The whole Internet is under the control of the GAFAM empire. All of it? Well, not entirely. Because a few small villages are resisting the oppression. And some of those villages started to agregate, forming the "Fediverse".
+
+With debates around Twitter and Reddit, the Fediverse started to gain fame and attention. People started to use it for real. The empire started to notice.
+
+## Capitalists Against Competition
+
+As Peter Thiel, one of Facebook’s prominent investor, put it: "Competition is for losers." Yep, those pseudo "market is always right" people don’t want a market when they are in it. They want a monopoly. Since its inception, Facebook have been very careful to kill every competition. The easiest way of doing it being by buying companies that could, one day, become competitors. Instagram, WhatsApp to name a few, were bought only because their product attracted users and could cast a shadow on Facebook.
+
+But the Fediverse cannot be bought. The Fediverse is an informal group of servers discussing through a protocol (ActivityPub). Those servers may even run different software (Mastodon is the most famous but you could also have Pleroma, Pixelfed, Peertube, WriteFreely, Lemmy and many others).
+
+You cannot buy a decentralised network!
+
+But there’s another way: make it irrelevant. That’s exactly what Google did with XMPP.
+
+## How Google joined the XMPP federation
+
+At the end of the 20th century, instant messengers (IM) were all the rage. One of the first very successful ones was ICQ, quickly followed by MSN messenger. MSN Messenger was the Tiktok of the time: a world where teenagers could spend hours and days without adults. 
+
+As MSN was part of Microsoft, Google wanted to compete and offered Google Talk in 2005, including it in the Gmail interface. Remember that, at the time, there was no smartphone and very little web app. Applications had to be installed on the computer and Gmail web interface was groundbreaking. MSN was even at some point bundled with Microsoft Windows and it was really hard to remove it. Building Google chat with the Gmail web interface was a way to be even closer to the customers than a built-in software in the operating system.
+
+While Google and Microsoft were fighting to achieve hegemony, free software geeks were trying to build decentralised instant messaging. Like email, XMPP was a federated protocol: multiple servers could talk together through a protocol and each user would connect to one particular server through a client. That user could then communicate with any user on any server using any client. Which is still how ActivityPub and thus the Fediverse work.
+
+In 2006, Google talk became XMPP compatible. Google was seriously considering XMPP. In 2008, while I was at work, my phone rang. On the line, someone told me: "Hi, it’s Google and we want to hire you." I made several calls and it turned out that they found me through the XMPP-dev list and were looking for XMPP servers sysadmins.
+
+So Google was really embracing the federation. How cool was that? It meant that, suddenly, every single Gmail user became an XMPP user. This could only be good for XMPP, right? I was ecstatic.
+
+## How Google killed XMPP
+
+Of course, reality was a bit less shiny. First of all, despites collaborating to develop the XMPP standard, Google was doing its own closed implementation that nobody could review. It turns out they were not always respecting the protocol they were developing. They were not implementing everything. This forced XMPP development to be slowed down, to adapt. Nice new features were not implemented or not used in XMPP clients because they were not compatible with Google Talk (avatars took an awful long time to come to XMPP). Federation was sometimes broken: for hours or days, there would not be communications possible between Google and regular XMPP servers. The XMPP community became watchers and debuggers of Google’s servers, posting irregularities and downtime (I did it several times, which is probably what prompted the job offer).
+
+And because there were far more Google talk users than "true XMPP" users, there was little room for "not caring about Google talk users". Newcomers discovering XMPP and not being Google talk users themselves had very frustrating experience because most of their contact were Google Talk users. They thought they could communicate easily with them but it was basically a degraded version of what they had while using Google talk itself. A typical XMPP roster was mainly composed of Google Talk users with a few geeks.
+
+In 2013, Google realised that most XMPP interactions were between Google Talk users anyway. They didn’t care about respecting a protocol they were not 100% in control. So they pulled the plug and announced they would not be federated anymore. And started a long quest to create a messenger, starting with Hangout (which was followed by Allo, Duo. I lost count after that).
+
+As expected, no Google user bated an eye. In fact, none of them realised. At worst, some of their contacts became offline. That was all. But for the XMPP federation, it was like the majority of users suddenly disappeared. Even XMPP die hard fanatics, like your servitor, had to create Google accounts to keep contact with friends. Remember: for them, we were simply offline. It was our fault.
+
+While XMPP still exist and is a very active community, it never recovered from this blow. Too high expectation with Google adoption led to a huge disappointment and a silent fall into oblivion. XMPP became niche. So niche that when group chats became all the rage (Slack, Discord), the free software community reinvented it (Matrix) to compete while group chats were already possible with XMPP. (Disclaimer: I’ve never studied the Matrix protocol so I have no idea how it technically compares with XMPP. I simply believe that it solves the same problem and compete in the same space as XMPP).
+
+Would XMPP be different today if Google never joined it or was never considered as part of it? Nobody could say. But I’m convinced that it would have grown slower and, maybe, healthier. That it would be bigger and more important than it is today. That it would be the default decentralised communication platform. One thing is sure: if Google had not joined, XMPP would not be worse than it is today.
+
+## It was not the first: the Microsoft Playbook
+
+What Google did to XMPP was not new. In fact, in 1998, Microsoft engineer Vinod Vallopllil explicitly wrote a text titled "Blunting OSS attacks" where he suggested to "de-commoditize protocols & applications […]. By extending these protocols and developing new protocols, we can deny OSS project’s entry into the market." 
+
+Microsoft put that theory in practice with the release of Windows 2000 which offered support for the Kerberos security protocol. But that protocol was extended. The specifications of those extensions could be freely downloaded but required to accept a license which forbid you to implement those extensions. As soon as you clicked "OK", you could not work on any open source version of Kerberos. The goal was explicitly to kill any competing networking project such as Samba. 
+
+This anecdote was told Glyn Moody in his book "Rebel Code" and demonstrates that killing open source and decentralised projects are really conscious objectives. It never happens randomly and is never caused by bad luck.
+
+Microsoft used a similar tactic to ensure dominance in the office market with Microsoft Office using proprietary formats (a file format could be seen as a protocol to exchange data). When alternatives (OpenOffice then LibreOffice) became good enough at opening doc/xls/ppt formats, Microsoft released a new format that they called "open and standardised". The format was, on purpose, very complicated (20.000 pages of specifications!) and, most importantly, wrong. Yes, some bugs were introduced in the specification meaning that a software implementing the full OOXML format would behave differently than Microsoft Office. 
+
+Those bugs, together with political lobbying, were one of the reasons that pushed the city of Munich to revert its Linux migration. So yes, the strategy works well.  Today, docx, xlsx and pptx are still the norms because of that. Source: I was there, indirectly paid by the city of Munich to make LibreOffice OOXML’s rendering closer to Microsoft’s instead of following the specifications.
+
+UPDATE:
+=> https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish This tactic even has a Wikipedia page
+
+## Meta and the Fediverse
+
+People who don’t know history are doomed to repeat it. Which is exactly what is happening with Meta and the Fediverse. 
+
+There are rumours that Meta would become "Fediverse compatible". You could follow people on Instagram from your Mastodon account.
+
+I don’t know if those rumours have a grain of truth, if it is even possible for Meta to consider it. But there’s one thing my own experience with XMPP and OOXML taught me: if Meta joins the Fediverse, Meta will be the only one winning. In fact, reactions show that they are already winning: the Fediverse is split between blocking Meta or not. If that happens, this would mean a fragmented, frustrating two-tier fediverse with little appeal for newcomers. 
+
+UPDATE: Those rumours have been confirmed as at least one Mastodon admin, kev, from fosstodon.org, has been contacted to take part in an off-the-record meeting with Meta. He had the best possible reaction: he refused politely and, most importantly, published the email to be transparent with its users. Thanks kev!
+
+=> https://fosstodon.org/@kev/110592625692688836 Mail from Meta to Kev, from Fosstodon, and reply
+
+I know we all dream of having all our friends and family on the Fediverse so we can avoid proprietary networks completely. But the Fediverse is not looking for market dominance or profit. The Fediverse is not looking for growth. It is offering a place for freedom. People joining the Fediverse are those looking for freedom. If people are not ready or are not looking for freedom, that’s fine. They have the right to stay on proprietary platforms. We should not force them into the Fediverse. We should not try to include as many people as we can at all cost. We should be honest and ensure people join the Fediverse because they share some of the values behind it.
+
+By competing against Meta in the brainless growth-at-all-cost ideology, we are certain to lose. They are the master of that game. They are trying to bring everyone in their field, to make people compete against them using the weapons they are selling.
+
+Fediverse can only win by keeping its ground, by speaking about freedom, morals, ethics, values. By starting open, non-commercial and non-spied discussions. By acknowledging that the goal is not to win. Not to embrace. The goal is to stay a tool. A tool dedicated to offer a place of freedom for connected human beings. Something that no commercial entity will ever offer.
+
+=> https://framapiaf.org/@davidrevoy/110583258129951932 Picture by David Revoy
+=> https://grenoble.ninja/comment-tuer-un-reseau-decentralise-tel-que-le-fediverse Traduction en Français par Nicolas Vivant
+=> https://blognooficial.wordpress.com/2023/07/05/como-acabar-con-una-red-descentralizada-como-fediverse/ Traducción Española de Matii 
+=> https://cohost.org/Janet/post/1952079-ok-nun-auch-auf-deu Deutsche Übersetzung von Janet und anderen
+=> https://poliverso.org/display/0477a01e-1964-abfd-552f-aef477916660 Traduzione italiana di Nilocram

@@ -1,0 +1,13 @@
+# Evolution of the Web. 
+
+## The Web, circa 2000: 
+A website is a place where people can read what you wrote.
+
+## The Web, circa 2020:
+A website is an online place where you can tell people to follow you on different social media so they might have a chance, if the algorithm allows it, to read what you hope to write in the future.
+
+A social media is a platform where you can create an account, get an audience and ask them to follow you on another social media platform. 
+
+## Gemini, circa 2020: 
+Cf "The Web, circa 2000".
+

@@ -1,0 +1,37 @@
+# Is Fairphone repairability just marketing ?
+
+Fairphone has announced its new phone, the FP4. And I’ve some mixed feelings about it.
+
+## Our bad Fairphone experience
+
+My wife bought a FP3+ a few months ago and the experience has been terrible. Indoor reception is really bad (she can’t phone in our house, a problem no other phone has), microphone is really weak (every correspondent complain about it) and pictures are ugly. 
+
+Also, the phone is huge. But walking into a phone shop made me realise that it’s a normal thing. All those completely identical pieces of black glass and plastic lined in the shop. Without a price tag, there would be absolutely no way to differentiate them. Each time I see a reasonnably sized one, it’s an iphone.
+
+So, on the overall, our experience with Fairphone has been really bad.
+
+A few days ago, the FP3 felt into water and stopped charging. Also, the microphone stopped working, recording only awful noises.
+
+This allowed me to test the repairability of the thing. I’m really bad with any tool other than a keyboard but I’m getting better through the maintenance of bikes and typewriters.
+
+I managed to dismantle the FP3. Besides cleaning everything, there’s little I could do. Investigating all the symptoms makes me think that the bottom module (microphone + charging port) is probably broken. In fact, by reading a bit more, I think that this particular module was faulty since the beginning.
+
+So the plan was to replace this 30€ part. Unfortuntatly, it’s out of stock on the official website.
+
+So here I am, stuck with a deadphone that I can’t repair. Even if I could, my wife don’t want to use it anymore because the picture are so awful (I somewhat managed to bring the pictures from "a white indistinguishible mess" to "somewhat blurry and blank but accurate picture" by installing Open Camera instead of the default camera app).
+
+## My naive hope and the cruel reality
+
+My secret hope was that, at some point, Fairphone would release a new camera module. It looks like, as we have an FP3+, we already have an upgraded camera module. I can’t imagine how bad the old one should have been.
+
+But the announce of the FP4 is a cold shower to my expectations. We don’t need more processor, more memory or anything. In our case, we only need a new microphone and a new camera. The new FP4 platform makes it clear that no new module will ever be done for the FP3. So we have to buy a whole new smartphone. Which defeats the whole point of the Fairphone.
+
+Maybe it takes time for Fairphone to make a durable platform (after all, they promise 5 years of guarantee with the FP4). Maybe it is nearly impossible to follow the pace of the current Android development, hardware speaking. After all, all this industry is in the game of selling you as many smartphone per year as they can.
+
+As a consumer having been burned once, it’s very unlikely I will put more money into the Fairphone without some insurance first. 
+
+I can’t help but think that, while the ethical sourcing part of Fairphone is probably fair, the ecological side is a mix of hopeful thinking and green washing. After all, Fairphone is a company that needs to make money. And they make more money by selling new phones every year than selling spare parts. There’s a clear conflict of interest here.
+
+I was hoping of a timeless plateform that you could upgrade by buying up-to-date modules. Not sure if it will ever be possible. At least, Fairphone paved the way.
+
+Personaly, I’m still keeping my shity Hisense A5, the only phone with an e-ink screen so far.

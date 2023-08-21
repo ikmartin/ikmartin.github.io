@@ -1,0 +1,54 @@
+# Le problème avec l’argent
+=> files/old/broker.jpg
+
+Si tout le monde rêve d’avoir de l’argent, force est de constater que le mot a pris une connotation très péjorative dans notre société. Est-il pire insulte que « riche » alors que « pauvre » porte la compassion ?
+
+Pourtant, l’argent est un outil particulièrement utile. C’est une manière très efficace de rétribuer ou de récompenser quelqu’un pour un travail, un service ou n’importe quelle autre occasion. Lorsque notre mamy-gâteau nous donnait une pièce en nous disant « Va t’acheter des bonbons », elle exploitait au mieux le concept d’argent : nous pouvions en effet décider d’acheter des bonbons, un jouet ou économiser pour un nouveau vélo. Bref, nous étions libres.
+
+À ce titre, l’argent est extrêmement libérateur. C’est également un merveilleux incitant si on estime que quelqu’un est rémunéré à hauteur de son talent. Un artiste va essayer de faire une très belle œuvre, un travailleur va faire de son mieux si il a des envies qui nécessitent de l’argent. Au contraire, une personne peut décider de travailler moins. C’est pour cette raison que je soutiens particulièrement des solutions comme Flattr : elles permettent d’offrir de l’argent à ceux dont nous apprécions le contenu.
+
+=> /si-vous-testiez-le-web-payant d’offrir de l’argent à ceux dont nous apprécions le contenu
+
+Ici, la moitié de mes lecteurs bondiront sur leur chaise en me traitant d’ultra-capitaliste et m’enverront des photos d’enfants qui meurent de faim avec des mouches collées sur les yeux pour me prouver combien je suis ignoble, combien l’argent pervertit tout.
+
+Mais le problème, ce n’est pas l’argent : c’est le fait que la manière la plus simple de gagner de l’argent est… d’avoir de l’argent.
+
+Tant que l’argent est un incitant à produire quelque chose d’utile à la société, il est bénéfique. Aujourd’hui, il n’est malheureusement plus possible de devenir réellement riche par son travail. Toutes les grosses fortunes se basent sur la spéculation, la bourse et tous ces outils financiers qui permettent de gagner beaucoup d’argent sans avoir la moindre utilité vis-à-vis de la société.
+
+Le capitalisme s’est toujours réfugié sous la notion de « risque » pris par les investisseurs. Le bénéfice serait donc une récompense sur la prise de risque. Le fait qu’une prise de risque puisse être rémunérée est sujet à discussion. Mais prenons-le comme acquis.
+
+Si je participe, avec mille personnes, à une loterie dont le premier prix est la cagnotte globale, ma chance de gagner est de une sur mille et mon gain est de mille fois ma mise. On constate donc que mon gain est directement proportionnel à mon risque, ce qui semble intuitivement juste et se pratique dans les casinos ou sur les champs de courses.
+
+Mais si la cagnotte est augmentée via l’argent issu du travail d’autres personnes, si plusieurs tickets sont marqués gagnants à un certain degré, mon gain augmente et mon risque diminue. Mieux : grâce à des algorithmes très puissants et très rapides, je peux déterminer quels sont les tickets les plus gagnants et les acheter/revendre en une fraction de seconde. À ce stade, mon risque devient virtuellement nul pour peu que j’aie assez d’argent pour spéculer dans plusieurs loteries à la fois.
+
+Plus on a d’argent, plus il est facile d’en gagner sans rien faire d’utile.
+
+L’expression « faire travailler son argent » signifie, en réalité, faire travailler ceux qui remplissent la cagnotte pour laquelle je me suis contenté d’acheter un ticket.
+
+Ce simple constat augure une crise très profonde au sein de la société. Les riches ne peuvent que devenir plus riches. C’est mécanique, inéluctable dès qu’ils passent le stade où ils sont en mesure de payer des financiers compétents pour s’occuper de leur patrimoine.
+
+Réfléchissons une seconde : qu’ont fait pour nous ces investisseurs, ces traders, ces financiers, ces géants bancaires ? En quoi nous sont-ils utiles ? Trouvons-nous normal qu’ils gagnent des milliers de fois plus que tous les services qui nous sont utiles ou agréables au quotidien ?
+
+Mais même à court terme, l’effet financier est délétère. En effet, les acheteurs du ticket de loterie certifié gagnant exige toujours plus de cagnotte, toujours plus de gain. Cette vision à très court terme empêche toute stratégie, tout développement correct. À tel point que des entreprises géantes, comme Dell, annoncent se retirer de la bourse.
+
+=> http://www.lemonde.fr/emploi/article/2013/02/18/dell-quitte-la-bourse-pour-retrouver-sa-liberte_1834175_1698637.html annoncent se retirer de la bourse
+
+L’idée commence à faire son chemin : la bourse est un instrument devenu tout à fait nuisible qu’il faut supprimer.
+
+=> http://www.monde-diplomatique.fr/2010/02/LORDON/18789 la bourse est un instrument devenu tout à fait nuisible qu’il faut supprimer
+
+Cela vous semble absurde ? Impossible ? Exagéré ? C’était également le cas pour les brevets il y a quelques années. Pourtant, les esprits changent.
+
+=> /working-with-patents il y a quelques années
+=> http://www.techthefuture.com/technology/abolish-patents-federal-reserve-economists-argue/ les esprits changent
+
+L’argent est un magnifique outil pour récompenser ceux qui nous sont utiles et qui nous font plaisir. Tentons tout simplement de leur faire parvenir directement cet argent, sous forme de Flattr, de bitcoins, de dons, de paiements directs tout en évitant autant que possible la nuée de sangsues qui n’ont rien fait pour nous si ce n’est acheter un ticket le loterie…
+
+=> http://flattr.com Flattr
+=> /monnaie-de-geek-monnaie-de-singe bitcoins
+=> /lettre-ouverte-aux-artistes-pirates la nuée de sangsues
+
+Photo par Hernan Seoane. Relecture par Sylvestre.
+
+=> http://www.flickr.com/photos/37706437@N06/3520341017 Hernan Seoane
+=> http://sylvestre.org Sylvestre

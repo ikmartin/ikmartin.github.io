@@ -1,0 +1,76 @@
+# Photocopille ! Photocoviole ! Photocopamuse-toi !
+
+La sortie de mon livre m’a valu, à plusieurs reprises, quelques commentaires sur un ton vaguement humoristique : Mais au fait, est-ce qu’il est libre ton livre ?.
+
+=> /2006/01/06/88-ubuntu-le-livre mon livre
+
+La réponse est non ! Pire, j’ai constaté il y a peu de temps que le livre comportait un affreux logo :
+
+=> ../files/old/photocopillage.png Le photocopillage tue le livre
+
+En clair, le livre est strictement non-libre et il est légalement interdit de le photocopier. Mais n’est-ce pas compatible avec la philosophie du libre ? Ne suis-je pas un épouvantable cynique à promouvoir du libre tout en produisant moi-même du contenu non-libre pour gagner de l’argent ? Ahah ! Je vous ai bien eu bande de naïfs ! Si je n’ai fait l’apologie de ce système brun dégueulasse, ce n’est que pour pouvoir vendre par centaines un livre que je préparais. Maintenant, je me retire dans ma piscine privée aux Bahamas en buvant un cocktail tandis que 3 naïades en bikini me massent le dos. Et toc…
+
+Si seulement c’était vrai… 😉
+
+Tout d’abord, soyons honnêtes, je n’ai jamais été partisan du tout entièrement libre. J’en veux pour preuve certains articles de ce blog qui sont sous une licence non-libre car je souhaite explicitement qu’ils ne soient pas modifiés. C’est mon droit le plus strict en tant qu’auteur et nul ne peut s’y opposer[1]. Pire ! J’ai plusieurs textes et nouvelles que je ne souhaite pas diffuser sur ce blog ni sur internet ! Suis-je pour autant un ennemi du libre ?
+
+=> /Plume certains articles
+
+### Danger
+
+=> ../files/old/stylo.jpg Stylo
+Le livre Ubuntu est un projet lancé et financé par les éditions Eyrolles. Il me semble normal qu’ils puissent en décider de la licence. Alors qu’une documentation exhaustive à tout à gagner d’une licence très permissive avec une structure de type wiki, je pense qu’un ouvrage structuré doit être conçu dans un milieu fermé avec aussi peu de personnes que possible afin de préserver la cohérence de l’ensemble.
+
+Dans ce cas particulier, je ne verrais aucune objection à ce que le texte entier du livre « Ubuntu » soit placé sous licence libre. Seulement, cette décision incombe à mon éditeur. Il faut bien préciser que le contenu en tant que tel est composé d’idées entièrement libres. Le livre regroupe, d’une manière structurée, des connaissances issues des nombreux forums, wiki, listes de distribution mais aussi des connaissances antérieures des auteurs, … Rien de secret, rien de breveté donc ! Libre à chacun de se lancer dans la rédaction d’un tel livre entièrement libre.
+
+D’ailleurs, si un éditeur souhaite me proposer d’écrire un ouvrage sous licence libre, qu’il n’hésite donc pas à me contacter !
+
+=> /contact me contacter
+
+### Le photocopillage…
+
+Je dois bien avouer que lorsque j’ai vu ce logo, j’ai fait un bond de colère. J’abhorrais ce slogan et je m’étais juré de ne pas le mettre dans mes oeuvres et voilà que mon premier[2] et symbolique livre en était marqué !
+
+=> ../files/old/copier.jpg Old photocopier
+
+Le but premier du livre Ubuntu, à mes yeux, est de donner aux nouveaux utilisateurs un outil pour débuter. Pas gagner de l’argent[3] ! Si vous donnez un cours et que vous souhaitez que tous vos élèves disposent d’un passage particulier du livre, je vous en prie, n’hésitez pas à photocopier les quelques pages nécessaires. Cependant, indiquez bien sur les photocopies les références exactes de la source afin que les lecteurs intéressés puissent se procurer, si besoin est, l’ouvrage complet.
+
+### … tue le livre
+
+=> ../files/old/fahrenheit451.jpg fahrenheit 451
+Il faut avouer que j’entretiens vis-à-vis de l’objet « livre » un rapport presque religieux. Le film « Fahrenheit 451 » de François Truffaut m’a laissé un noeud dans l’estomac pour ses scènes d’une insoutenable violence[4]. J’en suis venu à souhaiter, lors du générique final, une mention « Aucun livre n’a été blessé ou abimé durant le tournage de ce film ».
+
+Oui, je suis donc d’accord avec la mention « Le photocopiage tue le livre »[5]. Un livre photocopié n’est plus le livre. Si vous donnez un texte extraordinaire en photocopies volantes, le lecteur ne sera pas dans des conditions acceptables pour apprécier l’oeuvre. C’est à mes yeux pareil pour un texte sur un écran, PDF ou HTML. Si le contenu entier du livre Ubuntu était disponible au format PDF, je suis certain que beaucoup les parcourraient rapidement et se diraient : Bof, finalement, il n’est pas si intéressant ce livre. La valeur du livre est dans son toucher, dans sa manipulation, dans son odeur[6], dans ses pages cornées, âbimées[7]. Un livre n’est pas un wiki ou un ensemble de page de man. Un livre, ça se tourne, se retourne[8], se consulte.
+
+Oui, en photocopiant le livre Ubuntu, vous le tuez en quelques sortes. Vous en faîtes un ersatz, un fantôme. J’ai toujours détesté les professeurs qui nous photocopiaient des livres entiers sous prétexte d’économiser quelques centimes. Parfois, le prix des photocopies est même plus élevé que le prix du livre lui-même ! Le livre Ubuntu fait 330 pages et 25€. Faites le calcul avec les prix des photocopies pratiqués chez vous. Ajoutez-y le temps de la photocopie (tourner les pages!) et faites le compte. Si je comprend et j’encourage la photocopie d’un extrait précis et particulier dans un cadre qui le nécessite, je vous en prie, par respect pour le livre, ne photocopiez ni ne scannez pas un ouvrage entier ! Laissez vivre vos livre et abandonnez-les pour les vacances…
+
+=> http://www.bookcrossing.com/ Laissez vivre vos livre
+
+### Libre !
+
+Quoiqu’il en soit, la licence d’une oeuvre est le choix de son auteur et celui-ci doit être respecté[9]. Appliquer aveuglement le modèle du logiciel libre dans les autres domaines relèvent pour moi du fanatisme dangereux. Chaque cas est unique et doit être respecté. Je souhaite que mon logiciel de traitement de texte soit libre pour pouvoir éventuellement l’améliorer et pour être sûr de ce qu’il fait. Doit-il en être obligatoirement de même pour les livres sur ma bibliothèque ? Je pense sincèrement que le fait de mettre le livre Ubuntu sous licence libre n’apporterait rien de concret à la communauté à part le plaisir intellectuel du « c’est libre ».
+
+=> ../files/old/trees.jpg Arbres
+
+– Ce repas était vraiment délicieux ! Mais quelle est donc ta recette ?
+– Ah ça, me répondit-elle avec un clin d’oeil, c’est mon petit secret…
+
+#### Notes
+
+[1] Remarquons que je précise bien que je suis ouvert à la discussion. Si un jour vous avez besoin d’un texte de moi sous une licence plus permissive, n’hésitez pas à me contacter et à m’expliquer vos raisons.
+
+[2] Ce n’est pas tout à fait juste si l’on compte la publication d’une de mes nouvelles dans le recueil « Jetons l’encre! », recueil qui ne comporte lui pas ce logo 😉
+
+[3] et d’ailleurs heureusement car, contrairement à certaines rumeurs, je gagnerai très peu. Surtout quand on compare avec le nombre d’heures passées…
+
+[4] Une bibliothèque qui brûle, entre autres…
+
+[5] mais sans le jeu de mot minable
+
+[6] très important l’odeur ! J’y reviendrai.
+
+[7] J’aime beaucoup un livre qui a vécu 😉
+
+[8] se prend par derrière… je m’égare..
+
+[9] De manière consciente et délibérée. Il est bien entendu hors de question d’instaurer des mesures de protection genre DRM ! Et tant pis si certains décident de ne pas respecter ces licences, je suis confiant en l’être humain. D’ailleurs, certains cas de non-respect d’une licence sont, à mes yeux, parfaitement justifiables voire indispensables et peuvent être le germe d’une nouvelle idée géniale !

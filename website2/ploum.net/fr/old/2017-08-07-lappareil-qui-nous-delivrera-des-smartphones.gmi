@@ -1,0 +1,103 @@
+# L’appareil qui nous délivrera des smartphones
+=> files/old/12109877_1043346375684290_8360633151341198934_o.jpg
+
+La plupart d’entre-nous avons désormais toujours un smartphone en poche. Lorsque nous devons patienter, ne fût-ce que quelques secondes, il est socialement admis de sortir son téléphone et d’y consacrer son attention. Pire, il est de plus en plus fréquent de voir des gens en pleines conversations être en même temps sur leur téléphone. Des familles entières se promènent, chacun sur son smartphone.
+
+Selon moi, on ne sortira pas de cette dynamique en se forçant à moins utiliser les téléphones ou en se culpabilisant. Il est déjà trop tard. Mais un nouveau type d’appareil pourrait changer la donne. Je l’appelle le « Zen Device ». Et je pense que l’innovation viendra des fabricants de liseuses, pas des fabricants de téléphones.
+
+## Le téléphone, roi des micro-tâches
+
+Faire des choses plutôt que s’ennuyer, pourquoi pas ? Surtout que nos téléphones nous permettent de nous connecter à une quantité impressionnante de culture, de réflexions, de contenus, de nous mettre en contact avec nos amis.
+
+Le problème, c’est que lorsque nous avons quelques minutes voire quelques secondes d’ennui, nous ne savons pas combien de temps cet ennui va durer. Nous ne pouvons pas nous lancer dans une tâche qui demande un petit peu de concentration comme répondre à un email ou lire un article de plusieurs centaines de mots sur un sujet intéressant.
+
+Pour éviter d’être interrompu dans une de ces tâches, nous nous cantonnons à des micro-tâches, des tâches qui nous apportent une brève satisfaction même après quelques secondes : consulter Facebook, liker un tweet, poster une photo, envoyer un smiley dans une conversation, parcourir un flux d’images rigolotes, etc. Même les jeux vidéos, riches et profonds sur consoles ou PC, se jouent en quelques secondes sur smartphones.
+
+Inutile de dire que, même mises bout à bout, ces micro-tâches n’apportent absolument rien. Pire, elles rendent accro à ces petits shoots hormonaux. Même avec du temps devant nous, nous avons désormais souvent tendance à favoriser ces micro-tâches et parcourir le flux Facebook au lieu de terminer la lecture de cet excellent article.
+
+## Les liseuses, un nouveau type de compagnon électronique
+
+C’est peut-être la raison pour laquelle ma liseuse électronique est rapidement devenue l’objet le plus important pour moi, celui que j’emporte toujours avec moi. Car avec une liseuse, je sais qu’il n’est pas possible de réaliser des micro-tâches, seulement des tâches profondes. Bien sûr, ce n’est qu’un seul type de tâche profonde, la lecture, mais c’est déjà énorme.
+
+Véritable talisman, mon livre électronique contient toute ma bibliothèque. Lorsque je suis en voyage, je caresse parfois d’un geste de la main la couverture de cuir qui me rappelle que j’ai avec moi toutes la connaissance dont je pourrais rêver, quand bien même j’échouerai pour plusieurs années sur une île déserte (avec une prise de courant pour recharger, faut pas déconner).
+
+Sans notifications, sans connexion permanente, sans écran lumineux, sans mouvement rapide, les liseuses apportent un côté zen particulièrement bienvenu dans notre monde trépidant.
+
+Mais ne pourrait-on pas les améliorer pour en faire le compagnon idéal de ma thébaïde ? Et si les liseuses devenaient des objets haut-de-gamme favorisant la concentration, nous permettant d’acheter des téléphones bon-marché qu’on se plairait à oublier complètement en partant en balade ?
+
+=> /bienvenue-dans-ma-thebaide/ ma thébaïde
+
+Faisons l’exercice de construire ce Zen Device.
+
+## Une machine pour favoriser la lecture
+
+Contrairement à ce qu’essayent de nous vendre les plus grands fabricants de liseuses comme Amazon et Kobo, lire ce n’est pas « acheter des livres ». Le Zen Device ne met donc pas en permanence en avant une librairie ou des formules d’abonnement.
+
+Un service web permet de charger n’importe quel fichier Epub. Ceux-ci peuvent être lu sur le Zen Device mais également en ligne, la position de lecture étant synchronisée. L’utilisateur pourra ajouter des catalogues ou des librairies selon ses goûts, le projet Gutenberg étant un bon catalogue par défaut.
+
+À l’heure du web, réduire la lecture aux seuls livres me semble criminel. Le Zen Device (et toute liseuse digne de ce nom) se doit de permettre la lecture d’articles sauvegardés sur Pocket ou Wallabag. La nouvelle littérature émerge sur des plateformes comme Wattpad, Scribay voire Medium. Comment se fait-il qu’aucune liseuse n’y donne à ma connaissance accès ?
+
+Le Zen Device facilite également l’usage du Wiktionnaire et de Wikipédia. Son rétroéclairage peut être réduit fortement afin de ne pas être comme un phare lors des séances de lecture nocturne.
+
+## Un remplaçant au carnet de note
+
+La seule et unique raison pour laquelle je ne peux pas me passer de mon smartphone, même la nuit, c’est qu’il a remplacé mon carnet de note, que ce soit manuscrites avec le stylet ou audio avec la fonction dictaphone.
+
+Mais noter des rêves ou des nouvelles idées n’aurait-il pas plus de sens sur un Zen Device que sur un Micro-Task-Hyper-Distracting-Phone ?
+
+C’est pourquoi le Zen Device de mes rêves dispose d’un stylet, permettant des notes manuscrites sur une page blanche et d’une fonction dictaphone. Cela me permettrait enfin de me défaire de ma dépendance à Samsung et ses Galaxy Note, seuls téléphones offrant une expérience stylet suffisamment qualitative pour l’écriture manuscrite.
+
+=> http://newatlas.com/galaxy-note-6-stylus-no-alternatives/42718/ seuls téléphones offrant une expérience stylet suffisamment qualitative pour l’écriture manuscrite
+
+Les notes peuvent être soit complètement indépendantes, soit liées à la lecture en cours si un extrait a été surligné. Ces notes seraient synchronisées avec un service en ligne, Evernote, Dropbox ou autre. De cette manière, il serait particulièrement aisé de savoir que lorsque j’ai eu telle idée, j’étais à la page 184 de tel bouquin, d’assembler des notes et de faire émerger de vraies idées. Un outil absolument révolutionnaire !
+
+Outre les notes manuscrites et audio, il pourrait être possible d’utiliser un clavier. Mais toute personne ayant utilisé une liseuse sait à quel point l’expérience de clavier virtuel est frustrante sur écran e-ink. Le Zen Device permettra donc de brancher un clavier Bluetooth. Et supporter la disposition BÉPO.
+
+## Fonctionnel sans notifications
+
+En évoluant, un Zen Device pourrait même avoir de plus en plus de fonctionnalités mais avec une contrainte majeur : pas de haut-parleur ni de notification.
+
+On pourrait imaginer un accès à son calendrier afin de voir le plan de la journée, écouter de la musique ou des audio livres avec des écouteurs (jack ou bluetooth), un appareil photo permettant de scanner du texte avec reconnaissance de caractère, un accès à Open Street Map permettant de s’orienter (mais peut-être sans avoir besoin d’un calcul d’itinéraire).
+
+On peut imaginer tout un écosystème d’apps qui seraient soumises à plusieurs contraintes : ne pas pouvoir tourner en arrière-plan, en pas envoyer de notifications, fonctionner sur un écran e-ink.
+
+## Zen mais sans oublier le côté social et le prix libre
+
+Non, le Zen Device ne permettra pas d’aller sur Facebook. Mais il y’aurait du sens à intégrer certains types de réseaux sociaux comme SensCritique ou Babelio. De cette manière, le Zen Device aurait la liste de mes envies de lecture pour me suggérer mon prochain livre et me permettrait de garder un journal de mes lectures, potentiellement public.
+
+En fait, on pourrait même imaginer un tout nouveau type de réseau social qui ne serait pas uniquement basé sur le « J’aime » mais sur des interactions plus fines comme « Je valide et recommande », « Cela m’interpelle, est-ce sérieux ? » ou « Cette lecture est inintéressante ».
+
+Lorsqu’un lecteur recommande une lecture, une toute petite somme est versée à l’auteur mais un pourcentage va aux recommandeurs grâce à qui le lecteur a découvert cet article.
+
+Mais là on s’éloigne un peu du Zen Device en lui-même…
+
+## Le Zen Device existe-t-il ?
+
+Tout cela parait un bien beau rêve mais, techniquement, rien de ce que je décris n’est impossible.
+
+Kobo offre une intégration avec Pocket sur ses liseuses, Bookeen envisagerait sérieusement d’offrir une intégration Wallabag et Tolino permet de gérer en ligne sa bibliothèque de fichiers Epub avec synchronisation de la position de lecture. Tolino embarque une excellente intégration au Wiktionnaire.
+
+=> https://blog.genma.fr/?Bookeen-Le-code-source Bookeen envisagerait sérieusement d’offrir une intégration Wallabag
+
+De son côté, la liseuse PocketBook Ultra offre un appareil photo et une prise audio pour écouter des audio-books. Il ne devrait pas être sorcier de rajouter un micro pour avoir une fonction dictaphone.
+
+=> http://www.pocketbook-int.com/be/products/pocketbook-ultra PocketBook Ultra
+
+Au niveau du stylet, Sony offre une feuille A4 virtuelle permettant d’annoter des PDF. Mais le plus intéressant est la tablette Remarkable. Malheureusement, la partie « lecture » est peu développée sur le site web et l’engin ne dispose pas du moindre éclairage, le rendant parfaitement inadapté pour la prise de note de nuit ou l’écriture de rêves. De plus, sa grande taille le rend peu pratique à emporter.
+
+=> https://www.sony.com/electronics/digital-paper-systems/t/digital-paper-notepad Sony offre une feuille A4 virtuelle
+=> https://remarkable.com/ la tablette Remarkable
+
+Le projet NoteSlate aurait quand à lui pu être une première version du Zen Device, c’est d’ailleurs pourquoi j’ai choisi de l’utiliser comme illustration à ce post. Mais le site annonçant un lancement en Mars 2017 n’a plus été mis à jour depuis janvier. De nombreuses pré-commandes ont été placées et, depuis, silence radio si ce ne sont quelques tweets de marketing. Ce n’est pas de très bonne augure pour la suite.
+
+=> http://noteslate.com/ NoteSlate
+
+## Un changement de paradigme pour les concepteurs de liseuses.
+
+Bref, comme vous pouvez le constater, le Zen Device ne relève pas de la pure science-fiction. Technologiquement, rien d’impossible. Alors, y’a-t-il un marché ? Personnellement je suis près à payer le prix d’un téléphone très haut de gamme pour un tel engin car je trouve dommage de payer une fortune pour mes micro-tâches/distractions et 150€ pour mon outil le plus important, ma liseuse…
+
+Mais je constate que, tôt ou tard, tous les fabricants de liseuses finissent par vouloir reproduire Amazon. Vendre des livres virtuels selon l’idée très 20ème siècle de « librairie » est plus rentable que de vendre des appareils. Du coup, au fil des mises à jours et des partenariats, les liseuses se transforment en « appareil vous encourageant à acheter des livres ». Tout le contraire d’un Zen Device…
+
+Oui, je pense qu’il est possible de concevoir un nouveau type d’appareil qui nous délivrera de notre dépendance à Facebook/Twitter/Snapshat/WhatsApp. Qui nous permettra de profiter du moment présent tout en nous permettant d’enrichir nos connaissances et notre patrimoine intellectuel.
+
+Mais pour cela, il faudra soit un nouvel acteur, soit un fabricant de liseuses qui prendra le risque de ne pas vouloir être un énième sous-Amazon. Alors, si vous êtes dans la conception de liseuses, que l’idée du Zen Device vous intéresse, n’hésitez pas à me contacter.

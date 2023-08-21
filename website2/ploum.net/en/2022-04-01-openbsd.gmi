@@ -1,0 +1,17 @@
+# Small OpenBSD and FreeBSD Experiment
+
+As I feel the need for a more minimalist and more coherent system, I downloaded OpenBSD and FreeBSD to install on a spare laptop (a Starlabs Star-lite MKII). I was baffled by the very pleasant OpenBSD installer. Clean, efficient.
+
+Best of all?
+
+I could choose, at install time, my keyboard layout (French Bépo) with capslock already replaced by Ctrl. Waw! Nice. 
+
+Too bad, the installer didn’t managed to load the wifi driver (and this computer doesn’t have an RJ-45 port). Maybe I should report the issue somewhere. 
+
+Anyway, I know that I could not make it my main OS as OpenBSD has no bluetooth support, something I use to listen to music (headphone) or watch a movie with my wife (bluetooth speaker).
+
+Also tried FreeBSD but the installer was a lot messier and still had a 15 years old Frech-Dvorak keyboard unrelated to Bépo. Didn’t want to spend time installing with a bad layout so cancelled the installation. Perhaps I should investigate to contribute the Bépo layout into FreeBSD. FreeBSD also have a nice feature allowing to run Linux binaries, which would be very useful to run the spellchecker Antidote (which recently announced removing Linux support…) 
+
+I also downloaded images of Alpine Linux and Void Linux but I guess I will stay with Debian and install a fresh Regolith 2.0 as soon as it is released. You don’t change easily 21 years of apt-get.
+
+But I’m really impressed by how nice and clean OpenBSD installer is. "Absolute FreeBSD" by Michael W. Lucas is a wonderful book even if I don’t currently use FreeBSD. Learning a lot of stuff. I welcome OpenBSD books suggestions.

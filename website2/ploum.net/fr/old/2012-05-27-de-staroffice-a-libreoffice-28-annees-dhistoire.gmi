@@ -1,0 +1,142 @@
+# De StarOffice à LibreOffice 28 années d’histoire
+=> files/old/libreoffice.jpg
+
+Qu’on les aime ou qu’on les déteste, les suites bureautiques se sont imposées ces derniers lustres comme indispensables dans le paysage logiciel. La suite numéro un, Microsoft Office, est devenue une référence et un incontournable. En langage courant, on ne parle plus de présentations ou de transparents, on dit tout simplement « un PowerPoint ».
+
+=> http://fr.wikipedia.org/wiki/Microsoft_Office Microsoft Office
+
+Microsoft Office n’étant pas disponible sur les systèmes libres comme Linux, il est évident qu’une alternative viable se devait d’exister. Vous la connaissez certainement, il s’agit d’OpenOffice. Et, depuis quelques mois, on entend parler de LibreOffice. Mais n’est-ce pas juste un changement de nom ? Tout cela est un peu confus.
+
+=> http://fr.wikipedia.org/wiki/OpenOffice.org OpenOffice
+=> http://fr.wikipedia.org/wiki/LibreOffice LibreOffice
+
+J’avais déjà tenté de faire une courte clarification. Essayons de voir en détail ce qu’il en est.
+
+=> /libreoffice-pour-les-utilisateurs-d-openoffice déjà tenté
+
+#### Les débuts de StarDivision
+
+Nous sommes en 1984. Un très jeune programmeur allemand fonde la société StarDivision afin de vendre son logiciel de traitement de texte StarWriter. Celui-ci est destiné principalement aux ordinateurs Zilog Z80 et Amstrad CPC. Nous sommes dans les tous débuts de l’informatique à destination du grand public. Ni Microsoft Office ni même Windows n’existent encore.
+
+=> http://fr.wikipedia.org/wiki/Zilog_Z80 Zilog Z80
+=> http://fr.wikipedia.org/wiki/Amstrad_CPC Amstrad CPC
+
+Après quelque temps, StarDivision adapte son logiciel aux systèmes DOS, OS/2. D’autres composants se rajoutent à StarWriter : StarBase, un logiciel de base de données, StarDraw, un logiciel de dessin vectoriel. Le tout est empaqueté sous le nom global de StarOffice, en faisant une des premières suites bureautiques.
+
+=> http://fr.wikipedia.org/wiki/OS/2 OS/2
+=> http://fr.wikipedia.org/wiki/StarOffice StarOffice
+
+Avec le support de Windows 3.1, StarOffice gagne un nouveau composant, StarCalc, un tableur.
+
+#### StarOffice dans le giron de Sun
+
+Faisons un bond en avant et propulsons nous en 1999. À cette époque, Microsoft règne sans partage sur les ordinateurs individuels grâce à Windows 95 et Windows 98, sans oublier Windows NT dans les entreprises. Dans ces dernières, Microsoft Office 97 s’est imposé comme la suite office indispensable. Son plus gros concurrent est… Microsoft Works ! Eh oui, Microsoft se paie le luxe d’être son propre concurrent et d’avoir deux suites bureautiques qui sont difficilement interopérables (utilisant des formats propriétaires différents).
+
+=> http://fr.wikipedia.org/wiki/Microsoft_Works Microsoft Works
+
+Sun travaille sur son système d’exploitation Solaris et espère en faire un concurrent à Windows. Le problème est que Solaris ne dispose pas d’une suite bureautique et que chacun des 42.000 employés de Sun doit garder deux ordinateurs : un sous Solaris et un sous Windows pour faire tourner Microsoft Office.
+
+=> http://fr.wikipedia.org/wiki/Sun_Microsystems Sun
+=> http://fr.wikipedia.org/wiki/Solaris_(syst%C3%A8me_d%27exploitation) Solaris
+
+Stratégiquement, avoir une suite bureautique sous Solaris est indispensable. Sun se met en chasse et rachète StarDivision pour 73.5 millions de dollars. Rien que le prix économisé dans les licences Microsoft (42.000 licences Windows + 42.000 licences Office) permettrait de rentabiliser l’achat en quelques années.
+
+Sun travaille donc à partir de la suite StarOffice et la porte sous Solaris.
+
+#### Naissance d’OpenOffice
+
+À peine un an plus tard, en 2000, Sun se rend compte que le seul ennemi capable d’affaiblir la toute-puissance de Microsoft, alors à son apogée, est le monde Open Source. Et selon l’adage « Les ennemis de mes ennemis sont mes amis », Sun décide de doter la communauté OpenSource d’un concurrent à Microsoft Office.
+
+=> http://fr.wikipedia.org/wiki/Open_source Open Source
+
+Une version Open Source de StarOffice est donc libérée sous le nom OpenOffice, qui deviendra OpenOffice.org, le nom OpenOffice étant déjà déposé dans certains pays.
+
+Derrière ce mouvement se cache bien entendu une stratégie marketing. Sun espère qu’OpenOffice gagnera le cœur des étudiants, des particuliers, des hackers mais que les entreprises souhaitant un support professionnel se tournent vers StarOffice. Certaines fonctionnalités de StarOffice ne sont d’ailleurs pas présente dans OpenOffice.
+
+Cela a pour conséquence que toute personne souhaitant contribuer au code d’OpenOffice doit céder ses droits à Sun, afin que celui-ci puisse le réutiliser dans StarOffice.
+
+#### Sun OpenOffice, l’incontournable
+
+De 2001 à 2010, OpenOffice va devenir incontournable chez les libristes et les utilisateurs de système Linux. Sa gratuité est également un atout indéniable dans les entreprises et les services publics. Certains évangélistes du libre y voient un cheval de Troie pour introduire le libre un peu partout et en font une promotion éhontée.
+
+=> http://www.framasoft.net/article1891.html une promotion éhontée
+
+Cependant, tout n’est pas rose. Le développement n’est pas très rapide. Les contributions ne sont pas toujours acceptées par Sun. Le logiciel, vieillissant, acquiert une réputation de lenteur et de non-ergonomie.
+
+Microsoft Office, de son côté, fait des progrès fulgurants avec les éditions 2003 et 2007. Malgré un succès d’estime, OpenOffice peine à sortir du cadre des geeks barbus.
+
+#### Lotus Symphony, IBM rentre dans la danse
+
+IBM, géant de l’informatique, est célèbre pour n’avoir jamais compris l’importance du logiciel et de la micro-informatique. Inventeur du PC, ils n’ont pas perçu le marché pour ce type de machine et ont laissé Microsoft fournir le système d’exploitation DOS. Se rendant compte de leur erreur, ils tenteront d’imposer OS/2 sans jamais y parvenir.
+
+=> http://fr.wikipedia.org/wiki/International_Business_Machines IBM
+=> http://fr.wikipedia.org/wiki/IBM_PC PC
+
+La même histoire se répète avec les suites bureautiques. Se rendant compte de l’importance de ce type de logiciel, IBM produira Lotus Symphony, une suite bureautique pour DOS. Cette suite sera complètement abandonnée en 1992.
+
+=> http://fr.wikipedia.org/wiki/Lotus_Symphony Lotus Symphony
+
+Ce n’est qu’en 2007, à la mode des carabiniers d’Offenbach, qu’IBM décidera de relancer dans une suite de productivité qui comportera son client mail Lotus Notes, très populaire en entreprise et détenteur du titre de logiciel le plus haï par ses utilisateurs. IBM va donc reprendre OpenOffice et en modifier l’interface afin de créer IBM Lotus Symphony.
+
+IBM Lotus Symphony est synchronisé avec OpenOffice mais aucun code n’est contribué au projet. En ce sens, IBM est vu comme un mauvais joueur par la communauté.
+
+#### Oracle Open Office, la fin d’une époque
+
+Sun ne va pas très bien. Solaris n’a jamais réellement percé. Le matériel Sun, d’excellente facture mais extrêmement cher, voit une concurrence rude tirer les prix vers le bas. Beaucoup d’investissements ont été faits comme le rachat de MySQL. Des questions se posent. C’est alors qu’arrive Oracle.
+
+=> http://fr.wikipedia.org/wiki/MySQL MySQL
+=> http://fr.wikipedia.org/wiki/Oracle_Database Oracle
+
+Oracle est un géant de l’informatique qui a fait sa fortune sur la gestion des bases de données. Ils aimeraient avoir un peu plus d’expertises dans le matériel (afin de vendre des serveurs liés à leurs bases de données) et contrôler un dangereux concurrent OpenSource qui est de plus en plus populaire : MySQL, justement racheté par Sun.
+
+En 2009, Oracle rachète donc Sun pour 7,4 milliards de dollars. Seulement, Oracle n’a que faire de StarOffice ou d’OpenOffice. C’est le cadeau bonus venu avec l’achat et ça les ennuie plus qu’autre chose. De plus, contrairement à Sun, Oracle a montré de nombreuses fois qu’il se poste en ennemi acharné du logiciel libre.
+
+En 2010, inquiets, les membres de la communauté OpenOffice créent donc la Document Foundation, une fondation sans but lucratif dont le but est de promouvoir et de continuer le développement d’OpenOffice, sans dépendre d’Oracle.
+
+=> http://fr.wikipedia.org/wiki/The_Document_Foundation Document Foundation
+
+#### LibreOffice, la première suite communautaire
+
+Il ne reste qu’un petit détail à régler : le nom, OpenOffice, appartient toujours à Oracle. La fondation fait une demande officielle à Oracle, Ô Oracle, vous qui êtes si puissant, si beau, si fort et qui n’avez que faire de ce misérable nom, cédez le nous et vous serez mille fois béni.
+
+C’est à ce moment que les requins de chez Oracle lèvent les sourcils. Si ce nom est demandé, il a peut-être une certaine valeur. IBM met son grain de sel : si Oracle cède le nom à la fondation, IBM peut très bien ne plus pouvoir intégrer le code d’OpenOffice dans son Lotus Symphony qui est propriétaire, la Document Foundation soutenant des licences cancérigènes comme la LGPL !
+
+Oracle refuse donc de céder le nom. La mort dans l’âme, la Document Foundation décide d’accepter la mort d’OpenOffice et de faire renaître le projet sous le nom LibreOffice.
+
+Au final, ce changement de nom se révèle bénéfique. Comme le passage de XFree86 à X.org, il marque la transition. L’engouement communautaire est tel qu’en moins d’une année LibreOffice gagne des dizaines de contributeurs, un nombre impressionnant de lignes de code est changé et une première conférence rassemblant la communauté à lieu à Paris en octobre 2011. Conférence au cours de laquelle il est annoncé notamment le désir de porter LibreOffice sur Androïd. Les participants assistent également à une première démonstration de LibreOffice Online, une version web de la suite bureautique.
+
+=> http://fr.wikipedia.org/wiki/XFree86 XFree86
+=> http://fr.wikipedia.org/wiki/X.Org X.org
+
+#### Apache Open Office, papy fait de la résistance
+
+Mais il serait faux de penser qu’Oracle en resterait là. Tout aurait pu être tellement simple. Mais il ne faut jamais sous-estimer la nuisance qu’une confusion dans l’esprit du public peut apporter.
+
+Peu après l’annonce de la création de LibreOffice, Oracle décide de donner le projet OpenOffice, y compris le nom, à la fondation Apache. À charge pour elle de continuer le développement de ce projet.
+
+=> http://fr.wikipedia.org/wiki/Apache_Software_Foundation fondation Apache
+
+À la Document Foundation, tout le monde est un peu surpris. Surtout que la licence Apache choisie permet à LibreOffice de reprendre du code de chez Apache OpenOffice mais le contraire n’est lui pas possible. En juillet 2011, IBM annonce sa volonté de contribuer au projet Apache OpenOffice et, début 2012, annonce même arrêter complètement IBM Lotus Symphony pour se concentrer uniquement sur Apache OpenOffice.
+
+=> http://fr.wikipedia.org/wiki/Licence_Apache licence Apache
+
+#### OpenOffice ou LibreOffice, lequel choisir ?
+
+Pour beaucoup, Apache OpenOffice n’est donc qu’un homme de paille, un projet IBM, qui sert les intérêts d’IBM et non ceux de la communauté. Après quelques mois, il faut se rendre à l’évidence : le projet Apache OpenOffice dispose de dix fois moins de contributeurs. Comparer le nombre de modifications du code entre les deux projets est également sans appel : LibreOffice est un projet libre, communautaire et OpenOffice est une anecdote poussée à contre-cœur.
+
+=> http://www.italovignoli.org/?p=679 dix fois moins de contributeurs
+
+La majorité des distributions Linux sont d’ailleurs passées à LibreOffice. Des grands projets se mettent en place : la région Île-de-France travaille à offrir un LibreOffice intégré avec sa solution Cloud à tous ses étudiants. Un écosystème de sociétés a rejoint la Document Foundation afin d’offrir du support professionnel sur LibreOffice, depuis les grands pontes comme Suse, partie de Novell, au petites structures comme Lanedo, employeur de votre serviteur.
+
+=> http://www.documentfoundation.org/ Document Foundation
+=> http://www.suse.com/ Suse
+=> http://fr.wikipedia.org/wiki/Novell Novell
+=> http://lanedo.com Lanedo
+
+Si l’offre est là, la demande est elle en pleine confusion. Des clients de Sun, payant pour le support d’OpenOffice, se sont retrouvés sans maintenance du jour au lendemain. Le changement de nom fait craindre une migration lente et coûteuse, beaucoup ne comprenant pas qu’il s’agit essentiellement du même logiciel.
+
+Si l’avenir de LibreOffice semble radieux, beaucoup ne le saisissent pas encore. Mais, maintenant, si jamais on vous pose la question de savoir la différence entre OpenOffice et LibreOffice, vous pourrez répondre : « Assieds-toi, je vais te raconter une histoire… ».
+
+Initialement publié sur le Framablog.
+
+=> https://framablog.org/2012/05/27/libreoffice-openoffice-histoire/ Framablog

@@ -1,0 +1,73 @@
+# Paying for the web?
+=> files/old/Virtual-Tip-Jar.jpg
+
+=> /si-vous-testiez-le-web-payant Disponible en français
+
+I know it sounds crazy but I want you to give a try to this little experiment. During one year, you will pay for the content you consume on the web: blog posts, music, videos, nice pictures, news and even single tweets! You will pay for everything!
+
+What? Paying for the web? Yes but…
+
+There are two catches. The first one being that you will pay only after consuming the content and only if you liked it/found it worthwhile. It’s like going out to a movie and deciding, afterward if it worth to pay the ticket.
+
+The second catch is that you will always spend 2€ per month, whatever content you may have consumed. At the end of the year, this experiment will then cost you only 24€. Interesting enough if you can afford it.
+
+How to get started?
+
+It is easy. Create an account on Flattr and send them 24€.
+
+=> https://flattr.com/register Create an account on Flattr
+=> https://flattr.com/payments send them 24€
+
+=> ../files/old/flattr1.png flattr
+
+Once registered on Flattr, try to find the little green button each time you appreciate some content. If you don’t find it, don’t hesitate to contact the author and ask for one.
+
+=> ../files/old/flattrbuttons.jpg flattrbuttons
+
+But Flattring is often possible without an explicit button. Install the Flattr extension for Chrome or Firefox and the Flattr logo will be displayed in your browser each time you will be on a « Flattrable » page. That way, you can flattr individual tweets on Twitter, videos on Vimeo, music on Soundcloud and Grooveshark, pictures on Flickr, 500px, Instagram and software projects on Github. Yes, you can even flattr a single github commit!
+
+=> https://flattr.com/extension Flattr extension for Chrome or Firefox
+=> http://twitter.com Twitter
+=> http://vimeo.com/ Vimeo
+=> https://soundcloud.com/ Soundcloud
+=> http://grooveshark.com/ Grooveshark
+=> http://www.flickr.com/ Flickr
+=> http://500px.com/ 500px
+=> http://instagram.com/ Instagram
+=> http://github.com Github
+
+=> ../files/old/flattr_extension.png flattr_extension
+
+If the author of that content doesn’t have a Flattr account yet, your Flattr is marked as pending. The money will be transferred from your account to the author account only when he will claim his pending Flattrs.
+
+You can even set automatic Flattering on Grooveshark. Artists you listened to during a given month will automatically receive a Flattr that month. An external service called FlattrStar allows you to automatically Flattr content you starred in Google Reader, Readability, Instagram, Pocket and many more. It is even possible to Flattr someone in the street with your smartphone! But let’s keep that for later.
+
+=> http://grooveshark.com/#!/settings/connect automatic Flattering
+=> http://www.flattrstar.com/ FlattrStar
+=> http://www.flickr.com/photos/flattr/5523494529/in/photostream/ Flattr someone in the street
+
+Receiving Flattrs
+
+You are supporting the content you like. But maybe are you a content publisher yourself? Your content may be Flattered on any of the aforementioned website. If you have a blog, don’t hesitate to make each post Flattrable.
+
+And if you comment on this very own blog, don’t hesitate to add your Flattr ID. A comment is content, after all. It might be considered useful, interesting or funny by someone else and worth a Flattrs.
+
+The downside
+
+If I’m a huge Flattr fanatic but there are two main critics that you should be aware of.
+
+Firstly, Flattr is a proprietary centralized model. You have to trust them. If Flattr becomes one day extremely popular, it would have an awful lot of power. I hope to see some competitions, some distributed alternatives (using Bitcoin?). But, in the mean time, Flattr is a functional and very interesting solution.
+
+=> /bitcoin-bubble Bitcoin
+
+Secondly, Flattr takes 10% on each Flattr. During your experiment, 2,4€ will then go directly to Flattr. If it makes sense to have some fee, some would like to see it lowered.
+
+Conclusion of the experiment
+
+Take one year to make the test. In the worst case, you only lose 24€. Losing is not a very appropriate word when you know that 21.6€ will go to the maker of content you appreciate. You can even test for only 6 months by sending 12€.
+
+But if everything goes well, you will discover the simple pleasure of supporting what you like on the web. You will subscribe to some content in order to Flattr them during 3 or 6 months. You will find yourself raising the monthly limit to 3€, 5€ or even, if you are very rich, the maximum of 250€.
+
+And what if the goal of earning as much as you are spending on Flattr gives you the motivation to create a blog, to publish picture on Flickr, music on SoundCloud or videos on Viméo? Don’t be ashamed: if a few euros give you the motivation, why not using that to unleash you creativity?
+
+=> /si-vous-testiez-le-web-payant Disponible en français

@@ -1,0 +1,45 @@
+# Say hello to your planet !
+
+Today, I did my first real contribution[1] to Ubuntu by doing Mark’s hackergotchi[2] :
+
+=> ../files/old/cosmogotchi1d.png Mark's head
+
+#### Notes
+
+[1] No, the book is definitively not a contribution as it doesn’t speak about swallows and coconuts
+
+=> /2006/01/06/88-ubuntu-le-livre book
+
+[2] see also the whole contest
+
+=> http://perkypants.org/blog/2006/02/21/missing-cosmogotchi/ the whole contest
+
+So, I say hello to PUC. Mark, can you say hello to your new head ?
+
+=> http://planet.ubuntu.com/ PUC
+
+=> ../files/old/cosmo_mark.png Mark says hello !
+
+Thank you Mark. And now for something completely different :
+
+If you are coming to FOSDEM this saturday, the Ubuntu-be team will have his first meeting. All Ubuntu supporters are welcome. I will make a short speech[1] about why I think Ubuntu-be could be useful, we will discuss everyone’s ideas and then, hopefully, choose to create Ubuntu-be or not. I hope it will be short so we can spend more friendly (read « beer ») time together.
+
+=> http://fosdem.org FOSDEM
+=> https://wiki.ubuntu.com/BelgianTeam Ubuntu-be team
+
+=> ../files/old/ubuntube.png Ubuntu & Fries
+Ubuntu-be meeting
+Saturday 25th february, at 14h (2PM) during FOSDEM
+Room H3227 or H3228, Brussel
+
+As this room is on the first floor and is not available for the public, the meeting point is at 14h down the stairs just next to the hacker-room (and the WC).
+
+See you saturday…
+
+PS : I’ve seen a lot of missing hackergotchies on PUC and other planets. If you want that I quickly gimp your hackergotchi, please send a high-res picture of you to ploum – ubuntu.com. In fact, Gimp does all the work, wonderful software isn’t it ?
+
+=> http://gimp.org/ Gimp
+
+#### Notes
+
+[1] in english so it might be funny

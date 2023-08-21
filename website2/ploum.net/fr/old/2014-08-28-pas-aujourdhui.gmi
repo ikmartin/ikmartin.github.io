@@ -1,0 +1,45 @@
+# Pas aujourd’hui !
+=> files/old/4795592340_3c73965497_z.jpg
+
+Aujourd’hui, nous vivons dans un univers de listes sur lesquelles nous avons perdu prise et qui nous contrôlent. Mais je vous propose de reprendre ce contrôle avec un principe simple : “Pas aujourd’hui !”
+
+Afin de s’organiser, les humains ont développé une propension toute particulière à créer et remplir des listes. Aujourd’hui, nous sommes à l’apogée de la civilisation de la liste : emails, todos, liste de lecture, liste de films à voir, liste de bonnes résolutions, liste de commissions.
+
+Lorsque nous créons une liste, c’est avec le secret idéal de la vider. Un jour, ma liste de todos, ma liste de mails et ma liste de commissions seront vides. Ma liste de listes sera vide également. Ce jour là, je pourrai enfin souffler ! Ou m’attaquer à la liste des choses à faire le jour où mes listes seront vides…
+
+Or, force est de constater que cette situation est entièrement illusoire. Les listes ont la fâcheuse tendance à se remplir plus vite qu’elles ne se vident. Cette situation a pour résultat catastrophique que nous n’avons plus aucun incitant à vider les listes. Quel est l’intérêt de travailler une journée pour faire passer une liste de todos de 232 items à 208 ? Voire à 231 ! Aucun. Donc autant ne rien faire.
+
+Comment avons-nous pallié ce problème ? En créant des listes dans les listes mais sans que ça ressemble à des listes : on assigne des priorités, on utilise le status lu/non-lu pour créer deux listes, on crée un hiérarchie de fichiers pour classer et trier nos listes. Bref, nous ajoutons des listes aux listes et nous plaçons le tout dans des listes de listes. Non seulement ce n’est pas très efficace mais c’est de plus absurde. À quoi sert de définir une priorité dans une liste ? Soit l’élément doit être réalisé, soit il doit être supprimé de la liste. Les éléments en priorité basse se verront toujours dépasser par des nouveaux éléments de haute priorité et ne servent donc qu’à remplir la liste.
+
+En gros, nous avons du mal à supprimer consciemment des éléments de nos listes et nous préférons refuser le contrôle de nos listes pour ne pas avoir à prendre une décision ferme. Toute notre structure de listes, de répertoires, de priorités ne sert, finalement, qu’à se dédouaner.
+
+Si j’expose le problème, vous vous en doutez, c’est que j’ai une solution à proposer. Et, conceptuellement, cette solution est simple. Il “suffit” de vider ses listes. Inbox 0 !
+
+J’ai déjà expliqué en détail comment parvenir à l’Inbox 0 et pourquoi vous n’êtes pas à Inbox 0. Et bien vous pouvez appliquer la même méthode à toutes vos listes.
+
+=> /stay-on-top-of-your-inbox-in-2013/ comment parvenir à l’Inbox 0
+=> /why-you-are-not-at-inbox-0/ pourquoi vous n’êtes pas à Inbox 0
+
+En premier lieu, vous devez éviter à tout prix de rajouter des listes aux listes. Bannissez les priorités, les folders, les classements divers. Dans les mails, un mail est soit dans l’inbox, soit archivé. Tout autre classement est un obstacle à l’inbox 0. Les todos sont soit faits, soit à faire. Le travail de classement est une dangereuse procrastination qui donne l’illusion de productivité.
+
+Mais cela ne résout pas le problème fondamental qui est que votre liste est une montagne et que vous n’avez aucune motivation pour vous y attaquer. C’est ici qu’intervient un concept fondamental de l’Inbox 0 : pas aujourd’hui !
+
+Pour chaque élément de vos listes, vous devez pouvoir consciemment décider : “Non, ça je ne ferais pas aujourd’hui”. Au fur et à mesure de la journée, les imprévus s’intercalant, vous raffinerez “Finalement, celui-là, pas aujourd’hui non plus”.
+
+Cette approche a même été poussée à son paroxysme avec le gestionnaire de todos Do It Tomorrow.
+
+=> http://tomorrow.do Do It Tomorrow
+
+Mais on peut envisager de raffiner la fonctionnalité en repoussant un élément de la liste à une date donnée : dans une semaine, dans un mois, le 3 novembre. C’est pour cette raison que, dès sa conception initiale, GTG comportait le principe de “start date”. Any.do propose également de passer en revue sa liste de tâches chaque matin et de décider celles qui sont pour aujourd’hui et celles pour un autre jour. Pour les mails, Mailbox vient d’implémenter exactement ce principe avec un certain succès. Au contraire, je n’insisterai jamais assez sur le fait que tous les gestionnaires de projets, de tâches, de todos ou de listes en général qui n’ont pas cette fonctionnalité finiront par devenir tôt ou tard des trous noirs, des listes qu’on remplit mais dont personne n’ose plus explorer autre chose que la surface.
+
+=> http://gtgnome.net GTG
+=> http://any.do Any.do
+=> http://www.mailboxapp.com Mailbox
+
+Par rapport aux gestionnaires classiques, le résultat de la méthode “Pas aujourd’hui !” est sans appel : vous êtes aux commandes de vos listes. Vous êtes forcé de passer en revue chaque élément et de décider consciemment de ne pas faire quelque chose aujourd’hui. Résultat : il est parfois plus facile psychologiquement de le faire plutôt que de le repousser. Quoi que vous décidiez, vous êtes aux commandes de vos listes et de votre vie. Vous prenez des décisions.
+
+Et, chaque soir, en regardant vos listes vides, vous aurez la délicieuse satisfaction du travail accompli !
+
+Photo par Palo.
+
+=> https://www.flickr.com/photos/paloetic/4795592340 Palo

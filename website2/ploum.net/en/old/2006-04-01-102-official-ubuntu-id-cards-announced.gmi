@@ -1,0 +1,45 @@
+# Official Ubuntu ID cards announced
+
+You have probably heard that our beloved Sabdfl is traveling a lot those times, keeping a mysterious smile on his face each time you ask him : « Why ? ».
+
+=> http://en.wikipedia.org/wiki/Sabdfl Sabdfl
+
+End of a mystery, it seems that the Ubuntu foundation has reached an agreement with 3 governments : Belgium, Sao Tome and Principe, Liechtenstein.
+
+Ubuntu members from those three countries will receive soon an new ID card that looks like and fully replace their old one but with a distinct sign indicating they are an Ubuntu Member. This ID-card is fully official and supported by your government. The only differences are :
+– Your Ubuntu nickname will be displayed next to your birth name (allowing you to use it on official documents.)
+– An small Ubuntu logo will be displayed somewhere (depending on your country)
+– Your ID picture will be replace by your hackergotchi (remember to quickly upload an ISO-0401 compliant hackergotchi on your launchpad accound if it is not yet).
+
+=> ../files/old/id_card.jpg Ubuntu ID cards
+
+### Why an Ubuntu ID card ?
+
+Having the Ubuntu ID card is, at the moment, not really useful. But things will improve in a near future with promotions and gifts in some commercial sectors. For example, in some pet shops in Belgium, you can already have a 50% discount when buying a Norwegian blue parrot or a pony. As an early beta tester, I just bought the following one :
+
+=> ../files/old/pony.jpg I want a pony!
+He’s called « Artwork », he was brown but he becomes a little more orange every day. Cute, isn’t it ? (click on the picture if you also want a pony)
+
+=> ../files/old/cant-have-a-pony.png 
+=> ../files/old/pony.jpg I want a pony!
+
+Also, don’t forget to take your Ubuntu ID card each time you attend an official event (FOSDEM, GUADEC, …). From now on, their will be an Ubuntu stand with a electronic card reader. If you put your Ubuntu card into it, your Launchpad karma will automatically be increased by a small amount as a reward for attending the event.
+
+=> http://launchpad.net Launchpad
+
+Last but not least, the Ubuntu ID card has an RFID chip in it. Carry it always with you ! With a device like the Nokia 770 or a bluetooth cellphone, you will be able to track all Ubuntu members in your neighborhood. It will increase the real-life awareness of the community and help us to have non-IRC-only relations.
+
+=> http://en.wikipedia.org/wiki/Rfid RFID
+=> http://en.wikipedia.org/wiki/Nokia_770 Nokia 770
+
+=> ../files/old/rfid.jpg Rfid in action
+
+Ubuntu Technology is really great. Expect to see it in more countries soon !
+
+PS : Be warned to never take your Ubuntu ID Card with you when going to USA. Unfortunatly, Ubuntu is still (by mistake I hope) on the Worldwide Terrorist Organization list. Thanks to the RFID chip, you would be caught really quickly and immediately jailed in Guantanamo. Better not to try it, they are still using 56k modems !
+
+PPS : Unrelated note. Because of the hard work of people like dholbach or seb128, we have less and less bugs in Ubuntu every day. This is becoming a real issue. If you have any idea to solve this problem, please post a comment.
+
+=> https://launchpad.net/people/dholbach dholbach
+=> https://launchpad.net/people/seb128 seb128
+=> https://launchpad.net/distros/ubuntu/+bug/37579 issue

@@ -1,0 +1,58 @@
+# Offpunk 0.4 - RSS Reading and Knowledge Management
+
+## Offpunk, a command-line and offline-first smolnet browser for gopher, gemini and web.
+
+Offpunk 0.4 marks the end of the crazy-development era and the start of stabilisation-and-maturity.
+
+I make a call for packagers as I believe that Offpunk is now ready to be distributed more widely and added to distributions. Help is also sought to better document how to install Offpunk on different systems and, maybe, to host it with a git forge, a gemini page, a web page and a mailing-list.
+
+=> https://tildegit.org/ploum/AV-98-offline/ Offpunk official repository
+
+## Introducing Offpunk as an RSS reader
+
+Ever dreamed that your favourite blog or news site was available on Gemini? Offpunk makes your dream come true by rendering RSS feeds as gemlog pages. Discovering RSS feeds is also including in the subscribe command.
+
+Go to a blog you like with "go https://ploum.net" then write "subscribe". If the website offers multiple RSS feeds, you will be prompted to choose one. You can, of course, still subscribe to simple gemlogs or pages without RSS. Type "go gemini://rawtext.club/~ploum" then "subscribe".
+
+The next time you sync, new links appearing in your subscribed pages and feeds will automatically be added to your tour. Simply browse them by hitting "t".
+
+## How to sync ?
+
+Simply run "offpunk --sync" or, within Offpunk, the command "sync". By default, syncing only fetch pages which are not there yet. If you want to use Offpunk as an RSS reader, you need to impose a time limit after which a cached page becomes invalid. A good idea is to refresh not more than every 12h, which translates in 43200 seconds.
+
+So, in Offpunk, type "sync 43200" or "offpunk --sync --cache-validity 43200".
+
+After syncing, type "offline" and enjoy surfing while being completely disconnected.
+
+## Knowledge Management
+
+By default, "add" will save the current page in a list called "bookmarks" and "subscribed" will save them in a list call "subscribed".
+
+But you can create as many lists as you want with "list create". You can move a page between lists with "move" and, instead of deleting a page, you can "archive" it. Archives is only a special list which will start to remove older items once its maximum size is reached (by default, 100).
+
+You can display lists with "list". For example "list bookmarks" or "list subscribed" may already exist.
+
+Starting with 0.4, you can mark any list as "subscribed". For example, you can "list create rss", add some RSS files to it then "list subscribe rss". People upgrading for 0.3 and prior version are required to type "list subscribe subscribed".
+
+Maybe you want to create a list of pages that will never be updated. For example, you can create a list to read and you want to be sure that texts there are not modified. Simply "list create toread" then "list freeze toread". When going over a post for later, type "add toread". When time is freed to read, simply type "list toread".
+
+A list can be reverted to its normal state with "list normal". A normal list will be refreshed during sync but nothing will be added to tour.
+
+It is worth noting that lists are simple Gemtext files that can contain anything and that you can edit with "list edit" (it is recommended to have $EDITOR or $VISUAL set). You can add notes between links, organise them in subsections with subtitles.
+
+Command "help list" will remind you of what you need to know. 
+
+## Reading really long contents
+
+If you have less version 572 or above installed, multiple openings of the same content in a row will conserve reading position.
+
+Suppose that you are reading a very long content and that, in the middle of it, appear a link that looks interesting to read later and has number 12. Simply press "q" to leave less, then "t 12" to add that link to your tour then "l" or "less" to continue reading from the position you were at.
+
+## Bug fixing and improvements
+
+Offpunk 0.4 has also seen too many bug fixes to list, mainly in rendering HTML, improving syncing performances, Gopher handling and displaying fine on smaller terminals. The "version" command will tell you if you are missing some libraries. The new "info" command will give you lots of information about the current page.
+
+Type "help" to see available commands and learn more about Offpunk.
+
+And if it doesn’t work as expected, don’t hesitate to send your feedback and bug report to 
+=> mailto:offpunk@ploum.eu

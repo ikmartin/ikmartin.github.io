@@ -1,0 +1,14 @@
+# In the year 292,277,026,596
+
+Third of December 292,277,026,596, somewhere in the universe.
+
+— Blorbz, brace yourself. Tomorrow is the end of the world. We knew it for ages. It’s now our last day.
+— My Blorbz, I can’t accept it. Why? Everything is looking fine. There’s no supernova predicted, no strange black hole activity, nothing.
+— I know, young Blorbz. We don’t understand it. But the Great Ancient’s calendar does not go beyond that date. It tells something. Their civilization is so mythical. We have to trust their wisdom when they decided to use only 64bits.
+— Yes my Blorbz…
+
+=> http://en.wikipedia.org/wiki/Year_2038_problem#Solutions only 64bits
+
+This post is a drabble.
+
+=> http://en.wikipedia.org/wiki/Drabble drabble

@@ -1,0 +1,54 @@
+# The Last GUADEC?
+=> files/old/guadec.jpg
+
+Last year, during GUADEC, there was that running joke amongst some participants that this was the last GUADEC. It was, of course, a joke. Everybody was expecting to see each other in Brno, in 2013.
+
+=> /freasy-future-for-gnome this was the last GUADEC
+=> https://www.guadec.org/ in Brno, in 2013
+
+One year later, most of those who were joking are not coming to GUADEC. For them, the joke became a reality.
+
+I believe the root cause is that GNOME has never been able to clearly offer an answer to one very simple question: what is GNOME? (baby don’t hurt me, don’t hurt me, no more)
+
+People are increasingly leaving the desktop computer to use phones, tablets and services in the cloud. ChromeOS has successfully filled the gap between desktop and mobile devices and is becoming the dominant OS. Most people don’t need more than a Chromebook. In fact, it’s way easier to fill most current needs with a Chromebook.
+
+=> http://www.engadget.com/2013/07/19/googles-chrome-app-launcher-gets-full-release-for-windows/ is becoming the dominant OS
+
+One could say that the professional world is not following, that GNOME is targeting businesses or those who can’t work on a simple notebook/tablet. But we know that this is only a matter of time, that enterprises are simply lagging, on purpose or not. After all, some are still using Windows NT. And what was impossible to do in the cloud one year ago is already becoming the standard, like basic photo editing or video conference.
+
+Of course, Android and Chrome OS are not free. Worst, the recent PRISM scandal has put under light the true importance of free software and transparent web services. Thousands of people understood the problem and decided to download the most popular free operating system of our time: Cyanogenmod, the free version of Android which reacted to PRISM by offering an incognito mode.
+
+=> http://www.cyanogenmod.org/ Cyanogenmod
+=> /no-proprietary-service.html an incognito mode
+
+The switch is deeper and quicker than anything we imagined. Take a look at screens during a free software hackers conference. Yes, that’s it: Unity. Besides some Macbook and some Chromebook, it’s Unity everywhere. Unity who abandoned GTK+ to switch to Qt, renaming Qt Creator to Ubuntu SDK. Even Subsurface, Linus Torvald’s pet project, is switching from GTK+ to Qt. If you spot a GNOME desktop in a conference, chances are that you are dealing with a Red Hat employee. That’s it. According to Google Trends, interest in GNOME and GTK+ is soon to be extinct.
+
+=> http://iloveubuntu.net/qt-creator-271-renamed-ubuntu-sdk-available-ubuntu-1310-numerous-new-features renaming Qt Creator to Ubuntu SDK
+=> /no-proprietary-service.html switching from GTK+ to Qt
+=> http://www.google.com/trends/explore?q=gtk%2Cqt%2Cgnome#q=gtk%2C%20qt%2C%20gnome&amp;cmpt=q interest in GNOME and GTK+ is soon to be extinct
+
+For years, I’ve been a proud GNOME supporter. I’ve been increasingly interested by the usability of the desktop, by the innovation of GNOME 3. But, today, who really cares about Unity/GNOME/KDE or GTK+/Qt when all you need to do is to launch a browser full screen? All I need, all I want are web based versions of the free software I use. Not an WinXP replacement.
+
+=> /usability-free-software-and-perfection the usability
+=> /series/aristocratic-desktop the desktop
+=> /love-the-shell innovation of GNOME 3
+
+Only a few years ago, GNOME was at the centre of the creative world. Remember Maemo and the N700? This was ground-breaking. A mobile full-fledged OS was the future. Multiple companies emerged from the chaos to provide support, expertise, innovation. But the last remaining bastard child of this era, Tizen, has been definitely buried only a couple of weeks ago.
+
+=> http://theinquirer.net/inquirer/news/2279633/samsung-reportedly-cans-tizen-in-favour-of-android-based-project has been definitely buried only a couple of weeks ago
+
+I can’t accept that all we will keep from this wonderful story is a bunch of coloured t-shirts. We are multiple companies that were created during the GNOME golden era. We are a family of hackers, volunteers and friends. We are a community. We share a lot of experience, we share values. The free software ecosystem has produced hugely successful products which are still unmatched in the cloud offering: Gimp, Inkscape, LibreOffice, Blender to name a few. Even my own pet project, Getting Things GNOME, has no satisfactory web equivalent. And when a web solution exists, it is often a proprietary, centralized, privacy crushing one. There’s surely room for free solutions. That’s why LibreOffice is already investigating the web/mobile space.
+
+=> http://gtgnome.net/ Getting Things GNOME
+=> /changing-the-world-one-task-at-a-time no satisfactory web equivalent
+=> https://wiki.documentfoundation.org/Using_LibreOffice_in_a_Web_Browser already investigating the web/mobile space
+
+For all those reasons, I would like to take the time to sit down together and discuss about the GNOME or free software business future during a BOF. How can we evolve? Can we move the GNOME spirit into a web browser? How can we make use of our history and bring freedom to users instead of becoming just another web dev consultancy company?
+
+=> https://wiki.gnome.org/GUADEC/2013/BOFs during a BOF
+
+How can we ensure, together, that this will not be the last GUADEC?
+
+Picture by Ana Rey
+
+=> http://www.flickr.com/photos/55615801@N04/7670088838 Ana Rey

@@ -1,0 +1,27 @@
+# Implementing a web browser in a weekend (and in Offpunk)
+
+This weekend, I implemented a web browser with an HTML rendering engine. Not sure it was a good idea.
+
+Since I started working on Offpunk, I was reading the web in Neomutt (through forlater.email) or in Newsboat. Like Offpunk, both were displaying text in my terminal but with different shortcuts/usability. Wouldn’t it be awesome if all my reading could be centralised in one place ? Like Offpunk ?
+
+Last week, something happened. I realised that Forlater.email had not sent any mail back since one week. There was a bug (which was promptly fixed once I told the owner). But I concluded that I cannot rely on an external "cloud" service. Why not implement quickly web support in Offmini ?
+
+So did I.
+
+Is there another browser which allows you to browse Gemini and the Web on equal foot?
+
+The http part was easy thanks to the python-requests library. But displaying HTML is still a nightmare.
+
+First of all, I decided to sanitise any HTML page through python-readability. I don’t plan to implement a full browser, just to be able to read articles. Readability gives me a somewhat saner HTML that I can parse afterward with BeautifulSoup (a library I used in 2006 to create Conseil, a bug triaging tool for Ubuntu).
+
+The problem with HTML is that it’s really ugly. You can’t make any assumptions. You have to expect text anywhere, at any place. I really hate HTML. I know why I love Gemini.
+
+Nevertheless, it seems work surprisingly well. You can now browse the web in Offpunk, follow links, go back to Gemini. It’s all seamless. Of course, it’s all text mode too. Images are not available yet (I may implement them later as link to the file). I’m curious to know if people are willing to try and find bugs (there should be many). Don’t hesitate to report them in the bug tracker with the URL of the visited website.
+
+=> https://tildegit.org/ploum/AV-98-offline Offpunk’s code and bug tracker.
+
+In retrospect, being disconnected didn’t help me here. I feel like I reinvented the wheel. I’m sure there are tons of python libraries that would simply output beautifully wrapped text or gemtext when feed with a webpage. But I could not find any on my Ubuntu laptop. If you know a library that could replace my BeautifulSoup hack, I would me more than happy to drop that code.
+
+If you have any feedback about that tool, drop me a mail. I still have no idea if Offpunk could be useful to others.
+
+Coding takes its toll on my mind and my body. While I like to create and maintain my own tool, I need to stop doing overly ambitious projects like… implementing a web browser !

@@ -1,0 +1,15 @@
+# 2022-01-06 : Discussing about Gemini on Gemini ?
+
+I’ve seen various posts about the Gemini mailing-list being dead. One about switching to NNTP. I’ve never been on the list myself but I’ve been following it closely for the last months through… Gemini ! That was the more sensible to me. I simply added the archive gemini page someone mirrored to my Offpunk bookmarks and every new email was automatically added to my tour.
+
+Why not continuing that way and using Gemini to talk about Gemini ?
+
+We could set an dedicated Antenna instance where one would submit only entries related to Gemini. If your gemlog talk about other stuff, it’s really easy to simlpy list your Gemini entries on a separate page (even a non public facing one) and to submit it to Antenna. (I thought about setting my own Antenna before realising that it was not possible during my offline year)
+
+When I was an active GNOME developer, a lot of the debates and discussions were held through blogs. Those blogs were centralized on Planet GNOME. Planet GNOME was the place to get all the cool announces, all the hot stuffs (including trolls).
+
+The concept of themed Antenna could be expended. We could have various Antenna for different communities. Right now, Gemini feels like a village with Antenna as its agora. This is a nice thing but a double edged sword: it’s centralised. There’s a closed loop here. People who post on Antenna are, obviously, those reading it too. If it’s not on Antenna, it doesn’t really exist. It’s hard to venture out of Antenna. If you don’t really like what’s on Antenna, there’s not many places to get hooked to Gemini. Themed communities on Gemini would really help makes the whole space more colorful, more diverse, more decentralized.
+
+As a side note, I added the nice Exploration Surprise! by Sumpygump to my Offpunk bookmarks. The result is that, each day, I have three random gemini capsules in my tour. And, yes, I discovered very interesting stuff through it.
+
+=> gemini://tilde.team/~sumpygump/explore/ Exploration Surprise!

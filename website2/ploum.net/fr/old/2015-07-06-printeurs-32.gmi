@@ -1,0 +1,102 @@
+# Printeurs 32
+=> files/old/143632128_931f695dcf_z.jpg
+
+En se connectant à un avatar, Nellio a gagné le laboratoire où il a lancé l’impression du contenu de sa carte mémoire. Eva semble hystérique et hurle. Reprenant le contrôle de la situation, Junior Freeman a injecté un sédatif à Eva avant de déconnecter Nellio et de l’envoyer dans un avatar hors d’usage.
+
+— Nellio ? Nellio ? Nellio, réveille-toi !
+
+J’ouvre brutalement les yeux et me redresse. J’ai le sentiment de naître, de m’extraire du néant. Où suis-je ? Quand suis-je ? Quel est mon passé ? Je suis complètement désorienté, je ne trouve aucun souvenir auquel me raccrocher. Un visage flou coiffé d’une broussaille rousse se penche sur moi.
+
+— Désolé Nellio ! Mais je n’avais pas le temps de discuter. Je t’ai transféré dans un avatar hors d’usage afin que tu ne puisses pas faire de dégâts.
+
+Avatar ? Dégâts ? Lentement les pièces du puzzle se remettent en place.
+— Où… où sommes-nous ?
+— Chez moi, dans mon appartement. Mais nous n’avons guère de temps à perdre. Mes collègues vont très vite comprendre ce qui s’est passé.
+— Mais… comment sommes-nous ici ?
+
+Du doigt, il me désigne un avatar qui se tient debout dans l’embrasure de la porte d’entrée, immobilisé dans une position grotesque.
+— J’ai amené ta copine ici avec l’avatar avant de partir chercher nos deux corps au commissariat et de programmer une déconnexion différée. J’ai été un peu optimiste, je me suis fait éjecter de l’avatar à peine le pas de la porte franchie. Je me suis connecté à mon corps biologique alors qu’il était en pleine chute vers le plancher. Je te raconte pas l’atterrissage…
+Il me montre des ecchymoses sur les coudes. Le brouillard qui m’engourdit le cerveau se dissipe petit à petit.
+— Ma copine ? Quel cop… Eva !
+— Ne t’inquiète pas, elle dort paisiblement et va se réveiller d’un instant à l’autre.
+Tournant la tête, j’aperçois le corps d’Eva reposant paisiblement sur un vieux canapé en plastique souple. Junior l’a bordé d’une vieille couverture. Doucement, je m’approche et lui caresse les cheveux. Sa respiration se fait plus rapide, ses yeux s’entrouvrent et une sorte de cri étouffé commence à jaillir de sa bouche. La prenant dans mes bras, je fais de mon mieux pour la rassurer. Elle articule avec peine.
+— Nel… lio ?
+
+Junior me tend un gobelet d’eau que je porte à ses lèvres. Eva tente de boire mais, comme un enfant, ne semble pas comprendre comment utiliser ses lèvres. Sa déglutition est saccadée, comme désynchronisée. L’eau ruisselle sur son visage et inonde la couverture.
+
+— Je vais lui prêter des vêtements, continue Junior. Et puis il faudra filer. Nous avons très peu de temps. Nous allons devoir nous barbouiller de maquillage anti-reco et trouver une planque.
+
+Il se tourne brutalement vers moi.
+
+— T’imagines ? Tu débarques dans ma petite vie peinard et, quelques heures plus tard, je suis un criminel recherché. Je devrais t’en vouloir mais, honnêtement, je ne me suis jamais autant marré. C’est vachement excitant ! Surtout que maintenant on va continuer sans avatar, dans un simple corps biologique. Sacré challenge !
+
+Tout en me décrochant un grand éclat de rire, il se met à me lancer des t-shirts trop larges et des vêtements peu seyants.
+— C’est parfait, ça va casser la reconnaissance de silhouette des drones. Ce sont de vieilles loques, aucune puce ou fonction électronique intégrée. Par contre, je n’ai aucune idée de où nous pourrions nous réfugier.
+— Tentons de mettre un peu d’ordre dans nos idées, raisonné-je. Quel est l’objectif de Georges Farreck dans cette histoire ? S’il voulait me supprimer, il aurait déjà pu le faire. S’il ne l’a pas fait c’est que je lui suis encore indispensable pour mettre en place les printeurs. Il n’a donc pas tous les éléments.
+– Cela expliquerait la relative facilité avec laquelle j’ai pu m’échapper : les policiers ont l’ordre de ne pas te tuer !
+— Il a perdu Eva, il ne veut pas me perdre moi, cela se tient. Mais son comportement reste étrange.
+— Ok, mais on fait quoi maintenant ? C’est le plus important !
+
+Je réfléchis un instant.
+— Junior, t’es prêt à sacrifier ton appartement ? À ne plus y revenir ?
+— Ben je pense que c’est déjà le cas, je suis grillé ! Je t’avoue que, de toutes façons, en tant qu’unité spéciale ma vie était surtout au commissariat.
+— Donne moi une tablette avec une connexion vers un nœud Tor2.
+
+Il attrape un fin écran et me le tend. Pianotant rapidement, je me connecte à IRC. Impossible de me souvenir du nom du chan que Max m’avait recommandé, une longue série de caractères hexadécimaux, mais je me rappelle très bien du serveur sur lequel se connecter. En quelques secondes, je crée un compte et rejoint le chan public le plus fréquenté.
+
+« Max, FatNerdz : Eva a perdu la clé du wifi de maman. Merci de me l’envoyer en MP. »
+
+Junior me regarde avec un air interrogatif.
+— Mais qu’est-ce que cela signifie ?
+— Ça, tu vois, c’est un appeau à emmerdes. Cela signifie que ton appartement va bientôt être rayé de la carte et qu’on doit le quitter au plus vite.
+— Hein ?
+
+Son sourire s’est brutalement effacé.
+
+— Mais pourquoi t’as fait ça ?
+— Parce que j’espère que Max ou FatNerdz m’enverront une réponse avant l’explosion.
+— Et si ils ne le font pas ?
+— On n’aura pas le temps de s’inquiéter.
+— Merde ! Merde ! Merde !
+
+Une ligne s’affiche soudainement dans le client IRC.
+— Un message privé ! C’est de Max. Un seul mot : « A12-ZZ74 000-000 ». Note-le !
+— Ben copie-colle le dans mon logiciel de prise de note.
+— Non, on ne doit prendre aucun matériel électronique. Note-le sur un papier.
+— Un papier ? T’es comique ! Je n’ai pas ce genre de trucs, je ne suis pas un musée !
+— Même dans tes toilettes ?
+Il me regarde, étonné.
+— Tu as bien du papier dans tes toilettes ? Ne me dis pas que tu te contentes de trois coquillages !
+— Ben… Oui, j’ai du papier. Mais avec quoi j’écris ?
+— Avec ce que tu trouves dans tes toilettes et qui permet d’écrire sur ce genre de papier, fais-je avec un clin d’œil.
+— Mais… c’est absolument dégueulasse !
+— Ton appart va sauter d’une minute à l’autre.
+— Merde ! Merde !
+— C’est le cas de le dire !
+— Espèce d’enfoiré, fait-il en se ruant vers la toilette.
+J’entends sa voix, étouffée par la porte.
+— Répète ce que je dois noter.
+— A12-ZZ74 000-000
+— A12-ZZ74 000-000 ?
+— Oui, c’est bon. On dégage !
+
+Chacun par un bras, nous empoignons Eva qui nage dans son vieux t-shirt trop large. Elle a l’air hébétée mais nous suit sans opposer la moindre résistance. Son déplacement maladroit semble gagner en vigueur. Quatre-à-quatre, nous dévalons les escaliers de secours à l’arrière du bâtiment.
+
+Les escaliers sont rouillés, un vent tourbillonnant ne cesse de me déséquilibrer et je réalise avec effroi que Junior vivait dans l’un des étages les plus élevés. Les moins chers dans ce genre d’immeubles où les ascenseurs ne sont plus assurés.
+
+Chaque marche me semble un calvaire. Histoire de détourner mon attention, je tente de me mettre dans la peau de Georges Farreck. Quelles sont ses motivations ? Quel était son plan depuis le début ? Quel sera son prochain mouvement ? Ne suis-je pas complètement paranoïaque ? N’essaie-t-il pas de m’aider ?
+
+Un drone se met soudainement à voleter autour de nous. Une voix en jaillit.
+— Vous utilisez les escaliers de secours sans qu’aucune alerte n’aie été enregistrée. Veillez me montrer votre visage et énoncer la raison de votre présence.
+— Il ne reconnait pas nos visages grâce à ton maquillage, murmuré-je en tournant le dos au drone.
+— Il n’a sans doute pas encore contacté le central, me répond Junior. Si on arrive à activer le killswitch en le retournant, il va s’éteindre et s’écraser 30 étages plus bas.
+— Problème, il se tient hors d’atteinte, à plus d’un mètre de la balustrade.
+— J’ai fait ce genre de choses à l’entrainement.
+
+Junior m’adresse un clin d’œil et, soudainement, saute sur la barrière tout en se jetant dans le vide les pieds en avant. Au dernier moment, ses mains s’accrochent à la balustrade tandis que, d’un prodigieux coup de bassin, il a saisit le drone entre ses chevilles et le retourne. L’engin automatique tombe aussitôt comme une pierre tandis que Junior reste suspendu du bout des doigts.
+— Aaaaah ! hurle-t-il.
+Ses doigts résistent une seconde avant de céder et de s’entrouvrir, le précipitant dans une chute mortelle.
+
+Photo par Ioan Sameli.
+
+=> https://www.flickr.com/photos/biwook/143632128/in/photolist-bh754Z-KEYHU-9SpKqS-bKa9hP-bKa75p-bwfmPS-bwfnwf-bKa7F6-bwfnJh-jdMF9v-7LeuN2-94m9N-bKa98R-bUBCV-jdRX2f-9TV2CC-nq7EzX-bJczKt-uZCwdH-ufb5TH-oK4pQG-quReiZ-55hxnn-8j5BG-72Lhz1-dG9Q1-kbNeo-dYQwek-4PrEFA-qkoeUx-yHsmR-hW2kMN-q9Lh5h-9iRMtc-9WpuWR-amJ2hX-bKfRDB-yHspS-amAALZ-rL4REi-snfVWr-amDr5h-drm1bN-7KQeVG-7B2hKE-m2M7-7atWeG-gsxyf-dp7RV8-gsxAc Ioan Sameli

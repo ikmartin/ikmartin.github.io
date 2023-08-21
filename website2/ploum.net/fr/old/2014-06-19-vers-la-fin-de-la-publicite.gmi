@@ -1,0 +1,63 @@
+# Vers la fin de la publicité ?
+=> files/old/noads.jpg
+
+Le paradoxe Google
+
+Depuis quelques temps, je dis que Google est devenu son principal concurrent. Dans la recherche en ligne, core business historique de Google, le problème est évident à cause des pubs : soit le moteur de recherche de Google est très bon et le premier lien correspond à la pub affichée (donc la pub est inutile) soit ils ne correspondent pas et cela signifie que Google n’est pas bon.
+
+Disons que je cherche « Acheter chaussures les moins chères ». Le premier lien affiché par Google est CheapShoes. Mais une pub s’affiche pour NotSoCheapShoes.
+
+Si CheapShoes est bien le moins cher, la pub est trompeuse et me fera perdre ma confiance en Google et je vais acquérir le réflexe d’éviter à tout prix les annonceurs. Si NotSoCheapShoes est moins cher, alors c’est que le moteur de recherche n’est pas parfait en me renvoyant CheapShoes. Et si les deux liens sont les mêmes, c’est que la pub était inutile. Dans tous les cas, Google et les annonceurs sont perdants. C’est d’ailleurs pour cette raison que j’estime le concept de SEO comme condamné à termes. Le SEO n’est en effet qu’une exploitation des défauts de Google, défauts que Google corrigera avec le temps. Dans le monde de Google idéal, lorsque je cherche « Acheter chaussures les moins chères », Google me trouvera les moins chères indépendamment de toutes les optimisations SEO des différents vendeurs.
+
+=> /arnaque-seo/ le concept de SEO
+
+Et si Google vendait du vent ?
+
+Google a perçu ce conflit d’intérêt depuis très longtemps et s’est diversifié en affichant des pubs ailleurs. Google a été jusqu’à développer Android dans le seul but d’afficher des pubs sur votre smartphone. Mais il s’avère que, en grande majorité, les pubs sur Android ne sont pas des pubs destinées à vendre. Leur seul et unique rôle est de vous ennuyer pour que vous passiez à la version payante de l’app. Je considère cela comme un véritable racket immoral : « Paye ou on continue à te pourrir la vie ». Cette fonctionnalité d’Android est même devenue un moment l’un des arguments majeurs en faveur de Apple. Google a donc effectué un véritable travail de reconversion pour qu’Android devienne, comme iOS, une plateforme de consommation (musique, jeux, livres, films) et non plus un support publicitaire.
+
+En dernier lieu, il reste les pubs sur les sites (AdSense). Mais, ô surprise, une étude semble démontrer qu’elles ne sont peut-être pas du tout efficaces. L’observable utilisée (le clic) ne serait absolument pas liée au désir d’achat.
+
+=> http://www.theatlantic.com/business/archive/2014/06/a-dangerous-question-does-internet-advertising-work-at-all/372704/ une étude semble démontrer
+
+Ça me fait plaisir de le lire car ça fait des années que j’en ai l’intuition sans pouvoir le démontrer. Le but d’une pub est d’être vue, pas d’être cliquée. Rémunérer les supports au clic est donc une belle manière d’entuber les supports (10.000 personnes ont vu la pub mais seulement 100 ont cliqué, par inadvertance, donc on te paie 100).
+
+La dramatique absurdité de la publicité inefficace
+
+Cette situation entraîne plusieurs problèmes. Premièrement, les sites qui affichent de la pub font désormais tout ce qui est en leur pouvoir pour faire cliquer les gens, même de manière malhonnête (le faux bouton pour fermer la pub par exemple). Et les contenus deviennent les plus courts possibles. Je me répète mais, lorsque que nous choisissons une mauvaise observable, nous pervertissons le système et obtenons une situation absurde. Un site qui affiche de la pub n’est pas un site qui cherche à apporter de la valeur à ses lecteurs, c’est un site qui cherche à leur faire acheter quelque chose.
+
+=> /vos-observables-tuent-elles-votre-valeur/ une mauvaise observable,
+=> /le-minibus-et-la-discotheque/ pervertissons le système et obtenons une situation absurde
+
+Mais le problème de la publicité est bien plus large que quelques conflits d’intérêts : le web devenant de plus en plus important, il n’est plus juste un point de passage avant d’aller faire ses courses dans un vrai centre commercial comme l’espéraient les publicitaires. Une personne qui passe sa journée sur le web, qui est bombardée de pub pendant 12h ne pourra pas honorer toutes les pubs. Elle s’achètera un sandwich et, une ou deux fois par mois, quelques vêtements et accessoires high-tech mais guère plus.
+
+Ces achats sont de moins en moins suffisants pour financer tous les sites visités pendant la journée. Car, rappelons-le, le modèle de la pub est qu’en faisant vos achats, vous financez les sites qui vous ont montré des pubs. Et ce modèle est en train d’atteindre ses limites.
+
+=> /mais-qui-paie-la-publicite/ vous financez les sites qui vous ont montré des pubs
+
+Les premières victimes sont, sans surprises, les supports, les sites vivant de la pub. Sans aucune explication, ils voient leurs revenus fondre comme neige au soleil, ils voient leur compte AdSense bloqué. Comme toute industrie sur le déclin, ils paniquent et, au lieu de se remettre en question, se rabattent sur l’argument moral en vous accusant vous, lecteurs, d’être la cause de tous les maux en utilisant AdBlock. Mais la fin du scénario est inéluctable : la publicité sera de moins en moins rentable et de plus en plus envahissante.
+
+=> http://www.numerama.com/magazine/27291-google-censure-numerama-et-coupe-ses-vivres-pour-une-photo.html leur compte AdSense bloqué
+=> /lorsque-lindustrie-fait-son-deuil/ toute industrie sur le déclin
+
+L’espoir du prix libre
+
+C’est pour cette raison que je suis très optimiste quant à l’avenir du prix libre et que je vous invite, si vous souhaitez accélérer cette évolution du web, à soutenir volontairement vos sites web préférés. Contactez les auteurs et offrez leur un petit don avec, en message « En espérant la fin des publicités ». Conseillez-leur d’installer Flattr !
+
+=> /le-prix-libre-une-impossible-utopie/ du prix libre
+=> /a-mes-ecrivains-favoris/ les auteurs
+
+Personnellement, je l’avoue, j’ai beaucoup d’affection pour ceux qui vivent de la publicité mais, comme Numerama ou Korben, tentent autre chose, essaient le prix libre, reconnaissent que pour le moment c’est encore trop anecdotique par rapport aux revenus publicitaires mais ne ferment pas la porte à une transition. Au fond, j’ai le sentiment que eux aussi aimeraient ne plus servir la soupe à un intermédiaire mais apporter directement de la valeur à leurs lecteurs.
+
+=> http://www.numerama.com/magazine/17489-avec-flattr-numerama-vous-propose-de-gagner-et-partager-de-l-argent.html Numerama
+=> http://korben.info/flattr-resterons-nous-radins.html Korben
+=> http://www.numerama.com/f/119922-t-disparition-des-boutons-flattr.html trop anecdotique
+
+Oui, vous avez la possibilité de changer le monde, d’accélérer cette transition. Cela ne tient qu’à vous. Bloquez les pubs et consacrez un budget mensuel pour soutenir les contenus en ligne que vous appréciez. C’est aussi simple que cela…
+
+=> /pourquoi-vous-devez-utiliser-adblock/ Bloquez les pubs
+=> /objectif-1/ consacrez un budget mensuel
+
+Photo par Daniel Oines. Relecture par Sylvestre.
+
+=> https://www.flickr.com/photos/58871905@N03/10038893713 Daniel Oines
+=> http://sylvestre.org/ Sylvestre

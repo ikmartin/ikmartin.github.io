@@ -1,0 +1,190 @@
+# Ploum.net en J2EE
+
+Sûr de lui, raide comme un fantassin dans son costume trop cher, le jeune commercial suintait pourtant un faible relent d’hésitation. Ne sachant trop quoi dire, je gardais les yeux fixés sur la carte de visite qu’il m’avait tendue en entrant dans la salle de réunion. Son titre ronflait comme une vielle Ford tunée : Executive Account Manager (qu’on pourrait traduire en français par « sous-marchand de tapis débutant »).
+
+— Nous serions très heureux d’établir un partenariat avec votre société, commença-t-il. Le but de cette réunion est de mieux cerner vos besoins actuels et futurs afin que nous puissions vous faire une offre. Avez-vous des projets en cours ?
+— Ben, nous aimerions remettre Ploum.net à neuf.
+— Cela tombe bien, nous disposons d’experts ultra-qualifiés dans le domaine du web. Nous pourrions prendre en charge une partie ou la totalité du projet. Grâce à notre expertise et notre connaissance des méthodes agiles, le développement d’un framework modulaire basé sur J2EE et le déploiement de votre nouveau site pourrait être réalisé en quelques semaines.
+— Ah ? fis-je, étonné. Ça tomberait bien car c’est assez urgent.
+— Pas de problème ! Moyennant un léger supplément, nous pouvons faire passer votre projet comme prioritaire !
+— Ça va coûter cher, non ?
+— Ce projet favorisant l’éclosion des nouvelles technologies, vous pourriez obtenir des subsides de la région, de la communauté, de la ville, de belle-maman. Grâce à une boîte postale en Lituanie, nous faisons également partie du 18ème programme cadre européen pour le financement des TIC, des TOC et des TAC sur les territoires à faible pénétration de l’union.
+
+=> ../files/old/consultants.jpg Consultants
+L’équipe de consultants promise
+
+Là, sentant venir le terrain terriblement glissant du non-technique, je tentai de recentrer la conversation.
+
+— Je me pose des questions : est-ce que ce nouveau système sera compatible avec mon site actuel en PHP ?
+— Nous assurons bien entendu la migration depuis PHP.
+— Et cela tournera sur un serveur Linux-Apache ?
+— Bien sûr, pas de problème !
+— Qu’en est-il de la montée en charge ?
+— Aucun soucis, nous avons une expertise pointue du domaine.
+— Le tringledon à piston au zirconium tournera-t-il toujours ? Cela risque-t-il de créer des ennuis avec le zinzogène à cardan ?
+— Non, rassurez-vous. Nous avons justement un ingénieur qui connait le sujet à fond.
+
+Rassuré par ces réponses pleines de bon sens, j’ai signé le contrat et un cahier des charges stipulant une première démonstration de la nouvelle version de Ploum.net pour le premier septembre 2009. La mise en production devant se faire en décembre. Le vendeur m’avait promis quelques semaines et n’avait pas menti : 52 exactement. Nous étions aux premières lueurs de l’année 2009, celle qui marqua…
+
+## Le développement de Ploum.net en J2EE
+
+##### Janvier 2009
+
+Arrivée des consultants. En effet, J2EE et les consultants, c’est une sorte de symbiose naturelle : vous ne trouverez jamais l’un sans l’autre. Ils ont des cravates mal nouées (qu’ils abandonneront après trois jours) et passent leurs journées sur Miniville, Cochonland et Facebook.
+
+Un laptop est donné à chacun. Les deux premières semaines sont passées à configurer le-dit laptop. Chacun installe Eclipse sauf deux qui installent IntelliJ et réclament les licences pour pouvoir l’utiliser. Tous les consultants sont sous Windows et râlent de ne pas avoir de Mac (même s’ils n’en ont, pour la plupart, jamais utilisé) sauf un, l’expert Linux de la bande. Il a installé une Ubuntu puis compile chaque logiciel nécessaire depuis les sources.
+
+Les premières réunions sont tenues pour décider de l’architecture de Ploum.net. Un bon projet, c’est avant tout une bonne architecture. Il est décidé d’utiliser Jboss. Jboss, c’est bien, c’est un serveur d’application libre, ce qui correspond à la philosophie du site. Je demande ce qu’est un serveur d’application. Un consultant me fait alors un diagramme qu’il avoue ne plus comprendre lui-même à la fin de son explication.
+
+Le projet est baptisé en interne « Ploum-NG ». Il suivra un modèle MVC strict et tout sera développé suivant une méthode agile. Agile signifie que le mur sera recouvert de posts-it. Les roses pour les trucs urgents, les oranges pour les trucs pas urgent, les verts pour les trucs qu’on ne fera pas, les verts avec une astérisque pour les trucs urgents mais il n’y a plus de roses, on les a tous utilisés et les jaunes, pour faire joli. Le logiciel utilisera Spring, Struts, Stripes, Slip et plein d’autres noms que seuls les javaistes semblent comprendre. Parce que ça simplifie grandement le Total Cost Ownership du logiciel, c’est la vérité, c’est dit sur la page de chacun des projets.
+
+##### Février 2009
+
+Les consultants installent tous Jboss et, en conséquence, demandent un triplement de la taille de la ram de leur portable. Deux consultants sont déjà infestés de virus et spamment tout le réseau. Un autre des consultants leur installe un antivirus piraté mais « qui est bien mieux que celui fourni (sic) ».
+
+Le schéma des classes est commencé en UML. Fin février, ce schéma s’imprime déjà sur 8 feuilles A4 (avec polices en taille 6) qu’il faut assembler dans la salle de réunion.
+
+Un des meneurs identifie différents mécanismes fort semblables et décide de les abstraire avec des Design Pattern. Les commentaires et les rétroliens seront issus d’un FactoryOfUserInput.
+
+Beaucoup de discussions sur le meilleur wiki et le meilleur bugzilla à adopter en interne pour le développement. Comme toujours dans un projet J2EE, Jira semble la solution préférée.
+
+##### Mars 2009
+
+Un problème fondamental est identifié dans le premier design UML. Tout est refait « from scratch ». Un des consultants entre dans le top 10 de Miniville.
+
+Beaucoup de discussions, parfois houleuses, pour savoir si une classe donnée du diagramme UML appartient à M, à V ou à C.
+
+Depuis un mois, un des projects managers demande si la tâche « faire les choix technologiques » à terminer pour le sprint 3 est achevée. Personne ne sait exactement ce que la tâche signifie ni qui a écrit le titre. Les développeurs discutent. Le project manager répond qu’il n’a jamais programmé (il est secrétaire/traducteur chinois de formation) et que la seule chose qui lui importe est de savoir si le post-it peut être mis dans la colonne « Done » et si la case de son tableur peut être mise en vert.
+
+Le project manager est en effet débordé car il doit en permanence synchroniser le tableau de post-it avec un tableur remplit de macros et les documents papiers assurant la norme ISO lors du développement.
+
+=> ../files/old/projectmanager.jpg Project Manager
+Le project manager est débordé
+
+##### Avril 2009
+
+Suite à la refonte totale du projet, le nouveau design semble beaucoup plus efficace que le précédent. Chaque commentaire est maintenant généré à partir d’un objet FactoryOfSingletonFactoryOfUserComment, ce qui est beaucoup plus propre d’un point de vue MVC (sic). Les consultants suivent une formation sur une nouvelle méthode de développement agile. En conséquence de quoi, il est décidé de tenir chaque matin et chaque après-midi un meeting sur l’état d’avancement. Le jeudi est entièrement consacré à la définition des objectifs de la semaine d’après (et pas le vendredi car c’est trop près du week-end, on est moins concentré).
+
+Une couche d’abstraction est créée afin d’intégrer dans la View certains éléments du Controller.
+
+##### Mai 2009
+
+Un des consultants remarque que les tests unitaires écrits en janvier ne se lancent même plus depuis des mois. Il corrige le problème et installe un plugin qui envoie un mail à chaque fois qu’un test ne tourne plus suite à un commit.
+
+À chaque commit, chaque consultant reçoit dorénavant 150 mails.
+
+Le « responsable technique de la partie backend » estime que le bouton « poster un commentaire » fait partie de la View, pas du controler. On décide faire des classes abstraites avec héritage multiple pour satisfaire tout le monde.
+
+##### Juin 2009
+
+Réunion importante pour m’annoncer que la deadline va être difficile à tenir (de plus, Farmville, un nouveau jeu Facebook, fait son apparition). Si un dépassement de budget est envisageable, on suggère d’embaucher de la main d’œuvre supplémentaire.
+
+Le nombre de consultants est doublé (et tant pis pour la dépense, Ploum.net c’est notre fer de lance). Les nouveaux arriveront début juillet.
+
+Le fichier UML fait à présent 16 pages A4. Le code source (pour la plupart généré via d’obscurs plugins Eclipse trouvés sur SourceForge) atteint 300Mo. Certains fichiers XML de description des propriétés atteignent les 20.000 lignes. Le but de ces fichiers est d’être facilement modifiables par un non-programmeur, le XML étant plus facile que le java.
+
+##### Juillet 2009
+
+Les nouveaux arrivent. Dans le tas se trouvent 2 tchèques qui parlent anglais pas trop mal mais sont électroniciens de formation, il n’ont jamais fait de java, 2 italiens qui ne parlent qu’italien. Il y a également 3 roumains, ingénieurs en mécanique, qui parlent très bien le français (pas un mot d’anglais) mais qui passent leur journée à discuter en roumain entre eux. Si on cherche bien, on peut observer un discret indien dont le diminutif est Sivaar Bardaragmapathamghmarbatava (le nom complet a fait exploser le LDAP des ressources humaines).
+
+Le mois de juillet est passé à leur installer l’environnement de développement. On découvre que la procédure d’installation (17 pages sur le wiki, et pas des plus courtes) n’est plus du tout à jour. Comme le wiki plante, on se contente d’imprimer une procédure de « correction relative aux informations sur le wiki ».
+
+Suite à l’utilisation de librairies spéciales, le projet ne tourne plus que sous Windows. Le consultant qui était sous Linux utilisait de toutes façons WinXP dans VirtualBox.
+
+=> ../files/old/roumains.jpg 3 consultants
+Les trois consultants roumains fêtent leur arrivée
+
+##### Août 2009
+
+La moitié de l’ancienne équipe travaille à « lancer » les nouveaux dans le projet. Cela commence par leur expliquer ce qu’est Eclipse et comment créer un projet. Les italiens ne pigent rien mais prennent un tas de notes sur des cahiers.
+
+La compilation du projet avec Maven prend à présent 34 minutes en moyenne mais, sur une installation fraîche sans aucun cache, cela peut monter à 2h. L’output de la console tourne dans les 30.000 lignes à chaque fois.
+
+Tout le monde a compris que, pour Sivaar, un grand sourire agrémenté d’un « Yes, yes, yes, I understand » signifie « Je ne sais même pas dans quel pays je suis et encore moins ce que je suis censé y faire ».
+
+Un des roumains demande si les tests unitaires vont dans M, dans V ou dans C. Trois réunions s’en suivent parce que certains jugent la question pertinente.
+
+##### Septembre 2009
+
+Implémentation de l’objet AbstractFactoryOfFactoryOfSingletonFactoryOfUserComment. On assigne à un des tchèques la tâche d’écrire les tests unitaires pour tout ce qui a été écrit entre mai et septembre.
+
+La beta est reportée au 1er octobre avec démonstration devant les managers de Ploum.net dont moi-même. En conséquence de quoi, il est décidé d’allouer un budget « heures supplémentaires ». Les consultants restent tous jusque minuit pendant trois semaines en bouffant des pizzas livrées directement au bureau. Les post-it pourrissent un peu à cause du stress. Pour le reste, il n’y a pas de grand changement.
+
+Le code source pèse à présent un total de 800Mo. Le consultant qui utilise Linux ajoute, dans le prototype, un interpréteur Python utilisant Jython car « ça peut toujours servir ».
+
+Le wiki comporte 179 pages et la page de garde ainsi que ses descendants directs n’ont plus été modifiés depuis juillet.
+
+À chaque modification du code, le projet doit être entièrement recompilé pour pouvoir être testé. Le serveur doit être également relancé. « Normalement ça ne devrait pas mais si on ne le refait pas, ça ne fonctionne pas (sic) ».
+
+##### Octobre 2009
+
+Démonstration du prototype. Le chef de projet ouvre 5 consoles sur son écran et tape, dans chacune, une commande qui fait facilement 3 lignes de la console en question. Il appuie sur enter, le PC crie, chauffe et plante. « L’effet démo » me disent tous les consultants les mains croisées derrière le dos, un sourire crispé aux lèvres. Reboot et rebelote.
+
+Après quelques minutes de défilement ininterrompus dans les consoles, une interface ressemblant à Eclipse apparaît. Le tout utilisant la skin Swing. c’est moche à souhait mais le chef de projet, tout fier, explique qu’ils ont utilisé le toolkit eclipse qui permet, par exemple, d’ajouter des « satellites ». Au milieu de cette interface, une fenêtre affiche une vue de ce qui ressemble à une liste, genre ce que phpmyadmin affiche quand on explore une table Mysql.
+
+Le chef de projet explique que ceci est l’interface d’administration de l’administration du serveur de commentaires. Personne ne semble comprendre ce que cela représente exactement.
+
+Il passe ensuite sur une fenêtre Firefox qui met 15 secondes à s’afficher ( « Désolé, ce PC n’a que 2 Go de Ram mais sur un cluster de serveur, y’a pas de problème hein ! »).
+
+Dans son Firefox apparaît un page blanche avec quelques liens incompréhensibles et un logo Jboss dans le haut de la page.
+
+« Bon, bien sûr, c’est pas l’interface définitive hein ! Ici j’utilise l’interface Jboss et EJB. »
+
+Il scrolle. Dans le bas apparait un champ avec un bouton « poster le commentaire ».
+
+Le chef de projet tape un petit texte et appuie sur le bouton. Le texte s’affiche alors en haut du champ, en noir.
+
+« Et voilà, commentaire posté ! » Il se retourne avec un grand sourire. Les consultants se congratulent tous et se tapent dans les mains. Le project manager ne comprend pas trop mais sourit aussi.
+
+Voyant mon visage effaré, le chef de projet ajoute : « Bien entendu, ce n’est qu’un exemple ! Notre architecture permet une grande souplesse. Imaginez que je souhaite définir un template de commentaire, il me suffirait de modifier ça et ça (il ouvre Eclipse puis étale sur la table 32 pages attachées sur lesquelles est affichée l’architecture UML).
+
+Je reste franchement perplexe et un peu abruti par ce que je viens de voir.
+
+=> ../files/old/demoeffect.jpg Après la démo
+Deux consultants, heureux que la démo se soit bien passé
+
+##### Novembre 2009
+
+La pression de la démo étant passée, le projet n’avance plus trop. Lessivés par les trois semaines de stress, les consultants rigolent en buvant des cafés et en errant sur Twitter. Je ne les blâme pas, je fais pareil. Beaucoup de vacances avec la toussaint, Noël qui approche. Le code des tests unitaires est refactorisé, histoire de faire quelque chose.
+
+Trois consultants travaillent sur un framework permettant de gérer plus facilement les tests unitaires du projet (dont près de la moitié passent).
+
+Comme plus personne ne crée de nouveaux post-it, le project manager est très content de lui et passe la journée devant la machine à café à parler de la diagonale de sa nouvelle télé.
+
+##### Décembre 2009
+
+On m’annonce que certaines fonctionnalités ne seront pas présentes pour la release de janvier 2010. En fait, il n’y aura que les commentaires. Non testés et non garantis d’un point de vue injection SQL. Maintient-on la mise en production ou peut-on la reporter ? J’investigue de migrer vers Dotclear 2 en solution temporaire, histoire d’avoir un blog fonctionnel tant que Ploum-NG n’est pas terminé.
+
+Le chef de projet livre une documentation de 240 pages sur l’état actuel du framework, sur l’étude de faisabilité, sur les forces et faiblesses du projet. Le tout compile un rapport que chaque consultant a du faire. Il y est estimé que le site sera fonctionnel en juin 2010 mais qu’il est important de ne pas s’éparpiller et que toutes les fonctionnalités originellement prévues ne pourront sans doute pas être implémentées, certaines étant de toutes façons en contradiction avec la philosophie du framework.
+
+##### Janvier 2010
+
+Je cherche à faire faire un design correct pour la version temporaire sous Dotclear 2.
+
+=> /230-amis-infographistes-experimentons-le-troc-virtuel design correct
+
+##### Juin 2010
+
+Seul 5 consultants sont encore présents pour travailler sur le projet. Ils font principalement la documentation des bugs qu’ils trouvent et qui empêchent le projet de se lancer depuis la mise à jour de Windows en SP3.
+
+Mon ancien blog tourne encore sous Dotclear 1 et j’y publie un ultime billet.
+
+=> /231-le-parti-pirate-apres-tout-pourquoi-pas ultime billet
+
+##### Octobre 2010
+
+Le projet est abandonné mais comme les consultants sont partis petit à petit, personne ne s’en est vraiment rendu compte. Deux consultants sont d’ailleurs encore là et me donnent un coup de main sur Dotclear depuis 2 mois. Je leur donne des trucs à faire par ci par là.
+
+Ploum.net est officiellement mis en ligne sous Dotclear 2.
+
+=> /ploum-bande-encore/ mis en ligne
+=> http://fr.dotclear.org/ Dotclear 2
+
+##### Novembre 2010
+
+Personne ne se souvient plus réellement de cette idée de passage de Ploum.net en J2EE. Officiellement, le projet a été fusionné avec la maintenance de la version existante. Le serveur SVN et son 1,6Go de code source crashe, personne ne le restaure.
+
+Ce texte, bien entendu fictif, est une mise à jour d’un texte que j’avais publié sur Linuxfr en janvier 2009. Je n’ai aucun droit sur les images, qui sont un échantillon des geeks présents sur Google Images. Toutes mes félicitations si vous êtes dedans ! Si vous avez aimé ce texte, poursuivez donc votre lecture par ici.
+
+=> https://linuxfr.org//~ploum/27723.html publié sur Linuxfr
+=> /127-la-maison par ici

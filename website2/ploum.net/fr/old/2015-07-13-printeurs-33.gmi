@@ -1,0 +1,69 @@
+# Printeurs 33
+=> files/old/16858527501_044b385d93_z.jpg
+
+Nellio, Eva et Junior doivent quitter précipitamment l’appartement de Junior par l’escalier de secours. Ils sont interceptés par un drone que Junior désactive en sautant par dessus la rambarde avant de tomber dans le vide.
+
+Tout cela s’est passé en une fraction de seconde mais, par réflexe, j’ai poussé Eva sur le sol grillagé avant de me précipiter à la balustrade. Au dernier moment, j’arrive à saisir un poignet de Junior.
+— Aaaaah ! continue-t-il.
+— Aaaaah ! répondis-je.
+La rambarde me scie l’aisselle. Chaque mouvement de Junior m’inflige une douleur insupportable. Mes doigts commençant à faiblir, je tends mon autre bras.
+— Attrape ma main !
+— Bordel ! Ça fait mal !
+Il grimace tout en tentant d’agripper mon poignet.
+— Ça te fait mal ? Étrange, moi j’adore, fais-je sans déserrer les dents.
+— C’était plus facile avec l’avatar !
+
+D’un coup de reins, je parviens à le hisser. D’une main, il s’agrippe à la rambarde contre laquelle je m’arc-boute. L’attrapant par le caleçon, je le balance d’une manière fort peu élégante à côté d’Eva sur le plancher métallique de notre palier. Nous nous retrouvons tous les trois couchés, hors d’haleine.
+— Je croyais que tu faisais ça à l’entrainement, fais-je haletant.
+— Ben oui… Mais c’est la première fois que je le fais sans avatar.
+Il regarde ses mains écorchées.
+— Bordel, ça fait mal ! Et ces bras sont d’une faiblesse. Sans compter ce cœur qui est maintenant tout palpitant. Quel corps biologique de merde !
+Je me relève tout en tentant de reprendre un rythme respiratoire normal.
+— Peut-être, mais c’est le seul disponible pour le moment. Et comme je viens de risquer ma peau pour le sauver, ce corps biologique de merde, t’as intérêt à en prendre soin !
+
+Sans prendre le temps de nous ressaisir, nous reprenons la descente. J’essaye de me concentrer sur notre problème immédiat : comment interpréter le message que m’a envoyé Max ? Ce AA-ZZ quelque chose ? J’espère que Junior l’a bien noté !
+
+Mais, très vite, hypnotisés par le décompte régulier des marches, mes yeux se fixent sur les murs entièrement nus qui nous entourent. Où que porte mon regard, je ne vois qu’uniformité. Aucune couleur. Aucune décoration. Il me faut plusieurs minutes avant de réaliser que je ne perçois le monde de cette façon que depuis que j’ai retiré mes lentilles. Auparavant, les publicités, les animations ou les simples indications concourraient à rendre l’espace vivant, changeant. Mes pensées étaient sans cesse interrompues par une nouveauté quelconque.
+
+Depuis que j’ai dénudé mes pupilles, le monde est devenu hideux, terrifiant. Je suis devenu un rebelle traqué, je dois lutter à chaque seconde pour survivre.
+
+Est-ce uniquement le monde extérieur ? Ne plus avoir de lentilles m’offre une lucidité nouvelle quand à ce que je suis, ce que je pense être, ce qui me motive et ce qui me paralyse. Peut-être que cette vision est encore plus effrayante que les façades lépreuses et tristes.
+
+Cette descente introspective me semble interminable. Le bruit métallique des marches devient insoutenable, je lutte mécaniquement pour ne pas ralentir. Un profond soupir de soulagement s’échappe de mes lèvres au moment où mes pieds foulent le sol de la ruelle. J’ai cru ne jamais y arriver !
+Afin de ne pas éveiller l’attention des drones, nous commençons à nous éloigner de la manière la plus naturelle possible. Eva marche comme un somnambule et je me contente de la guider d’une pression sur l’avant bras.
+— Où va-t-on ? me demande Junior.
+— Un endroit calme pour réfléchir au message qu’on vient de recevoir.
+Tout en continuant à avancer, il me tend un morceau de papier toilette sur lequel je déchiffre « A12-ZZ74 000-000 » en lettres brunâtres. Je ne peux réprimer une moue de dégoût.
+— Beurk ! Tu l’as vraiment écrit avec ta… ton… ?
+Junior éclate de rire en pointant une petite cicatrice rouge sur son front.
+— Non, je ne devais pas. Alors j’ai gratté un bouton. Je préférais écrire avec du sang.
+— Étrange comme le fait de savoir que c’est du sang et pas de la merde me soulage, souligné-je sans ironie.
+— Par contre, je ne vois pas du tout ce que ça pourrait être. Il s’agit certainement des coordonnées d’un point de rendez-vous suivies de coordonnées temporelles. Mais je ne vois pas comment les déchiffrer. Parle moi un peu de Max. Quel genre de type est-ce ? Quel indice te donnerait-il pour le retrouver ?
+
+Max. Son souvenir est étrange, brumeux. Il y a l’individu monstrueux, blessé qui m’a aidé, qui a disparu, qui n’est plus qu’un amalgame de chair et de métal.
+— Mais comment s’est-il blessé ?
+Je lui raconte alors notre entrevue dans son appartement, notre conversation et la manière dont il m’a confié l’accès à un chan IRC où je pouvais demander de l’aide à FatNerdz.
+— C’est d’ailleurs suite à cette expérience que je considère ton appartement comme condamné.
+
+Junior s’arrête brutalement avant de se taper le poing dans le plat de la main.
+— Mais oui, c’est évident !
+Je le regarde étonné.
+— L’intertube ! Il n’est officiellement pas encore en service mais est disponible dans une bonne partie de la ville. Les coordonnées correspondent, j’avais étudié la possibilité de l’utiliser pour déplacer les avatars. Le 0000-0000 signifie « livraison immédiate sans temporisation aux nœuds redistributeurs ». J’aurais du m’en douter !
+— Bien joué. Mais comment déterminer l’emplacement du terminal A12-ZZ74 ?
+— Il n’y a qu’une seule manière de le savoir, fait-il avec un clin d’œil avant de continuer :
+— Par contre, j’ai peur que Georges Farreck intercepte le message et en comprenne le sens.
+— Ces coordonnées m’ont été transmises via un message privé crypté sur un nœud Tor2. Il saura très vite que j’ai reçu un message de Max mais ça va lui prendre un temps certain avant d’en déchiffrer le contenu. Probablement plusieurs jours.
+
+Junior se frappe subitement le front du plat de la main.
+— Merde, j’ai oublié de verrouiller l’écran de ma tablette et d’encrypter la mémoire ! Ils pourront retrouver facilement le message en fouillant l’appartement.
+
+Une explosion se fait soudain entendre derrière nous. Le souffle nous précipite sur le sol, des éclats de verre se mettent à tomber comme de dangereux flocons de neige.
+— Qu’est-ce que c’est ? demande Junior.
+Je lève la tête et aperçois un nuage de fumée là où, quelques minutes plus tôt, nous étions encore en train de discuter calmement.
+— Ton appartement !
+— Hein ? Tu veux dire que…
+— Qu’il ne faut pas s’inquiéter pour ta tablette, ces andouilles viennent de régler le problème eux-même.
+
+Photo par TintedLens-Photo.
+
+=> https://www.flickr.com/photos/tintedlensphoto/16858527501/in/photolist-rFJmTg-7sxRvv-fAzXdg-byASnQ-bMvz5v-byATto-a8gpX3-5GcnQv-6wiRbH-bL1oaP-5TaCvt-4TJox-52BVks-uHy3d-gqahv6-321vhf-52uJ51-m1TSiN-dmUu3-gq9Uxw-6XG9XM-m1TYkC-52quBK-f4iDHF-6Jvwr9-dJY9jF-65W1s9-Lo1e-8L8Xgi-8Lc2eU-6spTmp-otv1Xo-otuM8S-bsp18S-74Neeb-5sn1q-fg1eeP-9VoTW-9Vps2-7k3n1Z-71MBmY-cGAwYb-7z3KRr-65W1J9-8bKtw3-otuMFq-bquYCR-5R3pPP-8kJ21T-6cKxYn TintedLens-Photo

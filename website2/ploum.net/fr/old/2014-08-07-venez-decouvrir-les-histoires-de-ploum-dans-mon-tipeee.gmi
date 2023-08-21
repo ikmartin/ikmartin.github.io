@@ -1,0 +1,69 @@
+# Venez découvrir les histoires de Ploum dans mon Tipeee
+=> files/old/906198778_ef3a7b9438_z.jpg
+
+Depuis que ce blog est payant, j’explore les différentes formes que peut prendre le prix libre. Comme vous le savez certainement, je suis tombé amoureux du principe de Flattr. Mais aujourd’hui j’aimerais vous parler des plateformes Tipeee et Patreon.
+
+=> /ce-blog-est-payant/ ce blog est payant
+=> /le-prix-libre-une-impossible-utopie/ le prix libre
+
+Flattr, le soutien du contenu
+
+Ce qui m’a séduit chez Flattr, c’est la souplesse offerte au fan. Il suffit de déterminer un budget fixe par mois et on ne doit plus s’occuper de rien d’autres. De plus, Flattr permet d’être réellement exigeant et de soutenir les contenus de haute qualité. Flattr est fortement centré sur le contenu. Si vous ne connaissez pas encore Flattr, je vous invite à lire ce billet.
+
+=> /si-vous-testiez-le-web-payant/ à lire ce billet
+
+Par contre, Flattr possède deux désavantages de taille.
+
+Premièrement, les artistes n’ont aucune idée de ce qu’ils vont toucher avant la fin du mois. La valeur d’un flattr individuel varie, rien que chez moi, entre 0,01€ et 10€. Si j’observe une moyenne relativement stable, aux alentours de 0,60€ le flattr, elle n’est aucunement garantie. La conséquence directe est que les artistes n’aiment pas Flattr, l’utilisent peu et n’en font pas la promotion.
+
+En second point, flatter reste très difficile. Pour chaque contenu que le fan veut soutenir, il doit décider explicitement de cliquer sur le bouton Flattr. Mais si le contenu est lu à travers Pocket ou un lecteur RSS, l’opération devient complexe voire, comme quand je lis des articles sur mon Kobo, impossible. Et encore faut-il que l’artiste ait mis le bouton Flattr bien en évidence sur chaque article de son site ce qu’il fait rarement à cause du premier point sus-cité. Sans compter que tout cela doit se faire lorsque le serveur Flattr n’est pas en rade, ce qui n’est pas gagné.
+
+Patreon et Tipeee, le soutien de l’artiste
+
+C’est pour palier à ce problème que l’artiste Jack Conte a lancé Patreon. Alors que Flattr était lancé par des fans pour des fans, Patreon est lancé par un artiste pour les artistes. Le principe de Patreon est très simple : le fan promet une petite somme d’argent pour chaque contenu produit par l’artiste, avec une limite mensuelle. Un fan pourra, par exemple, proposer 1€ par chanson du musicien Untel et 3€ par vidéo du Youtubeur Machin.
+
+=> http://patreon.com Patreon
+
+Pour l’artiste, la situation est idéale : il sait exactement combien il va gagner par contenu produit. Il sait également qu’il suffit de convaincre le fan de s’inscrire une seule fois et que les paiements seront ensuite automatiques. Bref, cela résout les problèmes de Flattr et c’est la raison pour laquelle les artistes se sont précipités sur Patreon après avoir ignoré superbement Flattr. Patreon étant fort axé sur les États-Unis, un clone francophone européen a vu le jour : Tipeee.
+
+=> http://tipeee.com Tipeee
+
+Contrairement à Flattr, qui est centré sur le contenu, Patreon et Tipeee sont centrés sur l’artiste. Si c’est tout bénéfice pour l’artiste, cela a un coût pour le fan qui aura plus de mal à contrôler son budget et qui se voit obligé de soutenir tous les contenus de l’artiste qu’il apprécie.
+
+Ploum sur Patreon et Tipeee
+
+Pour un blogueur comme moi, Flattr est idéal. En l’utilisant, vous m’indiquez en effet quels sont les contenus que vous préférez et que vous voulez soutenir. Mais étant donné la qualité très disparate de mes billets, je ne peux décemment pas demander de soutenir l’écriture de chacun de mes billets sur Patreon ou Tipeee.
+
+Par contre, comme vous l’avez peut-être remarqué, je me suis lancé dans la publication de mini-livres électroniques : des nouvelles, des recueils de textes ou des essais plus poussés qu’un simple article de blog. Chaque mini-livre est publié comme un très long billet de blog mais est également disponible au format epub et pdf.
+
+=> /tag/epub la publication de mini-livres électroniques
+
+Écrire et publier ces mini-livres me demande beaucoup plus de temps et de travail qu’un simple billet. Aussi, je vous propose de soutenir leur écriture, que ce soit par Patreon ou Tipeee, à votre convenance. Patreon est en dollars et fonctionne par carte de crédit ce qui génère une taxe variable assez élevée. Tipeee est en euros et prend une commission de 8%.
+
+=> /no-proprietary-service.html 
+=> ../files/old/tipeee.jpg tipeee
+
+=> /no-proprietary-service.html Soutenez mes mini-livres sur Tipeee !
+
+=> /no-proprietary-service.html 
+=> ../files/old/Patreon_Logo.jpg Patreon_Logo
+
+=> /no-proprietary-service.html Soutenez mes mini-livres sur Patreon !
+
+Tentez l’expérience !
+
+En me soutenant sur Tipeee ou Patreon, vous envoyez un message clair : « Ploum, tu arrêtes de procrastiner sur les réseaux sociaux, tu te sors les doigts du smartphone et tu te mets à écrire un truc un peu plus consistant qu’un billet de blog, genre ce truc dont le brouillon traîne dans un dossier depuis des mois voire des années. »
+
+Mais, en plus, vous m’aidez à créer une véritable petite communauté au sein de laquelle nous pouvons interagir. Pour l’avoir testé avec mon NaNoWriMo, j’avoue que c’est extrêmement enrichissant et motivant. C’est peut-être ce qui manque le plus à Flattr : la possibilité de fédérer une communauté autour du créateur.
+
+=> /9-ans-de-blog-le-defi-nanowrimo/ mon NaNoWriMo
+
+En attendant une solution parfaite qui reprendrait le meilleur des deux mondes et qui serait intégralement décentralisée grâce à la blockchain Bitcoin, je vous laisse choisir, tester et expérimenter la manière qui vous convient le mieux de soutenir, sur Flattr ou sur Tipeee, les artistes comme Gee, Dany Caligula et… votre humble serviteur. Merci d’avance !
+
+=> https://www.tipeee.com/gee-bd Gee
+=> https://www.tipeee.com/danycaligula Dany Caligula
+=> /no-proprietary-service.html votre humble serviteur
+
+Photo par Peupleloup.
+
+=> https://www.flickr.com/photos/peupleloup/906198778 Peupleloup

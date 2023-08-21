@@ -1,0 +1,24 @@
+# RE: Design vs Evolution
+
+ModdedBear found a very interesting post from Linus Torvalds in the LKML.
+
+=> gemini://moddedbear.xyz/logs/2022-01-14-design-vs-evolution.gmi Design vs Evolution by ModdedBear
+
+But a very strange paragraph attracted my attention.
+
+> This message I believe also reflects the unique time in which Linux started
+> being developed. It was a time when developers could more easily collaborate and
+> share their work and ideas over the internet. I wonder how significant of a
+> factor that was in Linux's evolution.
+
+How on earth can someone consider that it was easier to communicate at a time where there was no git, no wiki, no bug trackers, no chat, no video conferencing. A time where connecting a computer to the Internet was a total adventure in itself, let alone paying for the computer.
+
+I sincerely cannot understand how someone can imagine that it was easier to communicate on the Internet 30 years ago.
+
+This simple sentence has a clear implication which is terrifying: it means that, for its author, in 30 years of "progress", we made things worse on the Internet. So much worse that even with every human having a permanently connected computer in its pocket, communication is now worse than when computer were slow expensive beasts exchanging bits one by one over a busy telephone line.
+
+Regarless of my own opinion, we can all agree that exchanging bits between computers is now easier and cheaper than it ever was. That there are great communication tools which were unimanigable 30 years ago. If, despite this undisputable technical progess, people have an intuition that technical communication is harder than it was, then it means something is deeply wrong with how we built that progress. Is that the case ? (answer in maximum 5000 words, I take the copies in 2 hours)
+
+Highly recommended book for people interested in how Linux was made: "Rebel Code", by Glynn Moody.
+
+PS: Hey ModdedBear, nothing personal against you. Hope you understand my general point here. Thanks for you great gemlog and sharing your musical discoveries ;-)

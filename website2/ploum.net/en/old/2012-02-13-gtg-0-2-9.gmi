@@ -1,0 +1,52 @@
+# Getting Thing GNOME is alive (and released)!
+
+TLDR: GTG 0.2.9 has been released, spread the word!.
+
+=> http://gtg.fritalk.com/post/gtg-0.2.9 GTG 0.2.9 has been released, spread the word!
+
+For those who don’t know Getting Things GNOME yet, it is a todo manager. In fact, it is, to my knowledge, the only todo manager that :
+
+=> http://gtg.fritalk.com Getting Things GNOME
+
+1. has a clean and simple UI (see my French explanation to use GTG)
+2. allows you to have infinite level of subtasks
+3. to have the same task being the subtask of multiple parents
+4. to easily classify your tasks with colours and tags
+5. allows you to see only the task that can be done right now with the concept of workview
+6. allows you to quickly enter a lot of tasks in a few keystrokes
+7. has a DBus interface
+
+=> ../files/old/.gtg029_m.jpg gtg029.png
+
+=> /228-getting-thing-gnome-gere-vos-taches-au-plus-profond-des-fibres French explanation to use GTG
+=> ../files/old/gtg029.png 
+=> ../files/old/.gtg029_m.jpg gtg029.png
+
+As a result, gtg was in the Techradar’s top 50 best Linux application of 2011 despite the lack of regular releases. It is probably packaged as « gtg » in your distribution so it is probably better that you try by yourself.
+
+=> http://www.techradar.com/news/software/applications/top-50-best-linux-apps-2011-1014373 Techradar’s top 50 best Linux application of 2011
+
+For the last year, I’ve been often asked if GTG was dead, if we planned to release something new.
+
+This is my fault and I apologize for such a long dead time. I could explain you all the oddities GTG went through but it is not interesting. I will talk you a bit more about the solution we created when the liblarch documentation will be finished. The good news is that GTG is not dead and that we have been actively working on it in the last two years, including some wonderful GSoC.
+
+=> https://live.gnome.org/liblarch/ liblarch documentation
+=> /gsoc2011 wonderful GSoC
+
+Izidor, my GSoC student, is now the co-maintainer of GTG and released 0.2.9 today. Last week, he came from Germany to Belgium to sleep with my cat, enjoy the Frozdem (Frozen Fosdem) and, as a side effect, polish all the little details that would make 0.2.9 a rocking release.
+
+=> http://gtg.fritalk.com/post/gtg-0.2.9 released 0.2.9 today
+
+=> ../files/old/fosdem_izi_lio.jpg Izidor and Lionel at FOSDEM 2012
+
+Why 0.2.9 ? That’s the bad news part! Mainly because the « backends » feature, which allows you to store/retrieve your task from an external source, is still very unstable and most of the backends had to be disabled for the release. But don’t worry, we want to stick to a much shorter release cycle and bring a polished 0.3 in a few weeks. I hope I will learn from mistakes of the past.
+
+Nevertheless, let’s celebrate the first release in nearly two years. Please share the news, package GTG, report bugs, help us, follow us on G+ and spread the word.
+
+=> http://gtg.fritalk.com/pages/download package GTG
+=> /no-proprietary-service.html help us
+=> /no-proprietary-service.html follow us on G+
+
+By the way, we are looking for a communication manager/webmaster and a Django/CSS/JS hacker to work with us on a GTG web interface. If you want to join a cool project with an insane potential, contact me!
+
+=> /contact contact me

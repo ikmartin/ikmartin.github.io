@@ -1,0 +1,53 @@
+# Frustration is the best teacher, choosing tools to focus on
+
+## Growing back to simplicity
+
+25 years ago, I was at a friend’s house, playing "The 7th Guest" on his computer (which had a CD-Rom, unlike mine). We spent hours and hours trying to solve puzzles that were explained in English, a language that we didn’t speak but started to understand. One day, he showed be a german computer magazine he found, I don’t know how. The magazine had the solutions for the puzzle but it was all in German. A language that we were not even able to decipher. But my friend had a Dutch father and armed with his knowleged of Dutch and the screenshots, we managed to finish the game.
+
+Nowadays, it took a great deal of self-control to not look up any solution once you are frustrated for more than a couple of minutes.
+
+As I’m preparing myself to spend one year mostly offline, I realize that I need and want to focus on a few tools. For the last 20 years, I’ve been used to spend a huge amount of time online to try to find the best tool for each job then copy/pasting some stackoverflow configuration and command lines.
+
+I often end up asking for help without taking the time myself to think about it. Seeing online questions, I’m clearly not alone. I often end copy/pasting stuff until it works. Last night, I wanted to figure out why Python coloring was so bad in Neovim and I ended up installing a package manager and Vim packages I’ve never heard about. I was blindly scrolling, scanning and copy/pasting. When I shut down my computer, I asked myself "what did I do to my config?". Python coloring is still bad in neovim.
+
+Instead of trying to find the best solution for each problem, I want to focus on a few tools, buy books about them and learn them. My selection includes :
+
+* Debian
+* Python3  (all my books are about Python2)
+* Bash scripting (I write bash scripts everyday without really understanding it)
+* Bash use (or should I learn Zsh ?)
+* Pandoc
+* Git
+* Vim  (or maybe should I really try to learn Emacs?)
+* Mutt (or Himalaya if Maildir support is added)
+* Maybe Tmux
+
+I welcome books recommendations about those. I plan to read a lot more books (I will close the year with more than 100 books read cover to cover while still online, I expect an offline year to be even more productive).
+
+One of my challenge learning those tools is also to keep configuration as simple as possible. That’s one reason I dislike mutt: configuration is hard and necessary even for basic use. My plan is also to avoid any plugin/library which is not packaged into Debian. It’s so easy those days to install myriad of stuff. There are a dozens of plugin manager for Vim and, seriously, I don’t want to use them. There’s so much to lean from Vim itself (well, Neovim in my case, not sure it matters).
+
+One of my biggest challenge might be to try to replace the proprietary Obsidian with either Vim or Emacs. Never been able to use Emacs but I plan to read at least a book about it. I still feel that Vim is better for my case of staying as close to the command line as possible.
+
+## Offline with AV-98
+
+I’m working on being able to browse Gemini offline with AV-98. I still need to figure out the real path of a file (when you request rawtext.club, for example, the real path is rawtext.club/index.gmi) and try to find a way to know where an URL has been updated for the last time.
+
+=> https://notabug.org/ploum/AV-98-offline
+
+The deeper I understand AV-98, the more I’m convinced it is brillant. I really like the command-line interface which allows you to keep hand on your keyboard without having to know shortcut key (I’m really bad at shortcuts and I’m bad at executing them, my fingers always mixing ctrl/alt/shift/fn/caps lock. Also, I write in Bépo).
+
+What I find incredibly smart with UX design like AV-98 is that a config file is simply a list of command run at start. No need to learn the config and the command. Both are the same. Both are documented directly with the help command.
+
+Maybe I will end up developing my own zettelkasten/email system based on that paradigm. But developing offline will probably be frustrating and hard. 
+
+This will be quite an experience and I will write about it (also planning to write my blog/gemini generator).
+
+## Help needed
+
+You can help me. By sending me book recommendations, RSS recommendations and gemlog recommendations. Recommendations for offline documentation is also welcome.
+
+The core goal of that offline year is to write a book about it (first in French but hopefully translated). If you know a litterary agent interested, please let him/her contact me. I would like to work more closely with editors.
+
+Have a good day!
+
+

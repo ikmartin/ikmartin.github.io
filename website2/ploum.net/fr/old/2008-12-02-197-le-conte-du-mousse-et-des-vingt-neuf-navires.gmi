@@ -1,0 +1,51 @@
+# Le conte du mousse et des vingt-neuf navires.
+
+Il était une fois un roi qui désirait étendre son empire. Ses conseillers lui affirmèrent que les terres par delà l’océan regorgeaient, du moins disait-on, de richesses. Notre bon roi pris la décision de construire un navire afin de s’en aller conquérir les pays sauvages. Le garde du trésor affirma que, étant donné les richesses que devrait ramener une telle expédition, l’opération serait plus que profitable. Armés de leur calculs complexes, les savants prédirent que l’équipée mettrait vingt-neuf ans à atteindre l’autre rive et autant à revenir. Fort de sa sapience légendaire, le roi ordonna l’ordre de construire vingt-neuf navires, afin que le délai soit réduit à deux minuscules années.
+
+Et l’on décida de ne plus écouter les savants.
+
+Le chantier était d’une telle ampleur que notre bon roi sentit ses forces le quitter bien avant que la première quille aie frôlé l’onde. Il fit venir son fils aîné et lui confia la tâche de terminer la construction des vaisseaux avant de rendre son dernier soupir.
+
+Devenu roi, le fils aîné alla jusqu’à lever de nouveaux impôts afin de s’acquitter de sa tâche. Lors de l’inauguration des bateaux, il prononça un grand discours et chacun, du plus simple balayeur au maître de cérémonie du palais sentit une bouffée d’orgueil et de fierté à la vue des vingt-neuf magnifiques navires fendant les vagues dans une gerbe d’écume.
+
+Les navires s’éloignèrent et nul n’y pensa plus. Le roi mourut quelques temps plus tard, heureux d’avoir respecté la volonté de son illustre géniteur.
+
+À bord du premier navire se trouvaient les meilleurs marins du royaume. Le bâtiment fendait majestueusement les flots et le moindre problème, la moindre fuite, le moindre gîte inopiné étaient immédiatement corrigés.
+
+Depuis des lunes, le voyage se poursuivait imperturbablement, au milieu d’une mer calme s’étendant à perte de vue. Les officiers se réunirent un soir dans la cabine du capitaine.
+– Depuis que nous avons perdu de vue les côtes, nous n’avons plus de cap précis à tenir. Or il est primordial d’avoir un cap !
+
+Il fût décidé de prendre comme point de repère le soleil. Le bateau devrait toujours naviguer en direction du soleil de façon à garder un cap constant.
+
+Après plusieurs semaines de navigation, un autre problème fût soulevé : lorsqu’on jetait l’ancre le soit, la proue pointant vers le couchant, le lendemain le bateau avait fait demi-tour et tournait le dos au soleil. Une solution fût trouvée avec un succès mitigé : ne plus jeter l’ancre durant la nuit.
+
+Le voyage dura 113 ans et les générations se succédèrent à son bord. Vint un jour où un incident mis à mal l’indépendance autarcique du navire. La nourriture vint à manquer et il fallu trouver une solution.
+
+Un jeune mousse perdu dans ses pensées posa soudainement une question inattendue :
+– À quoi sert l’ancre à l’avant du bateau.
+– Pardi, à immobiliser le bateau si besoin est.
+– Pourquoi n’immobilise-t-on pas le bateau durant la nuit, lorsque le soleil n’est pas visible. Cela nous éviterait peut-être d’avancer à l’aveuglette.
+
+Tout l’équipage partit d’un grand rire et lui expliqua la logique du soleil qui se couchait devant et se levait derrière. Loin de se démonter, le mousse insista et proposa que l’on jette l’ancre durant la journée afin d’observer le mouvement du soleil.
+
+Les officiers cessèrent de rire.
+– Nous avons toléré ton interruption égard à ton inexpérience et ton jeune âge. Mais nous considérons l’irrévérence et l’impolitesse comme une faute grave.
+– Oserais-tu prétendre que trois générations d’officiers ne sont que des imbéciles par rapport à ton érudition ?
+– Pour ta gouverne, sache que le journal de bord mentionne que nous n’utilisons pas l’ancre depuis 113 ans. Et que je sache, le bateau se porte toujours aussi bien.
+– Afin de t’apprendre les bonnes manières, nous te condamnons à six mois dans le fond de cale. Peut-être que tu daigneras traiter les rats d’une façon plus polie que tes compagnons.
+
+Le jeune mousse fût donc enfermé dans une cale munie d’un petit hublot et de plusieurs lourdes caisses. Notre matelot en fit l’inventaire et découvrit plusieurs livres ainsi qu’un engin particulier fait de courbe de cuivre dorée, d’une optique et d’un compas. Plusieurs livres semblaient y faire référence.
+
+Lorsque les six mois furent écoulés, le moussaillon courut exposer sa trouvaille au carré des officier. Tout enthousiasmé, il expliqua :
+– Nous sommes sauvés ! Cet engin va nous permettre de voyager jusqu’à une destination où nous pourrons ravitailler. Je vous explique…
+
+Il n’eu pas le temps d’achever. Les officiers se saisirent de lui et convoquèrent tout l’équipage sur le pont.
+– Il est important, dans un navire tel que le nôtre, de faire régner l’ordre et la discipline. Aucun manquement aux règles ne peut être toléré. C’est à ce prix que nous avons pu maintenir ce bâtiment à flot durant 113 longues années. Afin que cela serve de leçon, nous nous voyons dans l’obligation de nous débarrasser de ce fauteur de trouble. Les lois sont faites pour être respectées. Nous ne remplissons que notre rôle d’officier et même si certaines tâches sont moins agréables que d’autres, elles doivent être remplies.
+
+Le mousse pleura beaucoup, on le pendit au grand mât et il ne pleura plus. Son corps fût jeté à la mer avec le sextant et les livres. Sur la couverture d’un des livres figurait le portrait d’un roi qui, un jour, avait rêvé d’un empire[1].
+
+#### Notes
+
+[1] Sur la couverture d’un autre, on pouvait lire Dive Into Python mais cela n’a probablement rien à voir, cette histoire n’ayant aucune lien avec l’informatique. Du moins, je ne pense pas.
+
+=> http://diveintopython.org/ Dive Into Python

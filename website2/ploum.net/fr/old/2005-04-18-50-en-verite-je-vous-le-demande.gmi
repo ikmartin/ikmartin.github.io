@@ -1,0 +1,41 @@
+# En vérité, je vous le demande :
+
+Mon billet précédent a suscité des réactions intéressantes. Beaucoup de lecteurs m’ont fait remarquer que c’est trop beau pour être vrai et que c’est un billet très manichéen : le bon logiciel libre contre le vilain Microsoft.
+
+=> /2005/04/17/49-tout-simplement billet précédent
+
+En cela, ils ont tout à fait raison. Mais que puis-je y faire ? Travestir la vérité afin de rendre mon billet plus crédible ? J’ai poussé plus loin ma réflexion et je vous pose une question.
+
+Pour un utilisateur débutant parfaitement standard (web, mail, bureautique), n’ayant jamais touché un ordinateur auparavant et se trouvant dans un environnement neutre : quels sont les avantages et les inconvénients d’une Ubuntu Hoary et d’un Windows XP ?
+
+=> /2005/04/08/48-lhoary-ma-meilleure-amie Ubuntu Hoary
+
+=> ../files/old/marguerites.jpg fleurs
+
+J’y ai réfléchi longuement, tentant d’être objectif. Et voici les premiers avantages trouvés pour chaque solution. Je précise qu’il s’agit donc d’un utilisateur débutant standard ! Mon élève du billet précédent est un exemple idéal. Je ne tiens ici pas en compte les besoins spécifiques comme le webmaster souhaitant Dreamweaver et Flash ou le joueur fan de la dernière vesion de Half-Life.
+
+### Ubuntu Hoary
+
+* Ergonomie et facilité de prise en main[1]
+* Pas de virus, spywares, malwares. Mise à jour de sécurité automatique. L’utilisateur est en confiance. Pas besoin d’antivirus.
+* Par défaut, la majorité des logiciels nécessaires sont installés et intégrés. (Retouche photo, suite bureautique, petits jeux …)
+* Les logiciels supplémentaires peuvent s’installer en un click de souris. De plus, ces logiciels peuvent être considérés comme « sûrs » et ont été testés.
+
+### Windows XP
+
+* Nécessaire pour faire fonctionner certains matériels (carte Wifi, …)
+* Nécessaire pour pouvoir lire certaines informations dans des formats propriétaires (le .doc qui ne s’ouvre pas dans OpenOffice.org, les pages nécessitant Internet Explorer)
+
+À ce point, il est marquant de constater que Windows XP ne possède aucun avantage sur son concurrent du point de vue de l’utilisateur ! En effet, faire fonctionner le matériel où se préoccuper du format d’un fichier ne devrait pas faire partie du rôle de l’utilisateur de base, en théorie. Les « avantages » sont simplement les barreaux d’une prison dorée.
+
+Je suis donc bel et bien manichéen. Mais vous, saurez-vous trouver d’autres avantages à Windows ? Saurez-vous me dire ce que j’ai oublié qui fait que Windows n’est pas si mauvais que ça finalement[2].
+
+En vérité, je vous le demande, saurez-vous relever le défi ?
+
+#### Notes
+
+[1] Bon, j’admet que ce point est très subjectif. Mais je maintiens que l’ergonomie d’un Windows XP avec des couleurs maladives, un Media Player, un MS Word, et compagnie est réellement catastrophique pour un novice. Exemple : expliquer le multi-bureaux à un novice se révèle étonnement bien plus efficace et facile que d’expliquer le concept d’une barre de tâche ! Pour ceux qui ne l’auraient pas encore fait, je vous invite à lire mon billet précédent. Pour les irréductibles, et bien tant pis, oubliez cet argument qui n’est pas le plus important.
+
+=> /2005/04/17/49-tout-simplement mon billet précédent
+
+[2] J’arrête de suite les arguments concernant telle ou telle application sans équivalent Linux, il s’agit généralement d’un besoin spécifique. De même, j’arrête les arguments comme quoi 90% des gens sont sous Windows, que tout le monde connait Windows : nous essayons de discuter de la qualité intrinsèque d’un système, pas d’un fait de société.

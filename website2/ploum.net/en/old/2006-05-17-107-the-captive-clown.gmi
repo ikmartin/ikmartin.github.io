@@ -1,0 +1,134 @@
+# The captive clown
+
+=> ../files/old/clown_prison.jpg Clown in a prison
+Have you ever imagined what would Internet be without an open email protocol ?
+
+=> http://commons.wikimedia.org/wiki/Image:Carl_Spitzweg_003.jpg 
+
+Each provider would have his own email protocol. People with an @yahoo.com address would only be able to speak with @yahoo.com addresses, @bigcompany.com would only be able to exchange with @bigcompany.com and so on.
+In order to speak with all your friends, you will have between 5 and 10 different addresses. Each address would require his own client ! 10 mail clients ! Hopefully, some free and non-official clients would support multiple protocols. Or try to support them after a massive reverse engineering work…
+
+Guess what ?
+
+This is exactly the instant messaging world we are living in… Sadly…
+
+Avez-vous déjà imaginé ce que serait Internet sans un protocole de courriel ouvert ?
+
+Chaque fournisseur disposerait de son propre protocole. Les personnes avec les adresses en @yahoo.fr ne pourrait communiquer qu’avec les adresses en @yahoo.com, @monfournisseur.fr ne pourrait discuter qu’avec des @monfournisseur.fr etc.
+Pour être sûr de communiquer avec tous vos amis, vous auriez entre 5 et 10 adresses mail. Chaque adresse aurait besoin de son propre client de messagerie ! 10 lecteurs d’emails ! Heureusement, quelques clients non-officiels seraient disponibles qui supporteraient tous les protocoles. Ou du moins essayeraient de les supporter…
+
+Vous savez quoi ?
+
+Ce monde est exactement celui de la messagerie instantanée dans lequel nous vivons… Malheureusement…
+
+=> http://commons.wikimedia.org/wiki/Image:Fietspad_naar_campus_Diepenbeek.JPG 
+=> ../files/old/tree_road.jpg Tree and road
+
+That’s why this Friday 19th of May will be the first Open Discussion Day. During this day, we ask you to not use any proprietary protocol (MSN, ICQ, AIM, Yahoo). Warn your contacts the day before and propose them to open a Jabber account on Google Talk (ask for an invitation), on Fritalk or any other Jabber server in a country near you.
+
+=> /2006/04/06/103-may-19th-the-open-discussion-day-19-mai Open Discussion Day
+=> http://www.google.com/talk/ Google Talk
+=> /contact ask for an invitation
+=> http://live.fritalk.com Fritalk
+=> http://www.xmpp.net/bycountry.shtml Jabber server in a country near you
+
+This first Open Discussion Day is dedicated to the memory of Peter Millard.
+
+=> http://en.wikipedia.org/wiki/Peter_Millard Peter Millard
+
+C’est pourquoi ce vendredi 19 mai sera le premier Open Discussion Day. Durant cette journée, nous vous demandons de ne pas utiliser de protocoles propriétaires (MSN, ICQ, AIM, Yahoo). Prévenez vos contacts le jour avant et proposez leur d’ouvrir un compte Jabber sur Google Talk (demandez moi une invitation), sur Fritalk ou n’importe quel serveur Jabber dans un pays proche.
+
+=> /2006/04/06/103-may-19th-the-open-discussion-day-19-mai Open Discussion Day
+=> http://www.google.com/talk/ Google Talk
+=> /contact demandez moi une invitation
+=> http://live.fritalk.com Fritalk
+=> http://www.xmpp.net/bycountry.shtml serveur Jabber dans un pays proche
+
+Ce premier Open Discussion Day est dédié à la mémoire de Peter Millard.
+
+=> http://fr.wikipedia.org/wiki/Peter_Millard Peter Millard
+
+=> /2006/04/06/103-may-19th-the-open-discussion-day-19-mai 
+=> ../files/old/odd_logo.png ODD logo
+
+### Links and translations about the ODD – Liens et traductions à propos du ODD
+
+* Open Discussion Day announce (en & fr)
+* ODD sur Jabberfr (fr)
+* Lettre ouverte à mes contacts MSN et ICQ (fr)
+* Mai, 19th / Der neunzehnte Mai (de)
+* Open Discussion Day in CZ (cz)
+* Pourquoi je n’utilise pas MSN (fr)
+* Goodbye Legacy IM (en)
+* Tchatcher en toute liberté (fr)
+* Jabberes – Open Discussion Day (es)
+* Open Discussion Day on Jabberweb (nl)
+* Fri Chat-dagen (se)
+* Der Open Discussion Day (de)
+
+=> http://wiki.jabberfr.org/index.php?title=Open_Discussion_Day ODD sur Jabberfr
+=> http://n.ethz.ch/student/fbianco/odd/odd.html Lettre ouverte à mes contacts MSN et ICQ
+=> http://codeschmi.de/diary/articles/2006/04/06/mai-19th-der-neunzehnte-mai Mai, 19th / Der neunzehnte Mai
+=> http://www.abclinuxu.cz/zpravicky/the-open-discussion-day Open Discussion Day in CZ
+=> http://www.pikolint.org/blog/index.php/tiennou/2006/05/13/pourquoi_je_n_utilise_pas_msn_mais_jabbe Pourquoi je n’utilise pas MSN
+=> http://www.deepdarc.com/2006/02/27/goodbye-legacy-im/ Goodbye Legacy IM
+=> http://n.ethz.ch/student/praplana/ll.php Tchatcher en toute liberté
+=> http://www.jabberes.org/node/802 Jabberes – Open Discussion Day
+=> http://jabberweb.be/news/9 Open Discussion Day on Jabberweb
+=> http://www.frimedia.se/readnews.php?newsid=630 Fri Chat-dagen
+=> http://www.mynetcologne.de/~nc-zeitzbe/florian/ Der Open Discussion Day
+
+### Jabber servers that will close their gateways on that day – Serveurs Jabber qui vont désactiver les passerelles ce jour-là.
+
+* Fritalk.com (fr & en)
+* Jabberland.com (es)
+* jabber.ccc.de (de)
+* jabberme.org – jabberme.net – jabberme.de
+* sourcecode.de
+* linux-server.org
+* stan4d.net (en)
+* 303labs.net (en)
+* ek-ek.org (eo)
+* agora.eu.org (fr)
+* Jabberweb.be (nl)
+* amessage.info – amessage.be – amessage.eu (de & en)
+* jabbernet.eu
+* nedbsd.nl – nedbsd.be – netbsd.eu (nl)
+* jabberchat.eu
+* shady.nl (nl)
+* 4business.nl (nl)
+* darkskies.za.net (za)
+
+but also :
+
+=> http://fritalk.com Fritalk.com
+=> http://jabberland.com/ Jabberland.com
+=> http://web.jabber.ccc.de/index.php/news/archives/2006/04/28/icqjabbercccde-jit-wird-eingestellt/ jabber.ccc.de
+=> http://stan4d.net/ stan4d.net
+=> http://303labs.net/ 303labs.net
+=> http://ek-ek.org/ ek-ek.org
+=> http://agora.eu.org/ agora.eu.org
+=> http://jabberweb.be/ Jabberweb.be
+=> http://web.amessage.info/ amessage.info
+=> http://nedbsd.eu/ nedbsd.nl
+=> http://shady.nl shady.nl
+=> http://darkskies.za.net/ darkskies.za.net
+
+* Creation of the ObjectWeb Jabber server (en)
+
+Of course, don’t forget to warn your users with a MOTD !
+
+=> http://www.objectweb.org/phorum/read.php?f=29&amp;i=10693&amp;t=10693 Creation of the ObjectWeb Jabber server
+
+If you want to add a link in this list, simply post it in a comment.
+Pour ajouter un lien à cette liste, postez le en commentaire.
+
+=> ../files/old/goodbye_im.png goodbye IM
+
+Open your network, open the discussion !
+
+```
+<strong><em>Ouvrez votre réseau, ouvrez la discussion !</em></strong>
+```
+
+=> http://digg.com/technology/Friday_is_Open_Discussion_Day_,_For_One_Day_Use_Only_Open_Protocal_IM Digg this story

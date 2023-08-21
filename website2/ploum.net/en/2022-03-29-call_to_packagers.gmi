@@ -1,0 +1,19 @@
+# A Call to Packagers
+
+As I use Offpunk everyday, I feel like the experience is more and more polished. I’m proud to say that the HTML rendering is, to my eyes, the best I’ve seen in a terminal. I’m currently experimenting with building a mail client to use the same rendering and it’s impressive how HTML mails are really readable compared to neomutt+w3c.
+
+I read lot of people having similar needs and not trying or liking Offpunk. I’ve asked a few users and it seems one the main problem is installing Offpunk and making dependencies work with different Python versions, different libraries, etc. If you are trouble getting started with Offunk, drop me a mail, I’d like to hear from you.
+
+I love Python as a language. But the Python ecosystem is deeply broken on most systems. Just as with every ecosystem which tried to bypass good old "distributions" to put in place an user controlled rercursive dependencies system.
+
+Distributions are the way to go. I’m thus asking packagers for help. Packaging Offpunk should be trivial (it’s one lone python file!). It would really help users to have a simple way to install Offpunk and dependencies on their system. Please send me a link to the package with the command to install Offpunk (and, if possible, an additionnal command to install all optionnal dependencies). I will add those on the README page. I’m also working hard to remove dependencies. 1.2 saw the end of ansiwrap and python-editor will be dropped in 1.3. 
+
+I’m really hoping to see a Debian package (or a PPA, but being in the official Debian repository would be a dream), packages for minimalists Linux distribution (like Void, Alpine), for *BSD ports and MacOS homebrew. I really tried and spent countless hours but I’m so bad at packaging it is embarassing. Patches or bug reports to improve packaging and/or portability of Offpunk are highly appreciated.
+
+=> mailto:offpunk@ploum.eu Contacting me about Offpunk
+=> https://tildegit.org/ploum/AV-98-offline/ Offpunk website
+
+Known Offpunk packages (list to be updated):
+=> https://aur.archlinux.org/packages/offpunk-git Arch Package (thank kseistrup)
+
+As a side note, I’m currently investigating BSD systems and reading "Absolute FreeBSD" (by Michael W. Lucas), which is an awesome book. Also saw some Geminauts using OpenBSD. But every report of people using BSD on their Thinkpad mentionned that they don’t use things such as Wifi or Bluetooth. Still wondering if I should stick to Debian or explore more…

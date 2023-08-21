@@ -1,0 +1,85 @@
+# Libère vos attaches les plus tenaces, même au plus profond des fibres
+
+=> ../files/old/lessive2.jpg Lessive, un email plus blanc que blanc
+(Kevin) Moman, j’ai fait un tache sur mon pull favori en jouant avec l’aut’ tache à tache-tache.
+(Maman) Oh ben oh lala, c’est une sacrée tache. Je vais de suite me mettre à la tâche.
+(Kevin) Pasque j’y suis attaché à ce pull moman.
+(Maman) Ne t’inquiète pas, j’attache beaucoup d’importance à cette tâche.
+(SuperPloum) Marre de frotter ? Marre d’être attaché aux taches ? Libérez de vos attaches grâce au Document Freedom Day !
+(les deux autres, en choeur) Oooooooh ! Merci SuperPloum !
+
+=> http://documentfreedom.org/ Document Freedom Day
+
+##### Arrêtez avec vos attachements !
+
+=> ../files/old/boulet.jpg Boulet
+Non mais sérieux, c’est quoi cette mode ? Aujourd’hui, plus moyen de recevoir un mail sans attachement. Je sais que l’humanité apprécie énormément se compliquer la vie le plus possible[1] mais sérieux, envoyer des mails vides avec le contenu en attachement ça vous fait pas un petit ding ding[2] dans le cerveau ? Voire le mail qui contient uniquement un message laconique genre « Le message est dans la pièce jointe » ?
+
+Bon, je le dis tout de suite : les attachements, c’est mal. Voilà. Vous étiez jeunes, innocents, vous pouviez pas savoir. Maintenant, à partir de cette phrase, vous portez l’énorme responsabilité de ces milliers d’attachements utilisés une fois et abandonnés sur le bord de l’autoroute pour les départs en vacances.
+
+Pourquoi tant de haine ? Pour plein de raisons, toutes aussi valables les unes que les autres. Tout d’abord, l’efficacité. Un message est direct ouvert, visible. Ouvrir l’attachement prend du temps. Pas grand chose, quelques secondes de plus. Mais quand on a des centaines de mails, ça devient vraiment impossible à gérer. De plus, lorsque vous envoyez un message avec le contenu « Réunion à 19h », il est très facile de faire une recherche rapide sur le mot « réunion » pour retrouver tous les mails parlant de réunion. Le message est attaché ? Pas de bol, la recherche marche plus.
+
+Puis bon, le mail est tellement facile pour écrire des messages, pourquoi vouloir absolument se compliquer la tâche ? Les attaches, ça fait tache !
+
+##### Le format de fichier
+
+Un autre point extrêmement important est que, en envoyant un fichier attaché, vous pensez implicitement que la personne en face de vous pourra l’ouvrir. Hors c’est de moins en moins le cas. Il n’est pas rare de lire ses mails depuis un ordinateur de poche, une borne internet rudimentaire, un GSM, un PDA, un blackberry, ce que vous voulez. C’est ça qui fait la force et la richesse de l’email. En envoyant des pièces jointes, vous brisez toute l’utilité de l’email et c’est bien dommage.
+
+Je remarque également que la majorité des attachements sont dans des formats propriétaires. Cela signifie qu’officiellement, seule une unique société à le pouvoir de décrypter ces documents. L’exemple le plus frappant est le tristement célèbre .doc. En pratique, OpenOffice.org et Abiword arrivent à les lire mais ce n’est pas grâce à Microsoft. En envoyant des documents .doc, vous admettez implicitement que votre correspondant utilise forcément la suite bureautique Microsoft Office sur l’ordinateur utilisé pour lire les emails. Vous avez déjà essayez Word sur un GSM vous ?
+
+=> http://www.gnu.org/philosophy/no-word-attachments.fr.html .doc
+=> /141-les-10-logiciels-indispensables-sous-windows OpenOffice.org
+=> http://abiword.org/ Abiword
+
+Ce 26 mars est justement le Document Freedom Day, une journée consacrée à expliquer les problèmes des formats propriétaires. Du coup, vous n’échapperez pas à mon blabla, vous vous en doutez un peu. J’en vois un au fond qui essaye de lire un Pif magazine en cachette. Ça t’intéresse pas ? Dis le tout de suite hein ! Viens t’asseoir devant moi. Voilà. On continue.
+
+=> http://documentfreedom.org/ Document Freedom Day
+
+##### Plus du tout d’attachements ?
+
+=> ../files/old/lessive.jpg lessive
+Faut pas déconner non plus, les attachements c’est bien pratique. Premièrement, lors d’un échange concerté, il est évident que vous pouvez attacher ce que vous voulez. Par contre, si vous envoyez un message de votre propre chef, vous devez vous poser plusieurs questions. A fortiori si vous envoyez le message à plusieurs personnes.
+
+Tout d’abord : est-ce que le sujet du mail exprime bien le mail. Est-ce que le message contient tout ce qui doit être dit. Dans 99% des cas, plus besoin d’attachement.
+
+Si vous voulez faire un beau message avec des couleurs, tapez vous trois fois le clavier sur la tête en vous demandant : « est-ce vraiment nécessaire ? » Dans la majorité des cas, la réponse est « non ». Une information pertinent n’a généralement rien à faire d’icônes clignotantes et de rouge partout. Bon, une invitation ou un faire part, ça peut être sympa par contre.
+
+La plupart des clients mail vous permettent de mettre des couleurs, des images en utilisant l’option d’envoi au format HTML. La beauté de cette méthode est que même sur les ordinateurs les plus frustres en noir et blanc sur un écran de la taille d’un timbre, le contenu du texte pourra être affiché. Les couleurs et les images seront perdues mais le texte sera toujours là et c’est le plus important.
+
+Il existe aussi des formats qui sont complètement standards et fonctionnent à priori partout. Vous pouvez donc sans crainte envoyer des images au format .jpg ou .png. (mais par pitié, ne les mettez pas dans un .zip. Le jpg et le png sont déjà compressés, vous ne gagnerez rien, au contraire).
+
+Vous voulez vraiment envoyer un long rapport, un texte à la mise en page chiadée ? Alors voici le PDF, qui sert justement à ça. Dans OpenOffice, il vous suffit d’exporter au format PDF. Le gros avantage du PDF est que le document apparaîtra chez vos correspondants tel que vous le voyez vous-même. Ce n’est *jamais* le cas d’un document .doc qui a toujours un retour à la ligne qui saute, une fonte qui est pas installée. De plus, la toute grande majorité des ordinateurs, même les téléphones portables, peuvent lire le PDF et le Jpg.
+
+Résumons : le mail simple répond à 80% des besoins. Un jpg ou un pdf répond à 19,9% de ce qui reste. Bien entendu y’a des cas limites mais si déjà on se simplifiait la vie dans les cas standards, ce serait pas mal.
+
+##### Les formats ouverts
+
+=> ../files/old/odf.png ODF
+Vous voulez vraiment m’envoyer un document qui ne peut pas tenir dans un email. Vous voulez également que je modifie ce document. Bon, admettons. Et bien, pourquoi ne pas utiliser un format ouvert, normalisé et reconnu comme standard ISO ? Une bonne idée non ? Et bien c’est justement le format OpenDocument. Au lieu d’un .doc, vous m’enverrez un .odt, un .odp à la place d’un .ppt et un .odc à la place d’un .sxc. Le format OpenDocument est supporté par OpenOffice (que vous devriez installer de toute urgence), par Abiword, par KOffice, par Lotus Symphony d’IBM. Même Microsoft Office le support si vous installer le plugin.
+
+=> http://fr.wikipedia.org/wiki/OpenDocument OpenDocument
+=> http://www.sun.com/software/star/odf_plugin/index.jsp le plugin
+
+Mais cela ne vous dispense pas, et c’est une règle valable pour tous les types d’attachement sans exception, de dire dans le corps du mail le contenu de l’attachement et de dire pourquoi vous me l’envoyez.
+
+##### Le retour du vieux râleur à roulette
+
+=> ../files/old/grincheux.jpg Grincheux
+Je sais, je sais. Vous êtes en train de vous dire : « Encore en train de râler. Mais je m’en fous moi de ces trucs. J’y connais rien à l’informatique, ça m’intéresse pas ! ».
+
+Effectivement. Mais ici, il s’agit d’une question de respect. Tout le monde n’a pas un ordinateur dernier cri avec les derniers outils Microsoft, tout le monde n’a pas une connexion Internet rapide et illimitée. Pour beaucoup, votre email sera le centième de la journée. Respecter certaines règles n’est pas de l’informatique, il s’agit de la courtoisie la plus élémentaire.
+
+Personnellement, l’automobile ne m’intéresse pas du tout. Je ne sais pas comment ça fonctionne et je ne veux pas le savoir. Pourtant, j’ai dû malgré tout apprendre le code de la route. En informatique, c’est pareil. Le fait d’être derrière un écran ne vous dispense pas d’un minimum de politesse. Ne pas écrire en majuscules, ne pas mettre des pièces jointes de n’importe quel format et n’importe quelle taille, ne pas dire LE MOT toute les phrase, prendre garde à respecter un minimum l’orthographe[3]. Et si on vous fait une remarque à ce sujet et que vous vous sentez insulté, dîtes vous que vous avez probablement été irrespectueux le premier. Bah, on apprend de ses erreurs et au moins vous savez que vous ne recommencerez plus.
+
+=> /173-on-ne-dit-pas-lol dire LE MOT
+
+(SuperPloum)Et si je vous reprends vot’ paquet de formats ouverts et qu’à la place je vous donne deux paquets où y’a rien d’écrit ?
+(Maman) Ah ben non alors hein non je garde les formats ouverts hein oh non alors hein !
+
+#### Notes
+
+[1] J’essaye d’acheter une assurance, je sais de quoi je cause
+
+[2] ceux qui ont tourné la page gagne 10 points, merci Clochette
+
+[3] J’ai dit un minimum hein. Je parie que ce billet est plein de fautes

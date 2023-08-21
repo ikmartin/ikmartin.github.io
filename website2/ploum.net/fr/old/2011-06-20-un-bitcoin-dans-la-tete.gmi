@@ -1,0 +1,46 @@
+# Un bitcoin dans la tête
+=> files/old/pyramides1.jpg
+
+Le bitcoin fait pour le moment beaucoup de bruit. Certains y voient une révolution planétaire, d’autres une arnaque comme une autre. Nombreux sont ceux qui l’appellent une pyramide de Ponzi, un terme que tout le monde se targue d’utiliser mais que personne ne se serait attendu à trouver en dehors du menu d’une pizzeria avant 2008.
+
+=> /monnaie-de-geek-monnaie-de-singe/ bitcoin
+
+Plutôt que de démonter cette affirmation en pointant les différences entre Bitcoin et une pyramide de Ponzi ou en arguant que, selon cette même définition, tout marché financier (y compris l’euro ou le dollar) est une arnaque de Ponzi, essayons de nous mettre dans la tête d’un partisan du bitcoin. Qui peut croire au succès du bitcoin et surtout pourquoi ?
+
+Afin de comprendre les bases du raisonnement, penchons-nous un instant sur Paypal. À première vue, Paypal n’apparait que comme un moyen de payer par Internet. Uniquement cela ? Pas tout à fait. L’euro Paypal représente en effet une monnaie entièrement indépendante. La preuve ? Imaginons que Paypal annonce une promotion d’été : pour chaque euro versé sur votre compte Paypal, ils vous en offrent un second gratuit. Bien entendu cette promotion s’accompagne du fait que chaque montant retiré de votre compte sera divisé par deux. Cela n’a l’air de rien mais cela signifie concrètement une dévaluation de la monnaie appelée Euro-Paypal. Les sites proposant des paiement via Paypal seraient obligés de multiplier leurs prix par deux.
+
+Comme on le voit, l’Euro-Paypal est donc bel et bien une monnaie indépendante qui peut être soumise à des fluctuations. Ces fluctuations sont décidées par la banque centrale émettrice de la monnaie, à savoir la société Paypal. Pour des raisons évidentes, cette banque centrale privée a décidé de lier sa monnaie Euro-Paypal à l’Euro traditionnel. Mais ne nous y trompons pas: cette décision est purement arbitraire.
+
+Quel est le rapport avec le bitcoin me direz-vous ?
+
+À la lueur de cette explication, on comprend que la monnaie virtuelle est déjà un fait établi et que cette monnaie est soumise à l’autorité de sociétés privées. Les dollars et euros Paypal sont soumis à Paypal, les Facebook credits à Facebook, etc.
+
+L’histoire a suffisamment démontré que les solutions centralisées liées à une seule et unique société ne sont pas pérennes. Pour qu’une solution s’impose comme standard et soit acceptée par tous, elle se doit d’être indépendante, non-liée à un intérêt commercial donné.
+
+=> /odd2011 ne sont pas pérennes
+
+C’est exactement ce que représente le bitcoin. Un paypal décentralisé et non soumis à des intérêts privés.
+
+La question n’est donc pas tant de savoir si une monnaie électronique décentralisée va réussir à s’imposer mais de savoir laquelle. Le bitcoin n’a pour le moment pas de réel concurrent, ce qui simplifie la question : le bitcoin confirmera-t-il son succès avant l’apparition d’un concurrent ?
+
+Comme il n’y a pas de banque centrale régulant son émission, le bitcoin doit être par design limité en nombre total, induisant une économie de type déflationnaire. De même, le prix ne pouvant être arbitrairement fixé par une autorité, il fluctue uniquement suivant le marché. Ce marché étant fort jeune, les fluctuations sont très importantes. Ces deux points, déflation et fluctuation, sont très perturbants. Néanmoins, on voit difficilement comment concevoir une monnaie décentralisée évitant ces deux écueils.
+
+Si vous pensez que le bitcoin peut devenir une monnaie électronique utilisée, la question suivante est de savoir à quel taux la valeur d’un bitcoin se stabilisera. Nous ne parlons pas, bien entendu, d’une stabilisation parfaite mais uniquement d’un ordre de grandeur. Dans cinq ans, un bitcoin s’échangera-t-il aux environs d’un euro ou aux environs de mille ?
+
+Cette valeur, même Nostradamus semble l’ignorer. Tout est encore possible. Les sceptiques arguent que la valeur sera zéro car un concurrent aura pris le dessus. D’autres que le Bitcoin vaudra 10.000 euros et qu’on paiera nos achats en ligne en millies et mickies[1]. Une chose est certaine : le bitcoin aura la valeur que lui donnera le marché.
+
+=> /futur-economie millies et mickies
+
+En prenant en compte cette réflexion, on comprend mieux l’enthousiasme généré par le bitcoin en tant que technologie ou investissement à long terme.
+
+Bien entendu, tout le monde n’a pas cette réflexion. Le buzz et la spéculation à court terme font du bitcoin une cible privilégiée des spéculateurs du dimanche, entrainant pics et crashes. Mais ce ne sont que des incidents spéculatoires à court terme qui ne reflètent en rien la valeur à long-terme du bitcoin. C’est dans cette spéculation de bas-étage que certains laisseront peut-être des plumes ou que d’autres voient une arnaque.
+
+Si vous pensez malgré tout que le bitcoin est dangereux et que, par un malencontreux hasard, vous tombez nez-à-nez avec quelques millies sauvages au détour d’un recoin de web, n’hésitez pas. Envoyez-les à notre brigade de démineurs professionnels qui se chargera de les faire disparaitre sans le moindre frais à votre charge: 1GTkuikUyygRtkCy5H6RMuTMGA1ypqLc1X
+
+Crédit photographique: Wilhelmja
+
+=> http://www.flickr.com/photos/wilhelmja/4233621517/ Wilhelmja
+
+#### Notes
+
+[1] respectivement un millième et un millionème de bitcoin

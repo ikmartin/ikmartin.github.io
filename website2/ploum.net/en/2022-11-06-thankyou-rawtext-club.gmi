@@ -1,0 +1,35 @@
+# Thank you rawtext.club (and the whole Gemini sphere)!
+
+For years, I’ve been planning to migrate my blog from Wordpress to a more minimalistic solution. I did multiple experiments, worked hard with providers, even contributed to writefreely but nothing managed to stick.
+
+Problem was, like always, the customer: myself. I didn’t exactly know what I wanted. I even wrote huge requirements and discussed them with potential providers. I wanted a minimalistic blog but I wanted lots of features. When I discovered Gemini, it was only one more feature to add to my minimalistic blog.
+
+In the meantime, I started a gemlog on rawtext.club. Because the name really reflected what I wanted to be. I started writing for this gemlog and rediscovered the pleasure of writing what I wanted to write, without caring about the audience, the design, the social networks. I found back why I was writing in the first place.
+
+Everything was done by hand. I wrote a .gmi file, uploaded it on the server then modified the index.gmi by hand. That was all. It was beautiful.
+
+The more I was writing, the more I saw people sharing links of my gemlog through gemini proxy. I thought that I should generate an HTML version… Wait a moment…
+
+That was the moment.
+
+The moment when I realised that I should not make my weblog available through Gemini. No, I needed to make my gemlog available on the web and migrate all my old content into my gemlog.
+
+And that’s what I did. I started a python script generating my index.gmi. And to convert my posts to html. And to do all the things you never think about when you start writing software. Until it works.
+
+As I don’t want to host my blog (which can attract lots of traffic) on rawtext.club, I’m currently hosting it on sourcehut under the domain ploum.be :
+
+=> gemini://ploum.be Ploum.be (Gemini)
+=> https://ploum.be Ploum.be (https)
+
+I will migrate the official domain ploum.net when I finish doing the last bit (sending content to a mailing list) but, for Gemini users, my official gemlog will be ploum.be (and will stay valid, even after ploum.net has migrated).
+
+I will keep rawtext.club as a mirror as long as I don’t consume too much resource.
+
+Thank you cmccabe, thank you rawtext.club folks, thank you solderpunk, thank you gemininauts. For the hosting, sure, but, mostly, for the huge inspiration. Like a moth, I was attracted by the luminous "rawtext.club" name. It made me think, it made me realise what was important to me, what I truly wanted to share, to transmit and what I wanted to let go.
+
+The pleasure I had to write and read all your gemlogs helped me to realise who I truly wanted to be online and to get rid of all the cruft I thought was necessary to have a successful blog.
+
+So thank you. Keep reading. Keep writing. And thank for all the fishes.
+
+
+PS: My blog was initially called "Where is Ploum?" As the private joke/reference to wally/waldo was lost, I decided to simply call it "Ploum.net". Easy and efficient. But my gemlog was called "Ploum’s Offline Typewriter". I’m now thorn between keeping this name or going back to the more straightforward "Ploum.net" (which works in French). 

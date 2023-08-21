@@ -1,0 +1,76 @@
+# Cyber, pas Troll !
+
+Lorsqu’il arrive, encore tout frais et émoustillé, à ses premières réunions communautaires, le jeune linuxien est envahi par un sentiment étrange. Les grands gourous, ces personnes étranges qu’il vénérait comme des demis-dieux semblent s’entredéchirer à grand fracas de hache à double-tranchant, d’épées. Est-ce la guerre ? Qu’est donc cette haine, cette violence à l’état brut ? Mon dieu, pourquoi sont-ils revêtus d’épaisses cottes de mailles et de casques viking ? Vont-ils vraiment faire couler le sang ? 
+=> ../files/old/troll1.png Troll
+Rassurez-vous, ils pratiquent simplement le sport national des geeks : le Troll.
+
+Le troll est au linuxien ce que la cocotte-minute est à l’aspirateur de salon : ça n’a aucune utilité intrinsèque mais qui saurait aujourd’hui s’en passer ?
+
+Le troll, petit être velu, est tout simplement une discussion sans fin dans laquelle chacun a raison. Faîtes l’expérience : mettez-vous dans une pièce avec votre meilleur ami, bouchez-vous les oreilles et criez :
+– J’ai raison !.
+Lui répondra, en se bouchant les oreilles :
+– Non c’est moi !
+Continuez de cette manière jusqu’au premier sang ou jusqu’à la mort, selon les modalités convenues à l’avance. Vous venez de réduire le troll à sa plus simple expression.
+
+Comment ? C’est stupide ? C’est donc que vous avez bel et bien compris le principe. Alors maintenant, apprenons à troller, afin de faire de vous un vrai linuxien aguerri.
+Il est primordial de retenir le premier principe : Un bon trolleur ne cherche pas à imposer son avis ou a argumenter. Un bon trolleur cherche uniquement à énerver ses interlocuteurs. Le seul moyen de ne pas se faire avoir par un troll est tout simplement de ne pas y répondre du tout. Toute autre réaction ne ferait que renforcer la bête. D’où les maints avertissements que le voyageur trouvera sur sa route :
+
+=> ../files/old/DoNotFeedTroll.jpg Do not feed the troll
+Don’t feed the troll !
+
+Le linuxien affectionne donc particulièrement le troll. Il n’est même pas nécessaire d’avoir une bonne raison pour cela.
+
+un pur topic de linuxiens : d’abord on s’engueule, ensuite on va lire pourquoi si on a le temps. (ShaLouZa, sur ubuntu-fr)
+
+=> http://forum.ubuntu-fr.org/viewtopic.php?id=20274&amp;p=1 ubuntu-fr
+
+Il existe cependant quelques thèmes de trolls récurrents et particulièrement appréciés. Citons notemment les trolls sur les distributions : Ubuntu contre Mandriva[1] contre Fedora contre Gentoo[2] et le très célèbre troll sur les environnements de bureau : Gnome contre KDE, dans lequel vient toujours se glisser l’un ou l’autre défenseur de XFCE ou de fluxbox.
+
+Un troll KDE-Gnome se déroule généralement de la façon suivante :
+– Gnome c’est nul, on peut pas faire ça!
+– oui, mais au moins on s’y retrouve et on a un menu qui tient dans un écran de moins de 21 pouces.
+– Oui, mais sous KDE ça tu peux le configurer !
+– Je veux pas configurer, je veux juste utiliser. Pas besoin de 15.000 trucs qui s’agitent !
+– ça tombe mal, avec Gnome, tu ne sais rien faire du tout.
+– C’est pas parce qu’on ne sait pas personnaliser le gamma de la transparence dans les arrières plans des icônes comme sous KDE qu’on ne sait rien faire !
+– Non, c’est vrai, on peut jouer à Démineur sous Gnome. Y’a juste qu’on peut pas choisir la taille de la fenêtre, ça perturberait l’utilisateur.
+– Bah, sous KDE, tu dois d’abord configurer le menu, après seulement une demi-heure de recherche tu supposes que Kmine c’est le démineur, il se lance te demandant ton âge, la couleur que tu souhaites pour les mines, la taille du tableau, ce que tu veux manger ce midi et finalement t’affiche une dizaine d’astuce « savez-vous que cliquer sur une zone la démine ? »
+– …
+
+On peut continuer ainsi jusqu’aux insultes, ce qui fait du troll une véritable « Flamewar », un simple défouloir purement émotif sans plus aucune construction rationnelle, niveau classe de maternelle.
+
+=> ../files/old/troll2.png encore un troll
+Fraîchement émoulu dans la promotion de « ceux-qui-ont-compilé-leur-kernel », vous arriverez très vite à penser que les trolleurs sont en fait une race à part, un peu les rebuts de la société. Détrompez-vous ! Les plus grands de ce monde sont capables des pires bassesses ! Imaginiez-vous Linus Torvalds lui-même, créateur de Linux, capable de poster sur une mailing-liste GNOME pour dire que KDE est meilleur[3] ? Et d’ensuite se perdre en querelles futiles[4] avec Jeff Waugh, Nat Friedman, Havoc Pennington[5] ? Autant vous dire tout de suite, lorsqu’un combat de titans de cette ampleur prend forme, on ne peut qu’admirer les éclairs qui fusent tout en remerciant le ciel que cela ne se passe pas près de chez soi.
+
+=> http://lanternebrisee.net/blog/2005/12/12/23-enquete-sociologique plus grands de ce monde
+=> http://www.mitternachts-lied.net/blog/index.php/2005/12/10/298-troll-inutile-du-jour des pires bassesses
+=> http://mail.gnome.org/archives/usability/2005-December/msg00021.html Linus Torvalds
+=> http://mail.gnome.org/archives/usability/2005-December/msg00020.html Jeff Waugh
+=> http://mail.gnome.org/archives/usability/2005-December/msg00025.html Nat Friedman
+=> http://mail.gnome.org/archives/usability/2005-December/msg00024.html Havoc Pennington
+
+Le plus beau de cette histoire est la futilité, l’inutilité quasi-artistique de toute cette ardeur. En effet, chacun est libre d’utiliser l’environnement de bureau qui lui plaît sans que ce choix aie la moindre conséquence sur son entourage. La beauté du libre n’est-elle pas justement que chacun puisse utiliser GNOME, KDE ou tout autre voire les deux, voire une partie de chaque? Nul besoin d’en débattre, tout le monde est différent, tout le monde a le droit de vivre sa vie comme il l’entend.
+
+=> ../files/old/trollvelu.jpg Troll Ordi
+Le Troll, avec une majuscule, en est l’illustration : le Troll, avec une majuscule, est bien sûr celui qui concerne les éditeurs de texte. En effet, pourquoi débattre d’un éditeur de texte meilleur qu’un autre ou non ? Chacun utilise celui qui lui convient, on pourra de toutes façons toujours échanger nos fichiers. C’est le plus inutile, c’est le plus courru. C’est le Troll par excellence…
+
+Moralité : peu importe ce que vous entendez, peu importe les opinions. Utilisez l’outil qui vous convient le mieux, choisissez le bureau que vous aimez, la distribution que vous appréciez. Ces débats sans fin ne sont que du vent… Sauf bien sûr en ce qui concerne Emacs. Tout le monde sait bien que, en dessous de 17 doigts par main, Vim est nettement supérieur et plus puissant, ce qui n’est pas un troll, tout simplement une constatation scientifique. Tout ceux affirmant le contraire sont de simples trolleurs…
+
+Documentation : Wikipedia et Wikimedia
+
+=> http://fr.wikipedia.org/wiki/Trolls Wikipedia
+=> http://commons.wikimedia.org/wiki/Category:Trolls Wikimedia
+
+#### Notes
+
+[1] Faut dire que, rien qu’avec un nom pareil, on a envie de troller
+
+[2] ah non, eux ils sont trop occupés à compiler
+
+[3] Si vous avez été attentifs au début de ce billet, vous avez compris que le principe même de poster un message disant qu’on préfère KDE au milieu d’une liste dédiée au développement de GNOME est, au mieux, de la provocation bête et méchante.
+
+[4] Une pensée émue pour Till Kamppeter, qui ne risque pas d’avoir une réponse constructive à son message de si tôt..
+
+=> http://mail.gnome.org/archives/usability/2005-December/msg00019.html Till Kamppeter
+
+[5] pour les nouveaux : ces monsieurs sont, dans le monde du libre, des dieux à l’état brut

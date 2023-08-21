@@ -1,0 +1,80 @@
+# The Fight for E-Clothing
+=> files/old/fabric.jpg
+
+I meet Karl Isrich in a small restaurant. You maybe heard about the company he founded, MyVirtualTaylor, a pioneer of e-clothing. You would probably imagine Karl as one of those twenty-something golden boy. Instead, I face an average anxious guy, approximately forty years old with greyish hairs.
+
+He asked me to go to this cheap restaurant because he could not afford a more expensive dinner. Lawyers, he said. When we sat down, he gave me a business card that used to be shiny six months ago. It simply says « MyVirtualTaylor, Isrich CEO ».
+
+Hello Karl, thanks for the meeting. MyVirtualTaylor is an e-clothing company. But what is e-clothing exactly ?
+
+Simply put, it’s 3D printing for clothes. We have developed a clothing printer that we sell and which is the size of a washing machine. Not being bigger than a washing machine was one of our top requirements before the launch.
+
+The clothing printer has a tank of polymer, that you need to refill regularly, and seven dye tanks. We discovered that having seven primary colors was a good deal to reproduce most of the colors.
+
+Through wifi, you send a .clo file to the printer then wait between ten minutes and one hour, depending on the size and the complexity of the model. Everything is automatic, you can even print a bunch of .clo in a row.
+
+How do you get a .clo file?
+
+We have an online editor on our website that allows you to design your own clothes. We have also some standard templates: shirts, ties, stuff like that.
+
+In fact, when we launched, we didn’t really think about that. We thought that there will be a new market for clothes creators. That’s why we wanted the .clo format to be open and documented. We sell the hardware but we didn’t want to enter the clothing market.
+
+Can you really print anything? What are the limitations?
+
+Currently, there are some constraints with the size. We have prototypes that can print as big as a king size bed sheet. But, of course, you can only print clothes made of polymer. No silk nor fabric.
+
+Isn’t that a big limitation? After all, most of our clothes are made of fabric.
+
+It should be noted that a lot of progress have been made with polymers. We can weave the polymer in a lot of different ways in order to have the properties we want.
+
+But, most importantly, clothing material has always been about finding a compromise between style, comfort and durability. Durability being the critical point for quality clothes. The clothes have to go through hundred of washing cycles. Our solution was to remove durability from the equation.
+
+Do you mean that printed clothes are not durable?
+
+Not, they aren’t. But it is not the goal. Instead of cleaning them, you put them in the clothing printer and the polymer is cleaned, melted and ready to print new clothes.
+
+Unfortunately, we still cannot extract the colors. The polymer is thus not perfect. We store the recycled polymer in a separate tank. When you print, you can allow the use of recycled polymer or not. It is good enough for every day but if you want a perfect white shirt for a wedding, you probably want the unused polymer.
+
+The part of the polymer which is worn out goes with the waste to the sewers.
+
+It sounds like an ecological disaster.
+
+That’s exactly the rumor spread by our opponents.
+
+But, while it is not perfect, you have to compare it with the traditional clothing industry. Clothes are usually made in huge factories in China, using harmful chemicals. Then, you have to take into account the transport, the storage, the shop. Not mentioning the gas needed to go to the shopping mall. To that, add the water and the soap used to wash the clothes. By contrast, we basically use electricity and release very little polymer. With time, we hope to be able to recycle more and more.
+
+*Did you talk about opponents?*
+
+You know, I’m an engineer. I never really cared about anything but the technological aspects. When the first clothing printers were sold, people immediately started to exchange .clo files. They took their own clothes and make .clo files to be able to reproduce them.
+
+One day, I received a letter from lawyers of the FCIAA, the Fashion & Clothing Industry Association of America. I’ve never heard of them before but, basically, they wanted me to stop my company because I was threatening their business.
+
+I thought it was a joke. Really. At first I was like: « Funny. It’s like the candle industry suing Edison for inventing the lightbulb ». But it’s not funny any more.
+
+I can talk about this for hours. They are bad. Really bad. They are trying to destroy my life.
+
+Can’t you let the lawyers handle that?
+
+For the lawsuit, of course. But there’s a lot more. I’ve been contacted by politicians. They say that I’m destroying the economy. If my product works, there will be no shops for clothes hence no jobs. They asked me: « Do you know how many Americans are working in clothing shops? ». I was accused of being anti-patriotic. From nowhere, some news laws appeared saying that clothes should have a certification in order to save children from accidental suffocation.
+
+From that point, it became immoral to print clothes. Last year, nobody ever thought about printing clothes and, now, it is worse than eating babies alive. There’s even webshops where you can order « Not Printed » labelled t-shirts. I’ve been attacked personally, investors have turned me back and, at the same time, I still need to pay expensive legal fees.
+
+Isn’t that true that it’s a threat for the economy?
+
+It is a tool for making life easier. Any invention which free people from unnecessary labor seems to be a threat to the economy. But if our economy is threatened by inventions that make life better for everyone, it’s the economy we need to change, not the inventions.
+
+=> /backyard-digging-point unnecessary labor
+
+What will you do next?
+
+I feel bitter. I’m an engineer with a new useful idea and everyone turns against me: big corporations, lawyers, politicians. Even random people in the street think that « It’s the guy destroying jobs and suffocating babies ». I’ve never signed up for that. I’ve never been into politics or anything like that. Now, I’m thinking about settling somewhere in Europe but I’m afraid that the hand of the FCIAA will follow me there.
+
+Thanks Karl, I wish you the best.
+
+Although, as a journalist, I know I should remain objective, I can’t help but feeling empathy for the guy. As I’m packing up, I notice his clothes for the first time. « So are those printed? » « Of course » « Very nice. It’s impressive. » He sighs then try to smile at me: « Thanks. If you are interested, you will find the .clo on the Pirate Bay. ». His smile feels sad, despaired. We shake hands and he slowly walk away while I stay there, helpless.
+
+This post is part of the Letters from the Future collection and is dedicated to Brokep for announcing his political involvement during the writing of this text. Picture by Anna Banana.
+
+=> /no-proprietary-service.html Letters from the Future
+=> http://blog.brokep.com/ Brokep
+=> http://www.flickr.com/photos/35034348013@N01/285908461 Anna Banana

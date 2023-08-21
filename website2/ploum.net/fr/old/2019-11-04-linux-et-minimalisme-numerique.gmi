@@ -1,0 +1,131 @@
+# Linux et minimalisme numérique
+=> files/old/patrick-fore-0gkw_9fy0eQ-unsplash.jpg
+
+*Petite chronique d’un retour aux sources et à l’essentiel d’un libriste de cœur.*
+
+L’intoxication numérique n’est pas simplement liée à la consommation quotidienne de Facebook. Les outils que nous utilisons pour être « productifs » ont également un coût énorme sur notre énergie mentale. Comme le souligne Cal Newport dans ses livres Deep Work et Digital Minimalism, nous avons tendance à ne considérer que le bénéfice potentiel d’un outil, nonobstant les coûts. Ce qui nous mène forcément à la conclusion absurde qu’« avoir l’outil est mieux que de ne pas l’avoir du tout ».
+
+Dans mon esprit, ce surplus de consommation numérique s’est cristallisé avec l’App Store d’Apple. À travers des jolies images et des jolies couleurs, l’App Store avait pour objectif de me faire installer une énième application qui me rendrait plus productif, une énième application certes très jolie, mais dans laquelle je devrais migrer mes données existantes avant d’apprendre à l’utiliser avant de recommencer avec une autre quelques mois plus tard.
+
+Excédé également par la non-configurablité, mais également par les bugs de MacOS, j’ai décidé de regagner ma liberté, de retourner à mes amours. 5 ans de Mac étaient une belle expérience, mais fini de jouer, j’ai désormais envie de revenir aux choses sérieuses.
+
+Plutôt que de tenter une migration app pour app, en trouvant une application équivalente à chacun de mes usages, j’en ai profité pour faire le tri, pour lister toutes les apps et services que j’utilisais afin de les réduire au minimum.
+
+## La philosophie
+
+Si j’investis dans un nouveau laptop, la question principale à se poser est « pour en faire quoi ? ». On peut tout faire aujourd’hui avec un ordinateur. Mais quel est mon objectif principal outre faire tourner Linux ?
+
+Dans mon cas, il est très simple : écrire. Que ce soit pour mes projets personnels ou professionnels, je ramène désormais tout à l’écriture (d’ailleurs, si vous cherchez un écrivain/scénariste/vulgarisateur/futurologue, je fais également du mercenariat).
+
+Outre les incontournables mails et un navigateur web, tout ce qui n’est pas directement lié à l’écriture doit être considéré de trop. Je me suis octroyé un seul plaisir : la lecture des flux RSS.
+
+Pour le reste, je m’interdis toute distraction sur ce nouvel ordinateur. Les réseaux sociaux et les médias seront même bloqués. L’idée est que mon cerveau comprenne instinctivement que ce laptop ne sait faire qu’une seule chose : servir de machine à écrire. Plutôt que de lutter en permanence contre la tentation de me distraire, je rends la distraction impossible sur une machine particulière.
+
+Cela résout également pas mal de questions concernant la compatibilité avec tel ou tel logiciel vaguement dispensable. S’il n’est pas indispensable pour me faire écrire (et, au fond, rien n’est indispensable pour écrire dans un fichier Markdown), alors la question ne se pose pas : il n’a pas sa place sur ma machine..
+
+## Le laptop
+
+Si Linux me manquait affreusement et que je ne risque pas de regretter une seule seconde MacOS, je ne peux pas en dire autant de la finesse, de la légèreté et de la qualité d’écran d’un macbook. 900 grammes sans ventilateur ni le moindre bruit, difficile de faire mieux.
+
+Mon choix se porte finalement sur le Star Lite de Starlabs. 1,1kg, c’est un peu lourd, un peu plus épais avec un mauvais écran. Mais, avantage non négligeable, il coûte littéralement le quart du prix d’un macbook. À ce tarif, je ne m’attends pas à un miracle.
+
+=> https://starlabs.systems/pages/star-lite Star Lite de Starlabs
+
+Je suis surpris cependant par l’aspect général. Pas de plastique, mais cette espèce d’aluminium qui semble très solide. Tellement solide qu’ouvrir le laptop requiert à chaque fois un véritable effort des deux mains. Une fois ouvert, l’écran est nettement moins bon, ultra-sensible aux reflets et bouge légèrement quand je tape au clavier. Le clavier, lui, est l’excellente surprise après des années sur un macbook : quel confort d’avoir de véritables touches ! Je regrette juste que les touches à droite soient fort petites, car, en Bépo, la touche la plus à droite est le W. Il m’arrive très régulièrement de taper un retour à la ligne au lieu d’un W. Mais je ne vais pas me plaindre : le macbook était devenu littéralement inutilisable à cause d’un bug, visiblement très répandu, qui déplace le curseur aléatoirement au cours de la frappe.
+
+Niveau performances, je ne sais pas si c’est le matériel ou Linux, mais tout est parfaitement réactif dans i3. Le macbook consommait très souvent beaucoup de CPU, les sites étaient lents à ouvrir et Antidote était littéralement inutilisable. Rien de tout ça dans le Star Lite, je retrouve une expérience fluide et normale du web et je me réconcilie avec Antidote. Dans un Gnome-shell, c’est une autre histoire, spécialement avec le trackpad. Car le trackpad est une véritable catastrophe. De temps en temps, et je soupçonne que c’est lié à la charge CPU, il va se bloquer, devenir erratique ou très lent.
+
+Mais j’ai décidé de vivre avec, car je souhaite utiliser de plus en plus le clavier. Le Star Lite dispose d’ailleurs d’une touche magique pour complètement désactiver le touchpad. J’adore !
+
+Bref, le Star Lite est loin d’être parfait, mais il est petit, portable, relativement léger, résistant, assez performant pour mon usage minimal et pas cher. Bien que n’ayant pas de ventilateurs, il est cependant bruyant : la RAM cliquète comme sur un vieux desktop des années 90. Je croyais que ça n’existait plus… Ça et l’infernale diode blanche qui m’éblouit en permanence pour me dire que mon laptop est allumé !
+
+## Mon workflow de travail
+
+Une conclusion s’est très vite imposée à mes yeux : je devais minimiser les différents stockages de mes données. Il m’est arrivé plus d’une fois de chercher un fichier dans Evernote alors qu’il était dans mon Dropbox ou dans Notions, de ne plus savoir exactement ce que j’avais installé sur ma machine ou de savoir que j’avais interagit avec un partenaire sur un projet, mais sans savoir si c’était sur Slack, Evernote, Google Drive ou par mail.
+
+J’ai, ces dernières années, tenté de me débarrasser des fichiers, d’avoir tout dans Evernote ou tout autre service concurrent que je testais. Mais je réalise aujourd’hui que les mails et les fichiers sont deux piliers incontournables. Ils existeront toujours et je devrai toujours travailler avec. Du coup, comment ne pas ajouter d’autres piliers ?
+
+C’est tout simple : je n’utiliserais désormais plus que des fichiers traditionnels organisés à ma façon. Finis les stacks, les notebooks, les notes. Si un logiciel ne me permet pas de gérer mes données dans des fichiers dans un format ouvert et une structure que je contrôle, je ne considère même pas son utilisation (exit donc Joplin ou Notable, qui sont pas mal mais forcent une structure de répertoires).
+
+En partant du postulat que chaque projet est un répertoire, j’ai, après plusieurs essais et erreurs, fini par aboutir à la structure suivante en 5 répertoires très simples.
+
+Archives : comme le nom l’indique, Archives contient tous les projets terminés ou abandonnés. À noter que, plutôt que de classer par « type », je considère tout comme un projet. Les photos de mon mariage, par exemple, sont dans un dossier « Mariage » qui contient également le PDF des invitations, le tableur de la liste d’invités et toutes les autres archives. C’est simple, mais il m’a fallu casser l’inclinaison à mettre les photos dans « Photos », les pdf dans « documents », etc.
+
+inbox : un répertoire essentiellement vide qui contient les fichiers temporaires ou en transit. Un billet de train, un PDF à imprimer, un document téléchargé que je n’ai pas encore classé, etc.
+
+Workbox : contient les projets en cours qui ne nécessitent pas une attention soutenue. Ce sont plutôt des projets en arrière-plan permanent. Par exemple, le dossier SPRL contenant tout ce qui est relatif à notre société est dans Workbox. Un dossier Aida4 contient tout ce qui est relatif au brevet d’apnée sur lequel je travaille pour le moment. Ma migration vers Linux ou ma recherche de laptop étaient également dans ce répertoire.
+
+Frigobox : répertoire particulier, il contient tous les projets sur lesquels je souhaite m’investir, mais que je m’interdis de faire pour le moment pour éviter la dispersion. La relecture de Printeurs pour en faire un ebook digne de ce nom est par exemple dans Frigobox. Plusieurs billets de blog sont également là-dedans.
+
+Focusbox : les projets sur lesquels je souhaite me concentrer. Quand je suis sur mon ordinateur, c’est dans ce répertoire que je dois être et travailler. Idéalement un et pas plus de 3 projets dans ce répertoire.
+
+Ces 5 dossiers sont synchronisés grâce à Tresorit. J’ai également 3 autres dossiers qui ne sont pas sur Tresorit : Download, un répertoire pour tout ce qui est temporaire et qui peut être perdu, devel, un répertoire qui contient les dépôts git sur lesquels je travaille et Dropbox, pour avoir accès à certaines applications qui nécessitent Dropbox (dans mon cas, c’est la synchronisation avec le Freewrite).
+
+=> https://tresorit.com/fr Tresorit
+
+Depuis quelques mois, j’utilise cette organisation et je suis abasourdi par son efficacité. Je ne cherche plus un fichier, j’ai toujours sous la main ce dont j’ai besoin et les fichiers ne s’accumulent pas dans mon HOME.
+
+=> ../files/old/Screenshot-from-2019-11-03-23-14-57-600x149.png 
+Mon HOME. Tout simplement.
+
+## Logiciels
+
+J’ai insisté sur mon désir de simplification. Comme je cherchais à passer un un tiling window manager, afin de faire tout au clavier et de ne plus avoir de bureau, je suis tombé sur Regolith Linux, un projet qui est exactement ce dont j’avais besoin, à savoir une version d’Ubuntu où le bureau GNOME a été remplacé par i3, mais en gardant certains avantages de GNOME et en étant très accessible aux débutants grâce à un affichage facile des raccourcis clavier. Un bonheur !
+
+=> https://regolith-linux.org/ Regolith Linux
+
+Hormis les traditionnels Firefox, Geary (pour les mails) et Feedreader (pour les RSS), le seul logiciel important installé sur ma machine est Zettlr.
+
+=> https://zettlr.com/ Zettlr
+
+Zettlr, combiné à mon organisation en répertoires, a réussi à remplacer pas moins de 4 logiciels macOS. Le fait que tous les répertoires de mon HOME soient dans Zettlr est primordial. Tout semble soudain incroyablement facile et simple.
+
+Zettlr remplace tout d’abord Ulysses comme logiciel d’écriture et d’organisation de mes textes. Il remplace également Evernote comme logiciel de prise de notes. D’ailleurs, je n’ai jamais réussi de manière satisfaisante à trouver un workflow entre Evernote et Ulysses. Mais il remplace également DayOne. J’ai en effet décidé de transformer mon journal personnel en simples fichiers markdown (voir mon script d’export de DayOne vers Markdown). Et, last but not least, il remplace Things, le dernier gestionnaire de todo que j’avais testé.
+
+En effet, plutôt que d’avoir des todos dans un logiciel séparé, je me contente désormais d’écrire le mot magique « TODO » dans le fichier du projet concerné. Bon, je l’avoue, j’utilise également un carnet papier (mais, de toute façon, je jonglais entre différents carnets papier, mon gestionnaire de todo, mes notes Evernote).
+
+Zettlr ne remplace parfaitement aucun de ces logiciels. Mais, dans une volonté de minimalisme, j’ai décidé d’accepter cette « dégradation », de perdre en fonctionnalités. Je me rends compte, après plus d’un mois à ce rythme, que c’est extrêmement libérateur pour l’esprit. Je courais après la solution ultime alors que, fondamentalement, le coût mental de n’importe quelle solution est bien plus élevé que le bénéfice éventuel.
+
+Tout cela m’a même motivé de me remettre à Vim grâce au livre de Vincent Jousse « Vim pour les humains ». J’essaie de voir si je pourrais répliquer, dans Vim, les fonctionnalités de Zettlr, à savoir la navigation par projet, le mode distraction-free, la création simple d’un fichier dans un projet. Je réfléchis également à passer mes mails et mes flux RSS en ligne de commande, pour utiliser les raccourcis Vim. Chantier en cours, notamment en terme de lisibilité de ma console.
+
+=> https://vimebook.com/fr Vim pour les humains
+
+## Le retour à la maison
+
+Après 5 années sous MacOS, je ressens mon retour sous Ubuntu comme un véritable retour à la maison. Je n’ai jamais été chez moi sur un Mac. J’ai besoin que mes outils soient alignés avec mes valeurs. Je fais partie de la famille du libre, c’est identitaire chez moi et je dois l’accepter. J’ai trahi mes idéaux par semi-obligation professionnelle, confort et curiosité, mais je me rends compte que cela ne me plait pas.
+
+Je repense à tous ces outils, parfois excellents, qui ont été créés, qui sont devenus une startup avant de disparaitre. Au lieu de créer ma startup, j’ai créé avec mon ami Bertrand le logiciel libre Getting Things GNOME. Je lui ai consacré plusieurs années de ma vie qui s’est traduit en un certain succès d’estime. Contrairement à une startup, je n’en ai jamais tiré le moindre profit financier, mais, aujourd’hui, je suis fier de constater que le logiciel possède encore des utilisateurs qui tentent de le faire revivre. C’est toute la différence entre le propriétaire et le libre : le libre a une chance de survivre à ses fondateurs. Mais les fondateurs, eux, n’ont aucune chance d’en tirer de gros bénéfices.
+
+=> https://fr.wikipedia.org/wiki/Getting_Things_Gnome Getting Things GNOME
+=> https://fortintam.com/blog/survey-on-making-gtg-sustainable/ des utilisateurs qui tentent de le faire revivre
+
+Aujourd’hui, ce que je cherche dans le libre c’est avant tout la liberté, la simplification. Une simplification dont Ubuntu s’éloigne à mes yeux beaucoup trop, notamment avec son système Snap qui me fait trop penser à l’App Store. Je lorgne pour revenir à mon premier amour libriste, Debian.
+
+En attendant que Regolith fonctionne sous Debian, je liste tout ce que j’ai installé qui n’est pas disponible pour Debian. Mon objectif est de garder cette liste la plus courte possible. Je vous la partage.
+
+En libre, et qui pourrait donc se retrouve dans Debian : Regolith, Zettlr, starlabs-power (optimisation pour la batterie de mon laptop), Signal, Protonvpn-cli, bitwarden et f.lux (redshift ne m’a pas vraiment satisfait). Si vous connaissez un développeur Debian, je serais heureux de donner un coup de main pour faire entrer Zettlr dans l’OS universel !
+
+En non-libre : Tresorit, Protonmail-bridge, Antidote, Minetime (pas moyen de trouver un calendrier libre correct), Dropbox, Remarkable.
+
+Pour les services non-libres, j’utilise également Adguard (sous forme d’extension Firefox), Brain.fm (j’adore ce service qui me simplifie la vie au point de ne pas avoir à choisir quelle musique écouter pour me concentrer).
+
+C’est à la fois beaucoup et pas grand-chose quand je vois tous les services que j’ai résiliés durant ces derniers mois.
+
+## Les petits problèmes
+
+Alors, certes, il me reste encore pas mal à faire pour configurer mon laptop aux petits oignons. Mais je crois que c’est le propre du libriste : ce ne sera jamais pleinement terminé. En fait, c’est un plaisir de mettre les mains dans le cambouis plutôt que de tester un énième logiciel propriétaire.
+
+Attention, âmes sensibles s’abstenir de lire la suite, car la définition de plaisir chez un geek libriste est particulièrement retorse.
+
+Dans mon planning, j’ai notamment mis d’arriver à faire une recherche de fichiers depuis Rofi, de travailler ma config Zsh, de faire une config mail Notmuch compatible avec Mutt et Astroid, de me trouver un calendrier en ligne de commande, de tester une vimification du browser (genre Tridactyl, mais faut que je puisse bépoïser tout ça), arriver à désactiver le screensaver quand le laptop est sur secteur (particulièrement ennuyeux quand je donne cours) et faire fonctionner autokey (ou toute autre solution équivalente). Arriver également à lister les TODOs dans mes différents fichiers, par exemple grâce à un plugin Vim.
+
+Si vous n’êtes pas un geek linuxien un peu hardcore, le paragraphe précédent doit être du pur chinois pour vous. C’est normal, c’est signe que je suis revenu dans mon élément naturel !
+
+Il y’a 15 ans, je lançais ce blog avec l’optique de convertir les windowsiens à Linux, j’abandonnais Debian et Fvwm pour Ubuntu et GNOME afin de me mettre dans la peau d’un utilisateur lambda. Peut-être qu’aujourd’hui, je peux redevenir moi-même. Et tant pis si personne d’autre n’arrive à utiliser mon laptop.
+
+De toute façon, il est en Bépo…
+
+Photo by Patrick Fore on Unsplash
+
+=> https://unsplash.com/@patrickian4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Patrick Fore
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

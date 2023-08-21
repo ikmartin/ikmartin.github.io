@@ -1,0 +1,47 @@
+# Je ne suis plus à vendre sur Linkedin
+=> files/old/linkedin_beg.png
+
+Hier, j’ai enfin supprimé mon compte Linkedin. Ce compte me narguait depuis 2006 par son inutilité et son impact sur ma boîte mail. Ce compte que je voulais supprimer depuis des années, mais que je gardais, acceptant son coût de maintenance, dans la crainte qu’il me soit un jour utile.
+
+La goutte d’eau a été de découvrir que j’avais été abonné à des newsletters par des gens que j’avais acceptés dans mon réseau (j’accepte tout le monde, comme ça je ne me pose pas de questions) et qui avait utilisé des services externes permettant d’exporter les adresses email de ses contacts Linkedin.
+
+Mais le vase était déjà plein depuis bien longtemps. En presque 15 années d’utilisation et des milliers de mails dans ma boîte, je n’ai pas trace d’un seul contact utile, d’une seule opportunité qui m’a été permise par Linkedin. Ah si ! Un lecteur de mon roman Printeurs m’a dit, connaissant mon amour pour ce réseau, que c’est par Linkedin qu’il a appris la parution du livre. Que Linkedin m’a donc apporté un lecteur.
+
+Pourtant, j’y ai mis du mien. Jeune et naïf, j’avais tenté de n’accepter dans mon réseau que des personnes que je connaissais suffisamment pour les recommander. Aux requêtes inconnues, j’opposais un refus poli. Je me suis pris plusieurs bordées de bois vert raillant ma jeunesse et mon incompréhension de l’open-networking. Je me suis alors adapté en acceptant toutes les requêtes, sans exception.
+
+Durant quelques mois, j’ai poussé l’expérience (ou le vice, c’est selon) jusqu’à accepter toutes les propositions qui m’arrivaient par message, disant oui que j’étais intéressé. Du moins à celles qui ne me demandaient pas de payer pour un service, mais qui proposaient de m’employer ou de me faire rejoindre des projets.
+
+Dans l’immense majorité des cas, je n’ai eu aucune nouvelle suite à mon acceptation. Dans certains cas, la conversation s’est poursuivie jusqu’à ce qu’on oublie de me répondre. J’étais d’accord sur tout, j’affirmais mon désir d’aller plus loin. Rien n’y a fait. J’ai même accepté d’aller donner une formation informatique en Éthiopie, je me suis retrouvé dans une discussion à 3 avec le responsable. J’ai dit oui, j’ai relancé plusieurs fois et mes derniers mails sont restés lettre morte.
+
+J’ai ensuite décidé d’appliquer ma stratégie « email only ». Elle consiste à répondre un message standard lorsqu’on me contacte par une messagerie quelconque : « Hello, je ne consulte pas cette messagerie. Merci de me contacter par mail pour ce sujet. Voici mon adresse ». Ma page Facebook dispose d’ailleurs d’un répondeur qui le fait automatiquement et se fait régulièrement insulter.
+
+L’idée étant que si la personne ne prend pas le temps de m’envoyer un véritable mail, c’est que ce n’est pas vraiment important, qu’elle n’attend pas vraiment une réponse.
+
+Et bien le constat est sans attente. Je peux compter sur les doigts d’une main ceux qui m’ont effectivement envoyé un mail. Dans tous les cas, c’étaient des gens que je connaissais hors Linkedin et qui disposaient probablement de mes coordonnées.
+
+J’ai découvert que, parfois, des connaissances me contactaient par Linkedin et que je ne voyais le message que bien plus tard. Paradoxalement, les réseaux me rendent moins facilement joignable.
+
+=> /facebook-ma-rendu-injoignable/ https://ploum.net/facebook-ma-rendu-injoignable/
+
+Du coup, j’ai pris le réflexe d’aller vérifier Linkedin quelques fois par mois. Et donc de subir les notifications, les demandes de connexions. Bref, de me faire aspirer par la machine à attention que les fabricants de réseaux sociaux construisent désormais si efficacement.
+
+J’ai parfois l’impression d’être désorganisé, de lancer des tas de projets avant de les abandonner. Je crois que, sur Linkedin, les gens sont pires que moi. La quantité des relations a remplacé la qualité. Les recruteurs, les marketeux, les aspirants entrepreneurs sont comme des enfants dans un magasin de jouets. Ils veulent tout, ils remplissent leur caddie avec gourmandise avant de passer à autre chose sans rien déballer.
+
+Linkedin a toujours été pour moi un réseau de mendiants. Mendiants pour un job (pardon « Looking for new opportunities » ou « Ready for the next challenge »), mendiants pour des clients sous toutes les formes, mendiants pour de la visibilité « professionnelle ». Les marketeux trouvent leur compte, car ils peuvent envoyer des messages à X contacts, récolter des adresses email et dire que leur journée est faite. Les recruteurs se contentent de faire des recherches par mot clé et d’utiliser des moulinettes automatisées. Le fait que j’aie fait 6 mois de J2EE en 2006 semble toujours faire de moi « le profil idéal pour un client important ». Pour le reste, tout le monde espère que passer sa journée sur Linkedin va miraculeusement se transformer en espèce sonnante et trébuchante.
+
+Malgré tout cela, je suis resté toutes ces années. Parce que j’avais l’impression que « ça pourrait ptêtre servir un jour ». Parce que c’est dur d’accepter que le bilan soit tellement nul après autant d’années. Parce que je pensais que « c’est dommage d’abandonner un réseau patiemment constitué » (tu parles, quelques milliers de clics pour accepter des demandes souvent aléatoires).
+
+Mais je ne pouvais plus supporter cet enjouement corporate forcé, ces messages de félicitations semi-automatiques pour fêter mes trois ans dans un job que j’ai quitté il y a 2 ans et demi en oubliant de mettre mon profil à jour (envoyés par d’illustres inconnus ou des gens avec qui j’ai partagé un bureau pendant 3 semaines il y a 10 ans), cette timeline remplie d’adjectifs dithyrambiques pour se congratuler l’un l’autre de ce qui n’est qu’une énième tentative de transformer un spreasheet d’emails en clients débités tous les mois ou de vendre un concept intellectuellement rachitique en journée de formation pour booster la performance de votre équipe.
+
+Linkedin étant pour moi un réseau de mendiants, tout ce que j’y voyais était à vendre. Y compris mes données, mon adresse email, mon temps. J’ai décidé de me retirer, avec mes données, du marché. Je ne suis plus sur Linkedin.
+
+Si vous me suiviez là-bas, il suffit de vous abonner à ce blog. Votre adresse mail ne sera visible que par moi, ne sera pas utilisée pour autre chose qu’envoyer mes billets et ne sera jamais partagée. Le tout, sans passer par l’intermédiaire de Microsoft (propriétaire de Linkedin). Je pense que le ratio qualité de l’information par rapport au temps passé et nombre de mails reçus est bien plus avantageux en vous abonnant à ce blog qu’en allant sur Linkedin. Si nous perdons contact suite à mon départ de Linkedin, c’est peut-être que nous n’étions tout simplement pas en contacts en premier lieu. Nous en avions seulement l’illusion, comme souvent dans l’univers des réseaux sociaux. L’illusion d’être aimé (Facebook), l’illusion d’avoir des amis (Facebook), l’illusion d’être écouté (Twitter), l’illusion d’avoir une vie cool (Instagram), l’illusion d’être professionnellement important et bien connecté (Linkedin). D’ailleurs, sans ce billet, il est probable que personne n’aurait remarqué mon absence. Sur les réseaux sociaux, les absents sont rapidement emporté par le flux, la brêve et illusoire gloriole qu’ils avaient construite se diluant instantanément dans l’immédiateté de l’oubli. Le lit de la rivière ne conserve pas la trace du caillou que vous venez de retirer.
+
+Une situation n’est pas l’autre. Linkedin est peut-être utile, voire indispensable pour votre activité. L’important étant, comme le souligne Cal Newport dans son excellent Digital Minimalism, de bien peser le coût réel par rapport aux bénéfices réels (et non pas ceux supposés) et de faire ses propres choix en conscience.
+
+Dans ma situation, chaque source de distraction supprimée est un livre de plus lu à la fin de l’année. Donc acte. Je quitte le grand réseau bleu, je retire ma cravate, mes chaussures corporate et me replonge dans mes lectures.
+
+Photo by Jonathan Kho on Unsplash
+
+=> https://unsplash.com/@halfbakedphotos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Jonathan Kho
+=> https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash

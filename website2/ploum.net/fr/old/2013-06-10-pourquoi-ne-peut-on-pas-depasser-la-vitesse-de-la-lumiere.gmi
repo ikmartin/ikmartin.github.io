@@ -1,0 +1,113 @@
+# Pourquoi ne peut-on pas dépasser la vitesse de la lumière ?
+=> files/old/speed_of_light.jpg
+
+*Vous allez enfin comprendre la relativité restreinte d’Einstein*
+
+Les amateurs de physique ou de science-fiction le savent: rien ne peut aller plus vite que la lumière dans le vide, à savoir 299 792 km/s (kilomètres par seconde). C’est d’ailleurs de là que découle notre définition moderne du mètre.
+
+=> http://fr.wikipedia.org/wiki/M%C3%A8tre définition moderne du mètre
+
+Mais pourquoi cette constante est-elle si importante ? Pourquoi est-on si sûr de ne pouvoir atteindre 299 793 km/s ? Si l’explication semble réservée aux docteurs en physique, elle est en fait relativement simple à comprendre dans son essence. Relativement étant le mot approprié.
+
+Laissez-moi 20 minutes pour vous expliquer tout cela. Vous allez voir, c’est fascinant et magique à la fois. J’ai fait le choix douloureux de me passer d’équations. J’ai tendance à trouver les équations explicites mais, il faut le reconnaître, elles sont intimidantes. Je m’excuse donc auprès des puristes, ceci est un exercice de vulgarisation.
+
+Relativité Galiléenne
+
+La relativité est un concept parfaitement intuitif. En théorie, il stipule que tout repère inertiel est équivalent à un autre. Un repère inertiel, terme très important, désigne tout simplement un point que vous choisissez comme un repère. Pour être inertiel, ce repère doit être à vitesse constante et non pas en accélération ou décélération.
+
+Ainsi, imaginons que vous courriez à 20km/h dans un TGV roulant à 300km/h. Un observateur sur le quai d’une gare traversée vous verrait passer à 320km/h, son repère inertiel est le quai de la gare. Pourtant, pour les passagers du train, dont le repère inertiel est le train lui-même, vous faites bien du 20km/h. Si le train roule le long de l’autoroute et croise une voiture roulant à 120km/h, le conducteur de la voiture vous verrait passer à 440km/h, son repère inertiel étant sa voiture ! 440km/h, un beau sprint, n’est-ce pas ?
+
+Cette relativité des vitesses est appelée « relativité galiléenne ». Nous en faisons l’expérience tous les jours. Si une hôtesse de l’air vous sert un café dans un avion volant à 800km/h, le café tombe droit dans votre tasse et n’est pas plaqué sur votre chemise. La raison est que vous, la tasse, l’hôtesse et le café avez tous la même vitesse. De manière relative, vous êtes à 0km/h l’un par rapport à l’autre, vous êtes tous dans le même repère inertiel alors que vous allez à 800km/h par rapport au sol qui est un repère inertiel différent.
+
+Logiquement, on en déduit que pour aller à la vitesse de la lumière, il suffirait d’avoir un train qui roule dans un train qui roule dans un train, etc. Toute vitesse semble donc possible, il suffit d’additionner. Pourquoi la vitesse de la lumière serait-elle une limite ?
+
+L’électromagnétisme
+
+Faisons un bond vers le XIXème siècle. À cette époque, on connaît déjà expérimentalement une approximation de la vitesse de la lumière. Maxwell, un scientifique de génie, travaille sur les ondes électromagnétiques, des ondes qui permettent de transmettre des informations à distance. Grâce à un travail mathématique complexe, Maxwell démontre que la vitesse des ondes électromagnétiques dans un milieu dépend uniquement de deux coefficients: la permittivité électrique et la perméabilité magnétique. Pour le vide, ces deux valeurs sont connues.
+
+=> http://fr.wikipedia.org/wiki/James_Clerk_Maxwell Maxwell
+
+Le résultat de son équation est que la vitesse d’une onde électromagnétique est extrêmement proche de la valeur connue de la vitesse de la lumière. Cela prouve sans l’ombre d’un doute ce que certains soupçonnaient : la lumière n’est qu’une manifestation des ondes électromagnétiques.
+
+Ces ondes peuvent en effet avoir plusieurs fréquences. À la fréquence 150 kHz (une vibration de 150.000 battements par seconde), ce sont les ondes longues utilisées par les radios longue distance. En augmentant un peu la fréquence, on arrive à la radio FM puis on monte de plus en plus, passant par les fréquences utilisées par nos GSM, nos routeurs Wifi, pour arriver au spectre visible. Nos yeux sont en effet des organes sensibles aux ondes électromagnétiques mais seulement dans une zone de fréquence déterminée.
+
+Les changements de fréquence dans cette zone sont les changement de couleur (ainsi, le rouge a une fréquence plus basse que le bleu). Si on augmente encore la fréquence, on redevient invisible et on obtient l’ultraviolet puis les rayons X.
+
+Tout cela n’est donc qu’électromagnétisme et se déplace à la vitesse de la lumière. Après tout, la radio et le wifi ne sont qu’une forme de lumière invisible à nos yeux.
+
+Le paradoxe
+
+Il y a cependant un problème. Selon Maxwell, la vitesse de la lumière ne dépend que du milieu, pas de la vitesse relative de ce milieu.
+
+En toute logique, si je braque une lampe de poche envoyant de la lumière à 299.792km/s vers un TGV roulant vers moi à 300km/h (ou 0,08km/s), la lumière devrait toucher le TGV à 299.792,08km/s. De même, si la lampe de poche est sur une fusée qui s’éloigne de la terre à 100.000km/s, la lumière devrait arriver sur terre à 199.792km/s.
+
+Or, les équations de Maxwell prédisent qu’il n’en est rien. La vitesse de la lumière ne dépend pas du repère inertiel. Quelle que soit votre vitesse par rapport à la source de lumière, vous voyez la lumière à la même vitesse. Comme si les passagers d’un train et ceux sur le quai de la gare vous voyaient tous à la même vitesse !
+
+Ce résultat est énorme et va bouleverser la physique de l’époque. Soit Maxwell s’est trompé, malgré le nombre d’expériences confirmant ses prédictions, soit Galilée lui-même est dans l’erreur, chose qui semble incroyable.
+
+L’éther
+
+Une tentative d’explication est faite avec l’éther. L’éther serait un matériau très ténu qui composerait l’univers entier. L’éther représenterait un repère inertiel et les équations de Maxwell ne s’appliqueraient que dans ce repère précis. La vitesse de la lumière ne serait pas absolue et, un vaisseau se déplaçant à 100.000km/s à travers l’éther vers une source de lumière verrait bien cette lumière à 399.792km/s.
+
+La théorie de l’éther pose plusieurs problème. Notamment que l’éther doit être très rigide pour avoir une vitesse de propagation importante tout en étant infiniment fluide, pour ne pas offrir de friction au mouvement des planètes. Ajoutons à cela que l’idée d’un référentiel inertiel « absolu » et plus important que les autres est dérangeante. Mais moins que de remettre en question la relativité de Galilée.
+
+Michelson et Morley tentent alors une expérience visant à prouver l’existence de l’éther. Pour simplifier, disons qu’ils vont envoyer deux rayons lumineux parcourir la même distance mais perpendiculairement l’un à l’autre. En effet, si éther il y a, le mouvement de la terre dans cet éther doit provoquer l’équivalent d’un « vent ». Imaginez-vous sur le toit du TGV, comme dans Mission Impossible. Si vous lancez deux billes perpendiculairement sur le toit, le vent provoqué par la vitesse va modifier leur trajectoire et vous pourriez déterminer la vitesse du TGV ou au moins sa direction.
+
+=> http://fr.wikipedia.org/wiki/Exp%C3%A9rience_de_Michelson-Morley une expérience
+
+À la surprise générale, le résultat de cette expérience est sans appel: il n’y a et ne peut y avoir d’éther. La physique est dans une impasse.
+
+Les transformations de Lorentz
+
+À peu près à la même époque, un scientifique du nom de Lorentz s’amuse à comprendre les lois qui régissent de manière générale un repère inertiel. Ainsi, la position d’un objet par rapport à un repère inertiel dépend de sa vitesse, de sa position initiale et du temps écoulé dans ce repère. Exemple : si vous connaissez la position et la vitesse d’un train à minuit, vous pouvez très simplement calculer sa position à n’importe quel moment de la journée tant que sa vitesse est constante.
+
+=> http://fr.wikipedia.org/wiki/Hendrik_Antoon_Lorentz Lorentz
+
+Tout cela semble très logique mais Lorentz remarque que ses équations ne donnent aucun lien entre les repères inertiels. Ainsi, si je suis sur le quai de la gare avec un chronomètre et que je mesure un coureur dans un TGV traverser le quai de gare, long de 100m, en 1,16 seconde, je peux affirmer qu’il fait du 310km/h à mes yeux. Mais je ne peux rien affirmer de ce qui se passe à l’intérieur du TGV lui-même.
+
+Il est donc nécessaire d’introduire un lien entre les repères inertiels. Le lien le plus logique est de poser que le temps s’écoule de manière identique dans chaque repère inertiel, que 1,16 secondes à bord du train correspondent bien à 1,16 seconde sur le quai. En faisant cela, les équations de Lorentz (appelées les transformations de Lorentz) se simplifient et deviennent identiques à celle de Galilée.
+
+Le TGV faisant du 300km/h, j’en déduis que le coureur fait du 10 km/h.
+
+Remarquons qu’il s’agit d’un postulat: on affirme que le temps est identique dans chaque repère mais on ne le démontre pas.
+
+Einstein
+
+Il faut parfois un éclair de génie pour débloquer une situation. Et cet éclair, c’est Einstein qui l’a. À la manière du jeu enfantin « on disait que », il décide de postuler « on disait que la vitesse de la lumière est la même dans tous les référentiels inertiels ». Il pose donc ce postulat à la place du principe de simultanéité. En effet, la liaison entre tous les repères inertiels sera dorénavant une même et unique vitesse de la lumière. Cela rend inutile le postulat sur un écoulement du temps constant. Ce dernier n’avait, comme nous l’avons vu, de toutes façons jamais été démontré.
+
+=> http://fr.wikipedia.org/wiki/Albert_Einstein Einstein
+
+Notre cher Albert reprend donc les équations de Lorentz et postule une vitesse de la lumière identique dans tous les référentiels. Mathématiquement, le résultat devient étonnant. La vitesse observée depuis le quai est toujours la vitesse du train plus la vitesse du coureur mais le tout est divisé par un facteur (1 – v1 v2/c²) où v1 est la vitesse entre les référentiels (entre la gare et le tgv), v2 la vitesse entre le coureur et le TGV et c la vitesse da la lumière.
+
+Pour une vitesse très faible (jusqu’à quelques milliers de km/h), ce facteur reste très proche de 1. En effet, v1 v2/c² est alors très proche de 0, le facteur vaut 1 et on divise notre résultat par 1, donc on ne change rien. Même pour un hypothétique coureur dans un avion volant à 10.000km/h, le facteur est 0,99999, ce qui est inobservable dans notre vie de tous les jours.
+
+Mais que se passe-t-il si le TGV accélère soudain à la moitié de la vitesse de la lumière ? Le symbole v1 vaut la moitié de c. (1 – v1 /c²) vaut alors 0,5. Si, avec votre chronomètre, vous avez mesuré depuis le quai que le coureur faisait du 10km/h dans ce train ultra rapide, en fait, il sprintait à du 11,6km/h. De même, vous avez pu voir une horloge dans le train. Mais pendant que votre chronomètre indiquait 10 secondes, celle dans le train n’en indiquait que 8,6. Le temps ne s’écoule pas à la même vitesse ! (Update : les valeurs sont sans doute fausses mais l’idée est là)
+
+Impossibilité d’atteindre la vitesse de la lumière
+
+Il s’en suit logiquement qu’il est impossible d’atteindre la vitesse de la lumière. En effet, même si vous embarquez dans votre train semi-luminique un autre train semi-luminique, vous n’observerez, depuis le quai de la gare, qu’une vitesse totale de 80% de la vitesse de la lumière.
+
+Arriver à la vitesse de la lumière revient donc à parcourir la moitié du chemin puis la moitié puis la moitié puis la moitié, chaque moitié requérant un effort semblable. Au final, la vitesse de la lumière est donc un objectif qui s’éloigne à chaque fois qu’on s’en approche.
+
+Une autre conséquence, de taille, est que le temps ne s’écoule plus de la même manière entre référentiels inertiels. Ainsi, les chronomètres 1 et 2 ne seront plus liés. Cela parait fou mais, quand on y pense, cette constance du temps à toujours été prise pour acquise et n’avait jamais été démontrée. L’impasse de la physique venait du fait que, nous basant sur l’intuition, nous pensions que le temps s’écoulait de manière uniforme. Le génie d’Einstein a été de remettre cela en question et de découvrir que l’écoulement du temps dépendait en fait de la vitesse à laquelle nous nous déplaçons.
+
+Intuitivement, il y a une certaine logique. Pourquoi le temps devrait-il s’écouler à la même vitesse dans différents repère inertiels ? Quelle serait cette constante naturelle fondamentale qui définit l’écoulement du temps ? La réponse est claire et nette: il n’y en a pas. La seule constante fondamentale est la vitesse de la lumière. Si l’homme a l’impression que le temps coule à la même vitesse, c’est parce qu’il n’a jamais été assez vite pour en ressentir les effets. L’humain reste toujours très proche d’un seul repère inertiel : la terre. Un peu comme un escargot ne comprendra jamais les notions d’aérodynamisme, l’air étant complètement fluide à sa vitesse de déplacement.
+
+Conclusion
+
+Avec cette œuvre scientifique majeure appelée « relativité restreinte », Einstein conciliera le grand paradoxe physique de son temps, à savoir l’incompatibilité de l’électromagnétisme avec les lois de la mécaniques classiques. Notons que si l’histoire retient son nom pour cet exploit, il n’est, comme tout scientifique, que le dernier maillon d’un chaîne, se basant sur les travaux de Maxwell, Lorentz et bien d’autres.
+
+Cette découverte remet fondamentalement en question la manière dont nous percevons le monde. Le fait que le temps ne s’écoule pas partout à la même vitesse semble impossible mais sera vérifié. Einstein s’attaquera ensuite au fait de passer d’un repère inertiel à un autre, ce qui entraîne accélérations et décélérations. La théorie qui s’occupe de ce cas de figure est appelée « relativité générale » et remettra en question encore plus de choses, y compris la gravitation.
+
+Toutes ces découvertes ont été validées par l’expérience et ont eu des applications pratiques importantes. Si les satellites ne prenaient pas en compte la différence d’écoulement du temps, les GPS ne fonctionneraient sans doute pas du tout, ou avec des erreurs importantes.
+
+Il est tentant de se dire que Galilée s’était trompé, que sa théorie était fausse. Pourtant, nous l’utilisons encore tous les jours. Cela illustre bien la démarche scientifique. Ainsi, il conviendrait mieux de dire que Galilée a été imprécis. Et que, dans les domaines où la précision n’est pas critique, utiliser Galillée est une approximation largement suffisante. Galilée a, sans le savoir, posé une hypothèse (la constance de l’écoulement du temps) qui s’est révélée fausse. Mais sans Galilée, nous n’aurions jamais pu aller plus loin. Avant de nager comme un athlète, il faut savoir nager tout court.
+
+De même, si atteindre la vitesse de la lumière semble impossible, il reste la possibilité qu’Einstein aie été imprécis, que ses équations se basent sur une hypothèse qui se révélera fausse dans le futur.
+
+C’est peut-être ce qui rend la science si excitante: toujours à la recherche de l’inconnu, toujours à l’affût d’une erreur laissée par un prédécesseur, toujours en train de remettre notre vision du monde en question.
+
+Sources : Physique IV, partie B : Physique Corpusculaire par le professeur Jan Govaerts, UCL février 2001. Science & Vie Junior Hors Série Einstein, avril 1996. Photo par Kevin Harber.
+
+=> http://cp3.irmp.ucl.ac.be/Members/govaerts Jan Govaerts
+=> http://www.flickr.com/photos/16151021@N00/3261126907 Kevin Harber

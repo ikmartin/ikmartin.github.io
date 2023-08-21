@@ -1,0 +1,112 @@
+# May 19th – The Open Discussion Day – 19 mai
+
+May 19th will be the « Open Discussion Day » : goodbye legacy IM. The goal of this day is to promote open protocols and interoperability in everyday life.
+
+=> http://www.deepdarc.com/2006/03/31/google-talk-vcard-avatars/ May 19th
+=> http://www.deepdarc.com/2006/02/27/goodbye-legacy-im/ goodbye legacy IM
+
+=> ../files/old/odd_logo.png ODD logo
+
+Le 19 mai sera le « Open Discussion Day » dont le but est de promouvoir les protocoles ouverts et l’interopérabilité dans la vie de tous les jours. Certainement l’occasion de se débarrasser des ses vieilles habitudes.
+
+### Join the open discussion world ! – Rejoignez le monde de la discussion ouverte ?
+
+If you don’t already have one, the first thing to do is to create your own account, Jabber or Google Talk.
+
+La première chose à faire est de se créer un compte Jabber ou Google Talk, si vous n’en avez pas encore un.
+
+##### Jabber
+
+Jabber is an open instant messaging network. There’s a lot of different Jabber servers around the world that you can use. The choice doesn’t really matter as every server can communicate with every other one. In order to have a good service, I suggest that you create your account on a geographically close server. And *don’t* use jabber.org server !
+
+=> http://www.xmpp.net/ a lot of different Jabber servers around the world
+
+So, just choose a server (like fritalk.com or im.apinc.org in Europa), choose a client (the client is the software used to connect you to the Jabber network. You can use as many clients as you want and change it whenever you want. Try Psi, Gaim, Gajim, iChat and find which one is the best for your needs).
+
+=> http://fritalk.com fritalk.com
+=> http://im.apinc.org im.apinc.org
+=> http://www.jabber.org/software/clients.shtml a client
+=> http://wiki.jabberfr.org/index.php?title=Psi Psi
+=> http://wiki.jabberfr.org/index.php?title=Gaim Gaim
+=> http://wiki.jabberfr.org/index.php?title=Gajim Gajim
+=> http://www.jabber.org.au/ichat iChat
+
+Once you have an account on a server, you can talk to every Jabber or Google Talk user, no matter wich server they use. It’s just like email. You don’t have to worry about what your friend is using. Just type his adress and enjoy !
+
+=> ../files/old/opendiscuss.jpg Open Discussion Day
+
+*Jabber est un réseau de messagerie ouvert. Il existe une multitude de serveurs Jabber que vous pouvez utiliser. En fait, le choix du serveur n’est pas tellement important car tous communiquent entre eux. Pour une bonne qualité de service, privilégiez cependant les serveurs géographiquement proches et surtout, n’utilisez *pas* jabber.org !*
+
+=> /2005/02/15/39-jabber-pour-marie-et-les-non-ordinateuriens réseau de messagerie ouvert
+=> http://www.xmpp.net/ multitude de serveurs Jabber
+=> http://wiki.jabberfr.org/index.php?title=Serveurs vous pouvez utiliser
+
+Choisissez un serveur (comme fritalk.com ou im.apinc.org en Europe), choisissez un client (le client est le programme qui vous sert à vous connecter au réseau et à discuter. Vous pouvez utiliser plusieurs clients différents ou en changer selon votre humeur. Essayez donc Psi, Gaim, Gajim ou iChat et découvrez celui qui vous correspond le mieux).
+
+=> http://fritalk.com fritalk.com
+=> http://im.apinc.org im.apinc.org
+=> http://wiki.jabberfr.org/index.php?title=Clients un client
+=> http://wiki.jabberfr.org/index.php?title=Psi Psi
+=> http://wiki.jabberfr.org/index.php?title=Gaim Gaim
+=> http://wiki.jabberfr.org/index.php?title=Gajim Gajim
+=> http://wiki.jabberfr.org/index.php?title=IChat iChat
+
+Une fois que vous avez un compte sur un serveur, vous pouvez communiquer avec tous les utilisateurs Jabber et Google Talk, quel que soit leur serveur. C’est comme envoyer un courriel : ne vous inquiétez pas de ce que votre ami utilise, tapez juste son adresse et discutez !
+
+##### Google Talk
+
+Google has launched is own Jabber service know as Google Talk. If you have a Gmail account, it’s probably easier to use Google Talk. You can choose to use the official Google Talk client (Windows only) or any other client such as Gaim, iChat or Psi.
+
+=> http://www.google.com/talk/ Google Talk
+=> http://www.google.com/talk/start.html official Google Talk client
+=> http://www.google.com/support/talk/bin/answer.py?answer=24073 Gaim
+=> http://www.google.com/support/talk/bin/answer.py?answer=24076 iChat
+=> http://www.google.com/support/talk/bin/answer.py?answer=24074 Psi
+
+If you don’t have a GMail account and want one, just send me your email adress and put « GMail request » in the title.
+
+=> /contact send me
+
+Once you have your GMail account, you can talk with every other Jabber or Google Talk users. No matter that one of your contact is using fritalk.com and the other im.apinc.org, just enjoy !
+
+=> ../files/old/client.gif Google Talk
+
+Google a lancé son propre serveur Jabber sous le nom de Google Talk. Si vous avez un compte GMail, c’est probablement la solution la plus facile. Vous pouvez utiliser le client officiel Google Talk (Windows seulement) ou un autre client comme, au choix, Gaim, iChat ou Psi.
+
+=> http://www.google.com/talk/ Google Talk
+=> http://www.google.com/talk/start.html le client officiel Google Talk
+=> http://www.google.com/support/talk/bin/answer.py?answer=24073 Gaim
+=> http://www.google.com/support/talk/bin/answer.py?answer=24076 iChat
+=> http://www.google.com/support/talk/bin/answer.py?answer=24074 Psi
+
+Si vous n’avez pas de compte GMail et que vous en désirez un, envoyez-moi votre adresse courriel en mettant « Compte GMail » dans le titre.
+
+=> /contact envoyez-moi
+
+Une fois que vous avez un compte GMail, vous pouvez discuter avec tous les autres utilisateurs Jabber ou GMail. Peu importe que l’un de vos amis soit sur fritalk.com et l’autre sur im.apinc.org !
+
+### Promote the open discussion – Promouvoir la discussion ouverte
+
+If you are still using closed and legacy networks (ICQ, MSN, Yahoo, AIM, …), the Open Discussion Day is the good day to get rid of it. Just warn your contacts that you will not be available on those networks anymore from May 19th. Give them a bit of explanations if they ask but don’t force them to change. Tell them that May 19th is the Open Discussion Day ! Give informations and help is the best you can do. And, of course, on May 19th, delete your MSN/ICQ/AOL/Yahoo account …
+
+If you think you are not ready for that, simply warn your contacts that you will not be available on those networks on May 19th. Give them a link about the Open Discussion Day and don’t connect to your ICQ/MSN/Yahoo/AIM account on May 19th. It’s only 24 hours !
+
+If you own a Jabber server, send a message to all your users about the Open Discussion Day and shutdown for 24 hours gateways to MSN/ICQ/AOL/Yahoo on May 19th.
+
+=> ../files/old/goodbye_im.png goodbye IM
+
+Si vous utilisez encore des vieux réseaux propriétaires (ICQ, MSN, Yahoo, AIM, …), l’Open Discussion Day est un bon moyen de s’en débarrasser. Prévenez vos contacts que vous ne serez désormais plus disponible sur ces réseaux à partir du 19 mai. Dîtes leur que le 19 mai est l’Open Discussion Day ! Donnez leur quelques explications si ils le souhaitent mais ne le forcez surtout pas à changer. Donner des informations et de l’aide est la meilleure chose que vous puissiez faire pour les convaincre. Et puis, cerise sur le gâteau, le 19 mai, vous effacez vos comptes MSN/ICQ/AOL/Yahoo…
+
+Si vous pensez que vous n’êtes pas encore prêt pour cela, prévenez simplement vos contacts que vous ne serez pas disponible sur ces réseaux le 19 mai. Donnez leur un lien à propos du Open Discussion Day et ne vous connectez simplement pas à votre compte MSN/ICQ/Yahoo/AIM ce jour là. Après tout, ce n’est que 24 heures !
+
+Si vous administrez un serveur Jabber, envoyez un message à tout vos utilisateurs à propos du Open Discussion Day et désactivez pour 24 heures les passerelles MSN/ICQ/AOL/Yahoo le 19 mai.
+
+Open your network, open the discussion !
+
+```
+<strong><em>Ouvrez votre réseau, ouvrez la discussion !</em></strong>
+```
+
+This text and the « nose picture » is in the public domain – ce texte est dans le domaine public
+
+=> http://digg.com/technology/Friday_is_Open_Discussion_Day_,_For_One_Day_Use_Only_Open_Protocal_IM Digg this story
