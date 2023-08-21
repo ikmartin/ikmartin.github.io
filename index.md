@@ -4,8 +4,9 @@
 # Isaac Martin's Homepage
 
 ~~~
-<img src="./files/pic2.jpg" alt="unnecessarily smug x_x" align="left" height=245/>
+<img src="./files/pic2.jpg" alt="unnecessarily smug x_x" align="left" height=245 />
 ~~~
+
 I'm Isaac, a Ph.D. student at UT Austin studying mirror symmetry. When geometry becomes overwhelming, I also like to think about magnets and how they might be used to build computers which only give you the correct answer sometimes. 
 
 **Biography:** University of Utah (Bachelor's) -> University of Cambridge (Master's) -> University of Texas at Austin (Ph.D. -- working on it).
