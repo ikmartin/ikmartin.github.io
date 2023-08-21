@@ -9,7 +9,7 @@
 
 I'm Isaac, a Ph.D. student at UT Austin studying mirror symmetry. When geometry becomes overwhelming, I like to think about magnets and how they might be used to build computers which only sometimes give you the correct answer.
 
-**Biography:** University of Utah (Bachelor's) -> University of Cambridge (Master's) -> University of Texas at Austin (Ph.D. -- working on it). Still haven't gotten my high school diploma.
+**Biography:** University of Utah (Bachelor's) > University of Cambridge (Master's) > University of Texas at Austin (Ph.D. -- working on it). Still haven't gotten my high school diploma.
 
 **Outdated CV:** ([CV - Last updated August 2022](/files/CV.pdf)).
 
