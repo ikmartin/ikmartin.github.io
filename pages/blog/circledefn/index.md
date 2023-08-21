@@ -3,6 +3,7 @@ title = "Definitions of a Circle"
 hascode = true
 description = "A collection of definitions for the circle"
 tags = ["for-fun,"]
+date = "2023-03-11"
 +++
 
 # List of definitions of a circle

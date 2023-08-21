@@ -1,3 +1,4 @@
+using Dates
 function hfun_bar(vname)
   val = Meta.parse(vname[1])
   return round(sqrt(val), digits=2)
@@ -14,7 +15,24 @@ function hfun_pageFill(page,vname)
 end
 
 function check_post(postdir)
+  print("TEST")
+  print(postdir)
   return isdir(postdir) && isfile(joinpath(postdir,"index.md"))
+end
+
+function retrieve_date(post)
+  # try to retrieve the manually inputted date from the post
+  try
+    date = pagevar(post,"date")
+    println(typeof(date), date)
+    date = Dates.DateTime(date)
+    return Dates.datetime2unix(date)
+  # if no date is available then use the creation time as the date
+  catch e
+    println("EXCEPTION FOUND")
+    date = stat(joinpath("$basedir", "$post/index.md")).ctime
+    return date
+  end
 end
 
 # prints an ordered list of pages in a given directory
@@ -31,7 +49,9 @@ function hfun_printpages(args)
   println(dirs)
 
   # get dates and sort posts
-  dates = [stat(joinpath("$basedir", "$post/index.md")).mtime for post in dirs]
+  dates = [retrieve_date(joinpath("$basedir", "$post/index.md")) for post in dirs]
+  println(dates)
+
   perm = sortperm(dates, rev=true)
   idxs = perm[1:min(num, length(perm))]
 
@@ -41,11 +61,11 @@ function hfun_printpages(args)
 
   # iterate through posts and generate HTML
   for (k, i) in enumerate(idxs)
-    fi = basedir * splitext(dirs[i])[1] * "/"
-    mdfi = fi * "index.md"
+    file = basedir * splitext(dirs[i])[1] * "/"
+    mdfile = file * "index.md"
     date = Libc.strftime("%Y-%m-%d",dates[i])
-    title = pagevar(mdfi,"title")
-    write(io, """<li><a href="/$fi">$title (revised $date)</a></li>\n""")
+    title = pagevar(mdfile,"title")
+    write(io, """<li><a href="/$file">$date: $title</a></li>\n""")
   end
 
   # end list of posts and return output

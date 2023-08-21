@@ -15,7 +15,6 @@
 ================================================================== */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: var(--normal);
   color: var(--text-color);
 }
@@ -74,23 +73,15 @@ html {
     TEXT GEOMETRY
 ================================================================== */
 
-.franklin-toc li {
-  /* Avoid clickable elements being too close together. */
-  margin: 0.6rem 0;
-}
-
 .franklin-content {
   position: relative;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
   line-height: 1.35em;
 }
 
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 900px;
-    margin-left: auto;
+    width: 800px;
     margin-right: auto;
   }
 }
@@ -108,13 +99,13 @@ html {
 ================================================================== */
 
 .franklin-content h1 {
-  font-size: 24px;
+  font-size: 30px;
 }
 .franklin-content h2 {
-  font-size: 22px;
+  font-size: 26px;
 }
 .franklin-content h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .franklin-content h1,
@@ -127,8 +118,9 @@ h6 {
 }
 
 .franklin-content h1 {
+  text-align: center;
   padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
+  border-bottom: 3px solid lightgrey;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
@@ -213,12 +205,7 @@ td {
 
 /* Spacing between bullet points. */
 .franklin-content li p {
-  margin: 10px 0;
-}
-
-.franklin-content a {
-  color: #004de6;
-  text-decoration: none;
+  margin: 0px 0;
 }
 
 .franklin-content a:hover {
@@ -330,16 +317,6 @@ code {
   font-size: var(--small);
 }
 
-/* .franklin-content code { */
-
-/* background-color: rgba(27,31,35,0.05); */
-
-/* padding: 0.1em 0.2em; */
-
-/* border-radius: 2px; */
-
-/* font-size: 90%; } */
-
 .hljs {
   font-size: var(--small);
   line-height: 1.35em;
@@ -377,70 +354,4 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
-}
-
-.franklin-content .defn-box {
-  background-color: #eef3f5;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
-  border-left: 5px solid #4c9cf1;
-}
-
-.franklin-content .fact-box {
-  background-color: #eef3f5;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
-  border-left: 5px solid #ff8080;
-}
-
-.franklin-content .thm-box {
-  background-color: #eef3f5;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
-  border-left: 5px solid #00cc66;
-}
-
-.franklin-content .prf-box {
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 0px;
-  margin-left: 5px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
-  border-left: 5px solid #000000;
-}
-
-/* ############
- * INDENT BLOCK
- */
-.franklin-content .indent-block {
-  margin-left: 1em;
-}
-
-.franklin-content .indent-block p:first-of-type {
-  text-indent: -1em;
-}
-
-.franklin-content .indent-block li {
-  padding-left: 1em;
 }
