@@ -1,12 +1,12 @@
 +++
-title = "New Year Update"
+title = "Goals for the New Year"
 hascode = true
 description = "A post nailing down my goals for 2023"
 tags = ["nonmath, update"]
 date = "2022-12-28"
 +++
 
-# Goals for Spring (and maybe Summer) of 2023
+# Goals for Spring and Summer of 2023
 
 \toc
 
