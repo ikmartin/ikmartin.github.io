@@ -4,10 +4,13 @@
 
 Here I'll upload notes that I've written.
 
-### Research and Expository Writing Pre-PhD
+### More Pre-PhD Math Writing
 
-Here I'll upload some of the stuff I wrote in undergrad.
+- [Part III Essay](./misc-files/partIII_essay.pdf)
+- [Undergrad Thesis](./misc-files/honorsthesis.pdf)
+- [UChicago REU Expository Essay](./misc-files/uchicagoreu.pdf)
+
 
 ### The Outdoors
 
-[Plan for Bruja Canyon](../bruja-canyon/)
+- [Plan for Bruja Canyon](../bruja-canyon/)
