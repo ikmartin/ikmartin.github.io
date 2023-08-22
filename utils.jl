@@ -15,8 +15,6 @@ function hfun_pageFill(page,vname)
 end
 
 function check_post(postdir)
-  print("TEST")
-  print(postdir)
   return isdir(postdir) && isfile(joinpath(postdir,"index.md"))
 end
 
@@ -24,12 +22,10 @@ function retrieve_date(post)
   # try to retrieve the manually inputted date from the post
   try
     date = pagevar(post,"date")
-    println(typeof(date), date)
     date = Dates.DateTime(date)
     return Dates.datetime2unix(date)
   # if no date is available then use the creation time as the date
   catch e
-    println("EXCEPTION FOUND")
     date = stat(joinpath("$basedir", "$post/index.md")).ctime
     return date
   end
@@ -40,7 +36,6 @@ end
 # sorted in reverse chronological order
 function hfun_printpages(args)
   basedir = args[1]
-  println(args)
   num = parse(Int64, args[2])
 
   # get all subdirectories of blog, these are the posts
@@ -50,7 +45,6 @@ function hfun_printpages(args)
 
   # get dates and sort posts
   dates = [retrieve_date(joinpath("$basedir", "$post/index.md")) for post in dirs]
-  println(dates)
 
   perm = sortperm(dates, rev=true)
   idxs = perm[1:min(num, length(perm))]
@@ -70,6 +64,38 @@ function hfun_printpages(args)
 
   # end list of posts and return output
   write(io, "</ul>")
+  return String(take!(io))
+end
+
+function parse_bibtex(bib)
+  pairs = split(bib, ";")
+  dict = Dict()
+  for pair in pairs
+    if isempty(pair)
+      continue
+    end
+    println(pair)
+    key,value = split(pair, ":")
+    key = strip(key)
+    dict[key] = value
+  end
+  return dict
+end
+
+function hfun_makeref(args)
+  println(args)
+  println(join(args, " "))
+  args = parse_bibtex(join(args, " "))
+  year = strip(args["year"])
+  journal = args["journal"]
+  volume = args["volume"]
+  pages = isempty(args["pages"]) ? "" : args["pages"]
+  title = lstrip(args["title"])
+  path = lstrip(args["path"])
+
+  # start io buffer
+  io = IOBuffer()
+  write(io, """<font color="navy"><b>$title</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> $journal</i><b>$volume</b> ($year) $pages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download <a href="$path">PDF</a><br>""")
   return String(take!(io))
 end
 
