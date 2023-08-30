@@ -261,13 +261,30 @@ td {
 ================================================================== */
 
 .franklin-content img {
-  padding-right: 10px;
-  padding-top: 10px
+  width: 70%;
   text-align: center;
+  padding-left: 10%;
 }
 
 .franklin-content .img-small img {
+  width: 50%;
   text-align: center;
+  padding-left: 20%;
+}
+
+.franklin-content .inline {
+  display: inline-block;
+}
+
+.franklin-content .landing {
+  display: inline-block;
+}
+.franklin-content .landing img {
+  all: unset;
+  float: left;
+  padding-right: 10px;
+  text-align: right;
+  height: 245px;
 }
 
 /* ==================================================================
