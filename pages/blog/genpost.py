@@ -1,6 +1,13 @@
+"""Python used to generate a template blog post. Usage:
+python3 genpost.py "Title of Post" -d "Description of the blog post" -dn "The directory name of the post" -t tag1 tag2 tag3
+"""
+
+
 import os
 import os.path as path
 import argparse
+from datetime import date
+
 
 # increment given name starting at n until valid name found
 def increment_name(name, n):
@@ -16,7 +23,11 @@ title = "{}"
 hascode = true
 description = "{}"
 tags = {}
+date = "{}"
 +++
+
+@def mintoclevel=2
+@def maxtoclevel=3
 
 # {}
 
@@ -65,6 +76,7 @@ title = args.title[0]
 dirname = args.dirname[0]
 post_desc = args.desc[0]
 tags = args.tags if args.tags else ["blog"]
+date = date.today()
 
 # format tags
 newtags = "["
@@ -81,5 +93,5 @@ if path.exists(dirname):
 os.mkdir(dirname)
 os.chdir(dirname)
 with open("index.md", "w") as f:
-    text = templatePost.format(title, post_desc, newtags, title)
+    text = templatePost.format(title, post_desc, newtags, date, title)
     f.write(text)
