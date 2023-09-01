@@ -177,6 +177,7 @@ h6 {
 
 .franklin-toc ol ol {
   list-style-type: lower-alpha;
+  list-style-position: outside;
 }
 
 .franklin-content th,
@@ -204,7 +205,7 @@ td {
 
 /* Spacing between bullet points. */
 .franklin-content li p {
-  margin: 0px 0;
+  margin: 5px 0;
 }
 
 .franklin-content a:hover {

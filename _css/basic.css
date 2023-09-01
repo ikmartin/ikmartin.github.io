@@ -37,7 +37,7 @@ blockquote,
 
 p,
 ul,
-ol {
+{
   list-style-type: circle;
 }
 
@@ -49,6 +49,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+li {
+  padding-left: 0.5em;
 }
 
 .center {
