@@ -3,7 +3,8 @@
 ================================================================== */
 
 :root {
-  --block-background: hsl(0, 0%, 94%);
+  --background-color: #fdf6e3;
+  --block-background: #eee8d5;
   --output-background: hsl(0, 0%, 98%);
   --small: 14px;
   --normal: 19px;
@@ -63,7 +64,7 @@ html {
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
-  border-top: 1px solid lightgrey;
+  /*border-top: 1px solid lightgrey;*/
   padding-top: 2em;
   margin-bottom: 4em;
 }
@@ -74,13 +75,13 @@ html {
 
 .franklin-content {
   position: relative;
-  line-height: 1.35em;
 }
 
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 800px;
+    width: 650px;
+    margin-left: auto;
     margin-right: auto;
   }
 }
@@ -119,7 +120,6 @@ h6 {
 .franklin-content h1 {
   text-align: center;
   padding-bottom: 0.5em;
-  border-bottom: 3px solid lightgrey;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
@@ -189,14 +189,19 @@ td {
 
 .franklin-content blockquote {
   background: var(--block-background);
-  border-left: 7px solid #a8a8a8;
+  /*border-left: 7px solid #a8a8a8;*/
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
 }
 
-.franklin-content blockquote p {
-  display: inline;
+
+pre,blockquote,.signature{	
+  background: var(--block1-background);
+  padding: 1em;
+}
+blockquote,.signature{	
+  font-style: italic;
 }
 
 /* ==================================================================
@@ -369,4 +374,60 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
+}
+
+/* ===============================================================
+    SPECIAL SECTION SEPARATORS, CUSTOM <hr> 
+=============================================================== */
+
+div.gradient {
+  --light-heading-color: rgba(41, 49, 61, 0.8);
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-heading-color), rgba(0, 0, 0, 0));
+  color: var(--light-heading-color);
+  overflow: visible;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center
+}
+
+div.tempgradient {
+  width: 100%; 
+  height: 20px; 
+  border-bottom: 1px solid black; 
+  text-align: center
+}
+.fancytext {
+  all: unset;
+  position: relative;
+  top: -13px;
+  text-align: center;
+  background: var(--background-color);
+  font-size: 1em;
+  font-family: "Snell Roundhand", cursive;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+
+/* ===============================================================
+    BLOCKS
+=============================================================== */
+
+.revindentblock {
+  margin-left: 1em;
+}
+
+.indentblock > p:first-child {
+  text-indent: -1em;
+}
+
+.revindentparagraph {
+  margin-left: 1em;
+  text-indent: -1em;
 }

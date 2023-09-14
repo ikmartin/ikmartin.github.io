@@ -3,16 +3,17 @@
 ================================================================== */
 body {
   margin: 40px auto;
+  font-family: "Palatino", serif;
   max-width: 800px;
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 17px;
   color: #444;
   background-color: #fdf6e3;
   padding: 0 10px;
 }
 
 h1 {
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
 }
 
