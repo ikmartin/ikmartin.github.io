@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "Isaac Martin"
 @def tags = ["syntax", "code"]
 
 # Isaac Martin's Homepage
