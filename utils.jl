@@ -38,6 +38,7 @@ end
 function hfun_printpages(args)
   basedir = args[1]
   num = parse(Int64, args[2])
+  print("\nPrinting subpages of $basedir")
 
   # get all subdirectories of blog, these are the posts
   dirs = filter(x -> check_post(joinpath(basedir,x)), readdir(basedir))
@@ -75,7 +76,7 @@ function parse_bibtex(bib)
     if isempty(pair)
       continue
     end
-    println(pair)
+    # println(pair)
     key,value = split(pair, ":")
     key = strip(key)
     dict[key] = value
@@ -84,8 +85,8 @@ function parse_bibtex(bib)
 end
 
 function hfun_makeref(args)
-  println(args)
-  println(join(args, " "))
+  # println(args)
+  # println(join(args, " "))
   args = parse_bibtex(join(args, " "))
   year = strip(args["year"])
   journal = args["journal"]

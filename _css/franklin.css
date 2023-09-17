@@ -195,12 +195,14 @@ td {
   font-style: italic;
 }
 
-
-pre,blockquote,.signature{	
+pre,
+blockquote,
+.signature {
   background: var(--block1-background);
   padding: 1em;
 }
-blockquote,.signature{	
+blockquote,
+.signature {
   font-style: italic;
 }
 
@@ -384,7 +386,12 @@ div.gradient {
   --light-heading-color: rgba(41, 49, 61, 0.8);
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-heading-color), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--light-heading-color),
+    rgba(0, 0, 0, 0)
+  );
   color: var(--light-heading-color);
   overflow: visible;
   text-align: center;
@@ -393,14 +400,14 @@ div.gradient {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  text-align: center
+  text-align: center;
 }
 
 div.tempgradient {
-  width: 100%; 
-  height: 20px; 
-  border-bottom: 1px solid black; 
-  text-align: center
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid black;
+  text-align: center;
 }
 .fancytext {
   all: unset;
@@ -409,25 +416,31 @@ div.tempgradient {
   text-align: center;
   background: var(--background-color);
   font-size: 1em;
-  font-family: "Snell Roundhand", cursive;
+  font-family: 'Snell Roundhand', cursive;
   font-weight: bold;
   padding: 0 15px;
 }
-
 
 /* ===============================================================
     BLOCKS
 =============================================================== */
 
+.lineblock {
+  margin-left: 0.25em;
+  border-left: 2px solid gray;
+  padding-left: 1em;
+}
+/* use these for a multi-paragraph div where only the first line is to be indented */
 .revindentblock {
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
-.indentblock > p:first-child {
-  text-indent: -1em;
+.revindentblock > p:first-child {
+  text-indent: -2em;
 }
 
+/* use this to indent the first line of a single paragraph or of every paragraph in the environment */
 .revindentparagraph {
-  margin-left: 1em;
-  text-indent: -1em;
+  margin-left: 2em;
+  text-indent: -2em;
 }
