@@ -3,7 +3,7 @@ title = "Toric Geometry Learning Seminar"
 hascode = true
 description = "Toric geometry learning seminar notes/resources, Spring 2023"
 tags = ["toric-geometry", "seminar"]
-date = "2023-01-10"
+date = "2023-01-07"
 +++
 
 # Toric Geometry Learning Seminar Spring 2023
