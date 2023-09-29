@@ -4,6 +4,7 @@ hascode = true
 description = "Notes covering Bernd's 2023-09-21 lecture in complex geometry. He introduced sheaves and defined a complex spaces."
 tags = ["complex-geometry,", "algebraic-geometry,", "sheaves,", "lecture-notes"]
 date = "2023-09-21"
+published = false
 +++
 
 @def mintoclevel=2

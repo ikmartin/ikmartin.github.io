@@ -4,6 +4,7 @@ hascode = true
 description = "Notes following the Edidin Graham Localization paper, providing definitions and explanations"
 tags = ["algebraic-geometry", "localization", "paper"]
 date = "2023-09-01"
+published = false
 +++
 
 @def mintoclevel=2

@@ -61,7 +61,10 @@ function hfun_printpages(args)
     mdfile = file * "index.md"
     date = Libc.strftime("%Y-%m-%d",dates[i])
     title = pagevar(mdfile,"title")
-    write(io, """<li><a href="/$file">$date: $title</a></li>\n""")
+    published = pagevar(mdfile,"published")
+    if published == true || isnothing(published)
+      write(io, """<li><a href="/$file">$date: $title</a></li>\n""")
+    end
   end
 
   # end list of posts and return output

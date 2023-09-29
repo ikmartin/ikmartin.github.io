@@ -36,7 +36,7 @@ Add here global commands to be used throughout your pages
 <!-- Text macros -->
 
 \newcommand{\author}[]{~~~<p style='font-style: italic;text-align: center;'>by <a href='/'>Isaac</a> on {{date}} </p>~~~}
-\newcommand{\thmtitle}[2]{~~~<span><strong>#1</strong> <em>#2</em>&nbsp;&nbsp;</span>~~~}
+\newcommand{\thmtitle}[2]{~~~<span><strong>#1:</strong> <em>~~~#2~~~.</em>&nbsp;&nbsp;</span>~~~}
 \newcommand{\fancyhr}[2]{~~~<div class="#1"><span class="fancytext">#2</span></div>~~~}
 
 <!-- FIGURES -->
