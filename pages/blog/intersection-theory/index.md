@@ -9,18 +9,14 @@ date = "2023-08-30"
 @def mintoclevel=2
 @def maxtoclevel=3
 
-# The early chapters of Fulton's *Intersection Theory*: \\Thoughts from
+# Thoughts on the early chapters of Fulton's *Intersection Theory*
 
 \toc
-
----
-
-I'm reading some early chapters of Fulton's *Intersection Theory*.
 
 ## Notation and Terms
 
 - $\mathcal O_{V,X}$: when $V$ is a subvariety of $X$, this is the stalk of the structure sheaf $\mathcal O_X$ of $X$ at the generic point of $V$.
-- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \mathcal O_{V,X}/\mathfrak m_{V,X}$. **Note:** the local ring $\mathcal O_{X,V}$ consists of all rational functions on $X$ whose denominators don't vanish on $V$ and quotienting by $\mathfrak m_{V,X}$ eliminates all rational functions which vanish on $V$, hence $R(V)^\times$ is precisely all rational functions of $X$ which are neither all zero or all infinite on $V$.
+- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \operatorname{Frac}(\mathcal O_{V,X})$.
 
 ## Chapter 1: Rational Equivalence
 
@@ -62,7 +58,7 @@ Because $y = 0$ in $R$, $R \cong K[x]_{(x)}/x^2$ via the map $y \mapsto 0$. This
 \begin{equation*}
     I((0,0), F\cdot G) = 2.
 \end{equation*}
-This demonstrates that $I(P,F\cdot G)$ *is* able to account for some degeneracy.
+This demonstrates that $I(P,F\cdot G)$ is able to account for at least some kinds of degeneracy.
 
 #### Properties of intersection multiplicity
 
@@ -95,7 +91,27 @@ where $l_A(A/(a))$ is the length of $A/(a)$ as an $A$-module. Fulton also write 
 
 If $\operatorname{ord}_V(r)$ is positive, then $r$ is zero along $V$. If $\operatorname{ord}_V(r)$ is negative, then $r$ "has $V$ as a pole", i.e. the denominator of $r$ vanishes along $V$.
 
-There are many useful examples in Fulton in this section, some of which confuse me. I may come back to them at some point.
+There are many useful examples in Fulton in this section, they should really be treated as exercises. Here's a good one:
+
+\thmtitle{Example 1.2.4.}{(Fulton pg. 9)}
+    If $r\in \mathcal O_{V,X}$ then
+    \begin{equation}
+        \operatorname{ord}_V(r) \geq \max\{n \mid r\in \mathfrak m^n_{V,X}\},
+    \end{equation}
+    with strict inequality whenever $X$ is singular along $V$ and with equality whenever $X$ is nonsingular along $V$.
+
+@@lineblock *Proof*: This is basically a purely algebraic fact. I'll prove the inequality and return later to prove its relation to singularity. Set $A = \mathcal O_{V,X}$.
+
+Let $n$ be the maximum integer such that $r \in \mathfrak m^n_{V,X}$. Then
+\begin{equation*}
+    (r) \subseteq \mathfrak m^{n}_{V,X}\subsetneq \mathfrak m^{n-1}_{V,X} \subsetneq ... \subsetneq \mathfrak m^{1}_{V,X} \subsetneq A
+\end{equation*}
+is a chain of ideals. Quotienting by $(r)$ gives us a chain of submodules of $A/(r)$:
+\begin{align*}
+    0 \subseteq \mathfrak m^{n}_{V,X}/(r)\subsetneq \mathfrak m^{n-1}_{V,X}/(r) \subsetneq ... \subsetneq \mathfrak m^{1}_{V,X}/(r) \subsetneq A/(r)
+\end{align*}
+which proves the inequality.
+@@
 
 ### Cycles and Rational Equivalence
 
@@ -104,7 +120,7 @@ We now promptly arrive at cycles. A *k-cycle* on a scheme $X$ is a finite formal
     \sum n_i [V_i]
 \end{equation*}
 
-where each $V_i$ is a $k$-dimensional subvariety of $X$ and the $n_i$ are integers. For any $(k+1)$-dimensional subvariety $W$ of $X$ and any $r\in R(W)^*$, we can define a $k$-cycle $[\operatorname{div}(r)]$ by
+where each $V_i$ is a $k$-dimensional subvariety of $X$ and the $n_i$ are integers. For any $(k+1)$-dimensional subvariety $W$ of $X$ and any $r\in R(W)^\times$, we can define a $k$-cycle $[\operatorname{div}(r)]$ by
 \begin{equation*}
     [\operatorname{div}(r)] = \sum \operatorname{ord}_V(r)[V],
 \end{equation*}
@@ -123,24 +139,31 @@ Furthermore, we define
 \end{equation*}
 We call elements of $Z_*X$ *cycles* and elements of $A_*X$ *cycle classes*. We denote by $\{\alpha\}_k$ the component of a class $\alpha$ in $A_kX$.
 
-Having defined all this, Fulton runs through what I call "far reaching" or "general" examples. For instance, he shows
+Having defined all this, Fulton runs through the statement of some facts listed as examples. For instance:
+\thmtitle{Example 1.3.1}{}
+1. A scheme and its underlying reduced scheme have the same subvarieties and therefore the groups of cycles and rational equivalence classes are canonically isomorphic:
 \begin{equation*}
-    A_k(X) \cong A_k(X_{\text{red}})
+    A_k(X) \cong A_k(X_{\text{red}}).
 \end{equation*}
-and when $X$ is the disjoint union of schemes $X_1,...,X_n$
+2. If $X$ is the disjoint union of schemes $X_1,...,X_n$ then $Z_*(X) = \bigoplus Z_*X_i$ and
 \begin{equation*}
     A_k(X) \cong \bigoplus_{i=1}^n A_k(X_i).
 \end{equation*}
-See page 11 of Fulton for those. Instead, let's examine some concrete examples.
+3. If $X_1$ and $X_2$ are closed subscheme of $X$ then there are exact sequences
+\begin{equation*}    
+    A_k(X_1 \cap X_2) \to A_k X_1 \oplus A_kX_2 \to A_k(X_1 \cup X_2) \to 0.
+\end{equation*}
+This last one confuses me because the leftmost map feels like it should be induced by inclusions of subschemes of $X_1\cap X_2$ into $X_1$ and $X_2$, but this will have dimension issues.
 
-#### Example: $X = \mathbb A^2_K$.
+Let's examine some other concrete examples.
 
-I claim that $A_0(X) = A_1(X) = 0$ and $A_2(X) = \mathbb Z$.
+\thmtitle{Example:}{}$X = \mathbb A^2_K$. &nbsp;&nbsp;I claim that $A_0(X) = A_1(X) = 0$ and $A_2(X) = \mathbb Z$.
 
 *Dimension 2:* $k = 2$. Since $X$ is irreducible it is its own unique dimension 2 subvariety, and hence $Z_2(X) = X\mathbb Z$. As there are no dimension $3$ subvarieties of $X$, $\operatorname{Rat}_2(X) = 0$ vacuously. Thus
 \begin{equation*}
     A_2(X) \cong \mathbb Z.
 \end{equation*}
+**Note:** This same argument demonstrates that any irreducible $n$-dimensional variety $X$ has top chow group isomorphic to $\mathbb Z$.
 
 *Dimension 1:* $k = 1$. Every codimension 1 subvariety of $X$ is given by the vanishing of some function $f\in \mathcal O_X(X)$. We can therefore write an arbitrary $1$-cycle as 
 \begin{equation*}
@@ -168,17 +191,10 @@ Since every 1-cycle and 0-cycle is rationally equivalent to 0, we have that $A_2
     \end{cases}.
 \end{equation*}
 
+The final example in this section of Fulton expands on the note from the $k=2$ case above.
 
+\thmtitle{Example 1.3.2}{} If $X$ is $n$-dimensional, then there are no $(n+1)$-dimensional subvarieties and hence $A_n X = Z_n X$ is the free abelian group on the $n$-dimensional irreducible components of $X$. More generally, no cycle of the form $[\operatorname{div}(r)]$ for some $r\in R(W)^\times$ can include an irreducible component $V$ of $X$ with nonzero coefficient, and hence if $\alpha, \alpha' \in Z_*(X)$ are rationally equivalent, then they have the same coefficient of $V$. If $V\subset X$ is an irreducible copmonent, then we define the coefficient of $V$ in $\alpha$ to be the coefficient of $[V]$ in any cycle which represents $\alpha$.
 
+### Pushforward of Cycles
 
-
-
-
-
-
-
-
-
-
-
-
+I'm combining sections 
