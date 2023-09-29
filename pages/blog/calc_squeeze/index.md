@@ -141,13 +141,12 @@ We know that $-1 \leq \sin(x)\leq 1$, so maybe we can copy our strategy from the
     -\frac{1}{|x|} \leq \frac{\sin(x)}{x} \leq \frac{1}{|x|}.
 \end{align}
 
-Great! Only trouble is, as $x\to 0$, our lower bound goes to $-\infty$ and our upper bound goes to $\infty$, so we now only know that if the limit exists,
+Great! Only trouble is, as $x\to 0$, our lower bound goes to $-\infty$ and our upper bound goes to $\infty,$ so we now only know that if the limit exists,
 
 \begin{align}
-    -\infty\leq \lim_{x\to 0}\frac{\sin(x)}{x}\leq \infty.
+    -\infty\leq \lim_{x\to 0}\frac{\sin(x)}{x}\leq \infty,
 \end{align}
-
-Not exactly helpful.
+which just means that $\lim_{x\to 0}\frac{\sin(x)}{x}$ is "some number". Not exactly helpful.
 
 \figenv{dumb_bound.png}{*Graph of $y = \sin(x)/x$ in red, $y = 1/|x|$ in blue and $y=-1/|x|$ in green. Not a good helpful bound.*}{width: 100%;}
 
