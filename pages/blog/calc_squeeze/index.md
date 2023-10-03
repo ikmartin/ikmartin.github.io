@@ -239,13 +239,17 @@ Now I've got $\frac{\theta}{\sin\theta}$, the opposite of what I want. Can I fli
 and magically, we have arrived at upper and lower bounds for $\frac{\sin\theta}{\theta}$ on the interval $\theta\in \left(0,\frac{\pi}{2}\right)$!
 @@
 
-@@revindentblock\thmtitle{Case 2}{($\theta < 0$)} This means $\sin\theta < 0$ as well, so when I divide by it I need to change the directions of the inequalities. This gives me
+@@revindentblock\thmtitle{Case 2}{($\theta < 0$)} If the angle is negative, then the shapes we drew flip down into quadrant 4 of the plane. The formulas we used for area then include a negative side length, so our inequalities in Equation 6 flip! This gives us
+\begin{align}
+    \frac12 \cos\theta\sin\theta \geq \frac{\theta}{2} \geq \frac12 \tan\theta.
+\end{align}
+I can repeat the steps from before, except $\theta < 0$ implies $\sin\theta <0$ too, so when I divide by it I must flip all the inequalities again:
 
 \begin{align}
-    \cos\theta \geq \frac{\theta}{\sin\theta} \geq \frac{1}{\cos\theta}.
+    \cos\theta \leq \frac{\theta}{\sin\theta} \leq \frac{1}{\cos\theta}.
 \end{align}
 
-We're in the interval $\theta\in \left(-\frac{\pi}{2},0\right)$. Here, $\cos\theta$ is positive, $\sin\theta$ is negative and $\theta$ is negative. This means $\sin\theta/\theta$ is positive, all sides of the inequalities in (21) have matching sign. This means I flip the inequalities *again* when I take reciprocals, leaving me with 
+We're in the interval $\theta\in \left(-\frac{\pi}{2},0\right)$. Here, $\cos\theta$ is positive, $\sin\theta$ is negative and $\theta$ is negative. This means $\sin\theta/\theta$ is positive, all sides of the inequalities in (21) have matching sign. According to the rule from Case 1, I therefore flip the inequalities *one more time* when I take reciprocals, leaving me with 
 \begin{align}
     \frac{1}{\cos\theta} \geq \frac{\sin\theta}{\theta} \geq \cos\theta.
 \end{align}

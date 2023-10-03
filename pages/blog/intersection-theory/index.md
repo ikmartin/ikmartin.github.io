@@ -4,6 +4,7 @@ hascode = true
 description = "Thoughts following the early chapters of Fulton's Intersection Theory"
 tags = ["algebraic-geometry"]
 date = "2023-08-30"
+published = true
 +++
 
 @def mintoclevel=2
@@ -16,7 +17,7 @@ date = "2023-08-30"
 ## Notation and Terms
 
 - $\mathcal O_{V,X}$: when $V$ is a subvariety of $X$, this is the stalk of the structure sheaf $\mathcal O_X$ of $X$ at the generic point of $V$.
-- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \operatorname{Frac}(\mathcal O_{V,X})$.
+- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \operatorname{Frac}(\mathcal O_{V,X})$.I hate this notation, so I'll replace it with $K(X)$.
 
 ## Chapter 1: Rational Equivalence
 
@@ -73,7 +74,7 @@ The following properties of intersection multiplicity are immediate:
 
 ### Orders of Zeros and Poles
 
-The setup: $X$ is a variety with a subvariety $V$ of codimension 1. Thus the local ring $A = \mathcal O_{V,X}$ is a one-dimensional local domain. Our goal is to define the *order of vanishing* of a rational function $r\in R(X)^\times$ along $V$. This should be a homomorphism $R(X^*) \to \mathbb Z$:
+The setup: $X$ is a variety with a subvariety $V$ of codimension 1. Thus the local ring $A = \mathcal O_{V,X}$ is a one-dimensional local domain. Our goal is to define the *order of vanishing* of a rational function $r\in K(X)^\times$ along $V$. This should be a homomorphism $K(X^*) \to \mathbb Z$:
 \begin{equation*}
     \operatorname{ord}_V(rs) = \operatorname{ord}_V(r) + \operatorname{ord}_V(s),
 \end{equation*}
@@ -81,7 +82,7 @@ and since $r = a/b$ for some $a,b\in A$, we'll necessarily have that
 \begin{equation*}
     \operatorname{ord}_V(r) = \operatorname{ord}(a) - \operatorname{ord}(b).
 \end{equation*}
-When $X$ is nonsingular along $V$ then $A$ is a DVR, and so any $a\in A$ can be written $ut^m$ for some unit $u\in A^\times$ and a unique $m\in \mathbb Z_{\geq0}$, where $t$ is a generator of the maximal ideal. Defining $\operatorname{ord}_V(a) = m$ then extends to a definition on all of $R(X)^*$.
+When $X$ is nonsingular along $V$ then $A$ is a DVR, and so any $a\in A$ can be written $ut^m$ for some unit $u\in A^\times$ and a unique $m\in \mathbb Z_{\geq0}$, where $t$ is a generator of the maximal ideal. Defining $\operatorname{ord}_V(a) = m$ then extends to a definition on all of $K(X)^*$.
 
 Generalizing this definition requires removing both the codimension 1 and the nonsingular hypothesis. In the special case that $X$ is a curve over a field $K$ and $V$ is a point, our "valuation" definition coincides with $\dim_K A/(a)$ when $a\in A$, but the latter formula works in singular cases too. However, $A/(a)$ is not a finite $K$-vector space in higher dimensions. According to Fulton, the correct definition is that
 \begin{equation*}
@@ -94,23 +95,27 @@ If $\operatorname{ord}_V(r)$ is positive, then $r$ is zero along $V$. If $\opera
 There are many useful examples in Fulton in this section, they should really be treated as exercises. Here's a good one:
 
 \thmtitle{Example 1.2.4.}{(Fulton pg. 9)}
-    If $r\in \mathcal O_{V,X}$ then
+    If $V$ is codimension 1 in $X$ and $r\in \mathcal O_{V,X}$ then
     \begin{equation}
         \operatorname{ord}_V(r) \geq \max\{n \mid r\in \mathfrak m^n_{V,X}\},
     \end{equation}
     with strict inequality whenever $X$ is singular along $V$ and with equality whenever $X$ is nonsingular along $V$.
 
-@@lineblock *Proof*: This is basically a purely algebraic fact. I'll prove the inequality and return later to prove its relation to singularity. Set $A = \mathcal O_{V,X}$.
+@@lineblock *Proof*: This is basically a purely algebraic fact. I'll prove the inequality and return later to prove its relation to singularity. Set $A = \mathcal O_{V,X}$ and $\mathfrak m_{V,X} = \mathfrak m$.
 
-Let $n$ be the maximum integer such that $r \in \mathfrak m^n_{V,X}$. Then
+Let $n$ be the maximum integer such that $r \in \mathfrak m^n$. Then
 \begin{equation*}
-    (r) \subseteq \mathfrak m^{n}_{V,X}\subsetneq \mathfrak m^{n-1}_{V,X} \subsetneq ... \subsetneq \mathfrak m^{1}_{V,X} \subsetneq A
+    (r) \subseteq \mathfrak m^{n}\subsetneq \mathfrak m^{n-1} \subsetneq ... \subsetneq \mathfrak m^{1} \subsetneq A
 \end{equation*}
 is a chain of ideals. Quotienting by $(r)$ gives us a chain of submodules of $A/(r)$:
 \begin{align*}
-    0 \subseteq \mathfrak m^{n}_{V,X}/(r)\subsetneq \mathfrak m^{n-1}_{V,X}/(r) \subsetneq ... \subsetneq \mathfrak m^{1}_{V,X}/(r) \subsetneq A/(r)
+    0 \subseteq \mathfrak m^{n}/(r)\subsetneq \mathfrak m^{n-1}/(r) \subsetneq ... \subsetneq \mathfrak m^{1}/(r) \subsetneq A/(r)
 \end{align*}
 which proves the inequality.
+
+If $A$ is regular, then it is a DVR and hence $(r) = \mathfrak m^n$. Furthermore, $\dim_k \mathfrak/\mathfrak m^2 = \dim A = 1$, so each quotient $\mathfrak m/\mathfrak m^2 \cong k$, implying the chain is maximal.
+
+If $A$ is not regular, then $\dim \mathfrak m\mathfrak m^2\geq 2$, and hence the chain above is not maximal.
 @@
 
 ### Cycles and Rational Equivalence
@@ -120,11 +125,11 @@ We now promptly arrive at cycles. A *k-cycle* on a scheme $X$ is a finite formal
     \sum n_i [V_i]
 \end{equation*}
 
-where each $V_i$ is a $k$-dimensional subvariety of $X$ and the $n_i$ are integers. For any $(k+1)$-dimensional subvariety $W$ of $X$ and any $r\in R(W)^\times$, we can define a $k$-cycle $[\operatorname{div}(r)]$ by
+where each $V_i$ is a $k$-dimensional subvariety of $X$ and the $n_i$ are integers. For any $(k+1)$-dimensional subvariety $W$ of $X$ and any $r\in K(W)^\times$, we can define a $k$-cycle $[\operatorname{div}(r)]$ by
 \begin{equation*}
     [\operatorname{div}(r)] = \sum \operatorname{ord}_V(r)[V],
 \end{equation*}
-taking the sum over all $k$-dimensional subvarieties of $W$ and noting $\operatorname{ord}_V(r)$ is zero except at finitely many $V$. Now we can define rational equivalence. We first say that a $k$-cycle is *rationally equivalent to zero* and write $\alpha \sim 0$ if there exist finitely many $(k+1)$-dimensional subvarieties $W_i$ of $X$ and $r_i \in R(W_i)^\times$ such that
+taking the sum over all $k$-dimensional subvarieties of $W$ and noting $\operatorname{ord}_V(r)$ is zero except at finitely many $V$. Now we can define rational equivalence. We first say that a $k$-cycle is *rationally equivalent to zero* and write $\alpha \sim 0$ if there exist finitely many $(k+1)$-dimensional subvarieties $W_i$ of $X$ and $r_i \in K(W_i)^\times$ such that
 \begin{equation*}
     \alpha = \sum ~ [\operatorname{div}(r_i)].
 \end{equation*}
@@ -153,7 +158,7 @@ Having defined all this, Fulton runs through the statement of some facts listed 
 \begin{equation*}    
     A_k(X_1 \cap X_2) \to A_k X_1 \oplus A_kX_2 \to A_k(X_1 \cup X_2) \to 0.
 \end{equation*}
-This last one confuses me because the leftmost map feels like it should be induced by inclusions of subschemes of $X_1\cap X_2$ into $X_1$ and $X_2$, but this will have dimension issues.
+This last one confuses me because the leftmost map feels like it should be induced by inclusions of subschemes of $X_1\cap X_2$ into $X_1$ and $X_2$, but this will have dimension issues. (Note: There are no dimension issues, the maps are obvious. One can also think of this exact sequence as being induced by the pushforward of the relevant inclusion maps).
 
 Let's examine some other concrete examples.
 
@@ -169,7 +174,7 @@ Let's examine some other concrete examples.
 \begin{equation*}
     \alpha = \sum_i n_i F_i
 \end{equation*}
-where $F_i = V(f_i)$. Each $f_i$ is an element of $R(X)^*$ which vanishes only on $F_i$ by definition, hence
+where $F_i = V(f_i)$. Each $f_i$ is an element of $K(X)^*$ which vanishes only on $F_i$ by definition, hence
 \begin{equation*}
     \alpha = \sum_i n_i F_i = \sum_i [\operatorname{div}(f_i^{n_i})].
 \end{equation*}
@@ -178,7 +183,7 @@ where $F_i = V(f_i)$. Each $f_i$ is an element of $R(X)^*$ which vanishes only o
 \begin{equation*}
     \alpha = \sum_i n_i P_i.
 \end{equation*}
-Choose a line $\ell_i$ for each $i$ such that $\ell_i$ passes through $P_j$ if and only if $i = j$. Let $t_i$ be the coordinate for $\ell_i$ under the isomorphism $\ell_i \cong \mathbb A^1_K$ which sends $P_i$ to $0$, interpreted as a function on $\ell_i$. Then $t_i$ is a function in $R(\ell_i)^\times$ which vanishes only at $P_i$ with order 1, hence
+Choose a line $\ell_i$ for each $i$ such that $\ell_i$ passes through $P_j$ if and only if $i = j$. Let $t_i$ be the coordinate for $\ell_i$ under the isomorphism $\ell_i \cong \mathbb A^1_K$ which sends $P_i$ to $0$, interpreted as a function on $\ell_i$. Then $t_i$ is a function in $K(\ell_i)^\times$ which vanishes only at $P_i$ with order 1, hence
 \begin{equation*}
     \alpha = \sum_{i} n_i P_i = \sum_i [\operatorname{div}(t_i^{n_i})].
 \end{equation*}
@@ -193,8 +198,8 @@ Since every 1-cycle and 0-cycle is rationally equivalent to 0, we have that $A_2
 
 The final example in this section of Fulton expands on the note from the $k=2$ case above.
 
-\thmtitle{Example 1.3.2}{} If $X$ is $n$-dimensional, then there are no $(n+1)$-dimensional subvarieties and hence $A_n X = Z_n X$ is the free abelian group on the $n$-dimensional irreducible components of $X$. More generally, no cycle of the form $[\operatorname{div}(r)]$ for some $r\in R(W)^\times$ can include an irreducible component $V$ of $X$ with nonzero coefficient, and hence if $\alpha, \alpha' \in Z_*(X)$ are rationally equivalent, then they have the same coefficient of $V$. If $V\subset X$ is an irreducible copmonent, then we define the coefficient of $V$ in $\alpha$ to be the coefficient of $[V]$ in any cycle which represents $\alpha$.
+\thmtitle{Example 1.3.2}{} If $X$ is $n$-dimensional, then there are no $(n+1)$-dimensional subvarieties and hence $A_n X = Z_n X$ is the free abelian group on the $n$-dimensional irreducible components of $X$. More generally, no cycle of the form $[\operatorname{div}(r)]$ for some $r\in K(W)^\times$ can include an irreducible component $V$ of $X$ with nonzero coefficient, and hence if $\alpha, \alpha' \in Z_*(X)$ are rationally equivalent, then they have the same coefficient of $V$. If $V\subset X$ is an irreducible copmonent, then we define the coefficient of $V$ in $\alpha$ to be the coefficient of $[V]$ in any cycle which represents $\alpha$.
 
 ### Pushforward of Cycles
 
-I'm combining sections 
+Now we wish to discuss the functoriality of Chow groups.
