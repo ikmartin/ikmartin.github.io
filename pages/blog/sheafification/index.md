@@ -4,7 +4,7 @@ hascode = true
 description = "Sheafification felt opaque to me when I first saw it, but it really isn't"
 tags = ["algebraic-geometry", "sheaves"]
 date = "2023-09-13"
-published = false
+published = true
 +++
 
 @def mintoclevel=2

@@ -1,9 +1,9 @@
 # Research
 
 ### The Reverse Ising Problem
+{{makeref title: Design of General Purpose Minimal-Auxiliary Ising Machines; journal: arxiv preprint 2310.16246 (submitted to IEEE ICRC 2023); year: 2023; pages: ; volume: ; path:/files/papers/ising1_IEEE_ICRC.pdf}}
 
 ### Undergrad Research
-
 
 {{makeref title: Design and simulations of a prototype nanocircuit to transmit microwave and terahertz harmonics generated with a mode-locked laser; journal: AIP Advances; year: 2022; pages: 1595-1605; volume: 50; path:/files/papers/undergrad_modelocked.pdf}}
 

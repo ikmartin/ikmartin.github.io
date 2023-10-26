@@ -17,7 +17,7 @@ published = true
 ## Notation and Terms
 
 - $\mathcal O_{V,X}$: when $V$ is a subvariety of $X$, this is the stalk of the structure sheaf $\mathcal O_X$ of $X$ at the generic point of $V$.
-- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \operatorname{Frac}(\mathcal O_{V,X})$.I hate this notation, so I'll replace it with $K(X)$.
+- $R(V)$: the function field of a variety $V$. When $V$ is a subvariety of $X$, $R(V) = \operatorname{Frac}(\mathcal O_{V,X})$. I hate this notation, so I'll replace it with $K(V)$.
 
 ## Chapter 1: Rational Equivalence
 
