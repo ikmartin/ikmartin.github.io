@@ -83,6 +83,7 @@ Categories
 Functors
 -->
 
+\newcommand{\Aut}{\operatorname{Aut}}
 \newcommand{\Hom}{\operatorname{Hom}}
 \newcommand{\Spec}{\operatorname{Spec}}
 

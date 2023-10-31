@@ -1,5 +1,7 @@
 # Links and stuff
 
+### Seminar Pages
+[Link to tropical geometry learning seminar.](/pages/additional-pages/tropical-learning-seminar)
 ### Notes
 
 Here I'll upload notes that I've written.
