@@ -4,7 +4,7 @@ hascode = true
 description = "Tropicalization of Mgn bar"
 tags = ["tropical-geometry,", "algebraic-geometry,", "curves"]
 date = "2023-10-30"
-published = true
+published = false
 +++
 
 @def mintoclevel=2
