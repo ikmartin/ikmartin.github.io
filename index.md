@@ -3,7 +3,6 @@
 
 # Isaac Martin's Homepage
 
-
 @@inline
 ~~~<div class="landing" style="float: left;">
 <img  src="./files/pic2.jpg" alt="unnecessarily smug x_x"/>
