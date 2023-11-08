@@ -21,4 +21,4 @@ I'm Isaac, a Ph.D. student at UT Austin studying mirror symmetry. When geometry 
 
 The styling of this site is modified from [Ploum](https://ploum.net). The Julia package [Franklin](https://franklinjl.org/) lets me write in Markdown and LaTeX without *too* much faff.
 
-If all is working correctly, this site is synchronized between [my Github page](http://ikmartin.github.io) and [my academic page](http://ma.utexas.edu/users/im9634). If something is broken here, try the other link.
+If all is working correctly, this site is synchronized between [my Github page](http://ikmartin.github.io) and [my academic page](http://ma.utexas.edu/users/ikmartin). If something is broken here, try the other link.
