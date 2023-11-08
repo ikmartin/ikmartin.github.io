@@ -1,2 +1,2 @@
 ./.sync_optimize.jl
-rsync -a __site/ im9634@math.utexas.edu:~/public_html/
+rsync -a __site/ ikmartin@math.utexas.edu:~/public_html/
