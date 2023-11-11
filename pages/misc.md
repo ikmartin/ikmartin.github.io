@@ -1,7 +1,9 @@
 # Links and stuff
 
 ### Seminar Pages
-[Link to tropical geometry learning seminar.](/pages/additional-pages/tropical-learning-seminar)
+- [Link to tropical geometry learning seminar.](/pages/additional-pages/tropical-learning-seminar)
+- [Link to toric geometry learning seminar.](/pages/additional-pages/toric-page) (only included for historical purposes)
+
 ### Notes
 
 Here I'll upload notes that I've written.

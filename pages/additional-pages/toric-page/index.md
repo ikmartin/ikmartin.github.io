@@ -7,7 +7,7 @@ date = "2023-01-07"
 +++
 
 # Toric Geometry Learning Seminar Spring 2023
-@def basedir = "/pages/blog/toric-page/"
+@def basedir = "/pages/additional-pages/toric-page/"
 
 
 \toc
@@ -20,7 +20,7 @@ Welcome to the seminar page for the Spring 2023 toric varieties learning seminar
 
 ## Notes
 
-{{ printpages pages/blog/toric-page/ 1000}}
+{{ printpages pages/additional-pages/toric-page/ 1000}}
 
 ## Schedule Outline (Subject to Change)
 

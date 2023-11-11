@@ -1,5 +1,5 @@
 +++
-title = "Squeeze Theorem"
+title = "Squeeze theorem and the limit of sin(x)/x"
 hascode = true
 description = "asdf"
 tags = ["calculus", "limits", "squeeze_theorem"]
