@@ -7,11 +7,11 @@
 ~~~<div class="landing" style="float: left;">
 <img  src="./files/pic2.jpg" alt="unnecessarily smug x_x"/>
 </div>~~~
-I'm Isaac, a Ph.D. student at UT Austin studying mirror symmetry. When geometry becomes overwhelming, I like to think about magnets and how they might be used to build computers which only sometimes give you the correct answer.
+I'm Isaac, a Ph.D. student at UT Austin studying enumerative geometry and mirror symmetry. I also like to think about magnets and how they might be used to build computers which only sometimes give you the correct answer.
 
 **Biography:** University of Utah (Bachelor's) > University of Cambridge (Master's) > University of Texas at Austin (Ph.D. -- working on it). Still haven't graduated high school.
 
-**Outdated CV:** ([CV - Last updated August 2022](/files/CV.pdf)).
+**Mostly Comprehensive CV:** ([CV - Last updated October 2023](/files/CV.pdf)).
 
 @@
 ~~~<br>~~~
