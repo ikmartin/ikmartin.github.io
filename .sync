@@ -1,2 +1,19 @@
-./.sync_optimize.jl
+#!/bin/bash
+
+# prepare website for sync with utexas domain
+echo '
+using Franklin
+optimize(prepath="/users/ikmartin/", minify=false)
+' | julia
+
+# sync the utexas domain
 rsync -a __site/ ikmartin@math.utexas.edu:~/public_html/
+
+# prepare for github sync
+echo '
+using Franklin
+serve(clear=true)
+' | julia
+
+# now push to github
+echo "Successfully updated site at ma.utexas.edu/users/ikmartin. \nNow push to github with add/commit/push."
