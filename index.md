@@ -18,6 +18,10 @@ I'm Isaac, a Ph.D. student at UT Austin studying enumerative geometry and mirror
 
 **More words:** I'm passionate about trying to become passionate about running, I could become passionate about trad climbing/canyoneering/backpacking if Austin had more crags/canyons/public land and I'm currently *actually* passionate about [Nairn's biscuits](https://nairns.com/wellbeing/gluten-free) and [Strong Towns](https://www.strongtowns.org/about). Consistent access to gluten-free biscuits and walkable streets is, if not a necessary condition for life satisfaction, at least a sufficient one.
 
+I don't like highway expansions. I encourage you to checkout [RethinkI-35](https://rethink35.org/) and the below petition.
+
 The styling of this site is modified from [Ploum](https://ploum.net). The Julia package [Franklin](https://franklinjl.org/) lets me write in Markdown and LaTeX without *too* much faff.
 
 If all is working correctly, this site is synchronized between [my Github page](http://ikmartin.github.io) and [my academic page](http://ma.utexas.edu/users/ikmartin). If something is broken here, try the other link.
+
+~~~<link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' /><script src='https://actionnetwork.org/widgets/v5/petition/rethink35?format=js&source=widget'></script><div id='can-petition-area-rethink35' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>~~~

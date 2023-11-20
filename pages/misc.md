@@ -4,10 +4,6 @@
 - [Link to tropical geometry learning seminar.](/pages/additional-pages/tropical-learning-seminar)
 - [Link to toric geometry learning seminar.](/pages/additional-pages/toric-page) (only included for historical purposes)
 
-### Notes
-
-Here I'll upload notes that I've written.
-
 ### More Pre-PhD Math Writing
 
 - [Part III Essay](../misc-files/partIII_essay.pdf)
@@ -18,3 +14,9 @@ Here I'll upload notes that I've written.
 ### The Outdoors
 
 - [Plan for Bruja Canyon](../bruja-canyon/)
+
+
+### Good Organizations
+
+- Strong Towns [(link)](https://www.strongtowns.org/)
+- Rethink I-35 [(link)](https://rethink35.org/)
