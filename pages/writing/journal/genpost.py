@@ -21,10 +21,11 @@ def increment_name(name, n):
 templatePost = """+++
 title = "{}"
 hascode = true
-description = "{}"
+description = "{{}}"
 tags = {}
 date = "{}"
-published = false
+published = true
+public = false
 +++
 
 @def mintoclevel=2
@@ -33,6 +34,7 @@ published = false
 # {{title}}
 
 > {{description}}
+
 \\toc
 
 ---
