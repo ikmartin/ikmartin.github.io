@@ -8,10 +8,13 @@ body {
   line-height: 1.4;
   font-size: 17px;
   color: #444;
-  background-color: #fdf6e3;
+  background-color: #fffff;
   padding: 0 10px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Fira', 'Helvetica-Neue', sans-serif;
+}
 h1 {
   line-height: 1.4;
   text-align: center;
@@ -21,7 +24,6 @@ h2,
 h3 {
   line-height: 1.2;
 }
-
 pre,
 blockquote,
 .signature {
@@ -37,7 +39,7 @@ blockquote,
 
 p,
 ul {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 a {

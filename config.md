@@ -7,14 +7,11 @@ author = "Isaac Martin"
 mintoclevel = 2
 
 # Add here files or directories that should be ignored by Franklin, otherwise
-
 # these files might be copied and, if markdown, processed by Franklin which
-
 # you might not want. Indicate directories by ending the name with a `/`.
-
 # Base files such as LICENSE.md and README.md are ignored by default.
 
-ignore = ["node_modules/"]
+ignore = ["node_modules/", "config/"]
 
 # RSS (the website\_{title, descr, url} must be defined to get RSS)
 
@@ -30,14 +27,40 @@ Add here global commands to be used throughout your pages
 #########################################################
 -->
 
+<!-- ==================================================================
+     HTML FUNCTIONS
+================================================================== -->
+
+<!-- Make the text sansserif -->
+\newcommand{\sansserif}[1]{~~~<span style="font-family: 'Fira', 'Helvetica-Neue', sans-serif">~~~ #1 ~~~</span>~~~}
+
+<!-- Text Alignment -->
+\newenvironment{right}{@@right}{@@}
+\newenvironment{center}{@@center}{@@}
+\newenvironment{left}{@@left}{@@}
+
+<!-- Indentation -->
+\newenvironment{indent}{@@indentblock}{@@}
+\newenvironment{noindent}{@@noindent}{@@}
+
 <!-- Quality of life -->
 \newcommand{\break}[]{~~~<br>~~~}
+\newcommand{\comment}[1]{<!-- #1 -->}
+\newcommand{\open}[1]{~~~<#1>~~~}
+\newcommand{\close}[1]{~~~</#1>~~~}
 
-<!-- Text macros -->
+<!-- The markdown2html parser does unpredictable things to '---' -->
+\newcommand{\hline}{~~~<hr>~~~}
+\newcommand{\hrule}{~~~<hr>~~~}
+
+<!-- ==================================================================
+     TEXT MACROS
+================================================================== -->
 
 \newcommand{\author}[]{~~~<p style='font-style: italic;text-align: center;'>by <a href='/'>Isaac</a> on {{date}} </p>~~~}
 \newcommand{\thmtitle}[2]{~~~<span><strong>#1:</strong> <em>~~~#2~~~</em>&nbsp;&nbsp;</span>~~~}
 \newcommand{\fancyhr}[2]{~~~<div class="#1"><span class="fancytext">#2</span></div>~~~}
+
 
 <!-- FIGURES -->
 
@@ -66,7 +89,9 @@ Operator Names
 \newcommand{\coker}{\operatorname{coker}}
 \newcommand{\cone}{\operatorname{cone}}
 \newcommand{\dim}{\operatorname{dim}}
+\newcommand{\fchar}{\operatorname{char}}
 \newcommand{\det}{\operatorname{det}}
+\newcommand{\id}{\operatorname{id}}
 \newcommand{\vspan}{\operatorname{span}}
 \newcommand{\Spec}{\operatorname{Spec}}
 \newcommand{\Maxspec}{\operatorname{Maxspec}}
@@ -87,8 +112,9 @@ Categories
 Functors
 -->
 
-\newcommand{\Aut}{\operatorname{Aut}}
 \newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Gal}{\operatorname{Gal}}
 \newcommand{\Spec}{\operatorname{Spec}}
 
 <!--

@@ -3,8 +3,19 @@
 ================================================================== */
 
 :root {
-  --background-color: #fdf6e3;
-  --block-background: #eee8d5;
+  --background-color: #fffff;
+  --quote-background: #fffff;
+  --quote-color: #555555;
+  --quote-border-color: #eeeeee;
+  --blue-body: #fafafa;
+  --blue-head: #d9edf7;
+  --blue-highlight: #4c9cf1;
+  --red-body: #ffe6e6;
+  --red-highlight: #990000;
+  --green-body: #f4fff9;
+  --green-highlight: #319b62;
+  --gray-body: #fafafa;
+  --gray-highlight: #4d4d4d;
   --output-background: hsl(0, 0%, 98%);
   --small: 14px;
   --normal: 19px;
@@ -168,12 +179,18 @@ h6 {
   text-decoration: none;
 }
 
+/* ==================================================================
+    TABLES, LISTS, BLOCKQUOTES
+================================================================== */
+
 .franklin-content table {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
   text-align: center;
 }
+
+/* removes uneeded space */
 
 .franklin-toc ol ol {
   list-style-type: lower-alpha;
@@ -188,8 +205,9 @@ td {
 }
 
 .franklin-content blockquote {
-  background: var(--block-background);
-  /*border-left: 7px solid #a8a8a8;*/
+  background: var(--quote-background);
+  color: var(--quote-color);
+  border-left: 5px solid var(--quote-border-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
@@ -201,9 +219,15 @@ blockquote,
   background: var(--block1-background);
   padding: 1em;
 }
+
 blockquote,
 .signature {
   font-style: italic;
+}
+
+div.alpha > ol {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
 }
 
 /* ==================================================================
@@ -217,6 +241,37 @@ blockquote,
 
 .franklin-content a:hover {
   text-decoration: underline;
+}
+
+/* ==================================================================
+    PARAGRAPH BEHAVIOR
+================================================================== */
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  text-indent: 0em;
+}
+
+div > p:first-child {
+  margin-block-start: 0em;
+  text-indent: 0em;
+}
+div > p:last-child {
+  margin-block-end: 0em;
+}
+
+/* PARAGRAPHS FOLLOWING MATH */
+span + p { text-indent: 0em; }
+div.nonumber + p { text-indent: 0em; }
+
+/* PARAGRAPH INDENT RULES: USED WITH MACROS IN config.md */
+div.noindent + p { text-indent: 0em; }
+div.indent + p { text-indent: 1em; }
+
+/* A HACK WHICH KILLS EMPTY PARAGRAPHS */
+p:empty{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 /* ==================================================================
@@ -333,7 +388,7 @@ body {
 ================================================================== */
 
 code {
-  background-color: var(--block-background);
+  background-color: var(--background-color);
   padding: 0.1em 0.2em;
   border-radius: 2px;
   font-size: var(--small);
@@ -362,11 +417,107 @@ code {
 }
 
 /* ==================================================================
+    QUALITY OF LIFE
+================================================================== */
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  \text-align: left;
+}
+
+/* ==================================================================
     BOXES
 ================================================================== */
 
-.franklin-content .colbox-blue {
-  background-color: #eef3f5;
+.box1 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.box2 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 5px 10px 10px 5px;
+}
+
+.box3 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 5px 0px 5px 0px;
+}
+
+.border1 {
+  border-left: 5px solid;
+}
+
+.blue-body {
+  background-color: var(--blue-body);
+  border-color: var(--blue-highlight);
+}
+.blue-head {
+  background-color: var(--blue-head);
+  border-color: var(--blue-highlight);
+}
+.red-body {
+  background-color: var(--red-body);
+  border-color: var(--red-highlight);
+}
+.green-body {
+  background-color: var(--green-body);
+  border-color: var(--green-highlight);
+}
+.gray-body {
+  background-color: var(--gray-body);
+  border-color: var(--gray-highlight);
+}
+
+details {
+}
+details > summary {
+    cursor: pointer;
+}
+details > summary.box {
+    list-style: none;
+}
+details > summary.box::-webkit-details-marker {
+    display: none;
+}
+details[open] > summary > .blue-body {
+    background-color: lch(from var(--blue-body) calc(l * 0.95) calc(c * 1.5) calc(h * 1) );
+}
+details[open] > summary > .blue-head {
+    background-color: lch(from var(--blue-head) calc(l / 1.05) calc(c * 2) calc(h * 1) );
+}
+details[open] > summary > .red-body {
+    background-color: lch(from var(--red-body) calc(l * 0.95) calc(c * 1) calc(h * 1) );
+}
+details[open] > summary > .green-body {
+    background-color: lch(from var(--green-body) calc(l * 0.95) calc(c * 1) calc(h * 1) );
+}
+details[open] > summary > .gray-body {
+    background-color: lch(from var(--gray-body) calc(l * 0.95) calc(c * 1) calc(h * 1) );
+}
+
+/* LEGACY BOXES FOR BACKWARDS COMPATIBILITY */
+.colbox-blue {
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
@@ -374,11 +525,12 @@ code {
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 5px 10px 10px 5px;
+  background-color: #eef3f5;
   border-left: 5px solid #4c9cf1;
 }
 
-.franklin-content .colbox-red {
+.colbox-red {
   background-color: #ffe6e6;
   padding-top: 5px;
   padding-right: 10px;
@@ -387,8 +539,38 @@ code {
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 5px 10px 10px 5px;
   border-left: 5px solid #ff4d4d;
+}
+
+/* ===============================================================
+    BLOCKS
+=============================================================== */
+
+.lineblock {
+  margin-left: 0.25em;
+  border-left: 2px solid gray;
+  padding-left: 1em;
+}
+
+.indentblock {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* use these for a multi-paragraph div where only the first line is to be indented */
+.revindentblock {
+  margin-left: 2em;
+}
+
+.revindentblock > p:first-child {
+  text-indent: -2em;
+}
+
+/* use this to indent the first line of a single paragraph or of every paragraph in the environment */
+.revindentparagraph {
+  margin-left: 2em;
+  text-indent: -2em;
 }
 
 /* ===============================================================
@@ -422,6 +604,7 @@ div.tempgradient {
   border-bottom: 1px solid black;
   text-align: center;
 }
+
 .fancytext {
   all: unset;
   position: relative;
@@ -432,28 +615,4 @@ div.tempgradient {
   font-family: 'Snell Roundhand', cursive;
   font-weight: bold;
   padding: 0 15px;
-}
-
-/* ===============================================================
-    BLOCKS
-=============================================================== */
-
-.lineblock {
-  margin-left: 0.25em;
-  border-left: 2px solid gray;
-  padding-left: 1em;
-}
-/* use these for a multi-paragraph div where only the first line is to be indented */
-.revindentblock {
-  margin-left: 2em;
-}
-
-.revindentblock > p:first-child {
-  text-indent: -2em;
-}
-
-/* use this to indent the first line of a single paragraph or of every paragraph in the environment */
-.revindentparagraph {
-  margin-left: 2em;
-  text-indent: -2em;
 }

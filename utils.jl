@@ -1,4 +1,5 @@
 using Dates
+Franklin.include_external_config("/Users/isaac/Desktop/website/config/config_thm.md")
 
 function hfun_bar(vname)
   val = Meta.parse(vname[1])
