@@ -16,7 +16,7 @@ These are blog posts, hopefully of interest to someone.
 
 ### Journal
 
-No quality control, stuff I write for myself.
+No quality control. Stuff I write for myself.
 
 {{ printpages pages/writing/journal/ 1000}}
 
