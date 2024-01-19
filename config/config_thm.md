@@ -46,14 +46,14 @@ Macros for boxes
 \newenvironment{arrowsummary}{~~~<summary>~~~}{~~~</summary>~~~}
 \newenvironment{dropdown}[1]{~~~<details><summary>~~~ #1 ~~~</summary>~~~}{~~~</details>~~~}
 
-\newenvironment{defn}{@@red-body,box3,border1 **Definition:**}{@@}
-\newenvironment{rmk}{@@red-body,box3,border1 **Remark:**}{@@}
-\newenvironment{lem}{@@blue-body,box3,border1 **Lemma:**}{@@}
-\newenvironment{cor}{@@blue-body,box3,border1 **Cor:**}{@@}
-\newenvironment{prop}{@@blue-body,box3,border1 **Proposition:**}{@@}
-\newenvironment{thm}{@@bluebody,box3,border1 **Theorem:**}{@@}
-\newenvironment{example}{@@green-body,box3,border1 **Example:**}{@@}
-\newenvironment{prob}{@@gray-body,box3,border1 **Problem:**}{@@}
+\newenvironment{defn}{@@red-body,box2,border1 **Definition:**}{@@}
+\newenvironment{rmk}{@@red-body,box2,border1 **Remark:**}{@@}
+\newenvironment{lem}{@@blue-body,box2,border1 **Lemma:**}{@@}
+\newenvironment{cor}{@@blue-body,box2,border1 **Cor:**}{@@}
+\newenvironment{prop}{@@blue-body,box2,border1 **Proposition:**}{@@}
+\newenvironment{thm}{@@blue-body,box2,border1 **Theorem:**}{@@}
+\newenvironment{example}{@@green-body,box2,border1 **Example:**}{@@}
+\newenvironment{prob}{@@gray-body,box2,border1 **Problem:**}{@@}
 \newenvironment{proof}{@@gray-body,box1 *Proof.* &nbsp;}{\begin{right}$\square$\end{right}&nbsp;@@}
 \newenvironment{solution}{@@gray-body,box1 *Solution.* &nbsp;}{\begin{right}$\square$\end{right}&nbsp;@@}
 \newenvironment{graybox}{@@gray-body,box1}{@@}

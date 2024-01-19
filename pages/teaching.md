@@ -1,5 +1,6 @@
 # Teaching and Mentorship
 
+I am currently TAing for Differential and Integral Calculus (M408C). Here is something of a [course webpage](/pages/teaching_pages/).
 ### Teaching
 - **Fall 2023:** TA for M408C, Differential and Integral Calculus (Online).
 - **Spring 2024:** TA for M408C, Differential and Integral Calculus (In-Person).

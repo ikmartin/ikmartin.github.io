@@ -28,13 +28,13 @@ At the time, I forgot how to calculate this limit without using l'Hopital's rule
 - Taylor Series don't show up until Calculus II and they also require the derivative of $\sin (x)$.
 - The small angle approximation says that when $x$ is small, $\sin(x) \approx x$. This is quite useful in physics, but is imprecise. To make it precise, you might say that as $x$ gets super small, $\sin(x) = x + \epsilon$ where $\epsilon$ is some error term, and that $\epsilon$ shrinks faster than $x$ does as $x \to 0$ (meaning that the percentage error in the approximation $\sin(x) \approx x$ goes to zero as $x\to 0$). However, this is a fancy way of saying $\frac{\sin(x)}{x} \to 1$ as $x\to 0$, so this is *also* circular! 
 
-The *correct* way to calculate this limit, or at least, *a* correct way to calculate it, is by using the Squeeze Theorem. It's a fantastic fact and a wonderful computation tool. It's doubly embarrassing that I forgot it that day, especially because we used it that same worksheet to find a very similar limit: $\lim_{x\to 0} x\sin(1/x)$! I wrote this post explaining the solution to this problem and delving into a lot of detail about the squeeze theorem, lest you forget it like I did.
+The *correct* way to calculate this limit, or at least, *a* correct way to calculate it, is by using the Squeeze Theorem. It's a wonderful computation tool. It's doubly embarrassing that I forgot it that day, especially because we used it that same worksheet to find a very similar limit: $\lim_{x\to 0} x\sin(1/x)$! I wrote this post explaining the solution to this problem and delving into a lot of detail about the squeeze theorem, lest you forget it like I did.
 
 *Thanks to **Catherine Chi** for reminding me of this solution and for suggesting we use the areas of triangles to come up with good bounds for the function $\sin(x)/x$*.
 
 ## The squeeze theorem
 
-@@colbox-blue \thmtitle{Theorem}{(The Squeeze Theorem)}   Let $f$, $g$ and $h$ be real valued functions on some interval containing the real number $a$. Suppose there exists some $\epsilon > 0$ such that for all $a\neq x \in (a - \epsilon, a + \epsilon)$ we have [\begin{align} g(x) \leq f(x) \leq h(x). \end{align}\ If $\lim_{x\to a} g(x) = \lim_{x\to a} h(x) = L$, then $\lim_{x\to a} f(x) = L$ as well.
+@@colbox-blue \thmtitle{Theorem}{(The Squeeze Theorem)}   Let $f$, $g$ and $h$ be real valued functions on some interval containing the real number $a$. Suppose there exists some $\epsilon > 0$ such that for all $a\neq x \in (a - \epsilon, a + \epsilon)$ we have \begin{align} g(x) \leq f(x) \leq h(x). \end{align} If $\lim_{x\to a} g(x) = \lim_{x\to a} h(x) = L$, then $\lim_{x\to a} f(x) = L$ as well.
 @@
 
 This may be hard to parse, so let's go over the statement of this theorem in more detail.
