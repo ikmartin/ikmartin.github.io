@@ -38,27 +38,27 @@ From your car/campsite at Terlingua Abajo, follow Terlingua Creek north for fift
 
 Once near the mouth of Bruja, you will need to complete a class V rock climb on the SE-facing wall on the north side of the canyon. Look carefully, and you will see a blue webbing anchor tied about 100 feet up. The first person must free climb an entire pitch of 5.0-5.2 limestone to the anchor. Rock shoes are not needed. If you can top-rope a 5.7, you should be fine on this climb. If sketched out, downclimbing should be easy enough. Once at the anchor, set a belay for your partners.
 
-![](/pages/blog/bruja-canyon/images/climb_bruja.jpg)
+![](/pages/bruja-canyon/images/climb_bruja.jpg)
 
 ### Downclimb to Canyon
 
 After completing the rock climb, continue hacking up the hill until it levels out and becomes a shelf. Stay close to the rim of the canyon, and you will eventually find a faint trail. Follow this for 15 minutes, carefully searching for the first place to downclimb into the canyon.
 
-![](/pages/blog/bruja-canyon/images/post-climb-trail.jpg)
+![](/pages/bruja-canyon/images/post-climb-trail.jpg)
 
 Here you can see the faint trail leading away from the top of the climb.
 
-![](/pages/blog/bruja-canyon/images/canyon-from-above.jpg)
+![](/pages/bruja-canyon/images/canyon-from-above.jpg)
 
 This is Bruja Canyon from above.
 
 When you see a slope which isn't a sheer cliff open up on your left, begin the class III downclimb.
 
-![](/pages/blog/bruja-canyon/images/class-III-section-to-canyon-start.jpg)
+![](/pages/bruja-canyon/images/class-III-section-to-canyon-start.jpg)
 
 Downclimb starts here. Zig-zag your way down the slop to the canyon floor.
 
-![](/pages/blog/bruja-canyon/images/zig-zag-down.jpg)
+![](/pages/bruja-canyon/images/zig-zag-down.jpg)
 
 ## Canyon
 
@@ -68,21 +68,21 @@ First walk through smooth white boulders for 15 minutes. Eventually you'll come 
 
 First rappel anchors off of two chockstones. Need 100 ft total, 30 ft to first pothole and then down another 20 ft into the second pothole.
 
-![](/pages/blog/bruja-canyon/images/rap1.jpg)
-![](/pages/blog/bruja-canyon/images/rap1-first-stage-end.jpg)
+![](/pages/bruja-canyon/images/rap1.jpg)
+![](/pages/bruja-canyon/images/rap1-first-stage-end.jpg)
 
 ### Second Rappel
 
 Second rappel anchors off a small natural arch 35ft into a deeper pothole (still not a keeper).
 
-![](/pages/blog/bruja-canyon/images/rap2.jpg)
-![](/pages/blog/bruja-canyon/images/rap2-pothole-exit.jpg)
+![](/pages/bruja-canyon/images/rap2.jpg)
+![](/pages/bruja-canyon/images/rap2-pothole-exit.jpg)
 
 ### Third Rappel
 
 Third rappel is a meat-anchor downclimb combo.
 
-![](/pages/blog/bruja-canyon/images/rap3-meat-anchor-downclimb.jpg)
+![](/pages/bruja-canyon/images/rap3-meat-anchor-downclimb.jpg)
 
 ### Note on potholes and bees
 

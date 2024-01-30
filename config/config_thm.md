@@ -57,7 +57,7 @@ Macros for boxes
 \newenvironment{proof}{@@gray-body,box1 *Proof.* &nbsp;}{\begin{right}$\square$\end{right}&nbsp;@@}
 \newenvironment{solution}{@@gray-body,box1 *Solution.* &nbsp;}{\begin{right}$\square$\end{right}&nbsp;@@}
 \newenvironment{graybox}{@@gray-body,box1}{@@}
-\newenvironment{redbox}{@@red-body,box3,border1}{@@}
-\newenvironment{greenbox}{@@green-body,box3,border1}{@@}
+\newenvironment{redbox}{@@red-body,box2,border1}{@@}
+\newenvironment{greenbox}{@@green-body,box2,border1}{@@}
 \newenvironment{bluebox}{@@blue-body,box2,border1}{@@}
 

@@ -91,6 +91,7 @@ Operator Names
 \newcommand{\dim}{\operatorname{dim}}
 \newcommand{\fchar}{\operatorname{char}}
 \newcommand{\det}{\operatorname{det}}
+\newcommand{\div}{\operatorname{div}}
 \newcommand{\id}{\operatorname{id}}
 \newcommand{\vspan}{\operatorname{span}}
 \newcommand{\Spec}{\operatorname{Spec}}

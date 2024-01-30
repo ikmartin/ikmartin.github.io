@@ -1,7 +1,7 @@
 +++
-title = "Algebraic Curves First Lecture"
+title = "Algebraic Curves Lecture 1"
 hascode = true
-description = "The first day of the class algebraic curves"
+description = "The first day of Algebraic Curves taught by Karl Christ. We briefly discussed the course structure and Karl gave a brief overview of the type of math we can expect to see."
 tags = ["algebraic-geometry", "algebraic-curves"]
 date = "2024-01-17"
 published = true
@@ -14,6 +14,10 @@ public = false
 # {{title}}
 
 > {{description}}
+
+\toc
+
+---
 
 ## Organizational Matters
 Instructor: Karl Christ
@@ -49,6 +53,14 @@ The map $\varphi:C\to \mathbb P^r$ is given by a line bundle $L$ on $C$ and a ve
 ### Genus
 
 We thus far have two invariants: $r$ the dimension of the ambient projective space $\mathbb P^r$ and $d$ the degree of the embedding $\varphi:C\to \mathbb P^r$. The third primary invariant we consider is the **genus** $g$ of $C\to \mathbb P^r$. A natural question is this: given $d$ and $r$, what are the possible values of $g$?
+
+\begin{defn}
+    Let $X$ be a curve. 
+- The **arithmetic genus** of $X$ is $p_a(X) = 1 - P_X(0)$ where $P_X$ is the Hilbert polynomial of $X$.
+- The **geometric genus** of $X$ is $p_g(X) = \dim_k\Gamma(X,\omega_X)$ where $\omega_X$ is the canonical sheaf $\omega_X = \bigwedge_{i=1}^n \Omega_X$.
+
+These two notions agree for curves and are equal to $H^1(X,\mathcal O_X)$ by Serre duality. We therefore simply refer to the **genus** of $X$ and denote it $g = H^1(X,\mathcal O_X)$.
+\end{defn}
 
 **For $r = 2$** we have the degree-genus formula: $g = \frac{(d-1)(d-2)}{2}$.
 
