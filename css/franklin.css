@@ -10,8 +10,8 @@
   --blue-body: #fafafa;
   --blue-head: #d9edf7;
   --blue-highlight: #4c9cf1;
-  --red-body: #ffe6e6;
-  --red-highlight: #990000;
+  --red-body: hsl(16, 89%, 98%);
+  --red-highlight: hsl(16, 89%, 60%);
   --green-body: #f4fff9;
   --green-highlight: #319b62;
   --gray-body: #fafafa;
