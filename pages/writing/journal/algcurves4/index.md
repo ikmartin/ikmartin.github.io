@@ -1,5 +1,5 @@
 +++
-title = "Algebraic Curves Lecture 4:"
+title = "Algebraic Curves Lecture 4: Riemann Roch"
 hascode = true
 description = "The fourth lecture of the algebraic curves class"
 tags = ["blog"]
