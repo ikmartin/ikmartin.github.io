@@ -84,7 +84,7 @@ Since $x$ is positive in this case, we can replace it with $|x|$ wherever we wan
 \begin{align} 
     -|x| \leq x\sin(x) \leq |x|. 
 \end{align}
-If that last step confused you, try to explain it to yourself: why does $-x \leq x\sin(x) \leq x$ imply that $-|x| x\leq \sin(x) \leq |x|$ when $x \geq 0$? If you're wondering why we use $|x|$ at all, read through the next case.
+If that last step confused you, try to explain it to yourself: why does $-x \leq x\sin(x) \leq x$ imply that $-|x| \leq x\sin(x) \leq |x|$ when $x \geq 0$? If you're wondering why we use $|x|$ at all, read through the next case.
 @@
 
 @@revindentparagraph \thmtitle{Case 2}{($x < 0$)}  If $x < 0$, then we need to flip the inequalities: 
