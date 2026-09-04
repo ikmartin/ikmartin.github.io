@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boosting In Ensemble Models — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/boosting-in-ensemble-models/"
+      data-note-title="Boosting In Ensemble Models">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Boosting In Ensemble Models</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/adaboost/">#adaboost</a><span class="sep">·</span><a class="tag" href="../../notes/tag/data-science/">#data-science</a></p>
+
+      <article class="note">
+<p>
+<b>Boosting</b> is an ensemble model which addresses under-fitting. Compare to <b><a class="idlink" data-note="bagging-in-ensemble-models" href="../../notes/bagging-in-ensemble-models/">bagging</a></b> which is an ensemble model for correcting over-fitting.
+</p>
+
+<p>
+The theory behind the method is based on the concepts of weak-learners and strong-learners from the subfield in Statistical Learning on PAC learnability, where PAC stands for Probably Approximately Correct.
+</p>
+<div id="outline-container-weak-learner-vs-strong-learners" class="outline-2">
+<h2 id="weak-learner-vs-strong-learners">Weak learner vs strong learners</h2>
+<div class="outline-text-2" id="text-weak-learner-vs-strong-learners">
+<p>
+Roughly, a statistical learning algorithm is referred to as a <i>weak learner</i> if it does slightly better than random guessing and is called a <i>strong learner</i> if it can be made arbitrarikly close to the true relationship (given enough data).
+</p>
+
+<p>
+Making a weak learner is much easier than producing a strong learner in general, however, it has been shown that if a problem is weak learnable (meaning that a weak learner exists) then it is strong learnable (meaning that a strong learner exists).
+</p>
+
+<p>
+<b>Boosting</b> is a technique for taking a bunch of weak learners and creating a strong learner.
+</p>
+</div>
+</div>
+<div id="outline-container-adaboost" class="outline-2">
+<h2 id="adaboost">AdaBoost</h2>
+<div class="outline-text-2" id="text-adaboost">
+<p>
+This is short for <i>adaptive boosting</i>. It&rsquo;s an algorithm for building a strong learner with an iterative sequence of weak learners. While the ideas can be applied more generally we will address the case of binary classification. Let \(\mathcal D = \{(x_i, y_i)\}\) be the training data with \(N\) samples and with \(x_i \in \mathbb R^p\) and \(y_i \in \{-1, 1\}\). Let \(X = \{x_i\}\). Suppose we have a parameterized collection of classifiers \(C_\theta:\mathbb R^p\to \{-1.1\}\). A common choice in AdaBoost is for \(C_{j,t,\pm}\) to be a decision stump on feature \(j\) with threshold \(t\) (i.e. classify as \(1\) if \(\pm x_j > t\) and \(-1\) otherwise).
+</p>
+
+<p>
+Goal is to build a function \(f:\mathbb R^p \to \mathbb R\) where \(f(x) \gg 0\) represents great confidence that \(y = 1\) and \(f(x) \ll 0\) represents great confidence that \(y = -1\) (we quantify this with a loss function soon). We will build this function as a linear combination of weak classifiers:
+</p>
+\begin{align*}
+  f = \sum^{k}_{j=1} \beta_jC_j.
+\end{align*}
+<p>
+Our goal is to minimize the exponential loss function
+</p>
+\begin{align*}
+  L(f,y) = \sum_{i=1}^N \exp(=y_if(x_i)).
+\end{align*}
+<p>
+We sum over all training data. Some notes about this loss function:
+</p>
+<ol class="org-ol">
+<li>If \(f\) and \(y\) agree in sign, then \(\exp(-y_if(x_i))\) is really small. This means we want \(|f(x_i)|\)  to be as large as possible <i>while \(f(x_i)\) agrees in sign with \(y_i\)</i>. This function therefore rewards having \(f\) big with proper sign, and heavily penalizes having \(f\) big with incorrect sign.</li>
+<li>For a given \(x\), assume that \((Y|x)\) is a Bernoulli random variable with probability \(p\) of \(Y=1\) and \((1-p)\) of \(Y = -1\). Then the value of \(f(x)\) which minimizes the expected value of \(\exp(-Yf(x))\) is \(\frac12 \log\left(\frac{p}{1-p}\right)\). So the population minimizer of \(f(x)\) is half the log-odds of \((Y|x)\). That is, <b>we take a bunch of non-probabilistic classifiers and are trying to build a probabilistic classifier.</b></li>
+</ol>
+
+<p>
+We build this greedily.
+</p>
+
+<ol class="org-ol">
+<li>Select \(\beta_1\) and \(C_1\) to minimize \(L(C_1,y)\). Set \(f_1 = C_1\).</li>
+<li>At stage \(j > 1\) select \(\beta_j\) and \(C_j\) to minimize \(L(f_j, y)\) where \(f_j = f_{j-1} + \beta_j C_j\).</li>
+</ol>
+
+<p>
+Plugging stuff in demonstrates that
+</p>
+\begin{align*}
+  L(f_j, y) = \sum^N_{i=1} w^j_i \exp(-\beta_jy_iC_j(x_i))
+\end{align*}
+<p>
+where \(w^j_i = \exp(-y_i f_{j-1}(x_i))\) can be thought of as weighting on the <i>samples at stage \(j\)</i>. 
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="bagging-in-ensemble-models" href="../../notes/bagging-in-ensemble-models/">Bagging In Ensemble Models</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

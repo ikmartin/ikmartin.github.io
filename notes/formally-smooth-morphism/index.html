@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formally Smooth Morphism — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/formally-smooth-morphism/"
+      data-note-title="Formally Smooth Morphism">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Formally Smooth Morphism</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A morphism \(f:X\to Y\) of schemes over \(S\) is said to be formally smooth if given any commutative diagram
+</p>
+
+<div class="org-center">
+<figure class="tikz" id="tikz-6f3f0354bb04cb1d"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -86.119342 89.82755 62.926393' width='8.9828em'>
+<defs>
+<path id='tz6f3f0354bb04cb1d-g2-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tz6f3f0354bb04cb1d-g2-105' d='M2.259527-4.358655C2.259527-4.470237 2.175841-4.623661 1.980573-4.623661C1.792279-4.623661 1.590037-4.442341 1.590037-4.2401C1.590037-4.121544 1.680697-3.975093 1.868991-3.975093C2.071233-3.975093 2.259527-4.170361 2.259527-4.358655ZM.836862-.81594C.808966-.72528 .774097-.641594 .774097-.523039C.774097-.195268 1.053051 .069738 1.436613 .069738C2.133998 .069738 2.440847-.892653 2.440847-.99726C2.440847-1.08792 2.350187-1.08792 2.329265-1.08792C2.231631-1.08792 2.224658-1.046077 2.196762-.969365C2.036364-.411457 1.729514-.125529 1.457534-.125529C1.318057-.125529 1.283188-.216189 1.283188-.369614C1.283188-.530012 1.332005-.662516 1.39477-.81594C1.464508-1.004234 1.54122-1.192528 1.617933-1.373848C1.680697-1.54122 1.931756-2.175841 1.959651-2.259527C1.980573-2.329265 2.001494-2.412951 2.001494-2.48269C2.001494-2.810461 1.72254-3.075467 1.338979-3.075467C.648568-3.075467 .327771-2.127024 .327771-2.008468C.327771-1.917808 .425405-1.917808 .446326-1.917808C.54396-1.917808 .550934-1.952677 .571856-2.02939C.753176-2.629141 1.060025-2.880199 1.318057-2.880199C1.429639-2.880199 1.492403-2.824408 1.492403-2.636115C1.492403-2.475716 1.45056-2.371108 1.276214-1.93873L.836862-.81594Z'/>
+<path id='tz6f3f0354bb04cb1d-g0-48' d='M2.022416-3.291656C2.078207-3.410212 2.085181-3.466002 2.085181-3.514819C2.085181-3.731009 1.889913-3.898381 1.673724-3.898381C1.408717-3.898381 1.325031-3.682192 1.290162-3.57061L.369614-.550934C.36264-.536986 .334745-.446326 .334745-.439352C.334745-.355666 .550934-.285928 .606725-.285928C.655542-.285928 .662516-.299875 .711333-.404483L2.022416-3.291656Z'/>
+<path id='tz6f3f0354bb04cb1d-g1-84' d='M4.254047-6.047323C4.323786-6.326276 4.363636-6.386052 4.483188-6.41594C4.572852-6.435866 4.901619-6.435866 5.110834-6.435866C6.117061-6.435866 6.56538-6.396015 6.56538-5.618929C6.56538-5.469489 6.525529-5.080946 6.485679-4.821918C6.475716-4.782067 6.455791-4.662516 6.455791-4.632628C6.455791-4.572852 6.485679-4.503113 6.575342-4.503113C6.684932-4.503113 6.704857-4.582814 6.724782-4.732254L6.993773-6.465753C7.003736-6.505604 7.013699-6.60523 7.013699-6.635118C7.013699-6.744707 6.914072-6.744707 6.744707-6.744707H1.215442C.976339-6.744707 .966376-6.734745 .896638-6.545455L.298879-4.79203C.288917-4.772105 .239103-4.632628 .239103-4.612702C.239103-4.552927 .288917-4.503113 .358655-4.503113C.458281-4.503113 .468244-4.552927 .52802-4.712329C1.066002-6.256538 1.325031-6.435866 2.799502-6.435866H3.188045C3.466999-6.435866 3.466999-6.396015 3.466999-6.316314C3.466999-6.256538 3.437111-6.136986 3.427148-6.107098L2.092154-.787049C2.002491-.418431 1.972603-.308842 .9066-.308842C.547945-.308842 .488169-.308842 .488169-.119552C.488169 0 .597758 0 .657534 0C.926526 0 1.205479-.019925 1.474471-.019925C1.753425-.019925 2.042341-.029888 2.321295-.029888S2.879203-.019925 3.148194-.019925C3.437111-.019925 3.73599 0 4.014944 0C4.11457 0 4.234122 0 4.234122-.199253C4.234122-.308842 4.154421-.308842 3.895392-.308842C3.646326-.308842 3.516812-.308842 3.257783-.328767C2.968867-.358655 2.889166-.388543 2.889166-.547945C2.889166-.557908 2.889166-.607721 2.929016-.757161L4.254047-6.047323Z'/>
+<path id='tz6f3f0354bb04cb1d-g1-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+<path id='tz6f3f0354bb04cb1d-g1-89' d='M5.947696-5.668742L6.087173-5.808219C6.386052-6.107098 6.714819-6.445828 7.392279-6.495641C7.501868-6.505604 7.591532-6.505604 7.591532-6.684932C7.591532-6.764633 7.541719-6.804483 7.462017-6.804483C7.202989-6.804483 6.914072-6.774595 6.645081-6.774595C6.316314-6.774595 5.967621-6.804483 5.648817-6.804483C5.589041-6.804483 5.459527-6.804483 5.459527-6.615193C5.459527-6.505604 5.559153-6.495641 5.608966-6.495641C5.678705-6.495641 5.967621-6.475716 5.967621-6.266501C5.967621-6.097136 5.738481-5.838107 5.69863-5.788294L3.387298-3.128269L2.291407-6.087173C2.231631-6.22665 2.231631-6.246575 2.231631-6.256538C2.231631-6.495641 2.719801-6.495641 2.819427-6.495641C2.958904-6.495641 3.058531-6.495641 3.058531-6.694894C3.058531-6.804483 2.938979-6.804483 2.909091-6.804483C2.630137-6.804483 1.932752-6.774595 1.653798-6.774595C1.404732-6.774595 .787049-6.804483 .537983-6.804483C.478207-6.804483 .348692-6.804483 .348692-6.60523C.348692-6.495641 .448319-6.495641 .577833-6.495641C1.175592-6.495641 1.215442-6.405978 1.305106-6.156912L2.530511-2.879203C2.540473-2.849315 2.570361-2.739726 2.570361-2.709838S2.171856-1.075965 2.122042-.896638C1.992528-.348692 1.982565-.318804 1.185554-.308842C.996264-.308842 .916563-.308842 .916563-.109589C.916563 0 1.036115 0 1.05604 0C1.334994 0 2.032379-.029888 2.311333-.029888S3.307597 0 3.58655 0C3.656289 0 3.775841 0 3.775841-.199253C3.775841-.308842 3.686177-.308842 3.496887-.308842C3.476961-.308842 3.287671-.308842 3.118306-.328767C2.909091-.348692 2.849315-.368618 2.849315-.488169C2.849315-.557908 2.938979-.9066 2.988792-1.115816L3.337484-2.520548C3.387298-2.709838 3.39726-2.739726 3.476961-2.82939L5.947696-5.668742Z'/>
+</defs>
+<g id='tz6f3f0354bb04cb1d-page1'>
+<g stroke-miterlimit='10' transform='translate(-39.955285,-46.600213)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-30.16489,-19.83531)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.955285,-46.600213)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-30.665476,-79.314859)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.61632,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.665476,-79.314859)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-30.665476' y='-79.314859' xlink:href='#tz6f3f0354bb04cb1d-g1-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(11.341867,-79.314859)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(11.341867,-79.314859)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='11.341867' y='-79.314859' xlink:href='#tz6f3f0354bb04cb1d-g1-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-30.665476,-46.600213)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.0191,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.665476,-46.600213)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-30.665476' y='-46.600213' xlink:href='#tz6f3f0354bb04cb1d-g1-84'/>
+<use x='-23.459833' y='-50.215576' xlink:href='#tz6f3f0354bb04cb1d-g0-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(11.341867,-46.600213)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.01389,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(11.341867,-46.600213)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='11.341867' y='-46.600213' xlink:href='#tz6f3f0354bb04cb1d-g1-89'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-12.71838 15.50201H11.88441' fill='none'/>
+<g transform='translate(12.0844,15.50201)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.84024 9.14229V-8.0578' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.84024,-8.25778)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-18.48749,-1.9737)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.955285,-46.600213)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.955285' y='-46.600213' xlink:href='#tz6f3f0354bb04cb1d-g2-105'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M21.32463 9.14229V-8.74231' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,21.32463,-8.94229)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(23.67738,-1.74998)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.955285,-46.600213)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.955285' y='-46.600213' xlink:href='#tz6f3f0354bb04cb1d-g2-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-11.3156-17.33531H12.40524' fill='none'/>
+<g transform='translate(12.60522,-17.33531)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<g stroke-dasharray='2.79985,1.59991' stroke-dashoffset='0.0'>
+<path d='M-11.3156-9.92006L12.84613 8.89656' fill='none'/>
+<g transform='matrix(0.78896,0.61441,-0.61441,0.78896,13.0039,9.01941)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+where \(i:T\hookrightarrow T'\) is a first-order thickening of affine schemes over \(S\), there exists a dashed arrow making the diagram commute.
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="exercises-in-log-geometry-from-sam-johnston" href="../../notes/exercises-in-log-geometry-from-sam-johnston/">Exercises In Log Geometry From Sam Johnston</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

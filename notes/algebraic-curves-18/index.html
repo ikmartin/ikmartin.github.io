@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 18 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-18/"
+      data-note-title="Algebraic Curves Lecture 18">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 18</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-17" href="../../notes/algebraic-curves-17/">← lecture 17</a> · <a class="idlink" data-note="algebraic-curves-19" href="../../notes/algebraic-curves-19/">lecture 19 →</a>
+</p>
+<div id="outline-container-continuing-the-petri-map" class="outline-2">
+<h2 id="continuing-the-petri-map">Continuing the Petri Map</h2>
+<div class="outline-text-2" id="text-continuing-the-petri-map">
+<p>
+The Petri map is
+</p>
+\begin{align*}
+    \mu_0:H^0(X,L)\otimes H^0(X,K_X - L) \to H^0(X,K_X)
+\end{align*}
+<p>
+defined by \(s_1 \otimes s_2 \mapsto s_1s_2\). We saw that when \(X\) has genus 3, then \(\mu_0\) is injective if and only if \(L\not\cong g^1_2\). Let&rsquo;s expand a bit more on this example:
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+(Base point free pencil trick). Let \(L\) be a line bundle on \(X\) and \(s_1, s_2 \in H^0(X,L)\) be linearly independent global sections. Denote by \(V\) the span \(\{s_1,s_2\}\) and let \(F\) be another locally free sheaf. Then the kernel of the tensor product map
+</p>
+\begin{align*}
+    V\otimes H^0(X,F)\to H^0(X,L\otimes F)
+\end{align*}
+<p>
+is \(H^0(X,F\otimes L^{-1}(B))\) where \(B\) is the base locus of \(V\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Pick an element \(s_1\otimes t_2 - s_2\otimes t_1 \in \ker(\varphi)\). I can write any element of the kernel like this because \(s_1\) and \(s_2\) form a basis for \(V\). Let \(s_i = s\cdot r_i\) with \(s \in H^0(X,\mathcal O_X(B))\) a global section of \(L\) vanishing on \(V\) with \(r_1 \in V(-B)\subseteq L(-B)\). This is confusing, so here&rsquo;s a disambiguation:
+</p>
+<ul class="org-ul">
+<li>\(r_i\) is an element of \(V(-B)\)</li>
+<li>\(D_i\) is the vanishing locus of \(r_i\), it&rsquo;s a divisor on \(X\)</li>
+<li>\(L(-B) \cong \mathcal O_X(D_i)\) and</li>
+<li>\(s \in H^0(X, \mathcal O_X(B))\). So</li>
+<li>\(s_i \in H^0(X,L)\), and the divisor given by the vanishing of \(s_i\) is \((s_i)_0 = B+D_i\).</li>
+</ul>
+
+<p>
+By assumption, \(s_1\cdot t_2 - s_2 \cdot t_1 = 0\). This implies \(r_1\cdot t_2 - r_2 \cdot t_1 = 0\) where \(r_1\) and \(r_2\) do not have common zeroes. This in turn means \(t_i\) vanishes along \(D_i\). 
+</p>
+
+<p>
+Write \(\tau_i = \frac{t_i}{r_i}\). Since \(t_i \in H^0(X,F)\) and \(1/r_i \in H^0(X,L^{-1}(B))\), \(\tau_i\) is a rational section of \(F\otimes L^{-1}(B)\) (the inverse of \(L(-B)\) is \(L^{-1}(B)\)). In fact, it is a regular section, because the zeros of \(r_i\) and \(t_i\) cancel each other out. This means \(\tau_i \in H^0(X, F\otimes L^{-1}(B))\).
+</p>
+
+<p>
+I now have sections \(\tau_1\) and \(\tau_2\), and I want to show they are equal. This follows since \(t_i = r_i\tau_i\) and hence
+</p>
+\begin{align*}
+    &\implies r_1\cdot \underbrace{r_2 \cdot \tau_2}_{t_2} - r_2\cdot \underbrace{r_1\cdot \tau_1}_{t_1} = 0 \\
+    &\implies \tau_1 = \tau_2 =: \tau.
+\end{align*}
+<p>
+In summary,
+</p>
+\begin{align*}
+    s_1\otimes t_2 - s_2 \otimes t_1 = s\cdot \tau \cdot (r_1\otimes r_2 - r_2 \otimes r_1)
+\end{align*}
+<p>
+where \(\tau \in H^0(X,F\otimes L^{-1}(B))\).
+</p>
+
+<p>
+Conversely, if we&rsquo;re given a \(\tau \in H^0(X,F\otimes L^{-1}(B))\), then set \(t_i = \tau\cdot r_i\). Then
+</p>
+\begin{align*}
+    s_1\otimes t_2 - s_2 \otimes t_1 = s\cdot \tau(r_1\otimes r_2 - r_2 \otimes r_1),
+\end{align*}
+<p>
+which is clearly in the kernel of \(\varphi\).
+</p>
+</details>
+
+<p>
+Using this trick we get the following corollary regarding the injectivity of the Petri map:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+If \((L,V)\) is a \(g^1_d\) with \(2d < g - 2\), then the Petri map \(\mu_0\) for \((X,L)\) is not injective.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We may assume that \(V\) is basepoint free by subtracting base points. The map
+</p>
+\begin{align*}
+    \varphi:V\otimes H^0(X,K_X - L) \to H^0(X,K_X).
+\end{align*}
+<p>
+The kernel of \(\varphi\) is \(H^0(X,K_X - 2L)\) by the base point free pencil trick. The degree of \(K_X - 2L\) is \(2g - 2 - 2d > 2g - 2 - g + 2 = g\). By Riemann-Roch,
+</p>
+\begin{align*}
+    h^0(L) - h^0(K_X - L) = d - g + 1 \implies h^0(L) \geq d - g + 1,
+\end{align*}
+<p>
+so as soon as \(d > g\), we know that there is a global section of \(L\). Hence \(K_X - 2L\) has a global section, so \(\ker(\varphi) = H^0(X,K_X - 2L) \neq 0\).
+</p>
+</details>
+
+<p>
+<i>Remark:</i> The dimension of the locus of curves admitting a \(g^1_d\) is
+</p>
+\begin{align*}
+    &\phantom{\implies}2g - 2 = d\cdot (2h - 2) + b \\
+    &\implies b = 2g - 2 + 2d.
+\end{align*}
+<p>
+Then \(b - 3 - 2g - 5 + 2d \geq 3g - 3\) and so \(2d \geq g + 2\).
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-17" href="../../notes/algebraic-curves-17/">Algebraic Curves Lecture 17</a></li>
+    <li><a data-note="algebraic-curves-19" href="../../notes/algebraic-curves-19/">Algebraic Curves Lecture 19</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

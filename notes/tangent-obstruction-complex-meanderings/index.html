@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tangent Obstruction Complex Meanderings — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/tangent-obstruction-complex-meanderings/"
+      data-note-title="Tangent Obstruction Complex Meanderings">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Tangent Obstruction Complex Meanderings</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+See page 176 of <a class="citeref" href="../../notes/cox-katz-mirrorsymmetryalgebraic1999/">[CK99]</a> for the full background of this content.
+</p>
+
+<p>
+Consider the affine case first, which should be enough since this stuf should be local. So \(S\) is an affine scheme over \(\mathbb C\), \(\mathcal N\) is an $\mathcal S$-module (probably coherent) and then we form the trivial extension \(S_{\mathcal N} = \Spec (\Gamma(\mathcal O_S)\oplus \Gamma(\mathcal N))\). This gives an infinitesmal extesion \(S\hookrightarrow S_{\mathcal N}\).
+</p>
+
+<p>
+Now let
+</p>
+\begin{align*}
+  \mathcal F:(\mathbb C - Schemes)\to (Sets)
+\end{align*}
+<p>
+be a &ldquo;contravariant moduli functor&rdquo;, i.e. some functor which sends a scheme \(S\), as above, to all geometric objects of a certain type over \(S\). An example would be the functor of points of \(S\) or maybe the functor which sends \(S\) to all geometric vector bundles of a fixed rank over \(S\).
+</p>
+
+<p>
+The <i>tangent functor</i> of this \(\mathcal F\) is then denoted \(T\mathcal F\) and is actually a <i>collection</i> of functors. We get one functor \(T\mathcal F(\alpha)\) for EVERY \(\alpha \in \mathcal F(S)\):
+</p>
+\begin{align*}
+  T\mathcal F(\alpha):(\mathcal O_S-modules)\to (Sets)
+\end{align*}
+<p>
+which takes a \(\mathcal O_{S}\)-module \(\mathcal N\) to the set of all elements of \(\mathcal F(S_{\mathcal N})\) which restrict to \(\alpha\) under the natural restriction map \(\mathcal F(S_{\mathcal N}) \to \mathcal F(S)\). All the functors making up \(T\mathcal F\) satisfy a natural base change property. Finally, we define the <i>tangent-obstruction complex</i> of \(\mathcal F\) to be a two-term complex of functors
+</p>
+\begin{align*}
+  T^{1}\mathcal F \to T^2\mathcal F
+\end{align*}
+<p>
+where the arrow is the &ldquo;zero natural transformation&rdquo; (this always exists for functors between abelian categories, think about it), the functor \(T^1\mathcal F\) is just the tangent functor defined above, and \(T^2\mathcal F\) gives "a reasonable obstruction theory for \(\mathcal F\).
+</p>
+
+<p>
+Let&rsquo;s do an example in two levels of specificity.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Let \(S\) be some scheme over \(\mathbb C\) and \(\mathcal N\) some coherent sheaf over \(S\). 
+</p>
+
+<ol class="org-ol">
+<li>We&rsquo;re gonna take \(\mathcal F\) to be the functor which takes \(S\) to isomorphism classes of curves over \(S\).</li>
+<li>An object \([\alpha] \in \mathcal F(S)\) is then a flat family \(\alpha:\mathcal C\to S\) of curves over \(S\).</li>
+<li>Given a coherent sheaf \(\mathcal N\), we can form the trivial extension \(S_{\mathcal N}\) of \(S\) by \(\mathcal N\). What do families over this extension look like?</li>
+<li>Well, given a family \(\alpha: C'\to S' \in \mathcal F(S')\), we can pull back via \(\iota:S\hookrightarrow S'\) to obtain a family over \(S\):</li>
+</ol>
+<figure class="tikz" id="tikz-076d1b8b7da2072f"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -87.232606 134.776401 66.20804' width='13.4776em'>
+<defs>
+<path id='tz076d1b8b7da2072f-g1-48' d='M2.022416-3.291656C2.078207-3.410212 2.085181-3.466002 2.085181-3.514819C2.085181-3.731009 1.889913-3.898381 1.673724-3.898381C1.408717-3.898381 1.325031-3.682192 1.290162-3.57061L.369614-.550934C.36264-.536986 .334745-.446326 .334745-.439352C.334745-.355666 .550934-.285928 .606725-.285928C.655542-.285928 .662516-.299875 .711333-.404483L2.022416-3.291656Z'/>
+<path id='tz076d1b8b7da2072f-g2-48' d='M1.793275-2.316314C1.798257-2.321295 1.843088-2.41594 1.843088-2.49066C1.843088-2.669988 1.683686-2.784558 1.534247-2.784558C1.330012-2.784558 1.275218-2.630137 1.250311-2.555417L.483188-.398506C.463263-.33873 .463263-.323786 .463263-.318804C.463263-.239103 .672478-.18929 .67746-.18929C.722291-.18929 .732254-.214197 .762142-.273973L1.793275-2.316314Z'/>
+<path id='tz076d1b8b7da2072f-g0-2' d='M3.875467-2.769614L1.882939-4.752179C1.763387-4.871731 1.743462-4.891656 1.663761-4.891656C1.564134-4.891656 1.464508-4.801993 1.464508-4.692403C1.464508-4.622665 1.484433-4.60274 1.594022-4.493151L3.58655-2.49066L1.594022-.488169C1.484433-.37858 1.464508-.358655 1.464508-.288917C1.464508-.179328 1.564134-.089664 1.663761-.089664C1.743462-.089664 1.763387-.109589 1.882939-.229141L3.865504-2.211706L5.927771-.14944C5.947696-.139477 6.017435-.089664 6.07721-.089664C6.196762-.089664 6.276463-.179328 6.276463-.288917C6.276463-.308842 6.276463-.348692 6.246575-.398506C6.236613-.418431 4.652553-1.982565 4.154421-2.49066L5.977584-4.313823C6.027397-4.373599 6.176837-4.503113 6.22665-4.562889C6.236613-4.582814 6.276463-4.622665 6.276463-4.692403C6.276463-4.801993 6.196762-4.891656 6.07721-4.891656C5.997509-4.891656 5.957659-4.851806 5.84807-4.742217L3.875467-2.769614Z'/>
+<path id='tz076d1b8b7da2072f-g4-19' d='M.808966-1.45056C.739228-1.227397 .516065-.718306 .516065-.523039C.516065-.244085 .732254 .069738 1.199502 .069738C1.513325 .069738 1.868991-.055791 2.154919-.285928C2.545455-.606725 2.608219-.983313 2.608219-.99726C2.608219-1.08792 2.517559-1.08792 2.496638-1.08792C2.405978-1.08792 2.39203-1.060025 2.364134-.955417C2.189788-.446326 1.638854-.125529 1.21345-.125529C1.115816-.125529 1.025156-.146451 1.025156-.369614C1.025156-.418431 1.025156-.523039 1.108842-.732254C1.48543-1.736488 1.736488-2.824408 1.736488-2.852304C1.736488-2.977833 1.638854-3.075467 1.499377-3.075467C1.366874-3.075467 1.248319-2.977833 1.206476-2.894147C1.157659-2.761644 1.094894-2.426899 1.053051-2.294396C1.011208-2.182814 .934496-1.882939 .899626-1.771357L.808966-1.45056Z'/>
+<path id='tz076d1b8b7da2072f-g4-83' d='M4.951432-4.811955C4.951432-4.846824 4.930511-4.902615 4.860772-4.902615C4.818929-4.902615 4.811955-4.895641 4.721295-4.804981L4.379577-4.407472C4.11457-4.777086 3.675218-4.902615 3.249813-4.902615C2.266501-4.902615 1.39477-4.107597 1.39477-3.305604C1.39477-3.200996 1.415691-2.922042 1.624907-2.66401C1.862017-2.385056 2.12005-2.322291 2.594271-2.21071C2.733748-2.175841 3.082441-2.099128 3.187049-2.071233C3.410212-2.015442 3.835616-1.862017 3.835616-1.338979C3.835616-.774097 3.242839-.111582 2.447821-.111582C1.834122-.111582 1.094894-.327771 1.094894-1.101868C1.094894-1.171606 1.108842-1.325031 1.136737-1.45056C1.143711-1.478456 1.143711-1.48543 1.143711-1.492403C1.143711-1.583064 1.060025-1.583064 1.03213-1.583064C.934496-1.583064 .927522-1.569116 .899626-1.443587L.54396-.048817C.536986-.020922 .523039 .020922 .523039 .055791C.523039 .097634 .550934 .139477 .620672 .139477C.662516 .139477 .669489 .132503 .760149 .041843C.836862-.041843 1.018182-.265006 1.094894-.348692C1.464508 .055791 2.008468 .139477 2.426899 .139477C3.47995 .139477 4.33076-.767123 4.33076-1.590037C4.33076-1.896887 4.20523-2.175841 4.051806-2.336239C3.807721-2.587298 3.703113-2.615193 2.803487-2.824408C2.657036-2.859278 2.426899-2.915068 2.364134-2.93599C2.189788-2.998755 1.896887-3.173101 1.896887-3.57061C1.896887-4.121544 2.517559-4.679452 3.242839-4.679452C3.996015-4.679452 4.358655-4.254047 4.358655-3.591532C4.358655-3.500872 4.33076-3.340473 4.33076-3.277709C4.33076-3.180075 4.414446-3.180075 4.449315-3.180075C4.553923-3.180075 4.560897-3.214944 4.588792-3.333499L4.951432-4.811955Z'/>
+<path id='tz076d1b8b7da2072f-g3-67' d='M7.571606-6.924035C7.571606-6.953923 7.551681-7.023661 7.462017-7.023661C7.43213-7.023661 7.422167-7.013699 7.312578-6.90411L6.615193-6.136986C6.525529-6.276463 6.067248-7.023661 4.961395-7.023661C2.739726-7.023661 .498132-4.821918 .498132-2.510585C.498132-.86675 1.673724 .219178 3.198007 .219178C4.064757 .219178 4.821918-.179328 5.349938-.637609C6.276463-1.454545 6.445828-2.361146 6.445828-2.391034C6.445828-2.49066 6.346202-2.49066 6.326276-2.49066C6.266501-2.49066 6.216687-2.470735 6.196762-2.391034C6.107098-2.102117 5.877958-1.39477 5.190535-.816936C4.503113-.259029 3.875467-.089664 3.35741-.089664C2.460772-.089664 1.404732-.607721 1.404732-2.161893C1.404732-2.729763 1.613948-4.343711 2.610212-5.50934C3.217933-6.216687 4.154421-6.714819 5.041096-6.714819C6.057285-6.714819 6.645081-5.947696 6.645081-4.79203C6.645081-4.393524 6.615193-4.383562 6.615193-4.283935S6.724782-4.184309 6.764633-4.184309C6.894147-4.184309 6.894147-4.204234 6.94396-4.383562L7.571606-6.924035Z'/>
+<path id='tz076d1b8b7da2072f-g3-83' d='M6.425903-6.924035C6.425903-6.953923 6.405978-7.023661 6.316314-7.023661C6.266501-7.023661 6.256538-7.013699 6.136986-6.874222L5.65878-6.306351C5.399751-6.774595 4.881694-7.023661 4.234122-7.023661C2.968867-7.023661 1.77335-5.877958 1.77335-4.672478C1.77335-3.865504 2.30137-3.407223 2.809465-3.257783L3.875467-2.978829C4.244085-2.889166 4.79203-2.739726 4.79203-1.92279C4.79203-1.026152 3.975093-.089664 2.998755-.089664C2.361146-.089664 1.255293-.308842 1.255293-1.544209C1.255293-1.783313 1.305106-2.022416 1.315068-2.082192C1.325031-2.122042 1.334994-2.132005 1.334994-2.15193C1.334994-2.251557 1.265255-2.261519 1.215442-2.261519S1.145704-2.251557 1.115816-2.221669C1.075965-2.181818 .518057 .089664 .518057 .119552C.518057 .179328 .56787 .219178 .627646 .219178C.67746 .219178 .687422 .209215 .806974 .069738L1.295143-.498132C1.723537 .079701 2.400996 .219178 2.978829 .219178C4.333748 .219178 5.50934-1.105853 5.50934-2.34122C5.50934-3.028643 5.17061-3.367372 5.021171-3.506849C4.79203-3.73599 4.64259-3.775841 3.755915-4.004981C3.536737-4.064757 3.178082-4.164384 3.088418-4.184309C2.819427-4.273973 2.480697-4.562889 2.480697-5.090909C2.480697-5.897883 3.277709-6.744707 4.224159-6.744707C5.051059-6.744707 5.65878-6.316314 5.65878-5.200498C5.65878-4.881694 5.618929-4.702366 5.618929-4.64259C5.618929-4.632628 5.618929-4.542964 5.738481-4.542964C5.838107-4.542964 5.84807-4.572852 5.88792-4.742217L6.425903-6.924035Z'/>
+</defs>
+<g id='tz076d1b8b7da2072f-page1'>
+<g stroke-miterlimit='10' transform='translate(-25.187271,-45.516021)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-44.98828,-20.92445)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-25.187271,-45.516021)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-1.921794,-79.718861)scale(0.996264,-0.996264)'>
+<g transform='translate(-19.04822,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-1.921794,-79.718861)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-1.921794' y='-79.718861' xlink:href='#tz076d1b8b7da2072f-g3-83'/>
+<use x='6.975334' y='-79.718861' xlink:href='#tz076d1b8b7da2072f-g0-2'/>
+<use x='14.724082' y='-78.22448' xlink:href='#tz076d1b8b7da2072f-g4-83'/>
+<use x='19.997382' y='-80.216993' xlink:href='#tz076d1b8b7da2072f-g2-48'/>
+<use x='25.404155' y='-79.718861' xlink:href='#tz076d1b8b7da2072f-g3-67'/>
+<use x='33.237268' y='-83.334225' xlink:href='#tz076d1b8b7da2072f-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(54.85063,-79.718861)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.33401,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(54.85063,-79.718861)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='54.85063' y='-79.718861' xlink:href='#tz076d1b8b7da2072f-g3-67'/>
+<use x='62.683744' y='-83.334225' xlink:href='#tz076d1b8b7da2072f-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-1.921794,-45.516021)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.35416,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-1.921794,-45.516021)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-1.921794' y='-45.516021' xlink:href='#tz076d1b8b7da2072f-g3-83'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(54.85063,-45.516021)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.75693,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(54.85063,-45.516021)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='54.85063' y='-45.516021' xlink:href='#tz076d1b8b7da2072f-g3-83'/>
+<use x='61.533893' y='-49.131385' xlink:href='#tz076d1b8b7da2072f-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M1.91716 15.90665H25.11128' fill='none'/>
+<g transform='translate(25.31126,15.90665)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-21.63556 8.04784V-9.83234' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-21.63556,-10.03232)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M35.34976 9.5478V-9.14783' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,35.34976,-9.34781)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-13.7769-18.42445H25.68837' fill='none'/>
+<g transform='translate(25.88835,-18.42445)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(4.67596,-16.07222)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-25.187271,-45.516021)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-25.187271' y='-45.516021' xlink:href='#tz076d1b8b7da2072f-g4-19'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+<p>
+which is the &ldquo;natural restriction map&rdquo; \(\mathcal F(S')\to \mathcal F(S)\).
+</p>
+<ol class="org-ol">
+<li>If this pulled back family is the original family \(C\to S\) we started with, then we can think of \(C'\to S'\) as an infinitesmal extension of the family \(\alpha\). Isomorphism classes of these extensions form the set \(\mathcal {TF}(\alpha)\).</li>
+</ol>
+</div>
+
+<p>
+Notice that \(\mathcal{TF}\) implicitly depends on the scheme \(S\), since its domain category is \((\mathcal O_S-modules)\).
+</p>
+
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-ck99"><span class="ref-num">[CK99]</span> <a href="../../notes/cox-katz-mirrorsymmetryalgebraic1999/">Cox, Katz — Mirror Symmetry And Algebraic Geometry (1999)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Type Of Family Of Tropical Maps And Decorated Type — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/type-of-family-of-tropical-maps/"
+      data-note-title="Type Of Family Of Tropical Maps And Decorated Type">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Type Of Family Of Tropical Maps And Decorated Type</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+<a class="idlink" data-note="family-of-tropical-curves-defn" href="../../notes/family-of-tropical-curves-defn/">family of tropical curves</a>:PROPERTIES:
+:ID:       5e840a44-e209-42e5-ac49-11c43b9cc897
+:CREATED:  <span class="timestamp-wrapper"><span class="timestamp">[2026-04-13 Mon 20:54]</span></span>
+</p>
+<p>
+:BACKLINKS:
+</p>
+<p>
+Definition 2.23 in &ldquo;Decomposition of Degenerate Logarithmic Gromov-Witten Invariants&rdquo;.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<ol class="org-ol">
+<li>The <b>type</b> of a family of tropical maps \(h:\Gamma\to \Sigma(X)\) over \(Q^\vee_{\mathbb R} \in \mathbf{Cones}\) is the quadruple \(\tau = (G, \mathbf{g}, \boldsymbol{\sigma}, \mathbf{u})\) consisting of 
+<ul class="org-ul">
+<li>the associated genus decorated graph \((G, \mathbf{g})\) (i.e. \(G\) is a graph with vertices \(V(G)\), edges \(E(G)\) and legs \(L(G)\) and \(g:V(G)\to \mathbb N\) assigns a genus to each vertex, the genus of the corresponding irreducible component when \(G\) is the dual graph of a curve)</li>
+<li>the map \(\boldsymbol \sigma:V(G)\cup E(G) \cup L(G)\to \Sigma(X)\) maps each generic point, node or marked point \(x\) to the minimal cone \(\tau \in \Sigma(X)\) containing \(\omega_x\), the cone in \(\Gamma\) associated to \(x\) (note that if \(E\) is a leg or edge incident to a vertex \(v\), then there is an inclusion of faces \(\boldsymbol \sigma(v) \subset \boldsymbol \sigma(E)\) in the presentation of \(\Sigma(X)\))</li>
+<li>the <a class="idlink" data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">contact orders</a> \(\mathbf u = \{u_p, u_q\}\)</li>
+</ul></li>
+<li>For a type \(\tau\) of a family of tropical maps, \(\Aut(\tau)\) denotes the subset of automorphisms of \(G\) commuting with the maps \(\mathbf g\), \(\boldsymbol \sigma\), \(\mathbf u\).</li>
+<li>Given a type \(\tau\) of a family of tropical maps, the associated <i>basic monoid</i> \(Q(\tau)\) is the dual of the monoid \(Q^\vee\) defined below, depending only on \(G\), \(\boldsymbol \sigma\) and \(\mathbf u\).</li>
+<li>If in addition we have a map \(A:V(G)\to H^+_2(X)\) assigning a curve class to each irreducible component, then we call \(\tilde \tau = (\tau, A)\) the <b>decorated type</b> of a family of tropical maps, the pair \((h, A)\) a <b>decorated family of tropical maps</b> and \(|A| = \sum_{v\in V(G)} A(v)\) the <i>total curve class</i> of \(A\).</li>
+</ol>
+
+<p>
+The monoid \(Q^\vee\) is defined
+\[Q^\vee = \left\{\big((V_\eta)_\eta, (e_q)_q\big) \in \bigoplus_\eta P^\vee \oplus \bigoplus_q \mathbb N ~ \middle | ~ \forall q: V_{\eta_2} - V_{\eta_1} = e_qu_q\right\}.\]
+This is apparently the &ldquo;moduli cone of tropical curves of fixed combinatorial type&rdquo;. It should be the dual of the <a class="idlink" data-note="basic-monoid" href="../../notes/basic-monoid/">basic monoid</a>.
+</p>
+
+<p>
+We say that \(\tau\) is <b>rigid</b> if \(Q(\tau) = \mathbb N\). (Definition 3.6).
+</p>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

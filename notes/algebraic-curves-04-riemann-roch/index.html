@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 4: Riemann Roch — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-04-riemann-roch/"
+      data-note-title="Algebraic Curves Lecture 4: Riemann Roch">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 4: Riemann Roch</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-03-line-bundles-and-linear-series" href="../../notes/algebraic-curves-03-line-bundles-and-linear-series/">← lecture 3</a> · <a class="idlink" data-note="algebraic-curves-05-corollaries-to-riemann-roch" href="../../notes/algebraic-curves-05-corollaries-to-riemann-roch/">lecture 5 →</a>
+</p>
+
+<p>
+Last time we stopped with the following characterization of &ldquo;very ampleness&rdquo;:
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Let \(L\) be a line bundle on a curve \(X\). Then
+</p>
+
+<ol class="org-ol">
+<li>\(L\) is base point free if and only if \(h^0(X,L) = h^0(X,L(-p)) + 1\) for all \(p\in X\).</li>
+<li>\(L\) is very ample if \(h^0(X,L) = h^0(X,L(-p-q))+2\) for all \(p,q \in X\).</li>
+</ol>
+</div>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+The same is true for linear series, and the definitions (of base point, of very ample) are the same as well.
+</p>
+</div>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Take a map \(\mathbb P^1 \to \mathbb P^2\) given by \((s:t) \mapsto (s^3:st^2:t^3)\). Take the linear series \(V = \mathrm{span}\{s^3,st^2,t^3\} \subseteq H^0(\mathbb P^1, \mathcal O_{\mathbb P^1}(3))\). In the affine chart \(r\mapsto (r^2, r^3)\) this is given by the equation \(x^3 - y^2\); it&rsquo;s the cuspoidal cubic. The linear series \(V\) is NOT very ample because at the singularity the differential is not injective: the sections in \(V\) that vanish at \(0\) are of the form \(a\cdot r^2 + b\cdot t^3 = r^2\cdot (a+b\cdot r)\), meaning
+</p>
+\begin{align*}
+    \dim(V(-0)) = \dim(V(-2\cdot 0)).
+\end{align*}
+<p>
+Here \(0\) is the origin \((0,0)\), the divisor.
+</p>
+
+<p>
+Here are other ways to see that \((0,0)\) is singular in the the image:
+</p>
+<ol class="org-ol">
+<li>\(k\mapsto (2r \cdot k, 3r^2 \cdot k)\)</li>
+<li>Jacobi&rsquo;s criterion</li>
+<li>If you have a plane curve you can directly read off the equation of the Zariski tangent space at the origin &#x2013; the equation of the Zariski tangent space at the origin is the linear term in the equation. In the case of \(x^3 - y^2 = 0\) we don&rsquo;t have a linear term, hence singular at the origin.</li>
+<li>You can also use the definition of a singularity; show that the dimension of the Zariski tangent space is larger than the dimension of the ring. In our case,</li>
+</ol>
+\begin{align*}
+    \dim_{\mathbb C}\left(\frac{(x,y)}{(x^2,xy,y^2)} = 2 \neq 1.\right)
+\end{align*}
+</div>
+
+<p>
+Note that the equation for the <i>tangent cone</i> is given by the lowest order terms. The tangent cone to an affine variety \(X\) given by an ideal \(I\) at the origin is the Zariski closed subset corresponding to the ideal \(in(I)\), the ideal generated by all the lowest degree terms of elements in \(I\).
+</p>
+<div id="outline-container-riemann-roch" class="outline-2">
+<h2 id="riemann-roch">Riemann Roch</h2>
+<div class="outline-text-2" id="text-riemann-roch">
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<ol class="org-ol">
+<li>If \(\deg(L) < 0\) then \(h^0(X,L) = 0\).</li>
+<li>If \(\deg(L) = 0\) and \(h^0(X,L) > 0\) then \(L\cong \mathcal O_X\).</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<ol class="org-ol">
+<li>Assume \(h^0(X,L) > 0\). We know that \(L\cong \mathcal O_X(D)\) for some \(D\in \textrm{Div}(X)\). If \(h^0(X,L) > 0\), then \(D\sim D'\) with \(D'\) effective which then implies that \(\deg(D') = \deg(L) \geq 0\).</li>
+<li>This follows since the only effective divisor of degree \(0\) is 0 (all coefficients equal to 0 in the divisor).</li>
+</ol>
+</details>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+We denote by \(K_X\) the <i>canonical sheaf</i> on \(X\). Analytically, the sheaf of holomorphic one forms.
+</p>
+</div>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Serre Duality)</i>.
+</p>
+\begin{align*}
+    H^1(X,L) \cong H^0(X,K_X\otimes L^{-1}).
+\end{align*}
+</div>
+<p>
+Note that we call \(K_X\otimes L^{-1}\) the <i>residual of \(\mathbf{L}\)</i>.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Riemann Roch).</i>
+</p>
+\begin{align*}
+    h^0(X,L) - h^0(X,K_X\otimes L^{-1}) = d - g + 1.
+\end{align*}
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+By Serre Duality, we need to show that
+</p>
+\begin{align*}
+    h^0(X,L) - h^1(X,L) = d - g + 1.
+\end{align*}
+<p>
+We prove this by induction, and we write \(h^i(-)\) for \(h^i(X,-)\) to simplify notation a bit.
+</p>
+
+<p>
+<i>Base case:</i> The claim is true for \(L = \mathbb O_X\):
+</p>
+\begin{align*}
+    h^0(\mathcal O_X) = 1, ~h^1(\mathcal O_X) = g, ~d = 0.
+\end{align*}
+<p>
+We show that equality holds for \(L\) if and only if it holds for \(L(-p)\).
+</p>
+
+<p>
+We have a short exact sequence
+</p>
+\begin{align*}
+    0\to L(-p)\to L\to L|_p \to 0
+\end{align*}
+<p>
+where \(L|_p\) denotes the skyscraper sheaf of \(L\) at \(p\). I can then pass to the long exact sequence of cohomology to get
+</p>
+\begin{align*}
+    0 \to H^0(L(-p)) \to H^0(L) \xrightarrow{\mathrm{ev}} K \to H^1(L(-p)) \to H^1(L) \to 0
+\end{align*}
+<p>
+noting that \(H^0(L|_p) = K\) and \(H^1(L|_p) = 0\). From this long exact sequence we have that 
+</p>
+
+\begin{align*}
+    h^0(L) = h^0(L(-p)) + \dim(\ker \mathrm{ev})
+\end{align*} 
+<p>
+and
+</p>
+\begin{align*}
+    h^1(L(-p)) &= h^1(L) + \textrm{codim}(\ker \mathrm{ev}) \\
+    &= h^1(L) + 1 - \dim(\ker\textrm{ev}).
+\end{align*}
+<p>
+This implies
+</p>
+\begin{align*}
+    h^0(L) - h^0(L(-p)) = h^1(L) + 1 - h^1(L(-p))
+\end{align*}
+<p>
+and then
+</p>
+\begin{align*}
+    h^0(L) - h^1(L) = h^0(L(-p)) - h^1(L(-p)) + 1.
+\end{align*}
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-03-line-bundles-and-linear-series" href="../../notes/algebraic-curves-03-line-bundles-and-linear-series/">Algebraic Curves Lecture 3: Line Bundles And Linear Series</a></li>
+    <li><a data-note="algebraic-curves-05-corollaries-to-riemann-roch" href="../../notes/algebraic-curves-05-corollaries-to-riemann-roch/">Algebraic Curves Lecture 5: Corollaries To Riemann-Roch</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

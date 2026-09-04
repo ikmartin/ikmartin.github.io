@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linear Regression Notes — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/linear-regression-notes/"
+      data-note-title="Linear Regression Notes">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Linear Regression Notes</h1>
+      
+      <article class="note">
+<div id="outline-container-the-simple-linear-regression-model" class="outline-2">
+<h2 id="the-simple-linear-regression-model">The simple linear regression model</h2>
+<div class="outline-text-2" id="text-the-simple-linear-regression-model">
+<p>
+In simple linear regression we have a single variable we would like to predict, \(y\), and a single feature \(x\) (meaning both \(x,y\in \mathbb R\)). The form of \(f\) in the <a class="idlink link-unpublished" href="../../not-published/" title="not published">supervised learning framework</a> is
+\[y = f(x) + \epsilon = \beta_0 + \beta_1x + \epsilon\]
+where \(\beta_0,\beta_1\in\mathbb R\) are the parameters we&rsquo;re trying to learn, and we assume \(\epsilon\in \mathcal N(0,\sigma^2)\) is some normally distributed error term which is independent of \(x\).
+</p>
+
+<p>
+We wish to find the values of \(\beta_0,\beta_1\) which minimize the Mean Squared Error
+\[\text{MSE}(\beta) = \frac1n\sum_{i=1}^n (y_i - f_\beta(x_i))^2\]
+which in our particular case is
+\[\text{MSE}(\beta) = \frac1n\sum^n_{i=1}(y_i - \beta_0 - \beta_1x_i)^2.\]
+There is a closed form solution for the \(\beta\) which minimizes \(\text{MSE}(\beta)\) in terms of \(\{(x_i,y_i)\}_{i=1}^n\), you can find it either by calculus minimization or by projecting \(\vec y\) onto the subspace spanned by \(\vec 1\) and \(\vec x\):
+\[\hat\beta_0 = \overline y - \hat \beta_1\overline x\]
+where \(\overline x\) and \(\overline y\) are the averages of \(x\) and \(y\) respectively, and
+\[\hat\beta_1 = \frac{\sum_{i=1}^n(x_i - \overline x)(y_i - \overline y)}{\sum_{i=1}^n(x_i - \overline x)^2} = \frac{\text{cov}(x,y)}{\text{var}(x)}.\]
+</p>
+</div>
+</div>
+<div id="outline-container-the-multivariable-linear-regression-model" class="outline-2">
+<h2 id="the-multivariable-linear-regression-model">The multivariable linear regression model</h2>
+<div class="outline-text-2" id="text-the-multivariable-linear-regression-model">
+<p>
+Now we have \(\vec x_i = (x_1,...,x_d)\) features for every observation \(y_i\in \mathbb R\). We now wish to model \(y\)  as
+\[y = f_\beta(x) + \epsilon = \beta_0 + \beta_1x_1 + ... + \beta_dx_d + \epsilon = \beta\cdot \vec x + \epsilon\]
+where \(\vec x = (1,x_1,...,x_d)\) and \(\epsilon \sim \mathcal N(0,\sigma^2)\).
+</p>
+
+<p>
+If we have \(n\) observations, we package them together in a \(n\times (1 + d)\) matrix \(X\):
+</p>
+\begin{equation*}
+X = \begin{bmatrix}
+1 & x_{11} & x_{12} & ... & x_{1p}\\
+1 & x_{21} & x_{22} & ... & x_{2p}\\
+  &        &        & \vdots &    \\
+1 & x_{n1} & x_{n2} & ... & x_{np}\\  
+\end{bmatrix}
+\hphantom{asdfas}
+\vec{y} = 
+\begin{bmatrix}
+y_1\\y_2\\ \vdots \\ y_n
+\end{bmatrix}
+\end{equation*}
+
+<p>
+and then our MSE looks like this:
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="generalized-linear-models" href="../../notes/generalized-linear-models/">Generalized Linear Models Notes</a></li>
+    <li><a data-note="logistic-regression" href="../../notes/logistic-regression/">Logistic Regression Notes</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

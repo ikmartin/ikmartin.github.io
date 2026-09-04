@@ -1,0 +1,247 @@
+/* The gallery, in both hosts. Copied verbatim into the exported site, so it carries the portal's palette rather than referencing it. */
+
+:root {
+  --bg: #0d0d10;
+  --panel: #17171c;
+  --text: #e8e8ea;
+  --muted: #a2a3b0;
+  --line: #2a2a33;
+  --accent: #c9a227;
+  --tile-aspect: 2;
+
+  /* Space between rows, and the edge margin. The grid grows vertically by
+     twice the row gap, so widening the gap also carries the top and bottom
+     rows closer to the edges of the window rather than shrinking the tiles. */
+  --row-gap: 2.6vh;
+  --col-gap: clamp(2px, 0.6vmin, 10px);
+  --edge: clamp(4px, 1.2vh, 18px);
+}
+
+.gallery-body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+}
+
+/* Three by three, sized to whichever of width or height runs out first, so the
+   grid always fits one screen without scrolling. Every tile shares the one
+   projection, so the whole grid carries that projection's aspect. */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: var(--col-gap);
+  row-gap: var(--row-gap);
+  /* Tiles keep the projection's aspect; the gaps and edge margin are added on
+     top, so the block is taller than the pictures alone and reaches nearer the
+     top and bottom of the window. Both dimensions stay capped at the viewport,
+     which is what keeps it from ever scrolling. */
+  width: min(
+    calc(100vw - 2 * var(--edge)),
+    calc((100vh - 2 * var(--row-gap) - 2 * var(--edge)) * var(--tile-aspect))
+  );
+  height: min(
+    calc(100vh - 2 * var(--edge)),
+    calc(
+      (100vw - 2 * var(--edge)) / var(--tile-aspect) + 2 * var(--row-gap)
+    )
+  );
+  margin: auto;
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.tile canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Grid mode ships one pixel per cell and must scale up hard-edged; graticule
+   frames are already full rasters and want normal filtering. */
+.tile canvas.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.tile.clickable {
+  cursor: pointer;
+}
+
+.tile-label {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.35rem;
+  font-size: clamp(0.55rem, 1.1vmin, 0.85rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.55;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Options overlay the grid rather than reflowing it, so opening them never
+   changes what the artwork looks like. */
+.menu-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--text);
+  background: rgba(23, 23, 28, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.menu-button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.menu-panel {
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+  z-index: 20;
+  width: min(19rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding: 1rem 1.1rem 1.2rem;
+  background: rgba(23, 23, 28, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.menu-panel[hidden] {
+  display: none;
+}
+
+/* A label belongs to the control under it, so the gap below a label must be
+   much smaller than the gap between one field and the next - otherwise
+   "Projection" reads as a caption on the resolution box above it. */
+.menu-panel label,
+.menu-panel .control {
+  display: block;
+  margin: 0 0 1.15rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #b9bac6;
+}
+
+.menu-panel .control:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.menu-panel .control-label {
+  display: block;
+  margin: 0 0 0.3rem;
+}
+
+/* Radio rows: the marker and its label on one line, and the rows tight to each
+   other rather than inheriting the roomier portal spacing. */
+.menu-panel .dash-options-list-option {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.05rem 0;
+  line-height: 1.25;
+}
+
+.menu-panel .dash-options-list-option-checkbox {
+  margin: 0;
+  flex: none;
+}
+
+.menu-panel .dash-options-list-option-text {
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+}
+
+/* The exported page uses plain inputs rather than Dash components. */
+.menu-panel .radio-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.05rem 0;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.menu-panel .radio-row input {
+  margin: 0;
+  flex: none;
+  accent-color: var(--accent);
+}
+
+.menu-panel .radio-group {
+  margin-bottom: 1.15rem;
+}
+
+.menu-panel .radio-group > .control-label {
+  margin-bottom: 0.3rem;
+}
+
+/* The panel's sliders do not carry marks, so they need none of the portal's
+   clearance beneath them. */
+.menu-panel .control .dash-slider-root {
+  margin-bottom: 0;
+}
+
+.menu-panel select,
+.menu-panel input[type="number"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.menu-panel input[type="range"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  accent-color: var(--accent);
+}
+
+.menu-note {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
+}

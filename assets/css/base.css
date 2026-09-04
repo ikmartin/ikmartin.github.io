@@ -1,0 +1,68 @@
+/* Element defaults: the reset, the page grid, and how bare HTML looks.
+ *
+ * Everything here is unclassed or near-unclassed, so it loses to every region
+ * and component file that follows. Region-specific typography lives with its
+ * region, not here.
+ */
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+
+  display: grid;
+  grid-template-columns: var(--rail-w) minmax(0, 1fr);
+  align-items: start;
+}
+
+/* --- typography and inline elements --- */
+h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--accent-2); }
+
+/* A link into the corpus reads differently from a link off the site: green and
+   unadorned, so a paragraph dense with note references does not look striped.
+   Keyed on data-note rather than .idlink so it covers every note link the build
+   emits -- prose, backlinks, the notes table, the index pages -- and so a link
+   to a private note is excluded by construction: the stub never carries the
+   attribute, and keeps the muted dashed treatment declared further down. */
+a[data-note] { color: var(--note-link); text-decoration: none; }
+a[data-note]:hover { color: var(--note-link-2); text-decoration: underline; }
+
+p, ul, ol { font-size: var(--step-0); }
+ul, ol { padding-left: 1.4rem; }
+li { margin: 0.25rem 0; }
+
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 1.1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+code, pre { font-family: var(--font-mono); font-size: 0.9em; }
+code { background: var(--code-bg); padding: 0.12em 0.35em; border-radius: 4px; }
+pre {
+  background: var(--code-bg);
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  line-height: 1.45;
+}
+pre code { background: none; padding: 0; }
+
+img { max-width: 100%; height: auto; }
+
+/* display math shouldn't overflow narrow screens */
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; }
+
+/* --- narrow screens --- */
+@media (max-width: 60rem) {
+  body { grid-template-columns: 1fr; }
+}

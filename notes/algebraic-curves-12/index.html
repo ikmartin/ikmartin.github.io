@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 12 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-12/"
+      data-note-title="Algebraic Curves Lecture 12">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#continuing-examples">Continuing Examples</a></li>
+    <li class="toc-l2"><a href="#maps-to-mathbb-p-3-and-mathbb-p-2">Maps to \(\mathbb P^3\) and \(\mathbb P^2\)</a></li>
+    <li class="toc-l3"><a href="#interlude-on-grassmanians">Interlude on Grassmanians</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 12</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-11" href="../../notes/algebraic-curves-11/">← lecture 11</a> · <a class="idlink" data-note="algebraic-curves-13" href="../../notes/algebraic-curves-13/">lecture 13 →</a>
+</p>
+<div id="outline-container-continuing-examples" class="outline-2">
+<h2 id="continuing-examples">Continuing Examples</h2>
+<div class="outline-text-2" id="text-continuing-examples">
+<p>
+We&rsquo;re going to continue a series of examples we began last class. As a reminder, we&rsquo;re looking to compute the dimension of \(\mathcal M_g\) for low genus.
+</p>
+
+<p>
+<i>Example:</i> Take \(g = 4\). The locus of hyperelliptic curves has dimension \(7\) and is parameterized by varying the right number of branch points on \(\mathbb P^1\) (as before). 
+</p>
+
+<p>
+If \(X\) is not hyperelliptic, \(K_X\) is very ample and realizes \(X\) as a curve of degree \(6\) in \(\mathbb P^3\). Let&rsquo;s first study what kind of curve we end up with in \(\mathbb P^3\).
+</p>
+
+<p>
+Consider the space \(H^0(\mathcal O_{\mathbb P^3}(2))\) of degree \(2\) polynomials over \(\mathbb P^3\) together with the restriction map \(H^0(\mathcal O_{\mathbb P^3}(2)) \to H^0(\mathcal O_{X}(2))\).
+</p>
+<ul class="org-ul">
+<li>\(\dim H^0(\mathcal O_{\mathbb P^r}(d)) = \binom{r + d}{r},\) so \(H^0(\mathcal O_{\mathbb P^3}(2)) = \binom{5}{2} = 10\)</li>
+<li>The divisor corresponding to \(\mathcal O_{\mathbb X}(2)\) has degree \(12\), so by Riemann-Roch \(\dim H^0(\mathcal O_{\mathbb X}(2)) = 12 - 4 + 1 = 9\). From this we can conclude the restriction map is surjective.</li>
+</ul>
+
+<p>
+Thus there must exist a quadric \(Q \subset \mathbb P^3\) such that \(X \subset Q\). If \(X\) were to lie on a second quadric it would follow that \(\deg(X) \leq 4\). But \(\deg(X) = 6\). Thus there is a <i>unique</i> quadric \(Q\) which contains \(X\) (it is a general fact that the intersection of a degree \(d_1\) hypersurface and a degree \(d_2\) hypersurface in \(\mathbb P^3\) results in a degree \(d_1 \cdot d_2\) curve in \(\mathbb P^3\), as long as the hypersurfaces intersect transversally).
+</p>
+
+<p>
+Consider then the map \(H^0(\mathcal O_{\mathbb P^3}(3) \to H^0(\mathcal O_X(3))\).
+</p>
+
+<ul class="org-ul">
+<li>Then \(\dim H^0(\mathcal O_{\mathbb P^3}(3) = \binom{20}{3} = 20\) and \(\dim H^0(\mathcal O_X(3)) = 18 - 4 + 1 = 15\) by similar arguments as before.</li>
+</ul>
+
+<p>
+There is thus at least a \(4\) dimensional family of cubics containing \(X\). Of this family, a 3-dimensional family consists of cubics of the form \(Q\cup H\). This implies there is an irreducible cubic \(C\) containing \(X\). Then \(C\cap Q\) is a degree 6 curve containing \(X\) and hence must be equal to \(X\).
+</p>
+
+<p>
+Conversely, if \(X\) is a complete intersection of a quadric and a cubic, then by adjunction
+</p>
+\begin{align*}
+    K_X = (\mathcal O_{\mathbb P^3}(5 - 4))|_X = (\mathcal O_{\mathbb P^3}(1))|_X.
+\end{align*}
+<p>
+The intersection of a quadric and a cubic is a canonically embedded genus 4 curve (if smooth).
+</p>
+
+<p>
+Then
+</p>
+\begin{align*}
+    3g - 3 = (10 - 1) + (20 - 4) - 1 - 15 = 9.
+\end{align*}
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+<i>Why \(3g - 3\)?</i> If \(X\) is a curve and \(L\) a line bundle with \(\deg(L) = g + 1\) then Riemann-Roch tells us \(h^0(L) \geq 2\). &ldquo;The general line bundle of degree \(g + 1\) satisfies \(h^0(L) = 2\). There is a \(g\)-dimensional space of line bundles of degree \(g+1\)&rdquo;. That \(h^0(L) = 2\) means I get a cover \(X\to \mathbb P^1\), and by Riemann-Hurwitz \(2g - 2 = -2(g + 1) + b\) where \(b\) is the number of branch points. This means \(4g = b\). We expect to have a \(4g - 3\) dimensional space of covers of \(\mathbb P^1\) by genus \(g\) curves of degree \(g + 1\). Thus we would expect that there is a \(3g - 3\) dimensional space of genus \(g\) curves.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-maps-to-mathbb-p-3-and-mathbb-p-2" class="outline-2">
+<h2 id="maps-to-mathbb-p-3-and-mathbb-p-2">Maps to \(\mathbb P^3\) and \(\mathbb P^2\)</h2>
+<div class="outline-text-2" id="text-maps-to-mathbb-p-3-and-mathbb-p-2">
+<p>
+We saw already that any curve can be embedded in \(\mathbb P^{g+1}\). This is because line bundles become very ample once \(d \geq 2g + 1\), in which case Riemann-Roch tells us the global sections of a line bundle \(L\) have dimension \(h^0(L) = g + 2\). The claim is that we can do better.
+</p>
+</div>
+<div id="outline-container-interlude-on-grassmanians" class="outline-3">
+<h3 id="interlude-on-grassmanians">Interlude on Grassmanians</h3>
+<div class="outline-text-3" id="text-interlude-on-grassmanians">
+<p>
+As a set, \(\mathbb{Gr}(k,V)\) is the set of \(k\)-dimensional subspaces of a vector space \(V\). When \(k = 1\) or \(k = \dim V - 1\), this is just projective space \(\mathbb P(V)\). (See Harris: <i>Basic algebraic geometry</i> for a good reference constructing this variety in terms of coordinates). Consider the Plücker embedding
+</p>
+\begin{align*}
+    \mathbb{Gr}(k,V) &\to \mathbb P(\bigwedge^k V) \\
+    W &\mapsto v_1\wedge ... \wedge v_k
+\end{align*}
+<p>
+where \(v_1,...,v_k\) is a basis of \(W\). The image is the indecomposable elements of \(\bigwedge^k V\). It&rsquo;s also an injective (hence is an embedding). Indeed, given an indecomposable \(\lambda \in \mathbb P(\bigwedge^k V)\) then the vector space
+</p>
+\begin{align*}
+    W_\lambda = \{\omega \in V ~\mid~ \lambda \wedge \omega = 0\}
+\end{align*}
+<p>
+is the unique subspace of \(V\) mapped to \(\lambda\).
+</p>
+
+<p>
+Now, fix a basis \(e_1,...,e_n\) of \(V\) and a basis \(v_1,...,v_k\) of \(W\). Then the Plücker coordinates are the \(k\times k\) minors of the \(k\times n\) matrix with columns the \(v_1\wedge...\wedge v_n\).
+</p>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-11" href="../../notes/algebraic-curves-11/">Algebraic Curves Lecture 11</a></li>
+    <li><a data-note="algebraic-curves-13" href="../../notes/algebraic-curves-13/">Algebraic Curves Lecture 13</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

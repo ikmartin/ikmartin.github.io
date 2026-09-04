@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equivalence Of Coherent Module Definitions For Locally Noetherian Schemes — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/equivalence-of-coherent-module-definitions-for-locally-noetherian-schemes/"
+      data-note-title="Equivalence Of Coherent Module Definitions For Locally Noetherian Schemes">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Equivalence Of Coherent Module Definitions For Locally Noetherian Schemes</h1>
+      <p class="note-meta"><span class="taxon">proposition</span></p>
+
+      <article class="note">
+<p>
+The following is Hartshorne&rsquo;s definition of a coherent module:
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \((X,\mathcal O_X)\) be a scheme. We say that an \(\mathcal O_X\)-module is <i>quasi-coherent</i> if there exists an affine cover \(\{U_i\}\)  of \(X\) and \(\mathcal O_X(U_i)\)-modules \(M_i\) such that \(\mathcal F|_{U_i}\cong \widetilde M_i\) for all \(i\), where \(\widetilde M_{i}\) is the sheaf associated to the module \(M_i\) (defined on distinguished opens via localization of \(M_i\)). We say that \(\mathcal F\) is <i>coherent</i> if in addition each \(M_i\) can be taken to be a finitely generated \(\mathcal O_X(U_i)\)-module.
+</p>
+</div>
+
+<p>
+Compare this to the definition in the <a class="idlink" data-note="coherent-module" href="../../notes/coherent-module/">Stack&rsquo;s project</a>:
+</p>
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \((X,\mathcal O_X)\) be a ringed space. We say that a sheaf of \(\mathcal O_X\)-modules \(\mathcal F\) is <i>coherent</i> if
+</p>
+<ol class="org-ol">
+<li>\(\mathcal F\) is of <a class="idlink" data-note="finite-type-module" href="../../notes/finite-type-module/">finite-type</a></li>
+<li>For every choice of sections \(s_1,...,s_n \in \mathcal F(U)\) the kernel \(\ker \varphi\) of the induced map \(\varphi: \mathcal O_X^{\oplus n} \to \mathcal F\) is finite type.</li>
+</ol>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="coherent-module" href="../../notes/coherent-module/">Coherent Module</a></p>
+
+
+<p>
+Using Hartshorne&rsquo;s definition it is quite clear that \(\mathcal O_X\) is a coherent \(\mathcal O_X\)-module for every scheme \(X\), but this is not true if we take the Stacks project definition. The two definitions are equivalent, however, if we assume \(X\) to be locally Noetherian.
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(X\) is a locally Noetherian scheme, then the two notions of coherent agree.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+It suffices to assume \(X = \Spec R\) is affine since in both cases coherence is a local property. Let \(M\) be a coherent \(R\) module in the sense of Stacks. Then \(M\) is finite-type which is equivalent to being finitely-generated for affines. Thus Stacks coherent implies Hartshorne coherent. (Notice we did not need locally Noetherian for this! This means Stacks coherence is a strictly stronger notion.)
+</p>
+
+<p>
+Now assume that \(M\) is coherent in the sense of Hartshorne. Then \(M\) is finitely generated and in particular finite type, so we need only prove condition (2) in the Stacks definition holds. Since \(X\) is affine and locally Noetherian, \(R\) is Noetherian and hence \(R^{\oplus n}\) is Noetherian for every \(n\in \mathbb N\). The kernel \(\ker \varphi\) of any morphism \(\varphi:R^{\oplus n}\to M\) is a submodule of \(R^{\oplus n}\), hence finitely generated as an \(R\)-module, hence finite-type.
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="coherent-module" href="../../notes/coherent-module/">Coherent Module</a></li>
+    <li><a data-note="example-of-o-x-which-is-not-coherent" href="../../notes/example-of-o-x-which-is-not-coherent/">Example-Of-O X-Which-Is-Not-Coherent</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

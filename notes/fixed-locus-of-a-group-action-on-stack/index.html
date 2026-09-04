@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romagny Fixed Locus Of A Group Action On Stack — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/fixed-locus-of-a-group-action-on-stack/"
+      data-note-title="Romagny Fixed Locus Of A Group Action On Stack">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Romagny Fixed Locus Of A Group Action On Stack</h1>
+      <p class="note-meta"><span class="taxon">definition</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/ag/">#ag</a><span class="sep">·</span><a class="tag" href="../../notes/tag/fixed-stack/">#fixed-stack</a><span class="sep">·</span><a class="tag" href="../../notes/tag/group-action/">#group-action</a></p>
+
+      <article class="note">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(X\) be an Artin stack over \(S\) with \(G\)-action. For any scheme \(A\) and every \(A\)-valued point \(x\) of \(X\), the \(G\)-stablizer (or <i>stabilizer of the \(G\)-action</i>) at \(x\) is an fppf sheaf of groups \(\St^G_X(s)\) defined as the cokernel of the homomorphism \(\underline{\Aut}_X(x)\hookrightarrow\underline{\Aut}_{\mathcal X}(x)\), where \(\mathcal X := [X/G]\). Thus we have a short exact sequence
+\[1 \to \underline{\Aut}_X(x)\to \underline{\Aut}_{\mathcal X}(x)\to \St^G_X(x)\to 1\]
+of sheaves of groups over \(A\). Note that \(\St^G_X(s)\) can be regarded as a subgroup of \(G_A\), since it is the image of \(\alpha_A:\underline{\Aut}_{\mathcal X}(x)\to G_A\).
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="fixed-locus-of-group-action-on-an-artin-stack" href="../../notes/fixed-locus-of-group-action-on-an-artin-stack/">Fixed Locus Of Group Action On An Artin Stack</a></li>
+    <li><a data-note="fixed-stack-of-nodal-curve-moduli-space" href="../../notes/fixed-stack-of-nodal-curve-moduli-space/">Fixed Stack Of Nodal Curve Moduli Space</a></li>
+    <li><a data-note="romagny-fixed-stack-torus-action-on-dm-stack" href="../../notes/romagny-fixed-stack-torus-action-on-dm-stack/">Romagny Fixed Stack Torus Action On Dm Stack</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

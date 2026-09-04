@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 22 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-22/"
+      data-note-title="Algebraic Curves Lecture 22">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#extremal-curves">Extremal Curves</a></li>
+    <li class="toc-l2"><a href="#interlude-rational-normal-curves-and-rational-normal-scrolls">Interlude: Rational normal curves and rational normal scrolls</a></li>
+    <li class="toc-l2"><a href="#rational-normal-scrolls">Rational normal scrolls</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 22</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-20" href="../../notes/algebraic-curves-20/">← lecture 20</a> · <a class="idlink" data-note="algebraic-curves-23" href="../../notes/algebraic-curves-23/">lecture 23 →</a>
+</p>
+
+<p>
+I missed the previous lecture due to an unfortunate phone call.
+</p>
+<div id="outline-container-extremal-curves" class="outline-2">
+<h2 id="extremal-curves">Extremal Curves</h2>
+<div class="outline-text-2" id="text-extremal-curves">
+<p>
+\(d \lt 2r\) means you&rsquo;ve got a non-special line bundle. Not sure where this showed up last time as I wasn&rsquo;t there.
+</p>
+</div>
+</div>
+<div id="outline-container-interlude-rational-normal-curves-and-rational-normal-scrolls" class="outline-2">
+<h2 id="interlude-rational-normal-curves-and-rational-normal-scrolls">Interlude: Rational normal curves and rational normal scrolls</h2>
+<div class="outline-text-2" id="text-interlude-rational-normal-curves-and-rational-normal-scrolls">
+<p>
+Suppose \(C\subset \mathbb P^r\) is embedded by \(\mathcal O_{\mathbb P^1}(r)\),
+</p>
+\begin{align*}
+    [s:t] \mapsto [s^r:s^{r-1}t:...:t^r].
+\end{align*}
+<p>
+Remember:
+</p>
+<ul class="org-ul">
+<li>such maps are characterized as non-degenerate curves of degree \(r\) in \(\mathbb P^r\)</li>
+<li>any \(r+1\) points on \(C\) span \(\mathbb P^r\).</li>
+<li>\(\varphi_{K_X}(X)\) is a rational normal curve if \(X\) is hyperelliptic.</li>
+</ul>
+
+<p>
+Set
+</p>
+\begin{align*}
+    M =
+    \begin{pmatrix}
+        x_0 & x_1 & x_2 & \dots & x_{r-1} \\
+        x_1 & x_2 & x_3 & \dots & x_r
+    \end{pmatrix}.
+\end{align*}
+<p>
+The ideal of \(C\) is defined by \(2\times 2\) minors of \(M\). There are \(\binom{r}{2}\) linearly independent quadrics cutting out \(C\).
+</p>
+\begin{align*}
+    \varphi:H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(2)) \to H^0(C, \mathcal O_C(2)).
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    \dim(\operatorname{img}\varphi) 
+    &= \binom{r+2}{2} - \binom{r}{2} \\
+    &= \frac{(r+2)(r+1) - r(r-1)}{2} \\
+    &= \frac{r^2 + 3r + 2 - r^2 + r}{2} \\
+    &= 2r + 1 = h^0(C,\mathcal O_C(2))
+\end{align*}
+<p>
+which implies that \(\varphi\) is surjective which happens if and only if \(C\) is 2-normal.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(C\subset \mathbb P^r\) is embedded by a non-special line bundle \(L\) (i.e. \(C = \varphi_L(X)\), \(h^0(K_X - L) = 0\) then \(C\) is projectively normal if and only if \(C\) is \(2\)-normal.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Assume \(C\) is \(0\), \(1\), \(2\)-normal. We need to show that \(C\) is \(\ell\) normal for any \(\ell > 3\). Consider the exact sequence:
+</p>
+\begin{align*}
+    0 \to \mathcal O_C(1) \xrightarrow{\cdot H} \mathcal O_C(2) \to \mathcal O_{C\cap H}(2)\to 0.
+\end{align*}
+<p>
+As is standard, take the long exact sequence on cohomology
+</p>
+\begin{align*}
+    H^{0}(\mathbb P^r, \mathcal O_{\mathbb P^r}(2)) \to H^0(C, \mathcal O_C(2)) \to H^0(C\cap H, \mathcal O_{C\cap H}(2)) \to H^1(C, \mathcal O_C(1)).
+\end{align*}
+<p>
+This means the points in \(C\cap H\) impose independent conditions on quadrics in \(\mathbb P^r\) which in turn implies the points also impose independent conditions on all hypersurfaces of degree \(\ell \geq 2\).
+</p>
+
+<p>
+Now consider the exact sequence of the ideal sheaf \(\mathcal I_{C\cap H}\) given by
+</p>
+
+\begin{align*}
+    0 \to \mathcal I_{C\cap H}(\ell) \to \mathcal O_{\mathbb P^r}(\ell) \to \mathcal O_{C\cap H}(\ell) \to 0.
+\end{align*}
+<p>
+Then
+</p>
+\begin{align*}
+    H^1(C, \mathcal I_{C\cap H}(\ell)) = 0
+\end{align*}
+<p>
+for all \(\ell\geq 2\), since \(\mathcal O_{\mathbb P^r}(\ell) \to \mathcal O_{C\cap H}(\ell)\) is surjective on global sections whenever \(\ell \geq 2\). We&rsquo;d like to show that \(H^1(C, \mathcal I_{C\cap H}(1) = 1\) too. We have that
+</p>
+\begin{align*}
+    0 \to \mathcal I_{C\cap H}(\ell - 1) \to \mathcal I_{C\cap H}(\ell) \to \mathcal I_{C\cap H}^H(\ell) \to 0
+\end{align*}
+<p>
+where \(\mathcal I_{C\cap H}\) is the ideal sheaf of \(C\cap H\) inside of \(\mathcal P^r\) and \(\mathcal I_{C\cap H}^H(\ell)\) is the ideal sheaf of \(C\cap H\) inside of \(H\cong \mathbb P^{r-1}\). This exact sequence comes from the fact that&#x2026;I&rsquo;m not sure. Will need to consult the notes.
+</p>
+</details>
+
+<p>
+Thus, rational normal curves are projectively normal.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+(Griffths, Harris page 528 - 531).
+</p>
+<ol class="org-ol">
+<li>Through any \(r+3\) points in \(\mathbb P^{r}\) in linear general position, there is a unique rational normal curve.</li>
+<li>Fix integers \(d\) and \(r\) such that \(r\geq 2\) and \(d\geq 2r + 3\). Let \(\Gamma \subseteq \mathbb P^r\) be \(d\) points in linear general position. Then \(\Gamma\) lines on a rational normal curve if and only if \(\Gamma\) imposes \(2r + 1\) conditions on quadrics.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-rational-normal-scrolls" class="outline-2">
+<h2 id="rational-normal-scrolls">Rational normal scrolls</h2>
+<div class="outline-text-2" id="text-rational-normal-scrolls">
+<p>
+The rational normal scrolls will be surfaces which contain our extremal curves. Fix \(a_1\) and \(a_2\) such that \(a_1\geq a_2\), \(a_1\geq 0\) \(a_2\geq 0\) and \(a_1 + a_2 > r - 1\). Fix subspaces \(L_1\) and \(L_2\) such that \(L_1\) and \(L_2\) span \(\mathbb P^r\) and \(\dim(L_i) = a_i\). Let \(C_i \subseteq C_i \subseteq L_i\) be a rational normal curve and fix an isomorphism \(\varphi:C_1\to C_2\). Then
+</p>
+\begin{align*}
+    X_{a_1, a_2} = \bigcup_{p\in C_1} \{\text{line connecting } P \text{ to } \varphi(P)\}.
+\end{align*}
+
+<p>
+<i>Example:</i> 
+</p>
+<ul class="org-ul">
+<li>Take \(r = 2\), then \(X_{0,1}\cong \mathbb P^2\).</li>
+<li>Take \(r = 3\). Then \(X_{0,2} - \) cone over a conic, \(X_{1,1} \cong \mathbb P^1\times \mathbb P^1\).</li>
+<li>Take \(r = 4\). Then \(X_{1,2} \operatorname{BL}_p\mathbb P^2\).</li>
+</ul>
+
+<p>
+<i>An Observation:</i> Up to linear automorphisms of \(\mathbb P^r\) this construction does not depend on the choices made other than \(a_1\) and \(a_2\).
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<ol class="org-ol">
+<li>\(X_{a_1,a_2}\) is a non-degenerate surface</li>
+<li>The degree of \(X_{a_1,a_2}\) is \(a_1+a_2 = r - 1\)</li>
+<li>\(X_{a_1,a_2}\) is non-singular if \(a_1 \neq 0\).</li>
+</ol>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<ol class="org-ol">
+<li>First, \(\operatorname{span}(c_i) = L_i\) and \(\operatorname{span}(L_1\cup L_2) = \mathbb P^r\). Any linear subspace \(H\supset X_{a_1, a_2}\) needs to contain the \(C_i \implies L_i \subset H\), hence \(\operatorname{span}(L_1\cup L_2) \subset H \implies H = \mathbb P^r\).</li>
+<li>\(X_{a_1,a_2} \cap H = C_2 + \sum_{i=1}^{a_1}L_i\). Thus the degree of \(X_{a_1,a_2}\) is equal to the degree of \(X_{a_1,a_2}\cap H\) which is \(a_1 + a_2\).</li>
+<li>\(X_{a_1, a_2} \cap H_p\). For any \(p\), I can choose \(H_p\) such that \(X_{a_1,a_2} \cap H_p\) is smooth at \(p\) as long as \(a_1\neq 0\). Then</li>
+</ol>
+\begin{align*}
+    \operatorname{deg}(H\cap X_{a_1,a_2}) = r-1
+\end{align*}
+<p>
+which implies \(X_{a_1,a_2} \cap H\subset H\) is a rational normal curve if smooth.
+</p>
+</details>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<ul class="org-ul">
+<li>Any surface in \(\mathbb P^r\) that is non-degenerate has degree at least \(r - 1\).</li>
+<li>If it has degree \(r - 1\), it is either a rational normal scroll or \(\mathbb P^2 \to \mathbb P^5\).</li>
+</ul>
+</div>
+
+<p>
+What about the Picard group of \(X_{a_1,a_2}\)? This is generated freely by the class \(L\) of a line in the ruling and by \(H\) the class of a hyperplane section. Note that you can write \(H = C_1 + a_2 \cdot L = C_2 + a_1 \cdot L\), so you can choose the class of one of the curves instead of \(H\) if you prefer. Some intersection pairings:
+</p>
+<ul class="org-ul">
+<li>\(L.L = 0\)</li>
+<li>\(L.H = 1\)</li>
+<li>\(H.H = a_1 + a_2 = r - 1\)</li>
+</ul>
+
+<p>
+<i>Remarks:</i> Remember
+</p>
+\begin{align*}
+    M =
+    \begin{pmatrix}
+        x_0 & x_1 & x_2 & \dots & x_{r-1} \\
+        x_1 & x_2 & x_3 & \dots & x_r
+    \end{pmatrix}.
+\end{align*}
+<p>
+Set
+</p>
+\begin{align*}
+    M' =
+    \begin{pmatrix}
+        x_0 & x_1 & x_2 & \dots & x_{a_1-1} & y_0 & y_1 & \dots & y_{a_2 - 1} \\
+        x_1 & x_2 & x_3 & \dots & x_{a_1} & y_0 & y_1 & \dots & y_{a_2}
+    \end{pmatrix}.
+\end{align*}
+<ol class="org-ol">
+<li>\(X_{a_1, a_2}\) will be cut out by \(2\times 2\) minors of \(M'\), \(\binom{r-1}{2}\) quadrics.</li>
+<li>The surface \(X_{a_1,a_2}\) is projectively normal: \[0 \to I_{X_{a_1,a_2}} \xrightarrow{\cdot H} I_{X_{a_{1},a_2}}(\ell) \to I_{X_{a_1,a_2}\cap H}^H(\ell) \to 0.\]</li>
+<li>\(X_{a_1,a_2}\cong \mathbb P(\mathcal O_{\mathbb P^1}(a_1)\oplus \mathcal O_{\mathbb P^1}(a_2))\cong \mathbb F_{|a_2 - a_1|}\) where \(\mathbb F_{|a_2 - a_1|}\) is a Hirzebruch surface.</li>
+</ol>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-20" href="../../notes/algebraic-curves-20/">Algebraic Curves Lecture 20</a></li>
+    <li><a data-note="algebraic-curves-23" href="../../notes/algebraic-curves-23/">Algebraic Curves Lecture 23</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

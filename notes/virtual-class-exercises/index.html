@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Class Exercises — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/virtual-class-exercises/"
+      data-note-title="Virtual Class Exercises">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#questions">Questions</a></li>
+    <li class="toc-l2"><a href="#section-1-cones">Section 1: Cones</a></li>
+    <li class="toc-l3"><a href="#question-1-1">Question 1.1</a></li>
+    <li class="toc-l3"><a href="#question-1-2">Question 1.2</a></li>
+    <li class="toc-l3"><a href="#question-1-3">Question 1.3</a></li>
+    <li class="toc-l3"><a href="#question-1-4">Question 1.4</a></li>
+    <li class="toc-l3"><a href="#question-1-5">Question 1.5</a></li>
+    <li class="toc-l2"><a href="#section-2-first-construction-of-an-obstruction-theory-and-a-virtual-class">Section 2: First construction of an obstruction theory and a virtual class</a></li>
+    <li class="toc-l3"><a href="#question-2-1">Question 2.1</a></li>
+    <li class="toc-l3"><a href="#question-2-2">Question 2.2</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Virtual Class Exercises</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+These are solutions to Rachel Webb&rsquo;s virtual classes notes.
+</p>
+<div id="outline-container-questions" class="outline-2">
+<h2 id="questions">Questions</h2>
+<div class="outline-text-2" id="text-questions">
+<ul class="org-ul">
+<li>in question 2.1 part (b), what precisely breaks when we drop the requirement that \(X\) is pure dimensional?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-section-1-cones" class="outline-2">
+<h2 id="section-1-cones">Section 1: Cones</h2>
+<div class="outline-text-2" id="text-section-1-cones">
+</div>
+<div id="outline-container-question-1-1" class="outline-3">
+<h3 id="question-1-1">Question 1.1</h3>
+<div class="outline-text-3" id="text-question-1-1">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+Let \(X\) be an algebraic stack and let \(C = \underline{\Spec}_X(S^\bullet)\) be a cone over \(X\). The <i>abelian hull</i> of \(C\) is the abelian cone \(A(C) = \underline{Spec}_X(\Sym(S^1))\)
+</p>
+<ol class="org-ol">
+<li>Show that there is a natural closed embedding \(C\hookrightarrow A(C)\). Apply this to construct the closed embedding.</li>
+<li>Show that \(C\hookrightarrow A(C)\) has the following universal property: if \(E\) is an abelian cone on \(X\) and \(C\hookrightarrow E\) is a closed embedding then there is a unique factorization \(C\to A(C) \to E\) of \(C\to E\). Moreover \(A(C) \to E\) is a closed embedding.</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<ol class="org-ol">
+<li>We know \(S^\bullet\) is a graded \(\mathcal O_X\)-algebra generated in degree \(1\) since \(C\) is a cone over \(X\). This means there is a surjective \(\mathcal O_X\)-algebra homomorphism \(\Sym S^1\twoheadrightarrow S^\bullet\), hence \(S^\bullet \cong \Sym S^1/\mathcal I\) for some ideal sheaf \(\mathcal I \subseteq \Sym S^1\), hence \(C\to A(C)\) is a closed embedding.</li>
+
+<li>Suppose \(E = \GlSpec \Sym \mathcal E\) is some other abelian cone such that there exists a closed embedding \(\Sym (\mathcal E)\twoheadrightarrow S^\bullet\). Then in particular \(\Sym(\mathcal E)\) surjects onto \(S^1\), and hence we can lift this to a surjection \(\Sym(\mathcal E) \twoheadrightarrow \Sym (S^1)\). This corresponds to a composition of closed embeddings \(C\hookrightarrow A(C) \hookrightarrow E\) after applying \(\GlSpec(-)\).</li>
+</ol>
+</details>
+</div>
+</div>
+<div id="outline-container-question-1-2" class="outline-3">
+<h3 id="question-1-2">Question 1.2</h3>
+<div class="outline-text-3" id="text-question-1-2">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+Prove Lemma 1.2.2.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The following is a statement of the lemma: 
+</p>
+
+<p>
+<i>If \(X\hookrightarrow Y\) is a Koszul-regular embedding, then \(C_{X/Y} = N_{X/Y}\) and these cones are vector bundles. If moreover \(Y\) has pure dimension then the rank of \(N_{X/Y}\) is the codimension of \(X\) in \(Y\).</i>
+</p>
+
+<p>
+Here \(X\) and \(Y\) are algebraic stacks. By Remark 1.2.3 in the text, Koszul-regularity of \(X\hookrightarrow Y\) is fpqc-local on \(Y\), so we may assume \(X\) and \(Y\) are affine schemes, reducing the problem to showing that 
+\[\Sym(I/I^2) \twoheadrightarrow \bigoplus_{i=0}^\infty I^i/I^{i+1} \] 
+is surjective, where \(I\) is the ideal sheaf of \(X = \Spec (R/I)\) in \(Y = \Spec (R)\). However, by Stacks Section 062D, &ldquo;Koszul regular sequences&rdquo;, a <a class="idlink" data-note="koszul-regular-defn" href="../../notes/koszul-regular-defn/">Koszul-regular ideal</a> is a <a class="idlink" data-note="quasi-regular-sequence-defn" href="../../notes/quasi-regular-sequence-defn/">quasi-regular ideal</a>, and hence by definition
+\[(R/I)[x_1,...,x_n] \cong \bigoplus_{i=0}^\infty I^i/I^{i+1}.\]
+In particular this means \(I/I^2\) is free, and thus \(\Sym(I/I^2) \cong (R/I)[x_1,...,x_n]\).
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-question-1-3" class="outline-3">
+<h3 id="question-1-3">Question 1.3</h3>
+<div class="outline-text-3" id="text-question-1-3">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+Prove Lemma 1.2.4.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The statement of Lemma 1.2.4 is
+</p>
+
+<p>
+<i>Suppose we have a cartesian diagram of schemes of algebraic stacks</i>
+</p>
+
+<div class="org-center">
+<figure class="tikz" id="tikz-23b8edb64514d939"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -86.285429 92.572399 63.976631' width='9.2572em'>
+<defs>
+<path id='tz23b8edb64514d939-g1-48' d='M1.793275-2.316314C1.798257-2.321295 1.843088-2.41594 1.843088-2.49066C1.843088-2.669988 1.683686-2.784558 1.534247-2.784558C1.330012-2.784558 1.275218-2.630137 1.250311-2.555417L.483188-.398506C.463263-.33873 .463263-.323786 .463263-.318804C.463263-.239103 .672478-.18929 .67746-.18929C.722291-.18929 .732254-.214197 .762142-.273973L1.793275-2.316314Z'/>
+<path id='tz23b8edb64514d939-g3-19' d='M.808966-1.45056C.739228-1.227397 .516065-.718306 .516065-.523039C.516065-.244085 .732254 .069738 1.199502 .069738C1.513325 .069738 1.868991-.055791 2.154919-.285928C2.545455-.606725 2.608219-.983313 2.608219-.99726C2.608219-1.08792 2.517559-1.08792 2.496638-1.08792C2.405978-1.08792 2.39203-1.060025 2.364134-.955417C2.189788-.446326 1.638854-.125529 1.21345-.125529C1.115816-.125529 1.025156-.146451 1.025156-.369614C1.025156-.418431 1.025156-.523039 1.108842-.732254C1.48543-1.736488 1.736488-2.824408 1.736488-2.852304C1.736488-2.977833 1.638854-3.075467 1.499377-3.075467C1.366874-3.075467 1.248319-2.977833 1.206476-2.894147C1.157659-2.761644 1.094894-2.426899 1.053051-2.294396C1.011208-2.182814 .934496-1.882939 .899626-1.771357L.808966-1.45056Z'/>
+<path id='tz23b8edb64514d939-g3-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tz23b8edb64514d939-g3-103' d='M3.710087-2.57335C3.737983-2.677958 3.737983-2.712827 3.737983-2.719801C3.737983-2.873225 3.612453-2.942964 3.500872-2.942964C3.340473-2.942964 3.20797-2.810461 3.180075-2.677958C3.061519-2.866252 2.824408-3.075467 2.461768-3.075467C1.590037-3.075467 .676463-2.140971 .676463-1.143711C.676463-.425405 1.164633 0 1.736488 0C2.057285 0 2.364134-.160399 2.608219-.376588L2.454795 .251059C2.378082 .54396 2.329265 .732254 2.064259 .969365C1.75741 1.227397 1.457534 1.227397 1.283188 1.227397C.962391 1.227397 .871731 1.206476 .746202 1.17858C.920548 1.094894 .969365 .927522 .969365 .829888C.969365 .662516 .836862 .571856 .697385 .571856C.502117 .571856 .299875 .732254 .299875 .99726C.299875 1.415691 .899626 1.422665 1.290162 1.422665C2.385056 1.422665 2.852304 .864757 2.949938 .467248L3.710087-2.57335ZM2.747696-.927522C2.719801-.822914 2.719801-.808966 2.601245-.669489C2.357161-.376588 2.022416-.195268 1.75741-.195268C1.401743-.195268 1.234371-.495143 1.234371-.857783C1.234371-1.164633 1.422665-1.945704 1.603985-2.252553C1.896887-2.740722 2.224658-2.880199 2.461768-2.880199C2.949938-2.880199 3.082441-2.357161 3.082441-2.287422C3.082441-2.273474 3.082441-2.259527 3.061519-2.182814L2.747696-.927522Z'/>
+<path id='tz23b8edb64514d939-g0-48' d='M2.022416-3.291656C2.078207-3.410212 2.085181-3.466002 2.085181-3.514819C2.085181-3.731009 1.889913-3.898381 1.673724-3.898381C1.408717-3.898381 1.325031-3.682192 1.290162-3.57061L.369614-.550934C.36264-.536986 .334745-.446326 .334745-.439352C.334745-.355666 .550934-.285928 .606725-.285928C.655542-.285928 .662516-.299875 .711333-.404483L2.022416-3.291656Z'/>
+<path id='tz23b8edb64514d939-g2-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+<path id='tz23b8edb64514d939-g2-89' d='M5.947696-5.668742L6.087173-5.808219C6.386052-6.107098 6.714819-6.445828 7.392279-6.495641C7.501868-6.505604 7.591532-6.505604 7.591532-6.684932C7.591532-6.764633 7.541719-6.804483 7.462017-6.804483C7.202989-6.804483 6.914072-6.774595 6.645081-6.774595C6.316314-6.774595 5.967621-6.804483 5.648817-6.804483C5.589041-6.804483 5.459527-6.804483 5.459527-6.615193C5.459527-6.505604 5.559153-6.495641 5.608966-6.495641C5.678705-6.495641 5.967621-6.475716 5.967621-6.266501C5.967621-6.097136 5.738481-5.838107 5.69863-5.788294L3.387298-3.128269L2.291407-6.087173C2.231631-6.22665 2.231631-6.246575 2.231631-6.256538C2.231631-6.495641 2.719801-6.495641 2.819427-6.495641C2.958904-6.495641 3.058531-6.495641 3.058531-6.694894C3.058531-6.804483 2.938979-6.804483 2.909091-6.804483C2.630137-6.804483 1.932752-6.774595 1.653798-6.774595C1.404732-6.774595 .787049-6.804483 .537983-6.804483C.478207-6.804483 .348692-6.804483 .348692-6.60523C.348692-6.495641 .448319-6.495641 .577833-6.495641C1.175592-6.495641 1.215442-6.405978 1.305106-6.156912L2.530511-2.879203C2.540473-2.849315 2.570361-2.739726 2.570361-2.709838S2.171856-1.075965 2.122042-.896638C1.992528-.348692 1.982565-.318804 1.185554-.308842C.996264-.308842 .916563-.308842 .916563-.109589C.916563 0 1.036115 0 1.05604 0C1.334994 0 2.032379-.029888 2.311333-.029888S3.307597 0 3.58655 0C3.656289 0 3.775841 0 3.775841-.199253C3.775841-.308842 3.686177-.308842 3.496887-.308842C3.476961-.308842 3.287671-.308842 3.118306-.328767C2.909091-.348692 2.849315-.368618 2.849315-.488169C2.849315-.557908 2.938979-.9066 2.988792-1.115816L3.337484-2.520548C3.387298-2.709838 3.39726-2.739726 3.476961-2.82939L5.947696-5.668742Z'/>
+</defs>
+<g id='tz23b8edb64514d939-page1'>
+<g stroke-miterlimit='10' transform='translate(-39.040336,-46.057038)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-31.08327,-20.17757)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.040336,-46.057038)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-28.835577,-78.771684)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.93748,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-28.835577,-78.771684)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-28.835577' y='-78.771684' xlink:href='#tz23b8edb64514d939-g2-88'/>
+<use x='-19.800021' y='-82.387048' xlink:href='#tz23b8edb64514d939-g0-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(14.086716,-78.771684)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(14.086716,-78.771684)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='14.086716' y='-78.771684' xlink:href='#tz23b8edb64514d939-g2-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-28.835577,-46.057038)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.41667,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-28.835577,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-28.835577' y='-46.057038' xlink:href='#tz23b8edb64514d939-g2-89'/>
+<use x='-20.837771' y='-49.672402' xlink:href='#tz23b8edb64514d939-g0-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(14.086716,-46.057038)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.01389,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(14.086716,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='14.086716' y='-46.057038' xlink:href='#tz23b8edb64514d939-g2-89'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-10.39722 15.15976H12.8028' fill='none'/>
+<g transform='translate(13.00278,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-0.67345,18.8736)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.040336,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.040336' y='-46.057038' xlink:href='#tz23b8edb64514d939-g3-103'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.84024 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.84024,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-18.48749,-2.89777)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.040336,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.040336' y='-46.057038' xlink:href='#tz23b8edb64514d939-g3-19'/>
+<use x='-36.091872' y='-49.063555' xlink:href='#tz23b8edb64514d939-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M22.24301 8.80003V-9.08456' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,22.24301,-9.28455)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(24.59576,-1.84918)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.040336,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.040336' y='-46.057038' xlink:href='#tz23b8edb64514d939-g3-19'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-10.91803-17.67757H13.32362' fill='none'/>
+<g transform='translate(13.5236,-17.67757)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-0.93927,-13.96371)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-39.040336,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-39.040336' y='-46.057038' xlink:href='#tz23b8edb64514d939-g3-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+<i>where vertical maps are closed embeddings. Then there is a closed embedding \(C_{X'/Y'}\hookrightarrow C_{X/Y}\times_X X'\)</i>.
+</p>
+
+<p>
+Suppose then that we&rsquo;re in this situation. Let \(\mathcal I\) be the defining ideal of \(X\) in \(\mathcal O_Y\) and \(\mathcal I'\) the defining ideal of \(X'\) in \(Y'\). Taking the exact sequence
+\[0 \to \mathcal I \to \mathcal O_Y \to \iota_*\mathcal O_X\to 0\]
+and pulling back to \(Y'\) gives us
+\[f^*\mathcal I\to \mathcal O_{Y'}\to \iota'_*\mathcal O_{X'} \to 0\]
+using the natural identifications \(f^*\mathcal O_Y = \mathcal O_{Y'}\) and \(f^*\iota_*\mathcal O_X = \iota'_*\mathcal O_{X'}\) (see Vakil 16.3.9). This means that \(f^*\mathcal I\) maps onto \(\mathcal I'\) in \(\mathcal O_Y\), i.e. \(f^*\mathcal I\twoheadrightarrow \mathcal I'\). This surjection also holds if we pull back to \(X'\) , so we get a surjection of graded algebras
+\[\bigoplus_{n\geq 0}g^*(\mathcal I^n/\mathcal I^{n+1}) \twoheadrightarrow \bigoplus_{n\geq 0}\mathcal I'^n/\mathcal I'^{n+1}.\]
+Applying \(\Spec(-)\) then gives us
+\[C_{X'/Y'}\hookrightarrow C_{X/Y}\times_{X}X'.\]
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-question-1-4" class="outline-3">
+<h3 id="question-1-4">Question 1.4</h3>
+<div class="outline-text-3" id="text-question-1-4">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+Let \(Y = \Spec k[x]/(x^2)\) and \(X = \mathbb V(x)\). Show that \(C_{X/Y}\) and \(N_{X/Y}\) are not equal.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(I = (x)\subset k[x]/(x^2) \). Then
+\[\Sym I/I^2 \cong k[x],\]
+so \(N_{X/Y} \cong \mathbb A^1\). But
+\[\bigoplus_{n\geq 0} I^n/I^{n+1}\cong k\oplus k\cdot x \cong k[x]/(x^2),\]
+simply because \(I^2 = 0\) in \(\mathcal O_Y\). So \(C_{X/Y}\cong Y \not\cong \mathbb A^1 \cong N_{X/Y}\).
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-question-1-5" class="outline-3">
+<h3 id="question-1-5">Question 1.5</h3>
+<div class="outline-text-3" id="text-question-1-5">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+Let \(Z = \mathbb A^2_{xy}\), \(Y = \mathbb V(y^2 + x^3 - x^2)\) and \(X\)be the origin. Describe \(C_{X/Y}, N_{X/Y}, C_{Y/Z}, N_{Y/Z} \).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(I = (y^2 + x^3 - x^2)\) and \(J = (x,y)\subset k[x,y]/I\). The minimal generating set of \(J\) is \(x,y\) so \(N_{X/Y}\) is two dimensional and is isomorphic to \(\mathbb A^2\). However since \(y^2 = x^2(1-x)\), \(J^2\) is generated by \(x^2, xy\). Looking at the morphism
+\[(k[x,y]/I)[A,B]\to \bigoplus_{n\geq 0}J^n/J^{n+1}\]
+defined by \(A\mapsto x\), \(B \mapsto y\), we see the kernel is generated by \(A^2 - (1-x)B^2\), so \(C_{X/Y} \cong \)
+</p>
+</details>
+</div>
+</div>
+</div>
+<div id="outline-container-section-2-first-construction-of-an-obstruction-theory-and-a-virtual-class" class="outline-2">
+<h2 id="section-2-first-construction-of-an-obstruction-theory-and-a-virtual-class">Section 2: First construction of an obstruction theory and a virtual class</h2>
+<div class="outline-text-2" id="text-section-2-first-construction-of-an-obstruction-theory-and-a-virtual-class">
+</div>
+<div id="outline-container-question-2-1" class="outline-3">
+<h3 id="question-2-1">Question 2.1</h3>
+<div class="outline-text-3" id="text-question-2-1">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+(a) Justify the claims in Example 5.
+(b) Generalize the first part of the example by showing that when \(X\) is a pure dimensional scheme, the fundamental class \([X]\) can be realized as a virtual fundamental class with respect to the identity embedding \(X\hookrightarrow X\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<b>Part (a)</b> 
+Example 5 demonstrates that a space can carry multiple virtual classes. If \(X = \mathbb P^1\) then \(X\) is the zero section of the zero rank vector bundle on \(X\), producing the virtual class \([X]\). The space \(X\) can also be realized as the twisted cubic given by \(\mathbb P^1_{tu} \hookrightarrow \mathbb P^3_{xyzw}\), \(t\mapsto [t^3, t^2u, tu^2, u^3]\). The image of this embedding is cut out by \((xz - y^2, yw - z^2, xw - yz)\), meaning it is the vanishing of a section of \(\mathcal O_{\mathbb P^3}(2)^{\oplus 3}\). The associated virtual class is \(8[\pt]\), and this is what we must justify. Let \(s\) be the section above whose zero locus is \(X\) and let \(E\) be the vector bundle \(\mathcal O_{\mathbb P^3}(2)^{\oplus 3}\). Then for \(Y = \mathbb P^3\) we have the fiber diagram
+</p>
+
+<div class="org-center">
+<figure class="tikz" id="tikz-87380e858bfc5e33"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -84.638217 86.495219 61.903465' width='8.6495em'>
+<defs>
+<path id='tz87380e858bfc5e33-g2-69' d='M4.597758-1.185554C4.607721-1.205479 4.627646-1.24533 4.627646-1.270237C4.627646-1.300125 4.607721-1.354919 4.523039-1.354919C4.448319-1.354919 4.443337-1.344956 4.388543-1.220423C4.029888-.4533 3.745953-.224159 2.859278-.224159H1.858032C1.818182-.224159 1.748443-.224159 1.69863-.234122C1.703611-.273973 1.703611-.283935 1.713574-.323786L2.042341-1.643836H2.689913C3.16812-1.643836 3.183064-1.559153 3.183064-1.399751C3.183064-1.364882 3.183064-1.315068 3.153176-1.190535C3.153176-1.175592 3.148194-1.155666 3.148194-1.145704C3.148194-1.140722 3.148194-1.061021 3.247821-1.061021C3.332503-1.061021 3.342466-1.090909 3.362391-1.175592L3.646326-2.291407C3.651308-2.311333 3.66127-2.34122 3.66127-2.366127C3.66127-2.396015 3.641345-2.450809 3.556663-2.450809S3.462017-2.41594 3.442092-2.34122C3.327522-1.932752 3.16812-1.867995 2.704857-1.867995H2.097136L2.381071-2.993773C2.420922-3.148194 2.420922-3.158157 2.630137-3.158157H3.596513C4.308842-3.158157 4.513076-3.038605 4.513076-2.520548C4.513076-2.445828 4.498132-2.356164 4.498132-2.286426S4.547945-2.191781 4.60274-2.191781C4.697385-2.191781 4.702366-2.236613 4.712329-2.331258L4.79203-3.217933L4.801993-3.292653C4.801993-3.382316 4.727273-3.382316 4.637609-3.382316H1.549191C1.449564-3.382316 1.374844-3.382316 1.374844-3.242839C1.374844-3.158157 1.43462-3.158157 1.559153-3.158157C1.608966-3.158157 1.77335-3.158157 1.877958-3.128269C1.877958-3.068493 1.877958-3.058531 1.863014-3.003736L1.215442-.41345C1.175592-.26401 1.17061-.224159 .787049-.224159C.662516-.224159 .582814-.224159 .582814-.084682C.582814 0 .662516 0 .747198 0H3.920299C4.044832 0 4.049813 0 4.094645-.094645L4.597758-1.185554Z'/>
+<path id='tz87380e858bfc5e33-g3-48' d='M3.598506-2.224658C3.598506-2.991781 3.507846-3.542715 3.187049-4.030884C2.970859-4.351681 2.538481-4.630635 1.980573-4.630635C.36264-4.630635 .36264-2.726775 .36264-2.224658S.36264 .139477 1.980573 .139477S3.598506-1.72254 3.598506-2.224658ZM1.980573-.055791C1.659776-.055791 1.234371-.244085 1.094894-.81594C.99726-1.227397 .99726-1.799253 .99726-2.315318C.99726-2.824408 .99726-3.354421 1.101868-3.737983C1.248319-4.288917 1.694645-4.435367 1.980573-4.435367C2.357161-4.435367 2.719801-4.20523 2.84533-3.800747C2.956912-3.424159 2.963885-2.922042 2.963885-2.315318C2.963885-1.799253 2.963885-1.283188 2.873225-.843836C2.733748-.209215 2.259527-.055791 1.980573-.055791Z'/>
+<path id='tz87380e858bfc5e33-g1-105' d='M2.259527-4.358655C2.259527-4.470237 2.175841-4.623661 1.980573-4.623661C1.792279-4.623661 1.590037-4.442341 1.590037-4.2401C1.590037-4.121544 1.680697-3.975093 1.868991-3.975093C2.071233-3.975093 2.259527-4.170361 2.259527-4.358655ZM.836862-.81594C.808966-.72528 .774097-.641594 .774097-.523039C.774097-.195268 1.053051 .069738 1.436613 .069738C2.133998 .069738 2.440847-.892653 2.440847-.99726C2.440847-1.08792 2.350187-1.08792 2.329265-1.08792C2.231631-1.08792 2.224658-1.046077 2.196762-.969365C2.036364-.411457 1.729514-.125529 1.457534-.125529C1.318057-.125529 1.283188-.216189 1.283188-.369614C1.283188-.530012 1.332005-.662516 1.39477-.81594C1.464508-1.004234 1.54122-1.192528 1.617933-1.373848C1.680697-1.54122 1.931756-2.175841 1.959651-2.259527C1.980573-2.329265 2.001494-2.412951 2.001494-2.48269C2.001494-2.810461 1.72254-3.075467 1.338979-3.075467C.648568-3.075467 .327771-2.127024 .327771-2.008468C.327771-1.917808 .425405-1.917808 .446326-1.917808C.54396-1.917808 .550934-1.952677 .571856-2.02939C.753176-2.629141 1.060025-2.880199 1.318057-2.880199C1.429639-2.880199 1.492403-2.824408 1.492403-2.636115C1.492403-2.475716 1.45056-2.371108 1.276214-1.93873L.836862-.81594Z'/>
+<path id='tz87380e858bfc5e33-g1-115' d='M3.005729-2.622167C2.824408-2.580324 2.712827-2.433873 2.712827-2.294396C2.712827-2.133998 2.852304-2.071233 2.942964-2.071233C3.012702-2.071233 3.277709-2.113076 3.277709-2.468742C3.277709-2.922042 2.775592-3.075467 2.350187-3.075467C1.262267-3.075467 1.066999-2.273474 1.066999-2.057285C1.066999-1.799253 1.21345-1.63188 1.311083-1.548194C1.492403-1.408717 1.617933-1.380822 2.099128-1.297136C2.245579-1.26924 2.691905-1.185554 2.691905-.836862C2.691905-.718306 2.615193-.4533 2.322291-.278954C2.050311-.125529 1.708593-.125529 1.624907-.125529C1.345953-.125529 .948443-.188294 .788045-.418431C1.018182-.446326 1.171606-.620672 1.171606-.81594C1.171606-.990286 1.046077-1.073973 .899626-1.073973C.697385-1.073973 .495143-.913574 .495143-.606725C.495143-.188294 .941469 .069738 1.617933 .069738C2.901121 .069738 3.138232-.808966 3.138232-1.080946C3.138232-1.72254 2.433873-1.84807 2.175841-1.896887C2.113076-1.910834 1.93873-1.93873 1.896887-1.952677C1.638854-2.001494 1.513325-2.147945 1.513325-2.30137C1.513325-2.461768 1.638854-2.650062 1.792279-2.747696C1.980573-2.866252 2.224658-2.880199 2.343213-2.880199C2.489664-2.880199 2.852304-2.859278 3.005729-2.622167Z'/>
+<path id='tz87380e858bfc5e33-g0-69' d='M7.053549-2.321295C7.073474-2.371108 7.103362-2.440847 7.103362-2.460772C7.103362-2.470735 7.103362-2.570361 6.983811-2.570361C6.894147-2.570361 6.874222-2.510585 6.854296-2.450809C6.206725-.976339 5.838107-.308842 4.134496-.308842H2.67995C2.540473-.308842 2.520548-.308842 2.460772-.318804C2.361146-.328767 2.331258-.33873 2.331258-.418431C2.331258-.448319 2.331258-.468244 2.381071-.647572L3.058531-3.367372H4.044832C4.891656-3.367372 4.891656-3.158157 4.891656-2.909091C4.891656-2.839352 4.891656-2.719801 4.821918-2.420922C4.801993-2.371108 4.79203-2.34122 4.79203-2.311333C4.79203-2.261519 4.83188-2.201743 4.921544-2.201743C5.001245-2.201743 5.031133-2.251557 5.070984-2.400996L5.638854-4.732254C5.638854-4.79203 5.589041-4.841843 5.519303-4.841843C5.429639-4.841843 5.409714-4.782067 5.379826-4.662516C5.17061-3.905355 4.991283-3.676214 4.07472-3.676214H3.138232L3.73599-6.07721C3.825654-6.425903 3.835616-6.465753 4.273973-6.465753H5.678705C6.894147-6.465753 7.193026-6.176837 7.193026-5.3599C7.193026-5.120797 7.193026-5.100872 7.153176-4.83188C7.153176-4.772105 7.143213-4.702366 7.143213-4.652553S7.173101-4.533001 7.262765-4.533001C7.372354-4.533001 7.382316-4.592777 7.402242-4.782067L7.601494-6.505604C7.631382-6.774595 7.581569-6.774595 7.332503-6.774595H2.30137C2.102117-6.774595 2.002491-6.774595 2.002491-6.575342C2.002491-6.465753 2.092154-6.465753 2.281445-6.465753C2.650062-6.465753 2.929016-6.465753 2.929016-6.286426C2.929016-6.246575 2.929016-6.22665 2.879203-6.047323L1.564134-.777086C1.464508-.388543 1.444583-.308842 .657534-.308842C.488169-.308842 .37858-.308842 .37858-.119552C.37858 0 .468244 0 .657534 0H5.828144C6.057285 0 6.067248-.009963 6.136986-.169365L7.053549-2.321295Z'/>
+<path id='tz87380e858bfc5e33-g0-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+<path id='tz87380e858bfc5e33-g0-89' d='M5.947696-5.668742L6.087173-5.808219C6.386052-6.107098 6.714819-6.445828 7.392279-6.495641C7.501868-6.505604 7.591532-6.505604 7.591532-6.684932C7.591532-6.764633 7.541719-6.804483 7.462017-6.804483C7.202989-6.804483 6.914072-6.774595 6.645081-6.774595C6.316314-6.774595 5.967621-6.804483 5.648817-6.804483C5.589041-6.804483 5.459527-6.804483 5.459527-6.615193C5.459527-6.505604 5.559153-6.495641 5.608966-6.495641C5.678705-6.495641 5.967621-6.475716 5.967621-6.266501C5.967621-6.097136 5.738481-5.838107 5.69863-5.788294L3.387298-3.128269L2.291407-6.087173C2.231631-6.22665 2.231631-6.246575 2.231631-6.256538C2.231631-6.495641 2.719801-6.495641 2.819427-6.495641C2.958904-6.495641 3.058531-6.495641 3.058531-6.694894C3.058531-6.804483 2.938979-6.804483 2.909091-6.804483C2.630137-6.804483 1.932752-6.774595 1.653798-6.774595C1.404732-6.774595 .787049-6.804483 .537983-6.804483C.478207-6.804483 .348692-6.804483 .348692-6.60523C.348692-6.495641 .448319-6.495641 .577833-6.495641C1.175592-6.495641 1.215442-6.405978 1.305106-6.156912L2.530511-2.879203C2.540473-2.849315 2.570361-2.739726 2.570361-2.709838S2.171856-1.075965 2.122042-.896638C1.992528-.348692 1.982565-.318804 1.185554-.308842C.996264-.308842 .916563-.308842 .916563-.109589C.916563 0 1.036115 0 1.05604 0C1.334994 0 2.032379-.029888 2.311333-.029888S3.307597 0 3.58655 0C3.656289 0 3.775841 0 3.775841-.199253C3.775841-.308842 3.686177-.308842 3.496887-.308842C3.476961-.308842 3.287671-.308842 3.118306-.328767C2.909091-.348692 2.849315-.368618 2.849315-.488169C2.849315-.557908 2.938979-.9066 2.988792-1.115816L3.337484-2.520548C3.387298-2.709838 3.39726-2.739726 3.476961-2.82939L5.947696-5.668742Z'/>
+</defs>
+<g id='tz87380e858bfc5e33-page1'>
+<g stroke-miterlimit='10' transform='translate(-40.956748,-45.80104)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-29.15967,-19.49306)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.956748,-45.80104)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.14952,-77.833734)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.14952,-77.833734)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.14952' y='-77.833734' xlink:href='#tz87380e858bfc5e33-g0-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(8.856361,-77.833734)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.01389,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(8.856361,-77.833734)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='8.856361' y='-77.833734' xlink:href='#tz87380e858bfc5e33-g0-89'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.14952,-45.80104)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.01389,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.14952,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.14952' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g0-89'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(8.856361,-45.80104)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.97916,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(8.856361,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='8.856361' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g0-69'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-9.83925 15.15976H11.92085' fill='none'/>
+<g transform='matrix(-1.0,0.0,0.0,1.0,-9.83925,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linejoin='miter'>
+ <g stroke-linecap='round'>
+ <path d='M0 1.95987C.6848 1.95987 1.23993 1.52113 1.23993 .97993C1.23993 .43874 .6848 0 0 0' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(12.12083,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-0.89381,17.51251)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.956748,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.956748' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g1-105'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.31941 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.31941,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-17.96666,-2.31595)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.956748,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.956748' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g1-105'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M20.84024 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,20.84024,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(23.193,-1.50693)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.956748,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.956748' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g1-115'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-11.79999-16.99306H11.95558' fill='none'/>
+<g transform='translate(12.15556,-16.99306)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-4.61116,-13.63475)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.956748,-45.80104)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.956748' y='-45.80104' xlink:href='#tz87380e858bfc5e33-g3-48'/>
+<use x='-36.985508' y='-44.799227' xlink:href='#tz87380e858bfc5e33-g2-69'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+with Gysin pullback \(i^!_E\) (or maybe denoted \(0^!_E\)) is given by the composition
+\[A_*(Y) \xrightarrow{\sigma}A_*(C_{X/Y})\xrightarrow{j_*}A_*(j^*N_{Y/E}) \xrightarrow{(p^*)^{-1}}A_{*-d}(X)\]
+where
+</p>
+<ul class="org-ul">
+<li>\(\sigma\) sends the class \([V]\) corresponding to a pure dimensional subvariety \(V\subset Y\) to \([C_{V\cap X/Y}]\)</li>
+<li>\(j\) is the composition \(C_{X/Y}\hookrightarrow C_{Y/E}\times_Y X \xrightarrow{\sim} N_{Y/E}\times_Y X = i^*N_{Y/E} \) (see Exercise 1.3) and \(j_*\) is proper pushforward</li>
+<li>\((p^*)^{-1}\) is the inverse of the flat pullback map given by \(p:i^*N_{Y/E}\to X\).</li>
+</ul>
+
+<p>
+With this data, \([X]^{vir} = i_E^!([Y])\). Because we&rsquo;re in the nice regular embedding into a vector bundle case, it satisfies the equation
+\[i_*[X]^{vir} = c_{top}(E)\cap [Y]\]
+by Fulton&rsquo;s <i>Intersection Theory</i> Section 14.1. Since \(Y = \mathbb P^3\) in this case and \(E = \mathcal O_{\mathbb P^3}(2)^{\oplus 3}\), we have
+\[i_*[X]^{vir} = c_1(\mathcal O_{\mathbb P^3}(2))^{\cap 3} \cap [Y] = 8[pt].\]
+</p>
+
+<p>
+<b>Part (b)</b>
+We can of course realize \([X]\) as a virtual class by taking the identity embedding \(X\hookrightarrow X\), replacing \(Y\) with \(X\) and \(E\) with the trivial vector bundle (also \(X\)). Then nothing is happening and all the maps above are simply identity maps on \(A_*(X)\). Alternatively, we just use the Fulton formula and get that \([X]^{vir} = c_{top}(E)\cap [X]\), but since \(E\) is the zero vector bundle, its top Chern class is the identity operator.
+</p>
+
+<p>
+I think we need \(X\) to be pure dimensional so the fundamental class is pure dimensional&#x2026;otherwise something wacky happens with the normal cone construction, but I&rsquo;m not exactly sure where it breaks.
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-question-2-2" class="outline-3">
+<h3 id="question-2-2">Question 2.2</h3>
+<div class="outline-text-3" id="text-question-2-2">
+<div class="env env-exercise">
+<p class="env-label">Exercise</p>
+<p>
+The point of this exercise is to show that if \(p:E\to Y\) is a rank \(d\) vector bundle over \(Y\) then \((p^*)^{-1}:A_*(E)\to A_{*-d}(Y)\), the inverse of the flat pullback morphism, is also a Gysin morphism.
+(a) First show that if \(s\) is any section of \(E\) then \(s:Y\to E\) is a regular embedding.
+(b) Show that \(s^!:A_*(E)\to A_{*-d}(Y)\) is the inverse to \(p^ * \).
+(c) If \(X = \mathbb V(s)\), \(i:X\hookrightarrow Y\) is the inclusion, \(0_E:Y\to E\) is the zero section, show that
+\[i_*s^!(\alpha) = (p^ *)^{-1}0_{E,*}(\alpha)\]
+for all \(\alpha \in A_*(Y)\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<b>Part (a)</b> We need to check that for every \(y \in Y\) with \(x = s(y)\in E\) that \(Y_x\) is geometrically regular over \(k(x)\). Since \(E\) is a vectory bundle, \(Y_x \cong \mathbb A^d_{k(x)}\), which is indeed regular over \(k(x)\).
+</p>
+
+<p>
+<b>Part (b)</b> The composition \(p\circ s\) is the identity \(\id_Y\). 
+</p>
+
+<p>
+<b>Part (c)</b>
+</p>
+</details>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="koszul-regular-defn" href="../../notes/koszul-regular-defn/">Koszul Regular Defn</a></li>
+    <li><a data-note="quasi-regular-sequence-defn" href="../../notes/quasi-regular-sequence-defn/">Quasi-Regular Sequence Defn</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

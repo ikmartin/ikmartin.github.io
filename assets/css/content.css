@@ -1,0 +1,131 @@
+/* The article column: its measure, page and section headings, the org block classes ox-html emits, the meta line and the footer.
+ *
+ * Loads BEFORE components.css on purpose: `.content h2` here and `.idx-group h2` / `.backlinks h2` there are all specificity (0,2,0) and all set font-size, so which wins is decided by file order alone. Reverse these two files and every index and backlinks heading jumps to 1.65rem.
+ */
+.column { min-width: 0; }
+.content {
+  /* Both the text column and the footer rule below take their width from the same
+     token, so the footer line always spans exactly the text -- gutter to gutter --
+     and keeps doing so if the gutter ratio is ever retuned. See tokens.css. */
+  max-width: var(--content-w);
+  margin: 0 auto;
+  /* Top padding matches the rail's, so the page title sits level with the site
+     title rather than starting partway down. */
+  padding: var(--rail-pad) 1.2rem 3rem;
+}
+
+/* "back to last note", the first child of .content. trail.js unhides it when there is somewhere to go back to; the colour and the hover preview come from the data-note it carries, so nothing here sets them.
+ *
+ * Narrow screens get it in flow above the title, which is why it lives inside .content -- the measure and the padding are then simply inherited. Wide screens pull it out into the gutter left of the text, sized by the same algebra .content uses: (100vw - --rail-w - --measure)/3. That is about 99px at 1360px and 126px at 1440px. The breakpoint is 76rem rather than 72rem because the narrower gutters reach a usable width later than they used to. */
+.back-link {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
+}
+.back-link[hidden] { display: none; }  /* an explicit display beats the attribute */
+
+@media (min-width: 76rem) {
+  .content { position: relative; }
+  .back-link {
+    position: absolute;
+    right: 100%;              /* entirely left of the text column, growing leftward */
+    top: var(--rail-pad);     /* level with the top of the page title */
+    /* Centred in the gutter: the width gives up 1rem, and this margin is half of
+       it, so the slack falls 0.5rem either side. Keep the two in step -- they were
+       0.75rem against 1rem, which sat the link 0.25rem left of centre. */
+    margin: 0 0.5rem 0 0;
+    width: calc(var(--gutter-w) - 1rem);
+    line-height: 1.35;
+    z-index: 1;
+  }
+}
+
+/* An image whose source did not resolve. Deliberately visible: a silently missing figure is indistinguishable from prose that never had one, which is the failure this replaces. The build log carries the full path; the page carries only the basename. */
+.image-missing {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  border: 1px dashed currentColor;
+  border-radius: 3px;
+  opacity: 0.6;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.page-title {
+  font-family: var(--font-head);
+  font-size: var(--step-3);
+  line-height: 1.15;
+  margin: 0 0 1.4rem;
+}
+
+.content h2 { font-size: var(--step-2); margin-top: 2.2rem; }
+.content h3 { font-size: var(--step-1); margin-top: 1.6rem; }
+
+/* Org block equivalents. We do not ship org's default stylesheet, so anything
+   ox-html emits a class for and we rely on has to be declared here. */
+
+/* `\begin{center}` is a PARAGRAPH-level environment: in LaTeX its content flows
+   horizontally and breaks only where the author breaks it. Org disagrees -- it parses
+   every `\begin{tikzcd}` as a block-level latex-environment, so a row written
+   "Geometric ~ <diagram> , Tropical ~ <diagram>" arrives here as four stacked blocks
+   and renders as four lines. Laying the children out inline puts the row back.
+
+   Wrapping, not scrolling: two diagrams in one center block are independent figures,
+   so on a narrow screen dropping the second below the first still reads, where a
+   clipped row would not.
+
+   The margin moves here from `.tikz`, whose own block margins are zeroed below -- the
+   block needs the vertical breathing room its figures used to supply. */
+.org-center {
+  text-align: center;
+  margin: 1.6rem 0;
+}
+/* Two classes deep, so this outranks `.tikz`'s own margins wherever components.css
+   sits in the cascade -- specificity decides it, not load order. */
+.org-center > p,
+.org-center > figure,
+.org-center > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
+/* --- footer --- */
+/* The rule spans the text column exactly, because it shares --content-w with
+   .content -- and the same 1.2rem horizontal padding, so the two line up at the
+   edges. `space-between` pins the copyright left and the colophon right. */
+.site-footer {
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem 2.4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space);
+  color: var(--muted);
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+}
+
+/* --- note meta line (taxon · date · tags), sits under the title --- */
+.note-meta {
+  font-family: var(--font-head);
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin: -0.9rem 0 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.note-meta .taxon { text-transform: uppercase; letter-spacing: 0.07em; }
+.note-meta .sep { opacity: 0.5; }
+.note-meta .tag { color: var(--muted); text-decoration: none; }
+.note-meta .tag:hover { color: var(--accent); }
+
+/* --- narrow screens --- */
+@media (max-width: 60rem) {
+  .content { padding-top: 1.6rem; }
+}

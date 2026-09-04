@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planets</title>
+<link rel="stylesheet" href="planets.css">
+</head>
+<body class="gallery-body">
+<div id="gallery"></div>
+<button id="menu-button" class="menu-button" aria-label="Options">&#9776;</button>
+<div id="menu" class="menu-panel" hidden>
+  <div class="control">
+    <span class="control-label">Resolution <span id="resolution-value"></span></span>
+    <input id="resolution" type="range" step="1" min="0">
+  </div>
+  <div class="control">
+    <span class="control-label">Projection</span>
+    <select id="projection"></select>
+  </div>
+  <div class="radio-group">
+    <span class="control-label">View</span>
+    <label class="radio-row"><input type="radio" name="view" value="mean">Mean</label>
+    <label class="radio-row"><input type="radio" name="view" value="animated">Animated</label>
+    <label class="radio-row"><input type="radio" name="view" value="annual">Annual</label>
+    <label class="radio-row"><input type="radio" name="view" value="deeptime">Deep time</label>
+  </div>
+  <label>Spread <input id="spread" type="range" min="0" max="3" step="0.1"></label>
+  <label>Variance contrast <input id="contrast" type="range" min="0.2" max="3" step="0.1"></label>
+  <label>Speed <input id="speed" type="range" min="0.1" max="4" step="0.1"></label>
+  <p class="menu-note" id="note"></p>
+</div>
+<script>
+  /* Geometries arrive by <script> injection rather than fetch, so the page works opened from disk and served from a host other than the data's. Each file calls this on the way in. */
+  var PLANETS_CACHE = {};
+  var PLANETS_WAITING = {};
+  var manifest = null;
+  function PLANETS_DELIVER(slug, payload) {
+    PLANETS_CACHE[slug] = payload;
+    (PLANETS_WAITING[slug] || []).forEach(function (fn) { fn(payload); });
+    delete PLANETS_WAITING[slug];
+  }
+  function PLANETS_MANIFEST(m) { manifest = m; }
+</script>
+<script src="data/manifest.js"></script>
+<script src="data.js"></script>
+<script src="planets.js"></script>
+<script>
+  var view = null;
+  var current = null;
+  var wanted = null;
+  var gallery = document.getElementById("gallery");
+  var noteEl = document.getElementById("note");
+  var resolutionEl = document.getElementById("resolution");
+  var resolutionValueEl = document.getElementById("resolution-value");
+  var projectionEl = document.getElementById("projection");
+  var spreadEl = document.getElementById("spread");
+  var contrastEl = document.getElementById("contrast");
+  var speedEl = document.getElementById("speed");
+
+  function slugFor() {
+    return projectionEl.value + "-" + manifest.mode + "-" +
+      manifest.resolutions[+resolutionEl.value];
+  }
+
+  function request(slug, done) {
+    if (PLANETS_CACHE[slug]) { done(PLANETS_CACHE[slug]); return; }
+    if (PLANETS_WAITING[slug]) { PLANETS_WAITING[slug].push(done); return; }
+    PLANETS_WAITING[slug] = [done];
+    var el = document.createElement("script");
+    el.src = "data/" + slug + ".js";
+    el.onerror = function () {
+      delete PLANETS_WAITING[slug];
+      if (wanted === slug) noteEl.textContent = "Could not load " + slug + ".";
+    };
+    document.head.appendChild(el);
+  }
+
+  /* A coarse geometry can arrive while a finer one is still downloading, so every arrival checks it is still the one being asked for. Without that, dragging the slider leaves whichever file happened to finish last on screen. */
+  function show(slug) {
+    wanted = slug;
+    if (slug === current) return;
+    if (!PLANETS_CACHE[slug]) noteEl.textContent = "Loading\u2026";
+    request(slug, function (data) {
+      if (wanted !== slug) return;
+      current = slug;
+      view = PlanetsGallery.render(gallery, data);
+      view.set({
+        view: document.querySelector('input[name="view"]:checked').value,
+        spread: +spreadEl.value,
+        contrast: +contrastEl.value,
+        speedScale: +speedEl.value
+      });
+      noteEl.textContent = data.rows + " x " + data.cols +
+        " cells - columns follow the projection. Equal area on the sphere: " +
+        "every projection draws the same partition.";
+    });
+  }
+
+  function start(data) {
+    manifest.projections.forEach(function (p) {
+      var option = document.createElement("option");
+      option.value = p.key;
+      option.textContent = p.label;
+      option.selected = p.key === data.projection;
+      projectionEl.appendChild(option);
+    });
+    resolutionEl.max = manifest.resolutions.length - 1;
+    resolutionEl.value = Math.max(0, manifest.resolutions.indexOf(data.rows));
+    resolutionValueEl.textContent = manifest.resolutions[+resolutionEl.value];
+    spreadEl.value = data.defaults.spread;
+    contrastEl.value = data.defaults.contrast;
+    speedEl.value = 1;
+    document.querySelectorAll('input[name="view"]').forEach(function (el) {
+      el.checked = el.value === data.defaults.view;
+      el.addEventListener("change", function () {
+        if (el.checked && view) view.set({view: el.value});
+      });
+    });
+    show(manifest.default);
+
+    resolutionEl.addEventListener("input", function () {
+      resolutionValueEl.textContent = manifest.resolutions[+resolutionEl.value];
+    });
+    /* On `change`, not `input`: a drag across the slider would otherwise request every rung it passes over, and the top one is 65 MB. */
+    resolutionEl.addEventListener("change", function () { show(slugFor()); });
+    projectionEl.addEventListener("change", function () { show(slugFor()); });
+    spreadEl.addEventListener("input", function () { view.set({spread: +spreadEl.value}); });
+    contrastEl.addEventListener("input", function () { view.set({contrast: +contrastEl.value}); });
+    speedEl.addEventListener("input", function () { view.set({speedScale: +speedEl.value}); });
+  }
+
+  document.getElementById("menu-button").addEventListener("click", function () {
+    var menu = document.getElementById("menu");
+    menu.hidden = !menu.hidden;
+  });
+
+  /* manifest.js and data.js are ordinary scripts above this one, so both have already run. If the manifest is missing, fall back to the inlined geometry alone: the page still draws, and the menu offers only what it has. */
+  if (!manifest) {
+    var only = PLANETS_CACHE[Object.keys(PLANETS_CACHE)[0]];
+    manifest = {
+      default: Object.keys(PLANETS_CACHE)[0],
+      mode: only.mode,
+      projections: [{key: only.projection, label: only.projection}],
+      resolutions: [only.rows]
+    };
+  }
+  start(PLANETS_CACHE[manifest.default]);
+</script>
+</body>
+</html>

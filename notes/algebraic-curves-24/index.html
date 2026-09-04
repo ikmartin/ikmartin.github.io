@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 24 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-24/"
+      data-note-title="Algebraic Curves Lecture 24">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 24</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-23" href="../../notes/algebraic-curves-23/">← lecture 23</a> · <a class="idlink" data-note="algebraic-curves-25" href="../../notes/algebraic-curves-25/">lecture 25 →</a>
+</p>
+<div id="outline-container-last-case-of-extremal-curves-d-2r" class="outline-2">
+<h2 id="last-case-of-extremal-curves-d-2r">Last case of extremal curves: \(d = 2r\)</h2>
+<div class="outline-text-2" id="text-last-case-of-extremal-curves-d-2r">
+\begin{align*}
+    \pi(d,r) = \frac{m(m-1)}{2}(r-1) + m\cdot \epsilon
+\end{align*}
+<p>
+Then \(2r - 1 = d - 1 = (r-1)m + \epsilon\). That \(d = 2r\) means \(m = 2\) and \(\epsilon = 1\). We then calculate \(g = (r - 1) + 2 = r + 1\), \(r = g - 1\), \(d = 2r = 2g - 2\). It follows that \(C\) is canonically embedded. Conversely, canonical curves are extremal.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Max Noether&rsquo;s theorem)</i>.   The map
+</p>
+\begin{align*}
+    \operatorname{Sym}^\ell H^0(C, K_C) = H^0(\mathbb P^{g-1}, \mathcal O_{\mathbb P^{g-1}}(\ell)) \to H^0(C, \mathcal O_C(\ell)) = H^0(C, K^{\otimes \ell}_C)
+\end{align*}
+<p>
+is surjective for all \(\ell\) and \(C\) is canonically embedded.
+</p>
+</div>
+<p>
+Let \(C\subseteq \mathbb P^{g-1}\) be canonically embedded.
+</p>
+\begin{align*}
+    H^0(\mathbb P^{g-1}, \mathcal O_{\mathbb P^{g-1}}(2)) &\twoheadrightarrow H^0(C, \mathcal O_C(2)) \\
+    \dim: \hspace{1em} \binom{g+1}{2}, &\phantom{\twoheadrightarrow} 4g - h - g + 1 = 3g - 3.
+\end{align*}
+<p>
+Then
+</p>
+\begin{align*}
+    \dim\ker\varphi = \frac{(g+1)g}{2}-3g + 3 = \frac{g^2 - 5g + 6}{2} = \frac{(g-2)(g-3)}{2}.
+\end{align*}
+
+<p>
+<i>Example:</i> In \(g = 4\), \(C\to \mathbb P^3\), \(Q_2 \cap Q_3\). Every nonhyperelliptic curve in genus 4 is trigonal, and an extremal curve with \(d = 2r\) must not be hyperelliptic since it admits a canonical embedding. If \(C\) is trigonal, \(\varphi_{K_C}(C)\) cannot be cut out by quadrics, since by geometric Riemann-Roch, for any \(D\in |g^1_3|\) the three points in \(\varphi_{K_C}(D)\) need to be colinear.
+</p>
+\begin{align*}
+    r(D) = d - 1 - \dim(\overline{\varphi_{K_C}(D)}).
+\end{align*}
+
+<p>
+<i>Example:</i> If \(g = 3\) then \(C \hookrightarrow \mathbb P^2\), if \(g = 2\) then \(C\xrightarrow{2:1}\mathbb P^2\).
+</p>
+
+<p>
+If \(Q\supseteq C\), then \(Q\) contains \(D\). Let \(L\) be the copy of \(\mathbb P^1\) passing through \(D\). Then the defining equation of \(Q\) restricted to \(L\) gives a degree \(2\) polynomial vanishing at three points. This implies it needs to vanish along all of \(L\) which happens if and only if \(L\subseteq Q\).
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Enriques-Babbage)</i>.   If \(C\subseteq \mathbb P^{g-1}\) is canonically embedded, then either \(C\) is cut out by quadrics, or \(C\) is trigonal or \(C\) is isomorphic to a plane quintic and then \(g = \frac{(5 - 1)(5 - 2)}{2} = 6\).
+</p>
+</div>
+
+<p>
+<i>Remember:</i> Last time: used that through any \(\geq 2r + 3\) points in linear general position, that impose \(2r + 1\) cconditions on quadrics, there is a unique rational normal curve (in \(\mathbb P^r\)).
+</p>
+
+<p>
+<i>Remark:</i> The bound \(2r + 3\) is strict. For example: \(Q_1, Q_2, Q_3 \subseteq \mathbb P^3\), \(Q_1\cap Q_2 \cap Q_3 = 8 = 2r_2\) points (and \(D\) is the divisor given by those \(8\) points).
+</p>
+\begin{align*}
+    H^0(\mathbb P^3, \mathcal_{\mathbb P^3}(2)) \to H^0(D, \mathcal O_{\mathbb P^2}(D)),
+\end{align*}
+<p>
+the \(8\) points in \(D\) impose \(7\) conditions on quadrics. There is no twisted cubic which intersects all 8 of these points.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Suppose the intersection \(S\) of all quadrics containing a canonically embedded curve \(C\subseteq \mathbb P^{g-1}\) of genus \(g \geq 4\) contains a point \(p\not\in C\). Then \(C\) lies either on the image of \(\mathbb P^2\to \mathbb P^5\) (\(g=6\)) or on a rational normal scroll, which is smooth if \(g\geq 5\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<i>(Sketch of proof.)</i>   First, we show that we may assume \(p\) lies on finitely many secants of \(C\).
+</p>
+
+<p>
+Second, notice this implies that projection \(\mathbb P^{g - 1} \to \mathbb P^{g-2}\) maps \(C\) birationally to a non0-degenerate curve \(C\) in \(\mathbb P^{g - 2}\).
+</p>
+
+<p>
+Third, let \(D = (C\cap H) \cup \{p\}\subseteq H\cong \mathbb P^{r-1}\) (noting that \((C\cap H) \cup \{p\}\) consists of \(2r + 1\) points). Then check that the points in \(D\) are in linear general position.
+</p>
+
+<p>
+Fourth, calculate the number of conditions imposed on quadrics. The result of this calculation will show there exists a rational normal curve \(C_D\) through \(D\) in \(H\). \(C_D\) needs to be contained in \(S\), and this implies \(S\) is either a rational normal scroll or \(\mathbb P^2 \to \mathbb P^5\).
+</p>
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-23" href="../../notes/algebraic-curves-23/">Algebraic Curves Lecture 23</a></li>
+    <li><a data-note="algebraic-curves-25" href="../../notes/algebraic-curves-25/">Algebraic Curves Lecture 25</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

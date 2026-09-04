@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 2.1.1. Of Anderson And Fulton — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle/"
+      data-note-title="Exercise 2.1.1. Of Anderson And Fulton">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Exercise 2.1.1. Of Anderson And Fulton</h1>
+      <p class="note-meta"><span class="taxon">example</span></p>
+
+      <article class="note">
+<p>
+This is exercise 2.1.1. in <a class="citeref" href="../../notes/anderson-fulton-equivariantcohomologyalgebraic2023/">[AF23]</a>.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+For \(d\leq n\), let \(p:E\to Y\) be a rank \(n\) vector bundle over \(Y\) and \(\operatorname{Fr}(d, E)\to Y\) be the <i>frame bundle</i> of \(E\), i.e. the bundle whose fiber over \(y\in Y\) is
+\[\big\{(v_1,...,v_d)~ |~ v_1,...,v_d \text{ are linearly independen in the fiber } E_y\big\}.\]
+There is a right \(\GL_d\)-action on this space. We can form the <i>Grassmann bundle</i> of \(E\), \(\Gr(d, E)\), which comes with a tautological bundle \(S \subset p^*E\) over it. Show that \(\operatorname{Fr}(d,E)\times^{\GL_d}\mathbb C^d\) is naturally identified with \(S\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+For clarity here are definitions.
+</p>
+<ul class="org-ul">
+<li>\(\Gr(d, E) = \{(y,V) ~|~ y\in Y, V\subset E_y \text{ is a $d$-dimensional subspace}\}\). It has a projection \(\pi:(y,V)\mapsto y\)  down to \(Y\).</li>
+<li>\(p^*E = \{(y,V,u) \in \Gr(d, E)\times E ~|~ \pi(y,V) = p(u) \iff u\in E_y\}\), this is a bundle over \(\Gr(d,E)\).</li>
+<li>\(S = \{(y,V,u) \in p^*E ~|~ u\in V\}\), i.e. this is just the subbundle of \(p^*E\) whose fiber over a point \((y,V)\in \Gr(d,E)\) is the vector space \(V\).</li>
+</ul>
+
+<p>
+For convenience, let&rsquo;s omit the \(y\) from the triplet defining a point in \(S\); instead we&rsquo;ll just write a point as \((V, u)\) understanding that \(V\subset E_y\) is a \(d\)-dimensional subspace for some \(y\). We can define a map
+\[\varphi:\operatorname{Fr}(d,E)\times^{\GL_d}\mathbb C^d \to S\]
+by
+\[\big((v_1,...,v_d),(z_1,...,z_d)\big) \mapsto \left(\spann(v_1,...,v_d), \sum z_iv_i\right).\]
+</p>
+
+<p>
+A \(g\in \GL_d\) acts on \((v_1,...,v_d)\) via
+\[(v_1,...,v_d)\cdot g = (u_1,...,u_d); ~ u_j = \sum_{i=1}^d g_{ij}v_i.\]
+Note here that if we want to think of \(v_1,...,v_d\) as living in \(E_y\), a \(n\)-dimensional vector space, we identify \(GL_d\) with the subgroup of \(GL_n\) fixing \(V = \spann(v_1,...,v_d)\). By this comment, \(\spann(v_1,...,v_d) = \spann(u_1,...,u_d)\), and thus
+</p>
+\begin{align*}
+  \varphi:\big((v_1,...,v_d), (z_1,...,z_d)\big)
+&= \left(\spann(u_1,...,u_d), \sum_{i=1}^dz_iu_i\right) \\
+&= \left(\spann(u_1,...,u_d), \sum_{i=1}^dz_i\sum_{\ell=1}^d g_{\ell i}v_i\right) \\
+&= \left(\spann(u_1,...,u_d), \sum_{\ell=1}^d\Big(\sum_{i=1}^d g_{\ell i}z_i\Big)v_i\right) \\
+&= \left(\spann(v_1,...,v_d), \sum_{\ell=1}^d\Big(\sum_{i=1}^d g_{\ell i}z_i\Big)v_i\right) \\
+&= \varphi\big((v_1,...,v_d),g\cdot (z_1,...,z_d)\big),
+\end{align*}
+
+<p>
+so the map \(\varphi\) is well-defined. It is surjective since for every point \((V, u)\in S\) we can find a basis \(v_1,...,v_d\) for \(V\) and a unique set of coefficients \(z_1,...,z_d\in \mathbb C\) such that \(u = z_1v_1 + ... + z_dv_d\), and it is injective since \(\GL_d\)  acts simply transitively on the set of all ordered bases of \(V\). 
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="chern-classes-of-equivariant-line-bundles-over-a-point" href="../../notes/chern-classes-of-equivariant-line-bundles-over-a-point/">Equivariant Chern Classes Of Line Bundes Over A Point</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-af23"><span class="ref-num">[AF23]</span> <a href="../../notes/anderson-fulton-equivariantcohomologyalgebraic2023/">Anderson, Fulton — Equivariant Cohomology In Algebraic Geometry (2023)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

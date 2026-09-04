@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 11 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-11/"
+      data-note-title="Algebraic Curves Lecture 11">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 11</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves" href="../../notes/algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves/">← lecture 10</a> · <a class="idlink" data-note="algebraic-curves-12" href="../../notes/algebraic-curves-12/">lecture 12 →</a>
+</p>
+
+<p>
+Last week, we saw
+</p>
+
+<ol class="org-ol">
+<li>there exists a unique \(g^1_2\) on any hyperelliptic curve with \(g \geq 2\).</li>
+<li>\(K_X\) is very ample if and only if \(X\) is not hyperelliptic.</li>
+</ol>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(C\subseteq \mathbb P^n\) is a complete intersection curve and is smooth of genus at least 2, then \(C\) is not hyperelliptic.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+\(N_{C/\mathbb P^n} = \bigoplus \mathcal O_{\mathbb P^n}(d)\), \(\bigwedge^{n-1} N_{C/\mathbb P^1} = \mathcal O_{\mathbb P^n}(\sum d_i)|_C\). The canonical bundle of \(C\) is given by
+</p>
+\begin{align*}
+    K_C = \left(K_{\mathbb P^n} \otimes \bigwedge^{n-1} N_{C/\mathbb P^n}\right)|_C = \mathcal O_{\mathbb P^n}(\sum d_i - n - 1)|_C,
+\end{align*}
+<p>
+where we&rsquo;ve used adjunction and the fact that \(K_{\mathbb P^n} = \mathcal O_{\mathbb P^n}(-n-1)\). Since \(g(C) \geq 2\), we need to have \(\sum d_i - n - 1 > 0\).
+</p>
+
+<p>
+Through any pair of points \(p\) and \(q\) on \(C\), we can find a hypersurface of degree \(\sum d_i- n - 1\) which passes through \(p\) but not \(q\) (this is true as long as \(\sum d_i -n - 1 > 0\)). This works for double points as well &#x2013; we can find such a hypersurface which vanishes to order 1 at a specified point. Since \(K_C\) is cut out by hypersurfaces, this means \(K_C\) is very ample, hence \(C\) is not hyperelliptic curve by (2) above.
+</p>
+</details>
+<div id="outline-container-riemann-existence-theorem" class="outline-2">
+<h2 id="riemann-existence-theorem">Riemann existence theorem</h2>
+<div class="outline-text-2" id="text-riemann-existence-theorem">
+<p>
+Question: If given a \(\mathbb P^1\) with specified branch points \(p_1,...,p_b\in \mathbb P^1\), can you find a corresponding cover \(X\to \mathbb P^1\) whose branch points are precisely these \(p_i\)?
+</p>
+
+<p>
+First attempt at constructing this: You want a cover of \(\mathbb P^1\) that is unramified away from the \(p_i\). So consider first \(\mathbb P^1 \setminus \{p_1,...,p_b\}\) topologically. The fundamental group of this is generated by loops \(\gamma_i\) based at \(p_0\) and going around \(p_i\). They are subject to the relation \(\prod \gamma_i = \id\). This means that interchanging any of these two generators corresponds to permuting the sheets of the cover.
+</p>
+
+<p>
+For any cover \(X\xrightarrow{d:1} \mathbb P^1\) branched at the \(p_i\), then we have \(d\) sheets and therefore we get a group homomorphism
+</p>
+\begin{align*}
+    \pi_1(\mathbb P^1\setminus \{p_1,...,p_b\}, p_0) \to S_d.
+\end{align*}
+<p>
+Thus we get permutations \(\tau_i\in S_d\) such that
+</p>
+\begin{align*}
+    \prod_{i=1}^d\tau_i = \id.
+\end{align*}
+<p>
+These permutations additionally must generate a transitive subgroup of \(S_d\), if we want \(X\) to be connected.
+</p>
+
+<p>
+Note 1 at this point: We haven&rsquo;t prescribed ramificaiton indices to the points \(p_i\), but they are encoded in this picture as well. As constructed, the ramification index of \(p_i\) corresponds to the &ldquo;number of sheets&rdquo; in the cover of \(\mathbb P^1\set minus \{p_1,...,p_b\}\) which meet at \(p_i\), and this number is equal to the number of cycles in the cycle decomposition of \(\tau_i\). To see this, consider the analytic picture: locally near \(p_i\), the map will be given \(z \mapsto z^{r_i}\) where \(r_i\) is the ramification index of \(p_i\).
+</p>
+
+<p>
+Note 2 at this point: We&rsquo;re trying to construct \(X\) and a map to \(\mathbb P^1\) by first constructing a topological cover \(U\to \mathbb P^1\set minus \{p_1,...,p_b\}\) and then gluing our branch points back in. One way to construct this cover is to take \(U = \widetilde U \times \{p_1,...,p_b\}/G\), where \(\widetilde{U}\) is the universal cover and \(G = \pi_1(\mathbb P^1\set minus \{p_1,...,p_b\}, p_0)\) acts diagonally by deck transformation.
+</p>
+
+<p>
+This leads us to a theorem that says constructing a cover in this way is always possible.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+(Riemann Existence). There is a bijection between degree d covers \(X\to \mathbb P^1\) simply branched over \(p_1,...,p_b\) up to isomorphism and transpositions \(\tau_i\in S_d\) (\(1\leq i\leq b\)) such that \(\prod \tau_i = \id\) and the group generated by the \(\tau_i\) acts transitively on \(\{1,...,d\}\) up to simultaneous conjugation by an element in \(S_d\).
+</p>
+</div>
+
+<p>
+<i>Example:</i>
+    For any even number \(b\) of branch points there is a unique hyperelliptic curve \(X\) with \(X\rightarrow{2:1} \mathbb P^1\) is branched over the \(p_i\). Riemann-Hurwitz says
+</p>
+\begin{align*}
+    [2g - 2 = d_i (2h - 2) + \deg(R)]
+\end{align*}
+<p>
+so
+</p>
+\begin{align*}
+    2g - 2 = -4 + b \iff b = 2g + 2.
+\end{align*}
+<p>
+The dimension of the space of hyperelliptic curves of genus \(g\) is \(2g + 2 - 3 = 2g - 1\).
+</p>
+
+<p>
+Note that this theorem only works when the base field is \(\mathbb C\). Moving from the topological construction of the cover \(U\xrightarrow{d:1} \mathbb P^1\setminus \{p_1,...,p_b\}\) as we sketched above to an algebraic cover \(X\to \mathbb P^1\) requires that there is a unique complex structure we can impose on \(X\). The analytic picture is therefore quite essential in this case.
+</p>
+
+<p>
+<i>Example:</i> <i>(Degree 3 simply ramified covers.)</i> The relevant permutation group is \(S_3\). Then \(2g - 2 = -6 + b \iff b = 2g +4\). If I choose \(2g + 3\) transpositions, their composition is again a transposition. Then \(\frac{3^{2g + 3} - 3}{6}\) is the number of simpy ramified degree 3 covers \(X\to \mathbb P^1\) with \(g(X) = g\) and branched over fixed points \(p_1,...,p_b\) up to isomorphism.
+</p>
+
+<p>
+<i>Example:</i> For a fixed ramification profile, there does not need to exist a cover of that profile, even if the numerics of Riemann-Hurwitz are satisfied: for \(d = 4\), \(\{(2)(2), (2)(2), (3)\}\). Then \(2g - 2 = -8 + 6 = -2\) which implies \(g = 0\). But there are no elements \(\tau_1,\tau_2,\tau_3 \in S_4\) of types \((2)(2), (2)(2)\) and \((3)\) such that \(\prod \tau_i = \id\).
+</p>
+
+
+<p>
+<i>It&rsquo;s a very open question to determine which covers are allowed and which are not.</i>
+</p>
+</div>
+</div>
+<div id="outline-container-low-genus-examples" class="outline-2">
+<h2 id="low-genus-examples">Low genus examples</h2>
+<div class="outline-text-2" id="text-low-genus-examples">
+<p>
+<i>Genus 2:</i> Any genus 2 curve is hyperelliptic, and the unique \(g^1_2\) is the canonical sheaf. The number of branch points allowed by a map \(X\to \mathbb P^1\) is \(2 = -4 + b \iff b = 6\). Morally, genus \(2\) curves are paramterized by \((\mathbb P^1)^3\). We have an action of \(S_6\) on \(\{(0,1,\infty)\}\times (\mathbb P^1)^3\) given on \((0,1,\infty, p_1,p_2,p_3)\) given by applying the permutation naturally on the 6-tuple and then applying an automorphism of \(\mathbb P^1\) to each coordinate so that the first three coordinates are again \(0\), \(1\) and \(\infty\). Removing \(0,1\) and \(\infty\) from each copy of \(\mathbb P^1\) as the diagonal from the product \((\mathbb P^1)^3\) makes this action free, allowing us to take a quotient giving us the moduli space \(M_2\):
+</p>
+\begin{align*}
+    M_2 = (\mathbb A^1 \setminus \{0,1,\}^3 \setminus \Delta / S^6, \hspace{1cm} \dim = 3 = 2g - 1 = 3g - 3.
+\end{align*}
+
+<p>
+<i>Genus \(3\):</i> If \(X\) is not hyperelliptic then \(\varphi_{K_X}\) realizes \(X\) as a degree \(2g - 2 = 4\) curve in \(\mathbb P^{g - 1} = \mathbb P^2\). Conversely, any smooth plane quartic is a canonically embedded genus \(2\) curve. Indeed, by adjunction,
+</p>
+\begin{align*}
+    K_C = (\mathcal O_{\mathbb P^2}(-3 + 4))|_C = \mathcal O_{\mathbb P^2}(1)|_C.
+\end{align*}
+<p>
+Suppose \(C\) is hyperelliptic with \(g^1_2\) with \(g^1_2 = \mathcal O_C(p+q)\). Then \(2 = h^0(\mathcal O_C(p+q)\) . Then
+</p>
+\begin{align*}
+    2 = h^0(\mathcal O_C(p+q)) = 2 - 3 + 1 + h^0(K_C - p - q).
+\end{align*}
+<p>
+But for geometric reasons \(h^0(K_c - p - q) = 1\). The dimension of the space of non-hyperelliptic genus 3 curves thus is \(h^0(\mathcal O_{\mathbb P^2}(4)) - 1 - 8 = \binom{6}{2} - g = 15 - g = 6\). As before, the space of hyperelliptic curves has dimension \(2g - 1 = 5\).
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves" href="../../notes/algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves/">Algebraic Curves Lecture 10: Hurwitz Bound And Hyperelliptic Curves</a></li>
+    <li><a data-note="algebraic-curves-12" href="../../notes/algebraic-curves-12/">Algebraic Curves Lecture 12</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

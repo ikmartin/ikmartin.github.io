@@ -1,0 +1,91 @@
+/* Theorem-like environments. Hand-editable: one block per environment.
+   Markup produced by the export.el transcoder:
+     <div class="env env-theorem"><p class="env-label">Theorem</p> ... </div>
+     <details class="env env-proof"><summary class="env-label">Proof</summary> ... </details>
+   Uses the design tokens from site.css (var(--...)). */
+
+/* --- shared box for boxed environments --- */
+.env {
+  background: var(--callout-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 0.55rem 1rem 0.85rem;
+  margin: 1.5rem 0;
+}
+.env > .env-label {
+  font-family: var(--font-head);
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+.env > .env-label + * { margin-top: 0; }   /* tighten under the label */
+.env > :last-child { margin-bottom: 0; }
+
+/* --- per-environment accent colors (optional; extend freely) --- */
+.env-theorem     { border-left-color: var(--accent); }
+.env-proposition { border-left-color: var(--accent); }
+.env-lemma       { border-left-color: #7048e8; }
+.env-corollary   { border-left-color: #7048e8; }
+.env-conjecture  { border-left-color: #7048e8; }
+.env-definition  { border-left-color: var(--accent-2); }
+.env-construction{ border-left-color: var(--accent-2); }
+.env-exercise    { border-left-color: #2f9e44; }
+.env-math-example{ border-left-color: #2f9e44; }
+.env-problem     { border-left-color: #2f9e44; }
+.env-remark      { border-left-color: var(--muted); }
+.env-slogan      { border-left-color: var(--muted); }
+
+/* --- proof: collapsible, no box, vertical black rule down the left --- */
+details.env-proof {
+  background: none;
+  border: none;
+  border-left: 3px solid #000;
+  border-radius: 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin: 1.3rem 0;
+}
+details.env-proof > summary.env-label {
+  cursor: pointer;
+  font-weight: 600;
+  font-style: italic;
+  list-style: none;                 /* hide default disclosure triangle */
+  margin: 0;
+}
+details.env-proof > summary.env-label::-webkit-details-marker { display: none; }
+details.env-proof > summary.env-label::before { content: "▸ "; font-style: normal; }
+details.env-proof[open] > summary.env-label::before { content: "▾ "; }
+details.env-proof[open] > summary.env-label { margin-bottom: 0.4rem; }
+details.env-proof > :last-child { margin-bottom: 0; }
+
+/* --- details: an author-written collapsible --- */
+/* Keeps the shared .env box, unlike proof: a flashcard or a folded-away statement is a
+   discrete thing on the page, where a proof is a continuation of the prose above it. */
+details.env-details > summary.env-label {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+}
+details.env-details > summary.env-label::-webkit-details-marker { display: none; }
+details.env-details > summary.env-label::before { content: "▸ "; }
+details.env-details[open] > summary.env-label::before { content: "▾ "; }
+details.env-details[open] > summary.env-label { margin-bottom: 0.5rem; }
+details.env-details > :last-child { margin-bottom: 0; }
+
+/* --- a transcluded box inside another box --- */
+/* `#+transclude:` splices whole notes, and a note that is a definition can land
+   inside a host's worked example. Two nested bordered panels read as a rendering
+   fault rather than as structure, so the inner one keeps only its accent rule and
+   drops the panel: the colour still says which environment it is. */
+.env .env {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
+  padding: 0 0 0 0.9rem;
+  margin: 1rem 0;
+}
+/* Width and style only -- the per-environment `border-left-color` rules above still
+   apply, which is what keeps the accent meaningful once the panel is gone. */
+.env .env { border-left-width: 3px; border-left-style: solid; }
+.env .env > .env-label { font-size: 0.9em; }

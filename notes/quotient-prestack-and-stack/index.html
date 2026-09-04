@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quotient Prestack And Stack — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/quotient-prestack-and-stack/"
+      data-note-title="Quotient Prestack And Stack">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Quotient Prestack And Stack</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+See Alpher Definition 2.4.15. See also the <a class="idlink" data-note="classifying-stack" href="../../notes/classifying-stack/">classifying stack</a>.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(G\to S\) be a smooth affine group scheme <a class="idlink" data-note="group-action-on-a-scheme" href="../../notes/group-action-on-a-scheme/">acting on a scheme</a> \(U\) over \(S\).
+</p>
+
+<p>
+<i>(Quotient Prestack).</i> The <i>quotient prestack</i> \([U/G]^{\text{pre}}\)   of an action of a smooth affine group scheme \(G\to S\) on an \(S\)-scheme \(U\) is the category over \(\Sch/S\) whose
+</p>
+<ul class="org-ul">
+<li>objects are pairs \((T,u)\) where \(T\) is an \(S\)-scheme and \(u\in U(T)\)</li>
+<li>morphisms \((f,g): (T', u') \to (T, u)\) are morphisms \(f:T'\to T\) of \(S\)-schemes such that there is an element \(g\in G(T')\) satisfying \(f^*u = g\cdot u'\).</li>
+<li>The projection map is to \(\Sch/S\), where we send \((T,u)\) to \(T\) (forget the map to \(U\)).</li>
+</ul>
+
+<p>
+In particular, if we choose \(T' = T\) but are given two different morphisms \(u,u':T\to U\), then an \(S\)-morphism \(f:T\to T\)  is only a morphism in \([U/G]^{\text{pre}}(T)\) if  there is a \(g\) so that
+\[f^*u = u\circ f = g\cdot u'.\]
+Note that the fiber category \([U/G]^{\text{pre}}(T)\) is identified with the <a class="idlink" data-note="quotient-groupoid" href="../../notes/quotient-groupoid/">quotient groupoid</a> \([U(T)/G(T)]\).
+</p>
+
+<p>
+<i>(Quotient Stack).</i> The <i>quotient stack</i> \([U/G]\) is the category over \(\Sch/S\) whose
+</p>
+<ul class="org-ul">
+<li>objects are diagrams</li>
+</ul>
+<figure class="tikz" id="tikz-7afd82a0e92fe04b"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -85.778366 84.442566 61.903465' width='8.4443em'>
+<defs>
+<path id='tz7afd82a0e92fe04b-g0-80' d='M3.01868-3.148194H4.712329C6.127024-3.148194 7.511831-4.184309 7.511831-5.300125C7.511831-6.067248 6.854296-6.804483 5.549191-6.804483H2.321295C2.132005-6.804483 2.022416-6.804483 2.022416-6.615193C2.022416-6.495641 2.11208-6.495641 2.311333-6.495641C2.440847-6.495641 2.620174-6.485679 2.739726-6.475716C2.899128-6.455791 2.958904-6.425903 2.958904-6.316314C2.958904-6.276463 2.948941-6.246575 2.919054-6.127024L1.58406-.777086C1.484433-.388543 1.464508-.308842 .67746-.308842C.508095-.308842 .398506-.308842 .398506-.119552C.398506 0 .518057 0 .547945 0C.826899 0 1.534247-.029888 1.8132-.029888C2.022416-.029888 2.241594-.019925 2.450809-.019925C2.669988-.019925 2.889166 0 3.098381 0C3.16812 0 3.297634 0 3.297634-.199253C3.297634-.308842 3.20797-.308842 3.01868-.308842C2.650062-.308842 2.371108-.308842 2.371108-.488169C2.371108-.547945 2.391034-.597758 2.400996-.657534L3.01868-3.148194ZM3.73599-6.117061C3.825654-6.465753 3.845579-6.495641 4.273973-6.495641H5.230386C6.057285-6.495641 6.585305-6.22665 6.585305-5.539228C6.585305-5.150685 6.386052-4.293898 5.997509-3.935243C5.499377-3.486924 4.901619-3.407223 4.463263-3.407223H3.058531L3.73599-6.117061Z'/>
+<path id='tz7afd82a0e92fe04b-g0-84' d='M4.254047-6.047323C4.323786-6.326276 4.363636-6.386052 4.483188-6.41594C4.572852-6.435866 4.901619-6.435866 5.110834-6.435866C6.117061-6.435866 6.56538-6.396015 6.56538-5.618929C6.56538-5.469489 6.525529-5.080946 6.485679-4.821918C6.475716-4.782067 6.455791-4.662516 6.455791-4.632628C6.455791-4.572852 6.485679-4.503113 6.575342-4.503113C6.684932-4.503113 6.704857-4.582814 6.724782-4.732254L6.993773-6.465753C7.003736-6.505604 7.013699-6.60523 7.013699-6.635118C7.013699-6.744707 6.914072-6.744707 6.744707-6.744707H1.215442C.976339-6.744707 .966376-6.734745 .896638-6.545455L.298879-4.79203C.288917-4.772105 .239103-4.632628 .239103-4.612702C.239103-4.552927 .288917-4.503113 .358655-4.503113C.458281-4.503113 .468244-4.552927 .52802-4.712329C1.066002-6.256538 1.325031-6.435866 2.799502-6.435866H3.188045C3.466999-6.435866 3.466999-6.396015 3.466999-6.316314C3.466999-6.256538 3.437111-6.136986 3.427148-6.107098L2.092154-.787049C2.002491-.418431 1.972603-.308842 .9066-.308842C.547945-.308842 .488169-.308842 .488169-.119552C.488169 0 .597758 0 .657534 0C.926526 0 1.205479-.019925 1.474471-.019925C1.753425-.019925 2.042341-.029888 2.321295-.029888S2.879203-.019925 3.148194-.019925C3.437111-.019925 3.73599 0 4.014944 0C4.11457 0 4.234122 0 4.234122-.199253C4.234122-.308842 4.154421-.308842 3.895392-.308842C3.646326-.308842 3.516812-.308842 3.257783-.328767C2.968867-.358655 2.889166-.388543 2.889166-.547945C2.889166-.557908 2.889166-.607721 2.929016-.757161L4.254047-6.047323Z'/>
+<path id='tz7afd82a0e92fe04b-g0-85' d='M6.326276-5.758406C6.425903-6.166874 6.60523-6.465753 7.402242-6.495641C7.452055-6.495641 7.571606-6.505604 7.571606-6.694894C7.571606-6.704857 7.571606-6.804483 7.442092-6.804483C7.113325-6.804483 6.764633-6.774595 6.425903-6.774595S5.718555-6.804483 5.389788-6.804483C5.330012-6.804483 5.210461-6.804483 5.210461-6.60523C5.210461-6.495641 5.310087-6.495641 5.389788-6.495641C5.957659-6.485679 6.067248-6.276463 6.067248-6.057285C6.067248-6.027397 6.047323-5.877958 6.03736-5.84807L5.140722-2.291407C4.801993-.956413 3.656289-.089664 2.660025-.089664C1.982565-.089664 1.444583-.52802 1.444583-1.384807C1.444583-1.404732 1.444583-1.723537 1.554172-2.161893L2.520548-6.03736C2.610212-6.396015 2.630137-6.495641 3.35741-6.495641C3.616438-6.495641 3.696139-6.495641 3.696139-6.694894C3.696139-6.804483 3.58655-6.804483 3.556663-6.804483C3.277709-6.804483 2.560399-6.774595 2.281445-6.774595C1.992528-6.774595 1.285181-6.804483 .996264-6.804483C.916563-6.804483 .806974-6.804483 .806974-6.60523C.806974-6.495641 .896638-6.495641 1.085928-6.495641C1.105853-6.495641 1.295143-6.495641 1.464508-6.475716C1.643836-6.455791 1.733499-6.445828 1.733499-6.316314C1.733499-6.256538 1.62391-5.838107 1.564134-5.608966L1.344956-4.732254C1.255293-4.343711 .777086-2.460772 .737235-2.271482C.667497-1.992528 .667497-1.843088 .667497-1.693649C.667497-.478207 1.574097 .219178 2.620174 .219178C3.875467 .219178 5.110834-.9066 5.439601-2.221669L6.326276-5.758406Z'/>
+</defs>
+<g id='tz7afd82a0e92fe04b-page1'>
+<g stroke-miterlimit='10' transform='translate(-41.639263,-46.941189)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-28.4746,-19.49306)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.639263,-46.941189)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-33.459883,-78.973883)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.90451,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-33.459883,-78.973883)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-33.459883' y='-78.973883' xlink:href='#tz7afd82a0e92fe04b-g0-80'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(6.863483,-78.973883)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.95901,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(6.863483,-78.973883)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='6.863483' y='-78.973883' xlink:href='#tz7afd82a0e92fe04b-g0-85'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-33.459883,-46.941189)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.61632,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-33.459883,-46.941189)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-33.459883' y='-46.941189' xlink:href='#tz7afd82a0e92fe04b-g0-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-11.85449 15.15976H11.34552' fill='none'/>
+<g transform='translate(11.5455,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.26454 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.26454,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+<p>
+where \(P\to T\) is a <a class="idlink" data-note="principal-g-bundle" href="../../notes/principal-g-bundle/">principal \(G\) bundle</a> and \(P\to U\) is a \(G\)-equivariant morphism of \(S\)-schemes
+</p>
+<ul class="org-ul">
+<li>morphisms \((T'\leftarrow P' \to U)\to (T\leftarrow P\to U)\) consist of a morphism \(f:T'\to T\) as \(S\)-schemes and a \(G\)-equivariant morphism \(P'\to P\) of schemes such that the diagram</li>
+</ul>
+<figure class="tikz" id="tikz-e8d20198bd766209"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -77.071613 149.0388 68.527558' width='14.9039em'>
+<defs>
+<path id='tze8d20198bd766209-g0-3' d='M7.183064-6.495641C7.183064-6.804483 7.153176-6.844334 6.834371-6.844334H.9066C.597758-6.844334 .557908-6.814446 .557908-6.495641V-.358655C.557908-.039851 .587796 0 .916563 0H6.824408C7.153176 0 7.183064-.029888 7.183064-.348692V-6.495641ZM.956413-6.445828H6.784558V-.398506H.956413V-6.445828Z'/>
+<path id='tze8d20198bd766209-g1-48' d='M2.022416-3.291656C2.078207-3.410212 2.085181-3.466002 2.085181-3.514819C2.085181-3.731009 1.889913-3.898381 1.673724-3.898381C1.408717-3.898381 1.325031-3.682192 1.290162-3.57061L.369614-.550934C.36264-.536986 .334745-.446326 .334745-.439352C.334745-.355666 .550934-.285928 .606725-.285928C.655542-.285928 .662516-.299875 .711333-.404483L2.022416-3.291656Z'/>
+<path id='tze8d20198bd766209-g3-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tze8d20198bd766209-g2-80' d='M3.01868-3.148194H4.712329C6.127024-3.148194 7.511831-4.184309 7.511831-5.300125C7.511831-6.067248 6.854296-6.804483 5.549191-6.804483H2.321295C2.132005-6.804483 2.022416-6.804483 2.022416-6.615193C2.022416-6.495641 2.11208-6.495641 2.311333-6.495641C2.440847-6.495641 2.620174-6.485679 2.739726-6.475716C2.899128-6.455791 2.958904-6.425903 2.958904-6.316314C2.958904-6.276463 2.948941-6.246575 2.919054-6.127024L1.58406-.777086C1.484433-.388543 1.464508-.308842 .67746-.308842C.508095-.308842 .398506-.308842 .398506-.119552C.398506 0 .518057 0 .547945 0C.826899 0 1.534247-.029888 1.8132-.029888C2.022416-.029888 2.241594-.019925 2.450809-.019925C2.669988-.019925 2.889166 0 3.098381 0C3.16812 0 3.297634 0 3.297634-.199253C3.297634-.308842 3.20797-.308842 3.01868-.308842C2.650062-.308842 2.371108-.308842 2.371108-.488169C2.371108-.547945 2.391034-.597758 2.400996-.657534L3.01868-3.148194ZM3.73599-6.117061C3.825654-6.465753 3.845579-6.495641 4.273973-6.495641H5.230386C6.057285-6.495641 6.585305-6.22665 6.585305-5.539228C6.585305-5.150685 6.386052-4.293898 5.997509-3.935243C5.499377-3.486924 4.901619-3.407223 4.463263-3.407223H3.058531L3.73599-6.117061Z'/>
+<path id='tze8d20198bd766209-g2-84' d='M4.254047-6.047323C4.323786-6.326276 4.363636-6.386052 4.483188-6.41594C4.572852-6.435866 4.901619-6.435866 5.110834-6.435866C6.117061-6.435866 6.56538-6.396015 6.56538-5.618929C6.56538-5.469489 6.525529-5.080946 6.485679-4.821918C6.475716-4.782067 6.455791-4.662516 6.455791-4.632628C6.455791-4.572852 6.485679-4.503113 6.575342-4.503113C6.684932-4.503113 6.704857-4.582814 6.724782-4.732254L6.993773-6.465753C7.003736-6.505604 7.013699-6.60523 7.013699-6.635118C7.013699-6.744707 6.914072-6.744707 6.744707-6.744707H1.215442C.976339-6.744707 .966376-6.734745 .896638-6.545455L.298879-4.79203C.288917-4.772105 .239103-4.632628 .239103-4.612702C.239103-4.552927 .288917-4.503113 .358655-4.503113C.458281-4.503113 .468244-4.552927 .52802-4.712329C1.066002-6.256538 1.325031-6.435866 2.799502-6.435866H3.188045C3.466999-6.435866 3.466999-6.396015 3.466999-6.316314C3.466999-6.256538 3.437111-6.136986 3.427148-6.107098L2.092154-.787049C2.002491-.418431 1.972603-.308842 .9066-.308842C.547945-.308842 .488169-.308842 .488169-.119552C.488169 0 .597758 0 .657534 0C.926526 0 1.205479-.019925 1.474471-.019925C1.753425-.019925 2.042341-.029888 2.321295-.029888S2.879203-.019925 3.148194-.019925C3.437111-.019925 3.73599 0 4.014944 0C4.11457 0 4.234122 0 4.234122-.199253C4.234122-.308842 4.154421-.308842 3.895392-.308842C3.646326-.308842 3.516812-.308842 3.257783-.328767C2.968867-.358655 2.889166-.388543 2.889166-.547945C2.889166-.557908 2.889166-.607721 2.929016-.757161L4.254047-6.047323Z'/>
+<path id='tze8d20198bd766209-g2-85' d='M6.326276-5.758406C6.425903-6.166874 6.60523-6.465753 7.402242-6.495641C7.452055-6.495641 7.571606-6.505604 7.571606-6.694894C7.571606-6.704857 7.571606-6.804483 7.442092-6.804483C7.113325-6.804483 6.764633-6.774595 6.425903-6.774595S5.718555-6.804483 5.389788-6.804483C5.330012-6.804483 5.210461-6.804483 5.210461-6.60523C5.210461-6.495641 5.310087-6.495641 5.389788-6.495641C5.957659-6.485679 6.067248-6.276463 6.067248-6.057285C6.067248-6.027397 6.047323-5.877958 6.03736-5.84807L5.140722-2.291407C4.801993-.956413 3.656289-.089664 2.660025-.089664C1.982565-.089664 1.444583-.52802 1.444583-1.384807C1.444583-1.404732 1.444583-1.723537 1.554172-2.161893L2.520548-6.03736C2.610212-6.396015 2.630137-6.495641 3.35741-6.495641C3.616438-6.495641 3.696139-6.495641 3.696139-6.694894C3.696139-6.804483 3.58655-6.804483 3.556663-6.804483C3.277709-6.804483 2.560399-6.774595 2.281445-6.774595C1.992528-6.774595 1.285181-6.804483 .996264-6.804483C.916563-6.804483 .806974-6.804483 .806974-6.60523C.806974-6.495641 .896638-6.495641 1.085928-6.495641C1.105853-6.495641 1.295143-6.495641 1.464508-6.475716C1.643836-6.455791 1.733499-6.445828 1.733499-6.316314C1.733499-6.256538 1.62391-5.838107 1.564134-5.608966L1.344956-4.732254C1.255293-4.343711 .777086-2.460772 .737235-2.271482C.667497-1.992528 .667497-1.843088 .667497-1.693649C.667497-.478207 1.574097 .219178 2.620174 .219178C3.875467 .219178 5.110834-.9066 5.439601-2.221669L6.326276-5.758406Z'/>
+</defs>
+<g id='tze8d20198bd766209-page1'>
+<g stroke-miterlimit='10' transform='translate(-20.107185,-36.843222)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-50.08742,-20.17757)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-20.107185,-36.843222)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-10.530259,-69.557868)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.3073,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-10.530259,-69.557868)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-10.530259' y='-69.557868' xlink:href='#tze8d20198bd766209-g2-80'/>
+<use x='-2.750398' y='-73.173232' xlink:href='#tze8d20198bd766209-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(31.136351,-69.557868)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.90451,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(31.136351,-69.557868)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='31.136351' y='-69.557868' xlink:href='#tze8d20198bd766209-g2-80'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(71.459718,-69.557868)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.95901,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(71.459718,-69.557868)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='71.459718' y='-69.557868' xlink:href='#tze8d20198bd766209-g2-85'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-10.530259,-36.843222)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.0191,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-10.530259,-36.843222)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-10.530259' y='-36.843222' xlink:href='#tze8d20198bd766209-g2-84'/>
+<use x='-3.324617' y='-40.458586' xlink:href='#tze8d20198bd766209-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(31.136351,-36.843222)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.61632,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(31.136351,-36.843222)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='31.136351' y='-36.843222' xlink:href='#tze8d20198bd766209-g2-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-30.66174 15.15976H-7.46173' fill='none'/>
+<g transform='translate(-7.26175,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-30.66174 20.82187C-8.80618 33.08864 11.80716 32.83792 33.0144 20.24805' fill='none'/>
+<g transform='matrix(0.85985,-0.51044,0.51044,0.85985,33.18636,20.14598)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<g transform='translate(-23.46426,-4.62735)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-20.107185,-36.843222)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-20.107185' y='-36.843222' xlink:href='#tze8d20198bd766209-g0-3'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-40.47458 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-40.47458,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M1.34828 8.80003V-9.08456' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,1.34828,-9.28455)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M9.75833 15.15976H32.95834' fill='none'/>
+<g transform='translate(33.15833,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-30.94994-17.67757H-7.17354' fill='none'/>
+<g transform='translate(-6.97356,-17.67757)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-21.2038,-24.89142)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-20.107185,-36.843222)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-20.107185' y='-36.843222' xlink:href='#tze8d20198bd766209-g3-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+<p>
+is commutative and the left square is Cartesian.
+</p>
+</div>
+
+<p>
+See the example of the <a class="idlink" data-note="a1-mod-gm-quotient-stack" href="../../notes/a1-mod-gm-quotient-stack/">line modulo the torus</a>.
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">5</span></h2>
+  <ul>
+    <li><a data-note="a1-mod-gm-quotient-stack" href="../../notes/a1-mod-gm-quotient-stack/">A1 Mod Gm Quotient Stack</a></li>
+    <li><a data-note="classifying-stack" href="../../notes/classifying-stack/">Classifying Stack</a></li>
+    <li><a data-note="group-action-on-a-scheme" href="../../notes/group-action-on-a-scheme/">Group Action On A Scheme</a></li>
+    <li><a data-note="principal-g-bundle" href="../../notes/principal-g-bundle/">Principal G Bundle</a></li>
+    <li><a data-note="quotient-groupoid" href="../../notes/quotient-groupoid/">Quotient Groupoid</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

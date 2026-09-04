@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deformation To The Normal Cone — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/deformation-to-the-normal-cone/"
+      data-note-title="Deformation To The Normal Cone">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Deformation To The Normal Cone</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<div class="env env-construction">
+<p class="env-label">Construction</p>
+<p>
+We begin with a closed embedding \(X\hookrightarrow Y\) and end with a flat morphism \(\pi:M\to \mathbb P^1\) which fits into a diagram
+</p>
+
+<div class="org-center">
+<figure class="tikz" id="tikz-4b58800321d9c395"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -87.627518 125.833983 67.201445' width='12.5834em'>
+<defs>
+<path id='tz4b58800321d9c395-g3-25' d='M2.168867-2.531507H2.998755C2.894147-2.113076 2.740722-1.478456 2.740722-.927522C2.740722-.648568 2.775592-.460274 2.817435-.306849C2.929016 .041843 3.019676 .069738 3.131258 .069738C3.291656 .069738 3.459029-.076712 3.459029-.244085C3.459029-.299875 3.445081-.327771 3.403238-.397509C3.270735-.655542 3.145205-1.053051 3.145205-1.624907C3.145205-1.75741 3.145205-2.036364 3.242839-2.531507H4.11457C4.2401-2.531507 4.29589-2.531507 4.372603-2.587298C4.470237-2.657036 4.491158-2.768618 4.491158-2.803487C4.491158-3.005729 4.309838-3.005729 4.191283-3.005729H1.562142C1.276214-3.005729 1.080946-2.942964 .767123-2.650062C.585803-2.489664 .313823-2.113076 .313823-2.050311C.313823-1.966625 .404483-1.966625 .432379-1.966625C.509091-1.966625 .516065-1.980573 .557908-2.043337C.913574-2.531507 1.345953-2.531507 1.499377-2.531507H1.924782C1.708593-1.764384 1.332005-.941469 1.12279-.523039C1.080946-.432379 1.011208-.285928 .990286-.258032C.983313-.230137 .969365-.202242 .969365-.153425C.969365-.041843 1.053051 .069738 1.21345 .069738C1.492403 .069738 1.569116-.244085 1.736488-.871731L2.168867-2.531507Z'/>
+<path id='tz4b58800321d9c395-g4-49' d='M2.336239-4.435367C2.336239-4.623661 2.322291-4.630635 2.127024-4.630635C1.680697-4.191283 1.046077-4.184309 .760149-4.184309V-3.93325C.927522-3.93325 1.387796-3.93325 1.771357-4.128518V-.571856C1.771357-.341719 1.771357-.251059 1.073973-.251059H.808966V0C.934496-.006974 1.792279-.027895 2.050311-.027895C2.266501-.027895 3.145205-.006974 3.29863 0V-.251059H3.033624C2.336239-.251059 2.336239-.341719 2.336239-.571856V-4.435367Z'/>
+<path id='tz4b58800321d9c395-g4-112' d='M1.93873 1.101868C1.48543 1.101868 1.415691 1.101868 1.415691 .801993V-.334745C1.45056-.299875 1.778331 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.364134 3.361395-3.075467 2.475716-3.075467C2.078207-3.075467 1.673724-2.929016 1.387796-2.650062V-3.075467L.341719-2.998755V-2.747696C.829888-2.747696 .864757-2.712827 .864757-2.419925V.801993C.864757 1.101868 .795019 1.101868 .341719 1.101868V1.352927C.355666 1.352927 .843836 1.325031 1.136737 1.325031C1.39477 1.325031 1.875965 1.345953 1.93873 1.352927V1.101868ZM1.415691-2.322291C1.624907-2.670984 2.02939-2.852304 2.399004-2.852304C2.984807-2.852304 3.438107-2.238605 3.438107-1.506351C3.438107-.711333 2.915068-.125529 2.322291-.125529C1.708593-.125529 1.436613-.662516 1.415691-.704359V-2.322291Z'/>
+<path id='tz4b58800321d9c395-g4-114' d='M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z'/>
+<path id='tz4b58800321d9c395-g0-80' d='M2.420922-2.82939C3.078456-2.82939 3.775841-2.849315 4.144458-3.01868C4.562889-3.198007 5.519303-3.726027 5.519303-4.772105C5.519303-5.270237 5.349938-5.678705 4.991283-6.017435C4.513076-6.465753 3.805729-6.515567 3.178082-6.515567C2.012453-6.515567 .468244-6.445828 .259029-6.396015V-6.206725C.259029-6.166874 .288917-6.136986 .33873-6.136986L.757161-6.146949V-.278954H.199253C.14944-.278954 .119552-.249066 .119552-.199253V-.009963C.119552-.009963 .139477 .009963 .139477 .009963S1.683686-.009963 2.032379-.009963C2.430884-.009963 3.287671 .009963 3.287671 .009963S3.307597-.009963 3.307597-.009963V-.199253C3.307597-.249066 3.267746-.278954 3.227895-.278954H2.968867C2.570361-.278954 2.420922-.418431 2.420922-.71731V-2.82939ZM4.712329-4.762142C4.712329-4.343711 4.582814-3.995019 4.383562-3.716065C4.144458-3.377335 3.676214-3.20797 2.929016-3.20797H2.420922V-6.156912C2.660025-6.206725 2.938979-6.236613 3.287671-6.236613C3.895392-6.236613 4.712329-5.937733 4.712329-4.762142ZM1.09589-.278954V-6.166874H1.255293C1.275218-6.176837 1.295143-6.176837 1.325031-6.176837C1.58406-6.176837 1.613948-6.007472 1.613948-5.718555V-.71731C1.613948-.438356 1.603985-.278954 1.195517-.278954H1.09589Z'/>
+<path id='tz4b58800321d9c395-g1-2' d='M3.875467-2.769614L1.882939-4.752179C1.763387-4.871731 1.743462-4.891656 1.663761-4.891656C1.564134-4.891656 1.464508-4.801993 1.464508-4.692403C1.464508-4.622665 1.484433-4.60274 1.594022-4.493151L3.58655-2.49066L1.594022-.488169C1.484433-.37858 1.464508-.358655 1.464508-.288917C1.464508-.179328 1.564134-.089664 1.663761-.089664C1.743462-.089664 1.763387-.109589 1.882939-.229141L3.865504-2.211706L5.927771-.14944C5.947696-.139477 6.017435-.089664 6.07721-.089664C6.196762-.089664 6.276463-.179328 6.276463-.288917C6.276463-.308842 6.276463-.348692 6.246575-.398506C6.236613-.418431 4.652553-1.982565 4.154421-2.49066L5.977584-4.313823C6.027397-4.373599 6.176837-4.503113 6.22665-4.562889C6.236613-4.582814 6.276463-4.622665 6.276463-4.692403C6.276463-4.801993 6.196762-4.891656 6.07721-4.891656C5.997509-4.891656 5.957659-4.851806 5.84807-4.742217L3.875467-2.769614Z'/>
+<path id='tz4b58800321d9c395-g2-77' d='M9.225405-6.03736C9.315068-6.396015 9.334994-6.495641 10.082192-6.495641C10.311333-6.495641 10.400996-6.495641 10.400996-6.694894C10.400996-6.804483 10.30137-6.804483 10.132005-6.804483H8.816936C8.557908-6.804483 8.547945-6.804483 8.428394-6.615193L4.79203-.936488L4.014944-6.575342C3.985056-6.804483 3.965131-6.804483 3.706102-6.804483H2.34122C2.15193-6.804483 2.042341-6.804483 2.042341-6.615193C2.042341-6.495641 2.132005-6.495641 2.331258-6.495641C2.460772-6.495641 2.6401-6.485679 2.759651-6.475716C2.919054-6.455791 2.978829-6.425903 2.978829-6.316314C2.978829-6.276463 2.968867-6.246575 2.938979-6.127024L1.673724-1.05604C1.574097-.657534 1.404732-.33873 .597758-.308842C.547945-.308842 .418431-.298879 .418431-.119552C.418431-.029888 .478207 0 .557908 0C.876712 0 1.225405-.029888 1.554172-.029888C1.892902-.029888 2.251557 0 2.580324 0C2.630137 0 2.759651 0 2.759651-.199253C2.759651-.308842 2.650062-.308842 2.580324-.308842C2.012453-.318804 1.902864-.518057 1.902864-.747198C1.902864-.816936 1.912827-.86675 1.942715-.976339L3.297634-6.405978H3.307597L4.164384-.229141C4.184309-.109589 4.194271 0 4.313823 0C4.423412 0 4.483188-.109589 4.533001-.179328L8.557908-6.485679H8.56787L7.143213-.777086C7.043587-.388543 7.023661-.308842 6.236613-.308842C6.067248-.308842 5.957659-.308842 5.957659-.119552C5.957659 0 6.07721 0 6.107098 0C6.386052 0 7.063512-.029888 7.342466-.029888C7.750934-.029888 8.179328 0 8.587796 0C8.647572 0 8.777086 0 8.777086-.199253C8.777086-.308842 8.687422-.308842 8.498132-.308842C8.129514-.308842 7.85056-.308842 7.85056-.488169C7.85056-.52802 7.85056-.547945 7.900374-.727273L9.225405-6.03736Z'/>
+<path id='tz4b58800321d9c395-g2-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+</defs>
+<g id='tz4b58800321d9c395-page1'>
+<g stroke-miterlimit='10' transform='translate(-28.308105,-45.216774)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-41.85574,-21.20895)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-28.308105,-45.216774)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-8.229014,-79.381519)scale(0.996264,-0.996264)'>
+<g transform='translate(-15.84885,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-8.229014,-79.381519)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-8.229014' y='-79.381519' xlink:href='#tz4b58800321d9c395-g2-88'/>
+<use x='3.020408' y='-79.381519' xlink:href='#tz4b58800321d9c395-g1-2'/>
+<use x='12.983021' y='-79.381519' xlink:href='#tz4b58800321d9c395-g0-80'/>
+<use x='18.880904' y='-82.996882' xlink:href='#tz4b58800321d9c395-g4-49'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(45.42551,-79.381519)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.39583,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(45.42551,-79.381519)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='45.42551' y='-79.381519' xlink:href='#tz4b58800321d9c395-g2-77'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-8.229014,-45.216774)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(45.42551,-45.216774)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.20306,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(45.42551,-45.216774)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='45.42551' y='-45.216774' xlink:href='#tz4b58800321d9c395-g0-80'/>
+<use x='51.323393' y='-48.832138' xlink:href='#tz4b58800321d9c395-g4-49'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-10.41151 8.39085L22.10843-12.31667' fill='none'/>
+<g transform='matrix(0.84346,-0.53708,0.53708,0.84346,22.27708,-12.42406)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(8.36987,1.64354)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-28.308105,-45.216774)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-28.308105' y='-45.216774' xlink:href='#tz4b58800321d9c395-g4-112'/>
+<use x='-23.907916' y='-45.216774' xlink:href='#tz4b58800321d9c395-g4-114'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M.09294 15.58391H21.85304' fill='none'/>
+<g transform='matrix(-1.0,0.0,0.0,1.0,0.09294,15.58391)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linejoin='miter'>
+ <g stroke-linecap='round'>
+ <path d='M0 1.95987C.6848 1.95987 1.23993 1.52113 1.23993 .97993C1.23993 .43874 .6848 0 0 0' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(22.05302,15.58391)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M32.15437 9.22418V-8.80923' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,32.15437,-9.00922)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(34.50713,-1.49945)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-28.308105,-45.216774)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-28.308105' y='-45.216774' xlink:href='#tz4b58800321d9c395-g3-25'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+where (1) \(M_t \cong Y\) for \(t\neq \infty\) and (2) \(M_\infty\) is the sum of two disjoint effective Cartier divisors \(\mathbb P(C\oplus 1) + \Bl_X Y\), where \(C = C_XY\) is the normal cone of \(X\) in \(Y\). This is the construction of \(M\) and an outline of the proof that it possesses these two properties.
+</p>
+
+<ol class="org-ol">
+<li>Define \(M = \Bl_{X\times \{\infty\}}(Y\times \mathbb P^1)\).</li>
+<li>Observe that the normal cone to \(X\times \{\infty\}\) in \(Y\times \mathbb P^1\) is \(C\oplus 1\), so the exceptional divisor of this blowup is \(\mathbb P(C\oplus 1)\).</li>
+<li>Observe that we have a sequence of embeddings</li>
+</ol>
+<p>
+\[X = X\times\{\infty\}\hookrightarrow X\times \mathbb P^1 \hookrightarrow Y\times \mathbb P^1,\]
+so by the <a class="idlink" data-note="blowups-of-chain-of-closed-embeddings" href="../../notes/blowups-of-chain-of-closed-embeddings/">lemma on chains of closed embeddings</a>, the blowup \(\Bl_{X\times \{\infty\}}(X\times \mathbb P^1)\) embeds into \(M\). Since \(X\times\{\infty\}\) is a Cartier divisor in \(X\times \mathbb P^1\), \(\Bl_{X\times \{\infty\}}(X\times \mathbb P^1)\cong X\times \mathbb P^1\) and we therefore have an embedding
+\[X\times \mathbb P^1 \hookrightarrow M.\]
+</p>
+<ol class="org-ol">
+<li>Similarly, \(X = X\times \{\infty\}\hookrightarrow Y = Y\times \{\infty\} \hookrightarrow Y\times \mathbb P^1\) is a sequence of closed embeddings, yielding an embedding \(\Bl_XY\hookrightarrow M.\)</li>
+<li>For any scheme \(S\) flat over \(T\) and any closed subscheme \(Z\subset S\), the composition \(\Bl_ZS\to T\) of the blowdown map to S with the map to \(T\) is also flat. Hence \(M \to \mathbb P^1\) is flat since the projection map \(Y\times \mathbb P^1 \to \mathbb P^1\) is flat.</li>
+<li>The fiber \(M_t\) over any \(t\neq \infty\) is isomorphic to \(Y\times \{t\}\)</li>
+<li>Since \(\mathbb P(C\oplus 1)\) and \(\Bl_XY\) both globally embed in \(M\), we can check the structure of \(M_\infty\) locally to verify condition (2). That proof is below.</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Assume \(Y = \Spec A\) and \(I\subset A\) is the ideal defining \(X\). We study \(M \) near \(\{\infty\}\) by choosing the chart \(\mathbb A^1 = \mathbb P^1 \setminus \{0\}\)  for \(\mathbb P^1\) so that
+\[Y\times \mathbb A^1 = \Spec (A\otimes k[T]) = \Spec A[T].\]
+The ideal defining \(X\times \{0\}\) in \(Y\times \mathbb A^1\) is then \((I, T)\), so the blowup of \(Y\times \mathbb A^1\) along \(X\times \{0\}\) is \(\Proj(S^\bullet)\) with
+\[S^n = (I,T)^n.\]
+The scheme \(\Proj(S^\bullet)\) is covered by affines opens \(\Spec S^\bullet_{(a)}\) where
+\[S^\bullet_{(a)} = \{s/a^n ~ \mid ~ s\in S^n\}\]
+and \(a\) runs through a set of generators for the ideal \((I, T)\) in \(A[T]\). For \(a\in I\), the exceptional divisor \(\Proj(C\oplus 1)\) is defined in \(\Spec S^\bullet_{(a)}\) by the equation \(a/1\), thinking of \(a\) as a degree \(0\) element in of \(A \subset S^0 = A[T]\). The divisor \(\Bl_XY\) is defined by \(T/a\) in \(\Spec S^\bullet_{(a)}\). The fiber \(M_\infty\) of \(M\to \mathbb P^1\) is defined by \((T)\) in \(\Proj S^\bullet\), and since \(T = \frac{a}{1} \frac{T}{a}\),
+\[M_\infty = \mathbb P(C\oplus 1) + \Bl_XY.\]
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="blowups-of-chain-of-closed-embeddings" href="../../notes/blowups-of-chain-of-closed-embeddings/">Blowups Of Chain Of Closed Embeddings</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

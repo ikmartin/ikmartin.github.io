@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Generation From Org — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/website-generation-from-org/"
+      data-note-title="Website Generation From Org">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#description-of-tools">Description of tools</a></li>
+    <li class="toc-l2"><a href="#workflow">Workflow</a></li>
+    <li class="toc-l2"><a href="#todo">ToDo</a></li>
+    <li class="toc-l2"><a href="#known-issues-and-fixes">Known issues and fixes</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Website Generation From Org</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+<b>This is out of date.</b> I&rsquo;m now using a vibecoded base to create my website.
+</p>
+<div id="outline-container-description-of-tools" class="outline-2">
+<h2 id="description-of-tools">Description of tools</h2>
+<div class="outline-text-2" id="text-description-of-tools">
+<ul class="org-ul">
+<li><code>ox-hugo</code> is an emacs package which exports individual <code>.org</code> files into hugo-style <code>.md</code> files.</li>
+<li><code>Hugo</code> is a static site generator which uses <code>.md</code> sources to create a static site.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-workflow" class="outline-2">
+<h2 id="workflow">Workflow</h2>
+<div class="outline-text-2" id="text-workflow">
+<p>
+Site generation is not finished yet, so this is subject to extreme change. The basic workflow is likely fixed however.
+</p>
+
+<ol class="org-ol">
+<li>Use emacs and org to write notes.</li>
+<li>Use <code>org-hugo-export-to-md</code> to export (a single note) to hugo-like markdown.</li>
+<li>Put that markdown in the content folder of a hugo site.</li>
+<li>Run <code>hugo server --buildDrafts --navigateToChanged</code> to generate site.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-todo" class="outline-2">
+<h2 id="todo">ToDo</h2>
+<div class="outline-text-2" id="text-todo">
+<ul class="org-ul">
+<li>Write scripts in emacs to fascilitate multiple <code>org -&gt; md</code> exports at once, in particular, add the ability to automatically export linked org files.</li>
+<li>Add a tag/property <code>publish</code> in org files which flags whether a given org file should be published or not. Only publish those which are publishable. If a published file links to an unpublished file, link to 404 or to a &ldquo;this page is not yet published (or may never be published)&rdquo; page.</li>
+<li>Update the theme of the Hugo site to be nicer.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-known-issues-and-fixes" class="outline-2">
+<h2 id="known-issues-and-fixes">Known issues and fixes</h2>
+<div class="outline-text-2" id="text-known-issues-and-fixes">
+<ul class="org-ul">
+<li>calls to <code>org-hugo-export-as-md</code> initially threw an error: &ldquo;invalid function: org-export-with-buffer-copy&rdquo;. This is because in the branch of org I use, needed for better <code>org-latex-preview</code> functionality, the function <code>org-html-format-latex</code> includes a call to the deprecated <code>org-export-with-buffer-copy</code> function. This is now a macro, defined at runtime, not a builtin function. The fix includes overriding the <code>org-html-format-latex</code> call, and is handled in the doom.org source config file in the &ldquo;Website&rdquo; section. The fix is copy and pasted from <a href="https://github.com/kaushalmodi/ox-hugo/issues/760">this github thread</a>.</li>
+<li>in the current test instantiation of the site (<code>~/Desktop/websites/hugo-site/</code>), math-jax does not automatically work, it must be switched on. To do this, one follows the instructions <a href="https://gohugo.io/content-management/mathematics/">here</a> in the Hugo docs. However, I spent a while troubleshooting before I realized that the two files one creates, the partial template <code>/layouts/_partial/math.html</code> and <code>/layouts/baseof.html</code> must be place in the <i>theme</i> layout folder not the <i>site</i> layout folder. That is, the paths ought to be <code>/&lt;base-site-dir&gt;/themes/my-theme/layouts/_partial/math.html</code> and <code>/&lt;base-site-dir&gt;/themes/my-theme/_defaults/baseof.html</code> respectively. The directory <code>/&lt;base-site-dir&gt;/layouts/</code> seems to be empty, I don&rsquo;t think anything should go in here.</li>
+</ul>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chern Classes And Segre Classes Topic Page — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/chern-classes/"
+      data-note-title="Chern Classes And Segre Classes Topic Page">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#defining-the-first-chern-class-of-a-line-bundle">Defining the first Chern class of a line bundle</a></li>
+    <li class="toc-l2"><a href="#segre-classes-of-a-vector-bundle">Segre classes of a vector bundle</a></li>
+    <li class="toc-l2"><a href="#chern-classes-of-a-vector-bundle">Chern classes of a vector bundle</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Chern Classes And Segre Classes Topic Page</h1>
+      <p class="note-meta"><span class="taxon">topic-page</span><span class="sep">·</span><a class="tag" href="../../notes/tag/intersection-theory/">#intersection-theory</a></p>
+
+      <article class="note">
+<p>
+This is a note which serves as a starting part for various nodes about Chern classes.
+</p>
+
+<p>
+To define Chern classes the workflow is as follows:
+</p>
+
+<ul class="org-ul">
+<li>Define First Chern class of a line bundle</li>
+<li>Use these to construt inverse Chern classes, i.e. Segre classes, of vector bundles</li>
+<li>Invert the Segre classes to obtain Chern classes</li>
+</ul>
+<div id="outline-container-defining-the-first-chern-class-of-a-line-bundle" class="outline-2">
+<h2 id="defining-the-first-chern-class-of-a-line-bundle">Defining the first Chern class of a line bundle</h2>
+<div class="outline-text-2" id="text-defining-the-first-chern-class-of-a-line-bundle">
+<p>
+To do intersection theory with a line bundle \(L\) over a scheme \(X\), it&rsquo;d make sense to associate some closed set \(D\subset X\) to \(L\) and then intersect stuff with \(D\). Intuitively, this \(D\) should be codimension \(1\), and if \(V\subset X\) is some subvariety, then we&rsquo;d hope the closed set \(D\cap V\) corresponds to the line bundle \(L|_V\) in \(V\). In a perfect world, we&rsquo;d have
+</p>
+
+\begin{align*}
+  \{\text{Line bundles}\} \leftrightarrow \{\text{Cartier divisors}\} \leftrightarrow \{\text{Weil divisors}\},
+\end{align*}
+
+<p>
+in which case this process would be exactly the first Chern class of \(L\); that is, \(c_1(L)\) is simply a map which takes a \(k\)-cycle \(\alpha\in A_k(X)\) and intersects it with its associated Weil divisor to attain a \(A_{k-1}(X)\) cycle. However, we don&rsquo;t live in a perfect world, as instead we have
+</p>
+
+\begin{align*}
+  \{\text{Line bundles}\} \hookleftarrow\{\text{Cartier divisors}\} \hookrightarrow \{\text{Weil divisors}\}.
+\end{align*}
+
+<p>
+This association follows from the following nodes.
+</p>
+<ul class="org-ul">
+<li><a class="idlink" data-note="cartier-divisors" href="../../notes/cartier-divisors/">Cartier divisors</a></li>
+<li><a class="idlink" data-note="weil-divisor-associated-to-a-cartier-divisor" href="../../notes/weil-divisor-associated-to-a-cartier-divisor/">Each Cartier divisor uniquely determines a locally principal Weil divisor</a></li>
+<li><a class="idlink" data-note="line-bundles-associated-to-cartier-divisors" href="../../notes/line-bundles-associated-to-cartier-divisors/">Cartier divisors uniquely determine line bundles</a></li>
+</ul>
+
+<p>
+To do intersection theory with line bundles, we need a way to associate&#x2026;
+</p>
+<ul class="org-ul">
+<li><a class="idlink" data-note="pseudo-divisor" href="../../notes/pseudo-divisor/">Pseudo divisor</a></li>
+</ul>
+
+<p>
+We can then define the first Chern class of a line bundle and we retrieve desirable properties.
+</p>
+<ul class="org-ul">
+<li><a class="idlink" data-note="chern-class-of-a-line-bundle" href="../../notes/chern-class-of-a-line-bundle/">The Chern class of a line bundle</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-segre-classes-of-a-vector-bundle" class="outline-2">
+<h2 id="segre-classes-of-a-vector-bundle">Segre classes of a vector bundle</h2>
+<div class="outline-text-2" id="text-segre-classes-of-a-vector-bundle">
+<p>
+At this point in the development of intersection theory we have proper pushforward, flat pullback and the first Chern class of a line bundle. We use all of these to define the Segre class of a vector bundle.
+</p>
+
+<ul class="org-ul">
+<li><a class="idlink" data-note="segre-class-of-vector-bundle" href="../../notes/segre-class-of-vector-bundle/">Segre class of vector bundle</a></li>
+</ul>
+
+<p>
+Then we prove some properties of the Segre class.
+</p>
+
+<ul class="org-ul">
+<li><a class="idlink" data-note="properties-of-segre-classes" href="../../notes/properties-of-segre-classes/">Properties of Segre classes</a></li>
+</ul>
+
+<p>
+Note that this only serves to define the Segre class of a vector bundle; we must treat the case of cones slightly differently.
+</p>
+</div>
+</div>
+<div id="outline-container-chern-classes-of-a-vector-bundle" class="outline-2">
+<h2 id="chern-classes-of-a-vector-bundle">Chern classes of a vector bundle</h2>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">7</span></h2>
+  <ul>
+    <li><a data-note="cartier-divisors" href="../../notes/cartier-divisors/">Cartier Divisors</a></li>
+    <li><a data-note="chern-class-of-a-line-bundle" href="../../notes/chern-class-of-a-line-bundle/">Chern Class Of A Line Bundle</a></li>
+    <li><a data-note="properties-of-segre-classes" href="../../notes/properties-of-segre-classes/">Properties Of Segre Classes</a></li>
+    <li><a data-note="pseudo-divisor" href="../../notes/pseudo-divisor/">Pseudo Divisor</a></li>
+    <li><a data-note="line-bundles-associated-to-cartier-divisors" href="../../notes/line-bundles-associated-to-cartier-divisors/">Relationship Between Line Bundles And Cartier Divisors</a></li>
+    <li><a data-note="segre-class-of-vector-bundle" href="../../notes/segre-class-of-vector-bundle/">Segre Class Of A Vector Bundle</a></li>
+    <li><a data-note="weil-divisor-associated-to-a-cartier-divisor" href="../../notes/weil-divisor-associated-to-a-cartier-divisor/">Weil Divisor Associated To A Cartier Divisor</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finite Fields: Existence And Galois Theory — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/finite-fields-existence-and-galois-theory/"
+      data-note-title="Finite Fields: Existence And Galois Theory">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#important-preliminary-results">Important preliminary results</a></li>
+    <li class="toc-l2"><a href="#construction-of-finite-fields-as-splitting-fields">Construction of finite fields as splitting fields</a></li>
+    <li class="toc-l2"><a href="#galois-theory-of-finite-fields">Galois theory of finite fields</a></li>
+    <li class="toc-l2"><a href="#further-important-facts">Further important facts</a></li>
+    <li class="toc-l3"><a href="#finite-fields-are-simple-extensions">Finite fields are simple extensions</a></li>
+    <li class="toc-l3"><a href="#counting-irreducible-polynomials-over-mathbb-f-p">Counting irreducible polynomials over \(\mathbb F_p\)</a></li>
+    <li class="toc-l3"><a href="#an-irreducible-polynomial-over-mathbb-z-which-is-reducible-modulo-every-prime">An irreducible polynomial over \(\mathbb Z\) which is reducible modulo every prime</a></li>
+    <li class="toc-l2"><a href="#exercises">Exercises</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Finite Fields: Existence And Galois Theory</h1>
+      <p class="note-meta"><span class="taxon">blog</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebra/">#algebra</a><span class="sep">·</span><a class="tag" href="../../notes/tag/field-theory/">#field-theory</a><span class="sep">·</span><a class="tag" href="../../notes/tag/galois-theory/">#galois-theory</a></p>
+
+      <article class="note">
+<blockquote>
+<p>
+A post about finite fields. Starts by proving the existence of finite fields and concludes by stating core results about their properties as Galois extensions.
+</p>
+</blockquote>
+
+<p>
+I&rsquo;ve found the basic theory of finite fields to be slippery. A month or two after I relearn it, I inevitably forget the order in which facts appear and are proven. I suspect this is partly because my main reference, Dummit and Foote, mixes results about finite fields in with broader topics of field and ring theory. If I was writing a textbook I&rsquo;d do the same; but nonetheless, when you&rsquo;re drilling bookwork questions on finite fields specifically, it&rsquo;d be nice to have all the facts in one place. This is my attempt to do just that.
+</p>
+
+<p>
+My treatment isn&rsquo;t exhaustive, but it does cover the main points necessary to answer finite field questions on the UT Austin Algebra II prelim exam, I think.
+</p>
+
+<p>
+<b>Note:</b> there&rsquo;s no theorem numbering here, which makes citing facts a little awkward. Instead each cited fact is a link, and clicking it jumps to the point of the page where that fact first appears. Proofs are folded away &#x2014; click a proof to expand it.
+</p>
+<div id="outline-container-important-preliminary-results" class="outline-2">
+<h2 id="important-preliminary-results">Important preliminary results</h2>
+<div class="outline-text-2" id="text-important-preliminary-results">
+<p>
+Before we begin we&rsquo;ll need two basic facts.
+</p>
+
+<p>
+<a id="target-1"></a>
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Every field \(K\) has characteristic \(0\) or \(p\) for some prime number \(p\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The characteristic \(n\in \mathbb Z\) of a field \(K\) is the unique nonnegative generator of \(\ker\varphi\) where \(\varphi\) is the unique map \(\varphi:\mathbb Z \to K\). This gives us an embedding \(\mathbb Z/(n) \to K\). Since \(K\) is a field, \(\mathbb Z/(n)\) must be a domain. This only occurs if \((n)\) is a prime ideal, giving us the result.
+</p>
+</details>
+
+<p>
+The following is a trivial (but important) corollary:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+Finite fields have prime characteristic.
+</p>
+</div>
+
+<p>
+We now prove a vital criterion for the separability of a polynomial:
+</p>
+
+<p>
+<a id="target-2"></a>
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Let \(K\) be a field. A polynomial \(f \in K[x]\) is separable if and only if \((f,f') = 1\) where \(f'\) is the formal derivative of \(f\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(L\) be the splitting field of \(f\) throughout. If \(f\) is inseparable then it has a repeated root in \(L\), and hence can be written
+\[f(x) = (x - \alpha)^2g(x)\]
+for some \(g\in L[x]\) and \(\alpha \in L\). Then
+\[f'(x) = 2(x-\alpha)g(x) + (x-\alpha)^2g'(x),\]
+which clearly has \(0\) as a root. Thus \(f'(x)\) and \(f(x)\) share a common factor and \((f,f')\neq 1\) as an ideal in \(L[x]\). Pulling back to \(K[x]\) under the inclusion \(K[x] \hookrightarrow L[x]\) demonstrates that \((f,f')\neq 1\) in \(K[x]\) too.
+</p>
+
+<p>
+Suppose now that \((f, f') \neq 1\). This means that \(f\) and \(f'\) share a root \(\alpha\) in \(L\). Let \(f(x) = (x-\alpha)h(x)\) be a factorization of \(f\) in \(L\). Taking the derivative, we see
+\[f'(x) = h(x) - (x-\alpha)h'(x).\]
+Since \(\alpha\) is a root of \(f'(x)\) by assumption, it must be the case that \(h\) is divisible by \((x-\alpha)\). This implies \(f\) is divisible by \((x-\alpha)^2\), hence it has a repeated root and is not separable.
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-construction-of-finite-fields-as-splitting-fields" class="outline-2">
+<h2 id="construction-of-finite-fields-as-splitting-fields">Construction of finite fields as splitting fields</h2>
+<div class="outline-text-2" id="text-construction-of-finite-fields-as-splitting-fields">
+<p>
+Here we prove that finite fields exist and construct the field \(\mathbb F_{p^n}\) of order \(p^n\) as the splitting field of the polynomial \(x^{p^n}-x\), where \(p\) is the characteristic of the finite field and \(n\) is some positive integer. We begin with two lemmas.
+</p>
+
+<p>
+<a id="target-3"></a>
+</p>
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(K\) is a finite field of prime characteristic \(p>0\), then \(|K| = p^n\) for some positive integer \(n\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Since \(K\) has prime characteristic \(p\), there is a unique inclusion \(\mathbb F_p \hookrightarrow K\). Hence \(K\) is a finite extension of \(\mathbb F_p\), so \(K\) is an \(n\)-dimensional vector space with basis \(\mathbf b_1,...,\mathbf b_n\) over \(\mathbb F_p\) where \([K:\mathbb F_p] = n\). Every element in \(K\) can therefore be written uniquely as \(a_1\mathbf b_1 + ... + a_n\mathbf b_n\) with \(a_i \in \mathbb F_p\), giving us \(p^n\) elements in \(K\).
+</p>
+</details>
+
+<p>
+<a id="target-4"></a>
+</p>
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(K\) is a field of prime characteristic \(p > 0\), then the polynomial \(f(x) = x^{p^n} - x\) is separable.
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The derivative of \(f\) is \(f'(x) = p^{n}x^{p^n - 1} - 1 = -1\), so \((f,f') = 1\). By <a href="#target-2">the separability criterion</a>, \(f\) is separable.
+</p>
+</details>
+
+<p>
+From this lemma we can immediately deduce the existence of finite fields.
+</p>
+
+<p>
+<a id="target-5"></a>
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+<i>(Existence of Finite Fields)</i> Finite fields exist. Furthermore, if \(K\) is a finite field, then it has prime characteristic \(p\) for some \(p>0\) and is the splitting field of \(x^{p^n} - x\) over \(\mathbb F_p\) where \(n = [K:\mathbb F_p]\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We prove the existence of finite fields by showing that the roots of \(f(x) = x^{p^n} - x\) form a field. With this in mind, let \(K\) be the splitting field of \(f\) over \(\mathbb F_p\). By <a href="#target-4">the lemma above</a>, \(f\) is separable over \(\mathbb F_p\) and hence has distinct roots. Furthermore, \(0\) and \(1\) are roots of \(f\), and if \(\alpha\) and \(\beta\) are any other roots of \(f\), then \(\alpha^{p^n} = \alpha\) and \(\beta^{p^n} = \beta\) imply that \((\alpha\beta)^{p^n} = \alpha\beta\). This means
+\[f(\alpha\beta) = (\alpha\beta)^{p^n} - \alpha\beta = 0,\]
+\[(\alpha^{-1})^{p^n} = \alpha^{-1},\]
+and by the freshman&rsquo;s dream,
+</p>
+\begin{align*}
+f(\alpha + \beta) &= (\alpha + \beta)^{p^n} - \alpha - \beta \\
+&= \alpha^{p^n} - \alpha + \beta^{p^n} - \beta = 0.
+\end{align*}
+<p>
+Thus the roots of \(f\) form a field, and since the splitting field \(K\) is the minimal field containing all roots of \(f\), it is precisely the \(p^n\) distinct roots of \(f\).
+</p>
+
+<p>
+Now suppose that \(K\) is a finite field. Then it must be of order \(p^n\) by <a href="#target-3">the order lemma</a>. The group \(K^\times\) is then of order \(p^n-1\), meaning that for any nonzero element \(\alpha \in K\), \(\alpha^{p^n - 1} = 1\). This implies \(\alpha^{p^n} = \alpha\) for any element in \(K\), hence every element of \(K\) is a root of \(f(x) = x^{p^n} - x\). Since \(f\) can have at most \(p^n\) roots, \(K\) contains all the roots of \(f\) and is hence the splitting field of \(f\).
+</p>
+</details>
+
+<p>
+Since any two choices of a splitting field of a polynomial are isomorphic, any two finite fields of the same cardinality are isomorphic. This justifies the following remark:
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+We denote by \(\mathbb F_{p^n}\) the finite field of order \(p^n\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-galois-theory-of-finite-fields" class="outline-2">
+<h2 id="galois-theory-of-finite-fields">Galois theory of finite fields</h2>
+<div class="outline-text-2" id="text-galois-theory-of-finite-fields">
+<p>
+In the last section we showed that finite fields exist and are all isomorphic to the splitting field of a separable polynomial over \(\mathbb F_p\); see <a href="#target-5">the existence proposition</a>. We therefore obtain the following immediate corollary:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+The extension \(\mathbb F_{p^n}/\mathbb F_p\) is a Galois extension.
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Recall that \(L/K\) is a Galois extension if and only if \(L\) is the splitting field of a separable polynomial over \(K\).
+</p>
+</details>
+
+<p>
+Its Galois group has exceedingly nice structure; in fact, it is cyclic and generated by the Frobenius endomorphism \(F\).
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+The Galois group \(\Gal(\mathbb F_{p^n}/\mathbb F_p)\) is cyclic and generated by the Frobenius endomorphism \(F:x \mapsto x^p\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We first note that \(F\) is an automorphism of \(\mathbb F_{p^n}\) which fixes \(\mathbb F_p\). Indeed, it is injective since it is an endomorphism of fields and is hence also surjective by the finiteness of \(\mathbb F_{p^n}\). It fixes \(\mathbb F_p\) by Fermat&rsquo;s little theorem: \(\alpha^p = \alpha\) for all \(\alpha\in \mathbb F_p\).
+</p>
+
+<p>
+Since \(F \in \Gal(\mathbb F_{p^n}/\mathbb F_p)\) and \(|\Gal(\mathbb F_{p^n}/\mathbb F_p)| = [\mathbb F_{p^n}:\mathbb F_p] = n\), we know that \(F^n\) is the identity on \(\mathbb F_{p^n}\). We need only that \(n\) is the minimal such integer which makes this true. Suppose then that there were a positive integer \(d\) smaller than \(n\) such that \(F^d = \id\). Each \(\alpha \in \mathbb F_{p^n}\) would then satisfy \(\alpha^{p^d} = \alpha\), and hence the polynomial \(x^{p^d} - x\) would have \(p^n\) roots. This is impossible, so \(n\) must be the smallest positive integer such that \(F^n = \id\). We conclude that the Frobenius endomorphism generates the Galois group of \(\mathbb F_{p^n}/\mathbb F_p\).
+</p>
+</details>
+
+<p>
+Note that this means \(\Gal(\mathbb F_{p^n}/\mathbb F_p) = \mathbb Z/n\mathbb Z\). Quite a nice Galois group, all things considered. For one thing, it&rsquo;s Abelian, and hence all subextensions of \(\mathbb F_{p^n}/\mathbb F_p\) are Galois extensions of \(\mathbb F_p\) by the Fundamental Theorem. For another, we understand all the subgroups of \(\mathbb Z/n\mathbb Z\) &#x2014; they&rsquo;re generated by integers \(d\) which divide \(n\) &#x2014; and hence the subgroups of \(\Gal(\mathbb F_{p^n}/\mathbb F_p)\) are \(\langle F^d\rangle\) for integers \(d\) which divide \(n\), since \(F\) generates the Galois group. Hence for every divisor \(d\) of \(n\) there is exactly one subfield of \(\mathbb F_{p^n}\) over \(\mathbb F_p\) of order \(d\), namely the fixed field of the subgroup generated by \(F^{n/d}\), and it is isomorphic to \(\mathbb F_{p^d}\). The following theorem summarizes what we&rsquo;ve shown thus far.
+</p>
+
+<p>
+<a id="target-6"></a>
+</p>
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(K\) be a finite field of prime characteristic \(p>0\). Then
+</p>
+
+<ul class="org-ul">
+<li>\(K\) is a finite extension of \(\mathbb F_{p}\)</li>
+<li>\(K \cong \mathbb F_{p^n}\), where \(\mathbb F_{p^n}\) is the splitting field of \(x^{p^n} - x\) and \(n = [K:\mathbb F_p]\)</li>
+<li>\(\mathbb F_{p^n}/\mathbb F_p\) is Galois of order \(n\) with cyclic Galois group generated by the Frobenius endomorphism</li>
+<li>Every subextension of \(\mathbb F_{p^n}/\mathbb F_p\) is isomorphic to \(\mathbb F_{p^d}/\mathbb F_p\) for some \(d\) dividing \(n\).</li>
+</ul>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+See the paragraph immediately above.
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-further-important-facts" class="outline-2">
+<h2 id="further-important-facts">Further important facts</h2>
+<div class="outline-text-2" id="text-further-important-facts">
+<p>
+Given what we now know, we can retroactively construct \(\mathbb F_{p^n}\) as a simple extension of \(\mathbb F_p\). Doing this will yield some interesting results; for instance, we&rsquo;ll realize that \(x^{p^n} - x\) is actually the product of all irreducible polynomials of order \(d\) over \(\mathbb F_p\) with \(d\) varying over the divisors of \(n\).
+</p>
+</div>
+<div id="outline-container-finite-fields-are-simple-extensions" class="outline-3">
+<h3 id="finite-fields-are-simple-extensions">Finite fields are simple extensions</h3>
+<div class="outline-text-3" id="text-finite-fields-are-simple-extensions">
+<p>
+To show that \(\mathbb F_{p^n}\) is a simple extension of \(\mathbb F_p\), we need to find an element of \(\mathbb F_{p^n}\) which is algebraic of order \(n\) over \(\mathbb F_p\).
+</p>
+
+<p>
+<a id="target-7"></a>
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+For each \(n\), there is an element \(\alpha \in \mathbb F_{p^n}\) of order \(n\) over \(\mathbb F_p\). Hence \(\mathbb F_{p^n} \cong \mathbb F_p(\alpha)\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Fix some integer \(n\) and let \(\alpha\) be a generator of \(\mathbb F_{p^n}^\times\), noting that every finite subgroup of the multiplicative subgroup of <i>any</i> field is cyclic (<a href="#target-8">see the lemma below</a>). Then
+\[\mathbb F_{p^n} = \mathbb F^\times_{p^n} \cup \{0\} = \langle \alpha \rangle \cup \{0\} = \mathbb F_p(\alpha).\]
+</p>
+</details>
+
+<p>
+This proposition could also be stated as follows: for each integer \(n\), there is an irreducible polynomial of order \(n\) over \(\mathbb F_p\). Quotienting \(\mathbb F_p[x]\) by this irreducible polynomial would then produce a finite field of order \(p^n\) which, as we&rsquo;ve seen, is necessarily \(\mathbb F_{p^n}\).
+</p>
+
+<p>
+The following lemma is included for completeness. It is Proposition 9.18 in Dummit and Foote.
+</p>
+
+<p>
+<a id="target-8"></a>
+</p>
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Let \(K\) be any field and let \(G\subseteq K^\times\) be a subgroup of \(K^\times\). If \(G\) is finite then it is cyclic.
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The group \(K^\times\) is Abelian, hence so is \(G\). By the Structure Theorem of Abelian groups there exist integers \(n_1 ~|~ n_2 ~|~ ... ~|~ n_k\) such that
+\[G \cong \mathbb Z/n_1 \mathbb Z \times ... \times \mathbb Z/n_k \mathbb Z.\]
+Since \(n_i ~|~ n_k\) for each \(1\leq i\leq k\), every element of \(G\) is a root of the polynomial \(x^{n_k} - 1\). If \(k > 1\), this would imply that there is a polynomial over \(K\) whose order is strictly less than the number of its roots, which is impossible. Hence \(k=1\) and we conclude that \(G\) is cyclic.
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-counting-irreducible-polynomials-over-mathbb-f-p" class="outline-3">
+<h3 id="counting-irreducible-polynomials-over-mathbb-f-p">Counting irreducible polynomials over \(\mathbb F_p\)</h3>
+<div class="outline-text-3" id="text-counting-irreducible-polynomials-over-mathbb-f-p">
+<p>
+As a corollary to <a href="#target-7">the proposition from the previous section</a> we obtain the following:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+The polynomial \(x^{p^n} - x\) is the product of all irreducible polynomials of order \(d\) over \(\mathbb F_p\), where \(d\) ranges over the divisors of \(n\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+By <a href="#target-6">the summary theorem</a> we know \(\mathbb F_{p^n}\) contains a copy of \(\mathbb F_{p^d}\) for each \(d\) dividing \(n\), and hence also contains a primitive element \(\alpha_d\) of order \(d\). Since \(f(x) = x^{p^n} - x\) vanishes at \(\alpha_d\), the minimal polynomial of \(\alpha_d\) must divide \(x^{p^n} - x\).
+</p>
+
+<p>
+Conversely, if \(g\) is an irreducible polynomial of order \(d\) dividing \(n\) with root \(\alpha\), then \(\mathbb F_p(\alpha)\cong \mathbb F_{p^d}\) is a subfield of \(\mathbb F_{p^n}\), and hence \(g\) divides \(x^{p^n} - x\).
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-an-irreducible-polynomial-over-mathbb-z-which-is-reducible-modulo-every-prime" class="outline-3">
+<h3 id="an-irreducible-polynomial-over-mathbb-z-which-is-reducible-modulo-every-prime">An irreducible polynomial over \(\mathbb Z\) which is reducible modulo every prime</h3>
+<div class="outline-text-3" id="text-an-irreducible-polynomial-over-mathbb-z-which-is-reducible-modulo-every-prime">
+<p>
+Recall that a polynomial which is irreducible over \(\mathbb F_p\) for every prime is irreducible over \(\mathbb Q\). We end with an example which demonstrates the converse is not true.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+The polynomial \(x^4 + 1\) is irreducible over \(\mathbb Z\) but is reducible modulo every prime.
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The polynomial \(x^4 + 1\) can easily be seen to be irreducible over \(\mathbb Z\) by applying Eisenstein to \((x+1)^4 + 1\). It is reducible modulo \(2\) since
+\[x^4 + 1 \equiv (x + 1)^4 \mod 2.\]
+Suppose then that \(p\) is an odd prime. We&rsquo;ll argue that all the roots of \(x^4 + 1\) are in \(\mathbb F_{p^2}\), and since this is a degree 2 extension of \(\mathbb F_p\), it must be the case that \(x^4 + 1\) factors into (at least) quadratics over \(\mathbb F_p\). Notice first that \(p^2\) is either \(1\), \(3\), \(5\) or \(7\) modulo 8. All of these square to \(1\) in \(\mathbb Z/8\mathbb Z\); hence \(8 ~|~ p^2 - 1\). It is a general fact that \(d ~|~ n\) if and only if \(x^d - 1 ~|~ x^n - 1\), since
+\[d ~|~ n ~\iff ~ \text{every root of } ~x^d - 1 ~\text{ is a root of } ~x^n - 1 ~\iff x^d - 1 ~|~ x^n - 1,\]
+and hence \(x^8 - 1\) divides \(x^{p^2 - 1} - 1\). This gives us the following divisibility chain:
+\[x^4 + 1 ~|~ x^8 - 1 ~|~ x^{p^2 - 1} - 1 ~|~ x^{p^2} - x,\]
+which implies that \(x^4 + 1\) splits over \(\mathbb F_{p^2}\). Since \([\mathbb F_{p^2}:\mathbb F_p] = 2\), the roots of \(x^4 + 1\) are order \(2\) over \(\mathbb F_p\), implying \(x^4 + 1\) factors into quadratics modulo \(p\).
+</p>
+</details>
+</div>
+</div>
+</div>
+<div id="outline-container-exercises" class="outline-2">
+<h2 id="exercises">Exercises</h2>
+<div class="outline-text-2" id="text-exercises">
+<p>
+Here I complete some of the exercises in Section 14.3 of Dummit and Foote. Consider these to be examples.
+</p>
+
+<div class="env env-problem">
+<p class="env-label">Problem</p>
+<p>
+<b>1.</b> Factor \(x^8 - x\) into irreducibles in \(\mathbb Z[x]\) and in \(\mathbb F_2[x]\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Over \(\mathbb Z\) this polynomial factors as
+\[x^8 - x = x(x - 1)(x^6 + x^5 + x^4 + x^3 + x^2+ x+1).\]
+The rightmost factor is the \(7\)th cyclotomic polynomial, and is hence irreducible over \(\mathbb Z\).
+</p>
+
+<p>
+Over \(\mathbb F_2\), \(x^8 - x = x^{2^3} - x\) is the product of all irreducible polynomials of order either 1 or 3, since these are the two numbers dividing 3. Using the factorization we found above, we see that
+\[\frac{x^8 - x}{x(x-1)} = x^6 + x^5+x^4+x^3+x^2+x+1,\]
+hence there are exactly 2 irreducible polynomials of order 3 over \(\mathbb F_2\). They both must have nonzero cubic and constant term, leaving only 4 options depending on whether or not \(x\) and \(x^2\) are present.
+</p>
+
+<ul class="org-ul">
+<li>\(x^3 + x^2 + x + 1 = (x^2 + 1)(x + 1)\), hence it is not irreducible.</li>
+<li>\(x^3 + 1\) has a root modulo \(\mathbb F_2\), hence is not irreducible.</li>
+</ul>
+
+<p>
+This implies \(x^3 + x^2 + 1\) and \(x^3 + x + 1\) are the two irreducible cubics over \(\mathbb F_2\), and hence
+\[x^8 - x = x(x - 1)(x^3 + x^2 + 1)(x^3 + x + 1) \mod 2.\]
+</p>
+</details>
+
+<div class="env env-problem">
+<p class="env-label">Problem</p>
+<p>
+<b>3.</b> Prove that an algebraically closed field must be infinite.
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Suppose \(K\) is an algebraically closed field. If \(K\) has characteristic \(0\), then it contains \(\mathbb Q\) and is hence infinite. If it is of prime characteristic \(p\) then it contains \(\mathbb F_p\). If \(K\) were finite, then \([K:\mathbb F_p] = n\) for some integer \(n\). However, it must then be the case that \(x^{p^{n+1}} - x\) doesn&rsquo;t factor into linear terms over \(K\), as this would imply \([K:\mathbb F_p] = n+1\). Hence \(K\) must be infinite.
+</p>
+</details>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

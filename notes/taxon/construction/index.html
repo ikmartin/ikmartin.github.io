@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>construction notes — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../../assets/css/content.css">
+  <link rel="stylesheet" href="../../../assets/css/table.css">
+  <link rel="stylesheet" href="../../../assets/css/components.css">
+  <link rel="stylesheet" href="../../../assets/css/environments.css">
+  <script src="../../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class=""
+      data-base="../../../"
+      data-note-url=""
+      data-note-title="construction notes">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../../research/">Research</a>
+        <a href="../../../projects/">Projects</a>
+        <a href="../../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <h1 class="page-title">construction notes</h1>
+      
+      <section class="idx-group">
+  <h2>Taxon: construction <span class="count">10</span></h2>
+  <ul>
+    <li><a data-note="vector-bundle-associated-to-affine-n-bundle" href="../../../notes/vector-bundle-associated-to-affine-n-bundle/">Vector Bundle Associated To Affine N Bundle Aka Vector Bundle Torsor</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="length-of-edge-in-tropical-family" href="../../../notes/length-of-edge-in-tropical-family/">Length Of Edge In Tropical Family Or Of A Node</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="torus-action-of-mumford-degeneration" href="../../../notes/torus-action-of-mumford-degeneration/">Torus Action Of Mumford Degeneration</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="toric-variety-from-a-polytope" href="../../../notes/toric-variety-from-a-polytope/">Toric Variety From A Polytope Or Polyhedron</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="mumford-degeneration" href="../../../notes/mumford-degeneration/">Mumford Degeneration</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="log-structure-at-the-nodes-of-a-smooth-log-curve" href="../../../notes/log-structure-at-the-nodes-of-a-smooth-log-curve/">Ghost Sheaf At The Nodes Of A Stable Log Curve</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="tropicalization-of-a-stable-curve" href="../../../notes/tropicalization-of-a-stable-curve/">Tropicalization Of A Stable Curve</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="deformation-to-the-normal-cone" href="../../../notes/deformation-to-the-normal-cone/">Deformation To The Normal Cone</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="etale-cover-of-central-fiber-from-affine-manifold-msldd1" href="../../../notes/etale-cover-of-central-fiber-from-affine-manifold-msldd1/">Etale Cover Of Central Fiber From Affine Manifold Msldd1</a> <span class="idx-taxon">construction</span></li>
+    <li><a data-note="truncation-of-the-cotangent-complex" href="../../../notes/truncation-of-the-cotangent-complex/">Truncation Of The Cotangent Complex</a> <span class="idx-taxon">construction</span></li>
+  </ul>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../../assets/js/trail.js"></script>
+  <script src="../../../assets/js/notes-table.js"></script>
+  <script src="../../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

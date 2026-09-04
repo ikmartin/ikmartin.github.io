@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equivariant Chern Classes Of Line Bundes Over A Point — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/chern-classes-of-equivariant-line-bundles-over-a-point/"
+      data-note-title="Equivariant Chern Classes Of Line Bundes Over A Point">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Equivariant Chern Classes Of Line Bundes Over A Point</h1>
+      <p class="note-meta"><span class="taxon">example</span></p>
+
+      <article class="note">
+
+
+<p>
+See <a class="citeref" href="../../notes/anderson-fulton-equivariantcohomologyalgebraic2023/">[AF23, Example 2.3.3.]</a>
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+What are the equivariant Chern classes of line bundles over a point \(\text{pt}\) with a \(\mathbb C^*\) action?
+</p>
+
+<ul class="org-ul">
+<li>A \(\mathbb C^*\)-equivariant vector bundle over \(\text{pt}\) is simply a vector space \(V\) with a \(\mathbb C^*\) action; i.e. a \(\mathbb C^*\)-representation \(\mathbb C^* \to \Aut(V)\).</li>
+<li>If we want a line bundle, then \(\Aut(V) = \mathbb C^*\)and so we&rsquo;re asking for a character \(a\in \Hom(\mathbb C^*, \mathbb C^*) = \mathbb Z.\) Thus up to isomorphism the equivariant line bundles over a point are the one-dimensional representations \(\mathbb C_a\) of \(\mathbb C^*\), where \(z\cdot v = z^a v\).</li>
+<li>The <i>equivariant</i> Chern class \(c_1^G(E)\) of an equivariant vector bundle \(E\to B\) is the ordinary Chern class \(c_1(\mathbb E\times^{G}E)\) of \(\mathbb E\times^GE\) over \(\mathbb E \times^G B\), so in our case the equivariant Chern class \(c_1^{\mathbb C^*}(\mathbb C_a) := c_1(\mathbb E\times^{\mathbb C^*} \mathbb C_a)\) is an ordinary Chern class of a line bundle over \(\mathbb B = \mathbb E\times^{\mathbb C^*} \text{pt}\).</li>
+<li>In our case, \(\mathbb C^m\setminus \{0\}\) serves as an approximation space \(\mathbb E\). This means \(\mathbb B = (\mathbb C^m\setminus \{0\})\times^{\mathbb C^*} \text{\{pt\}} = \mathbb P^{m-1}.\)</li>
+<li>Since \(\mathbb P^{m-1} = \Gr(1, \mathbb C_1)\), by <a class="idlink" data-note="exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle" href="../../notes/exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle/">Exercise 2.1.1.</a> we get an identification between the tautological line bundle \(\mathcal O(-1)\) of \(\mathbb P^{m-1}\) and \((\mathbb C^{m}\setminus \{0\})\times^{\mathbb C^*} \mathbb C_1\). Note that this is only true when we use the standard representation \(\mathbb C_1\), as this matches the left action of \(\GL_1 = \mathbb C^*\) on \(\mathbb C\) in the exercise.</li>
+<li>We therefore get that
+\[c_1^{\mathbb C^*}(\mathbb C_1) = c_1(\mathcal O_{\mathbb P^{m-1}}(-1)).\]
+It is a fact from intersection theory that this Chern class generates the cohomology of \(\mathbb P^{m-1}\), so by taking larger and larger approximation spaces we see that for \(\hbar = c_1(\mathcal O_{\mathbb P^{m-1}}(-1))\),
+\[\Lambda_{\mathbb C^*} = \mathbb Z[t].\]</li>
+<li>Using the fact that \(c_1^G(L\otimes M) = c_1^G(L)+c_1^G(M)\) for \(G\)-equivariant line bundles, we get the identification
+\[c_1^{\mathbb C^*}(\mathbb C_a) = a\hbar = c_1(\mathcal O(-a)).\]
+You could alternatively get this from repeating the argument in <a class="idlink" data-note="exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle" href="../../notes/exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle/">Exercise 2.1.1</a> with a modified action on the \(\mathbb C^d\) component.</li>
+</ul>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="equivariant-chern-classes-over-bases-with-trivial-action" href="../../notes/equivariant-chern-classes-over-bases-with-trivial-action/">Equivariant Chern Classes Over Bases With Trivial Action</a></li>
+    <li><a data-note="exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle" href="../../notes/exercise-2-1-1-anderson-fulton-borel-mixing-tautological-bundle/">Exercise 2.1.1. Of Anderson And Fulton</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-af23"><span class="ref-num">[AF23]</span> <a href="../../notes/anderson-fulton-equivariantcohomologyalgebraic2023/">Anderson, Fulton — Equivariant Cohomology In Algebraic Geometry (2023)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

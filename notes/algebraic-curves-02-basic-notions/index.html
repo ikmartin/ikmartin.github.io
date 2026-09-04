@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 2: Basic Notions — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-02-basic-notions/"
+      data-note-title="Algebraic Curves Lecture 2: Basic Notions">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#two-alternative-ways-to-view-curves">Two alternative ways to view curves</a></li>
+    <li class="toc-l2"><a href="#some-facts-about-projective-varieties">Some facts about projective varieties</a></li>
+    <li class="toc-l2"><a href="#divisors">Divisors</a></li>
+    <li class="toc-l2"><a href="#principal-divisors">Principal divisors</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 2: Basic Notions</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-01" href="../../notes/algebraic-curves-01/">← lecture 1</a> · <a class="idlink" data-note="algebraic-curves-03-line-bundles-and-linear-series" href="../../notes/algebraic-curves-03-line-bundles-and-linear-series/">lecture 3 →</a>
+</p>
+
+<p>
+Let \(k\) be an algebraically closed field (unless otherwise stated) of characteristic 0. 
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+Whenever you have these two hypotheses (algebraically closed and characteristic 0), you don&rsquo;t lose anything by simply taking \(\mathbb C\) to be the complex numbers. This is the Lefschetz principle. This isn&rsquo;t <i>strictly</i> true, but is a good slogan.
+</p>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A <i>curve</i> is a scheme of pure dimension 1 over \(k\). This is often called an <i>abstract curve</i>. Unless otherwise stated we will always assume that a curve is smooth and connected.
+</p>
+</div>
+
+<p>
+In particular, our curves will always be irreducible (this follows from the connected hypothesis + Zariski topology weirdness).
+</p>
+<div id="outline-container-two-alternative-ways-to-view-curves" class="outline-2">
+<h2 id="two-alternative-ways-to-view-curves">Two alternative ways to view curves</h2>
+<div class="outline-text-2" id="text-two-alternative-ways-to-view-curves">
+<ol class="org-ol">
+<li>The category of curves is equivalent to that of Riemann-surfaces, i.e. complete 1-dimensional \(\mathbb C\)-manifolds. (Included here is a picture of a genus 2 surface.) I was unfamiliar with the term &ldquo;complete manifold&rdquo;, so here&rsquo;s a <a href="https://en.wikipedia.org/wiki/Geodesic_manifold">convenient link</a> to the Wikipedia page.</li>
+<li>The category of curves is equivalent to the category of finitely generated field extensions of \(K\) of transcendence degree 1. This is given simply by associating to a curve its field of rational functions.</li>
+</ol>
+
+<p>
+The second statement above is equivalent to saying that the field of rational functions of a curve entirely determine the curve&rsquo;s isomorphism class. This in particular fails for higher dimensional varieties; any two birational varieties have isomorphic fields of rational functions. Thus
+</p>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+Any birational morphism \(f:X\to Y\) between (smooth) curves is an isomorphism.
+</p>
+</div>
+<p>
+Again, this clearly fails for non-smooth curves. Take the cuspoidal cubic \(C = V(x^3 = y^2)\) for instance; it is birationally equivalent to \(K = \mathbb A^1\) via \(t \mapsto (t^2, t^3)\) (one should projectivize this argument but you get the idea). Alternatively, take a nodal cubic and blow up at the node to resolve it. The blowup map is then an isomorphism away from the singularity.
+</p>
+</div>
+</div>
+<div id="outline-container-some-facts-about-projective-varieties" class="outline-2">
+<h2 id="some-facts-about-projective-varieties">Some facts about projective varieties</h2>
+<div class="outline-text-2" id="text-some-facts-about-projective-varieties">
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(f:X\to Y\) be a morphism of projective varieties \(X\) and \(Y\). Then \(f\) is closed.
+</p>
+</div>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+Any non-constant morphism \(f:X\to Y\) between projective curves \(X\) and \(Y\) if finite and surjective.
+</p>
+</div>
+
+<p>
+Recall the difference betwen finite and finite type: it&rsquo;s about generation as an algebra vs as a module. A morphism \(f:X\to Y\) is <i>finite type</i> if it is affine and if over each affine \(U\subseteq Y\) \(f_*\mathcal O_X(U)\) is a finitely generated <i>algebra</i> of \(\mathcal O_Y(U)\). The morphism is <i>finite</i> if it is affine and if over each affine \(U\subseteq Y\) \(f_*\mathcal O_X(U)\) is finitely generated <i>module</i> of \(\mathcal O_Y(U)\).
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+The <i>genus</i> of a curve \(X\) is
+</p>
+\begin{align*}
+    g = 1 - \chi(\mathcal O_X) = 1 - h^0(\mathcal O_X) + h^1(\mathcal O_X) = h^1(\mathcal O_X).
+\end{align*}
+</div>
+<p>
+The three equalities above represent the equivalence of arithmetic and geometric genus for smooth curves.
+</p>
+</div>
+</div>
+<div id="outline-container-divisors" class="outline-2">
+<h2 id="divisors">Divisors</h2>
+<div class="outline-text-2" id="text-divisors">
+<p>
+A divisor on a curve is a formal linear combination of points on \(X\):
+</p>
+\begin{align*}
+    D = \sum_{P\in X} D_P\cdot P
+\end{align*}
+<p>
+where \(D_P \in \mathbb Z\) and only finitely many \(D_P \neq 0\).
+</p>
+
+<ul class="org-ul">
+<li>The <i>degree</i> of a divisor is \(\sum_{P\in X} D_P\).</li>
+<li>A divisor is called <i>effective</i> if \(D_P\geq 0\) for all \(P\in X\).</li>
+</ul>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+Effective divisors correspond uniquely to 0-dimensional subschemes of \(X\).
+</p>
+</div>
+
+<p>
+If \(f:X\to Y\) is a non-constant morphism of curves \(X\) and \(Y\), then
+</p>
+\begin{align*}
+    f^*Y = \sum_{x\in X} \text{val}_{\mathcal O_{X,x}}(\pi)\cdot x \in \operatorname{Div}(X)
+\end{align*}
+<p>
+where \(\pi\) is a local parameter of \(\mathcal O_Y,y\) (also known as the <i>uniformizer</i>. Extending this linearly gives us a pullback of divisors on \(Y\) to divisors on \(X\):
+</p>
+\begin{align*}
+    f^*:\operatorname{Div}(Y)\to \operatorname{Div}(X)
+\end{align*}
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+Analytically, \(f\) is given around \(x\) as \(z\mapsto z^n\). Then \(n = \operatorname{val}_{\mathcal O_{X,x}}(\pi).\)
+</p>
+</div>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(f:X\to Y\) is a non-constant morphism of curves, then
+</p>
+\begin{align*}
+    \deg(f^*D) = \deg(\pi)\cdot \deg(D).
+\end{align*}
+</div>
+</div>
+</div>
+<div id="outline-container-principal-divisors" class="outline-2">
+<h2 id="principal-divisors">Principal divisors</h2>
+<div class="outline-text-2" id="text-principal-divisors">
+<p>
+Let \(f\in K(X)\) [i.e. \(f:X\to \mathbb P^1\)] then define
+</p>
+\begin{align*}
+    \div(f) = f^*(0 - \infty).
+\end{align*}
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+For \(f\) above, \(\deg(\div(f)) = 0\).
+</p>
+</div>
+
+<p>
+Any divisor \(D = \div(f)\) is called a <i>principal divisor</i>. Two divisors \(D\) and \(E\) are <i>linearly equivalent</i> if \(D - E\) is principal. In this case, we write \(D \sim E\).
+</p>
+
+<p>
+<i>Vague Note:</i> We call this &ldquo;linearly equivalence&rdquo; because the two divisors vary by a linear family, since \(\mathbb P^1\) is our prototype of a &ldquo;line&rdquo;.
+</p>
+
+<p>
+To any divisor \(D\) we can associate an invertible sheaf, denoted \(\mathcal O_X(D)\), defined to be the sheaf of rational functions \(f\) such that \(D + \div(f)\) is effective. This is invertible
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-01" href="../../notes/algebraic-curves-01/">Algebraic Curves Lecture 1</a></li>
+    <li><a data-note="algebraic-curves-03-line-bundles-and-linear-series" href="../../notes/algebraic-curves-03-line-bundles-and-linear-series/">Algebraic Curves Lecture 3: Line Bundles And Linear Series</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combinatorics Three Hyperplanes Meetings At A Point Example — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/combinatorics-three-hyperplanes-meetings-at-a-point-example/"
+      data-note-title="Combinatorics Three Hyperplanes Meetings At A Point Example">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Combinatorics Three Hyperplanes Meetings At A Point Example</h1>
+      <p class="note-meta"><span class="taxon">example</span></p>
+
+      <article class="note">
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Let \(H_1,H_2,H_3\subset \mathbb P^2_{xyz}\) be three hyperplanes (copies of \(\mathbb P^1)\) meeting at a point \(\pt\) in \(\mathbb P^2\). For example, in coordinates we can choose
+</p>
+<ul class="org-ul">
+<li>\(H_1 = V(x = 0) = \{[0:t:1]\}\)</li>
+<li>\(H_2 = V(y = 0) = \{[t:0:1]\}\)</li>
+<li>\(H_3 = V(x = y) = \{[t:t:1]\}\)</li>
+</ul>
+<p>
+so that in the affine chart \(z \neq 0\), \(\pt = (0,0)\), \(H_1\) and \(H_2\) are the \(y\)-axis and \(x\)-axis respectively and \(H_3\) is the line \(x = y\). The intersection lattice, ordered with respect to reverse inclusion is then
+</p>
+\begin{equation*}
+\mathcal L = \hspace{0.5em}
+<figure class="tikz" id="tikz-cb8f5fdff960c7be"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -104.29381 168.91578 117.444796' width='16.8916em'>
+<defs>
+<path id='tzcb8f5fdff960c7be-g2-49' d='M2.336239-4.435367C2.336239-4.623661 2.322291-4.630635 2.127024-4.630635C1.680697-4.191283 1.046077-4.184309 .760149-4.184309V-3.93325C.927522-3.93325 1.387796-3.93325 1.771357-4.128518V-.571856C1.771357-.341719 1.771357-.251059 1.073973-.251059H.808966V0C.934496-.006974 1.792279-.027895 2.050311-.027895C2.266501-.027895 3.145205-.006974 3.29863 0V-.251059H3.033624C2.336239-.251059 2.336239-.341719 2.336239-.571856V-4.435367Z'/>
+<path id='tzcb8f5fdff960c7be-g2-50' d='M3.521793-1.26924H3.284682C3.263761-1.115816 3.194022-.704359 3.103362-.63462C3.047572-.592777 2.510585-.592777 2.412951-.592777H1.129763C1.862017-1.241345 2.106102-1.436613 2.524533-1.764384C3.040598-2.175841 3.521793-2.608219 3.521793-3.270735C3.521793-4.11457 2.782565-4.630635 1.889913-4.630635C1.025156-4.630635 .439352-4.02391 .439352-3.382316C.439352-3.02665 .739228-2.991781 .808966-2.991781C.976339-2.991781 1.17858-3.110336 1.17858-3.361395C1.17858-3.486924 1.129763-3.731009 .767123-3.731009C.983313-4.226152 1.457534-4.379577 1.785305-4.379577C2.48269-4.379577 2.84533-3.835616 2.84533-3.270735C2.84533-2.66401 2.412951-2.182814 2.189788-1.931756L.509091-.27198C.439352-.209215 .439352-.195268 .439352 0H3.312578L3.521793-1.26924Z'/>
+<path id='tzcb8f5fdff960c7be-g2-51' d='M1.903861-2.329265C2.447821-2.329265 2.838356-1.952677 2.838356-1.206476C2.838356-.341719 2.336239-.083686 1.931756-.083686C1.652802-.083686 1.039103-.160399 .746202-.571856C1.073973-.585803 1.150685-.81594 1.150685-.962391C1.150685-1.185554 .983313-1.345953 .767123-1.345953C.571856-1.345953 .376588-1.227397 .376588-.941469C.376588-.285928 1.101868 .139477 1.945704 .139477C2.915068 .139477 3.584558-.509091 3.584558-1.206476C3.584558-1.750436 3.138232-2.294396 2.371108-2.454795C3.103362-2.719801 3.368369-3.242839 3.368369-3.668244C3.368369-4.219178 2.733748-4.630635 1.959651-4.630635S.592777-4.254047 .592777-3.696139C.592777-3.459029 .746202-3.326526 .955417-3.326526C1.171606-3.326526 1.311083-3.486924 1.311083-3.682192C1.311083-3.884433 1.171606-4.030884 .955417-4.044832C1.199502-4.351681 1.680697-4.428394 1.93873-4.428394C2.252553-4.428394 2.691905-4.274969 2.691905-3.668244C2.691905-3.375342 2.594271-3.054545 2.412951-2.838356C2.182814-2.57335 1.987547-2.559402 1.638854-2.538481C1.464508-2.524533 1.45056-2.524533 1.415691-2.517559C1.401743-2.517559 1.345953-2.503611 1.345953-2.426899C1.345953-2.329265 1.408717-2.329265 1.527273-2.329265H1.903861Z'/>
+<path id='tzcb8f5fdff960c7be-g0-72' d='M7.601494-6.03736C7.691158-6.396015 7.711083-6.495641 8.438356-6.495641C8.697385-6.495641 8.777086-6.495641 8.777086-6.694894C8.777086-6.804483 8.667497-6.804483 8.637609-6.804483C8.358655-6.804483 7.641345-6.774595 7.362391-6.774595C7.073474-6.774595 6.366127-6.804483 6.07721-6.804483C5.997509-6.804483 5.88792-6.804483 5.88792-6.60523C5.88792-6.495641 5.977584-6.495641 6.166874-6.495641C6.1868-6.495641 6.37609-6.495641 6.545455-6.475716C6.724782-6.455791 6.814446-6.445828 6.814446-6.316314C6.814446-6.276463 6.804483-6.256538 6.774595-6.127024L6.176837-3.696139H3.138232L3.726027-6.03736C3.815691-6.396015 3.845579-6.495641 4.562889-6.495641C4.821918-6.495641 4.901619-6.495641 4.901619-6.694894C4.901619-6.804483 4.79203-6.804483 4.762142-6.804483C4.483188-6.804483 3.765878-6.774595 3.486924-6.774595C3.198007-6.774595 2.49066-6.804483 2.201743-6.804483C2.122042-6.804483 2.012453-6.804483 2.012453-6.60523C2.012453-6.495641 2.102117-6.495641 2.291407-6.495641C2.311333-6.495641 2.500623-6.495641 2.669988-6.475716C2.849315-6.455791 2.938979-6.445828 2.938979-6.316314C2.938979-6.276463 2.929016-6.246575 2.899128-6.127024L1.564134-.777086C1.464508-.388543 1.444583-.308842 .657534-.308842C.478207-.308842 .388543-.308842 .388543-.109589C.388543 0 .508095 0 .52802 0C.806974 0 1.514321-.029888 1.793275-.029888C2.002491-.029888 2.221669-.019925 2.430884-.019925C2.650062-.019925 2.86924 0 3.078456 0C3.158157 0 3.277709 0 3.277709-.199253C3.277709-.308842 3.188045-.308842 2.998755-.308842C2.630137-.308842 2.351183-.308842 2.351183-.488169C2.351183-.547945 2.371108-.597758 2.381071-.657534L3.058531-3.387298H6.097136C5.678705-1.733499 5.449564-.787049 5.409714-.637609C5.310087-.318804 5.120797-.308842 4.503113-.308842C4.353674-.308842 4.26401-.308842 4.26401-.109589C4.26401 0 4.383562 0 4.403487 0C4.682441 0 5.389788-.029888 5.668742-.029888C5.877958-.029888 6.097136-.019925 6.306351-.019925C6.525529-.019925 6.744707 0 6.953923 0C7.033624 0 7.153176 0 7.153176-.199253C7.153176-.308842 7.063512-.308842 6.874222-.308842C6.505604-.308842 6.22665-.308842 6.22665-.488169C6.22665-.547945 6.246575-.597758 6.256538-.657534L7.601494-6.03736Z'/>
+<path id='tzcb8f5fdff960c7be-g1-48' d='M4.582814-3.188045C4.582814-3.985056 4.533001-4.782067 4.184309-5.519303C3.726027-6.475716 2.909091-6.635118 2.49066-6.635118C1.892902-6.635118 1.165629-6.37609 .757161-5.449564C.438356-4.762142 .388543-3.985056 .388543-3.188045C.388543-2.440847 .428394-1.544209 .836862-.787049C1.265255 .019925 1.992528 .219178 2.480697 .219178C3.01868 .219178 3.775841 .009963 4.214197-.936488C4.533001-1.62391 4.582814-2.400996 4.582814-3.188045ZM2.480697 0C2.092154 0 1.504359-.249066 1.325031-1.205479C1.215442-1.803238 1.215442-2.719801 1.215442-3.307597C1.215442-3.945205 1.215442-4.60274 1.295143-5.140722C1.484433-6.326276 2.231631-6.41594 2.480697-6.41594C2.809465-6.41594 3.466999-6.236613 3.656289-5.250311C3.755915-4.692403 3.755915-3.935243 3.755915-3.307597C3.755915-2.560399 3.755915-1.882939 3.646326-1.24533C3.496887-.298879 2.929016 0 2.480697 0Z'/>
+<path id='tzcb8f5fdff960c7be-g1-94' d='M2.49066-6.914072L1.155666-5.559153L1.334994-5.379826L2.49066-6.396015L3.636364-5.379826L3.815691-5.559153L2.49066-6.914072Z'/>
+<path id='tzcb8f5fdff960c7be-g1-112' d='M1.713574-3.745953V-4.403487L.278954-4.293898V-3.985056C.986301-3.985056 1.05604-3.92528 1.05604-3.486924V1.175592C1.05604 1.62391 .946451 1.62391 .278954 1.62391V1.932752C.617684 1.92279 1.135741 1.902864 1.39477 1.902864C1.663761 1.902864 2.171856 1.92279 2.520548 1.932752V1.62391C1.853051 1.62391 1.743462 1.62391 1.743462 1.175592V-.498132V-.587796C1.793275-.428394 2.211706 .109589 2.968867 .109589C4.154421 .109589 5.190535-.86675 5.190535-2.15193C5.190535-3.417186 4.224159-4.403487 3.108344-4.403487C2.331258-4.403487 1.912827-3.965131 1.713574-3.745953ZM1.743462-1.135741V-3.35741C2.032379-3.865504 2.520548-4.154421 3.028643-4.154421C3.755915-4.154421 4.363636-3.277709 4.363636-2.15193C4.363636-.946451 3.666252-.109589 2.929016-.109589C2.530511-.109589 2.15193-.308842 1.882939-.71731C1.743462-.926526 1.743462-.936488 1.743462-1.135741Z'/>
+<path id='tzcb8f5fdff960c7be-g1-116' d='M1.723537-3.985056H3.148194V-4.293898H1.723537V-6.127024H1.474471C1.464508-5.310087 1.165629-4.244085 .18929-4.204234V-3.985056H1.036115V-1.235367C1.036115-.009963 1.96264 .109589 2.321295 .109589C3.028643 .109589 3.307597-.597758 3.307597-1.235367V-1.803238H3.058531V-1.255293C3.058531-.518057 2.759651-.139477 2.391034-.139477C1.723537-.139477 1.723537-1.046077 1.723537-1.215442V-3.985056Z'/>
+</defs>
+<g id='tzcb8f5fdff960c7be-page1'>
+<g stroke-miterlimit='10' transform='translate(-14.102602,-28.428245)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-56.11452,-38.07542)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-14.102602,-28.428245)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-3.437746,-98.166787)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(41.802272,-98.166787)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.72223,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(41.802272,-98.166787)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='41.802272' y='-98.166787' xlink:href='#tzcb8f5fdff960c7be-g1-112'/>
+<use x='47.337089' y='-98.166787' xlink:href='#tzcb8f5fdff960c7be-g1-116'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(87.04229,-98.166787)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-3.437746,-64.196929)scale(0.996264,-0.996264)'>
+<g transform='translate(-6.3993,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-3.437746,-64.196929)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-3.437746' y='-64.196929' xlink:href='#tzcb8f5fdff960c7be-g0-72'/>
+<use x='4.84371' y='-62.702549' xlink:href='#tzcb8f5fdff960c7be-g2-49'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(41.802272,-64.196929)scale(0.996264,-0.996264)'>
+<g transform='translate(-6.3993,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(41.802272,-64.196929)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='41.802272' y='-64.196929' xlink:href='#tzcb8f5fdff960c7be-g0-72'/>
+<use x='50.083728' y='-62.702549' xlink:href='#tzcb8f5fdff960c7be-g2-50'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(87.04229,-64.196929)scale(0.996264,-0.996264)'>
+<g transform='translate(-6.3993,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(87.04229,-64.196929)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='87.04229' y='-64.196929' xlink:href='#tzcb8f5fdff960c7be-g0-72'/>
+<use x='95.323746' y='-62.702549' xlink:href='#tzcb8f5fdff960c7be-g2-51'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-3.437746,-28.428245)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(41.802272,-28.428245)scale(0.996264,-0.996264)'>
+<g transform='translate(-2.5,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(41.802272,-28.428245)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='41.802272' y='-30.559155' xlink:href='#tzcb8f5fdff960c7be-g1-94'/>
+<use x='41.802272' y='-28.428245' xlink:href='#tzcb8f5fdff960c7be-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(87.04229,-28.428245)scale(0.996264,-0.996264)'/>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-34.50482 8.51451L-9.54758 27.25662' fill='none'/>
+<g transform='matrix(0.7996,0.60048,-0.60048,0.7996,-9.38768,27.3767)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M0 8.52043V25.72052' fill='none'/>
+<g transform='matrix(0.0,1.0,-1.0,0.0,0.0,25.9205)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M34.50482 8.51451L9.54758 27.25662' fill='none'/>
+<g transform='matrix(-0.7996,0.60048,-0.60048,-0.7996,9.38768,27.3767)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-7.00554-30.03876L-35.15717-7.78035' fill='none'/>
+<g transform='matrix(-0.7844,0.62018,-0.62018,-0.7844,-35.31403,-7.65633)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M0-25.13235V-7.93227' fill='none'/>
+<g transform='matrix(0.0,1.0,-1.0,0.0,0.0,-7.73228)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M7.00554-30.03876L35.15717-7.78035' fill='none'/>
+<g transform='matrix(0.7844,0.62018,-0.62018,0.7844,35.31403,-7.65633)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+\end{equation*}
+<p>
+where \(\hat 0 = \mathbb P^2\) is the unique minimal element in \(\mathcal L\). Arrows flow small to large. We find the unique <a class="idlink" data-note="building-set-of-lattice-defn" href="../../notes/building-set-of-lattice-defn/">building set</a> for \(\mathcal L\), its <a class="idlink" data-note="nested-sets-of-lattice-defn" href="../../notes/nested-sets-of-lattice-defn/">nested complex</a> and the <a class="idlink" data-note="building-algebra-of-building-set" href="../../notes/building-algebra-of-building-set/">building algebra</a>.
+</p>
+
+<p>
+<b>Building Set</b>
+Here there is only one possible building set:
+\[\mathcal G = \{H_1, H_2, H_3, \pt\} = \mathcal L\setminus \{\hat 0\}\]
+which is the minimal building set since it is precisely the set of irreducibles of \(\mathcal L\) (see [Convex Geometry of Building Sets, text before Lemma 2.2]).
+</p>
+
+<p>
+<b>Nested Complex</b>
+Any subset of \(\mathcal G\) of cardinality at least 2 consisting of pairwise incomparable elements will necessarily have a total join equal to \(\pt\), hence the only nested sets are those either with cardinality less than 2 or with only comparable elements. Of the \(\# 2^{\mathcal G} = 16\) subsets of \(\mathcal G\), we see that \(8\) are nested and \(8\) are not. The nested sets are
+\[\mathcal N(\mathcal L, \mathcal G) = \overbrace{\Big\{\emptyset, \underset{\times 3}{\{H_i\}}, \{\pt\}\Big\}}^{\text{sets of cardinality < 2}} \cup \overbrace{\Big\{\underset{\times 3}{\{H_i, \pt\}} \Big\}}^{\substack{\text{sets with only} \\ \text{comparable elements}}}\]
+and the non-nested sets are
+\[2^\mathcal G \setminus \mathcal N(\mathcal L, \mathcal G) = \Big\{\underset{\times 3}{\{H_i, H_j\}}, \{H_1, H_2, H_3\}, \underset{\times 3}{\{H_i, H_j, \pt\}}, \{H_1, H_2, H_3, \pt\}\Big\}.\]
+The abstract simplicial complex formed by \(\mathcal N(\mathcal L, \mathcal G)\) has diagramatic representation given by the top half of the lattice above, with edges labeled by set sets \(\{H_i, \pt\}\in \mathcal N(\mathcal L, \mathcal G)\).
+</p>
+
+<p>
+<b>Building Algebra</b>
+The building algebra is a quotient of a polynomial algebra \(\mathbb Z[\{x_G\}_{G\in \mathcal G}]\) by the ideal with one generator of the form
+\[\prod_{G\in S} x_{G}\]
+for every subset \(S\subset \mathcal G\) which is not nested (i.e. \(S\not\in \mathcal N(\mathcal L, \mathcal G)\)) and one generator of the form
+\[\sum_{\substack{G\in \mathcal G,~ A\leq G}} x_G \]
+for every atom \(A \in \mathcal L\). In our case, we have four elements in our building set corresponding to four generators \(x_1,x_2,x_3,x_4\). Every non-nested subset of \(\mathcal L\) is also a subset of \(\mathcal G\) implying that we have \(8\) generators of the first form, and we have three atoms \(H_1, H_2 \) and \(H_3\) so \(3\) elements of the second form. Thus the ideal generated by products is
+</p>
+\begin{align*}
+  I_1 &= \big(x_1x_2, x_1x_3,x_2x_3, x_1x_2x_3, x_1x_2x_4, x_1x_3x_4, x_2x_3x_4, x_1x_2x_3x_4 \big) \\
+      &= \big(x_1x_2, ~ x_1x_3, ~ x_2x_3\big)
+\end{align*}
+<p>
+and the ideal generated by sums is
+</p>
+\begin{align*}
+  I_2 &= \big(x_1 + x_4, ~ x_2 + x_4, ~ x_3 + x_4\big).
+\end{align*}
+<p>
+It is not hard to see that
+\[D(\mathcal L, \mathcal G) := \mathbb Z[x_1,x_2,x_3, x_4]/(I_1 + I_2) \xrightarrow{x_4 \mapsto x}\mathbb Z[x]/(x^2)\]
+is an isomorphism; the image of \(x_4\) determines the image of every other \(x_i\) due to the relations provided by \(I_1 \) and \(x_4^2 \in I_1 + I_2\) since
+\[x^2_4 = x_4(x_1 + x_4) - x_1(x_2 + x_4) + x_1x_2.\]
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">5</span></h2>
+  <ul>
+    <li><a data-note="building-algebra-of-building-set" href="../../notes/building-algebra-of-building-set/">Building Algebra Of Building Set</a></li>
+    <li><a data-note="building-set-of-lattice-defn" href="../../notes/building-set-of-lattice-defn/">Building Set Of Lattice Defn</a></li>
+    <li><a data-note="chow-ring-of-toric-variety-associated-to-lattice-building-set" href="../../notes/chow-ring-of-toric-variety-associated-to-lattice-building-set/">Chow Ring Of Toric Variety Associated To Lattice Building Set</a></li>
+    <li><a data-note="nested-sets-of-lattice-defn" href="../../notes/nested-sets-of-lattice-defn/">Nested Complex Of Lattice Defn</a></li>
+    <li><a data-note="wonderful-compactification-three-hyperplanes-meeting-at-a-point-example" href="../../notes/wonderful-compactification-three-hyperplanes-meeting-at-a-point-example/">Wonderful Compactification Three Hyperplanes Meeting At A Point Example</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

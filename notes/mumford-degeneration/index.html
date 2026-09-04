@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mumford Degeneration — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/mumford-degeneration/"
+      data-note-title="Mumford Degeneration">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Mumford Degeneration</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<p>
+The mumford degeneration is an example of a toric degeneration. For references, see Section 1.2 from [An Invitation to Toric Degenerations] or Example 3.6 on page 97 of [Tropical Geometry and Mirror Symmetry]. For the relevant toric varieties constructions see Chapter 7 of [Toric Varieties, Cox Little Schneck].
+</p>
+
+<p>
+Start with a \(n+1\)-dimensional convex  <a class="idlink" data-note="polytope-and-polyhedron" href="../../notes/polytope-and-polyhedron/">polyhedron</a> \(\tilde \sigma \subset M_{\mathbb R}\times \mathbb R\) that is closed under positive translation in the last coordinate:
+\[\tilde\sigma = \tilde\sigma + \{0\}\times \mathbb R.\]
+Take \(q:M_\mathbb R\times \mathbb R\to M_\mathbb R\) to be the projection and let 
+\[\sigma := q(\tilde \sigma).\]
+The boundary \(\partial \tilde\sigma\) is a union of \(n\)-dimensional polyhedra intersecting along \((n-1)\)-dimensional facets. There are two different kinds of these boundary components, <i>horizontal components</i> which are mapped homeomorphically to polyhedra in \(M_\mathbb R\) by the projection \(q\) and <i>vertical components</i> which are &ldquo;parallel to \(\{0\}\times \mathbb R\)&rdquo; and lose dimension upon projection. The set \(\sigma\) is homeomorphic to the union of the horizontal components of \(\partial \tilde \sigma \) under \(q\).
+</p>
+
+<p>
+Furthermore, the horizontal portion of \(\partial \tilde\sigma\) is the <i>graph of a piecewise affine linear function</i> \(\varphi:\sigma \to \mathbb R\) with rational slopes. The domains of linearity of \(\varphi\) give a polyhedral decomposition \(\mathcal P\) of \(\sigma\), which corresponds to the decomposition of the horizontal portion of \(\partial \tilde \sigma\) into polyhedra. From this data we can recover \(\tilde \sigma \), it is the upper convex hull of the graph of \(\varphi\).
+</p>
+
+\begin{equation*}
+  \left\{\substack{\text{convex polyhedra } \tilde\sigma \text{ in } M_\mathbb R\times \mathbb R \\ \text{ closed under positive translation} \\\text{in the last component}}\right\} \leftrightarrow \left\{\substack{(\sigma, \mathcal P, \varphi) \text{ where } \sigma \subseteq M_\mathbb R, \\ \mathcal P \text{ is a polyhedral decomposition of }\sigma \\ \varphi:\sigma \to \mathbb R\text{ is convex piecewise affine}}\right\}
+\end{equation*}
+
+<p>
+Anyways, given \(\tilde \sigma \) we can apply the <a class="idlink" data-note="toric-variety-from-a-polytope" href="../../notes/toric-variety-from-a-polytope/">polyhedra toric variety construction</a> to get a \((n+1)\)-dimensional toric variety \(X_{\tilde \sigma}\). It is glued together from affine patches given by
+\[U_v = \Spec \mathbb C[C_v\cap (M\oplus \mathbb Z)],\]
+where \(C_v\) is the cone associated to vertex \(v\) in \(\tilde \sigma \) obtained by translating \(\tilde \sigma \) so \(v\) is at the origin and then taking the cone over the entire polyhedron: \(C_v = \cone(\tilde \sigma - v).\) Since \(\tilde \sigma \) is closed under positive translations in the last coordinate, each \(C_v\) contains the ray \(\{0\}\times \mathbb R_{\geq 0}\), giving us a projection to the affine line
+\[p:X_{\tilde \sigma} \to \mathbb A^1.\]
+We can say more about this projection. On the algebra level, it is given by the morphism
+\[\mathbb C[t] = \mathbb C[(\{0\}\times \mathbb R_{\geq 0}) \cap (M\oplus \mathbb Z)] \hookrightarrow \mathbb C[C_v\cap (M\oplus \mathbb Z)]\]
+sending \(t\) to \(z^{(0,1)}\). The monomial \(z^{(0,1)}\) vanishes precisely on the prime boundary divisors of \(X_{\tilde \sigma}\) corresponding to the horizontal components of \(\partial \tilde \sigma\), or using the other presentation, on the prime boundary divisors isomorphic to to the toric varieties \(X_\tau\) for maximal \(\tau \in \mathcal P\). (To see this claim about the vanishing of \(z^{(0,1)}\) we move over to the fan description of \(X_{\tilde \sigma}\) whose cones are the dual cones \(C_v^\vee \subset N_\mathbb R\times \mathbb R\), and look at the pairing of the character \((0,1) \in M\times \mathbb Z\) with the normal vectors of the top dimensional facets of \(C^\vee_v\).) 
+</p>
+
+<p>
+This means that the fiber of \(p\) over \(0\) resembles a union of \(n\)-dimensional toric varieties intersecting along prime boundary divisors.
+</p>
+
+<p>
+To understand the fibers of \(p\) at \(t\neq 0\), we localize at \(t\). This has the effect of removing the lower boundary of \(\tilde\sigma,\) that is, going over to \(\tilde\sigma + (\{0\}\times \mathbb R) = \sigma\times \mathbb R\). In the cone picture the polyhedron \(\mathbb R\) corresponds to a \(\mathbb G_m\) component, so
+\[p^{-1}(\mathbb A^1\setminus \{0\}) = X_{\sigma \times \mathbb R} = X_\sigma \times (\mathbb A^1\setminus \{0\}).\]
+Here, \(X_\sigma\) is the \(n\)-dimensional toric variety corresponding to the polyhedra \(\sigma\), that \(\sigma\) with its polyhedral decomposition forgotten. To summarize this construction:
+</p>
+
+<p>
+<b>Summary</b>
+</p>
+<ul class="org-ul">
+<li>The map \(p:X_{\tilde \sigma} \to \mathbb A^1 \) is called a <i>Mumford degeneration</i>.</li>
+<li>It&rsquo;s general fiber is a toric variety given by applying the polytope construction to \(\sigma\subset M_\mathbb R\), so \(p^{-1}(\mathbb A^1\setminus \{0\}) = X_\sigma \times (A^1\setminus \{0\})\)</li>
+<li>It&rsquo;s special fiber looks like the &ldquo;union of toric varieties encoded by the polyhedral decomposition \(\mathcal P\) of \(\sigma\)&rdquo;. The piecewise affine function \(\varphi:\sigma \to \mathbb R\) controls the way the boundaries of the irreducible components of \(p^{-1}(0)\) are glued together.</li>
+</ul>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="polytope-and-polyhedron" href="../../notes/polytope-and-polyhedron/">Polytope And Polyhedron</a></li>
+    <li><a data-note="toric-variety-from-a-polytope" href="../../notes/toric-variety-from-a-polytope/">Toric Variety From A Polytope Or Polyhedron</a></li>
+    <li><a data-note="torus-action-of-mumford-degeneration" href="../../notes/torus-action-of-mumford-degeneration/">Torus Action Of Mumford Degeneration</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

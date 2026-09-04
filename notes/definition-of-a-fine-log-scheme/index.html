@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Definition Of A Fine Log Scheme — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/definition-of-a-fine-log-scheme/"
+      data-note-title="Definition Of A Fine Log Scheme">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Definition Of A Fine Log Scheme</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+There are two main definitions.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+(Illusie) A log structure \((\mathcal M, \alpha)\) on  a scheme \(X\) is said to be <i>fine</i> if it is etale locally the log structure associated to the pre-log structure \((P_X, \beta)\) where \(P_X\) is the constant sheaf of monoids of value \(P \), and \(P \) is finitely generated and integral.
+</p>
+
+<p>
+We then say that a log scheme \(X\) is <i>a fine log scheme</i> if its log structure is fine.
+</p>
+
+<p>
+Equivalently, \((X,\mathcal M_X)\) is a fine log scheme if <a class="idlink" data-note="charts-for-log-structures" href="../../notes/charts-for-log-structures/">etale locally</a> there is a chart \(P\to \mathcal M_X\) with \(P\) a finitely generated integral monoid. If \(P\) can moreover be chosen to be saturated, then \(X\) is a <i>fine and saturated log structure</i>.
+</p>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+(Ogus) A log structure is <i>fine</i> if it is coherent (locally finitely generated as a monoid) and integral. A log scheme is <i>a fine log scheme</i> if its log structure is fine.
+</p>
+</div>
+
+<p>
+These two definitions are equivalent.
+</p>
+<ul class="org-ul">
+<li>Illusie \(\implies\)Ogus: If \(\mathcal M\) is etale locally a constant finitely generated integral sheaf of monoids, then it is exactly a coherent sheaf of integral monoids.</li>
+<li>Ogus \(\implies\)Illusie: This is slightly more subtle, not quite sure how to do it. Probably some quirk of the etale topology that I don&rsquo;t understand.</li>
+</ul>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">5</span></h2>
+  <ul>
+    <li><a data-note="charts-for-log-structures" href="../../notes/charts-for-log-structures/">Charts For Log Structures</a></li>
+    <li><a data-note="exercises-in-log-geometry-from-sam-johnston" href="../../notes/exercises-in-log-geometry-from-sam-johnston/">Exercises In Log Geometry From Sam Johnston</a></li>
+    <li><a data-note="log-smooth-morphism" href="../../notes/log-smooth-morphism/">Log Smooth Morphism</a></li>
+    <li><a data-note="pre-stable-marked-log-curve" href="../../notes/pre-stable-marked-log-curve/">Pre-Stable Marked Log Curve</a></li>
+    <li><a data-note="punctured-log-scheme" href="../../notes/punctured-log-scheme/">Punctured Log Scheme</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

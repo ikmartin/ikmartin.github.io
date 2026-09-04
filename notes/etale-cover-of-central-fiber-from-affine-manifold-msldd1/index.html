@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etale Cover Of Central Fiber From Affine Manifold Msldd1 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/etale-cover-of-central-fiber-from-affine-manifold-msldd1/"
+      data-note-title="Etale Cover Of Central Fiber From Affine Manifold Msldd1">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Etale Cover Of Central Fiber From Affine Manifold Msldd1</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<p>
+Given an affine manifold with singularities and a polyhedral decomposition \((B, \mathcal P)\), the first step in constructing the central fiber \(X_0\) of a toric degeneration whose dual intersection <i>is</i> \((B, \mathcal P)\) is to write down a collection of sets which will be glued to form an etale cover of \(X_0\). This is that process.
+</p>
+
+<p>
+First note that for a cone \(\sigma \in \mathcal P\), the vector space \(\Lambda_{\sigma, \mathbb R}\) is the stalk of \(\Lambda_{\mathcal P, \mathbb R}\) at any point \(y\in \Int(\sigma)\). Definition 1.31 in &ldquo;Mirror Symmetry via Log Degeneration Data I&rdquo; notes that the spaces \((\Lambda_{\mathcal P, \mathbb R})_y\) are all canonically identified by parallel transport for different choices of \(y\in \Int(\sigma)\). The sheaf \(\Lambda_{\mathcal P, \Lambda}\) is a subsheaf of the typical \(\Lambda_{\mathbb R}\) sheaf on \(B_0 = B\setminus \Delta\), defined
+</p>
+
+<p>
+\[\Gamma(U, \Lambda_{\mathcal P, \mathbb R}) = \left\{v\in \Gamma(U, \Lambda_{\mathbb R}) ~ \mid ~  \forall y\in U, \sigma \in \mathcal P \text{ with } y\in \sigma, v\text{ is tangent to } \sigma \text{ at }y\right\}.\]
+</p>
+
+<p>
+In practice, \(\Lambda_{\mathcal P, \mathbb R}|_{\Int(\sigma)}\) is simply the tangent sheaf of \(\Int(\sigma)\) thought of as an affine manifold in its own right.
+</p>
+
+<p>
+We will construct affine toric varieties \(U_\sigma\) and \(V_\sigma\) for every maximal cell \(\sigma \in \mathcal P\).
+</p>
+
+<ol class="org-ol">
+<li>Form the cone over \(\sigma\):</li>
+</ol>
+<p>
+\[C(\sigma) = \{(rp, r) ~ \mid ~ r\in \mathbb R_{\geq 0}, p \in \widetilde \sigma\}\subseteq \Lambda_{\sigma, \mathbb R} \oplus \mathbb R\]
+That is, choose your favorite vertex \(v\in \sigma\), embed \(\sigma\) in \(\mathbb R^{\dim \sigma}\oplus \mathbb R\) at height \(1\) with \(v \mapsto (0,1)\) and take the cone over the resulting embedding.
+</p>
+
+<ol class="org-ol">
+<li>Take the dual cone:</li>
+</ol>
+<p>
+\[C(\sigma)^\vee = \left\{m \in \Lambda_{\sigma, \mathbb R}^\vee \oplus \mathbb R ~ \mid ~ \langle m, v\rangle \geq 0, \forall v \in C(\sigma)\right\}\]
+</p>
+
+<ol class="org-ol">
+<li>Due to the integral structure of \(B\) we have a lattice inside of \(\Lambda_{\sigma, \mathbb R}^\vee\), which we denote by \(\Lambda_{\sigma}^\vee\). We  intersect our cone with it to obtain a monoid in standard toric fashion:</li>
+</ol>
+<p>
+\[P_\sigma = C(\sigma)^\vee \cap (\Lambda_{\sigma}^\vee \oplus \mathbb Z)\]
+</p>
+<ol class="org-ol">
+<li>We define</li>
+</ol>
+<p>
+\[U_\sigma = \Spec \mathbb Z[P_\sigma].\]
+</p>
+<ol class="org-ol">
+<li>To define \(V_\sigma\), we have two options.
+<ol class="org-ol">
+<li>We can either form it as a quotient of \(\mathbb Z[P_\sigma]\). To do this, we note that there is an element in \(P_\sigma\) which corresponds to the height projection on \(C(\sigma)\), it&rsquo;s denoted \(\rho_\sigma:\Lambda_{\sigma}\oplus \mathbb Z\to \mathbb Z\) and is simply projection onto the second factor. In coordinate on \(\Lambda_{\sigma}^\vee\oplus \mathbb Z\), it is the element \((0,...,0,1)\). We then define</li>
+</ol></li>
+</ol>
+<p>
+\[V_\sigma = \Spec \mathbb Z[P_\sigma]/(z^{\rho_\sigma}).\]
+</p>
+<ol class="org-ol">
+<li>We can define a new monoid from \(P_\sigma\), denoted \(\partial P_\sigma\), which as a set is the integral points on the boundary of \(C(\sigma)^\vee\) union infinity,</li>
+</ol>
+<p>
+\[\partial P_\sigma = \left(\partial C(\sigma)^\vee \cap (\Lambda_{\sigma}\oplus \mathbb Z)\right)\cup \{\infty\}\]
+and whose addition is defined by
+\[
+x + y =  \begin{cases}
+x + y & x + y \in \partial C(\sigma)^\vee \cap (\Lambda_{\sigma}\oplus \mathbb Z) \\
+\infty & \text{otherwise}
+\end{cases}.
+\]
+Then set
+\[V_\sigma = \Spec \mathbb Z[\partial P_\sigma].\]
+In either case we get the same thing.
+</p>
+
+<ol class="org-ol">
+<li>Finally, if we wish \(X_0\) to be a scheme over \(S\), then we define our <b>preferred etale cover</b> to be</li>
+</ol>
+
+<p>
+\[\big\{V_\sigma \times_{\Spec \mathbb Z} S\big\}_{\sigma \in \mathcal P_{\text{max}}}.\]
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="example-of-affine-manifold-to-log-central-fiber-msldd1" href="../../notes/example-of-affine-manifold-to-log-central-fiber-msldd1/">Notes And Examples From Msldd1</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

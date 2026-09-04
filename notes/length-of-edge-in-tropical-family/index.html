@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Length Of Edge In Tropical Family Or Of A Node — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/length-of-edge-in-tropical-family/"
+      data-note-title="Length Of Edge In Tropical Family Or Of A Node">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Length Of Edge In Tropical Family Or Of A Node</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<p>
+Here we describe the <i>length function</i> associated to a node of a log smooth curve.
+</p>
+<div class="env env-construction">
+<p class="env-label">Construction</p>
+<p>
+Let \(C/S\) be a log smooth curve over a log point \(S = \Spec(Q\to k)\) with \(Q\) a <a class="idlink" data-note="monoid-adjectives" href="../../notes/monoid-adjectives/">sharp, fine, saturated monoid</a>. Log smoothness forces \(\overline{\mathcal M}_{C, q} = Q\oplus_{\mathbb N} \mathbb N^2\) where the map \(\mathbb N\to Q\) is given by \(1\mapsto \rho_q\) for some <i>nonzero</i> element \(\rho_q\) of \(Q\); etale locally the node is \(xy = f\) for \(\overline f = \rho_q\) in \(\overline{\mathcal M}_S = Q\) . The length of \(E_q\), the edge asscociated to \(q\) in <a class="idlink" data-note="tropicalization-of-a-stable-curve" href="../../notes/tropicalization-of-a-stable-curve/">the tropicalization</a> of \(C\), is
+</p>
+\begin{align*}
+  \ell(E_q) = \langle \rho_q, - \rangle:Q^\vee \to \mathbb N.
+\end{align*}
+<p>
+In this view the element \(\rho_q\) <i>is</i> the length of \(E_q\), after identifying \(Q = Q^{\vee \vee}\). To realize it as a length, first move over to \(\mathbb R_{\geq 0}\)  in three steps (abbreviating \(\ell(E_q)\) as \(\ell\)):
+</p>
+<ol class="org-ol">
+<li><i>Group extension:</i> since \(Q\) is a sharp, fine saturated monoid, \(Q^{gp}\) is a lattice and \(Q\) embeds in it as a full dimensional submonoid. Same holds for \(Q^\vee\). Thus additivity forces a unique extension of \(\ell\) to the lattice \(N = (Q^\vee)^{gp}\), \(\ell^{gp}:N\to \mathbb Z\) by defining \(\ell^{gp}(a - b) = \ell(a) - \ell(b)\).</li>
+<li>Now tensor with \(\mathbb R\) to get \(\ell^{gp}_{\mathbb R}:N_{\mathbb R}\to \mathbb R\).</li>
+<li>Now intersect with \(Q^{\vee}\). Since \(\ell^{gp}(Q^\vee) = \ell(Q^\vee) \subseteq \mathbb N\), \(\ell^{gp}_{\mathbb R}(Q^{\vee} \cap N_{\mathbb R}) \subseteq \mathbb R_{\geq 0}\). This gives us a map \(\ell_{\mathbb R}:Q^\vee_{\mathbb R} \to \mathbb R_{\geq 0}\).</li>
+</ol>
+
+<p>
+This monoid \(Q^\vee_{\mathbb R}\) is the cone \(\omega\) over which the <a class="idlink" data-note="family-of-tropical-curves-defn" href="../../notes/family-of-tropical-curves-defn/">tropical family</a> \(h:\Gamma\to \omega\) lives. Take any \(s\in \omega\) and the fiber \(h^{-1}(s)\) is a copy of the dual graph \(G\) of \(C\). In it there is an edge \(E_q\), and the length of that edge is exactly
+</p>
+\begin{align*}
+  \ell(E_q)(s) = \langle \rho_q, s\rangle \in \mathbb R_{\geq 0}.
+\end{align*}
+<p>
+This is precisely the length function which makes \(G\) into a <i>metric</i> graph.
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="family-of-tropical-curves-defn" href="../../notes/family-of-tropical-curves-defn/">Family Of Tropical Curves Defn</a></li>
+    <li><a data-note="tropicalization-of-a-stable-curve" href="../../notes/tropicalization-of-a-stable-curve/">Tropicalization Of A Stable Curve</a></li>
+    <li><a data-note="monoid-adjectives" href="../../notes/monoid-adjectives/">Various Monoid Adjectives</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

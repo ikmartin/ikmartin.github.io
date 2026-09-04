@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes On Localization And Stable Log Maps — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/localization-and-stable-log-maps/"
+      data-note-title="Notes On Localization And Stable Log Maps">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#placeholder-title">Placeholder title</a></li>
+    <li class="toc-l3"><a href="#the-ordinary-moduli-space">The ordinary moduli space</a></li>
+    <li class="toc-l3"><a href="#log-lifts">Log lifts</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Notes On Localization And Stable Log Maps</h1>
+      
+      <article class="note">
+<p>
+This is a note containing some generalities and is closely related to the <a class="idlink" data-note="localization-for-log-gw" href="../../notes/localization-for-log-gw/">project note on thesis research</a>. The present note is intended to be primarily a place to find information on other notes, i.e. a topics page, whereas the thesis research note is for reported progress.
+</p>
+
+<p>
+<b>Definitions</b>
+</p>
+<ul class="org-ul">
+<li><a class="idlink" data-note="stable-log-map-defn" href="../../notes/stable-log-map-defn/">stable log maps</a></li>
+<li><a class="idlink" data-note="class-of-stable-log-maps" href="../../notes/class-of-stable-log-maps/">class of stable log maps</a></li>
+<li><a class="idlink" data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">contact orders</a></li>
+</ul>
+
+<p>
+<b>Deformation Theory</b>
+We use deformation theory to compute the weights of the torus action on the fixed components of the stable log maps moduli space.
+</p>
+
+<ul class="org-ul">
+<li><a class="idlink" data-note="deformation-theory-topics" href="../../notes/deformation-theory-topics/">Deformation theory topics page</a></li>
+</ul>
+
+<p>
+<b>Examples</b>
+</p>
+<ul class="org-ul">
+<li><a class="idlink" data-note="degree-contact-order-formula-log-stable-curves" href="../../notes/degree-contact-order-formula-log-stable-curves/">degree and contact order formula</a></li>
+<li><a class="idlink" data-note="localization-for-log-gw" href="../../notes/localization-for-log-gw/">thesis project note and examples</a> of localization computation on space of stable log maps</li>
+</ul>
+<div id="outline-container-placeholder-title" class="outline-2">
+<h2 id="placeholder-title">Placeholder title</h2>
+<div class="outline-text-2" id="text-placeholder-title">
+<p>
+We&rsquo;ll denote the space of <a class="idlink" data-note="moduli-space-of-basic-stable-log-maps" href="../../notes/moduli-space-of-basic-stable-log-maps/">stable log maps</a> by \(LM(X/B,\beta)\) with target \(X/B\) and <a class="idlink" data-note="class-of-stable-log-maps" href="../../notes/class-of-stable-log-maps/">class</a> \(\beta\).
+</p>
+<ul class="org-ul">
+<li>\(X/B\) is a log scheme \(X\) with base \(B\). If \(B\) is omitted then it&rsquo;s understood to be the trivial log point.</li>
+<li>the class \(\beta = (A, g, n, \{u_i\}_{i\in [n]})\) consists of
+<ul class="org-ul">
+<li>a curve class \(A\in H^+_2(X)\)</li>
+<li>a genus \(g\)</li>
+<li>a specified number of marked points \(n\)</li>
+<li>integral elements \(u_{p_i}\in |\Sigma(X)|\) specifying the contact orders of the marked points \(p_i\).</li>
+</ul></li>
+</ul>
+
+<p>
+For a log stable map \(f:C\to X\), we set
+</p>
+<ul class="org-ul">
+<li>\(P_x := \overline{\mathcal M}_{X, \underline f(\overline x)}\)</li>
+</ul>
+
+<p>
+Note that the underlying ordinary curve class \(\underline \beta\) consists of the first three bullet points below \(\beta\) above, so \(\overline M(\underline X, \underline \beta) = \overline M_{g, n}(\underline X, A)\) is the ordinary moduli space of stable log maps.
+</p>
+
+<p>
+What does \(LM(\mathbb P^2, \beta)\) with \(\beta = ([\ell], g=0, n=0, \{\})\) look like? Here \([\ell]\) is just the class of a line in \(\mathbb P^2\), so this simply requires that the stable map be degree \(1\).
+</p>
+</div>
+<div id="outline-container-the-ordinary-moduli-space" class="outline-3">
+<h3 id="the-ordinary-moduli-space">The ordinary moduli space</h3>
+<div class="outline-text-3" id="text-the-ordinary-moduli-space">
+<p>
+Consider first \(\overline M_{0,0}(\mathbb P^2, 1)\). What sorts of source curves \(C\) can we have? We don&rsquo;t have any marked points, so we cannot have a contracted component. Since we are degree \(1\) with no contracted components \(C\) is a single irreducible component, and since it is genus \(0\), \(C \cong \mathbb P^1\). Thus we&rsquo;re looking for maps \(f:\mathbb P^1 \to \mathbb P^2\) which are parameterizations of lines. This means \(\overline M_{0,0}(\mathbb P^2, 1) = \Gr(1, \mathbb P^2) = \mathbb P^{2,*}\), i.e. it is dual projective space, the space of lines in \(\mathbb P^2\).
+</p>
+
+<p>
+Which of these stable maps lift to log maps?
+</p>
+</div>
+</div>
+<div id="outline-container-log-lifts" class="outline-3">
+<h3 id="log-lifts">Log lifts</h3>
+<div class="outline-text-3" id="text-log-lifts">
+<p>
+See this note on <a class="idlink" data-note="log-lifts-of-ordinary-stable-maps" href="../../notes/log-lifts-of-ordinary-stable-maps/">log lifts</a>.
+We haven&rsquo;t specified a log structure for \(\mathbb P^2\) yet, so let&rsquo;s just take it to be the log structure given by a smooth divisor \(D\). Consider first the case that \(f(C)\) intersects the divisor \(D\) in finitely many points (i.e. \(f^{-1}(D)\) is finitely many points). We apparently know that &ldquo;\(\underline f^*\overline {\mathcal M}_X\) can only jump at marked and double points,&rdquo;, by Remark 1.9 in <a class="citeref" href="../../notes/gross-siebert-logarithmicgromovwitteninvariants/">[GSa]</a>, which implies every point in \(\underline f^{-1}(D)\) must be marked.
+</p>
+</div>
+<div id="outline-container-point-of-confusion-regarding-inverse-image-of-the-divisor" class="outline-4">
+<h4 id="point-of-confusion-regarding-inverse-image-of-the-divisor">Point of confusion regarding inverse image of the divisor</h4>
+<div class="outline-text-4" id="text-point-of-confusion-regarding-inverse-image-of-the-divisor">
+<p>
+Unpacking this a bit, we have that for any point \(x\in f^{-1}(D)\), \(f^*\overline{\mathcal M}_{X, x} = \mathbb N\). However, I see no reason why \(\overline{\mathcal M}_{C,x}\) cannot be trivial! For that matter, I don&rsquo;t see why a curve over a log point \(\Spec (Q\to k)\) cannot be etale locally isomorphic to a trivial log structure&#x2026;
+</p>
+
+<p>
+I figured out the answer I think: it&rsquo;s about <a class="idlink" data-note="log-smooth-morphism" href="../../notes/log-smooth-morphism/">log smoothness</a>.
+</p>
+
+<p>
+It wasn&rsquo;t about log smoothness, it&rsquo;s more basic: you can&rsquo;t have a trivial log structure over something non-trivial. The log structure on \(pt = \Spec(\mathbb N\to k)\) is given by sending \(\mathbb N\to 0 \in k\); so \(\Gamma(pt, \mathcal M) = k^\times \oplus \mathbb N\)  and \(\Gamma(pt, \overline{\mathcal M}) = \mathbb N\). However, if you now take any scheme \(X\) with the trivial log structure, there is no map \(X\to \Spec(\mathbb N\to k)\) since there is no \(0\in \mathcal O_X^\times\) to map \(\mathbb N\) to.
+</p>
+</div>
+</div>
+<div id="outline-container-using-the-degree-contact-order-formula" class="outline-4">
+<h4 id="using-the-degree-contact-order-formula">Using the degree/contact order formula</h4>
+<div class="outline-text-4" id="text-using-the-degree-contact-order-formula">
+<p>
+The <a class="idlink" data-note="degree-contact-order-formula-log-stable-curves" href="../../notes/degree-contact-order-formula-log-stable-curves/">degree/contact order formula</a> restricts the possible contact orders according to the curve class. To see this, suppose we now allow for any number \(n\) of marked points and contact orders \(u_{p_i}\), still supposing our source curve to be \(\mathbb P^1\). The formula then reads
+</p>
+\begin{align*}
+  \deg \underline f^*\mathcal L_s = -\sum_{i=1}^n\langle u_{p_i}, s\rangle.
+\end{align*}
+<p>
+A section \(m\in \Gamma(X, \overline{\mathcal M}_X) \cong \mathbb N\)  <a class="idlink" data-note="global-sections-of-ghost-sheaf-and-line-bundles" href="../../notes/global-sections-of-ghost-sheaf-and-line-bundles/">corresponds to the line bundle</a> \(\mathcal O_X(-mD)\), and since the source was assumed to be \(\mathbb P^1\) we get
+</p>
+\begin{align*}
+  \underline f^*\mathcal O_X(-mD) = \mathcal O_{\mathbb P^1}(-m\cdot \deg (f)).
+\end{align*}
+<p>
+Using this together with the <a class="idlink" data-note="pullback-degree-formula" href="../../notes/pullback-degree-formula/">pullback degree formula</a> and interpretting the contact orders \(u_{p_i}\) as positive integers, we get that
+</p>
+\begin{align*}
+  -m \cdot \deg (f) = - \sum_{i=1}^n\langle u_{p_i}, m\rangle = -m(u_{p_1} + ... + u_{p_n}).
+\end{align*}
+<p>
+Hence we must have \(\deg(f) = u_{p_1} + ... + u_{p_n}\). This gives us some cases.
+</p>
+
+<p>
+Below we consider the space of stable log maps \(f:C\to \mathbb P^2\) where \(\mathbb P^2\) has smooth divisorial log structure given by \(D\) a degree \(d\) curve in \(\mathbb P^2\) and
+</p>
+<ul class="org-ul">
+<li>\(f_*([C]) = [H] \in A_1(\mathbb P^2) \) a hyperplane class,</li>
+<li>\(g  = 0 \),</li>
+<li>\(n\) the number of marked points undetermined.</li>
+</ul>
+
+<p>
+Note that every irreducible component of \(C\) must be isomorphic to \(\mathbb P^1\), and since the map is degree 1 (as specified by the condition that \([C]\) hits the hyperplane class) exactly one component must be non-contracted. Let \(C_0\) be the non-contracted component and \(C_i\) for \(i > 0\) be the contracted components.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="n-0"></a>\(n = 0\)<br />
+<div class="outline-text-5" id="text-n-0">
+<p>
+The component \(C_0\) is mapped isomorphically onto its image, so by Bezout&rsquo;s theorem it must intersect \(D\) in at least one point. This means \(f^{-1}(D)\) is not empty, but as discussed above it must also consist entirely of marked points, of which there are none. Therefore \(LM(\mathbb P^2, \beta) = \emptyset\) in this case.
+</p>
+</div>
+</li>
+<li><a id="n-1"></a>\(n=1\)<br />
+<div class="outline-text-5" id="text-n-1">
+<p>
+In this case \(f^{-1}(D)\) must consist of a single point \(p\). Since \(f\) is degree \(1\), the formula above means \(u_p = 1\), otherwise the moduli space is empty. We can choose to put \(p\) anywhere on the source curve, so
+</p>
+\begin{align*}
+  LM(\mathbb P^2, \beta) = \begin{cases}
+\mathbb P^1 & u_p = 1 \\
+\emptyset & \text{otherwise}
+\end{cases}
+\end{align*}
+
+<p>
+Let&rsquo;s consider the \(u_p = 1\) case real quick. We have a map \(LM \to \overline{M}_{0,1}(\mathbb P^2, 1)\) given by forgetting the log structure, and \(\overline{M}_{0,1}(\mathbb P^2, 1) \cong \mathbb P^{2*}\times \mathbb P^1\).  Really quick: this is because without any marked points, a stable map \(f:\mathbb P^1\to \mathbb P^2\) is entirely determined by its image, so \(\overline M_{0,0}(\mathbb P^2, 1)\) is just the projective Grassmanian \(\mathbb P^{2*}\) . Adding one marked point adds a \(\mathbb P^1\) factor.
+</p>
+
+<p>
+<a class="idlink" data-note="lifting-genus-0-stable-map-to-p2-to-log-stable-map" href="../../notes/lifting-genus-0-stable-map-to-p2-to-log-stable-map/">Lifting an ordinary stable map</a> in this setting requires two things: adding a log structure corresponding to the single mark to the source curve and insisting that the marked point hits the divisor with tangency 1. Thus, we should expect the scheme (ignoring log structure) \(LM\) to be the fiber of the divisor \(D \subset \mathbb P^2\) over the evaluation map \(\ev:\overline{M}_{0,1}(\mathbb P^2, 1)\to \mathbb P^2\); this is the requirement that the marked point hit the divisor. <a class="idlink" data-note="idea-for-map-from-log-to-ordinary-stable-map" href="../../notes/idea-for-map-from-log-to-ordinary-stable-map/">So I think that</a> \(LM \cong \overline M_{0,1}(\mathbb P^2, 1)\times_{\mathbb P^2} D\) where \(D\) is the divisor yielding the log structure on \(\mathbb P^2\).
+</p>
+</div>
+</li>
+<li><a id="n-1-but-deg-f-2"></a>\(n=1\) but \(\deg(f) = 2\)<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">13</span></h2>
+  <ul>
+    <li><a data-note="class-of-stable-log-maps" href="../../notes/class-of-stable-log-maps/">Class Of Stable Log Maps</a></li>
+    <li><a data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">Contact Order Of A Stable Log Curve At Marks And Nodes</a></li>
+    <li><a data-note="deformation-theory-topics" href="../../notes/deformation-theory-topics/">Deformation Theory Topics</a></li>
+    <li><a data-note="degree-contact-order-formula-log-stable-curves" href="../../notes/degree-contact-order-formula-log-stable-curves/">Formula For The Degree And Contact Orders Of Marks On A Log Stable Curve</a></li>
+    <li><a data-note="global-sections-of-ghost-sheaf-and-line-bundles" href="../../notes/global-sections-of-ghost-sheaf-and-line-bundles/">Global Sections Of The Ghost Sheaf, Torsors, And Line Bundles</a></li>
+    <li><a data-note="idea-for-map-from-log-to-ordinary-stable-map" href="../../notes/idea-for-map-from-log-to-ordinary-stable-map/">Idea For The Map Between Log And Ordinary Stable Map Moduli Space</a></li>
+    <li><a data-note="lifting-genus-0-stable-map-to-p2-to-log-stable-map" href="../../notes/lifting-genus-0-stable-map-to-p2-to-log-stable-map/">Lifting An Ordinary Stable Map To P^2 To A Log Stable Map</a></li>
+    <li><a data-note="localization-for-log-gw" href="../../notes/localization-for-log-gw/">Localization For Log Gw Invariants</a></li>
+    <li><a data-note="log-lifts-of-ordinary-stable-maps" href="../../notes/log-lifts-of-ordinary-stable-maps/">Log Lifts Of Ordinary Stable Maps</a></li>
+    <li><a data-note="log-smooth-morphism" href="../../notes/log-smooth-morphism/">Log Smooth Morphism</a></li>
+    <li><a data-note="moduli-space-of-basic-stable-log-maps" href="../../notes/moduli-space-of-basic-stable-log-maps/">Moduli Space Of Basic Stable Log Maps</a></li>
+    <li><a data-note="pullback-degree-formula" href="../../notes/pullback-degree-formula/">Pullback Degree Formula</a></li>
+    <li><a data-note="stable-log-map-defn" href="../../notes/stable-log-map-defn/">Stable Log Map Defn</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-gsa"><span class="ref-num">[GSa]</span> <a href="../../notes/gross-siebert-logarithmicgromovwitteninvariants/">Gross, Siebert — Logarithmic Gromov-Witten Invariants</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

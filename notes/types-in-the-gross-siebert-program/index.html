@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Types In The Gross-Siebert Program — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/types-in-the-gross-siebert-program/"
+      data-note-title="Types In The Gross-Siebert Program">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Types In The Gross-Siebert Program</h1>
+      <p class="note-meta"><span class="taxon">article</span><span class="sep">·</span><a class="tag" href="../../notes/tag/tropical/">#tropical</a><span class="sep">·</span><a class="tag" href="../../notes/tag/type/">#type</a><span class="sep">·</span><a class="tag" href="../../notes/tag/class-of-log-map/">#class-of-log-map</a><span class="sep">·</span><a class="tag" href="../../notes/tag/contraction-map-of-type/">#contraction-map-of-type</a><span class="sep">·</span><a class="tag" href="../../notes/tag/basic-monoid/">#basic-monoid</a></p>
+
+      <article class="note">
+<p>
+A log or punctured log map over a log point \(\Spec (Q\to k)\) has a tropicalization, a map of cone complexes \(\Gamma \to \Sigma(X)\) over a cone \(\omega = Q^\vee_{\mathbb R}\). A <i>type</i> is what survives when you forget the continuous data of such a family. They appear as the indices in stratifications of moduli spaces of log maps.
+</p>
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+<i>(Class).</i> The data \(\beta = (g, A, n, u_p)\) is called the <i>class</i> associated to a log map \((C, f, p_1,...,p_n)\) where
+</p>
+<ul class="org-ul">
+<li>\(g \) is the genus of the source curve</li>
+<li>\(A \) is the curve class \(f_*[C]\)</li>
+<li>\(n\) is the number of marked points</li>
+<li>\(u_{p_i}\) is the <a class="idlink" data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">contact order at the marked point</a> \(p_i\)</li>
+</ul>
+
+<p>
+The moduli space \(M(X/B, \beta)\) is then the moduli space of stable maps of class \(\beta\). The data \(\underline \beta\) is precisely the combinatorial data specified in ordinary Gromov-Witten theory. See definitions 2.15-2.16 in the Decompositions paper. It is this moduli space whose degenerate fiber is decomposed in the main decomposition theorem.
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="class-of-stable-log-maps" href="../../notes/class-of-stable-log-maps/">Class Of Stable Log Maps</a></p>
+
+
+<p>
+The &ldquo;type&rdquo; of a log map can be retrieved before or after tropicalization. We have two slightly different definitions depending on whether the input is a log map or a tropical map.
+</p>
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+<i>(Type of a log map.)</i> Suppose \((C, f, \mathbf p)\) is a log map over a log point \(S = \Spec(Q\to k)\). It is the quadruple \(\tau = (G, \mathbf g, \sigma, u)\) where
+</p>
+<ul class="org-ul">
+<li>\(G = V(G) \cup E(G) \cup L(G)\) is the dual intersection graph of a source curve where vertices \(V(G)\) are the generic points of components, edges \(E(G)\) are the nodes and legs \(L(G)\) are the marked points</li>
+<li>\(\mathbf g:V(G) \to \mathbb N\) is the genus of a vertex</li>
+<li>\(\sigma:V(G)\cup E(G) \cup L(G) \to \Sigma(X)\) is the &ldquo;cone function&rdquo; which assigns to a point \(x\) the cone \(\sigma(x) = \left(\overline{\mathcal M}_{X, f(x)}\right)^\vee_{\mathbb R}\) in the tropicalization of \(X\), it is the piece of \(X\) to which \(x\) maps in the tropicalization</li>
+<li>\(u = \{u_p, u_q\}\) is the <a class="idlink" data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">contact order of the marks and the nodes</a>.</li>
+</ul>
+
+<p>
+Attached to this construction is the <a class="idlink" data-note="basic-monoid" href="../../notes/basic-monoid/">basic monoid</a> \(Q(\tau)\), which depends only \(G\), \(\sigma\) and \(u\). We emphasize that this is discrete data associated to a <i>log map</i>.
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="type-of-a-stable-log-map-defn" href="../../notes/type-of-a-stable-log-map-defn/">Type Of A Stable Log Map Defn</a></p>
+
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+<i>(Type of a family of tropical maps.)</i> The <i>type of a family of tropical maps</i> is the same data as the <a class="idlink" data-note="type-of-a-stable-log-map-defn" href="../../notes/type-of-a-stable-log-map-defn/">type of a stable log map</a>, but read off from the tropical data.
+</p>
+
+<div class="org-center">
+<p>
+Geometric ~
+</p>
+<figure class="tikz" id="tikz-1aa68f06438e5afc"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -83.271013 86.562192 62.112504' width='8.6562em'>
+<defs>
+<path id='tz1aa68f06438e5afc-g1-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tz1aa68f06438e5afc-g0-67' d='M7.571606-6.924035C7.571606-6.953923 7.551681-7.023661 7.462017-7.023661C7.43213-7.023661 7.422167-7.013699 7.312578-6.90411L6.615193-6.136986C6.525529-6.276463 6.067248-7.023661 4.961395-7.023661C2.739726-7.023661 .498132-4.821918 .498132-2.510585C.498132-.86675 1.673724 .219178 3.198007 .219178C4.064757 .219178 4.821918-.179328 5.349938-.637609C6.276463-1.454545 6.445828-2.361146 6.445828-2.391034C6.445828-2.49066 6.346202-2.49066 6.326276-2.49066C6.266501-2.49066 6.216687-2.470735 6.196762-2.391034C6.107098-2.102117 5.877958-1.39477 5.190535-.816936C4.503113-.259029 3.875467-.089664 3.35741-.089664C2.460772-.089664 1.404732-.607721 1.404732-2.161893C1.404732-2.729763 1.613948-4.343711 2.610212-5.50934C3.217933-6.216687 4.154421-6.714819 5.041096-6.714819C6.057285-6.714819 6.645081-5.947696 6.645081-4.79203C6.645081-4.393524 6.615193-4.383562 6.615193-4.283935S6.724782-4.184309 6.764633-4.184309C6.894147-4.184309 6.894147-4.204234 6.94396-4.383562L7.571606-6.924035Z'/>
+<path id='tz1aa68f06438e5afc-g0-83' d='M6.425903-6.924035C6.425903-6.953923 6.405978-7.023661 6.316314-7.023661C6.266501-7.023661 6.256538-7.013699 6.136986-6.874222L5.65878-6.306351C5.399751-6.774595 4.881694-7.023661 4.234122-7.023661C2.968867-7.023661 1.77335-5.877958 1.77335-4.672478C1.77335-3.865504 2.30137-3.407223 2.809465-3.257783L3.875467-2.978829C4.244085-2.889166 4.79203-2.739726 4.79203-1.92279C4.79203-1.026152 3.975093-.089664 2.998755-.089664C2.361146-.089664 1.255293-.308842 1.255293-1.544209C1.255293-1.783313 1.305106-2.022416 1.315068-2.082192C1.325031-2.122042 1.334994-2.132005 1.334994-2.15193C1.334994-2.251557 1.265255-2.261519 1.215442-2.261519S1.145704-2.251557 1.115816-2.221669C1.075965-2.181818 .518057 .089664 .518057 .119552C.518057 .179328 .56787 .219178 .627646 .219178C.67746 .219178 .687422 .209215 .806974 .069738L1.295143-.498132C1.723537 .079701 2.400996 .219178 2.978829 .219178C4.333748 .219178 5.50934-1.105853 5.50934-2.34122C5.50934-3.028643 5.17061-3.367372 5.021171-3.506849C4.79203-3.73599 4.64259-3.775841 3.755915-4.004981C3.536737-4.064757 3.178082-4.164384 3.088418-4.184309C2.819427-4.273973 2.480697-4.562889 2.480697-5.090909C2.480697-5.897883 3.277709-6.744707 4.224159-6.744707C5.051059-6.744707 5.65878-6.316314 5.65878-5.200498C5.65878-4.881694 5.618929-4.702366 5.618929-4.64259C5.618929-4.632628 5.618929-4.542964 5.738481-4.542964C5.838107-4.542964 5.84807-4.572852 5.88792-4.742217L6.425903-6.924035Z'/>
+<path id='tz1aa68f06438e5afc-g0-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+</defs>
+<g id='tz1aa68f06438e5afc-page1'>
+<g stroke-miterlimit='10' transform='translate(-41.044083,-44.22083)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-29.072,-19.48996)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.044083,-44.22083)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.839103,-76.247352)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.93124,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.839103,-76.247352)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.839103' y='-76.247352' xlink:href='#tz1aa68f06438e5afc-g0-67'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(8.076509,-76.247352)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(8.076509,-76.247352)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='8.076509' y='-76.247352' xlink:href='#tz1aa68f06438e5afc-g0-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.839103,-44.22083)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.35416,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.839103,-44.22083)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.839103' y='-44.22083' xlink:href='#tz1aa68f06438e5afc-g0-83'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(8.076509,-44.22083)scale(0.996264,-0.996264)'/>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.83626 8.79782V-8.39784' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.83626,-8.59782)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-12.40051 15.15666H10.79361' fill='none'/>
+<g transform='translate(10.99359,15.15666)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-2.94551,18.87)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.044083,-44.22083)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-41.044083' y='-44.22083' xlink:href='#tz1aa68f06438e5afc-g1-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+<p>
+\(,\quad\)
+Tropical ~
+</p>
+<figure class="tikz" id="tikz-ad91bb94a8bab6d0"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -85.393626 114.100775 62.85142' width='11.4101em'>
+<defs>
+<path id='tzad91bb94a8bab6d0-g1-104' d='M2.182814-4.630635C2.189788-4.644583 2.21071-4.735243 2.21071-4.742217C2.21071-4.777086 2.182814-4.839851 2.099128-4.839851C1.959651-4.839851 1.380822-4.78406 1.206476-4.770112C1.150685-4.763138 1.053051-4.756164 1.053051-4.609714C1.053051-4.51208 1.150685-4.51208 1.234371-4.51208C1.569116-4.51208 1.569116-4.463263 1.569116-4.407472C1.569116-4.358655 1.555168-4.316812 1.54122-4.254047L.557908-.306849C.523039-.18132 .523039-.167372 .523039-.153425C.523039-.048817 .606725 .069738 .760149 .069738C.836862 .069738 .969365 .034869 1.046077-.111582C1.066999-.153425 1.129763-.404483 1.164633-.550934L1.325031-1.171606C1.345953-1.276214 1.415691-1.54122 1.436613-1.645828C1.506351-1.910834 1.506351-1.917808 1.645828-2.140971C1.868991-2.48269 2.217684-2.880199 2.761644-2.880199C3.152179-2.880199 3.173101-2.559402 3.173101-2.39203C3.173101-1.973599 2.873225-1.199502 2.761644-.9066C2.684932-.711333 2.657036-.648568 2.657036-.530012C2.657036-.160399 2.963885 .069738 3.319552 .069738C4.016936 .069738 4.323786-.892653 4.323786-.99726C4.323786-1.08792 4.233126-1.08792 4.212204-1.08792C4.11457-1.08792 4.107597-1.046077 4.079701-.969365C3.919303-.411457 3.612453-.125529 3.340473-.125529C3.194022-.125529 3.166127-.223163 3.166127-.369614C3.166127-.530012 3.200996-.620672 3.326526-.934496C3.410212-1.150685 3.696139-1.889913 3.696139-2.280448C3.696139-2.39203 3.696139-2.684932 3.438107-2.887173C3.319552-2.977833 3.11731-3.075467 2.789539-3.075467C2.280448-3.075467 1.910834-2.796513 1.652802-2.496638L2.182814-4.630635Z'/>
+<path id='tzad91bb94a8bab6d0-g0-33' d='M6.027397-3.706102C6.027397-4.154421 5.84807-4.403487 5.628892-4.403487C5.369863-4.403487 5.100872-4.164384 5.100872-3.935243C5.100872-3.835616 5.150685-3.726027 5.250311-3.636364C5.419676-3.486924 5.599004-3.217933 5.599004-2.799502C5.599004-2.400996 5.409714-1.833126 5.100872-1.374844C4.801993-.946451 4.433375-.607721 3.965131-.607721C3.39726-.607721 3.088418-.966376 2.998755-1.504359C3.108344-1.763387 3.337484-2.400996 3.337484-2.67995C3.337484-2.799502 3.287671-2.899128 3.158157-2.899128C3.078456-2.899128 2.968867-2.879203 2.889166-2.729763C2.779577-2.530511 2.660025-1.882939 2.660025-1.524284C2.331258-1.05604 1.932752-.607721 1.305106-.607721C.647572-.607721 .438356-1.195517 .438356-1.753425C.438356-2.998755 1.454545-4.044832 1.454545-4.174346C1.454545-4.283935 1.374844-4.363636 1.265255-4.363636C1.135741-4.363636 1.066002-4.234122 1.006227-4.144458C.498132-3.407223 .119552-2.221669 .119552-1.315068C.119552-.627646 .348692 .109589 1.165629 .109589C1.872976 .109589 2.34122-.388543 2.699875-.936488C2.789539-.358655 3.178082 .109589 3.795766 .109589C4.572852 .109589 5.051059-.498132 5.409714-1.24533C5.648817-1.733499 6.027397-3.088418 6.027397-3.706102Z'/>
+<path id='tzad91bb94a8bab6d0-g0-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+<path id='tzad91bb94a8bab6d0-g2-0' d='M5.519303-6.774595H.328767V-6.465753H.56787C1.334994-6.465753 1.354919-6.356164 1.354919-5.997509V-.777086C1.354919-.418431 1.334994-.308842 .56787-.308842H.328767V0C.67746-.029888 1.454545-.029888 1.843088-.029888C2.251557-.029888 3.158157-.029888 3.516812 0V-.308842H3.188045C2.241594-.308842 2.241594-.438356 2.241594-.787049V-6.067248C2.241594-6.396015 2.261519-6.465753 2.729763-6.465753H3.755915C5.180573-6.465753 5.389788-5.877958 5.549191-4.533001H5.798257L5.519303-6.774595Z'/>
+<path id='tzad91bb94a8bab6d0-g2-6' d='M3.706102-3.247821C3.795766-3.347447 3.795766-3.387298 3.795766-3.407223C3.795766-3.457036 3.755915-3.506849 3.726027-3.5467L1.683686-6.495641H3.985056C5.668742-6.495641 6.166874-6.136986 6.37609-4.562889H6.625156L6.346202-6.804483H.816936C.577833-6.804483 .557908-6.804483 .557908-6.575342L3.038605-2.968867L.667497-.268991C.56787-.159402 .56787-.139477 .56787-.109589C.56787 0 .667497 0 .816936 0H6.346202L6.625156-2.351183H6.37609C6.196762-.687422 5.519303-.418431 3.955168-.418431H1.205479L3.706102-3.247821Z'/>
+<path id='tzad91bb94a8bab6d0-g2-40' d='M3.297634 2.391034C3.297634 2.361146 3.297634 2.34122 3.128269 2.171856C1.882939 .916563 1.564134-.966376 1.564134-2.49066C1.564134-4.224159 1.942715-5.957659 3.16812-7.202989C3.297634-7.32254 3.297634-7.342466 3.297634-7.372354C3.297634-7.442092 3.257783-7.47198 3.198007-7.47198C3.098381-7.47198 2.201743-6.794521 1.613948-5.529265C1.105853-4.433375 .986301-3.327522 .986301-2.49066C.986301-1.713574 1.09589-.508095 1.643836 .617684C2.241594 1.843088 3.098381 2.49066 3.198007 2.49066C3.257783 2.49066 3.297634 2.460772 3.297634 2.391034Z'/>
+<path id='tzad91bb94a8bab6d0-g2-41' d='M2.879203-2.49066C2.879203-3.267746 2.769614-4.473225 2.221669-5.599004C1.62391-6.824408 .767123-7.47198 .667497-7.47198C.607721-7.47198 .56787-7.43213 .56787-7.372354C.56787-7.342466 .56787-7.32254 .757161-7.143213C1.733499-6.156912 2.30137-4.572852 2.30137-2.49066C2.30137-.787049 1.932752 .966376 .697385 2.221669C.56787 2.34122 .56787 2.361146 .56787 2.391034C.56787 2.450809 .607721 2.49066 .667497 2.49066C.767123 2.49066 1.663761 1.8132 2.251557 .547945C2.759651-.547945 2.879203-1.653798 2.879203-2.49066Z'/>
+</defs>
+<g id='tzad91bb94a8bab6d0-page1'>
+<g stroke-miterlimit='10' transform='translate(-34.209285,-45.922791)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-35.93243,-19.80942)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-34.209285,-45.922791)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-26.641504,-77.921646)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.125,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-26.641504,-77.921646)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-26.641504' y='-77.921646' xlink:href='#tzad91bb94a8bab6d0-g2-0'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(21.108906,-77.921646)scale(0.996264,-0.996264)'>
+<g transform='translate(-12.03473,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(21.108906,-77.921646)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='21.108906' y='-77.921646' xlink:href='#tzad91bb94a8bab6d0-g2-6'/>
+<use x='28.304166' y='-77.921646' xlink:href='#tzad91bb94a8bab6d0-g2-40'/>
+<use x='32.17854' y='-77.921646' xlink:href='#tzad91bb94a8bab6d0-g0-88'/>
+<use x='41.214096' y='-77.921646' xlink:href='#tzad91bb94a8bab6d0-g2-41'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-26.641504,-45.922791)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.29166,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-26.641504,-45.922791)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-26.641504' y='-45.922791' xlink:href='#tzad91bb94a8bab6d0-g0-33'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(21.108906,-45.922791)scale(0.996264,-0.996264)'/>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-28.33627 8.45059V-11.24507' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-28.33627,-11.44505)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.70677 14.80943H2.654' fill='none'/>
+<g transform='translate(2.85399,14.80943)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-11.16727,17.16167)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-34.209285,-45.922791)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-34.209285' y='-45.922791' xlink:href='#tzad91bb94a8bab6d0-g1-104'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+Start with a <a class="idlink" data-note="family-of-tropical-curves-defn" href="../../notes/family-of-tropical-curves-defn/">family of tropical curves</a> \(\Gamma \to \omega\) over a cone \(\omega\) together with a tropical map \(h:\Gamma \to \Sigma(X)\) from \(\Gamma\) to a cone complex \(\Sigma(X)\). We think of \(\Gamma\) here as a genus-decorated metric graph \((G, \mathbf g, \ell)\) rather than the cone complex associated to it. The type is then
+</p>
+\begin{align*}
+  \tau = (G, \mathbf g, \sigma, \mathbf u)
+\end{align*}
+<p>
+where 
+</p>
+<ul class="org-ul">
+<li>\(G\) is the underlying graph</li>
+<li>\(\mathbf g:V(G)\to \mathbb N\) is the genus decorating function</li>
+<li>\(\sigma:V(G)\cup E(G) \cup L(G) \to \Sigma(X)\) is the map assigning each piece of graph data to the cone in which its image lands</li>
+<li>\(\mathbf u\)  is the contact orders where \(u_E \in N_{\sigma(E)}\) is defined by \(h(v') - h(v) = \ell(E) \cdot u_E\) along each edge and \(u_L\in N_{\sigma(L)}\) is the outgoing slope of each leg.</li>
+</ul>
+<p>
+Notice that the length \(\ell\) appearing as part of the data of \(\Gamma \)is forgotten.
+</p>
+
+<p>
+Compared the the type of a stable log map, now \(\sigma(x)\) is the minimal cone containing the image of \(h(\omega_x)\) and the contact orders are the images of tangent vectors \((0,1)\) under \(h\) (which makes them much more interpretable in my opinion).
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="type-of-a-family-of-tropical-maps" href="../../notes/type-of-a-family-of-tropical-maps/">Type Of A Family Of Tropical Maps Defn</a></p>
+
+
+<p>
+The equivalence of &ldquo;type of a log map&rdquo; and &ldquo;type of a family of tropical maps&rdquo; justifies the convention of simply calling both of these &ldquo;type&rdquo;.
+</p>
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+<i>(Decorated tropical type.)</i> It&rsquo;s the same as the notions of type but with the extra decoration of a curve class: we add a map \(A:V(G)\to H^+_2(X)\) mapping components of \(C\) i.e. vertices in \(G\) to curve classes, and we denote the total class \(|A| = \sum_{v\in V(G)} A(v)\). The decorated type is denoted
+</p>
+\begin{align*}
+  \tilde \tau = (\tau, A).
+\end{align*}
+<p>
+This is the level at which the decomposition formula functions; two rigid tropical maps with the same underlying types but with different curve classes are counted separately.
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="decorated-tropical-type" href="../../notes/decorated-tropical-type/">Decorated Tropical Type</a></p>
+
+
+<p>
+Here are some peripheral notions in the theory.
+</p>
+
+<p>
+<b>Contraction morphisms</b>: The morphisms of types are contractions \(\tau\to \tau'\) given by contracting an edge. Their geometric orign/analogue is generization maps; contracting an edge is like smoothing a node i.e. moving into a more generic strata. This is what &ldquo;the type jump at boundary strata&rdquo; refers to. See Lemma 2.30 in the Decompositions paper.
+</p>
+
+<p>
+<b>Rigid tropical types:</b> We say a type \(\tau = (G, \mathbf g, \sigma, u)\) is <i>rigid</i> if its basic monoid is \(\mathbb N\).
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="class-of-stable-log-maps" href="../../notes/class-of-stable-log-maps/">Class Of Stable Log Maps</a></li>
+    <li><a data-note="decorated-tropical-type" href="../../notes/decorated-tropical-type/">Decorated Tropical Type</a></li>
+    <li><a data-note="type-of-a-family-of-tropical-maps" href="../../notes/type-of-a-family-of-tropical-maps/">Type Of A Family Of Tropical Maps Defn</a></li>
+    <li><a data-note="type-of-a-stable-log-map-defn" href="../../notes/type-of-a-stable-log-map-defn/">Type Of A Stable Log Map Defn</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

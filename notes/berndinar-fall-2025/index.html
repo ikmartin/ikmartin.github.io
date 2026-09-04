@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berndinar Fall 2025 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/berndinar-fall-2025/"
+      data-note-title="Berndinar Fall 2025">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#talk-1-bernd-2025-08-28">Talk 1: Bernd [2025-08-28 Thu]</a></li>
+    <li class="toc-l3"><a href="#toric-degeneration-constructions">Toric degeneration constructions</a></li>
+    <li class="toc-l2"><a href="#talk-2-yuan-2025-09-04-affine-manifolds-simple-singularities-and-legendre-transform">Talk 2: Yuan [2025-09-04 Thu]. Affine manifolds, simple singularities and Legendre Transform</a></li>
+    <li class="toc-l3"><a href="#affine-manifolds">Affine Manifolds</a></li>
+    <li class="toc-l3"><a href="#affine-manifolds-with-singularities">Affine Manifolds with Singularities</a></li>
+    <li class="toc-l3"><a href="#polyhedral-decomposition-fan-structure-yields-an-affine-manifold-with-singularities">Polyhedral Decomposition + Fan Structure yields an affine manifold with singularities</a></li>
+    <li class="toc-l2"><a href="#talk-3-isaac-2025-09-11-fan-picture">Talk 3: Isaac [2025-09-11 Thu]. Fan picture</a></li>
+    <li class="toc-l2"><a href="#talk-4-suraj-2025-09-18-batyrev-borison-duality-and-toric-degenerations">Talk 4: Suraj [2025-09-18 Thu]. Batyrev-Borison Duality and Toric Degenerations</a></li>
+    <li class="toc-l3"><a href="#polar-duality-of-lattice-polytopes">Polar duality of lattice polytopes</a></li>
+    <li class="toc-l2"><a href="#talk-5-daniel-2025-09-25-log-geometry-introduction">Talk 5: Daniel [2025-09-25 Thu]. Log geometry introduction.</a></li>
+    <li class="toc-l3"><a href="#motivation">Motivation</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Berndinar Fall 2025</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<div id="outline-container-talk-1-bernd-2025-08-28" class="outline-2">
+<h2 id="talk-1-bernd-2025-08-28">Talk 1: Bernd <span class="timestamp-wrapper"><span class="timestamp">[2025-08-28 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-talk-1-bernd-2025-08-28">
+<p>
+SYZ fibrations, let \(X\) be a Calabi Yau with torus fibration \(T^3 \hookrightarrow X\to B\) with the map to \(B\) a Lagrangian morphism. Dual to this have \(\hat T^3 \hookrightarrow \hat X\) called the dual torus fibration. Mark was working in settings like this, not really clear to me what problem he was trying solve.
+</p>
+
+<p>
+Bernd doing other stuff, working on degenerations. Look on arxiv you&rsquo;ll find BS/Schroer papers on this stuff. &ldquo;Mirror symmetry is about limits&rdquo; hence degenerations. Here, BS learned log geometry. Log geometry is designed to study degenerations, especially normal crossings/toric degenerations. BS observed that the Batyrev mirror duals naturally occur in this language.
+</p>
+
+<p>
+Mark and BS met at Oberwolf in 2000, started talking, Mark stuck with the above setup, met in Warick again in 2001 and wrote essentially the whole list of the program.
+</p>
+</div>
+<div id="outline-container-toric-degeneration-constructions" class="outline-3">
+<h3 id="toric-degeneration-constructions">Toric degeneration constructions</h3>
+<div class="outline-text-3" id="text-toric-degeneration-constructions">
+<p>
+Mumford picture from paper about abelian varieties and Springer lecture notes on toroidal embeddings. There are two ways to construct toric varieties: fans or polytopes. If you start with the fan, you get a toric variety. If you start with a polytope, you get a toric variety AND a bundle \(\mathcal O(1)\) . If you add to the fan data a choice of strictly convex PL-function \(\varphi:|\Sigma|\to \mathbb R\), then this correspondence is one-to-one.
+</p>
+
+<p>
+\[(\Sigma, \varphi) \mapsto \operatorname{Newt}(\varphi)\]
+</p>
+
+<p>
+How do you get degenerations of toric varieties from fans? They correspond to polyhedral decompositions of \(N_{\mathbb R}\). Embedding this decomposition as \(N_{\mathbb R} \times \{1\}\subset N_{\mathbb R} \times \mathbb R\) and letting \(\Sigma\) be the fan over this, you get a map \(\alpha: X_\Sigma \to \mathbb A^1\) by restricting \(N_{\mathbb R}\times \mathbb R\to \mathbb R\) to the fan \(\Sigma\). The image of \(\Sigma\) is \(\mathbb R_{\geq 0}\), the fan of \(\mathbb A^1\). In this setup there are two interesting fibers, the fiber over \(0\) and the fiber of any point in \(\mathbb A^1\setminus \{0\}\).
+</p>
+
+<p>
+(include sketch)
+</p>
+
+<p>
+This is called the fan picture, this seemed natural, seemed like you didn&rsquo;t need a polarization at this point.
+</p>
+
+<p>
+MSLD2: Hodge theory + deformation theory
+</p>
+
+<p>
+&rsquo;06-&rsquo;07: Scattering + wall structures
+</p>
+
+<p>
+Wall structures and canonical scattering paper
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-talk-2-yuan-2025-09-04-affine-manifolds-simple-singularities-and-legendre-transform" class="outline-2">
+<h2 id="talk-2-yuan-2025-09-04-affine-manifolds-simple-singularities-and-legendre-transform">Talk 2: Yuan <span class="timestamp-wrapper"><span class="timestamp">[2025-09-04 Thu]</span></span>. Affine manifolds, simple singularities and Legendre Transform</h2>
+<div class="outline-text-2" id="text-talk-2-yuan-2025-09-04-affine-manifolds-simple-singularities-and-legendre-transform">
+<p>
+References:
+</p>
+<ul class="org-ul">
+<li>Mirror Symmetry via log degeneration data I (Gross, Siebert)</li>
+</ul>
+
+<p>
+Outline:
+An affine manifold with singularities will have a Legendre Transform which results in a polyhedral decomposition with an extra fan structure.
+</p>
+
+<p>
+<b>Motivation</b>: Look at Johny Evan Lectures on global Lagrangian sections.
+</p>
+
+<p>
+Standard in symplectic geometry to be given a Lagrangian torus fibration of a symplectic manifold \(T^2 \hookrightarrow X^4 \to B^2\).
+</p>
+
+<p>
+If we replace the smooth base \(B^2\) with an affine manifold \(X\) with a singularity at say the origin, then what you get is called a singular Lagrangian torus fibration, something that symplectic geometers call an &ldquo;almost toric fibration&rdquo;. The fiber at the origin looks like a pinched torus.
+</p>
+</div>
+<div id="outline-container-affine-manifolds" class="outline-3">
+<h3 id="affine-manifolds">Affine Manifolds</h3>
+<div class="outline-text-3" id="text-affine-manifolds">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Affine Manifold. Let \(M = \mathbb Z^n\) an abelian group, \(N = \text{Hom}_ {\mathbb Z}(M, \mathbb Z)\), and define \(M_{\mathbb R}\) and \(N_{\mathbb R}\) as usual. Define
+</p>
+<ul class="org-ul">
+<li>\(\operatorname{Aff}(M_{\mathbb R}) = M_{\mathbb R}\rtimes \operatorname{GL}_n(\mathbb R)\)</li>
+<li>\(\operatorname{Aff}(M) = M\rtimes \operatorname{GL}_n(\mathbb Z)\)</li>
+</ul>
+
+<p>
+If \(M, M'\) are two different lattices then
+</p>
+<ul class="org-ul">
+<li>\(\text{Aff}(M_{\mathbb R}, M_{\mathbb R}') := M_{\mathbb R}'\times \text{Hom}(M_{\mathbb R}, M'_{\mathbb R})\)</li>
+</ul>
+
+<p>
+Let \(B\) be a \(n\)-dimensional topological manifold. An affine structure on \(B\) consists of charts \(\{U_i, \psi_i:U_i\to M_{\mathbb R}\}\) with \(\psi_i \circ \psi_j^{-1} \in \text{Aff}(M_{\mathbb R})\). A map of affine manifolds is a map \(f:B\to B'\) which is affine in local charts. If in addition \(f\) is a local diffeomorphism then \(f\) is said to be <i>etale affine</i>.
+</p>
+</div>
+
+<p>
+Let \(\pi:\widetilde B\to B\) be a universal cover. Then there exists an etale affine map \(\delta:\widetilde B\to M_{\mathbb R}\) called a <i>developing map</i>. Then \(\pi_1(B)\) acts on \(\widetilde B\) by deck transformations \(\Psi_\gamma \) \(\gamma \in \pi_1(B)\). This gives something called the holonomy representation
+\[\rho:\pi_1(B) \to \text{Aff}(M_{\mathbb R})\]
+which satisfies \(\rho(\gamma)\circ \delta \circ \Psi_\gamma = \delta\).
+</p>
+
+<p>
+You can also write something gross down which we just call \(\text{Trans}:M_{\mathbb R} \rtimes \GL_n(\mathbb R) = \text{Aff}(M_{\mathbb R}) \to M_{\mathbb R}\),  and composing this with \(\rho\) above gives something called the <i>radiance obstruction</i> which measure some sort of obstructions.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(B\) be an affine manifold with coordinates \((y_1,...,y_n) \) and \(T_B\)  a flat linear connection \(\nabla\) on \(T_B \)such that
+\[\frac{\partial}{\partial y_1},...,\frac{\partial}{\partial y_n}\]
+are a frame of flat sections. Denote by \(\Lambda_{\mathbb R}\)the sheaf of local systems of flat sections, \(\Lambda_{\mathbb R}\) the dual local system of flat sections on \(T_B^*\).
+</p>
+
+<p>
+A <i>Hessian</i> metric on \(B\) is a Riemannian metric on \(B\) such hat locally on affine coordinates \(g_{ij}\) there exists \(K\) such that \(g_{ij} = \frac{\partial^2 K}{\partial y_i\partial y_j}\). \(K\)is only well defined up to an affine function. We&rsquo;ll be looking at pairs \((B, K)\) together with \((\check B, \check K)\) where \(\check B\) is the same underlying manifold as \(B\) but with a different affine structure.
+</p>
+</div>
+
+<p>
+\(K:\widetilde B\to \mathbb R\). Then we can define a class \(\alpha \in H^1(\pi_1(B), \text{Aff}(M_{\mathbb R}, \mathbb R))\) so that \(K - K\circ \Psi_{\gamma} = \alpha(\gamma)\) is called the <i>class of the Hessian metric</i>. Remember that \(\gamma \in \pi_1(B)\), and notice that we&rsquo;re taking <i>group cohomology</i> here.
+</p>
+
+<p>
+Lots of scary symplectic stuff here.
+</p>
+</div>
+</div>
+<div id="outline-container-affine-manifolds-with-singularities" class="outline-3">
+<h3 id="affine-manifolds-with-singularities">Affine Manifolds with Singularities</h3>
+<div class="outline-text-3" id="text-affine-manifolds-with-singularities">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+An affine manifold with singularities is a topological manifold \(B\) together with a closed subset \(\Delta \subset B\) called the singular locus which is locally a finite union of locally closed submanifold of codimension \(\geq 2\) such that \(B_0 = B\setminus \Delta\) is an affine manifold.
+</p>
+
+<p>
+A map between affine manifolds with singularities is a continuous map which takes singular locus to singular locus and which is a map of affine manifolds away from the singular loci.
+</p>
+</div>
+
+<p>
+<b>Key Example:</b>
+Let \(\Xi \subset M_{\mathbb R} \cong \mathbb R^n\) be a polytope containing \(0\) in its interior. Let \(B = \partial \Xi\), then \(B\) is an affine manifold with singularities. Let \(\text{Bary}(B)\) be the first barycentric subdivision of \(\partial \Xi\). Let \(\Delta\) be the union of simplices in \(\text{Bary}(B)\) not containing any vertex of \(\Xi\) and not containing any barycenter of \(n-1\) face of \(\Xi\). Note that if \(\sigma\) is an \(n-1\) dimensional face of \(\Xi\) then \(W_\sigma := \text{int}(\sigma)\)  has an affine structure.
+</p>
+
+<p>
+For each vertex \(v\) of \(\Xi\) , let \(\check v\) denote the union of all simplices of \(\text{Bary}(B)\) containing \(v\). \(W_v = \text{int}(\check v)\), and \(\varphi_v:W_v\to M_{\mathbb R}/\mathbb R v\).
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A polyhedral decomposition of a closed set \(R\subset M_{\mathbb R}\) is a locally finite covering \(\mathcal P\) of \(R\) consisting of closed convex polytopes.
+</p>
+<ol class="org-ol">
+<li>\(\sigma \in \mathcal P\) then every face of \(\sigma\) is also in \(\mathcal P\).</li>
+<li>If \(\sigma\) and \(\sigma'\) are both in \(\mathcal P\) then \(\sigma \cap \sigma' \in \mathcal P\).</li>
+</ol>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(B\) be an integral affine manifold with singularities. A polyhedral decomposition of \(B\) is a collection \(\mathcal P\) of closed subsets of \(B\) such that whenever \(\{v\} \in \mathcal P\) and \(v\not \in \Delta\), then there exists an integral polyhedral decomposition \(\mathcal P_v\) of a closed neighborhood of the origin \(R_v \subseteq \Lambda_{\mathbb R, v}\) so that the exponential map \(\exp:R_v \to B\) takes \(0\) to \(v\).
+</p>
+
+<p>
+Note that \(\Lambda_{\mathbb R, v}\) is a stalk, I think it&rsquo;s isomorphic to \(\mathbb R^{\dim B} \cong T_vB\) , so it makes sense to take the exponential map.
+</p>
+</div>
+
+<p>
+Some observations.
+</p>
+
+<ol class="org-ol">
+<li>The exponential map is a local homeomorphism onto its image, is integral on each \(\text{int}(\tau)\) for \(\tau \in \mathcal P_v\) and is integral affine on a neighborhood of the origin.</li>
+<li>For all top dimensional \(\widetilde \sigma\), \(\exp(\text{int}(\widetilde \sigma)) \cap \Delta = \emptyset\) and \(\text{int}(\widetilde \sigma)\) integral affine, \(\exp(\widetilde \tau) \in \mathcal P\) for all \(\widetilde \tau \in \mathcal P_v\).</li>
+</ol>
+
+<p>
+There are 3 other observations.
+</p>
+
+<p>
+We end up choosing a fan structure at each vertex \(v\in \mathcal P\).
+</p>
+</div>
+</div>
+<div id="outline-container-polyhedral-decomposition-fan-structure-yields-an-affine-manifold-with-singularities" class="outline-3">
+<h3 id="polyhedral-decomposition-fan-structure-yields-an-affine-manifold-with-singularities">Polyhedral Decomposition + Fan Structure yields an affine manifold with singularities</h3>
+<div class="outline-text-3" id="text-polyhedral-decomposition-fan-structure-yields-an-affine-manifold-with-singularities">
+<p>
+Given an affine manifold \(B\) with a polyhedral decomposition \(\mathcal P\) and a multivalued function \(\varphi\) encoding a fan structure at each vertex \(v\in \mathcal P\), we&rsquo;re going to get a new set of the same data called \((\check B, \check{\mathcal P}, \check \varphi)\).
+</p>
+
+<p>
+Q1: Where do I get polytopes for \(\check B\)?
+Q2: How do I assemble these polytopes?
+Q3: How do I put an affine structure on the assembled thing?
+</p>
+
+<p>
+<b>Defining \(\varphi\)</b>
+Given \((B, \mathcal P)\) data, there are two sheaves we care about. The first is \(\Lambda_{\mathcal P, \mathbb R} \subseteq \Lambda_{\mathbb R}\) defined
+\[\Gamma(U,\Lambda_{\mathcal P, \mathbb R}) = \{v\in \Gamma(U, \Lambda_{\mathbb R}) ~| ~ \forall y\in U, \sigma \in \mathcal P, y\in \sigma, v\text{ is tangent to } \sigma. \}\]
+It looks sort of like the log tangent sheaf. The second is \(Q_{\mathcal P, \mathbb R}\), a subsheaf of \(i_*\left(\Lambda_{\mathbb R} / \Lambda_{\mathcal P, \mathbb R}\right)\). A section \(s \in \Gamma(U, i_*(\Lambda_{\mathbb R}/\Lambda_{\mathcal P, \mathbb R}))\) is a section of \(Q_{\mathcal P, \mathbb R} \) if for all \(\gamma:[0,1]\to B\) the pull back \(\gamma^*s \in \Gamma([0,1], \gamma^*(\Lambda_{\mathbb R}/\Lambda_{\mathcal P,\mathbb R}))\) is induced by a section \(t \in \Gamma([0,1], \gamma^*\Gamma_{\mathbb R})\).
+</p>
+
+<p>
+If reading this later, one should really look at the reference paper. Stuff became quite rushed at this point. We basically get a complete polyhedral fan \(\Sigma_\tau\) for each \(\tau \in \mathcal P\). It&rsquo;s supposed to be the normal fan
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-talk-3-isaac-2025-09-11-fan-picture" class="outline-2">
+<h2 id="talk-3-isaac-2025-09-11-fan-picture">Talk 3: Isaac <span class="timestamp-wrapper"><span class="timestamp">[2025-09-11 Thu]</span></span>. Fan picture</h2>
+<div class="outline-text-2" id="text-talk-3-isaac-2025-09-11-fan-picture">
+<p>
+Paper notes
+</p>
+</div>
+</div>
+<div id="outline-container-talk-4-suraj-2025-09-18-batyrev-borison-duality-and-toric-degenerations" class="outline-2">
+<h2 id="talk-4-suraj-2025-09-18-batyrev-borison-duality-and-toric-degenerations">Talk 4: Suraj <span class="timestamp-wrapper"><span class="timestamp">[2025-09-18 Thu]</span></span>. Batyrev-Borison Duality and Toric Degenerations</h2>
+<div class="outline-text-2" id="text-talk-4-suraj-2025-09-18-batyrev-borison-duality-and-toric-degenerations">
+<p>
+See <a href="http://hep.itp.tuwien.ac.at/%7Ekreuzer/CY/CYhome.html">http://hep.itp.tuwien.ac.at/%7Ekreuzer/CY/CYhome.html</a> for a database of Calabi Yaus.
+</p>
+
+<p>
+<b>Outline</b>
+</p>
+<ul class="org-ul">
+<li>Polytope geometry: reflexive polytopes</li>
+<li>MPCP desingularization (&ldquo;simple singularity&rdquo;)</li>
+<li>Mirror to quintic threefold + MPCP</li>
+<li>GS setup for hypersurfaces</li>
+<li>Upgrade: CY complete intersection and upgrade refelxive polytopes to NEF partition</li>
+<li>MPCP to get simple singularity and a mumford degneration</li>
+</ul>
+
+<p>
+Following Mark Gross&rsquo;s &ldquo;Toric degenerations and Batyrev-Borison Duality&rdquo;.
+</p>
+
+<p>
+Batyrev-Borison duality is an explicit construction of the mirror pair of a Calabi-Yau manifold embedded in a Fano variety.
+</p>
+</div>
+<div id="outline-container-polar-duality-of-lattice-polytopes" class="outline-3">
+<h3 id="polar-duality-of-lattice-polytopes">Polar duality of lattice polytopes</h3>
+<div class="outline-text-3" id="text-polar-duality-of-lattice-polytopes">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A <i>reflexive polytope</i> is a polytope \(\Delta\subset \mathbb R^d\) whose dual is also a polytope.
+</p>
+</div>
+
+<p>
+Given a reflexive polytope, we can do standard toric geometry to get a pair \((\mathbb P_\Delta, -K_\Delta)\) of a projective variety with a polarization. Here \(-K_{\Delta}\) is the anticanonical divisor of \(\mathbb P_\Delta\), and it corresponds to the sum of the codimension 1 faces of \(\Delta\).
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Let \(\Delta\) be a lattice polytope. It is reflexive if and only if \(\mathbb P_\Delta\) is <a class="idlink" data-note="fano-variety-definition" href="../../notes/fano-variety-definition/">Fano</a> with at worst <a class="idlink" data-note="gorenstein-singularities" href="../../notes/gorenstein-singularities/">Gorenstein singularities</a>.
+</p>
+</div>
+
+<p>
+Given any \(a_0,...,a_k\in (\mathbb C^*)^n\) and \(m_0,...,m_k\in \Delta \cap \mathbb Z^n\), \(V = a_0t^{m_0} + ... + a_kt^{m_k} = 0\)  defines a hypersurface in \((\mathbb C^*)^n\), and taking the closure gives a hypersurface \(H \subset \mathbb P_\Delta\). It is a fact that when \(\Delta\) is reflexive, \(H\) constructed this way is in \(|-K_{\Delta}|.\)
+</p>
+
+<p>
+We can resolve singularities super easily because toric geometry. It turns out that whenever you&rsquo;re a reflexive polytope you get a <i>crepant</i> resolution of singularities.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(\Delta \to \Delta'\) be a subdivision of lattice polyopes so that \(\Sigma(\Delta')\to \Sigma(\Delta)\) is a refinement of the normal fan of \(\Delta\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-talk-5-daniel-2025-09-25-log-geometry-introduction" class="outline-2">
+<h2 id="talk-5-daniel-2025-09-25-log-geometry-introduction">Talk 5: Daniel <span class="timestamp-wrapper"><span class="timestamp">[2025-09-25 Thu]</span></span>. Log geometry introduction.</h2>
+<div class="outline-text-2" id="text-talk-5-daniel-2025-09-25-log-geometry-introduction">
+<p>
+Outline:
+</p>
+<ul class="org-ul">
+<li>Motiviate using log differentials</li>
+<li>Introduce category of log schemes</li>
+<li>Talk about log smoothness</li>
+</ul>
+</div>
+<div id="outline-container-motivation" class="outline-3">
+<h3 id="motivation">Motivation</h3>
+<div class="outline-text-3" id="text-motivation">
+<p>
+Nice example from Ogus: consider a smooth proper morphism \(f|_U:U\to V\) coming from the restriction of a morphism \(f:X\to Y\) where both \(X\) and \(Y\) are compact and \(U\subset X\) is an open dense subset. We &ldquo;want to make \(f|_{X\setminus U}:X\setminus U\to Y\setminus V\) a smooth morphism&rdquo;.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(i:U\hookrightarrow X\) be an open immersion and \(D = X\setminus U\) be a <a class="idlink" data-note="normal-crossings" href="../../notes/normal-crossings/">normal crossings</a> divisor. The <i>sheaf of log differentials</i> is the sheaf \(\Omega^1_X(\log D)\) and is a subsheaf of \(i_*\Omega_U^q\). It is locally free, and if \(D\) has the local description \(x_1\cdot ... \cdot x_p = 0\) in an affine neighborhood with coordinates \(x_1,...,x_n\), then it is freely generated by sections
+\[\frac{dx_1}{x_1}, ..., \frac{dx_p}{x_p},x_{p+1},...,x_n\]
+of \(i_*\Omega_U^q\).
+</p>
+</div>
+
+<p>
+Not that \(\mathbb H^q(X, \Omega^\bullet_{X}(\log D)) = H^q(X, \underline{\mathbb C})\).
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A morphism \(f:X\to S\) is a <i>normal crossing degeneration</i> if it is a 1-dimensional flat family so that \(X_s\) is smooth when \(s\neq 0\) and \(X_0\) is a normal crossings divisor.
+</p>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+The sheaf of <i>relative</i> log \(q\)-forms is
+\[\Omega^q_X/S(\log X_0) := \Omega_X^q(\log X_0)/\mathcal F\]
+where
+\[\mathcal F = f^*\Omega_S^1(\log D) \wedge \Omega_X^{q-1}(\log X_0).\]
+This sheaf of relative log differentials has sections of the form
+\[f^*\frac{ds}{s}\wedge ((q-1)\text{-differential form})\]
+where \(s = x_1\cdot...\cdot x_p\). This means that
+\[f^*\frac{ds}{s} = \frac{dx_1}{x_1}+...+\frac{dx_p}{x_p}.\]
+A point I didn&rsquo;t know: \(R^pf_*\Omega^q_{X/S}(\log X_0)\) is locally free AND commutes with base change, this is quite important (Bernd says this is his advisor&rsquo;s biggest contribution.)
+</p>
+</div>
+
+<p>
+Daniel then defines <a class="idlink" data-note="log-structure" href="../../notes/log-structure/">log structures</a> and does the example of \(\mathbb A^2_k = \Spec k[x,y]\) with <a class="idlink" data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">divisorial log structure</a> given by the divisor \(D = V(xy).\)
+</p>
+
+<p>
+He then defines <a class="idlink" data-note="log-structure" href="../../notes/log-structure/">log morphisms</a>.
+</p>
+
+<p>
+Next, Daniel talks about charts.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+If \(P\) is a monoid and \(X\) a scheme
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">5</span></h2>
+  <ul>
+    <li><a data-note="log-structure" href="../../notes/log-structure/">Definition Of A Log Structure</a></li>
+    <li><a data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">Divisorial Log Structure</a></li>
+    <li><a data-note="fano-variety-definition" href="../../notes/fano-variety-definition/">Fano Variety Definition</a></li>
+    <li><a data-note="gorenstein-singularities" href="../../notes/gorenstein-singularities/">Gorenstein Singularities</a></li>
+    <li><a data-note="normal-crossings" href="../../notes/normal-crossings/">Normal Crossings</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

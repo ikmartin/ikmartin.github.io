@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 20 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-20/"
+      data-note-title="Algebraic Curves Lecture 20">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#reminder-from-before-spring-break">Reminder from before spring break</a></li>
+    <li class="toc-l2"><a href="#castlenuova-s-bound">Castlenuova’s Bound</a></li>
+    <li class="toc-l2"><a href="#extremal-curves">Extremal Curves</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 20</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-19" href="../../notes/algebraic-curves-19/">← lecture 19</a> · <a class="idlink" data-note="algebraic-curves-22" href="../../notes/algebraic-curves-22/">lecture 22 →</a>
+</p>
+<div id="outline-container-reminder-from-before-spring-break" class="outline-2">
+<h2 id="reminder-from-before-spring-break">Reminder from before spring break</h2>
+<div class="outline-text-2" id="text-reminder-from-before-spring-break">
+<p>
+We had a curve \(C\subseteq \mathbb P^r\) and a divisor \(D = H\cap C\) given by intersecting \(C\) with a hyperplane \(H\). Set \(\alpha_\ell = \operatorname{rank}(\ell D)\), \(E_\ell \subseteq H^0(C,\ell \cdot D)\) given as the image of \(H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(\ell))\to H^0(C, \ell\cdot D)\) and \(\beta_\ell =\operatorname{rank}(E_\ell)\). Note that in particular \(\alpha_\ell \geq \beta_\ell\).
+</p>
+
+<p>
+With these definitions we have that
+</p>
+\begin{align*}
+    \beta_\ell - \beta_{\ell - 1} &= h^0(\mathbb P^r,\mathcal O_{\mathbb P^r}(\ell)) - h6)(\mathbb P^r, I_D(\ell)) \\
+    &=: S_\ell,
+\end{align*}
+<p>
+which is the "number of conditions imposed by \(D\) on hyperplanes of degree \(\ell\). The long exact sequence on cohomology gives
+</p>
+\begin{align*}
+    0\to H^0(\mathbb P^r, I_D(\ell)) \to H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(\ell)) \xrightarrow{\varphi} H^0(D,\mathcal O_{D}(\ell)),
+\end{align*}
+<p>
+and \(S_\ell = \dim(\ker \varphi)\). We wanted to estimate \(S_\ell\), and we had this theorem that said as long as the points comprising \(D\) are in general linear position (which we can assume as long as \(H\) is generic) then \(S_\ell \geq \min\{\ell(r - 1), 1\}\) implies
+</p>
+\begin{align*}
+    \beta_\ell - \beta_{\ell - 1} \geq S_\ell \geq \min\{d, \ell(r - 1) + 1\}.
+\end{align*}
+
+<p>
+This is where we stopped.
+</p>
+</div>
+</div>
+<div id="outline-container-castlenuova-s-bound" class="outline-2">
+<h2 id="castlenuova-s-bound">Castlenuova&rsquo;s Bound</h2>
+<div class="outline-text-2" id="text-castlenuova-s-bound">
+<p>
+Now let&rsquo;s set \(m = \left[\frac{d-1}{r-1}\right]\), i.e. set \(m\) to be the largest integer such that \(m(r - 1) \leq d-1\). We get
+</p>
+\begin{align*}
+    \alpha_1 &\geq \beta_1 \geq r \\
+    \alpha_2 &\geq \beta_2 \geq r + 2(r - 1) + 1 = 3r - 1 \\
+    &\hspace{5pt}\vdots \\
+    \operatorname{rank}(m\cdot D) = \alpha_m &\geq \beta_m \geq \sum^m_{i = 1}(i \cdot (r - 1) + 1) = \binom{m+1}{2}(r - 1) + m.
+\end{align*}
+<p>
+Here&rsquo;s a trick inequality:
+</p>
+\begin{align*}
+    \binom{m+1}{2}(r-1) + m = \frac{m\left((m+1)(r - 1) + 2\right)}{2} > \frac{md}{2}.
+\end{align*}
+<p>
+<i>This means that \(m\cdot D\) is non-special,</i> and hence \(\alpha_m = d\cdot m - g + 1\). Our original motivation for this whole thing was to find a bound on the genus of \(C\), so rearranging, we get
+</p>
+\begin{align*}
+    g = dm + 1 - \alpha_m \leq d m + 1 - \binom{m+1}{2}(r-1) - m = \binom{m}{2}(r-1) + m\cdot \epsilon
+\end{align*}
+<p>
+where \(\epsilon\) is the integer required so that \(d - 1 = (r - 1)m + \epsilon\) with \(0\leq \epsilon < r-1\). This is precisely Castlenuova&rsquo;s bound.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+(Castelnuovo&rsquo;s bound): Let \(C\subseteq \mathbb P^r\) be a non-degenerate curve of degree \(d\). Then \(g(C)\leq \binom{m}{2}(r - 1) + m\cdot \epsilon =: \pi(r, d).\)
+</p>
+</div>
+
+<p>
+<i>Example:</i>
+</p>
+<ol class="org-ol">
+<li>\(r = 2\implies \epsilon = 0\implies g \leq \binom{m}{2} = \binom{d- 1}{2}\).</li>
+<li>\(r = 3\) so then \(\lfloor \frac{d-1}{2} = m\rfloor = m\). 
+<ul class="org-ul">
+<li><i>Case 1:</i> \(d = 2k +1\), \(m = k\) and \(\epsilon = 0\) so \(2\cdot \binom{k}{2} = k(k - 1)\).</li>
+<li><i>Case 2:</i> \(d = 2k, m = k - 1, \epsilon = 1\) so \(2\cdot \binom{k-1}{2} + (k-1) = (k-1)^2\).</li>
+</ul></li>
+</ol>
+
+<p>
+<i>Observation:</i> Fix \(r\). for large \(d\), we get asymptotically \(\pi(r,d) \sim \frac{d^2}{2(r-1)}\).
+</p>
+</div>
+</div>
+<div id="outline-container-extremal-curves" class="outline-2">
+<h2 id="extremal-curves">Extremal Curves</h2>
+<div class="outline-text-2" id="text-extremal-curves">
+<p>
+A curve is called <i>(Castelnuovo) extremal</i> if it satisfies \(g(C) = \pi(r, d)\). The only way this is possible is if
+</p>
+\begin{align*}
+    \alpha_\ell = \beta_\ell = \sum^\ell_{i=1} i (r-1) + 1
+\end{align*}
+<p>
+for all \(\ell \leq m\). Increasing \(\ell\) by one increases \(\beta_\ell\) by \(\min\{d, \ell(r - 1) + 1\}.\) This implies
+</p>
+\begin{align*}
+    \varphi_\ell:H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(\ell)) \to H^0(C, \mathcal O_C(\ell))
+\end{align*}
+<p>
+is surjective.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+In this case, \(C\) is called <i>projectively normal</i>. \(C\) is called <i>\(\ell\)-normal</i> if \(\varphi_\ell\) is surjective. 
+</p>
+</div>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+Any extremal curve is projectively normal (by the above). 
+</p>
+</div>
+
+<p>
+<i>Example:</i>
+</p>
+<ol class="org-ol">
+<li>\(C\) is \(\ell\)-normal if and only if \(C\) is embedded by complete linear series.</li>
+<li>If \(X\) is a genus \(4\) curve, \(L\) a curve of degree \(7\), then \(h^0(X,L) = 7 - 4 + 1 = 4.\)</li>
+</ol>
+
+<p>
+<i>Black box:</i> A general such \(L\) in (2) above is very ample hence gives an embedding \(X\to \mathbb P^3\) with image of degree \(7\). Examining the map
+</p>
+\begin{align*}
+    \varphi_2:H^0(\mathbb P^3, \mathcal O_{\mathbb P^3}(2))\to H^0(X, L^{\oplus 2}),
+\end{align*}
+<p>
+we see that the domain has dimension \(\binom{5}{3} = 10\) and the codomain has dimension \(14 - 4 + 1 = 11,\) hence \(\varphi_2\) cannot be surjective. This implies \(\varphi_2(X)\) is \(1\)-normal but not \(2\)-normal.
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-19" href="../../notes/algebraic-curves-19/">Algebraic Curves Lecture 19</a></li>
+    <li><a data-note="algebraic-curves-22" href="../../notes/algebraic-curves-22/">Algebraic Curves Lecture 22</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

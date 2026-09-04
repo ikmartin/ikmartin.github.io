@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relative Virtual Localization — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/relative-virtual-localization/"
+      data-note-title="Relative Virtual Localization">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Relative Virtual Localization</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+For some exposition on Atiyah-Bott localization see this <a class="idlink link-unpublished" href="../../not-published/" title="not published">blog-style note</a>.
+</p>
+
+<p>
+Suppose you have a Deligne-Mumford stack \(M\) which is virtually smooth over a pure dimensional algebraic stack \(\mathcal Y\), that is, you have a morphism \(\pi:M\to \mathcal Y\) and a <a class="idlink" data-note="perfect-obstruction-theory-defn" href="../../notes/perfect-obstruction-theory-defn/">relative perfect obstruction theory</a> \(\phi:\mathbb E\to L_{M/\mathcal Y}\)  for it. This gives you a virtual fundamental class \([M]^{vir} = f^*[\mathcal Y]\). Suppose further that \(T\) is an algebraic torus acting on \(M\) and \(\mathcal Y\) so that \(\pi\) is \(T\)-equivariant. In this situation one would like to use <a class="idlink" data-note="atiyah-bott-localization-concept-page" href="../../notes/atiyah-bott-localization-concept-page/">localization</a> to express \([M]^{vir}\) in terms of classes in the fixed locus \(M^T\). However, virtual localization only applies when you have an <i>absolute perfect obstruction theory</i>.
+</p>
+
+<p>
+To understand the problem, first recall the content of a &ldquo;localization formula&rdquo;. The main localization theorem means that the pushforward of the inclusion \(j:M^T\to M\) is an isomorphism in localized equivariant Chow groups. In smooth situations, the result of pulling back a class \(\alpha \in A^T_*(M)_{Q_T}\) to \(A^T_*(M^T)_{Q_T}\) and then pushing forward to return to \(M\) looks something like 
+</p>
+
+<p>
+When you  \(\mathcal Y = \Spec k\) for some base field, given a perfect obstruction theory \(\mathbb E\) for \(M\to \Spec k\) , the complex \(\mathbb E|_{M^T}^f\) forms a perfect obstruction theory for \(M^T/\Spec k\). The main localization theorem holds for DM stacks 
+</p>
+
+<ul class="org-ul">
+<li>an <a class="idlink" data-note="relative-virtual-localization-example-1" href="../../notes/relative-virtual-localization-example-1/">example of relative localization</a> for log stable maps</li>
+</ul>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="atiyah-bott-localization-concept-page" href="../../notes/atiyah-bott-localization-concept-page/">Atiyah Bott Localization Concept Page</a></li>
+    <li><a data-note="log-localization-project" href="../../notes/log-localization-project/">Log Localization Project</a></li>
+    <li><a data-note="perfect-obstruction-theory-defn" href="../../notes/perfect-obstruction-theory-defn/">Perfect Obstruction Theory Defn</a></li>
+    <li><a data-note="relative-virtual-localization-example-1" href="../../notes/relative-virtual-localization-example-1/">Relative Virtual Localization Example 1</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

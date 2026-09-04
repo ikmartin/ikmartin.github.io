@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Are These Notes — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/what-are-these-notes/"
+      data-note-title="What Are These Notes">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">What Are These Notes</h1>
+      
+      <article class="note">
+<p>
+<b>These notes</b> are an interconnected web of roughly &ldquo;atomic&rdquo; or &ldquo;<a href="https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX">evergreen</a>&rdquo; notes inspired by the <a href="https://en.wikipedia.org/wiki/Zettelkasten">zettelkasten method</a>. I write them in the <a href="https://orgmode.org/">org</a> markup language, and I edit and navigate them in Emacs. I wrote an exporter built into my custom site generator to view them on my website because
+</p>
+<ol class="org-ol">
+<li>I like looking at them in the browser</li>
+<li>Maybe someone else will like them and will tell me they&rsquo;re cool, in which case my deep desire for the radiant sort of conceited happiness that comes only from the validation and attention of other bipedal paleolithic animals might be sated for <a href="https://www.youtube.com/watch?v=wNNBrg4u9d0">one day more</a>.</li>
+</ol>
+<p>
+<b>This system</b> lets me
+</p>
+<ul class="org-ul">
+<li>create new notes quickly</li>
+<li>find existing notes with lazy search of human-readable subject matter</li>
+<li>write, edit and navigate notes in one place (Emacs)</li>
+<li>use the same LaTeX style-sheets in my LaTeX documents and my notes</li>
+<li>export my notes to a variety of formats</li>
+<li>change any aspect of my system to my heart&rsquo;s content.</li>
+</ul>
+
+<p>
+<b>If you find mathematical mistakes,</b> factual errors or bad opinions in here please tell me. If you do not like the note-taking system itself then do not tell me.
+</p>
+
+<p>
+<b>If you like this system</b> and want to use it, you probably shouldn&rsquo;t, particularly if you have actual work to do. There are many other tools out there that achieve basically the same thing and are superior in real ways:
+</p>
+<ul class="org-ul">
+<li><a href="https://obsidian.md/">Obsidian</a> will let you take Markdown notes with backlinks and a graph visualization of your notes.</li>
+<li><a href="https://roamresearch.com/">Roam Research</a> is similar and is targeted specifically at researchers</li>
+<li><a href="https://www.forester-notes.org/0052/index.xml">Forester</a> is a beacon of singular beauty, a labor of love wrought into existence by a bunch of category theory wizards seeking to understand the secret structure of notes themselves.</li>
+</ul>
+<p>
+I have never used Obsidian or Roam Research, and I stopped using Forester after about a year, but I know productive members of society who use and enjoy all these tools.
+</p>
+<div id="outline-container-about-slipbox-zettelkasten-evergreen-notes" class="outline-2">
+<h2 id="about-slipbox-zettelkasten-evergreen-notes">About slipbox/zettelkasten/evergreen notes</h2>
+<div class="outline-text-2" id="text-about-slipbox-zettelkasten-evergreen-notes">
+<p>
+Traditional linear notes function primarily as a storage mechanism. You write them once, in some sort of order, and then revist them only to recall, never to revise. Evergreen notes, on the other hand, evolve and grow over time. With a slipbox/linking system these notes can reference each other, and connections between notes thereby represent relationships between ideas. Over time, the collection of notes resembles something similar to the way a human brain processes ideas, and hopefully it can even help you discover connectios between concepts you couldn&rsquo;t see yourself. Atomicity, the idea that each note should capture <i>one</i> concept completely, helps this process along.
+</p>
+
+<p>
+That&rsquo;s the theory anyway. It seems like most people who use this sort of note taking system never end up writing about the thing they set out to study in the first place, and instead end up writing pages and pages about slipbox-systems instead.
+</p>
+</div>
+</div>
+<div id="outline-container-how-i-ended-up-here" class="outline-2">
+<h2 id="how-i-ended-up-here">How I ended up here</h2>
+<div class="outline-text-2" id="text-how-i-ended-up-here">
+<p>
+My personal note system is an amalgamation of various org-mode extensions (<a href="https://github.com/meedstrom/org-node">org-node</a> principle among them) built on top of <a href="https://github.com/doomemacs/core">Doom Emacs</a>. I got here because
+</p>
+<ul class="org-ul">
+<li>In 2022 I found the late Giles Castel&rsquo;s <a href="https://castel.dev/post/lecture-notes-1/">incredible guide</a> to live-TeXing in Vim, and promptly started using it to take notes during lectures in my masters.</li>
+<li>In 2023, about a year into my Ph.D., I started using the <a href="https://github.com/JuliaDocs/Franklin.jl">Franklin</a> static-site generator written in Julia. It&rsquo;s fairly easy to extend, and extend it I did. I started writing notes I wished to distribute, things like seminar notes, in Franklin markdown with a laundry list of easily-breakable custom export rules.</li>
+<li>In 2024 a friend told me about Forester and I thought it was awesome. Frustrated with my Markdown setup, I moved over completely to Forester.</li>
+<li>Forester is quite formal and encourages the practice of <a href="https://www.forester-notes.org/007L/index.xml">transcluding</a> notes. Because of this, I often found myself in a loop: I&rsquo;d create a new note to write about something relevant to my research, but quickly find it relied on another, more basic concept which didn&rsquo;t yet exist in my forest. So I&rsquo;d create a new note, start writing, and the process would repeat. I would sometimes have a 10-file backlog of file to write before I could return back to the original note. In theory this sort of thing should happen less frequently as the forest grows, in practice I found that it did not.</li>
+<li>I tried extending Forester myself, but I didn&rsquo;t know OCaml well and had actual work to do, so I eventually gave up. It&rsquo;s sad because I think Forester is wonderful and want to go back someday.</li>
+<li>I heard about Roam Research and the org-roam Emacs extension it inspired. That grew into the homegrown Emacs system I use today.</li>
+</ul>
+
+<p>
+The system I landed on isn&rsquo;t perfect but, being entirely homegrown outside of a few external Emacs packages, it has the advantage of being endlessly customizable and will therefore continue to evolve. This is also the reason I doubt it&rsquo;d be particularly useful to anyone else, but if you are still interested in using it for some reason then I can separate out the generalizable bits.
+</p>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

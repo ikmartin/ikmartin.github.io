@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/rail.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <link rel="stylesheet" href="../assets/css/table.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/environments.css">
+  <script src="../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class=""
+      data-base="../"
+      data-note-url=""
+      data-note-title="Projects">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../research/">Research</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../notes/">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <h1 class="page-title">Projects</h1>
+      
+      <p>
+Things I&rsquo;ve built. Some run here, some live elsewhere.
+</p>
+
+<a class="project-card" href="https://erdos-projects.github.io/summer26-sustainability-of-agriculture/" rel="noopener noreferrer"><img class="project-card-thumb" src="../assets/note-images/river-df5a80441283010c.jpg" alt=""><span class="project-card-body"><span class="project-card-title">Virtual Water Sensor v0.1</span><span class="project-card-desc"><span>Drop a pin in an Iowa river, read nitrate predictions as if from an in-situ water sensor. Backend is an XGBoost model trained on 80 nitrate sensors in Iowa, it uses crop, nitrogen-surplus, fertilizer and weather data to create forecasts, thoroughly optimized in order to run in-browser. This version was completed over 8-weeks during the summer of 2026 at the Erdos Institute Datascience Bootcamp, where it won first prize. A far more capable model built for the whole cornbelt is under development.</span></span></span></a>
+
+<a class="project-card" href="planets/"><img class="project-card-thumb" src="../assets/note-images/planets-3c59d0345ac27557.png" alt=""><span class="project-card-body"><span class="project-card-title">8-Bit Planet Thing</span><span class="project-card-desc"><span>I just wanted to see what this looked like. It takes an equal-area tiling of a sphere and then averages the color of each tile. The animate toggle causes the color to smoothly walk through the set of all colors sampled.</span></span></span></a>
+
+<a class="project-card" href="../notes/what-are-these-notes/"><img class="project-card-thumb" src="../assets/note-images/trees-77f2a03638167172.jpg" alt=""><span class="project-card-body"><span class="project-card-title">Evergreen Notes</span><span class="project-card-desc"><span>The note-taking system that I built.</span></span></span></a>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../assets/js/trail.js"></script>
+  <script src="../assets/js/notes-table.js"></script>
+  <script src="../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

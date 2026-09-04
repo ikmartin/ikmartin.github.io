@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weil Divisor Associated To A Cartier Divisor — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/weil-divisor-associated-to-a-cartier-divisor/"
+      data-note-title="Weil Divisor Associated To A Cartier Divisor">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Weil Divisor Associated To A Cartier Divisor</h1>
+      <p class="note-meta"><span class="taxon">lemma</span></p>
+
+      <article class="note">
+
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Let \(X\) be a noetherian scheme. To each <a class="idlink" data-note="cartier-divisors" href="../../notes/cartier-divisors/">Cartier divisor</a> on \(X\) we can associate a unique Weil divisor. This association respects linear equivalence and thus gives us an injective morphism \(\operatorname{CaCl}(X) \hookrightarrow \Cl(X)\) from the group of Cartier divisors to the divisor class group of \(X\). When \(X\) is additionally integral and separated, this homomorphism is an isomorphim.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<b>Cartier to Weil</b>.
+Fix a Cartier divisor \(C\) on \(X\) given by local data \(\{(U_i, f_i)\}\). Given a prime divisor \(Y\subset X\), there is some  \(U_Y\) in the collection \(\{U_i\}\) such that \(U_Y\cap Y\neq \emptyset\). Choosing one such \(U_Y\) for each \(Y\), we define the Weil divisor \(D\) associated to \(C\) as follows:
+</p>
+
+\begin{align*}
+  C\mapsto \sum_{\substack{Y \subset X \\ \text{a prime divisor} }} v_Y(f_Y)[Y] = D
+\end{align*}
+
+<ul class="org-ul">
+<li><b>This is well defined</b> because for any other \(i\) such that \(U_i \cap Y \neq \emptyset\), \(f_Y/f_i\) is invertible, and hence \(v_Y(f_Y/f_i) = 0\) and \(v_Y(f_Y) = v_Y(f_i).\) The sum defining \(D\) is finite because \(X\) is noetherian.</li>
+<li><b>This respects linear equivalence</b> for if \((U_i, f_i)\) is principal, then there is some \(f \in \Gamma(X, \mathcal K^*)\) such that \(f_i = f|_{U_i}\) and thus</li>
+</ul>
+\begin{align*}
+  C \mapsto \sum v_Y(f)[Y] = \operatorname{div}(f).
+\end{align*}
+
+<p>
+<b>Weil to Cartier.</b>
+Now suppose \(X\) is integral and separated and let \(D\) be a Weil divisor. By integrality, the sheaf \(\mathcal K\) is just the constant sheaf equal to the function field \(K\) of \(X\). Then at each point \(x\in X\), \(D_x\) is a Weil divisor on the local scheme \(\Spec \mathcal O_{X,x}\). Since \(\mathcal O_{X,x}\) is a UFD, every divisor is principal and hence \(D_x = \operatorname{div}(f_x)\) for some \(f_x\in K\).
+</p>
+
+<p>
+The divisor \(D\) and \(\operatorname{div}(f_x)\) now differ only along prime divisors which do not contain \(x\), and only finitely many of these prime divisors have zero coefficient in either \(\operatorname{div}(f_x)\) or \(D\). Taking \(U_x\) to be the complement of these divisors, we get that the restriction of \(\operatorname{div}(f_x)\) and \(D\) to \(U_x\) are equal. Repeating this proceedure for one point \(x\) on each of the finitely many prime divisors forming the complement of \(U_x\) produces a Cartier divisor \(C\).
+</p>
+
+<p>
+It remains to check that the quotients \(f_x/f_{x'}\) are in \(\mathcal O_X^*\) and that these two maps are inverses of each other.
+</p>
+</details>
+
+<p>
+<b>Note:</b> a Weil divisor \(D\) is said to be <i>locally principal</i> if \(X\) can be covered with open sets \(U\) such that for each \(U\) \(D|_U\) is a principal divisor. The above proof shows that, when we remove the integral and separated hypotheses, the image of \(\operatorname{CaCl}(X)\) in \(\Cl(X)\) is exactly the locally principal divisors.
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="cartier-divisors" href="../../notes/cartier-divisors/">Cartier Divisors</a></li>
+    <li><a data-note="chern-classes" href="../../notes/chern-classes/">Chern Classes And Segre Classes Topic Page</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

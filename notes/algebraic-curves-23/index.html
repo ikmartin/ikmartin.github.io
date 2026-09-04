@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 23 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-23/"
+      data-note-title="Algebraic Curves Lecture 23">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 23</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-22" href="../../notes/algebraic-curves-22/">← lecture 22</a> · <a class="idlink" data-note="algebraic-curves-24" href="../../notes/algebraic-curves-24/">lecture 24 →</a>
+</p>
+<div id="outline-container-more-extremal-curves" class="outline-2">
+<h2 id="more-extremal-curves">More extremal curves</h2>
+<div class="outline-text-2" id="text-more-extremal-curves">
+<p>
+We return to the case that \(d > 2r\). Assume that \(C\subseteq \mathbb P^r\) is extremal, i.e.
+</p>
+<ol class="org-ol">
+<li>non-degenerate</li>
+<li>\(g(C) = \pi(d,r)\), where \(\pi(d,r)\) is the bound from Castelnuova&rsquo;s bound.</li>
+</ol>
+
+<p>
+Set \(H\) to be a general hyperplane and let \(D = C\cap H\) as always. Then
+</p>
+\begin{align*}
+    \alpha_1 = h^0(C, \mathcal O_C(D)) = r + 1
+\end{align*}
+<p>
+and on the level of quadrics
+</p>
+\begin{align*}
+    \alpha_2 = h^0(C, \mathcal O_C(2D)) = (r+1) + (2r - 1) = 3r.
+\end{align*}
+<p>
+So for an extremal curve, I exactly know the dimension of the restriction of quadrics to \(C\): we&rsquo;ve got the map
+</p>
+\begin{align*}
+    \varphi:H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(2)) \twoheadrightarrow H^0(C, \mathcal O_C(2))
+\end{align*}
+<p>
+where the domain has dimension \(\binom{r+2}{2}\) and the codomain has dimension \(3r\), so
+</p>
+\begin{align*}
+    \dim(\ker\varphi) = \frac{(r+2)(r+1)}{2}-3r = \frac{r^2 - 3r + 2}{2} = \binom{r-1}{2}.
+\end{align*}
+<p>
+This is the number of quadrics containing a rational normal scroll.
+</p>
+
+<p>
+<i>New questions:</i> What is \(\rho = \bigcap Q_i\), where the \(Q_i\) are the \(\binom{r-1}{2}\) linearly independent quadrics containing \(C\)?
+</p>
+
+<p>
+Pick a general hyperplane \(H\) and consider \(D = C\cap H\). Then \(|D| = d \geq 2r + 1\). The points in \(D\) are in linearly general position and impose \(2r - 1\) conditions on quadrics. By Castelnuova&rsquo;s \(2r + 3\) lemma, these is a rational normal curve \(C_D \subseteq H\) containing \(D\).
+</p>
+
+<p>
+<i>Claim:</i> \(C_D\subseteq S\). Suppose there is \(Q_i\) such that \(C_D \not\subseteq Q_i\). Then
+</p>
+\begin{align*}
+    C_D . Q_i = 2\cdot (r - 1) \geq d = \deg (D)
+\end{align*}
+<p>
+because \(D\subseteq C_D\cap Q_i\). The count above is simply Bezout&rsquo;s theorem. This is a contradiction however, since \(d > 2r\), so we can&rsquo;t have \(2\cdot (r - 1) \geq d\). Thus \(C_D\not\subseteq Q_i\) implies that \(C_d\cap Q_i\) has dimension \(0\).
+</p>
+
+<p>
+<i>Conversely:</i> \(C_D\) is cut out by \(\binom{r - 1}{2}\) quadrics in \(H\cong \mathbb P^{r-1}\) which implies \(S\cap H = C_D\). A rational normal curve in \(\mathbb P^r\) is cut out by the \(2\times 2\) minors of a matrix of the form
+</p>
+\begin{align*}
+    \begin{pmatrix}
+        x_0 & x_1 & x_2 & \dots & x_{r-1} \\
+        x_1 & x_2 & x_3 & \dots & x_r
+    \end{pmatrix},
+\end{align*}
+<p>
+of which there are \(\binom{r}{2}\). Because \(C_D\) is a rational normal curve in \(H\cong \mathbb P^{r-1}\), it is therefore cut out by \(\binom{r-1}{2}\) quadrics. We know already that \(C_D\) vanishes on the \(Q_i\), of which there are \(\binom{r-1}{2}\), so there are no degrees of freedom left and hence \(S\cap H \supset C_D\). This gives us both inclusions and hence \(S\cap H = C_D\).
+</p>
+
+<p>
+<i>Summary:</i> We get that \(\bigcap Q_i = S\) gives a rational normal curve of degree \(r-1\) when we intersect with a general hyperplane:
+</p>
+\begin{align*}
+C_D := S\cap H.
+\end{align*}
+<p>
+This implies \(S\) is a surface of degree \(r-1\), and hence that \(C\) lies on a rational normal scroll or on \(\mathbb P^2 \to \mathbb P^5\) (the Veronese embedding \([x:y:z] \mapsto [x^2:y^2:z^2:xy:xz:yz:]\)).
+</p>
+
+<p>
+Suppose \(S = X_{a_1, a_2}\) with \(a_1\neq 0\) is a smooth, rational normal scroll. We saw (or claimed without proof? Can&rsquo;t remember) last time that \(\operatorname{Pic}(S) = \langle L, H\rangle\) with \(L.L = 0\), \(L.H = 1\) and \(H.H = r-1\).
+</p>
+
+<p>
+<i>Recall</i> if you have a curve \(C\) with bidegree \((d_1,d_2)\) then \(2g - 2 = K_S. C + C.C\) and \(C = \alpha L + \beta H\). Then
+</p>
+\begin{align*}
+    K_S = K_1\cdot L + K_2\cdot H.
+\end{align*}
+<p>
+From \(L\) you have
+</p>
+\begin{align*}
+    -2 = K_S\cdot L + L^2 = K_2
+\end{align*}
+<p>
+and for \(H\)
+</p>
+\begin{align*}
+    -2 = K_S H + H^2 = K_1 + K_2(r-1) + (r-1) = K_1 - (r-1).
+\end{align*}
+<p>
+This implies \(K_1 = r-3\). Hence \(K_S = (r-3)L - 2H\), \(2g(C) - 2 = K_S.C + C.C\) and so
+</p>
+\begin{align*}
+    g(C) = \frac{(\alpha - 1)(2m - \alpha)}{2}(r-1) + \epsilon\cdot (\alpha - 1),
+\end{align*}
+<p>
+hence \(d-1 = m(r-1) + \epsilon\). So \(g\) is maximal for \(\alpha = m+1\), \(\beta = \epsilon + 2 - r\) for any \(\epsilon\) or \(\alpha = m\) and \(\beta = 1\) and \(\epsilon = 0\). For these values, equality in Castelneuovo&rsquo;s bound is achieved.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(r\geq 3\) and \(d \geq 2r + 1\). Then extremal curves of degree \(d\) exist and are of the following forms:
+</p>
+<ol class="org-ol">
+<li>The image of a smooth degree \(k\) curve in \(\mathbb P^2\) under the Veronese embedding \(\mathbb P^2 \to \mathbb P^5\) (so \(d = 2k\) and \(r = 5\))</li>
+<li>A non-singular member of \(|mH + L|\) on a rational normal scroll</li>
+<li>A non-singular member of the linear system \(|(m+1)H - (r - \epsilon - 2)L|\) on a rational normal scroll.</li>
+</ol>
+</div>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+In case (3), \(C\) admits a \(g_{m+1}^1\) cut out by \(L\).
+</p>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-22" href="../../notes/algebraic-curves-22/">Algebraic Curves Lecture 22</a></li>
+    <li><a data-note="algebraic-curves-24" href="../../notes/algebraic-curves-24/">Algebraic Curves Lecture 24</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

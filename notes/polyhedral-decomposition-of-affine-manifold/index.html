@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polyhedral Decomposition Of Affine Manifold — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/polyhedral-decomposition-of-affine-manifold/"
+      data-note-title="Polyhedral Decomposition Of Affine Manifold">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Polyhedral Decomposition Of Affine Manifold</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+<a class="citeref" href="../../notes/gross-siebert-mirrorsymmetrylogarithmic2005/">[GS05]</a>
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(B\) be an integral affine manifold with singularities. A <i>polyhedral decomposition</i> of \(B\) is roughly a compatible collection of polyhedral decompositions of the charts of \(B\). More precisely, it is a collection \(\mathcal P\) of closed subset of \(B\) called <i>cells</i> covering \(B\) which satisfies the following properties. First, we require that all vertices of \(\mathcal P\) are nonsingular, that is, if \(\{v\} \in\mathcal P\) then \(v\in B\setminus \Delta\). Given such a \(v\), we then require that there exists a closed neighborhood \(R_v\subseteq T_{B,v} \) of the origin at the tanget space of \(B\) at \(v\) with a polyhedral decomposition \(\mathcal P_v\) together with the continuous map \(\exp_v:R_v\to \exp_v(0) = v\) (that is, \(R_v\) is a &ldquo;closed chart&rdquo; of \(B\) at \(v\), with the origin taking the place of \(v\), and \(\mathcal P_v\) is a polyhedral decomposition of \(R_v\) in the usual sense for a closed subset of Euclidean space). We additionally require the following:
+</p>
+
+<ol class="org-ol">
+<li>\(\exp_v\) is locally a homeomorphism onto its image, is injective on \(\Int(\tau)\) for all \(\tau\in \mathcal P_v\), and is an integral affine map in some neighborhood of the origin.</li>
+<li>For every top-dimensional \(\widetilde \sigma \in \mathcal P_v\), \(\exp_v(\Int(\widetilde \sigma)) \cap \Delta = \emptyset\) and the restriction of \(\exp_v\) to \(\Int(\widetilde \sigma)\) is integral affine. Furthermore, \(\exp_v(\widetilde \tau) \in \mathcal P\) for all \(\widetilde \tau \in \mathcal P_v\).</li>
+<li>A cell \(\sigma\in \mathcal P\) contains \(v\) if and only if \(\sigma = \exp_v(\widetilde \sigma)\) for some \(\widetilde\sigma \in \mathcal P_v\) for all \(\widetilde \tau \in \mathcal P_v\).</li>
+<li>Every \(\sigma\in \mathcal P\) arises in this way, that is, every \(\sigma\) contains a vertex \(v\) with \(\{v\}\in \mathcal P\).</li>
+</ol>
+
+<p>
+We have an additional condition which will often be of interest, and we say that \(\mathcal P\) is <i>toric</i> if it satisfies it:
+</p>
+
+<ol class="org-ol">
+<li>For each \(\sigma\in \mathcal P\), there is a neighborhood \(U_\sigma\subseteq B\) of \(\Int(\sigma)\) and an integral affine submersion \(S_\sigma:U_\sigma \to M' _ {\mathbb R}\) where \(M'\) is a lattice of rank equal to \(\dim B - \dim \sigma\) and \(S _\sigma(\sigma\cap U_\sigma) = \{0\}\).</li>
+</ol>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="example-of-affine-manifold-to-log-central-fiber-msldd1" href="../../notes/example-of-affine-manifold-to-log-central-fiber-msldd1/">Notes And Examples From Msldd1</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-gs05"><span class="ref-num">[GS05]</span> <a href="../../notes/gross-siebert-mirrorsymmetrylogarithmic2005/">Gross, Siebert — Mirror Symmetry Via Logarithmic Degeneration Data I (2005)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

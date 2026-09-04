@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irreduible Components Of Stable Maps — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/irreduible-components-of-stable-maps/"
+      data-note-title="Irreduible Components Of Stable Maps">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Irreduible Components Of Stable Maps</h1>
+      <p class="note-meta"><span class="taxon">lemma</span></p>
+
+      <article class="note">
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Let \(X\) be a toric variety with torus \(T\). Suppose \([C,f,\vec x]\in \mathcal M\) is a <a class="idlink" data-note="ordinary-stable-map" href="../../notes/ordinary-stable-map/">stable map</a> (logarithmic or otherwise) which is fixed by the induced action on \(\mathcal M\). If \(C'\) is a component of \(C\), then either
+</p>
+<ul class="org-ul">
+<li>\(f(C')\) is contracted to a fixed point of \(X\)</li>
+<li>\(C'\) is isomorphic to \(\mathbb P^1\) and the restriction of \(f\) to \(C'\) is a degree \(d\) map to a copy of \(\mathbb P^1\) in \(X\)given in local coordinates by \([z_0:z_1]\mapsto [z_0^d:z_1^d]\).</li>
+</ul>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Suppose first that \(C'\) is contracted by \(f\). By the <a class="idlink" data-note="marks-nodes-ramification-points-of-fixed-stable-curve" href="../../notes/marks-nodes-ramification-points-of-fixed-stable-curve/">behavior of a fixed stable map at special points</a>, if \(C'\) has a node, a mark or a ramification point then we immediately know \(f(C') = p\). If \(C'\) has none of these points, then \(C' =C\) since there are no nodes, and by the curve class data defining the moduli space we must then have that \(X = \text{pt}\).
+</p>
+
+<p>
+Now suppose that \(C'\) is not contracted by \(f\). For convenience, we briefly assume \(C' = C\), so that we may write \(f\) instead of \(f|_{C'}\).
+</p>
+
+<p>
+<b>Claim 1:</b> \(f\) covers a copy of \(\mathbb P^1\) in \(X\). Since \([C,f,\vec x]\) is fixed by the \(T\)-action we get for every \(t\) an isomorphism \(\varphi_t:C\to C\) making the diagram
+</p>
+
+<div class="org-center">
+<figure class="tikz" id="tikz-3031229e13d3f22e"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -85.113393 86.270778 62.122643' width='8.6271em'>
+<defs>
+<path id='tz3031229e13d3f22e-g1-39' d='M2.203736 .062765C2.280448 .069738 2.364134 .069738 2.440847 .069738C3.696139 .069738 4.846824-.955417 4.846824-2.057285C4.846824-2.677958 4.47721-3.075467 3.93325-3.075467C2.970859-3.075467 2.461768-1.84807 2.266501-1.325031C2.175841-1.066999 2.022416-.578829 1.980573-.446326C1.21345-.550934 .72528-.899626 .72528-1.415691C.72528-1.422665 .767123-2.203736 1.332005-2.831382C1.380822-2.880199 1.387796-2.894147 1.387796-2.922042C1.387796-3.005729 1.297136-3.005729 1.276214-3.005729C1.21345-3.005729 1.185554-3.005729 1.053051-2.852304C.662516-2.371108 .481196-1.645828 .481196-1.345953C.481196-.72528 .934496-.188294 1.834122 .006974C1.48543 1.08792 1.443587 1.220423 1.443587 1.283188C1.443587 1.471482 1.603985 1.506351 1.680697 1.506351S1.896887 1.457534 1.952677 1.352927C2.001494 1.248319 2.064259 .892653 2.203736 .062765ZM2.294396-.411457C2.433873-1.21345 2.489664-1.527273 2.824408-1.980573C3.138232-2.405978 3.507846-2.601245 3.856538-2.601245C4.337733-2.601245 4.595766-2.280448 4.595766-1.917808C4.595766-1.21345 3.717061-.404483 2.517559-.404483C2.454795-.404483 2.357161-.404483 2.294396-.411457Z'/>
+<path id='tz3031229e13d3f22e-g1-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tz3031229e13d3f22e-g1-116' d='M1.715567-2.75467H2.426899C2.559402-2.75467 2.650062-2.75467 2.650062-2.908095C2.650062-3.005729 2.559402-3.005729 2.440847-3.005729H1.778331L2.036364-4.037858C2.043337-4.072727 2.057285-4.107597 2.057285-4.135492C2.057285-4.261021 1.959651-4.358655 1.820174-4.358655C1.645828-4.358655 1.54122-4.2401 1.492403-4.05878C1.443587-3.884433 1.534247-4.219178 1.227397-3.005729H.516065C.383562-3.005729 .292902-3.005729 .292902-2.852304C.292902-2.75467 .376588-2.75467 .502117-2.75467H1.164633L.753176-1.108842C.711333-.934496 .648568-.683437 .648568-.592777C.648568-.18132 .99726 .069738 1.39477 .069738C2.168867 .069738 2.608219-.9066 2.608219-.99726S2.517559-1.08792 2.496638-1.08792C2.412951-1.08792 2.405978-1.073973 2.350187-.955417C2.154919-.516065 1.799253-.125529 1.415691-.125529C1.26924-.125529 1.171606-.216189 1.171606-.467248C1.171606-.536986 1.199502-.683437 1.21345-.753176L1.715567-2.75467Z'/>
+<path id='tz3031229e13d3f22e-g2-116' d='M1.564134-1.92279H2.15193C2.256538-1.92279 2.261519-1.927771 2.286426-1.947696S2.326276-2.032379 2.326276-2.062267C2.326276-2.146949 2.251557-2.146949 2.166874-2.146949H1.618929L1.723537-2.560399C1.753425-2.689913 1.8132-2.914072 1.8132-2.94396C1.8132-3.028643 1.748443-3.118306 1.628892-3.118306C1.544209-3.118306 1.424658-3.063512 1.384807-2.929016C1.3599-2.844334 1.419676-3.078456 1.185554-2.146949H.592777C.493151-2.146949 .418431-2.146949 .418431-2.007472C.418431-1.92279 .488169-1.92279 .577833-1.92279H1.13076L.836862-.752179C.811955-.64259 .772105-.488169 .772105-.428394C.772105-.144458 1.036115 .054795 1.384807 .054795C1.987547 .054795 2.356164-.617684 2.356164-.71731C2.356164-.787049 2.271482-.787049 2.251557-.787049C2.171856-.787049 2.161893-.767123 2.136986-.702366C1.972603-.343711 1.663761-.11457 1.404732-.11457C1.24533-.11457 1.195517-.229141 1.195517-.37858C1.195517-.458281 1.200498-.473225 1.210461-.518057L1.564134-1.92279Z'/>
+<path id='tz3031229e13d3f22e-g0-67' d='M7.571606-6.924035C7.571606-6.953923 7.551681-7.023661 7.462017-7.023661C7.43213-7.023661 7.422167-7.013699 7.312578-6.90411L6.615193-6.136986C6.525529-6.276463 6.067248-7.023661 4.961395-7.023661C2.739726-7.023661 .498132-4.821918 .498132-2.510585C.498132-.86675 1.673724 .219178 3.198007 .219178C4.064757 .219178 4.821918-.179328 5.349938-.637609C6.276463-1.454545 6.445828-2.361146 6.445828-2.391034C6.445828-2.49066 6.346202-2.49066 6.326276-2.49066C6.266501-2.49066 6.216687-2.470735 6.196762-2.391034C6.107098-2.102117 5.877958-1.39477 5.190535-.816936C4.503113-.259029 3.875467-.089664 3.35741-.089664C2.460772-.089664 1.404732-.607721 1.404732-2.161893C1.404732-2.729763 1.613948-4.343711 2.610212-5.50934C3.217933-6.216687 4.154421-6.714819 5.041096-6.714819C6.057285-6.714819 6.645081-5.947696 6.645081-4.79203C6.645081-4.393524 6.615193-4.383562 6.615193-4.283935S6.724782-4.184309 6.764633-4.184309C6.894147-4.184309 6.894147-4.204234 6.94396-4.383562L7.571606-6.924035Z'/>
+<path id='tz3031229e13d3f22e-g0-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+</defs>
+<g id='tz3031229e13d3f22e-page1'>
+<g stroke-miterlimit='10' transform='translate(-41.039081,-46.057038)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-29.07703,-19.49306)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.039081,-46.057038)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.231853,-78.089732)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.93124,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.231853,-78.089732)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.231853' y='-78.089732' xlink:href='#tz3031229e13d3f22e-g0-67'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(8.691695,-78.089732)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.93124,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(8.691695,-78.089732)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='8.691695' y='-78.089732' xlink:href='#tz3031229e13d3f22e-g0-67'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-32.231853,-46.057038)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-32.231853,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-32.231853' y='-46.057038' xlink:href='#tz3031229e13d3f22e-g0-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-11.79999 15.15976H12.0035' fill='none'/>
+<g transform='translate(12.20348,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-3.9873,18.8736)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.039081,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-41.039081' y='-46.057038' xlink:href='#tz3031229e13d3f22e-g1-39'/>
+<use x='-35.798979' y='-45.060774' xlink:href='#tz3031229e13d3f22e-g2-116'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.23677 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.23677,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-17.88402,-1.74998)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.039081,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-41.039081' y='-46.057038' xlink:href='#tz3031229e13d3f22e-g1-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M12.71669 8.80003L-10.88159-9.6724' fill='none'/>
+<g transform='matrix(-0.78741,-0.61636,0.61636,-0.78741,-11.03905,-9.79565)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(3.11284,-7.77328)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-41.039081,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-41.039081' y='-46.057038' xlink:href='#tz3031229e13d3f22e-g1-116'/>
+<use x='-38.02951' y='-46.057038' xlink:href='#tz3031229e13d3f22e-g1-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+<p>
+commute. Since \(f(C) = t\cdot \varphi_t(f(C)) = t\cdot f(C)\), the closure of \(f(C)\) in \(X\) must be a dimension \(1\) subvariety which is fixed set-wise by the torus action on \(X\). In particular, \(\ell = \overline{f(C)}\) is a one-dimensional toric variety, and hence is either \(\mathbb C^*\), \(\mathbb C\) or \(\mathbb P^1\). Since \(C\) is necessarily projective, if \(V\) is affine then \(f\) must contract \(C\), hence the only possibility is that \(\ell \cong \mathbb P^1\) . Since any non-constant morphism of projective curves is surjective, \(f\) is a cover of \(\mathbb P^1\).
+</p>
+
+<p>
+<b>Claim 2:</b> The branched cover \(f:C\to \mathbb P^1\) is totally ramified; that is, \(f^{-1}(0)\) and \(f^{-1}(\infty)\) consist of only one point each. To prove this, we unfortunately need to appeal to GAGA and move into the smooth category in order to make use of topology.
+</p>
+
+<p>
+Consider the <a class="idlink" data-note="monodromy-representation" href="../../notes/monodromy-representation/">monodromy representation</a> \(\rho\) of \(f\). Since this is a branched cover of Riemann surfaces, the monodromy representation is transitive. Since \(\mathbb P^1 \setminus \{0,\infty\}\) is just \(\mathbb C^*\), which is homotopic to a circle, \(\pi_1(\mathbb P^1 \setminus \{0,\infty\}, x_0)\) is generated by a single element \(\gamma\). This means that \(\langle \rho(\gamma)\rangle \) is a transitive subgroup of \(S_d\). There is only one of these up to conjugation, the cyclic permutation \((1 ~ 2 ~ 3 ~ ... ~ d)\). The order of the permutation corresponds to the ramification index of the branch point (analytic locally in a neighborhood of the branch point \(b\) the map \(f\) is \(z \mapsto z^{e_b}\)). Thus, the number of sheets at a point in \(f^{-1}(0)\) is \(|(1 ~ 2 ~ 3 ~ ... ~ d)| = d\), as is the case for \(f^{-1}(\infty)\). This implies that \(f\) is totally ramified.
+</p>
+
+<p>
+Alternatively, since we&rsquo;re in the topological category, we can appeal to homotopy. Once we remove the branch locus, the base is homotopic to \(S^1\), so we have a degree \(d\) cover of \(S^1\). This immediately implies \(X\setminus f^{-1}(0,\infty) \simeq S^1\) and that \(f\) is given in coordinates by the degree \(d\) power map. This skips claim 3, but feels worse since we&rsquo;re applying homotopy to topological spaces which feels further from the algebraic category.
+</p>
+
+<p>
+<b>Claim 3:</b> \(C\) has genus \(0\). Applying <a class="idlink" data-note="riemann-hurwitz-theorem" href="../../notes/riemann-hurwitz-theorem/">Riemann-Hurwitz</a> gives us
+\[2g(C) - 2 = d(g(\ell) - 2) + \sum_{p\in X}(v_p - 1) \implies 2g(C) = 2 - 2d + \sum_{p\in X}(v_p - 1).\]
+Applying Claim 2 gives us
+\[2g(C) = 2 - 2d + (2d - 2) = 0.\]
+So \(g(C) = 0\).
+</p>
+
+<p>
+<b>Claim 4:</b> There exist coordinates on \(C\cong \mathbb P^1\)so that \(f:[x:y] \mapsto [x^d : y^d]\). Simply apply an automorphism of \(\mathbb P^1\) so that \(f^{-1}([1:0]) = [1:0]\) and \(f^{-1}([0:1]) = [0:1]\). Done.
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="marks-nodes-ramification-points-of-fixed-stable-curve" href="../../notes/marks-nodes-ramification-points-of-fixed-stable-curve/">Marks Nodes Ramification Points Of Fixed Stable Curve</a></li>
+    <li><a data-note="monodromy-representation" href="../../notes/monodromy-representation/">Monodromy Representation</a></li>
+    <li><a data-note="ordinary-stable-map" href="../../notes/ordinary-stable-map/">Ordinary Stable Map</a></li>
+    <li><a data-note="riemann-hurwitz-theorem" href="../../notes/riemann-hurwitz-theorem/">Riemann-Hurwitz Theorem</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

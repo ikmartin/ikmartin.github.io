@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 6: Two More Corollaries Of Riemann Roch — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-06-two-more-corollaries-of-riemann-roch/"
+      data-note-title="Algebraic Curves Lecture 6: Two More Corollaries Of Riemann Roch">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l3"><a href="#correction-from-last-time">Correction from last time</a></li>
+    <li class="toc-l3"><a href="#final-two-corollaries">Final two corollaries</a></li>
+    <li class="toc-l2"><a href="#adjunction">Adjunction</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 6: Two More Corollaries Of Riemann Roch</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-05-corollaries-to-riemann-roch" href="../../notes/algebraic-curves-05-corollaries-to-riemann-roch/">← lecture 5</a> · <a class="idlink" data-note="algebraic-curves-07" href="../../notes/algebraic-curves-07/">lecture 7 →</a>
+</p>
+<div id="outline-container-correction-from-last-time" class="outline-3">
+<h3 id="correction-from-last-time">Correction from last time</h3>
+<div class="outline-text-3" id="text-correction-from-last-time">
+<ul class="org-ul">
+<li>The dimension of a variety is the degree of a Hilbert polynomial.</li>
+<li>The leading coefficient of the Hilbert polynomial is \(\frac{d}{n!}\).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-final-two-corollaries" class="outline-3">
+<h3 id="final-two-corollaries">Final two corollaries</h3>
+<div class="outline-text-3" id="text-final-two-corollaries">
+<p>
+We finished with the following observation, a corollary following from Riemann-Roch:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<ol class="org-ol">
+<li>Any line bundle of degree \(\geq 2g\) is base point free</li>
+<li>Any line bundle of degree \(\geq 2g+1\) is very ample</li>
+<li>Any curve can be embedded in \(\mathbb P^{g+1}\).</li>
+<li>A line bundle is ample if and only if its degree is positive.</li>
+</ol>
+</div>
+
+<p>
+You get the dimension of the embedding above in (3) directly from Riemann Roch: RR says \(h^0(L) = d - g + 1\), so if \(d = 2g + 1\) then \(h^0(L) = g + 2\).
+</p>
+
+<p>
+The last corollary we&rsquo;ll mention, at least for now, is the following.
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+For any set of points \(\{p_1, ..., p_k\}\) in \(X\), \(X\setminus \{p_1, ..., p_k\}\) is affine.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Set \(D = \sum_i P_i\in \textrm{Div}(X)\). Let \(L = \mathcal O_X(D)^{\otimes \ell}\) be very ample. 
+</p>
+
+<p>
+Embedd \(X\) in \(\mathbb P^r\) via \(\varphi_L\). Then there is a hyperplane \(H\subseteq \mathbb P^r\) such that \(H|_{\varphi_L(X)} = \ell \cdot D\). Thus \(X\setminus D = X|_{\mathbb P^r \setminus H}\) is affine.
+</p>
+</details>
+
+<p>
+Note that this is definitely not true in general for varieties, even if you replace &ldquo;points&rdquo; with &ldquo;divisors&rdquo;. For example, \(\mathbb P^2\) minus a point is not affine. If you take \(\mathbb P^2\) blown up at a point and then remove the exceptional divisor, you get the same thing as \(\mathbb P^2\) with a point removed; so it&rsquo;s still not affine.
+</p>
+
+<p>
+The proof above works because, if you take any effective divisor \(D\), then you have a global section of \(\mathcal O_X(D)\). This is because you can find a regular function which vanishes on \(D\).
+</p>
+
+<p>
+<i>Example:</i> <i>(genus 1 curves)</i>. 
+Let \(X\) be a curve of genus 1, \(p\in X\), and consider \(L_n = \mathcal O_X(n\cdot p)\) for \(n\mathbb N\). Riemann Roch says that \(h^0(L_n) = d - g + 1 = d\) as soon as \(d\geq 2g - 1 = 1\). A corollary from <a href="file:///pages/writing/journal/algcurves5/">last week</a> says
+</p>
+\begin{align*}
+    \deg(K_X) = 2g - 2 = 0
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    h^0(K_X) = g = 1,
+\end{align*}
+<p>
+hence \(K_X \cong \mathcal O_X\).
+</p>
+
+<p>
+If \(n=1\), then \(h^0(L_n) = 1\). 
+</p>
+
+<p>
+If \(n=2\) then \(h^0(L_2) = 2\), and hence we get 2:1 a map \(X\xrightarrow{2:1} \mathbb P^1\). Thus \(H^0(L_2) = textrm{span}\{1, x\}\).
+</p>
+
+<p>
+If \(n=3\), then \(h^0(L_3) = 3\). We get a new global section \(y\) with a triple pole at \(p\). \(L_3\) defines a map \(\varphi_{L_3}:X\to \mathbb P^2\) which can be written as an affine chart \([z^3 : zx : y]\), where \(x = x/z^2\) and \(y = y/z^3\). Here \(z\) is a local coordinate which vanishes to order \(1\) at \(p\). The intersection of \(z = 0\) with the image of the map \(\varphi_{L_3}\) will be \([0:0:1]\). In particular, we have a &ldquo;globally defined&rdquo; marked point on \(X\).
+</p>
+
+<p>
+If \(n=4\), \(h^0(L_4) = 4\), the new section is \(x^2\).
+</p>
+
+<p>
+If \(n=5\), \(h^0(L_5) = 5\), the new section is \(x\cdot y\).
+</p>
+
+<p>
+If \(n=6\), \(h^0(L_4) = 4\), but two new sections \(x^3\) and \(y^2\). This tells you that you must have a linear relation between all the sections now; i.e. we have an equation of the form
+</p>
+\begin{align*}
+    y^2 + a_1xy + a_3y = x^3 + a_2 x^2 + a_4x + a_6
+\end{align*}
+<p>
+where \(x\) and \(y\) have been rescaled so the coefficients of \(x^3\) and \(y^2\) are \(1\). This is some standard form of an elliptic curve.
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+A genus \(1\) curve + a marked point \(p\) is called an elliptic curve. It has a group structure compatible with the algebraic structure, making it an Abelian variety.
+</p>
+
+<p>
+Not all distinct choices of \(a_1,...,a_5\) yield distinct isomorphism classes of curves, and some choices yield singular curves. Nonetheless, we get a map \(\mathbb A^5\dashrightarrow \mathcal M_{1,1}\).
+</p>
+</div>
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+This shows that \(\mathcal M_{1,1}\) (the moduli space of genus one curves with one marked point, i.e. the moduli space of elliptic curves) is <i>unirational</i>. It&rsquo;s not particularly interesting here because \(\mathcal M_{1,1}\) is just \(\mathbb A^1\), but as the genus and number of marked points increases this becomes more interesting.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-adjunction" class="outline-2">
+<h2 id="adjunction">Adjunction</h2>
+<div class="outline-text-2" id="text-adjunction">
+<p>
+Suppose we have \(Y\subseteq X\) a subvariety of a variety \(X\). On any smooth variety \(X\) we can define the canonical sheaf \(K_X = \bigwedge^n_{i=1}\Omega_{X}\).
+</p>
+
+<p>
+<i>Example:</i> \(K_{\mathbb P^n} = \mathcal O_{\mathbb P^n}(-n-1).\)
+</p>
+
+<p>
+In an open standard chart \(u_1,...,u_n\) of \(\mathbb P^n\), \(K_{\mathbb P^n}\) is generated by \(du_1 \wedge ... \wedge du_n\). On a different chart with standard coordinates \(w_1,...,w_n\), the transition functions between the charts are something like \(u_1 = \frac{1}{w_i}\) and \(u_j = \frac{w_j}{w_i}\). Over this \(w_1,...,w_n\) chart \(K_X\) is generated by \(dw_1\wedge ... \wedge dw_n\), and
+</p>
+\begin{align*}
+    du_1 = d\frac{1}{w_i} = -\frac{1}{w_i^2} dw_i
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    du_i = d\frac{w_i}{w_j} = \frac{1}{w_i}dw_j - \frac{w_j}{w_i^2}dw_j.
+\end{align*}
+
+<p>
+Checking \(du_1\wedge ...\wedge du_n\), applying bilinearity and canceling accordingly, you should end up with something like
+</p>
+\begin{align*}
+    du_1 \wedge ...\wedge du_n = -\frac{1}{w_1^{n+1}}\cdot \left(dw_1\wedge ...\wedge dw_n\right).
+\end{align*}
+<p>
+The point of this calculation is that I end up with a pole of order \(n+1\).
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-05-corollaries-to-riemann-roch" href="../../notes/algebraic-curves-05-corollaries-to-riemann-roch/">Algebraic Curves Lecture 5: Corollaries To Riemann-Roch</a></li>
+    <li><a data-note="algebraic-curves-07" href="../../notes/algebraic-curves-07/">Algebraic Curves Lecture 7</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

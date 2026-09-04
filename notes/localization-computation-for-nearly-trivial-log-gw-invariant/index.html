@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Computation Of A Nearly Trivial Log Gw Invariant; Target P1, Degree 1, Three Marked Points — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/localization-computation-for-nearly-trivial-log-gw-invariant/"
+      data-note-title="Computation Of A Nearly Trivial Log Gw Invariant; Target P1, Degree 1, Three Marked Points">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Computation Of A Nearly Trivial Log Gw Invariant; Target P1, Degree 1, Three Marked Points</h1>
+      <p class="note-meta"><span class="taxon">example</span></p>
+
+      <article class="note">
+
+
+<p>
+Let \(X = \mathbb P^1\) with toroidal log structure \(D = [0] + [\infty]\) and \(\beta = ([\mathbb P^1], g=0, n=3, u_1=u_2=1, u_3=0)\) be the curve class of a stable log curve. Then for any stable log map \((C,f, p_1,p_2,p_3) \in M(X, \beta)\), the prescribed contact orders require that \(f(p_1) = [0]\) and \(f(p_2) = \infty\). We are left with three cases:
+</p>
+<ul class="org-ul">
+<li>If \(f(p_3) = f(p_1)\), then \(C\) consists of two components both isomorphic to \(\mathbb P^1\), one is contracted to \(0\in X\) and contains both \(p_3\) and \(p_1\) and the other is mapped identically to \(X\).</li>
+<li>If \(f(p_3) = f(p_2)\), we have a similar situation except the contracted component is sent to \(\infty\) and contains both \(p_2\) instead of \(p_1\).</li>
+<li>If neither \(f(p_3) = f(p_1)\) nor \(f(p_3) = f(p_1)\), then stability implies \(C\cong \mathbb P^1\).</li>
+</ul>
+<p>
+Thus \(M(X, \beta) \cong \mathbb P^1\) via the third evaluation map \(e_3: [C, f, p_1,p_2,p_3] \mapsto f(p_3)\).
+</p>
+
+<p>
+<b>Computing a curve count</b>
+</p>
+
+<p>
+Choose a cohomology class in \(X\) corresponding to a point, \([\text{pt}] = c_1(\mathcal O(1))\). Pulling back to \(M(X, \beta)\) via \(e_3\) yields \(c_1(\mathcal O(1))\) again, so
+\[\int_{M(X, \beta)} e_3^*\big(c_1(\mathcal O(1))\big) = \deg(c_1(\mathcal O(1)) \cap [\mathbb P^1]) = 1.\]
+</p>
+
+<p>
+<b>Computing via localization</b>
+</p>
+
+<p>
+Now let \(T = \mathbb C^*\) act on \(X=\mathbb P^1\) via <i>distinct</i> characters \(\chi_0, \chi_\infty \in M = \Hom(T, \mathbb C^*)\); in coordinates, \(t\cdot [x:y] = [\chi_0(t)x : \chi_\infty(t)y]\). The induced action on \(M(X, \beta)\) is given by postcomposing \(f:C\to X\) with the action of \(T\), so under the identification \(M(X, \beta) \cong \mathbb P^1\) above, \(T\) acts with the same characters on \(M(X, \beta)\). Under this action the fixed points of \(M(X, \beta)\) are \(C_0\) and \(C_\infty\) corresponding to the stable curves where \(f(p_3)\) is \(0 = [1:0]\) and \(\infty = [0:1]\) respectively.
+</p>
+
+<p>
+Localization tells us that
+</p>
+
+<p>
+\[\int_{M(X, \beta)} c_1(\mathcal O(1)) = \frac{c_1^T(\mathcal O(1))|_{C_0}}{c_1^T(T_{C_0}M(X,\beta))} + \frac{c_1^T(\mathcal O(1))|_{C_\infty}}{c_1^T(T_{C_\infty}M(X,\beta))}.\]
+</p>
+
+<p>
+Or rather
+</p>
+
+<p>
+\[\int_{\mathbb P^1} c_1(\mathcal O(1)) = \frac{c_1^T(\mathcal O(1))|_{0}}{c_1^T(T_{0}\mathbb P^1)} + \frac{c_1^T(\mathcal O(1))|_\infty}{c_1^T(T_{\infty}\mathbb P^1)}.\]
+</p>
+
+<p>
+This is valued in the equivariant cohomology ring \(S^{-1}H^*_T(\mathbb P^1) = S^{-1}\Lambda_{T}[\zeta]/(\zeta+\chi_1)(\zeta+\chi_2)\). Here,
+</p>
+<ul class="org-ul">
+<li>\(\Lambda_{T} = \mathbb Z[\hbar]\) where \(\hbar = c_1(\mathcal O_{\mathbb P^{m-1}}(-1))\) (recall that \(H^*_T(\text{pt}) = H^*(\mathbb P^{m-1})\) up to degree \(m\)).</li>
+<li>The class \(\zeta\) is \(c_1^T(\mathcal O_{\mathbb P^1}(1))\)</li>
+<li>The character \(\chi_i\) is identified with \(c^T_1(\mathbb C_{\chi_i})\) under the identification \(M\to \Lambda^2_T = H^2_T(\text{pt})\). Here \(\mathbb C_{\chi}\) denotes the line bundle over \(\text{pt}\) given by the \(T\) representation \(t\cdot z = \chi(t)z\).</li>
+<li>The multiplicative set \(S\) contains \((\chi_\infty - \chi_0)^2\).</li>
+</ul>
+
+<p>
+We now just compute:
+</p>
+
+<ul class="org-ul">
+<li><p>
+The tangent space \(T_0\mathbb P^1\) is a line bundle over \(0 = [1:0]\) on which \(\mathbb C^*\) acts by character \(\chi_\infty - \chi_0\). This can easily be seen in coordinates, where \(T_0\mathbb P^1 = \{[1:z]\}\) and so
+</p>
+
+<p>
+\[t\cdot [1:z] = [\chi_0(t) : \chi_\infty(t)z] = \left[1:\frac{\chi_\infty(t)}{\chi_0(t)}z\right].\]
+</p>
+
+<p>
+The equivariant Chern class of a line bundle over a point is the ordinary Chern class of a line bundle over \(\mathbb BG\), so in this case
+\[c_1^T(T_0\mathbb P^1) = c_1((\mathbb C^m \setminus \{0\})\times^T \mathbb C_{\chi_\infty - \chi_0}) = \chi_\infty-\chi_0.\]
+</p></li>
+
+<li>Similarly,
+\[c_1^T(T_\infty\mathbb P^1) = \chi_0 - \chi_\infty.\]</li>
+
+<li>By definition \(c_1^T(\mathcal O(1)) = \zeta\). The restriction of the tautological line bundle \(\mathcal O(-1)\) to a point \(p\in \mathbb P^1\) gives the line \(L\) over that point, so
+\[c_1^T(\mathcal O(1))|_{\{0\}} = -c_1^T(\mathcal O(-1)|_{\{0\}}) = -c_1^T(L_0) = -\chi_0. \]</li>
+
+<li>Similarly,
+\[c_1^T(\mathcal O(1))|_{\{\infty\}} = -\chi_\infty\].</li>
+</ul>
+
+<p>
+We now just add everything up:
+</p>
+
+
+\begin{align*}
+\int_{\mathbb P^1} c_1(\mathcal O(1))
+&= \frac{c_1^T(\mathcal O(1))|_{0}}{c_1^T(T_{0}\mathbb P^1)} + \frac{c_1^T(\mathcal O(1))|_\infty}{c_1^T(T_{\infty}\mathbb P^1)} \\
+&= \frac{-\chi_0}{\chi_\infty - \chi_0} + \frac{-\chi_\infty}{\chi_0 - \chi_\infty} \\
+&= \frac{-\chi_0}{\chi_\infty - \chi_0} + \frac{\chi_\infty}{\chi_\infty - \chi_0} \\
+&= \frac{\chi_\infty - \chi_0}{\chi_\infty - \chi_0}\\
+&= 1
+\end{align*}
+
+<p>
+as desired.
+</p>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

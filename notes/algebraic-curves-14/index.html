@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 14 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-14/"
+      data-note-title="Algebraic Curves Lecture 14">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 14</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-13" href="../../notes/algebraic-curves-13/">← lecture 13</a> · <a class="idlink" data-note="algebraic-curves-16" href="../../notes/algebraic-curves-16/">lecture 16 →</a>
+</p>
+
+<p>
+Last time we ended by introducing \(\Sec(X)\), the <i>secant variety of \(X\)</i>, where \(X\subseteq \mathbb P^k\) is a smooth variety and \(\dim(X) = k\). We can obtain another similar space by considering the <i>Gauss map</i>
+</p>
+\begin{align}
+    j:X&\to \mathbb{Gr}(k,\mathbb P^n) \\
+    p &\mapsto T_pX.
+\end{align}
+<p>
+We recall the object \(\Sigma\subset \mathbb {Gr}(k,\mathbb P^n) \times \mathbb P^n\) from lecture 13 and the corresponding projections \(\pi_1:\mathbb {Gr}(k,\mathbb P^n)\times \mathbb P^n\to \mathbb {Gr}(k,\mathbb P^n)\) and \(\pi_2:\mathbb {Gr}(k,\mathbb P^n)\times \mathbb P^n \to \mathbbP^n\). Then we define the <i>tangential variety</i> \(\Tan(X) = \pi_2(\pi_1^{-1}(\overline{\img j}))\). It has dimension \(2k\). This makes geometric sense &#x2013; you have a dimension \(k\) object for each point in \(X\). Note that \(\Tan(X)\subset \Sec(X)\) for curves (the tangent line at a point is the &ldquo;secant line through that point twice&rdquo;). 
+</p>
+
+<p>
+This secant variety and tangential variety are enough to prove the following proposition.
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Any smooth curve \(X\) can be embedded in \(\mathbb P^3\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We know we can always embed \(X\) in <i>some</i> \(\mathbb P^{g+1}\) by Riemann-Roch. The idea is to project down to \(\mathbb P^3\) in such a way that the composition with the embedding \(X\hookrightarrow \mathbb P^{g+1}\) remains an isomorphism. 
+</p>
+
+<p>
+Suppose you have an embedding \(X\hookrightarrow \mathbb P^r\) and consider then a projection \(\varphi_p:X\subset \mathbb P^r\to \mathbb P^{r-1}\) where \(p\in \mathbb P^r\) is a point which does not lie in \(X\) <i>or</i> in some chosen copy of \(\mathbb P^{r-1}\) in \(\mathbb P^r\). We obtain the projection by mapping \(x\in X\) to the point in \(\mathbb P^{r-1}\) intersecting the line between \(x\) and \(p\).
+</p>
+
+<p>
+Then \(\varphi_p\) is generically finite, since we may assume that \(X\) is non-degenerate (i.e. that \(X\) is not embedded in \(\mathbb P^r\) as a subset of some smaller \(\mathbb P^d\)). 
+</p>
+
+<p>
+1.\(\varphi_p\) is \(1:1\) on its image if and only if \(p\) does not lie on any secant line of \(X\) and 
+</p>
+
+<ol class="org-ol">
+<li>\(\varphi_p\) is injective on tangent spaces if and only if \(p\) does not lie on a tangent line of \(X\).</li>
+</ol>
+
+<p>
+We note that the map \(\varphi_p\) is given by linear series \(V\subset H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(1))\) that pass through \(p\). Then the above statements translate to
+</p>
+
+<ol class="org-ol">
+<li>For any \(q_1,q_2 \in X\) with \(q_1\neq q_2\), there exists \(H\in V\) such that \(q_1\in H\) and \(q_2 \not\in H\).</li>
+
+<li>For any \(q \in X\), there exists \(H\in V\) such that \(H\cap X \supseteq \{q\}\) but \(H.X \not\ni 2q\).</li>
+</ol>
+
+<p>
+Thus \(\varphi_p\) is an isomorphism on its image if and only if \(p\not\in \Sec(X)\) and \(p\not\in \Tan(X)\). Since \(\dim(\Sec(X))\leq 3\) and \(\dim(\Tan(X)) \leq 2\), it follows that such a \(p\) always exists if \(r\geq 4\).
+</p>
+</details>
+
+<p>
+This proposition means you don&rsquo;t lose anything by simply studying curves in \(\mathbb P^3\). In general, you cannot realize \(X\) as a smnooth curve in \(\mathbb P^2\). However, the next best thing is true: Once can always map \(X\to \mathbb P^2\) birationally with nodal image.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Take \(X\subseteq \mathbb P^3\), \(p \in \mathbb P^3\). Then \(\varphi_p|_X\) is birational with nodal image if and only if
+</p>
+<ol class="org-ol">
+<li>\(p\) lies on finitely many tangent lines to \(X\)</li>
+<li>\(p\not\in \Tan(X)\)</li>
+<li>\(p\) does not lie on any multisecant (a secant line of \(X\) containing 3 or more points of \(X\))</li>
+<li>\(p\) does not lie on a secant with coplanar tangent lines.</li>
+</ol>
+</div>
+<p>
+Note that
+</p>
+<ol class="org-ol">
+<li>Above avoids the possibility that the image of \(X\) in \(\mathbb P^2\) has cusps</li>
+<li>This ensures \(\varphi_p\) is defined on all of \(X\)</li>
+<li>This condition ensures that we have at worst nodes in the image, we don&rsquo;t want any singularities with preimage consisting of 3 or more points</li>
+<li>take two distinct points \(q_1,q_2 \in X\) with parallel (coplanar) tangent lines. Then if \(p\) lies on the secant line to these two points, the two tangent lines will be mapped to the same line in \(\mathbb P^2\). This condition ensures this doesn&rsquo;t happen.</li>
+</ol>
+
+<p>
+This together with the proof of the previous proposition essentially prove the lemma.
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Any curve \(X\) can be mapped birationally to a nodal curve in \(\mathbb P^2\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We may assume \(X\subseteq \mathbb P^3\). We need to find \(p\in \mathbb P^3\) as in the lemma.
+</p>
+<ol class="org-ol">
+<li>Take a rational map \(X\times X \to \mathbb {Gr}(1, \mathbb P^3)\) together with the projections of \(\Sigma\). Examining the image of a pair \((x, y)\in X\times X\) we see that there are only finitely many secant lines of \(X\) which pass through a general point \(p\in \mathbb P^3\).</li>
+<li>We know that \(\dim(\Tan(X)) \leq 2\), thus a general point \(p\in \mathbb P^3\) does not live in \(\Tan(X)\).</li>
+</ol>
+
+<p>
+For 3. and 4. we proceed in steps.
+</p>
+
+<p>
+Step 1: If every secant line is a multisecant, then the tangent lines at any two points are coplanar. Suppose then that every secant line is a multisecant, consider \(p\in X\) and the projection \(\varphi_p:\mathbb P^3 \to \mathbb P^2\) (defined only away from \(p\), so this is a rational map). Then \(\varphi_p|_X\) has positive degree. If \(L_{pqr}\) is a multisecant line through \(p\), then \(d\varphi_p|X\) needs to identify the tangent spaces to \(q\) and \(r\). Thus \(T_qX\) and \(T_rX\) need to lie in \(d\varphi_p|_X(T_{\varphi_p(r)}X)\) which is a plane.
+</p>
+
+<p>
+Step 2: If all tangent lines are coplanar, then there is a point \(r\in \mathbb P^3\) contained in every tangent line to \(X\). Let \(H\) be the plane spanned by \(T_pX\) and \(T_qX\). Call \(r = T_pX \cap T_qX\). Pick \(s \not\in H, s\in X\). Then \(T_sX \cap T_pX = \operatorname{pt}\) and \(T_sX \cap T_qX = \operatorname{pt}\) If \(T_sX \cap T_pX \neq T_sX\cap T_qX\) then \(T_sX\) would pass through 2 different points in \(H\). This would mean \(T_s'X\subseteq H\) hence \(s\in H\), which is a contradiction.
+</p>
+
+<p>
+Step 3: This is not possible. Indeed, projecting from \(r\) would give a map \(X\to X'\) (some other curve) which is generically ramified, but the ramification locus of any map of smooth curves is a divisor of the upstairs curve, at least in characteristic 0 (you <i>can</i> have generically ramified maps in characteristic \(p\)!).
+</p>
+</details>
+
+<p>
+We conclude today with a remark.
+<i>Example:</i>
+</p>
+<ol class="org-ol">
+<li>If \(X\subseteq \mathbb P^3\) is non-degenerate, \(p\in \mathbb P^3\). Then \(\varphi_p(X) \subseteq \mathbb P^2\) is not smooth. This is because any smooth curve in \(\mathbb P^2\) needs to be embedded by a <i>complete</i> linear series. Suppose \(X\subseteq \mathbb P^3\) is a smooth curve. Then \(X\) is embedded by a complete linear series if and only if the induced map \(H^0(\mathbb P^2, \mathcal O_{\mathbb P^2}(1))\to H^0(X,\mathcal O_X(1))\) is surjective.</li>
+<li>Given a non-degenerate smooth curve \(X\subseteq \mathbb P^3\), this implies \(g(X)\leq \frac{(d-1)(d-2)}{2}\) where \(d\) is the degree of \(X\subseteq \mathbb P^r\). This bounds the genus of all non-planar curves.</li>
+</ol>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-13" href="../../notes/algebraic-curves-13/">Algebraic Curves Lecture 13</a></li>
+    <li><a data-note="algebraic-curves-16" href="../../notes/algebraic-curves-16/">Algebraic Curves Lecture 16</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>
