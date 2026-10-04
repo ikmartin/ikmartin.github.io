@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objects In Toric Geometry From Different Perspectives — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/objects-in-toric-geometry-from-different-perspectives/"
+      data-note-title="Objects In Toric Geometry From Different Perspectives">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Objects In Toric Geometry From Different Perspectives</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+There is a collection of standard objects in toric geometry:
+</p>
+<ul class="org-ul">
+<li>the algebraic torus \(T\)</li>
+<li>the character lattice \(M\)</li>
+<li>the cocharacter lattice \(N\)</li>
+<li>cones \(\sigma \subseteq N_{\mathbb R}\)</li>
+<li>monoids \(P_\sigma = \sigma^\vee \cap M\)</li>
+<li>the <a class="idlink" data-note="toric-variety-defn" href="../../notes/toric-variety-defn/">toric variety</a> \(X\)</li>
+<li>etc.</li>
+</ul>
+<p>
+These objects all play multiple roles and interrelate in a myriad of ways. It is advantageous to understand all of them, especially when you wish to do log geometry. The point of this note is to provide a few different perspectives for reference.
+</p>
+
+<p>
+Throughout this we assume \(k = \Spec\mathbb C\), but I think we actually only need \(T\)  to be a split torus. My understanding is that the weight decomposition is slightly more annoying when you don&rsquo;t have a split torus, so I&rsquo;m just assuming that \(T = \mathbb G_m^r\) all the time.
+</p>
+<div id="outline-container-the-character-lattice-of-a-torus" class="outline-2">
+<h2 id="the-character-lattice-of-a-torus">The character lattice of a torus</h2>
+<div class="outline-text-2" id="text-the-character-lattice-of-a-torus">
+<p>
+Start with an algebraic torus \(T\), not toric variety for now. The <a class="idlink" data-note="character-lattice-of-a-torus" href="../../notes/character-lattice-of-a-torus/">character lattice</a> \(M\) of \(T\) can be thought of in the following equivalent ways:
+</p>
+<ol class="org-ol">
+<li>\(M = \Hom(T, \mathbb G_m)\) in the category of algebraic groups</li>
+<li>\(M\) is the set of monomial functions on \(T\) which constant coefficient (&ldquo;M&rdquo; for &ldquo;monomial&rdquo;)</li>
+<li>\(M\) is the set of invertible functions on \(T\) modulo \(\mathbb C^\times\)</li>
+<li>\(M\) is the degree one part of \(A^*(BT) = A^*_T(\pt) = \Sym(M)\)</li>
+</ol>
+
+<p>
+To show the equivalence of \((1)\) and \((2)\), show that every regular function \(f:T\to \mathbb C\) can be written as a finite sum of characters \(\chi:T\to \mathbb G_m = \mathbb C^\times\).
+</p>
+
+<p>
+We could instead start with a lattice (finite rank \(\mathbb Z\)-module) \(M\), and then we could recover \(T\) by setting \(T = \Spec \mathbb C[M] \cong \Spec \mathbb C[t^{\pm}_1,...,t^{\pm}_r]\) where \(r = \rank M\). Note that
+</p>
+\begin{align*}
+  \Spec \mathbb C[M] = \Spec \left\{\sum t^\chi ~ \mid ~ \chi \in M\right\},
+\end{align*}
+<p>
+and if we choose a basis \(e_1,...,e_r\) for \(M\) and \(\chi = a_1e_1 + ... + a_re_r\), then by choosing coordinates \((t_1,...,t_r) \in T\) we get \(\chi(t_1,...,t_r) = t_1^{a_1}\cdot \dots\cdot t_r^{a_r}\). This is how to interpret \(t^\chi\) as a function on \(T\).
+</p>
+
+<p>
+If we had started with \(T\) instead, then a character \(\chi\) would by definition be a function \(\chi:T\to \mathbb G_m\subset \mathbb C\), in which case the formal symbol \(t^\chi\in \mathbb C[M]\) is a regular function on \(T\) simply by setting \(t^\chi(p) = \chi(p)\).
+</p>
+
+<p>
+For \((3)\), we may need the algebraic closedness of \(\mathbb C\).
+</p>
+</div>
+</div>
+<div id="outline-container-monoids-and-affine-toric-varieties" class="outline-2">
+<h2 id="monoids-and-affine-toric-varieties">Monoids and Affine Toric Varieties</h2>
+<div class="outline-text-2" id="text-monoids-and-affine-toric-varieties">
+<p>
+Now start with an affine toric variety \(X = \Spec R\) with torus \(T\), and consider: how does \(R\) relate to \(\mathbb C[m] = \mathcal O_T\)? The quick answer: \(R\) is the subring of \(\mathbb C[M]\) obtained by deleting all functions which don&rsquo;t extend to \(X\), because they don&rsquo;t converge. Said another way, \(\mathbb C[M]\) is obtained from \(R\) by localizing at certain functions.
+</p>
+
+<p>
+More precisely, let \(Z = X\setminus T\). Then \(Z\hookrightarrow X\) is a closed immersion, so \(Z\) corresponds to some ideal \(I\subset R\). Since a toric variety is finite type and hence Noetherian, \(I = (f_1,...,f_n)\) for some functions \(f_i \in R\). 
+</p>
+
+<p>
+Let \(j:T\to X\) be the inclusion. Then \(j^{-1}\mathcal O_T^\times \cap R\) consists of all functions on \(X\) which are both invertible on \(T\) and are defined on \(R\), that is, its the set of functions \(f:X\to \mathbb C\) which, if they have a zero anywhere, it occurs outside of the open set \(T\) (obviously this is the <a class="idlink" data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">divisorial log structure</a> on \(X\) with respect to \(D = X\setminus T\)). Let&rsquo;s restrict our attention to just those functions which have at least some zero. We do this by quotienting by the units in \(R\), and we get a set
+</p>
+\begin{align*}
+  P = j^{-1}\mathcal O^\times_T \cap R/R^\times.
+\end{align*}
+<p>
+It turns out \(P\) is a monoid under multiplication; if I take two functions \(f_1,f_2\in P\) then \(f_1 + f_2\) may have a new zero, but \(f_1\cdot f_2\) vanishes only on \(X\setminus T\). Notice that since \(\mathbb C^\times \subset R^\times\),
+</p>
+\begin{align*}
+  P \subset j^{-1}\mathcal O^\times_T/\mathbb C^\times = M,
+\end{align*}
+<p>
+so as a matter of fact, \(P\) is a submonoid of \(M\).
+</p>
+
+<p>
+<b>Punchline:</b>
+</p>
+\begin{align*}
+\left(\text{toric variety} ~ T\hookrightarrow X \right) ~ \rightsquigarrow \left(\text{monoid} ~ P \subseteq M\right)
+\end{align*}
+
+<p>
+Notice a property of this monoid: if \(\chi\in P\), then it is a non-vanishing function \(f:T\to \mathbb G_m\) since \(P\subset M\). However it is also a regular function on \(X\) well defined up to scaling by \(R^\times\); we can fix a representative by demanding that \(\chi(1) = 1\), where \(1\) is the unit in \(T\) (this then ensures it is a group homomorphism too). Once we&rsquo;ve done this, we see that by definition, \(\chi\) extends to \(X\) &#x2013; of course it does, it started life as a function on \(X\). The claim is then that
+</p>
+\begin{align*}
+X = \Spec \mathbb C[P].
+\end{align*}
+<p>
+This is the case. It is easier to show that \(R = \mathbb C[P]\). The inclusion \(\mathbb C[P] \subset R\) is easy, it follows from what we have just described &#x2013; for the other direction, start with a regular function \(f\in R\), restrict it to \(T\), then write it in terms of characters in \(M \) (possible since \(\mathcal O_T = \mathbb C[M]\)). These characters must all extend to \(X\), hence are contained in \(P\), giving \(R\subseteq \mathbb C[P]\). So a more straightforward definition of \(P\) might be that &ldquo;\(P\)  is the submonoid of \(M\) containing all characters which extend from a map \(T\to \mathbb G_m\) to a map \(X\to \mathbb C\).&rdquo;
+</p>
+
+<p>
+<b>Reverse direction</b>
+If we instead start with a torus \(T\) with character lattice \(M\), we can build \(X\) by setting \(X = \Spec \mathbb C[P]\).
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="character-lattice-of-a-torus" href="../../notes/character-lattice-of-a-torus/">Character Lattice Of A Torus</a></li>
+    <li><a data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">Divisorial Log Structure</a></li>
+    <li><a data-note="toric-variety-defn" href="../../notes/toric-variety-defn/">Toric Variety Defn</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

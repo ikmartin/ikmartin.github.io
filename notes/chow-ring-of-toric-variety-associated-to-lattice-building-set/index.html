@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chow Ring Of Toric Variety Associated To Lattice Building Set — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/chow-ring-of-toric-variety-associated-to-lattice-building-set/"
+      data-note-title="Chow Ring Of Toric Variety Associated To Lattice Building Set">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Chow Ring Of Toric Variety Associated To Lattice Building Set</h1>
+      <p class="note-meta"><span class="taxon">example</span></p>
+
+      <article class="note">
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Consider the <a class="idlink" data-note="atomic-lattice-defn" href="../../notes/atomic-lattice-defn/">intersection lattice</a> \(\mathcal L\) given by three hyperplanes (codimension 1) \(H_1,H_2,H_3\) meeting at a codimension 2 locus \(\ell\) together with the unique building set \(\mathcal G = \{H_1, H_2, H_3, \ell\}\). We compute the Chow group of the toric variety \(X_{\Sigma(\mathcal L, \mathcal G)}\). Note that the ambient space of the hyperplane arrangement does not affect \(X_{\Sigma(\mathcal L, \mathcal G)}\);  it depends only on the combinatorics. See also this example from a <a class="idlink" data-note="combinatorics-three-hyperplanes-meetings-at-a-point-example" href="../../notes/combinatorics-three-hyperplanes-meetings-at-a-point-example/">purely combinatorial perspective</a>. Here is the relevant combinatorial data:
+</p>
+<ul class="org-ul">
+<li>the atoms of \(\mathcal L\) are the hyperplanes: \(\mathcal A = \{H_1, H_2, H_3\}\).</li>
+<li>the nested simplicial complex is \(\mathcal N(\mathcal L, \mathcal G) = \big\{\emptyset, \{H_i\}, \{\pt\}\big\} \cup \big\{\{H_i, \pt\} \big\}\)</li>
+</ul>
+
+<p>
+<b>The toric variety associated to an atomic lattice</b>
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(\mathcal L\) be a <a class="idlink" data-note="atomic-lattice-defn" href="../../notes/atomic-lattice-defn/">finite lattice</a> with unique minimal element \(\hat 0\) whose atoms are \(\mathcal A = \{A_1,...,A_n\}\), and let \(\mathcal G\) be a <i>building set</i> for \(\mathcal L\). For each \(X\in \mathcal L\) let \(\lfloor X\rfloor = \{A\in \mathcal A \mid X \geq A\}\) and define a vector \(v_X\in \mathbb R^n\) by
+\[(v_X)_i = \begin{cases}1 & \text{if } A_i \in \lfloor X\rfloor \\ 0 & \text{otherwise}\end{cases}\]
+so that the atoms of \(\mathcal L\) form the basis of \(\mathbb R^n\). Now for each \(S\subseteq \mathcal L\) let \(V(S)\) be the rational polyhedral cone in \(\mathbb R^n\) spanned by the vectors \(v_X\) for \(X\in S\). Finally, let
+\[\Sigma(\mathcal L, \mathcal G) = \{V(S) ~ \mid ~ S\in \mathcal N(\mathcal L, \mathcal G)\}\]
+be the fan consisting of all cones associated to nested sets in \(\mathcal L\). Note that the rays of \(\Sigma(\mathcal L, \mathcal G)\) are in bijection with the vertices of \(\mathcal N(\mathcal L, \mathcal G)\) (and therefore the elements of \(\mathcal G\)), the \(2\)-dimensional facets of \(\Sigma(\mathcal L, \mathcal G)\) are in bijection with the edges of \(\mathcal N(\mathcal L, \mathcal G)\), etc.
+</p>
+
+<p>
+The toric variety associated to \(\mathcal L, \mathcal G\) is \(X_{\Sigma(\mathcal L, \mathcal G)}.\)
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="toric-variety-associated-to-atomic-lattice" href="../../notes/toric-variety-associated-to-atomic-lattice/">Toric Variety Associated To Atomic Lattice</a></p>
+
+
+<p>
+In this case, we have \(4\) one-element subsets of \(\mathcal N(\mathcal L, \mathcal G)\), and hence \(4\) rays in \(\Sigma(\mathcal L, \mathcal G)\). They are \(e_i\) associated to the atom \(H_i\) and the ray \(\rho = e_1 + e_2 + e_3\) associated to \(pt\). We additionally have three \(2\)-dimensional cones \(\sigma_i = \spann(e_i, \rho)\) associated to the \(2\)-element nested set \(\{H_i, \pt\}\). Below is the fan \(\Sigma(\mathcal L, \mathcal G)\) together with the graph obtained by slicing the fan by the hyperplane in \(\mathbb R^3\) containing the points \(e_1,e_2,e_3\). Notice that this graph is precisely the simplicial complex \(\mathcal N(\mathcal L, \mathcal G)\).
+</p>
+
+
+<div id="paragraph-1" class="figure">
+<p><img src="../../assets/note-images/fan-sigma-sliced-by-hyperplane-51dae42f3cf50af4.jpeg" alt="fan-sigma-sliced-by-hyperplane.jpeg" />
+</p>
+</div>
+
+<p>
+<b>Chow groups of this toric variety</b>
+Let \(N\) be the integer lattice generated by the vectors \(e_i = v_{H_i}\) and \(M\) be its dual. We calculate each Chow group \(A_k(X_{\Sigma(\mathcal L, \mathcal G)})\) via the following exact sequence. 
+</p>
+
+
+<p>
+Recall that for a cone \(\sigma\) in a polyhedral fan \(\Sigma\) in a lattice \(N\) with dual lattice \(M\),
+</p>
+<ul class="org-ul">
+<li>\(N_\sigma\) denotes the linear span of \(\sigma\cap N\)</li>
+<li>\(M(\sigma) = \sigma^\perp \cap M\) is the character lattice of the toric variety given by the orbit closure \(V(\sigma)\) in \(X_\Sigma\).</li>
+</ul>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(\Sigma\) be a polyhedral fan in a lattice \(N\cong \mathbb Z^n\) and \(d = \dim X_\Sigma\). Denote by \(V(\sigma)\) the torus orbit closure corresponding to the cone \(\sigma \in \Sigma\). Then the \(k\)th Chow group of \(X_\Sigma\) is generated by the orbit closures \(\{V(\sigma)\}_{\sigma \in \Sigma(n - k)}\) and has the following presentation:
+\[\bigoplus_{\tau\in \Sigma(n - k - 1)}M(\tau) \xrightarrow{\alpha} \bigoplus_{\sigma \in \Sigma(n - k)} \mathbb Z \cdot [V(\sigma)] \to A_k(X_\Sigma) \to 0.\]
+The map \(\alpha = \bigoplus \alpha_\tau\) is defined on \(m \in M(\tau)\) by
+\[\alpha_\tau(m) = \sum_{\sigma \in \Sigma(n - k)}\langle m, u_{\sigma, \tau}\rangle \cdot [V(\sigma)]\]
+where \(u_{\sigma,\tau}\) is the unique element in the lattice \(N_\sigma/N_\tau \cong \mathbb Z\) which is
+</p>
+<ul class="org-ul">
+<li>a generator for \(N_\sigma/N_\tau\) as a group (of which there are two choices) and</li>
+<li>is represented by an integral point of \(\sigma\).</li>
+</ul>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="chow-ring-of-general-toric-variety" href="../../notes/chow-ring-of-general-toric-variety/">Chow Ring Of General Toric Variety</a></p>
+
+
+<ul class="org-ul">
+<li>For \(k = 0\), we have no \(3\)-dimensional cones and hence \(A_0(X_{\Sigma(\mathcal L, \mathcal G)}) = 0\).</li>
+<li>For \(k = 1\), I claim that \(\alpha\) is surjective and hence \(A_1(X_{\Sigma(\mathcal L, \mathcal G)}) = 0\). It will suffice to consider \(\alpha_{\tau_i}\) where \(\tau_i\) is the ray generated by \(e_i\). Start with \(i=1\). The character lattice of \(V(\tau_1)\) is \(M(\tau_1) = \tau_1^\perp \cap M = \mathbb Z\langle e_2^*, e_3^*\rangle\). The only \(2\)-dimensional cone containing \(\tau_1\) is \(\sigma_1\), where</li>
+</ul>
+<p>
+\[N_{\sigma_1}/N_{\tau_1} = \mathbb Z u_{\sigma_1, \tau_1}, ~ u_{\sigma_1,\tau_1} = \rho + N_{\tau_1} = \overline{e_2 + e_3}.\]
+Then
+\[\alpha_{\tau_1}(e_2^*) = \langle e_2^*, \overline{e_2 + e_3}\rangle [V(\sigma_1)] = [V(\sigma_1)] = \alpha_{\tau_1}(e_3^*).\]
+We similarly get that \([V(\sigma_i)]\) is in the image of \(\alpha_{\tau_i}\) for \(i = 2,3\). Since the \([V(\sigma_i)]\) generate the second term in the exact sequence, \(\alpha\) is surjective.
+</p>
+<ul class="org-ul">
+<li>For \(k = 2\), \(A_2(X_{\Sigma(\mathcal L, \mathcal G)}) \cong \mathbb Z\). Keep the notation from the previous case and set \(\tau_4 = \cone(\rho)\). The second term in the exact sequence is the \(4\)-dimensional free \(\mathbb Z\)-module whose generators are the \([V(\tau_i)]\). For \(i = 1,2,3\) the generator \(u_{\tau_i, 0}\) is \(e_i\) and \(u_{\tau_4, 0} = \rho = e_1 + e_2 + e_3\). The domain of \(\alpha\) is the entire character lattice \(M\), and</li>
+</ul>
+<p>
+\[\alpha(e_i^*) = \sum_{i=1}^4 \langle e_i^*, u_{\tau_i, 0}\rangle \cdot [V(\tau_i)] = [V(\tau_i)] + [V(\rho)].\]
+Therefore \(\alpha\) is injective and the Smith normal form of \(\alpha\) is a \(4\times 3\) matrix consisting of a \(3\times 3\) identity matrix concatenated row-wise with the \(1\times 3\) matrix consisting of only \(0\)&rsquo;s. Hence \(A_2(X_{\Sigma(\mathcal L, \mathcal G)})\) is a rank \(1\) free \(\mathbb Z\)-module.
+</p>
+<ul class="org-ul">
+<li>Finally, for \(k = 3\) \(A_3(X_{\Sigma(\mathcal L, \mathcal G)})\cong \mathbb Z\).</li>
+</ul>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="atomic-lattice-defn" href="../../notes/atomic-lattice-defn/">Atomic Lattice Defn</a></li>
+    <li><a data-note="chow-ring-of-general-toric-variety" href="../../notes/chow-ring-of-general-toric-variety/">Chow Ring Of General Toric Variety</a></li>
+    <li><a data-note="combinatorics-three-hyperplanes-meetings-at-a-point-example" href="../../notes/combinatorics-three-hyperplanes-meetings-at-a-point-example/">Combinatorics Three Hyperplanes Meetings At A Point Example</a></li>
+    <li><a data-note="toric-variety-associated-to-atomic-lattice" href="../../notes/toric-variety-associated-to-atomic-lattice/">Toric Variety Associated To Atomic Lattice</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

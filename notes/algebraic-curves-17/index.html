@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 17 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-17/"
+      data-note-title="Algebraic Curves Lecture 17">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 17</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-16" href="../../notes/algebraic-curves-16/">← lecture 16</a> · <a class="idlink" data-note="algebraic-curves-18" href="../../notes/algebraic-curves-18/">lecture 18 →</a>
+</p>
+
+<p>
+We stopped in the middle last time: we have
+</p>
+
+\begin{align*}
+    I = \{(p,H) ~\mid~ p\in H\} \subset C\times U
+\end{align*}
+<p>
+with a projection \(\rho:I\to U = \{U \in (\mathbb P^r)^* ~\mid~ H \text{ intersects } C \text{ in } d \text{points}\}\). We then had a map
+</p>
+\begin{align*}
+    \varphi:\pi_1(U,H_0) \hookrightarrow \Aut(\rho_2^{-1}_2(H_0))
+\end{align*}
+<p>
+with \(\operatorname{img}(\varphi) = G\subseteq S_d\).
+</p>
+
+<p>
+We claim that \(G = S_d\). We showed that \(G\) acts 2-transitively, and because \(U\) is irreducible we concluded that \(I(2)\) was irreducible. It was left to show that \(G\) contained a transposition, from which we can conclude that \(G\) contains <i>all</i> transpositions and hence generates the whole group. So we need to find one tranposition in \(G\).
+</p>
+
+<p>
+Let \(H\) be a hyperplane such that \(H\) has a simple tangency at one point of \(C\) and intersects \(C\) transversely at all other points.
+</p>
+
+<p>
+In an analytic neighborhood \(W\) of \(H\) in \((\mathbb P^r)^*\) the projection \(I\to (\mathbb P^r)^*\) is a \(d\)-sheeted covering with \(2\) branches coming together over \(H\) and all other branches staying separate. This corresponds to a transposition in \(G\).
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+\(I(m)\) is irreducible where
+</p>
+\begin{align*}
+    I(m) = \{(p_1,...,p_m,H) ~\mid~ p_i \in H\} \subset C^m \times U.
+\end{align*}
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+\(I(m)\) is connected if and only if \(G\) acts \(m\)-transitively. We have a projection \(\pi_i:I(m)\to I\) for each \(1\leq i\leq m\) and another projection \(\pi_{m+1}:I(m) \to U\) which commutes with the map \(\rho:I\to U\). Since \(G = S_d\), it acts \(m\)-transitively and hence \(I(m)\) is connected. Since \(I(m)\to U\) is a finite covering, it being connected implies that \(I(m)\) is irreducible.
+</p>
+</details>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Uniform position theorem.)</i> Let \(C\subset \mathbb P^r\) for \(r\geq 3\) be a non-degenerate curve. Let \(H\subset (\mathbb P^r)^\times\) be a general hyperplane with respect to some linear series \(V\) on \(C\). Then any choice of \(m\)-points in \(C\cap H\) imposes the same number of conditions on \(V\). That is, \(\{p_1,...,p_m\} \subset C\cap H\) and \(\operatorname{rank}(V - \sum p_i)\) does not depend on \(p_1,...,p_m\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Set
+</p>
+\begin{align*} 
+    J_K = \{(p_1,...,p_m,H) ~\mid~ r(V-\sum p_i)\} \subseteq I(m).
+\end{align*}
+<p>
+Then \(J_K \subseteq I(m)\) is closed. Let \(K_0\) be the largest \(K\) such that \(J_K\subsetneq I(m)\). Then \(\pi_2:I(m) \to U\), then also \(\pi_2(J_{K_0})\) will be a proper closed subset. Pick \(H\not\in \pi_2(J_{K_0})\).
+</p>
+
+<p>
+We need that \(I(m)\) is an irreducible set to ensure that it doesn&rsquo;t have an irreducible component that dominates \(U\).
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+<i>(General position theorem)</i> Any \(m\leq r\) points in \(C\cap H\) are linearly independent.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Apply theorem above to \(V = \mathcal O_{\mathbb P^r}(1)|_C\). Thus any \(m\) points impose the same number of linear conditions. For \(H\) general, some \(m\)-tuple of points is linearly independence, hence all.
+</p>
+</details>
+
+<p>
+<i>Example:</i> Let \(X\) be a genus \(4\) curve, not hyperelliptic. \(X\rightarrow \mathbb P^3\), \(X = Q_2 \cap Q_3 \cong \mathbb P^1 \times \mathbb P^1\)&#x2026; didn&rsquo;t finish
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Clifford&rsquo;s theorem)</i> Let \(L\) be a line bundle on \(X\) of degree \(0\leq d\leq 2g - 2\). Then
+</p>
+<ol class="org-ol">
+<li>\(\operatorname{rank}(L) = r \leq \frac{d}{2}\)</li>
+<li>Equality holds if and only if \(L = \mathcal O_X, K_X\) or if \(L = (L')^{\otimes r}\) where \(L'\) is a \(g^1_2\) (and hence \(X\) is hyperelliptic).</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+We can prove at least part (1) today. Recall that \(L\) is special if \(h^0(L) > 0, h^1(L) > 0\). If \(L\) is not special, then \(h^0(L) = \min\{0,d-g+1\}\). If \(h^0(L) = d - g + 1\) then since \(d \leq 2g - 2\)
+</p>
+\begin{align*}
+    \operatorname{rank}(L) = d - g \leq \frac{d}{2}.
+\end{align*}
+<p>
+Thus we can assume \(L\) is special, so \(L\) and \(K_X - L\) are effective. For any two divisors \(D, D'\):
+</p>
+\begin{align*}
+    \operatorname{rank}(D) + \operatorname{rank}(D') \leq \operatorname{rank}(D + D').
+\end{align*}
+<p>
+Since \(\operatorname{rank}(D) \geq s \iff D - E\) is effective for any divisor of degree \(s\).
+Applied to \(L\) and \(K_X - L\) we get \(\operatorname{rank}(L) + \operatorname{rank}(K_X - L) \leq \operatorname{rank}(K_X) = g - 1\).
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-16" href="../../notes/algebraic-curves-16/">Algebraic Curves Lecture 16</a></li>
+    <li><a data-note="algebraic-curves-18" href="../../notes/algebraic-curves-18/">Algebraic Curves Lecture 18</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

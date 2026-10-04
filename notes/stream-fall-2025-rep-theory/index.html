@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Representation Theory — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/stream-fall-2025-rep-theory/"
+      data-note-title="Representation Theory">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#class-2-2025-08-29-spectral-theory">Class 2: [2025-08-29 Fri]  :spectral-theory:</a></li>
+    <li class="toc-l2"><a href="#class-3-2025-09-02">Class 3: [2025-09-02 Tue]</a></li>
+    <li class="toc-l2"><a href="#class-4-2025-09-04">Class 4: [2025-09-04 Thu]</a></li>
+    <li class="toc-l3"><a href="#structure-theorem-for-representations-of-finite-abelian-groups">Structure theorem for representations of finite abelian groups</a></li>
+    <li class="toc-l3"><a href="#moving-on-to-infinite-groups">Moving on to infinite groups</a></li>
+    <li class="toc-l2"><a href="#class-5-2025-09-09-fourier-series">Class 5: [2025-09-09 Tue]  :fourier-series:</a></li>
+    <li class="toc-l3"><a href="#fourier-transform">Fourier Transform</a></li>
+    <li class="toc-l3"><a href="#spectral-theorem-for-g">Spectral theorem for G</a></li>
+    <li class="toc-l3"><a href="#digression-into-chebyshev-polynomials">Digression into Chebyshev polynomials</a></li>
+    <li class="toc-l2"><a href="#class-8-2025-09-18">Class 8: [2025-09-18 Thu]</a></li>
+    <li class="toc-l3"><a href="#weyl-algebra">Weyl Algebra</a></li>
+    <li class="toc-l3"><a href="#d-modules">D-modules</a></li>
+    <li class="toc-l3"><a href="#su-2-and-so-3-and-sl-2">SU_2 and SO_3 and SL_2</a></li>
+    <li class="toc-l3"><a href="#su-2">SU(2)</a></li>
+    <li class="toc-l2"><a href="#class-9-2025-09-23">Class 9: [2025-09-23 Tue]</a></li>
+    <li class="toc-l3"><a href="#representations-of-su2">Representations of SU2</a></li>
+    <li class="toc-l3"><a href="#where-do-characters-come-from">Where do characters come from?</a></li>
+    <li class="toc-l3"><a href="#setting-up-the-peter-weyl-theorem">Setting up the Peter Weyl theorem</a></li>
+    <li class="toc-l2"><a href="#class-10-2025-09-25">Class 10: [2025-09-25 Thu]</a></li>
+    <li class="toc-l2"><a href="#class-11-2025-09-30">Class 11: [2025-09-30 Tue]</a></li>
+    <li class="toc-l3"><a href="#lie-algebras">Lie algebras</a></li>
+    <li class="toc-l2"><a href="#class-13-2025-10-07">Class 13: [2025-10-07 Tue]</a></li>
+    <li class="toc-l2"><a href="#class-14-2025-10-09">Class 14: [2025-10-09 Thu]</a></li>
+    <li class="toc-l2"><a href="#class-15-2025-10-14">Class 15: [2025-10-14 Tue]</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Representation Theory</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<div id="outline-container-class-2-2025-08-29-spectral-theory" class="outline-2">
+<h2 id="class-2-2025-08-29-spectral-theory">Class 2: <span class="timestamp-wrapper"><span class="timestamp">[2025-08-29 Fri] </span></span> :spectral-theory:</h2>
+<div class="outline-text-2" id="text-class-2-2025-08-29-spectral-theory">
+<p>
+What does it mean to diagonlize? Suppose \(T\) acts on \(V\), where \(T\) is some matrix. Then \(\Spec T \subset \mathbb C\) (here the spectrum of the matrix). For each \(\lambda \in \Spec T,\) we get \(V_\lambda \subset V\) the eigenspace corresponding to \(\lambda\).
+</p>
+
+<p>
+On \(\mathbb C\) we have a function \(x\), the identity function on \(\mathbb C\) i.e. the coordinate of \(\mathbb C\), and we can think of \(T\) acting by \(x\):
+</p>
+\begin{align*}
+T\cdot \left(v = \sum_{\lambda \in \Spec T} v_i\right)
+&= \sum \lambda_i v_i \\
+&= \sum x(\lambda_i)v_i \\
+&= x\cdot \left(\sum v_i\right)
+\end{align*}
+
+<p>
+In this way, we sent \(T\) to the function \(x \in \operatorname{Fun}(\mathbb C)|_{\Spec T}\). <b>Diagonalizing the matrix \(T\) means writing \(V\) in a basis such that the action of \(T\) is just the identity on \(V\).</b>
+</p>
+
+<p>
+Now suppose we are given a commutative ring \(R = \langle T_1, ... ,T_\ell\rangle\) and a module \(M\), and suppose we wish to simultaneously diagonalize the \(T_i\). Attach a set \(X\), the spectrum of \(R\), and consider an assignment \(\varphi: R\to \operatorname{Fun}(X).\) Then \(R\) acts via \(\varphi\):
+\[r\cdot m = r \cdot \left(\sum_{X_i \in X} m_i\right) = \varphi(r)\left(\sum m_i\right) = \sum \varphi(r)|_{X_i}\cdot m_i\]
+</p>
+
+<p>
+The big picture:
+</p>
+
+<ul class="org-ul">
+<li>Move between commutative rings and geometric objects via \(\Spec(-)\) and &ldquo;taking functions&rdquo;.</li>
+<li>Move between modules and sheaves/families of vector spaces via spectral decomposition and sections/\(\oplus\)/\(\int\).</li>
+</ul>
+
+<p>
+Groethendieck&rsquo;s version of this takes rings of the form \(\mathbb C[x_1,...,x_n]/(f_1,...,f_m)\) and affine schemes \(\subset \mathbb C^n\). Move between by taking \(\Spec\) and polynomial functions.
+</p>
+
+<p>
+Gelfand starts from a different place: he says take locally compact Hausdorff topological spaces (&ldquo;nice&rdquo; topological spaces) and commutative \(C^*\)-algebras as your rings. You use \(\Spec\) and \(C_0(-)\) to move between them (loose description). It&rsquo;s called \(C^*\)-algebra because the functions are continuous and there is an involution/complex conjugation denoted by a \(*\). These are Banach algebras.
+</p>
+
+<p>
+You could also take &ldquo;measure spaces&rdquo; as your notion of geometry, and the corresponding notion of algebra/ring is called a commutative von Neumann algebra.
+</p>
+
+<p>
+The point is that there is an algebra/geometry dictionary in place for basically any notion of geometry you desire. The latter notion is a little silly &#x2013; up to measurable equivalence, there are only five von Neumann algebras.
+</p>
+
+<p>
+In each case there is a corresponding notion of &ldquo;module&rdquo;. There is a notion of &ldquo;family of vector spaces&rdquo; for each &ldquo;algebra&rdquo;, &ldquo;continuous&rdquo; and &ldquo;measurable&rdquo;. One could think of this general dictionary as the best version of the spectral theorem.
+</p>
+
+<p>
+<b>Back down to earth</b>
+We are doing representations of compact abelian groups right now. What does this have to do with our spectral decomposition discussion above? Well, if \(G\) is any group and \(V\) is a representation (i.e. we&rsquo;ve chosen an action of \(G\) on \(V\)). This is of course equivalent to specifying a morphism \(G\to \Aut V\subset \End V\). This morphism extends to a \(\mathbb C\)-algebra moprhism \(\mathbb C G \to \End V\), where the former is called &ldquo;the free \(\mathbb C\)-algegbra on \(G\)&rdquo;. Note that there is a unique product on \(\mathbb C G\) such that
+\[\mathbb C G = \bigoplus_{g\in G}\mathbb C g.\]
+What is this product? Instead let&rsquo;s think of \(\mathbb C G\) as functions on \(G\). Given \(f,h\in \mathbb CG\), define
+\[f*h(g) = \sum_{g=g_1\cdot g_2}f(g_1)h(g_2).\]
+Note that this only works when we take \(G\) to be finite &#x2013; we can fix this by choosing \(\mathbb C G\) to be finitely supported functions on \(G\). For now, just take the group to be finite.
+</p>
+
+<p>
+Let&rsquo;s write this more geometrically. Consider the multiplication map \(m:G\times G\to G\) . Given \(f,h:G\to \mathbb C\) functions on \(G\), \(f\times h\) is a function on \(G\times G\). Then we can define
+\[f*h = \int_{m}f\times h = m_*(f\times h) = \sum_m f\times h.\]
+</p>
+
+<p>
+It is then true that \(G\) is commutative if and only if \(\mathbb C G\) is commutative. Hence to every abelian \(G\) we can attach a space \(\Spec \mathbb C G.\) We denote this space by \(\hat G\) and call it the <i>dual</i> of \(G\). Then our spectral decomposition principle will read
+</p>
+
+<p>
+\[\{\text{reps of } G\} \leftrightarrow \{\text{vector bundles over } \hat G\}\]
+</p>
+
+<p>
+Can identify \((\mathbb CG,* )\), i.e. the free \(\mathbb C\)-algebra on \(G\) with the convolution \(*\) product, with \((\mathbb C[\hat G], \cdot )\). This identification is a finite Fourier transform.
+</p>
+
+<p>
+Hidden behind all this is the fact that finite abelian groups are stupid: they&rsquo;re products of cyclic groups. Thus to understand this fully we only need to know cyclic groups. If \(G = C_n\), then \(\hat G \simeq \{\text{n}^{th} \text{ roots of unity in } \mathbb C \}\).
+</p>
+
+<p>
+<b>Digression for some facts</b>
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Schur&rsquo;s lemma: If \(V\to W\) is a morphism of irreducible representations of a group (or a ring) then the morphism is zero or an isomorphism.
+</p>
+</div>
+
+<p>
+Prove this by considering the kernel and cokernel of this morphism. Those are subrepresentations, hence are trivial.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(G\) is commutative and acts on \(V\) a finite dimensional vector space, then \(V \) is one-dimensional.
+</p>
+</div>
+
+<p>
+Another important fact: though we did not define it this way, \(\hat G\) is equivalently defined to be the set of irreducible representations of \(G\), i.e. it is \(\Hom_{gp}(G, \mathbb C^*)\).
+</p>
+
+<p>
+<b>Example</b>: The dual of the cyclic group \(C_n\) is the group of \(n\)th roots of unity in \(\mathbb C^*\). Over \(\mathbb C\) this is stupid since in this case \(C_n = \hat C_n\), but if we weren&rsquo;t over an algebraically closed field then we might have something more interesting.
+</p>
+
+<p>
+We can phrase the finite Fourier transform (in this case) as a map
+</p>
+
+<p>
+\[(\mathbb CG, * ) = \operatorname{Fun}(G) \simeq \operatorname{Fun}(\hat G) = (\mathbb C[\hat G], \cdot)\]
+</p>
+</div>
+</div>
+<div id="outline-container-class-3-2025-09-02" class="outline-2">
+<h2 id="class-3-2025-09-02">Class 3: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-02 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-class-3-2025-09-02">
+<p>
+Last time: discussed representation theory of finite abelian group.
+</p>
+
+<p>
+<b>Summary</b>: Given group \(G\), we constructed a different space \(\hat G\). There are various descriptions of it:
+</p>
+
+<ul class="org-ul">
+<li>\(\hat G = \{\text{irreducible reps of } G\}\)</li>
+<li>Because \(G\) was finite this was the same as \(\Hom_{gp}(G, \mathbb C^*)\)</li>
+<li>This was also \(\{\text{unitary reps of } G\} = \Hom_{gp}(G, U(1))\)</li>
+<li>It was also \(\Spec \mathbb CG\) (here we really thought of \(\Spec\) as \(\operatorname{MaxSpec}\)) and this is \(\Hom_{ring}(\mathbb CG, \mathbb C)\) by functor of points and algebraic closedness.</li>
+</ul>
+
+<p>
+Moreover, we saw that \(\hat G\) was also an abelian group. While this situation is particularly simple, it is stil useful to spend time on finite abelian groups to learn lessons from which we will profit once we are in the real world.
+</p>
+
+<p>
+Suppose now that \(G\) is <i>any</i> group. Given \(V, W\) any two representations of \(G\), i.e. \(\mathbb CG\)-modules, we can tensor them together to obtain \(V\otimes W\) a new \(G\)-rep. It is defined
+\[g\cdot (v\otimes w) = (g\cdot v)\otimes (g\cdot w).\]
+</p>
+
+<p>
+This is a feature of a representation &#x2013; given a \(\mathbb C\)-algebra \(A\) and \(A\)-modules \(V,W\) the tensor product \(V\otimes_{\mathbb C} W\) is not necessarily an \(A\)-module (note we&rsquo;re taking the tensor product over \(\mathbb C\), that makes the failure more clear). The failure here is due to the failure of a natural ring morphism \(A\to A\otimes_{\mathbb C} A\).
+</p>
+
+<p>
+The group operation on \(\hat G\) for an arbitrary group \(G\), defined as the set of irreducible representations, will be the tensor product. The rest of the dictionary above in the summary will break down and you have to decide what you want to keep &#x2013; this is the viewpoint we&rsquo;ll keep.
+</p>
+
+<p>
+<b>Universal Character and Pontryagin Duality</b>
+Given the group \(G\) (assumed at least to be abelian, probably also finite but abelian is more important) and the dual group \(\hat G\), the group of <i>characters</i> of \(G\), we can form the product \(G\times \hat G\). On this we have something called the <i>universal character</i> of \(G\),
+\[\chi:G\times \hat G\to \mathbb C^*, \chi(g, \hat g) = \chi_{\hat g}(g) = \hat g(g).\]
+which simply pairs \(g\) with \(\hat g\). We can vary either entry of \(\chi\). Varying the dual entry for fixed \(g\in G\) gives us a map \(\hat G\to \mathbb C^*\); that is,
+\[g\mapsto \big(\chi(g, -):\hat G\to \mathbb C^*\big)\]
+is a map \(G\to \Hom_{gp}(\hat G, \mathbb C^*) = \hat{\hat G}).\) This is a group homomorphism (easy check) and is in fact an isomorphism whenever \(G\) is a locally compact abelian group.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Pontryagin Duality)</i>. When \(G\) is a locally compact abelian group, the map \(G\to \hat{\hat G}\) given by \(g\mapsto \chi(g, -)\) is a natural isomorphism.
+</p>
+</div>
+
+<p>
+<b>Fourier Transform</b>
+The Fourier transform is
+\[\operatorname{Fun}(G)\xrightarrow{\mathbb C\text{-linear trans w/ matrix } \chi} \operatorname{Fun}(\hat G), ~ f\mapsto \hat f\]
+with
+\[\hat f(g) := \sum_{g}\chi(g,\hat g) f(g) = \int_G \chi(g, \hat g)f(g) dg.\]
+Note that here \(\operatorname{Fun}(G) = \Hom(G, \mathbb C)\), in particular these functions can assume the value of \(0\). Consider the Kronecker/indicator function on \(G\), the function
+\[\delta_g(h) = \begin{cases}1 & g = h \\ 0 &\text{else}\end{cases}.\]
+The Fourier transform takes this to
+\[\sum \chi(h,\hat g) \delta_g(h) = \chi(g,\hat g),\]
+i.e.
+\[\hat{\delta_g} = \chi(g, -)\]
+a function on \(\hat G\). Since the delta functions form a basis for \(\operatorname{Fun}(G)\), this means Fourier is an isomorphism and because \(\chi\) is a group morphism in both entries, we get \(\delta_g * \delta_h = \delta_{gh}\) and hence \(\widehat{(f*h)} = \widehat f * \widehat h.\)
+</p>
+
+<p>
+<b>Left regular representation</b>
+\(G\) acts on \(\operatorname{Fun}(G)\), and this extends to an action \(\mathbb CG\) on \(\operatorname{Fun}(G)\).
+</p>
+
+<figure class="tikz" id="tikz-f778098e5e16535b"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -84.894215 88.379809 61.903465' width='8.8380em'>
+<defs>
+<path id='tzf778098e5e16535b-g0-3' d='M1.917808-1.374844C1.927771-1.474471 2.007472-2.11208 2.007472-2.156912C2.007472-2.246575 1.932752-2.316314 1.833126-2.316314C1.728518-2.316314 1.65878-2.236613 1.65878-2.161893C1.65878-2.11208 1.733499-1.479452 1.748443-1.374844L.976339-1.838107C.926526-1.867995 .9066-1.882939 .861768-1.882939C.782067-1.882939 .692403-1.808219 .692403-1.69863C.692403-1.618929 .742217-1.569116 .797011-1.549191C1.070984-1.439601 1.354919-1.339975 1.633873-1.24533C1.354919-1.140722 .896638-.976339 .811955-.941469C.777086-.926526 .692403-.896638 .692403-.787049S.782067-.60274 .861768-.60274C.916563-.60274 1.070984-.697385 1.748443-1.110834C1.733499-1.006227 1.65878-.373599 1.65878-.323786C1.65878-.249066 1.728518-.169365 1.833126-.169365C1.932752-.169365 2.007472-.239103 2.007472-.328767C2.007472-.373599 1.927771-1.011208 1.917808-1.110834L2.704857-.637609C2.739726-.617684 2.759651-.60274 2.804483-.60274C2.884184-.60274 2.973848-.67746 2.973848-.787049C2.973848-.86675 2.924035-.916563 2.86924-.936488C2.595268-1.046077 2.311333-1.145704 2.032379-1.240349C2.311333-1.344956 2.769614-1.50934 2.854296-1.544209C2.889166-1.559153 2.973848-1.589041 2.973848-1.69863S2.884184-1.882939 2.804483-1.882939C2.759651-1.882939 2.739726-1.867995 2.689913-1.838107L1.917808-1.374844Z'/>
+<path id='tzf778098e5e16535b-g2-102' d='M2.838356-2.75467H3.521793C3.66127-2.75467 3.75193-2.75467 3.75193-2.908095C3.75193-3.005729 3.66127-3.005729 3.535741-3.005729H2.887173C3.047572-3.891407 3.103362-4.212204 3.159153-4.414446C3.194022-4.56787 3.347447-4.714321 3.514819-4.714321C3.521793-4.714321 3.710087-4.714321 3.84259-4.630635C3.556663-4.539975 3.535741-4.288917 3.535741-4.247073C3.535741-4.093649 3.654296-3.989041 3.814695-3.989041C4.002989-3.989041 4.212204-4.14944 4.212204-4.414446C4.212204-4.735243 3.870486-4.909589 3.514819-4.909589C3.20797-4.909589 2.866252-4.735243 2.677958-4.38655C2.538481-4.128518 2.48269-3.814695 2.336239-3.005729H1.785305C1.645828-3.005729 1.555168-3.005729 1.555168-2.852304C1.555168-2.75467 1.645828-2.75467 1.771357-2.75467H2.287422C2.280448-2.712827 1.841096-.202242 1.673724 .54396C1.638854 .697385 1.520299 1.227397 1.185554 1.227397C1.17858 1.227397 1.011208 1.227397 .878705 1.143711C1.164633 1.053051 1.185554 .801993 1.185554 .760149C1.185554 .606725 1.066999 .502117 .9066 .502117C.718306 .502117 .509091 .662516 .509091 .927522C.509091 1.241345 .836862 1.422665 1.185554 1.422665C1.63188 1.422665 1.93873 .962391 2.022416 .808966C2.273474 .341719 2.433873-.516065 2.447821-.599751L2.838356-2.75467Z'/>
+<path id='tzf778098e5e16535b-g2-103' d='M3.710087-2.57335C3.737983-2.677958 3.737983-2.712827 3.737983-2.719801C3.737983-2.873225 3.612453-2.942964 3.500872-2.942964C3.340473-2.942964 3.20797-2.810461 3.180075-2.677958C3.061519-2.866252 2.824408-3.075467 2.461768-3.075467C1.590037-3.075467 .676463-2.140971 .676463-1.143711C.676463-.425405 1.164633 0 1.736488 0C2.057285 0 2.364134-.160399 2.608219-.376588L2.454795 .251059C2.378082 .54396 2.329265 .732254 2.064259 .969365C1.75741 1.227397 1.457534 1.227397 1.283188 1.227397C.962391 1.227397 .871731 1.206476 .746202 1.17858C.920548 1.094894 .969365 .927522 .969365 .829888C.969365 .662516 .836862 .571856 .697385 .571856C.502117 .571856 .299875 .732254 .299875 .99726C.299875 1.415691 .899626 1.422665 1.290162 1.422665C2.385056 1.422665 2.852304 .864757 2.949938 .467248L3.710087-2.57335ZM2.747696-.927522C2.719801-.822914 2.719801-.808966 2.601245-.669489C2.357161-.376588 2.022416-.195268 1.75741-.195268C1.401743-.195268 1.234371-.495143 1.234371-.857783C1.234371-1.164633 1.422665-1.945704 1.603985-2.252553C1.896887-2.740722 2.224658-2.880199 2.461768-2.880199C2.949938-2.880199 3.082441-2.357161 3.082441-2.287422C3.082441-2.273474 3.082441-2.259527 3.061519-2.182814L2.747696-.927522Z'/>
+<path id='tzf778098e5e16535b-g1-88' d='M4.83188-4.094645L3.995019-6.07721C3.965131-6.156912 3.945205-6.196762 3.945205-6.206725C3.945205-6.266501 4.11457-6.455791 4.533001-6.495641C4.632628-6.505604 4.732254-6.515567 4.732254-6.684932C4.732254-6.804483 4.612702-6.804483 4.582814-6.804483C4.174346-6.804483 3.745953-6.774595 3.327522-6.774595C3.078456-6.774595 2.460772-6.804483 2.211706-6.804483C2.15193-6.804483 2.032379-6.804483 2.032379-6.60523C2.032379-6.495641 2.132005-6.495641 2.261519-6.495641C2.859278-6.495641 2.919054-6.396015 3.008717-6.176837L4.184309-3.39726L2.082192-1.135741L1.952677-1.026152C1.464508-.498132 .996264-.33873 .488169-.308842C.358655-.298879 .268991-.298879 .268991-.109589C.268991-.099626 .268991 0 .398506 0C.697385 0 1.026152-.029888 1.334994-.029888C1.703611-.029888 2.092154 0 2.450809 0C2.510585 0 2.630137 0 2.630137-.199253C2.630137-.298879 2.530511-.308842 2.510585-.308842C2.420922-.318804 2.11208-.33873 2.11208-.617684C2.11208-.777086 2.261519-.936488 2.381071-1.066002L3.39726-2.141968L4.293898-3.118306L5.300125-.737235C5.339975-.627646 5.349938-.617684 5.349938-.597758C5.349938-.518057 5.160648-.348692 4.772105-.308842C4.662516-.298879 4.572852-.288917 4.572852-.119552C4.572852 0 4.682441 0 4.722291 0C5.001245 0 5.69863-.029888 5.977584-.029888C6.22665-.029888 6.834371 0 7.083437 0C7.153176 0 7.272727 0 7.272727-.18929C7.272727-.308842 7.173101-.308842 7.0934-.308842C6.425903-.318804 6.405978-.348692 6.236613-.747198C5.84807-1.673724 5.180573-3.227895 4.951432-3.825654C5.628892-4.523039 6.674969-5.708593 6.993773-5.987547C7.28269-6.22665 7.66127-6.465753 8.259029-6.495641C8.388543-6.505604 8.478207-6.505604 8.478207-6.694894C8.478207-6.704857 8.478207-6.804483 8.348692-6.804483C8.049813-6.804483 7.721046-6.774595 7.412204-6.774595C7.043587-6.774595 6.665006-6.804483 6.306351-6.804483C6.246575-6.804483 6.117061-6.804483 6.117061-6.60523C6.117061-6.535492 6.166874-6.505604 6.236613-6.495641C6.326276-6.485679 6.635118-6.465753 6.635118-6.1868C6.635118-6.047323 6.525529-5.917808 6.445828-5.828144L4.83188-4.094645Z'/>
+</defs>
+<g id='tzf778098e5e16535b-page1'>
+<g stroke-miterlimit='10' transform='translate(-40.437866,-46.057038)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-29.6805,-19.49306)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.437866,-46.057038)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-31.630637,-78.089732)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-31.630637,-78.089732)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-31.630637' y='-78.089732' xlink:href='#tzf778098e5e16535b-g1-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(9.894126,-78.089732)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(9.894126,-78.089732)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='9.894126' y='-78.089732' xlink:href='#tzf778098e5e16535b-g1-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-31.630637,-46.057038)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(9.894126,-46.057038)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(9.894126,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='9.894126' y='-46.057038' xlink:href='#tzf778098e5e16535b-g1-88'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-11.79999 15.15976H11.40002' fill='none'/>
+<g transform='translate(11.6,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-2.07622,18.8736)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.437866,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.437866' y='-46.057038' xlink:href='#tzf778098e5e16535b-g2-103'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-12.59859 8.80003L11.48332-9.77658' fill='none'/>
+<g transform='matrix(0.79176,-0.61076,0.61076,0.79176,11.64165,-9.89873)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-15.76918,-8.30733)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.437866,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.437866' y='-46.057038' xlink:href='#tzf778098e5e16535b-g2-103'/>
+<use x='-36.300916' y='-49.063555' xlink:href='#tzf778098e5e16535b-g0-3'/>
+<use x='-32.135947' y='-46.057038' xlink:href='#tzf778098e5e16535b-g2-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M20.84024 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,20.84024,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(23.193,-1.74998)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.437866,-46.057038)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.437866' y='-46.057038' xlink:href='#tzf778098e5e16535b-g2-102'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+
+<p>
+We define \(\ell_g(f) = f(g^{-1}\cdot -)\), i.e. \(\ell_g(f) = f(g^{-1}x).\) In the above diagram, \(g^*f(x) = f(gx)\).
+</p>
+
+<p>
+Suppose \(\chi_{\hat g} = \chi\) is a character of \(G\), \(G\to \mathbb C^*\). Then it is also an element of \(\operatorname{Fun}(G)\).
+</p>
+
+<p>
+<i>Claim:</i> The character \(\chi\)  lives in the \(\chi^{-1}\) eigenspace for the \(G\) action on \(\operatorname{Fun}(G)\):
+\[(g* \chi)(h) = \chi(g^{-1}h) = \chi(g^{-1})\chi(h).\]
+I missed some verbal exposition here, but on the board David wrote an example of this:
+\[U(1)\cong \mathbb R/\mathbb Z \text{ acts on } L^2(U(1))\]
+and the action is \(x\cdot f(\theta) = f(\theta - x)\). Given \(f(x) = e^{2\pi i nx}\) for instance, \(y\cdot e^{2\pi i nx} = e^{2\pi i n(x - y)} = e^{-2\pi i ny}\cdot e^{2\pi i nx}\).
+</p>
+
+<p>
+This observation can be used to intuit the formula for the inverse Fourier transform, which is
+\[\hat f \mapsto \sum \hat f (\hat g) \cdot \overline{\chi}_{\hat g}(g).\]
+Here \(\overline{\chi}_{\hat g}\) is the character \(\chi\) composed with complex conjugation, and we&rsquo;re technically missing some sort of rescaling so this is only correct up to scaling.
+</p>
+
+<p>
+<b>Some sort of summary/look forward</b>
+</p>
+<ul class="org-ul">
+<li>\(\widehat{\hat G} \cong G\)</li>
+<li>Fourier transform gives an isomorphism</li>
+</ul>
+
+\begin{align*}
+L^2(G) &\simeq L^2(\hat G) \\
+\delta\text{-functions} &\leftrightarrow \text{characters} \\
+ * \text{ product}&\leftrightarrow \cdot \text{ product}
+\end{align*}
+</div>
+</div>
+<div id="outline-container-class-4-2025-09-04" class="outline-2">
+<h2 id="class-4-2025-09-04">Class 4: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-04 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-class-4-2025-09-04">
+<p>
+Today is about semisimplicity.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+The action of \(G\) on \(V\) is <b>unitarizable</b> if there exists a positive definition Hermitian inner product \(\langle, \rangle\) on \(V\) (a Hilbert space) which is \(G\)-invariant, that is, \(\langle gv, gu\rangle =\langle v, u\rangle\).
+</p>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+We say that \(V\) is <b>semisimple</b> if if is isomorphic to a direct sum of irreducible representations.
+</p>
+</div>
+
+<p>
+Given a Hilbert space \(V\), we can take the dual \(V^*\) and the conjugate \(\overline V\). The latter vector space is simply \(V\) where the action of \(\mathbb C\) is precomposed with complex conjugation. The action of \(G\) on \(V^*\) is via \(g^{-1}\) and the action on \(\overline V\) is given by composing \(g\) with the distinguished involtion \(i \in \Aut(V)\) induced by complex conjugation. A <b>Hermitian inner product</b> is an identification \(V^*\simeq \overline V\).
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(V\) is unitarizable and finite dimensional then \(V\) is semisimple.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(W\subseteq V\) be an invariant subspace. Choose an invariant inner product, this implies that \(W^\perp \subset V\). Then \(V\cong W\oplus W^\perp\) as representations. Repeating this process produces a decomposition of \(V\) into irreducibles.
+</p>
+</details>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+<i>(Maschke&rsquo;s Theorem.)</i> Let \(G\) be a finite group acting on \(V\) a finite dimensional \(\mathbb C\)-vector space. Then \(V\) is unitarizable and hence semisimple.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+This follows from the existence of \(av\in Z(\mathbb C G)\)
+\[av = \frac{1}{|G|}\sum_{g\in G}g.\]
+We use &ldquo;\(av\)&rdquo; for &ldquo;average&rdquo;.
+</p>
+
+<p>
+Given any representation \(V\) of \(G\), we define
+\[V^G = \{v \in V ~ | ~ g\cdot v = v, ~ \forall g\in G \}\]
+to be the <b>invariants</b> of \(V\). Notice that when \(G\) is finite, the element \(av\cdot v\) is an invariant:
+\[av\cdot v = \frac 1 {|G|} \sum g\cdot v  \in V^G.\]
+We call an element \(av\cdot v\) a <i>projector</i> of \(V\).
+</p>
+
+<p>
+Note also that \(av^2 = av\), i.e. \(av\) is an idempotent, so
+\[av(1 - av) = 0,\]
+and hence \(V = V^G\oplus (1 - av)V = av\cdot V \oplus (1 - av)\cdot V.\)
+</p>
+
+<p>
+We can now pick \(\langle , \rangle_0\)  to be positive definite on \(V\), and then set
+\[\langle , \rangle = av \langle , \rangle_0 = \frac1{|G|}\sum\langle g -, g-\rangle\]
+which is by definition \(G\)-invaraint, so we get unitarizable.
+</p>
+</details>
+
+<p>
+The crucial thing to learn here is the technique of using the averaging element and exploiting the fact that it is an idempotent.
+</p>
+</div>
+<div id="outline-container-structure-theorem-for-representations-of-finite-abelian-groups" class="outline-3">
+<h3 id="structure-theorem-for-representations-of-finite-abelian-groups">Structure theorem for representations of finite abelian groups</h3>
+<div class="outline-text-3" id="text-structure-theorem-for-representations-of-finite-abelian-groups">
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+If \(G\) is a finite abelian group and \(V\) is any representation, then
+\[V \cong \bigoplus_{\hat g \in \hat G} V_{\hat g}\]
+where \(V_{\hat g} = \delta_{\hat g} \cdot V\).
+</p>
+</div>
+
+<p>
+Recall that we defined \(\delta_{\hat g}:\hat G\to \mathbb C\) last time to be the indicator function on \(\hat g\).
+</p>
+</div>
+</div>
+<div id="outline-container-moving-on-to-infinite-groups" class="outline-3">
+<h3 id="moving-on-to-infinite-groups">Moving on to infinite groups</h3>
+<div class="outline-text-3" id="text-moving-on-to-infinite-groups">
+<p>
+Let \(G\) be a locally compact Hausdorff topological group (\(U(1)\), \(\mathbb R\), Lie groups, \(\GL_n(\mathbb R)\) are all examples).
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Haar&rsquo;s Theorem.)</i> There exists a <i>Haar measure</i> \(\mu\) on \(G\), unique up to \(\mathbb R_{> 0}\), characterized by the property that it is left-invariant under the group action of \(G\) on itself.
+</p>
+
+<p>
+When \(G\) is compact, we will always normalize the Haar measure by requiring \(\mu(G) = 1\).
+</p>
+</div>
+
+<p>
+Ben Zvi doesn&rsquo;t remember much measure theory (neither do I) so here are some comments:
+</p>
+<ul class="org-ul">
+<li>\(\mu(S) = \inf_{S\subset U} \mu (U) = \sup_{K\subset S} \mu(K)\) where \(U\) is open and \(K\) is compact.</li>
+<li>The measure of compact sets is finite.</li>
+</ul>
+<p>
+I believe these are true of measures on Borel subsets &#x2013; we need Borel in order to make sense of the interplay with topology.
+</p>
+
+<p>
+We can still form a thing \(av\) when \(G\) is compact.  On \(U(1)\) for instance, \(av = \frac{d\theta}{2\pi}\). Furthermore, when \(G\) is compact the Haar measure will automatically be <i>bi-invariant</i> rather than merely left-invariant. To see this, form the modular character
+\[\operatorname{mod}(g) = av/av \cdot g^{-1}.\]
+This gives a group homomorphism \(G\to \mathbb R_{> 0}\) which is trivial whenever \(G\) is Abelian or compact.
+</p>
+
+<p>
+<b>When you&rsquo;re talking about compact OR abelian groups, the Haar measure is bi-invariant.</b>
+</p>
+
+<p>
+In any case, the element \(av\) is \(G\times G\)-invariant (invariant on the left and the right).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-class-5-2025-09-09-fourier-series" class="outline-2">
+<h2 id="class-5-2025-09-09-fourier-series">Class 5: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue] </span></span> :fourier-series:</h2>
+<div class="outline-text-2" id="text-class-5-2025-09-09-fourier-series">
+<p>
+Today is Fourier series. For today, \(G = U(1) = \mathbb R/\mathbb Z\), and \(\hat G = \mathbb Z\).
+</p>
+</div>
+<div id="outline-container-fourier-transform" class="outline-3">
+<h3 id="fourier-transform">Fourier Transform</h3>
+<div class="outline-text-3" id="text-fourier-transform">
+<p>
+We get a character \(\chi_n = e^{2\pi inx}\) on \(G\) for each \(n\in \mathbb Z\). Set \(\mathcal H = L^2(U(1))\). On this we get a \(U(1)\) action, and inside of it we have a subspace consisting of the linear \(\mathbb C\)-span of the characters. The \(U(1)\) action is given by \((\tau_yf)(x) = f(x - y)\), for an element \(\tau_y \in G\). The Fourier transform is
+</p>
+
+<p>
+\[f\mapsto \hat f(n) = \langle f, \chi_n\rangle = \int f\overline \chi_{-n} dx = \int f e^{2\pi i n x}dx\]
+and it&rsquo;s true that
+\[f = \sum_{n\in \mathbb Z} \hat f(n) \chi_{-n}\]
+which means the span of characters \(\hat G\) is dense inside of \(\mathcal H\). The subject now splits into two halves, analysis and algebra. One the algebra side, we can see \(\bigoplus \mathbb C \chi_n \simeq \mathbb C[z^{\pm}]\) by setting \(z = e^{2\pi i x}\), and this is the set of algebraic functions on \(U(1)\). These algebraic functions include into various other sets of of functions on \(U(1)\); \(L^2\) as above, but also \(L^1\), \(C^\infty\) (smooth functions), \(C^\omega\), \(C^{-\omega}\), \(C^{-\infty}\) (these last two are distribution hyper functions). We have a discrete analogue for each of these, which corresponds to moving from \(G\) to \(\hat G \cong \mathbb Z\) via the Fourier transform; \(\ell^2\) the set of square-convergent series, \(\ell^1\) the set of absolutely convergent series, and then other sets for each of the other function spaces. For instance, if \(f\) is a \(C^\infty\) function on \(U(1)\), then \(\hat f \to 0\) in faster than polynomial time. If \(f\in C^\omega\), then \(\hat f \to 0\) exponentially. This sort of study of convergence correspondence between functions \(G\) and functions on \(\hat G\) is the realm of the analytic study of Fourier series.
+</p>
+
+<p>
+Fourier transform also gives us correspondences between other algebraic operations:
+</p>
+
+\begin{align*}
+\text{convolution} &\leftrightarrow \text{multiplication} \\
+\widehat{f*g} &\mapsto \hat f\cdot \hat g
+\end{align*}
+
+\begin{align*}
+\text{translation} &\leftrightarrow \text{rotations} \\
+\widehat{\tau_y f} &\mapsto e^{2\pi i n y} \hat f
+\end{align*}
+
+\begin{align*}
+\text{differentiation } n \text{ times}&\leftrightarrow \text{scaling multiplication} \\
+\widehat{\frac{d}{dx}f}(\xi) &\mapsto 2\pi i\xi \hat f(\xi)
+\end{align*}
+</div>
+</div>
+<div id="outline-container-spectral-theorem-for-g" class="outline-3">
+<h3 id="spectral-theorem-for-g">Spectral theorem for G</h3>
+<div class="outline-text-3" id="text-spectral-theorem-for-g">
+<p>
+Here we do the spectral theorem for \(G = U(1)\). Let \(\mathcal H\) now be any unitary representation, i.e. a representation on a Hilbert space \(V\) which preserves the inner product. We want to spectrally decompose \(\mathcal H\):
+\[\{\chi_n \in C(U(1)), *\}\]
+so that the basis is orthogonal and each basis element is idempotent and satisfies \(\chi_m*\chi_n = \delta_{m,n}\chi_m\). If we set \(\mathcal H_n\) to be the image of the projector \(\chi_{-n}*\underline{\phantom{\chi}}\), the expectation is that
+</p>
+
+<p>
+\[\mathcal H \supset \mathcal H^{alg} = \bigoplus \chi_{-n}*\mathcal H.\]
+On each \(\mathcal H_n\), \(U(1)\) acts via \(\chi_n\).
+</p>
+
+<p>
+Under Fourier transform, the delta function of the identity goes to the constant function \(1\) on \(\hat G = \mathbb Z\):
+</p>
+\begin{align*}
+\delta_e &\leftrightarrow \text{unit for multiplication on } \mathbb Z \\
+& = 1_{\mathbb Z} = \sum_n \delta_n.
+\end{align*}
+<p>
+The last equality is this beautiful formula for the unit identity function on \(\mathbb Z\), and it tells us that \(\delta_e = \sum \hat \delta_n\).
+</p>
+</div>
+</div>
+<div id="outline-container-digression-into-chebyshev-polynomials" class="outline-3">
+<h3 id="digression-into-chebyshev-polynomials">Digression into Chebyshev polynomials</h3>
+<div class="outline-text-3" id="text-digression-into-chebyshev-polynomials">
+<p>
+We&rsquo;ll do this only for \(\cos \theta\), you can do it for \(\sin \theta\) as well of course. Observe that since
+\[\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2},\]
+\(\cos n\theta\) is a polynomial in \(\cos \theta\).  The \(n\)th Chebyshev polynomial is precisely the polynomial with the feature that \[T_n(\cos \theta)^2 = \cos n\theta.\]
+This gives us a bijection
+\[\{\cos n\theta\} \text{ on } U(1) \leftrightarrow \{T_n\} \text{ on [-1,1]}.\]
+They are orthogonal polynomials for weight \(\frac{1}{\sqrt{1 - x^2}}:\)
+\[\int T_nT_m \frac{1}{\sqrt{1 - x^2}}dx = \delta_{mn} T_m = \delta_{mn} T_n.\]
+The first few are
+</p>
+<ul class="org-ul">
+<li>\(T_0 = 1\)</li>
+<li>\(T_1 = x\)</li>
+<li>\(T_2 = 2x^2 - 1\)</li>
+<li>\(T_3 = 4x^3 - 3x\)</li>
+<li>\(T_4 = 8x^4 - 8x^2 + 1\)</li>
+</ul>
+<p>
+and they satisfy the recursion \(T_{n+1}(x) = 2x T_n(x) - T_{n-1}(x)\). This is a \(2\)nd order difference equation in \(n\). We can view \(T_n(x)\) as a function on \(\mathbb Z\times U(1)\), i.e. \(\hat G\times G\).
+</p>
+
+<p>
+Difference equations/recurrance relations are hard, but under Fourier transform this becomes a second order algebraic equation for \(\cos n\theta\) as a function on \(U(1)\). <b>This recurrence relation is like a differential equation in the \(n\) (\(\mathbb Z\)) variable.</b>
+</p>
+
+<p>
+Some other scattered notes:
+</p>
+
+<ul class="org-ul">
+<li>A harmonic polynomial on \(\mathbb R^2\) is one in the kernel of the Laplace operator \(\Delta_{\mathbb R^2} = \partial_x^2 + \partial_y^2.\)</li>
+<li>A homogeneous polynomial of degree \(k\) on \(\mathbb R^2\) is an eigenvalue for \(\Delta_{S^1} = \partial_r^2\) on the circle \(S^1\), with eigenvalue \(k\).</li>
+<li>\(\Delta_{\mathbb R^2} f = 0\) for \(f\) a homogeneous polynomial of degree \(k\) if and only if \(\Delta_{S^1} f|_{S^1} = k\cdot f|_{S^1}\)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-class-8-2025-09-18" class="outline-2">
+<h2 id="class-8-2025-09-18">Class 8: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-18 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-class-8-2025-09-18">
+<p>
+<b>Exercise:</b> \(U(1) \to H \to G\times \hat G\) where \(H\) is the Heisenberg group. Let \(W\) act on \(H\) and decompose it into eigenspaces:
+</p>
+
+<p>
+\[W = \bigoplus_{g\in \hat{\hat G}} W_g\]
+given \(w \in W_h\), \(\hat g\cdot w = \chi(h\hat g) w\) fo some character \(\chi\). Not sure what the rest of the point was here.
+</p>
+</div>
+<div id="outline-container-weyl-algebra" class="outline-3">
+<h3 id="weyl-algebra">Weyl Algebra</h3>
+<div class="outline-text-3" id="text-weyl-algebra">
+<p>
+The operators \(x\) and \(\partial\) generate the Weyl algebra. We&rsquo;ve been talking about \(L^2(\mathbb R)\), but these operators don&rsquo;t necessarily preserve this space. A different space we can consider is the <i>Schwarz space</i> \(S(\mathbb R) \subset C^\infty(\mathbb R)\). It is preserved by multiplication by polynomials and by differentiation. Its <i>dual</i> \(S'(\mathbb R)\) is the space of <i>tempered distributions</i>.
+</p>
+
+<p>
+The Weyl algebra is
+</p>
+
+<p>
+\[D = \mathbb C\langle x,\partial \rangle/(\partial x - x\partial = 1)\]
+because \(\partial(xf) = x(\partial f) + (\partial x) f = x(\partial f) + f.\)
+</p>
+
+<p>
+The Schwarz space is also preserved by the Fourier transform. It also contains all the characters \(e^{\lambda x}\) which we like.
+</p>
+
+<p>
+The Schwarz space is a good place for differential equations, is also a good space for algebra.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+The Weyl algebra \(D\) has no finite dimensional modules (no modules which are finite dimensional over the copy of \(\mathbb C\)).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+This is easy when you look at traces. We get that
+</p>
+\begin{align*}
+\dim V &= \Tr_V(\Id) \\
+&= \Tr_V(\partial x - x\partial) \\
+&= \Tr_V(\partial x) - \Tr_V(x\partial) = 0.
+\end{align*}
+
+<p>
+So we&rsquo;re done.
+</p>
+</details>
+
+<p>
+Ben Zvi says that this Lemma is a math version of the Heisenberg uncertainty principle, because it says not only can you not simultaneously diagonalize \(x\) and \(\partial\), you cannot simultaneously find <i>any</i> finite dimensional spaces which they both fix.
+</p>
+</div>
+</div>
+<div id="outline-container-d-modules" class="outline-3">
+<h3 id="d-modules">D-modules</h3>
+<div class="outline-text-3" id="text-d-modules">
+<p>
+While the Heisenberg group has only one irreducible representation (and it&rsquo;s very interesting) the Weyl algebra has many representations.
+</p>
+
+<p>
+A \(D\)-module is a system of linear PDEs with polynomial coefficients. For example:
+\[M = D/D(\partial -\lambda).\]
+Consider now the space \(\Hom_D(M, S')\), here we&rsquo;re taking \(S'\) as a function space but it can really be any function space. Any morphism \(M \to S'\) must preserve the relation \((\partial -\lambda)1_M = 0\), hence the image of \(1_M\) must be some function \(f\) so that \((\partial - \lambda)f = 0\), i.e. \(f\) must be a solution to the differential equation \(\partial f - \lambda f= 0\). The solution space to this guy is \(\{Ce^{\lambda x}\}\cong \mathbb C\).
+</p>
+
+<p>
+You still have an action of \(x\) on this guy, so \(p(x)\cdot 1_M \mapsto p(x)e^{\lambda x}\).
+</p>
+
+<p>
+You can get the <i>Hermite polynomials</i> from D-modules too, take the \(D\)-module \(M = D/(x - \partial)D\), consider the image of \((x - \partial^n)1_M\) under a morphism to some function space. It&rsquo;s image turns out to be \(H_ne^{- \frac{1}{2} x^2}\), where \(H_n\) is the \(n\)th Hermite polynomial.
+</p>
+</div>
+</div>
+<div id="outline-container-su-2-and-so-3-and-sl-2" class="outline-3">
+<h3 id="su-2-and-so-3-and-sl-2">SU_2 and SO_3 and SL_2</h3>
+<div class="outline-text-3" id="text-su-2-and-so-3-and-sl-2">
+<p>
+\[U(1) = \{z \in \mathbb C^* | \|z\| = 1.\}\]
+Alternatively,
+\[\mathbb C\simeq\left\{\begin{pmatrix}x & y \\ -y & x\end{pmatrix}\right\}\subset \Mat_2\mathbb R\]
+\[U(1) \cong \left\{\begin{pmatrix}x & y \\ -y & x\end{pmatrix}\right\} \cap \SL_2(\mathbb R)\]
+</p>
+
+<p>
+Why write \(U(1)\) in this annoying way? Because it&rsquo;s more natural to complexify this. When you do that you get
+\[\mathbb R^4 \simeq \mathbb C^2 \simeq \mathbb H,\]
+the quanternions. It&rsquo;s given by
+\[\mathbb H = \left\{\begin{pmatrix}z & w \\ -\overline w & \overline z\end{pmatrix}\right\}\subset \Mat_{2\times 2}\mathbb C.\]
+The 3-sphere \(S^3\) is the set of above matrices where \(\det = 1\), and is if you like \(\mathbb H \cap \SL_2(\mathbb C).\)
+</p>
+
+<p>
+Therefore, the elements of unit length in \(\mathbb R\), \(\mathbb C\) and \(\mathbb H\) give you \(S^0 = \{\pm 1\}\), \(S^1\) and \(S^3\) respectively. Cool.
+</p>
+</div>
+</div>
+<div id="outline-container-su-2" class="outline-3">
+<h3 id="su-2">SU(2)</h3>
+<div class="outline-text-3" id="text-su-2">
+<p>
+The second unitary group \(U(2)\) is the set of all \(2\times 2\) matrices \(A\) in \(\Mat_{2\times 2}(\mathbb C)\) so that \(A\overline A^\top = \Id\). The group \(SU(2)\) is the subset of \(U(2)\) where \(\det = 1\).
+</p>
+
+<p>
+\(SU(2)\) acts on the quanternions in two obvious ways, on the left and by conjugation. Conjugation fixes a copy of \(\mathbb R\) inside \(\mathbb H\), \(\mathbb R\cdot 1_{\mathbb H}\)which yields a decomposition \(\mathbb H \cong \mathbb R\oplus \mathbb R^3\) where the thing on the right is elements of the form \(ai + bj + ck\). The action of \(\mathbb H\) on this copy of \(\mathbb R^3\) gives us a map \(SU(2)\to SO(3)\), where \(SO(3)\) is orthogonal orientation-preserving transformations of \(\mathbb R^3\), and we get
+\[SO(3) \cong SU(2)/\{\pm 1\}.\]
+To get this we have to argue the above map is surjective with kernel \(\{\pm 1\}\), but this is straightforward.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-class-9-2025-09-23" class="outline-2">
+<h2 id="class-9-2025-09-23">Class 9: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-23 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-class-9-2025-09-23">
+</div>
+<div id="outline-container-representations-of-su2" class="outline-3">
+<h3 id="representations-of-su2">Representations of SU2</h3>
+<div class="outline-text-3" id="text-representations-of-su2">
+<p>
+<b>\(U(1)\) inside of \(SU_2\)</b>
+</p>
+
+<p>
+Take a representation \(\SU_2 \circlearrowright V\) on a finite dimensional \(\mathbb C\)-vector space. Inside of \(\SU_2\) is a copy of \(U(1)\), which gives you a representation of \(U(1)\). As a representation of \(U(1)\), \(V\) decomposes as
+\[V\simeq \bigoplus_{n\in \mathbb Z} V_n\]
+where each eigenspace \(V_n \cong \mathbb C^{\dim V_n} \otimes \mathbb C_{\chi_n}\) where \(\mathbb C_{\chi_n}\) is \(\mathbb C\) as a vector space but has an action by \(U(1)\) given by the character \(\chi_n\). This gives us a linear map \(\mathbb Z\to \mathbb Z\) by \(n\mapsto \dim V_n\). Viewing \(\mathbb Z\) as the dual of \(\mathbb Z\), we get a corresponding map \(U(1)\) to the group of characters \(\widehat{U(1)}\)
+\[z\mapsto \chi_V(z) := \sum_{n\in \mathbb Z}(\dim V_n)z^n \in \mathbb C[z, z^{-1}]\]
+The term \(\dim V_n\) is equal to the trace \(\Tr z|_{V_n}\), and \(z = e^{i\theta}\) acts on \(V_n\)by \(e^{in\theta} = z^n\). We view \(z\) as a linear map acting on \(V_n\) by writing it as the matrix
+</p>
+
+<p>
+\[z\cdot = \begin{pmatrix}z^n & & 0 \\
+& \ddots & \\ 0 & & z^n\end{pmatrix}.\]
+</p>
+
+<p>
+Given a \(z\in U(1)\), therefore, \(\chi_V(z) = \Tr_{V}z.\) The map \(g \mapsto \chi_V(g) = \Tr_V(g)\) is therefore invariant under conjugation. Not sure I see this, I think Ben Zvi said something aloud which I didn&rsquo;t catch.
+</p>
+
+<p>
+<b>\(\mathbb Z/2\mathbb Z\) inside of \(\SU_2\)</b>
+</p>
+
+<p>
+We have a copy of \(\mathbb Z/2\mathbb Z\) inside of \(SU_2\) giving us \(\mathbb Z/2\mathbb Z = \{\pm \Id\}\hookrightarrow \SU_2\simeq S^3 \to \SO_3\cong \mathbb {RP}^3\). An irreducible action \(\{\pm \Id\} \}\) on \(V\) is either
+</p>
+<ul class="org-ul">
+<li><i>even</i> meaning it corresponds to an irreducible representation of \(\SO_3\) or</li>
+<li><i>odd</i> meaning it corresponds to a genuine irreducible representaiton of \(\SU_2\).</li>
+</ul>
+
+<p>
+The group \(\{\pm \Id \}\) also sits inside of \(U(1)\), and an irreducible representation is even if and only if it corresponds to a subrepresentation \(\chi_n\) where \(n\) is even, similar to odd.
+</p>
+
+<p>
+If \(V\) is an <i>even</i> irreducible representation then \(V\simeq \bigoplus_{n \text{ even}} V_n\) and we can do the same for the odd representations. This is known as the <i>weight decomposition</i>, it means we decompose \(V\) under \(T = U(1)\). So in general, the weight decomposition of a group action on \(V\) is a decomposition of \(V\)into its \(T\)-weight spaces, where \(T\) is the maximal torus of \(G\).
+</p>
+
+<p>
+\[T\subset G \circlearrowright \bigoplus_{n\in \text{ irreps of } T} V_n ~\text{ (reps of } T\text{)}\]
+The torus \(T\) of course sits inside its normalizer \(N(T) \subset G\), and we call the quotient group \(N(T) / T\) the <i>Weyl group</i> \(W\) of \(G\). In the case of \(\SU_2\), \(W \cong \mathbb Z/2\mathbb Z\) because it turns out \(N(T) \cong U(1) \rtimes \mathbb Z/2\mathbb Z.\)
+</p>
+
+<p>
+<b>What if we change the choice of \(T\)?</b>
+</p>
+
+<p>
+This question is reminiscent of the Sylow theorems; that is, it&rsquo;s similar to the question of &ldquo;what happens when I change my \(p\)-Sylow group?&rdquo; The answer is similar too:
+</p>
+
+<p>
+<b>All choices of maximal torus \(T\) in a compact group \(G\) are conjugate.</b>
+</p>
+
+<p>
+Furthermore, for \(SU_2\) specifically, any group element \(g\in SU_2\) fixes an axis and hence is contained in a maximal torus. Therefore the group of conjugacy classes in \(SU_2\) (acting on itself by conjugacy) is isomorphic to \(U(1)/(\mathbb Z/2\mathbb Z) \cong \mathbb {RP}^1\). <i>Class functions</i> on \(SU_2\) (those functions invariant under conjugacy) are therefore the same as palindromic functions on \(U(1)\) (i.e. functions on \(\mathbb {RP}^1\)).
+</p>
+</div>
+</div>
+<div id="outline-container-where-do-characters-come-from" class="outline-3">
+<h3 id="where-do-characters-come-from">Where do characters come from?</h3>
+<div class="outline-text-3" id="text-where-do-characters-come-from">
+<p>
+Claim is they come from something called matrix elements of \(G\circlearrowright V\). Given an element \(w\in V^*\) and \(v\in V\), we can write down a function \(f_{v,w}\) on \(G\) given by
+\[g\mapsto \langle w, g\cdot v\rangle \in \mathbb C.\]
+When \(w\) and \(v\) are chosen to be elements \(e^*_j\) and \(e_i\) basis elements of the dual and the vector space, \(f_{v,w}\) is the \(ij^{th}\) entry of a matrix representing \(g\) in that basis. This gives us a morphism
+\[V\otimes V^* \xrightarrow{G\times G\text{ map}} C(G) \subset L^2(G).\]
+This gives us a way to map representations of \(G\) into \(L^2(G)\) in a canonical way. This is called the <i>matrix element map</i>.
+</p>
+
+<p>
+Note that if \(V\) is an irrep for \(G\) then \(V\otimes V^*\) is an irrep for \(G\times G\), which implies the matrix element map is \(0\) or is injective (probably some sort of Schur&rsquo;s lemma thing?). When \(V \neq 0\) is an irreducible representation we have an isomorphism
+\[V\otimes V^* \cong \End V.\]
+In \(\End(V)\) we have a distinguished element \(\Id_V\), but it&rsquo;s not so obvious what the corresponding element over in \(V\otimes V^*\) should be. It&rsquo;s \(\sum e_i\otimes e^*_i\), and the matrix element corresponding to this element is the trace map!
+\[g\mapsto \langle e^*_i, g\cdot e_i\rangle = \Tr_V(g).\]
+\(\Tr_V(g = 1) = \dim V \neq 0\), so this is a non-trivial map.
+</p>
+</div>
+</div>
+<div id="outline-container-setting-up-the-peter-weyl-theorem" class="outline-3">
+<h3 id="setting-up-the-peter-weyl-theorem">Setting up the Peter Weyl theorem</h3>
+<div class="outline-text-3" id="text-setting-up-the-peter-weyl-theorem">
+<p>
+This is the analog of Fourier series for non-abelian compact groups. We&rsquo;ll get to this next time.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+(Peter-Weyl Theorem). The matrix elements are dense inside of \(L^2(G)\):
+\[L^2(G)\cong \overline{\left(\bigoplus_{V\text{ irreps }} V\otimes V^*\right)}\]
+For \(G = U(1)\), the matrix elements are literally Fourier series.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-class-10-2025-09-25" class="outline-2">
+<h2 id="class-10-2025-09-25">Class 10: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-25 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-class-10-2025-09-25">
+<p>
+Back to Peter-Weyl. \(G\) a compact group, take it to be \(\SU_2\) if you like. If \(V\) is any finite dimensional representation then
+\[\Mat_V:V\otimes V^* \to C(G), ~v\otimes w\mapsto (g\mapsto \langle w, g\cdot v\rangle)\]
+is a \(G\times G\) representation. It sends \(\id_V\) to \(\chi_V\).
+</p>
+
+<ul class="org-ul">
+<li>When \(V\) is irreducible \(\Mat_V\) is injective.</li>
+<li>When \(V,W\) are distinct irreducible representations, \[\Mat_{V,W}:\End V\oplus \End W\oplus \Hom(V,W)\oplus \Hom(W,V)\hookrightarrow C(G)\]</li>
+</ul>
+<p>
+but \(\Hom(V,W)\) and \(\Hom(W,V)\) both vanish.
+</p>
+
+<p>
+&lt;Missed some content&gt;
+</p>
+
+<p>
+In addition to the \(\Mat\) map, we also have a map going the other way:
+\[\operatorname{Act}:C(G)\to \End(V).\]
+For each \(f\in C(G)\) we have a measure \(\mu_f = f\cdot dg\). We can therefore send to \(f\) to the averaging action of \(G\) on the vector space \(V\) &ldquo;twisted&rdquo; by \(f\):
+\[f\mapsto (V\ni v \mapsto \int_G (g\cdot v) \mu_f = \int_G (g\cdot v)\cdot f(g)dg.\]
+This is different from the case of finite groups because the group action itself is not contained in the image of \(\operatorname{Act}\). That is, in the finite group case the delta function \(\delta_g:G\to \mathbb R\) is a continuous function, and the image of \(v\) under the endomorphism \(\operatorname{Act}(\delta_g)\) is just \(g\cdot v\). We no longer have these, since the \(\delta\)-functions are no longer continuous.
+</p>
+
+\begin{align*}
+  \int_G \langle W, g\cdot v\rangle d\mu
+&= \left\langle w, \int_G g\cdot v d\mu\right\rangle \\
+&= w ~...
+\end{align*}
+
+<p>
+&lt;Missed content&gt;
+</p>
+
+<p>
+When \(G\) is compact, \(V\) is any rep define
+\[V^{fin} = \{v\in V : v\text{ contained in a f.d. subrep of } V\}\]
+then
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+\(\{\text{matrix elements}\} = C(G)^{fin} = \{\text{algebraic functions on } G\}\)
+</p>
+</div>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+The morphism
+\[\left(\bigoplus_{\substack{V\text{ unitary }\\ \text{f.d. irrep }}} V\otimes V^*, ~ \frac{1}{\dim V} \langle ~,~ \rangle_V \otimes \overline{\langle ~, ~\rangle}_{V^*} \right)\xrightarrow{\sim} \left(C^{fin}(G), \langle ~, ~\rangle_{L^2}\right)\]
+is a unitary isomorphism.
+</p>
+</div>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+\[\langle \chi_V, \chi_W\rangle = \dim \Hom_{G}(V, W)\]
+in other words,
+\[\text{irreducible orthonormal characters} = 1 \text{ or } 0 \text{ for irreps}\]
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-class-11-2025-09-30" class="outline-2">
+<h2 id="class-11-2025-09-30">Class 11: <span class="timestamp-wrapper"><span class="timestamp">[2025-09-30 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-class-11-2025-09-30">
+<p>
+References for today: Segal, \(\SU_2\), Milicic.
+</p>
+
+<p>
+Peter-Weyl: \(L^2(G)^G\simeq \ell^2(\hat G, \frac{1}{\dim })\) orthonormal basis formed from irreducible unitary characters.
+</p>
+
+<p>
+Restricting a function \(f\in L^2(G)^G\) to the torus \(U(1)\) gives a function in \(L^2(T)^W\), it gives even functions on \(S^1\). For \(G = \SU_2\) we hvae \(W = \mathbb Z/2\).
+</p>
+
+<p>
+<b>Weyl Integration Formula:</b> \(f \in L^2(G)^G\), then
+\[\int_G f d\mu = \int_T f(t)\rho(t)dt.\]
+Radial parts: \(G/T^\times: T\xrightarrow{r} G\), \((g, t)\mapsto gtg^{-1}\).
+</p>
+
+
+<div class="org-center">
+<figure class="tikz" id="tikz-1c5db50d2309a912"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -86.90029 145.415623 70.243955' width='14.5416em'>
+<defs>
+<path id='tz1c5db50d2309a912-g2-87' d='M7.224907-3.940224L7.350436-4.121544C7.496887-4.309838 7.664259-4.484184 8.005978-4.51208C8.08269-4.519054 8.166376-4.526027 8.166376-4.665504C8.166376-4.714321 8.124533-4.763138 8.068742-4.763138C7.908344-4.763138 7.706102-4.735243 7.53873-4.735243C7.294645-4.735243 6.99477-4.763138 6.764633-4.763138C6.729763-4.763138 6.618182-4.763138 6.618182-4.609714C6.618182-4.519054 6.715816-4.51208 6.743711-4.51208C6.897136-4.505106 7.127273-4.463263 7.127273-4.267995C7.127273-4.191283 7.05056-4.065753 7.022665-4.016936L5.05604-.788045L4.672478-4.309838C4.672478-4.505106 5.076961-4.51208 5.160648-4.51208C5.251308-4.51208 5.348941-4.51208 5.348941-4.665504C5.348941-4.672478 5.341968-4.763138 5.230386-4.763138C5.097883-4.763138 4.930511-4.749191 4.798007-4.742217C4.658531-4.735243 4.47721-4.735243 4.337733-4.735243C4.177335-4.735243 3.765878-4.763138 3.605479-4.763138C3.57061-4.763138 3.466002-4.763138 3.466002-4.609714C3.466002-4.51208 3.556663-4.51208 3.647323-4.51208C3.947198-4.51208 3.982067-4.463263 4.002989-4.393524C4.009963-4.351681 4.02391-4.156413 4.051806-3.940224L2.133998-.788045L1.764384-4.20523C1.764384-4.233126 1.750436-4.302864 1.750436-4.309838C1.750436-4.51208 2.182814-4.51208 2.238605-4.51208C2.329265-4.51208 2.426899-4.51208 2.426899-4.665504C2.426899-4.6934 2.405978-4.763138 2.315318-4.763138C2.113076-4.763138 1.617933-4.735243 1.415691-4.735243C1.185554-4.735243 .892653-4.763138 .683437-4.763138C.613699-4.763138 .54396-4.735243 .54396-4.616687C.54396-4.51208 .627646-4.51208 .739228-4.51208C1.066999-4.51208 1.066999-4.470237 1.08792-4.29589L1.555168-.048817C1.569116 .09066 1.57609 .139477 1.701619 .139477C1.820174 .139477 1.868991 .076712 1.910834 0L4.086675-3.584558L4.470237-.041843C4.484184 .104608 4.519054 .139477 4.623661 .139477C4.742217 .139477 4.78406 .076712 4.832877-.006974L7.224907-3.940224Z'/>
+<path id='tz1c5db50d2309a912-g2-114' d='M1.638854-1.408717C1.645828-1.45056 1.806227-2.078207 1.820174-2.113076C1.834122-2.168867 2.036364-2.517559 2.259527-2.684932C2.336239-2.740722 2.524533-2.880199 2.824408-2.880199C2.894147-2.880199 3.068493-2.873225 3.20797-2.782565C2.984807-2.719801 2.901121-2.524533 2.901121-2.399004C2.901121-2.245579 3.019676-2.140971 3.180075-2.140971S3.57061-2.273474 3.57061-2.566376C3.57061-2.929016 3.187049-3.075467 2.831382-3.075467C2.468742-3.075467 2.154919-2.929016 1.84807-2.580324C1.72254-3.005729 1.297136-3.075467 1.129763-3.075467C.871731-3.075467 .697385-2.915068 .585803-2.719801C.425405-2.447821 .327771-2.043337 .327771-2.008468C.327771-1.917808 .425405-1.917808 .446326-1.917808C.54396-1.917808 .550934-1.93873 .599751-2.127024C.704359-2.552428 .836862-2.880199 1.108842-2.880199C1.290162-2.880199 1.338979-2.726775 1.338979-2.538481C1.338979-2.405978 1.276214-2.147945 1.227397-1.959651S1.108842-1.48543 1.073973-1.332005L.850809-.439352C.822914-.348692 .781071-.174346 .781071-.153425C.781071 0 .9066 .069738 1.018182 .069738C1.12279 .069738 1.262267 .006974 1.318057-.132503C1.332005-.174346 1.408717-.481196 1.45056-.655542L1.638854-1.408717Z'/>
+<path id='tz1c5db50d2309a912-g3-49' d='M2.336239-4.435367C2.336239-4.623661 2.322291-4.630635 2.127024-4.630635C1.680697-4.191283 1.046077-4.184309 .760149-4.184309V-3.93325C.927522-3.93325 1.387796-3.93325 1.771357-4.128518V-.571856C1.771357-.341719 1.771357-.251059 1.073973-.251059H.808966V0C.934496-.006974 1.792279-.027895 2.050311-.027895C2.266501-.027895 3.145205-.006974 3.29863 0V-.251059H3.033624C2.336239-.251059 2.336239-.341719 2.336239-.571856V-4.435367Z'/>
+<path id='tz1c5db50d2309a912-g3-50' d='M3.521793-1.26924H3.284682C3.263761-1.115816 3.194022-.704359 3.103362-.63462C3.047572-.592777 2.510585-.592777 2.412951-.592777H1.129763C1.862017-1.241345 2.106102-1.436613 2.524533-1.764384C3.040598-2.175841 3.521793-2.608219 3.521793-3.270735C3.521793-4.11457 2.782565-4.630635 1.889913-4.630635C1.025156-4.630635 .439352-4.02391 .439352-3.382316C.439352-3.02665 .739228-2.991781 .808966-2.991781C.976339-2.991781 1.17858-3.110336 1.17858-3.361395C1.17858-3.486924 1.129763-3.731009 .767123-3.731009C.983313-4.226152 1.457534-4.379577 1.785305-4.379577C2.48269-4.379577 2.84533-3.835616 2.84533-3.270735C2.84533-2.66401 2.412951-2.182814 2.189788-1.931756L.509091-.27198C.439352-.209215 .439352-.195268 .439352 0H3.312578L3.521793-1.26924Z'/>
+<path id='tz1c5db50d2309a912-g3-58' d='M1.527273-2.601245C1.527273-2.84533 1.332005-3.005729 1.129763-3.005729C.885679-3.005729 .72528-2.810461 .72528-2.608219C.72528-2.364134 .920548-2.203736 1.12279-2.203736C1.366874-2.203736 1.527273-2.399004 1.527273-2.601245ZM1.527273-.397509C1.527273-.641594 1.332005-.801993 1.129763-.801993C.885679-.801993 .72528-.606725 .72528-.404483C.72528-.160399 .920548 0 1.12279 0C1.366874 0 1.527273-.195268 1.527273-.397509Z'/>
+<path id='tz1c5db50d2309a912-g3-97' d='M3.110336-1.868991C3.110336-2.238605 3.110336-2.503611 2.789539-2.761644C2.503611-2.998755 2.168867-3.110336 1.75741-3.110336C1.094894-3.110336 .627646-2.859278 .627646-2.433873C.627646-2.21071 .781071-2.092154 .962391-2.092154C1.150685-2.092154 1.290162-2.231631 1.290162-2.419925C1.290162-2.538481 1.234371-2.684932 1.046077-2.740722C1.297136-2.915068 1.701619-2.915068 1.743462-2.915068C2.133998-2.915068 2.559402-2.657036 2.559402-2.071233V-1.855044C2.175841-1.841096 1.715567-1.820174 1.206476-1.63188C.578829-1.401743 .383562-1.018182 .383562-.704359C.383562-.104608 1.108842 .069738 1.603985 .069738C2.161893 .069738 2.489664-.244085 2.636115-.516065C2.66401-.230137 2.852304 .034869 3.173101 .034869C3.187049 .034869 3.863512 .034869 3.863512-.627646V-1.011208H3.626401V-.63462C3.626401-.564882 3.626401-.230137 3.368369-.230137S3.110336-.557908 3.110336-.648568V-1.868991ZM2.559402-.983313C2.559402-.313823 1.973599-.125529 1.659776-.125529C1.30411-.125529 .969365-.36264 .969365-.704359C.969365-1.08792 1.30411-1.624907 2.559402-1.673724V-.983313Z'/>
+<path id='tz1c5db50d2309a912-g3-99' d='M2.712827-2.782565C2.587298-2.726775 2.517559-2.615193 2.517559-2.475716C2.517559-2.287422 2.650062-2.147945 2.84533-2.147945C3.033624-2.147945 3.180075-2.266501 3.180075-2.489664C3.180075-3.110336 2.21071-3.110336 2.015442-3.110336C.969365-3.110336 .320797-2.308344 .320797-1.506351C.320797-.627646 1.066999 .069738 1.980573 .069738C3.019676 .069738 3.263761-.753176 3.263761-.836862S3.173101-.920548 3.145205-.920548C3.054545-.920548 3.047572-.899626 3.012702-.801993C2.859278-.369614 2.489664-.153425 2.064259-.153425C1.583064-.153425 .955417-.509091 .955417-1.513325C.955417-2.399004 1.387796-2.887173 2.036364-2.887173C2.127024-2.887173 2.461768-2.887173 2.712827-2.782565Z'/>
+<path id='tz1c5db50d2309a912-g3-101' d='M3.068493-1.590037C3.214944-1.590037 3.263761-1.590037 3.263761-1.743462C3.263761-2.357161 2.922042-3.110336 1.882939-3.110336C.969365-3.110336 .27198-2.385056 .27198-1.527273C.27198-.641594 1.046077 .069738 1.973599 .069738C2.915068 .069738 3.263761-.683437 3.263761-.836862C3.263761-.864757 3.249813-.934496 3.145205-.934496C3.054545-.934496 3.040598-.892653 3.019676-.822914C2.803487-.258032 2.273474-.153425 2.022416-.153425C1.694645-.153425 1.380822-.299875 1.171606-.564882C.913574-.892653 .9066-1.318057 .9066-1.590037H3.068493ZM.913574-1.771357C.990286-2.75467 1.617933-2.915068 1.882939-2.915068C2.740722-2.915068 2.768618-1.945704 2.775592-1.771357H.913574Z'/>
+<path id='tz1c5db50d2309a912-g3-103' d='M1.004234-1.241345C1.108842-1.17858 1.3599-1.025156 1.764384-1.025156C2.48269-1.025156 3.005729-1.506351 3.005729-2.050311C3.005729-2.322291 2.880199-2.538481 2.712827-2.719801C3.02665-2.942964 3.29863-2.949938 3.417186-2.949938C3.38929-2.922042 3.354421-2.894147 3.354421-2.782565C3.354421-2.643088 3.459029-2.559402 3.577584-2.559402C3.675218-2.559402 3.800747-2.629141 3.800747-2.789539S3.668244-3.145205 3.38929-3.145205C3.284682-3.145205 2.908095-3.124284 2.580324-2.824408C2.371108-2.977833 2.078207-3.075467 1.771357-3.075467C1.053051-3.075467 .530012-2.594271 .530012-2.050311C.530012-1.778331 .669489-1.527273 .864757-1.345953C.808966-1.283188 .655542-1.053051 .655542-.781071C.655542-.690411 .676463-.36264 .948443-.160399C.63462-.055791 .27198 .174346 .27198 .536986C.27198 1.046077 1.039103 1.429639 1.980573 1.429639C2.866252 1.429639 3.689166 1.080946 3.689166 .523039C3.689166 .313823 3.605479-.062765 3.221918-.27198C2.810461-.488169 2.399004-.488169 1.72254-.488169C1.569116-.488169 1.318057-.488169 1.262267-.495143C1.039103-.54396 .913574-.753176 .913574-.955417C.913574-1.129763 .962391-1.185554 1.004234-1.241345ZM1.771357-1.234371C1.08792-1.234371 1.08792-1.903861 1.08792-2.050311C1.08792-2.161893 1.08792-2.440847 1.227397-2.622167C1.325031-2.740722 1.513325-2.866252 1.764384-2.866252C2.447821-2.866252 2.447821-2.196762 2.447821-2.050311C2.447821-1.93873 2.447821-1.659776 2.308344-1.478456C2.21071-1.3599 2.022416-1.234371 1.771357-1.234371ZM1.771357-.020922C2.39203-.020922 3.263761-.020922 3.263761 .530012C3.263761 .899626 2.712827 1.220423 1.980573 1.220423S.697385 .892653 .697385 .530012C.697385 .285928 .920548-.013948 1.366874-.020922H1.771357Z'/>
+<path id='tz1c5db50d2309a912-g3-105' d='M1.471482-4.302864C1.471482-4.505106 1.30411-4.700374 1.066999-4.700374C.857783-4.700374 .669489-4.533001 .669489-4.302864C.669489-4.051806 .871731-3.898381 1.066999-3.898381C1.290162-3.898381 1.471482-4.072727 1.471482-4.302864ZM.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467L.411457-2.998755Z'/>
+<path id='tz1c5db50d2309a912-g3-108' d='M1.436613-4.839851L.390535-4.763138V-4.51208C.857783-4.51208 .913574-4.463263 .913574-4.121544V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.436613-.027895 1.694645-.020922 1.959651 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.550934V-4.839851Z'/>
+<path id='tz1c5db50d2309a912-g3-110' d='M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z'/>
+<path id='tz1c5db50d2309a912-g3-114' d='M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z'/>
+<path id='tz1c5db50d2309a912-g3-121' d='M3.29863-2.322291C3.493898-2.747696 3.849564-2.75467 3.961146-2.75467V-3.005729C3.765878-2.991781 3.633375-2.977833 3.431133-2.977833C3.242839-2.977833 2.984807-2.984807 2.796513-3.005729V-2.75467C3.02665-2.740722 3.082441-2.601245 3.082441-2.489664C3.082441-2.405978 3.047572-2.343213 3.019676-2.273474L2.245579-.620672L1.387796-2.461768C1.366874-2.503611 1.345953-2.545455 1.345953-2.594271C1.345953-2.75467 1.583064-2.75467 1.701619-2.75467V-3.005729C1.597011-2.998755 1.094894-2.977833 .899626-2.977833C.690411-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.606725-2.75467 .683437-2.733748 .788045-2.510585L1.959651 0C1.896887 .139477 1.827148 .27198 1.764384 .411457C1.610959 .746202 1.387796 1.227397 .913574 1.227397C.739228 1.227397 .683437 1.192528 .613699 1.143711C.620672 1.143711 .81594 1.073973 .81594 .843836C.81594 .669489 .690411 .54396 .516065 .54396C.334745 .54396 .209215 .669489 .209215 .850809C.209215 1.17858 .536986 1.422665 .913574 1.422665C1.506351 1.422665 1.84807 .801993 1.945704 .592777L3.29863-2.322291Z'/>
+<path id='tz1c5db50d2309a912-g0-2' d='M3.875467-2.769614L1.882939-4.752179C1.763387-4.871731 1.743462-4.891656 1.663761-4.891656C1.564134-4.891656 1.464508-4.801993 1.464508-4.692403C1.464508-4.622665 1.484433-4.60274 1.594022-4.493151L3.58655-2.49066L1.594022-.488169C1.484433-.37858 1.464508-.358655 1.464508-.288917C1.464508-.179328 1.564134-.089664 1.663761-.089664C1.743462-.089664 1.763387-.109589 1.882939-.229141L3.865504-2.211706L5.927771-.14944C5.947696-.139477 6.017435-.089664 6.07721-.089664C6.196762-.089664 6.276463-.179328 6.276463-.288917C6.276463-.308842 6.276463-.348692 6.246575-.398506C6.236613-.418431 4.652553-1.982565 4.154421-2.49066L5.977584-4.313823C6.027397-4.373599 6.176837-4.503113 6.22665-4.562889C6.236613-4.582814 6.276463-4.622665 6.276463-4.692403C6.276463-4.801993 6.196762-4.891656 6.07721-4.891656C5.997509-4.891656 5.957659-4.851806 5.84807-4.742217L3.875467-2.769614Z'/>
+<path id='tz1c5db50d2309a912-g1-61' d='M4.373599-7.0934C4.423412-7.222914 4.423412-7.262765 4.423412-7.272727C4.423412-7.382316 4.333748-7.47198 4.224159-7.47198C4.154421-7.47198 4.084682-7.442092 4.054795-7.382316L.597758 2.11208C.547945 2.241594 .547945 2.281445 .547945 2.291407C.547945 2.400996 .637609 2.49066 .747198 2.49066C.876712 2.49066 .9066 2.420922 .966376 2.251557L4.373599-7.0934Z'/>
+<path id='tz1c5db50d2309a912-g1-71' d='M7.571606-6.924035C7.571606-6.953923 7.551681-7.023661 7.462017-7.023661C7.43213-7.023661 7.422167-7.013699 7.312578-6.90411L6.615193-6.136986C6.525529-6.276463 6.067248-7.023661 4.961395-7.023661C2.739726-7.023661 .498132-4.821918 .498132-2.510585C.498132-.926526 1.603985 .219178 3.217933 .219178C3.656289 .219178 4.104608 .129514 4.463263-.019925C4.961395-.219178 5.150685-.428394 5.330012-.627646C5.419676-.37858 5.678705-.009963 5.778331-.009963C5.828144-.009963 5.84807-.039851 5.84807-.049813C5.867995-.069738 5.967621-.448319 6.017435-.657534L6.206725-1.424658C6.246575-1.594022 6.296389-1.763387 6.336239-1.932752C6.445828-2.381071 6.455791-2.400996 7.023661-2.410959C7.073474-2.410959 7.183064-2.420922 7.183064-2.610212C7.183064-2.67995 7.13325-2.719801 7.053549-2.719801C6.824408-2.719801 6.236613-2.689913 6.007472-2.689913C5.69863-2.689913 4.921544-2.719801 4.612702-2.719801C4.523039-2.719801 4.403487-2.719801 4.403487-2.520548C4.403487-2.410959 4.483188-2.410959 4.702366-2.410959C4.712329-2.410959 5.001245-2.410959 5.230386-2.391034C5.489415-2.361146 5.539228-2.331258 5.539228-2.201743C5.539228-2.11208 5.429639-1.663761 5.330012-1.295143C5.051059-.199253 3.755915-.089664 3.407223-.089664C2.450809-.089664 1.404732-.657534 1.404732-2.181818C1.404732-2.49066 1.504359-4.134496 2.550436-5.429639C3.088418-6.107098 4.054795-6.714819 5.041096-6.714819C6.057285-6.714819 6.645081-5.947696 6.645081-4.79203C6.645081-4.393524 6.615193-4.383562 6.615193-4.283935S6.724782-4.184309 6.764633-4.184309C6.894147-4.184309 6.894147-4.204234 6.94396-4.383562L7.571606-6.924035Z'/>
+<path id='tz1c5db50d2309a912-g1-84' d='M4.254047-6.047323C4.323786-6.326276 4.363636-6.386052 4.483188-6.41594C4.572852-6.435866 4.901619-6.435866 5.110834-6.435866C6.117061-6.435866 6.56538-6.396015 6.56538-5.618929C6.56538-5.469489 6.525529-5.080946 6.485679-4.821918C6.475716-4.782067 6.455791-4.662516 6.455791-4.632628C6.455791-4.572852 6.485679-4.503113 6.575342-4.503113C6.684932-4.503113 6.704857-4.582814 6.724782-4.732254L6.993773-6.465753C7.003736-6.505604 7.013699-6.60523 7.013699-6.635118C7.013699-6.744707 6.914072-6.744707 6.744707-6.744707H1.215442C.976339-6.744707 .966376-6.734745 .896638-6.545455L.298879-4.79203C.288917-4.772105 .239103-4.632628 .239103-4.612702C.239103-4.552927 .288917-4.503113 .358655-4.503113C.458281-4.503113 .468244-4.552927 .52802-4.712329C1.066002-6.256538 1.325031-6.435866 2.799502-6.435866H3.188045C3.466999-6.435866 3.466999-6.396015 3.466999-6.316314C3.466999-6.256538 3.437111-6.136986 3.427148-6.107098L2.092154-.787049C2.002491-.418431 1.972603-.308842 .9066-.308842C.547945-.308842 .488169-.308842 .488169-.119552C.488169 0 .597758 0 .657534 0C.926526 0 1.205479-.019925 1.474471-.019925C1.753425-.019925 2.042341-.029888 2.321295-.029888S2.879203-.019925 3.148194-.019925C3.437111-.019925 3.73599 0 4.014944 0C4.11457 0 4.234122 0 4.234122-.199253C4.234122-.308842 4.154421-.308842 3.895392-.308842C3.646326-.308842 3.516812-.308842 3.257783-.328767C2.968867-.358655 2.889166-.388543 2.889166-.547945C2.889166-.557908 2.889166-.607721 2.929016-.757161L4.254047-6.047323Z'/>
+</defs>
+<g id='tz1c5db50d2309a912-page1'>
+<g stroke-miterlimit='10' transform='translate(-21.324133,-43.331905)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-48.8659,-20.61588)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-21.324133,-43.331905)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(7.198044,-79.42831)scale(0.996264,-0.996264)'>
+<g transform='translate(-19.77496,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(7.198044,-79.42831)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='7.198044' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g1-71'/>
+<use x='15.031161' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g1-61'/>
+<use x='20.0125' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g1-84'/>
+<use x='29.432009' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g0-2'/>
+<use x='39.394623' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g1-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(67.83654,-79.42831)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.93124,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(67.83654,-79.42831)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='67.83654' y='-79.42831' xlink:href='#tz1c5db50d2309a912-g1-71'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(7.198044,-43.331905)scale(0.996264,-0.996264)'>
+<g transform='translate(-24.3236,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(7.198044,-43.331905)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='7.198044' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g1-71'/>
+<use x='15.031161' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g1-61'/>
+<use x='20.0125' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g1-84'/>
+<use x='29.432009' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g0-2'/>
+<use x='37.180757' y='-46.947269' xlink:href='#tz1c5db50d2309a912-g2-87'/>
+<use x='48.45788' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g1-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.23677 9.25616V-7.94392' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.23677,-8.1439)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-17.88402,-1.79941)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-21.324133,-43.331905)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-21.324133' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-50'/>
+<use x='-17.352893' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-58'/>
+<use x='-15.097447' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-49'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M4.04373 18.11589H31.79237' fill='none'/>
+<g transform='translate(31.99236,18.11589)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(16.1539,20.46864)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-21.324133,-43.331905)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-21.324133' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g2-114'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-3.82767-8.34389L31.84868 12.89261' fill='none'/>
+<g transform='matrix(0.85925,0.51147,-0.51147,0.85925,32.02051,12.99487)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(16.53508,-4.83722)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-21.324133,-43.331905)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-21.324133' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-103'/>
+<use x='-17.352893' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-101'/>
+<use x='-13.810601' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-110'/>
+<use x='-9.410412' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-101'/>
+<use x='-5.86812' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-114'/>
+<use x='-2.754777' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-105'/>
+<use x='-.499331' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-99'/>
+<use x='3.042961' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-97'/>
+<use x='7.014201' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-108'/>
+<use x='9.269647' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-108'/>
+<use x='11.525093' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-121'/>
+<use x='18.395175' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-49'/>
+<use x='22.366416' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-58'/>
+<use x='24.621861' y='-43.331905' xlink:href='#tz1c5db50d2309a912-g3-49'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+</div>
+
+
+\begin{align*}
+|W|\int_G f(g) dg &= \int_{G/T\times T} r^*(fdg) \\
+&= \int_{G/T\times T} f(t) r^*(dy) \\
+&= \int_T f(t) (\text{vol of conj class of t}) dt \\
+&= \text{Vol}(G/T)\int_Tf(t)J(t)dt
+\end{align*}
+
+<p>
+where \(J(t) = \det(\Id - A(t^{-1}))\) and \(A(t^{-1})\) is the &ldquo;action on \(T_NS^2 = \mathbb R^3/\spann (i)\)&rdquo;. If you set \(z = e^{i\theta}\)  then
+\[J(t) = (1 - z^2)(1 - z^{-2}) = (z - z^{-1})(z - z^{-1}).\]
+Set \(\delta = z - z^{-1}\), it&rsquo;s the &ldquo;Vandermonde&rdquo; of something. Then for \(V\) and \(W\) irreducible unitary representations,
+\[\langle \chi_V, \chi_W\rangle_{L^2(G)^G} = \delta_{V, W}\]
+Note that \(\chi_V(z)\) is a &ldquo;palindromic polynomial&rdquo; in \(z, z^{-1}\), meaning that if we swap \(z\) and \(z^{-1}\) we get the same polynomials, and so
+\[\int \chi_V\overline \chi_W \delta \overline \delta dz = \delta_{V, W} = \langle \chi_V\delta, \chi_W\delta\rangle\]
+From this and the fact that \(\delta\) is antipalindormic (is the negative of itself when we swap \(z\) and \(z^{-1}\)) and that \(\chi_V, \chi_W\) are palindromic, we can deduce that
+</p>
+
+<p>
+\[\chi_n = \frac{z^n}{z - z^{-1}}.\]
+</p>
+
+<p>
+Something something motivative introducing Lie algebras
+</p>
+</div>
+<div id="outline-container-lie-algebras" class="outline-3">
+<h3 id="lie-algebras">Lie algebras</h3>
+<div class="outline-text-3" id="text-lie-algebras">
+<p>
+It&rsquo;s an algebraic structure on vector fields of manifolds.
+\[\sum f_i\frac{\partial}{\partial x_i}\]
+which are exactly the first order differential operators, they annihialate constants, which in turn are exactly the derivations on smooth functions, \(\Der \mathcal O\).
+</p>
+
+<p>
+Equality of mixed partials from Calc III has the following interpretation here: for two vector fields \(\xi, \eta\)
+\[[\xi, \eta] = \xi\eta - \eta \xi\]
+is again a vector field.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A <i>Lie algebra</i> over \(\mathbb R\) (replace by any field you want doesn&rsquo;t matter) is a vector space \(\frak g \in \Vect_{\mathbb R}\) together with a skew symmetric map \([~, ~]:\Lambda^2 \mathfrak g\to \mathfrak g\) which satisfies the Jacobi identity (which means that \([ ~, ~]\) is a derivation of itself:
+\[[\xi, [\eta, \chi]] = [[\xi, \eta], \chi] + [\eta, [\xi, \chi]].\]
+</p>
+</div>
+
+<p>
+There&rsquo;s a functor taking Lie groups to Lie algebras. There are a few ways of defining \(G\mapsto \text{Lie}(G) \). Easy definition:
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+\[\text{Lie}(G) = \Hom_{Lie Gp}(\mathbb R, G)\]
+i.e. it&rsquo;s the collection of one-parameter subgroups.
+</p>
+<ul class="org-ul">
+<li>Its \(\mathbb R\)-vector space structure is given by rescaling, precomposing the rescaling with the map</li>
+</ul>
+</div>
+<p>
+The original source for Lie algebras above was vector fields, so it makes sense to look there.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Given a group \(G\), can consider the group of all vector fields \(\Gamma(G)\). This is a Lie algebra but is also quite infinite dimensional; instead, consider \(\Gamma(G)^G\) with \(G\) acting on the left. These are the <i>left invariant vector fields</i> of \(G\).
+</p>
+</div>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+The Llie algebra \(\text{Lie}(G)\) attached to a Lie group \(G\) is the tangent space at the identity \(T_eG = \text{Map}((\mathbb R, 0), (G, e)\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-class-13-2025-10-07" class="outline-2">
+<h2 id="class-13-2025-10-07">Class 13: <span class="timestamp-wrapper"><span class="timestamp">[2025-10-07 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-class-13-2025-10-07">
+<p>
+Given a representation \(V\), let \(V^{fin} = \bigoplus V_i\) where \(V_i\) is the collection of finite dimensional irreducible subrepresentations of \(V\).
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+\(V\) is algebraic if \(V = V^{fin}\), which is equivalent to saying that all the matrix elements of \(V\) are algebraic functions.
+</p>
+</div>
+<p>
+If \(G\) is a compact Lie group then \(G_{\mathbb C}\) is a complex algebraic group and \(\Spec C_{alg}(G)\).
+</p>
+
+<p>
+The Lie algebra \(\mathfrak{sl}_2\) is generated by
+</p>
+
+<p>
+\[f = \begin{pmatrix}0 & 0 \\ 1 & 0 \end{pmatrix}, ~ h = \begin{pmatrix}1 & 0 \\ 0 & -1 \end{pmatrix}, ~ e = \begin{pmatrix}0 & 1 \\ 0 & 0 \end{pmatrix}\]
+with relations \([h,e] = 2e\), \([h,f] = -2f\), \([e,f] = h\).
+</p>
+
+<p>
+Let \(V\) be a finite dimensional r
+</p>
+<blockquote>
+nil</blockquote>
+<p>
+epresentation of \(\mathfrak{sl}_2(\mathbb C)\), \(v\) an eigenvector for the action of \(h\) so that \(hv = \lambda v\). Then
+\[hev = ehv + [h,e] v = e(\lambda v) + 2e\cdot v = (\lambda + 2) ev\]
+which means that \(ev\) is also an \(h\) eigenvector (assuming that \(ev \neq 0\)). This yields a new eigenvector with eigenvalue \(\lambda + 2\). Since \(V\) is finite dimensional, this means that \(ev\) has to eventually be zero, otherwise this would be a process for generating an infinite set of linearly independent eigenvectors.
+</p>
+
+<p>
+This means <i>\(V\) contains a highest weight vector</i>, a vector \(v\) so that \(v\neq 0\), \(ev = 0\) and \(hv = \lambda v\) with \(\lambda\) larger than any other eigenvalue of \(h\).
+</p>
+
+<p>
+Fact: Functions on \(X\circlearrowleft H\) which are \(H\)-invariant are in bijection with functions on \(X/H\).
+</p>
+</div>
+</div>
+<div id="outline-container-class-14-2025-10-09" class="outline-2">
+<h2 id="class-14-2025-10-09">Class 14: <span class="timestamp-wrapper"><span class="timestamp">[2025-10-09 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-class-14-2025-10-09">
+<p>
+The Cartan subgroup of a connected linear algebraic group \(G\) is the centralizer of the maximal torus.
+</p>
+
+<p>
+A Borel subgroup of a connected linear algebraic group \(G\) is a maximal Zariski closed connected, solvable algebraic group.
+</p>
+
+<p>
+For \(G=\SL_2\), we get
+</p>
+
+<ul class="org-ul">
+<li>Cartan:</li>
+</ul>
+<p>
+\[H = \left \langle\begin{pmatrix}1 & 0 \\ x & 1\end{pmatrix}, \begin{pmatrix}x & 0 \\ 0 & x^{-1}\end{pmatrix}\right\rangle\]
+</p>
+<ul class="org-ul">
+<li>Borel:</li>
+</ul>
+<p>
+\[B = \left\langle\begin{pmatrix}x & 0 \\ 0 & x^{-1}\end{pmatrix}, \begin{pmatrix}1 & x \\ 0 & 1\end{pmatrix}\right\rangle\cong \mathbb C^* \ltimes \mathbb C\]
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Theorem of highest weight)</i> If \(V\) is a finite dimensional irreducible representation of \(G\) and \(N\subset G\) is a subgroup, then \(V^N\) is dimension \(1\).
+</p>
+
+<p>
+For a finite dimensional representation \(W\), \(\dim W^N = \# \text{irred subreps of }W\).
+</p>
+</div>
+
+<ul class="org-ul">
+<li>\(V\) a finite dimensional irreducible representation means that \(\{v\in V : \ev = 0\} =: V^N\). These are the elements fixed by the group \(N\subset G = \SL_2(\mathbb C)\),</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-class-15-2025-10-14" class="outline-2">
+<h2 id="class-15-2025-10-14">Class 15: <span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-class-15-2025-10-14">
+<p>
+Borel-Weil today.
+</p>
+
+<p>
+Finite dimensional irreducible representations of 
+\[\SL_2\mathbb C = G \supset N = \begin{pmatrix}1 & \ast \\ 0 & 1\end{pmatrix}\subset B = \begin{pmatrix}\ast & \ast \\ 0 & \ast\end{pmatrix}\]
+appear in \(\mathbb C[G/N] \circlearrowleft B/N = H = \begin{pmatrix}\ast & 0 \\ 0 & \ast\end{pmatrix}.\)
+</p>
+
+<p>
+Here \(G/N \simeq \mathbb C^2 \setminus \{0\},\) 
+</p>
+
+<ul class="org-ul">
+<li>\(G\) is the set of lines in \(\mathbb C^2\), \(B\) is the stabilizer of the line \((x: 0)\) in \(\mathbb C^2\), so \(G/B\) is \(\mathbb P(\mathbb C^2) = \mathbb P^1\).</li>
+</ul>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+For all \(n\), \(\Gamma(\mathbb P^1, \mathcal O(n)) = 0\) when \(n < 0\) and parameterizes irreps of \(\SL_2\) when \(n \geq 0\).
+</p>
+</div>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Borel-Weil-Bott)</i> For all \(n\),
+\[H^1(\mathbb P^1, \mathcal O(n)) = \begin{cases}0 & n > -2 \\
+\text{irrep of }\SL_2 \text{ each appear once } & \text{otherwise}\end{cases}\]
+</p>
+</div>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

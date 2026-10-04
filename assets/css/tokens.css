@@ -1,0 +1,65 @@
+/* Design tokens — every knob, and nothing else.
+ *
+ * This is the file to reach for first. Changing a value here restyles the whole
+ * site; the other stylesheets only ever read these, never hardcode a colour.
+ *
+ * Load order matters, and it is:
+ *   tokens · base · rail · content · table · components · environments · custom
+ * A later file may override an earlier one at equal specificity, which is how
+ * the responsive rules and the component overrides work.
+ *
+ * Not every token is global: --rail-w and --rail-pad are read by content.css
+ * (the full-bleed escape hatch needs the rail's width, and the page title is
+ * aligned to the rail's padding), so rail and content are not fully independent.
+ */
+:root {
+  /* palette */
+  --bg:        #fdfdfc;
+  --fg:        #1f2328;
+  --muted:     #6a737d;
+  --accent:    #1a5fb4;
+  --accent-2:  #0b7285;
+  --note-link:   #1f7a4b;   /* a link into the corpus */
+  --note-link-2: #14603a;
+  --border:    #e5e3de;
+  --code-bg:   #f4f2ee;
+  --callout-bg: #f7f6f3;
+
+  /* typography */
+  --font-body: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-head: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* scale */
+  --measure: 44rem;      /* the line length the layout is anchored to */
+
+  /* The derived page geometry. --measure alone would leave gutters of
+     (available - --measure)/2; these are 2/3 of that, and the text column absorbs
+     the third they give up. ONE knob: change the /3 and the content column, the
+     footer rule and the back-link all follow, because each is expressed in terms
+     of these rather than recomputing the algebra. */
+  --gutter-w:  calc((100vw - var(--rail-w) - var(--measure)) / 3);
+  --content-w: calc(100vw - var(--rail-w) - 2 * var(--gutter-w));
+  --rail-w: 15rem;       /* left rail column */
+  --rail-line: 1.45rem;  /* one Visited row; the window is 10 of these */
+  --rail-pad: 1.5rem;    /* buffer between the viewport edge and rail content */
+  --rail-indent: 1rem;   /* nav links sit in from the site title */
+
+  /* the rail is deliberately grayscale: no accent colour competes with the prose */
+  --rail-fg:    #3f454b;
+  --rail-title: #767c83;
+  --rail-muted: #8b9198;
+  --step-0: 1.02rem;
+  --step-1: 1.3rem;
+  --step-2: 1.65rem;
+  --step-3: 2.1rem;
+  --space: 1.15rem;
+  --radius: 6px;
+
+  /* Project cards. Their own tokens because /projects/ is a deliberately different
+     visual register from the prose pages -- see docs/PLAN.md. */
+  --card-h: 4.5rem;         /* collapsed height; the card grows past this on hover */
+  --card-radius: 12px;      /* rounder than --radius: these are buttons, not callouts */
+  --card-scrim: rgba(20, 22, 26, 0.42);  /* over arbitrary art, so the title stays legible */
+  --card-press: 0.985;      /* hover scale; 1 disables the press */
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leet Code Solutions — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/leet-code/"
+      data-note-title="Leet Code Solutions">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#top-interview-150">Top Interview 150:</a></li>
+    <li class="toc-l3"><a href="#80-remove-duplicates-from-sorted-array-ii">80. Remove Duplicates from Sorted Array II</a></li>
+    <li class="toc-l3"><a href="#169-majority-element">169. Majority Element</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Leet Code Solutions</h1>
+      
+      <article class="note">
+<p>
+This is a place to write notes to Leet Code solutions.
+</p>
+<div id="outline-container-top-interview-150" class="outline-2">
+<h2 id="top-interview-150">Top Interview 150:</h2>
+<div class="outline-text-2" id="text-top-interview-150">
+</div>
+<div id="outline-container-80-remove-duplicates-from-sorted-array-ii" class="outline-3">
+<h3 id="80-remove-duplicates-from-sorted-array-ii">80. Remove Duplicates from Sorted Array II</h3>
+<div class="outline-text-3" id="text-80-remove-duplicates-from-sorted-array-ii">
+<p>
+Input: Array <code>nums</code> of integers sorted in non-decreasing order.
+Task: Remove <i>some</i> duplicates from <code>nums</code> in place such that each unique element appears <i>at most twice</i>. The relative order of elements should be kept the same.
+Output: Return <code>k</code> where <code>k</code> is the number of elements remaining after removing duplicates.
+</p>
+
+<p>
+Idea: The main idea is to iterate once through the array keeping track of the current read index (just the iterator in the for loop) and the <code>writeIndex</code>. We need a bit of logic to deside when to write to <code>nums[writeIndex]</code> and when to update it.
+</p>
+
+<p>
+We do this by keeping track of the number of duplicate elements seen in a row in <code>currentDups</code>. When a yet unseen element is encountered, reset this count to <code>1</code>. So long as the number of duplicate elements in a row (<code>currentDups</code>) does not exceed the allowed number of duplicates (<code>allowedDups</code>) then write to the array.
+</p>
+
+<p>
+Here are two slightly different solutions:
+</p>
+
+<p>
+<b>Solution 1</b>
+</p>
+<div class="org-src-container">
+<pre class="src src-c++">class Solution {
+public:
+    int removeDuplicates(vector&lt;int&gt;&amp; nums) {
+        int writeIndex = 1;
+        int allowedDups = 2;   //the number of allowed appearances for a unique element
+        int currentDups = 1;   //tracker for the number
+        for (int i = 1; i &lt; nums.size(); i++){
+            if (nums[i - 1] != nums[i]){
+                nums[writeIndex] = nums[i];
+                currentDups = 1;
+                writeIndex += 1;
+            } else {
+                currentDups += 1;
+                if (currentDups &lt;= allowedDups){
+                    nums[writeIndex] = nums[i];
+                    writeIndex += 1;
+                }
+            }
+        }
+        return writeIndex;
+    }
+};
+</pre>
+</div>
+
+<p>
+Runtime: 0ms. Memory usage: 19.60 MB.
+</p>
+
+<p>
+<b>Solution 2</b>
+</p>
+<div class="org-src-container">
+<pre class="src src-c++">class Solution {
+public:
+    int removeDuplicates(vector&lt;int&gt;&amp; nums) {
+        int writeIndex = 1;
+        int allowedDups = 2;
+        int currentDups = 1;
+        for (int i = 1; i &lt; nums.size(); i++){
+            if (nums[i - 1] != nums[i]){
+                currentDups = 1;
+            } else {
+              currentDups += 1;
+            }
+            if (currentDups &lt;= allowedDups){
+                nums[writeIndex] = nums[i];
+                writeIndex += 1;
+            }
+        }
+        return writeIndex;
+    }
+};
+</pre>
+</div>
+
+<p>
+Runtime: 5ms. Memory usage: 19.55 MB.
+</p>
+
+<p>
+<b>Difference between solutions</b>
+</p>
+
+<p>
+I prefer solution 2 since it avoids two duplicate lines, i.e. it only updates <code>writeIndex</code> and writes to <code>nums[writeIndex]</code> in one place. However, it is slightly slower due to <b>branch optimization</b>. The second solution has two separate if-else paths, but the first has only one. The second solution uses less memory likely because it compiles to slightly less machine code.
+</p>
+</div>
+</div>
+<div id="outline-container-169-majority-element" class="outline-3">
+<h3 id="169-majority-element">169. Majority Element</h3>
+<div class="outline-text-3" id="text-169-majority-element">
+<p>
+Given an array <code>nums</code> of size <code>n</code>, return the majority element.
+</p>
+
+<p>
+The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.
+</p>
+
+<p>
+Coming up with a solution is easy, here is one:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">class Solution:
+    def majorityElement(self, nums: List[int]) -&gt; int:
+        count = {num : 0 for num in nums}
+
+        for num in nums:
+            count[num] += 1
+
+        k = max(count, key=count.get)
+        return k
+</pre>
+</div>
+
+<p>
+It initializes a dictionary with one key-value pair for every unique element of <code>nums</code>, iterates through <code>nums</code> counting the occurances of each unique element and finally returns the maximum count. I&rsquo;m not sure how long the <code>max</code> function nor the allocation of <code>count</code> takes, but it may still run in linear time technically. It&rsquo;s still slow though, and it has suboptimal memory utilization.
+</p>
+
+<p>
+Here&rsquo;s the accepted optimal solution, known as the <b>Boyer-Moore Majority Vote Algorithm</b>. It works using a simple observation: if we pair up occurances of the majority element with a different element and cancel them, then the majority element will be the last one standing.
+</p>
+
+<p>
+To implement this, we run a &ldquo;vote&rdquo; on the array. Votes are cast for or against a single current candidate. We iterate once through the array, keeping track of a candidate and a current count tally. Each element votes for itself if it is the candidate and against the current candidate if it is not the candidate.
+</p>
+
+<p>
+At any point in the iteration:
+</p>
+<ul class="org-ul">
+<li><code>count</code> is <code>0</code>, then make the current element the candidate and set the count to <code>1</code>.</li>
+<li>if the current element is the candidate, add <code>1</code> to count</li>
+<li>if the current element is not the candidate, remove <code>1</code> from the count.</li>
+</ul>
+
+<p>
+Here is the implementation in python:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">class Solution:
+    def majorityElement(self, nums: List[int]) -&gt; int:
+        count = 0
+        candidate = None
+
+        for num in nums:
+            if count == 0:
+                candidate = num
+                count = 1
+            elif num == candidate:
+                count += 1
+            else:
+                count -= 1
+        return candidate
+</pre>
+</div>
+
+<p>
+This only requires a single iteration through the array and only allocates additional memory for the integer <code>count</code> and the object <code>candidate</code>. Hence it runs in linear time and in <code>O(1)</code> space.
+</p>
+</div>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

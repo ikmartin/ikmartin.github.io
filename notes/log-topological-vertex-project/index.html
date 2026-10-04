@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Topological Vertex Project — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/log-topological-vertex-project/"
+      data-note-title="Log Topological Vertex Project">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Log Topological Vertex Project</h1>
+      <p class="note-meta"><span class="taxon">project</span></p>
+
+      <article class="note">
+<ol class="org-ol">
+<li><b>Define the Logarithmic \(\mathbb{C}^3\) Target:</b> Formulate the affine patch \(X = \mathbb{C}^3\) as a log scheme with divisorial log structure given by the coordinate planes \(D = \{z_1z_2z_3 = 0\}\). Its tropicalization \(\Sigma(X)\) is the positive octant \(\mathbb{R}_{\ge 0}^3\).</li>
+<li><b>Translate Boundary Conditions to Tropical Types:</b> Replace the winding numbers (partitions \(\vec{\mu}\)) with tropical global types \(\tau = (G, g, \sigma, u)\). A map into the &ldquo;vertex&rdquo; will correspond to a tropical curve in \(\mathbb{R}_{\ge 0}^3\) with legs going to infinity along the three axes. The contact orders \(u_L \in \mathbb{Z}\) of these legs will match the parts of the partitions in \(\vec{\mu}\). Negative values in \(u_L\) correspond to the punctures.</li>
+<li><b>Construct the Moduli Space:</b> Form the moduli stack of basic punctured maps \(\mathfrak{M}(X/W, \tau)\). Because of the punctures, the base will be an idealized log scheme \((W, \mathcal{M}_W, \mathcal{K}_W)\).</li>
+<li><b>Develop Idealized Equivariant Localization:</b> The \(T = (\mathbb{C}^*)^3\) action on \(\mathbb{C}^3\) lifts to \(\mathfrak{M}(X/B, \tau)\). You must generalize the Atiyah-Bott localization formula to accommodate the idealized structure \(\mathcal{K}_W\). Extract the moving and fixed parts of the perfect relative obstruction theory \(\mathbb{G} \to \mathbb{L}_{\mathcal{M}/\mathfrak{M}^{ev}}\).</li>
+<li><b>Evaluate the Logarithmic Vertex:</b> Compute the localized virtual class and show that it identically recovers the three-partition Hodge integrals \(G_{\vec{\mu}}^\bullet(\lambda; w)\).</li>
+<li><b>Apply the Splitting Theorem:</b> Finally, use Siebert et al.&rsquo;s splitting morphism \(\delta^{ev}\) (Theorem 5.19) along the evaluation stacks to mathematically rigorously glue the logarithmic vertices together to form the global GW invariant for any toric Calabi-Yau, completely avoiding the formal scheme gluing algorithms of Li et al.</li>
+</ol>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moduli Space Of Basic Stable Log Maps Marked By A Decorated Type — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/moduli-space-of-basic-stable-log-maps-marked-by-a-decorated-type/"
+      data-note-title="Moduli Space Of Basic Stable Log Maps Marked By A Decorated Type">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Moduli Space Of Basic Stable Log Maps Marked By A Decorated Type</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+(Definition 2.31 in Decomposition of Degenerate logarithmic Gromov-Witten invariants)
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(\tilde \tau = (G, \mathbf g, \boldsymbol \sigma, \mathbf u, \mathbf A) = (\tau, \mathbf A)\) be the decorated type of a tropical map. A <b>marking by \(\tilde \tau\)</b>  of a stable logarithmic map \((C/S, \mathbf p, f)\) to \(X_0\) over a logarithmic base scheme \(S\) over \(b_0\) is the following data:
+</p>
+
+<ol class="org-ol">
+<li>An isomorphism \(\underline C/\underline S\) with a \((G, \mathbf g)\)-<a class="idlink" data-note="marked-pre-stable-curves" href="../../notes/marked-pre-stable-curves/">marked pre-stable curve</a>, i.e. we demand that \(\underline C/\underline S\) has dual graph \(G\) and genera prescribed by \(\mathbf g\).</li>
+<li>The restriction of \(\underline f\) to the closed subscheme \(Z\subset \underline C\) (i.e. a subcurve or a nodal or punctured section of \(C\)) defined by \(x \in V(G)\cup E(G)\cup L(G)\) factors through \(X_{\sigma(x)} \subset X_0\)</li>
+<li>For each geometric point \(\overline s\to S\) with decorated type \(\tilde \tau_{\overline s} = (G_{\overline s}, \mathbf g_{\overline s}, \boldsymbol{\sigma}_{\overline s}, \mathbf u_{\overline s}, \mathbf A_{\overline s})\) of \(C/S, \mathbf p, f)\), the morphism \((G_{\overline s}, \mathbf g_{\overline s}) \to (G, \mathbf g)\) of decorated graphs defines a morphism \(\tilde \tau_{\overline s} \to \tilde \tau\) of decorated types of tropical maps. In particular, there is an associated localization map \(\chi_{\overline s}: Q_{\tau_{\overline s}} \to Q_{\tau}\) of corresponding basic monoids.</li>
+<li>In the situation of (3) above, the preimage \(\mathcal K_{\overline s} \subset \mathcal M_{S,\overline s}\) of \(Q_\tau\setminus \{0\}\) under the composition \[\mathcal M_{S, \overline s}\to \overline {\mathcal M}_{S,\overline s} = Q_{\tau_{\overline s}} \xrightarrow{\chi_{\overline s}} Q_{\tau}\]maps to \(0\) under the structure morphism \(\mathcal M_{S, \overline s}\to \mathcal O_{S, \overline s}.\)</li>
+</ol>
+
+<p>
+We then define the <b>moduli space of basic stable log maps marked by decorated type \(\tilde \tau\)</b> to be \(\mathcal M(X_0, \tilde \tau)\). It&rsquo;s a moduli space of stable maps <i>over \(b_0\)</i>, but this is supressed from the notation.
+</p>
+</div>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+Some explanations:
+</p>
+<ul class="org-ul">
+<li>Condition (1) above simply asks that \(C/S\) have as its dual graph \((G, \mathbf g)\).</li>
+<li>Condition (2) and (3) ask that the decorated graphs associated to geometric fibers of the stable log map are refinements of the type \((\tau, \mathbf A)\).</li>
+<li>Condition (4) is a little harder, it esssentially takes the reduction of the moduli space in unobstructed situations. It could be omitted, but then reductions would need to be made when the virtual fundamental class of the moduli space \(\mathcal M(X_0, \beta)\) is expressed in terms of the \(\mathcal M(X_0, \tilde \tau)\) virtual fundamental classes.</li>
+</ul>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="derived-relative-virtual-localization" href="../../notes/derived-relative-virtual-localization/">Derived Relative Virtual Localization</a></li>
+    <li><a data-note="disambiguation-of-moduli-spaces-of-basic-stable-log-maps" href="../../notes/disambiguation-of-moduli-spaces-of-basic-stable-log-maps/">Disambiguation Of Moduli Spaces Of Log Maps</a></li>
+    <li><a data-note="marked-pre-stable-curves" href="../../notes/marked-pre-stable-curves/">Marked Pre-Stable Curves</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

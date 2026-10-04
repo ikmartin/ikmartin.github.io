@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 16 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-16/"
+      data-note-title="Algebraic Curves Lecture 16">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 16</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-14" href="../../notes/algebraic-curves-14/">← lecture 14</a> · <a class="idlink" data-note="algebraic-curves-17" href="../../notes/algebraic-curves-17/">lecture 17 →</a>
+</p>
+
+<p>
+(Missed Monday due to flight)
+</p>
+<div id="outline-container-general-and-uniform-positions" class="outline-2">
+<h2 id="general-and-uniform-positions">General and uniform positions</h2>
+<div class="outline-text-2" id="text-general-and-uniform-positions">
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(C\subseteq \mathbb P^r\), \(r\geq 3\), \(C\) is non-degenerate irreducible of degree \(d\). Let \(H\) be a general hyperplane in \(\mathbb P^r\). Then any \(k\leq r\) points in \(H\cap C\) will span a linear space of dimension \(k-1\).
+</p>
+</div>
+
+<p>
+<i>Example:</i> Take \(C\subseteq \mathbb P^3\). Then no three points in \(C\cap H\) are colinear for a general plane \(H\subseteq \mathbb P^3\).
+</p>
+
+<p>
+<i>Slogan:</i> For a general hyperplane \(H\) the subsets containing \(k\) elements in \(H\cap C\) are indistinguishable 
+</p>
+
+<p>
+Let&rsquo;s let
+</p>
+\begin{align*}
+    I = \{(p,H) | p\in H \cap C\} \subseteq C\times U
+\end{align*}
+<p>
+where \(U\subseteq (\mathbb P^r)^*\) is the set of hyperplanes in \(\mathbb P^r\) meeting \(C\) transversely. Now consider the map \(\pi_2:I\to U\), it is a \(d\)-sheeted covering of \(U\). Fix \(H_0\in U\) and consider the action of \(\pi_1(U,H_0)\) (the fundamental group of \(U\) based at \(H_0\)) on \(\pi^{-1}_2(H_0)\).
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+\(\pi_1(U,H_0)\) acts as the full symmetric group \(S_{d}\) on \(\pi^{-1}_2(H_0)\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Introduce the sets
+</p>
+\begin{align*}
+    \tilde{I}(2) = \{(p_1,p_2,H) ~\mid~ p_1\neq p_2, p_1,p_2 \in C\cap H\}\subset C\times C\times (\mathbb P^r)^*
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    I(2) := \tilde{I}(2) \cap (C\times C\times U).
+\end{align*}
+<p>
+Note that passing from \(\tilde I(2)\) to \(I(2)\) simply requires the plane to meet the curve transversely. Now let \(\pi_1:\tilde I(2)\to (C\times C)\setminus \Delta\) be the projection map (here we remove the diagonal since we required that \(p_1\neq p_2\) for a tuple in \(\tilde I(2)\).
+</p>
+
+<p>
+The set \(\pi_1^{-1}(p_1,p_2)\) is the set of all hyperplanes passing through \(p_1\) and \(p_2\), and it is isomorphic to \(\mathbb P^{r-2}\).
+</p>
+
+<p>
+Claim: both \(\tilde I(2)\) and \(I(2)\) are both irreducible and are in particular connected.
+</p>
+
+<p>
+&gt; <i>Side Remark:</i> if \(f:X\to Y\)  is some dominant map of varieties and you know that \(X\) is irreducible, you can immediately conclude that \(Y\) is irreducible. However, if \(Y\) is irreducible, concluding that \(X\) is irreducible is much harder. A sufficient condition is the following: (1) \(Y\) is irreducible (2) the fibers of \(f\) are all irreducible (3) the fibers have the same dimension and (4) \(f\) is proper.
+</p>
+
+<p>
+The space \(C\times C\setminus \Delta\) is irreducible &#x2013; the diagonal is a codimension 2 subset in this case. Furthermore, \(\pi_1\) satisfies (1)-(4) in the remark above, so \(\tilde I(2)\) is irreducible. A similar argument tells me that \(I(2)\) is irreducible. Now we return our attention to the map and fiber
+</p>
+\begin{align*}
+    \pi_2:I\to U, \hspace{1cm} \pi_2^{-1}(H_0).
+\end{align*}
+<p>
+This means \(\pi_1(U,H_0)\) acts 2-transitively on \(\pi^{-1}_2(H_0)\). Let \(G\subseteq S_d\) be the transitive subgroup of \(S_d\) given as the image of the fundamental group \(\pi_1(U,H_0)\to \Aut(\pi_2^{-1}(H_0)) = S_d\).
+</p>
+
+<p>
+To show that \(G = S_d\) it suffices to show that \(G\) contains a transposition. Indeed, if it has a transposition \(\tau \in G\), then
+</p>
+<ol class="org-ol">
+<li>I can get any other transposition \(\tau'\) by conjugation with a permutation \(\sigma\) such that \((\tau_1,\tau_2) \mapsto (\tau_1', \tau_2')\). Then \(\sigma\tau\sigma^{-1} = \tau'.\)</li>
+<li>The transpositions generate \(S_d\), so \(G = S_d\).</li>
+</ol>
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-14" href="../../notes/algebraic-curves-14/">Algebraic Curves Lecture 14</a></li>
+    <li><a data-note="algebraic-curves-17" href="../../notes/algebraic-curves-17/">Algebraic Curves Lecture 17</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Endomorphisms Of The Multiplicative Group Scheme In General — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/endomorphisms-of-the-multiplicative-group-scheme-in-general/"
+      data-note-title="Endomorphisms Of The Multiplicative Group Scheme In General">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Endomorphisms Of The Multiplicative Group Scheme In General</h1>
+      <p class="note-meta"><span class="taxon">lemma</span></p>
+
+      <article class="note">
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+For every \(S\)-scheme \(S'\),
+</p>
+\begin{align*}
+  \Hom_{S'-gp}(\mathbb G_{m, S'}, \mathbb G_{m, S'}) = \{\text{locally constant functions }|S'|\to \mathbb Z\},
+\end{align*}
+<p>
+where \(|S'|\) is the underlying topological space of \(S'\). In other words, the restriction of \(\mathbb G_{m, S'} \to \mathbb G_{m, S'}\) to a connected component of \(S'\) corresponds to a monomial.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+First reduce to the case that \(S' = \Spec A\). Then an endomorphism \(\phi:\mathbb G_{m, S'}\to \mathbb G_{m, S'}\) is an \(A\)-algebra map \(\phi^*:A[u^{\pm}]\to A[u^{\pm}]\) determined by \(\phi^*(u^{\pm}) = f\), and \(f\) is necessarily a unit because \(u\) is a unit. Write
+</p>
+\begin{align*}
+  f = \sum_{n\in \mathbb Z} a_n u^n
+\end{align*}
+<p>
+with almost all \(a_n = 0\).
+</p>
+
+<p>
+The group law \(m:\mathbb G_{m, S'}\times \mathbb G_{m, S'} \to \mathbb G_{m, S'}\) corresponds to the comultiplication
+</p>
+\begin{align*}
+  \Delta:A[u^{\pm}]\to A[u^{\pm}]\otimes_A A[u^{\pm}] = A[u^{\pm}, v^{\pm}], \quad \Delta(u) = u\otimes u = uv.
+\end{align*}
+<p>
+The requirement that \(\phi\) is a homomorphism is the requirement that \(\phi\circ m = m\circ (\phi \times \phi)\), and the corresponding condition is then \(\Delta\circ \phi^* = (\phi^*\otimes \phi^*)\circ \Delta\), which can be checked on the generator \(u\):
+</p>
+\begin{align*}
+\Delta(\phi^*(u)) &= \Delta(f(u)) = f(uv) = \sum_{n\in \mathbb Z}a_nu^nv^n \\
+&\text{must equal}\\
+(\phi^*\otimes\phi^*)(u\otimes u) &= f(u)f(v) = \sum_{n, m\in \mathbb Z} a_na_mu^nv^m
+\end{align*}
+<p>
+That is, \(f(uv) = f(u)f(v) \). Comparing coefficients means that \(a_na_m = 0\) whenever \(n \neq m\) and \(a_n = a_n^2\) whenever \(n = m\). This means that \(\{a_n\}_{n\in \mathbb Z}\) is a collection of &ldquo;orthogonal idempotents&rdquo; in \(A\).
+</p>
+
+<p>
+The key general fact is then that <b>orthogonal idempotents are open-closed decompositions.</b> For an idempotent \(e\in A\), \(A \cong Ae \times A(1 - e)\) and \(\Spec A = D(e)\sqcup D(1- e)\), with \(D(e) = \Spec A/(e - 1)\). Note that the ideal \(Ae \) is a ring with \(e\) the identity, so we can actually write \(D(e) = \Spec Ae\) which is nice. If we instead have a finite complete system of idempotents \(\{a_n\}\) (&ldquo;complete&rdquo; meaning that \(1 - a_n\) appears in the collection for each \(a_n\)) then we get
+</p>
+\begin{align*}
+  A = \prod_n Aa_n \quad\text{and}\quad \Spec A = \coprod_n S'_n, ~ S'_n := D(a_n).
+\end{align*}
+<p>
+If we restrict to \(S'_n\) then \(\phi|_{S'_n}\) corresponds to \(\phi^*|_{Aa_n}(u) = u^n\), so on \(S'_n\) the map \(\phi \) is the \(n\)th power map. That is, it&rsquo;s a monomial in \(u\).
+</p>
+
+<p>
+Similarly, any morphism \(\phi:\mathbb G_{m, S'}\to \mathbb G_{m, S'}\) which corresponds to a monomial on each connected component of \(S'\) is a \(S'-gp\) homomorphism.
+</p>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="fixed-stack-of-local-model-of-an-artin-fan" href="../../notes/fixed-stack-of-local-model-of-an-artin-fan/">Fixed Stack Of Local Model Of An Artin Fan</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

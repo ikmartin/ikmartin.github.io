@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F Test For Nested Linear Models — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/f-test-statistics/"
+      data-note-title="F Test For Nested Linear Models">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#setup-and-f-test-definition">Setup and F-Test definition</a></li>
+    <li class="toc-l2"><a href="#some-distribution-definitions">Some distribution definitions</a></li>
+    <li class="toc-l2"><a href="#observation-about-multivariate-normal-distributions">Observation about multivariate normal distributions</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">F Test For Nested Linear Models</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span></p>
+
+      <article class="note">
+<p>
+This is about one kind of <b>hypothesis testing</b>. It&rsquo;s not about evaluating how good a particular model is at prediction, it&rsquo;s about evaluating the hypothesis underlying different models.
+</p>
+<div id="outline-container-setup-and-f-test-definition" class="outline-2">
+<h2 id="setup-and-f-test-definition">Setup and F-Test definition</h2>
+<div class="outline-text-2" id="text-setup-and-f-test-definition">
+<p>
+We have data of the form \((\vec x_i, y_i)\in \mathbb R^{p+1}\times \mathbb R\) and we assume the first coordinate of \(\vec x_i\) is \(1\) \(\vec x_i = (1, x_1,...,x_p)\) (where \(x_0\) represents the constant in the linear model). Assume \(i = 1,...,n\). Goal is to compare two different models.
+</p>
+
+<p>
+<b>Null hypothesis</b>: Our \(H_0\) is that \(Y_{\vec x_i} \sim N(\beta_0 + \beta_1x_1 + ... + \beta_qx_q + 0x_{q+1} + ... + 0x_p, \theta^2)\), i.e. that \(Y\) is generated from a normal distribution that only depends on \(x_1,...,x_q\).
+</p>
+
+<p>
+<b>Alternative hypothesis</b>: Our \(H_a\) is that \(Y_{\vec x_i} \sim N(\beta_0 + \beta_1x_1 + ... + \beta_px_p)\).
+</p>
+
+<p>
+<b>Theorem to prove</b>: If the null hypothesis is true, then the following &ldquo;<b>F-Statistic</b>&rdquo;
+\[\frac{(\text{RSS}_0 - \text{RSS}_a)/(p-q)}{\text{RSS}_a/(n-p-1)}\]
+is \(F_{p-q,n - p -1}\) distributed. Here \(\text{RSS}\) is the Residual Sum of Squares, so
+\(\text{RSS}_0 = \sum_i(y_i - \tilde y_i)^2\) where \(\tilde y_i\) is the predicted value of \(y_i\) by the null hypothesis given \(\vec x_i\).
+</p>
+
+<p>
+Note that once you fit your model and obtain your \(\hat \beta_j\) you&rsquo;ll predict \(Y_{x_i} \sim \hat\beta_0 + \hat\beta_1 x_1 + ... + \hat \beta_q + \epsilon_i\) with \(\epsilon_i\sim N(0,\theta^2)\).
+</p>
+</div>
+</div>
+<div id="outline-container-some-distribution-definitions" class="outline-2">
+<h2 id="some-distribution-definitions">Some distribution definitions</h2>
+<div class="outline-text-2" id="text-some-distribution-definitions">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+If \(X_1,...,X_d \sim N(0,1)\) and independent then \(X_1^2 + ... + X^2_d\) is said to by \(\chi^2_d\) distributed.
+</p>
+
+<p>
+We say that \(W\) is \(F_{d_1,d_2}\) distributed if \(W\sim \frac{U_1/d_1}{U_2/d_2}\) with \(U_1 \sim \chi_{d_1}^2\) and \(U_2 \sim \chi_{d_2}^2\) with \(U_1\) and \(U_2\) independent.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-observation-about-multivariate-normal-distributions" class="outline-2">
+<h2 id="observation-about-multivariate-normal-distributions">Observation about multivariate normal distributions</h2>
+<div class="outline-text-2" id="text-observation-about-multivariate-normal-distributions">
+<p>
+(Compare the following with <i>Cochrane&rsquo;s Theorem</i>.) Say that \(X\sim N(\mu, \sigma^2 I_n)\) (here we&rsquo;re saying that \(X\) is normally distributed in \(\mathbb R^n\) with spherically symmetric covariance matrix \(\sigma^2I_n\)) . Let \(u_1,...,u_n\) be an orthonormal basis for \(\mathbb R^n\). Then \(X\cdot u_i \sim N(\mu\cdot u_i, \sigma^2)\) and the collection \(\{X\cdot u_i\}\) is independent.
+</p>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The multivariate normal pdf in this case is
+</p>
+\begin{align*}
+f_X(x) &= \frac{1}{\sqrt{2\pi \sigma^2}}\cdot \exp\left(-\frac{|x - \mu|^2}{2\sigma^2}\right) \\
+&= \frac{1}{\sqrt{2\pi \sigma^2}} \cdot \exp\left(\frac{\sum^n_{i=1}|(x\cdot u_i - \mu\cdot u_i)u_i|^2}{2\sigma^2}\right) \\
+&= \frac{1}{\sqrt{2\pi\sigma^2}}\cdot \prod_{i=1}^n\exp\left(\frac{(x\cdot u_i - \mu\cdot u_i)^2}{2\sigma^2}\right)
+\end{align*}
+</details>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

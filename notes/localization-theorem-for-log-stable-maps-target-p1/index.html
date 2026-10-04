@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Localization Theorem For Log Stable Maps Target P1 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/localization-theorem-for-log-stable-maps-target-p1/"
+      data-note-title="Localization Theorem For Log Stable Maps Target P1">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#strategy">Strategy</a></li>
+    <li class="toc-l3"><a href="#whittling-down-the-normalization-sequence">Whittling down the normalization sequence</a></li>
+    <li class="toc-l3"><a href="#computing-weights">Computing weights</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Localization Theorem For Log Stable Maps Target P1</h1>
+      <p class="note-meta"><span class="taxon">theorem</span></p>
+
+      <article class="note">
+<p>
+Let \(V\) be a two dimensional \(\mathbb C\)-vector space \(\mathbb C x_0 \oplus \mathbb C x_1\) with torus action given by weights \(\lambda_0\) and \(\lambda_1\). Then \(\mathbb P^1 = \mathbb P(V)\) has a \(T=\mathbb C^*\)-action given in coordinates by
+\[t\cdot [x:y] = [t^{\lambda_0}\cdot x : t^{\lambda_1}\cdot y].\]
+Denote by \(q_0 = [1:0]\) and \(q_1 = [0:1]\) the fixed points of \(\mathbb P^1\). Set \(D = (q_1)\) and endow \(\mathbb P^1\) with the divisorial log structure relative to \(D\). Note that this is <i>not</i> the toric log structure on \(\mathbb P^1\).
+</p>
+
+<p>
+Let \(\mathcal M = \mathcal M(\mathbb P^1, \beta)\) be the moduli space of basic stable log maps \(f:C\to \mathbb P^1\)  with target \(\mathbb P^1\)and discrete data \(\beta\) consisting of
+</p>
+<ul class="org-ul">
+<li>degree \(\deg f = d\)</li>
+<li>genus \(g = 0\)</li>
+<li>two marked points \(p_1, p_2\)</li>
+<li>full contact order at \(p_1\).</li>
+</ul>
+
+<p>
+Each fixed component of \(\mathcal M\) corresponds to a Kontesevich tree \(\Gamma\) with
+</p>
+<ul class="org-ul">
+<li>A vertex \(v\) in \(\Gamma\) for each connected component \(C_v\) in \(f^{-1}((\mathbb P^1)^T)\). It is either a union of smooth curves (all genus 0 in this case) meeting at nodes OR could be a single isolated point. We define \(i(v)\) to be the index \(0\) or \(1\) so that \(f(C_v) = q_{i(v)}\).</li>
+<li>An edge \(e\) in \(\Gamma\) for each non-contracted irreducible component in \(C\) joining two of the \(C_v\)&rsquo;s. It is necessarily rational, as it must be mapped onto \(\mathbb P^1\) and can only be ramified at the two fixed points \(q_0\) and \(q_1\).</li>
+<li>A flag \(F = (e,v)\) for every possible pair of an edge with one of its incident vertices. To it is associated a geometric point \(x_F = C_v\cap C_e\).</li>
+</ul>
+
+<p>
+It additionally carries labels:
+</p>
+<ul class="org-ul">
+<li>a degree label \(d_e\) for each edge: \(d_e := \deg (f|_{C_e}).\)</li>
+<li>an index label \(i(v)\) for each vertex so that \(f(C_v) = q_{i(v)}\)</li>
+<li>a label \(S_v \subset \{p_1,...,p_n\} \) for each vertex, where \(S_v\) is the set containing all marked points living on \(C_v\).</li>
+</ul>
+
+<p>
+Additionally,
+</p>
+<ul class="org-ul">
+<li>we let \(A_\Gamma\) be the set of flags so that \(q_{i(F)} \not\in |D|\).</li>
+<li>we let \(B_\Gamma\) be the set of vertices so that the fixed point \(q_{i(v)}\not\in |D|\)</li>
+</ul>
+
+<p>
+We denote the fixed component of \(\mathcal M^T\)  by \(\mathcal M_\Gamma\). Our aim is to prove the following:
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+In the notation above,
+\[e(N^{vir}_\Gamma) = \frac{\left(\prod_e\prod_{a=0}^{d_e} \frac{a\lambda_0 + (d_e - a)\lambda_1}{d_e}\right)\left(\prod_{v\in B}\prod_{j\neq i(v)}(\lambda_{i(v)}-\lambda_j)\right)\left(\prod_{flags}(\omega_F - e_F)\right)}{\left(\prod_{F\in A}\prod_{j\neq i(F)}(\lambda_{i(F)} - \lambda_j)\right)\left(\prod_{v\in B}\prod_{j\neq i(v)}c_{(\lambda_{i(v)} - \lambda_j)^{-1}}(E^\vee)\right)}\]
+</p>
+</div>
+<div id="outline-container-strategy" class="outline-2">
+<h2 id="strategy">Strategy</h2>
+<div class="outline-text-2" id="text-strategy">
+<p>
+We have that \(e(N^{vir}_{M_\Gamma/M}) = e(\mathcal T^1)/e(\mathcal T^2)\) where the \(\mathcal T^j\) are defined via the exact sequence
+\[0 \to \mathcal T^1\to E_{0,\Gamma} \to E_{1,\Gamma}\to \mathcal T^2 \to 0\]
+for the dual \(E_{\bullet, \Gamma}\) perfect obstruction theory for \(M_\Gamma\) over \(\mathcal M\). Additionally, we have the following exact sequence of locally free sheaves on \(M_\Gamma\) where \(\Theta\) is the logarithmic tangent sheaf on \(\mathbb P^1\) <b>(THIS NEEDS PROOF)</b>:
+</p>
+
+<p>
+\[\begin{aligned} 0 &\to \overbrace{\Ext^0(\Omega_C(D),\mathcal O_C)}^{B_1} \to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \mathcal T^1 \\ &\to \underbrace{\Ext^1(\Omega_C(D), \mathcal O_C)}_{B_4}\to \underbrace{H^1(C, f^*\Theta)}_{B_5}\to \mathcal T^2 \to 0 \end{aligned}\]
+</p>
+
+<p>
+where sheaves are represented by their fibers at a stable map \([C,f] \in M_\Gamma\). This means that
+</p>
+
+<p>
+\[e(N^{vir}_{M_\Gamma/M}) = \frac{e(\mathcal T^1)}{e(\mathcal T^2)} = \frac{e(B_2)e(B_4)}{e(B_1)e(B_5)}.\]
+</p>
+
+<p>
+The terms \(e(B_1)\) and \(e(B_4)\) are computed in the Graber-Pandharipande paper, so we only need to handle the \(e(B_5)\) and \(e(B_2)\) terms (<b>this claim might be false:</b> because I&rsquo;m not using the full toric divisor, these terms might actually require some modification).
+</p>
+
+<p>
+The source curve \(C\) has an exact sequence resulting from normalizing all the nodes of \(C\). This depends only on \(\Gamma\), the graph type of \(C\), and thus doesn&rsquo;t vary as we move around in \(M_\Gamma\):
+</p>
+
+<p>
+\[0 \to \mathcal O_C\to \bigoplus_{vertices}\mathcal O_{C_v} ~\oplus ~ \bigoplus_{edges}\mathcal O_{C_e} \to \bigoplus_{flags} \mathcal O_{x_F} \to 0.\]
+</p>
+
+<p>
+This explains all terms in the normalization sequence. Since \(f^*\Theta\) is locally free, it is flat and hence we can apply \(- \otimes f^*\Theta\) without loosing exactness. Doing this and then taking the long exact sequence of cohomology gives us
+</p>
+
+\begin{align*}
+0 &\to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \overbrace{\bigoplus_{vertices} H^0(C_v, f^*\Theta) ~\oplus ~ \bigoplus_{edges}H^0(C_e, f^*\Theta)}^{A_1}\to \overbrace{\bigoplus_{flags} H^0( \{x_F\}, f^*\Theta )}^{A_2}\\
+&\to \underbrace{H^1(C, f^*\Theta)}_{B_5} \to \underbrace{\bigoplus_{vertices} H^1(C_v, f^*\Theta) ~\oplus ~ \bigoplus_{edges}H^1(C_e, f^*\Theta)}_{A_3} \to \underbrace{\bigoplus_{flags} H^1(\{x_F\}, f^*\Theta)}_{A_4}\to 0.
+\end{align*}
+
+<p>
+Now we get
+</p>
+
+<p>
+\[\frac{e(B_2)}{e(B_5)} = \frac{e(A_1) e(A_4)}{e(A_2)e(A_3)}\]
+</p>
+
+<p>
+which gives us a computational strategy.
+</p>
+
+<ul class="org-ul">
+<li>\(H^0(\{x_F\}, f^*\Theta) = f^*\Theta_{x_F} = \Theta_{s_{i(F)}}\) where \( i(F) = i(V)\) for \(F=(e,v)\).</li>
+<li>\(H^1(C_e,f^*\Theta)\) should vanish since \(C_e\) is rational, though we check this with a Cech cohomology computation.</li>
+<li>The sheaf \(f^*\Theta\) is the constant sheaf on \(C_v\) with value \(\Theta_{p_i(v)}\).</li>
+</ul>
+
+<p>
+This means we should be able to compute weights quite explicitly here. That&rsquo;s the strategy.
+</p>
+</div>
+<div id="outline-container-whittling-down-the-normalization-sequence" class="outline-3">
+<h3 id="whittling-down-the-normalization-sequence">Whittling down the normalization sequence</h3>
+<div class="outline-text-3" id="text-whittling-down-the-normalization-sequence">
+<p>
+Now we compute the individual terms in the <a class="idlink" data-note="normalization-exact-sequence" href="../../notes/normalization-exact-sequence/">normalization sequence</a> above.
+</p>
+</div>
+<div id="outline-container-the-flags" class="outline-4">
+<h4 id="the-flags">The flags</h4>
+<div class="outline-text-4" id="text-the-flags">
+<p>
+For dimension reasons, the last term is trivial. The global sections of \(f^*\Theta\) at the point \(x_F\) is simply the stalk \(\Theta_{p_{i(F)}}\) as observed above, so we can rewrite the normalization sequence as
+</p>
+
+<p>
+This means the normalization sequence is
+</p>
+\begin{align*}
+0 &\to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \overbrace{\bigoplus_{vertices} H^0(C_v, f^*\Theta) ~\oplus ~ \bigoplus_{edges}H^0(C_e, f^*\Theta)}^{A_1}\to \overbrace{\bigoplus_{flags} \Theta_{s_{i(F)}}}^{A_2}\\
+&\to \underbrace{H^1(C, f^*\Theta)}_{B_5} \to \underbrace{\bigoplus_{vertices} H^1(C_v, f^*\Theta) ~\oplus ~ \bigoplus_{edges}H^1(C_e, f^*\Theta)}_{A_3} \to 0.
+\end{align*}
+</div>
+</div>
+<div id="outline-container-checking-the-vanishing-in-the-second-bullet-point-above" class="outline-4">
+<h4 id="checking-the-vanishing-in-the-second-bullet-point-above">Checking the vanishing in the second bullet point above</h4>
+<div class="outline-text-4" id="text-checking-the-vanishing-in-the-second-bullet-point-above">
+<p>
+Let&rsquo;s now compute the cohomology of \(\Theta\) on \(\mathbb P^1\) via Cech cohomology using the cover \(U_0 = U_x = \{[x:1]\}\) and \(U_1 = U_y = \{1:y\}\).
+</p>
+
+<p>
+First, \(U_x\) doesn&rsquo;t intersect the divisor, so \(\Theta(U_x) = \mathcal T_{\mathbb P^1}(U_x) = k[x]\cdot \partial_x\) is the free \(\mathcal O_{\mathbb P^1}\)-module with generator \(\partial_x\). On the other hand \(D\) has equation \( y = 0\) in \(U_y\) so it is the free \(\mathcal O_{\mathbb P^1}(U_y)\) module generated by the logarithmic differential \(y\,\partial_y\). This gives us
+</p>
+
+<p>
+\[C^0(\Theta) = \Theta(U_x)\times \Theta(U_y) = (k[x]\cdot \partial_x) \times (k[y]\cdot y\,\partial_y).\]
+</p>
+
+<p>
+We then consider \(\Theta(U_x\cap U_y)\). This again does not intersect \(D\), so \(\Theta(U_x\cap U_y) = \mathcal T_{\mathbb P^1}(U_x\cap U_y)\) and choosing \(x\) as our coordinate we get that \(\Theta(U_x\cap U_y) = k[x^\pm]\cdot \partial_x\). This gives us
+</p>
+
+<p>
+\[C^1(\Theta) = k[x^\pm]\cdot \partial_x\]
+</p>
+
+<p>
+To write down the differential in the chosen coordinates we must the section \(y\,\partial_y\) of \(\Theta\) in terms of \(\partial_x\). Recall that
+</p>
+
+<p>
+\[v\cdot \frac{\partial}{\partial y} = u\cdot \frac{\partial}{\partial x} \implies v = u\cdot \frac{\partial y}{\partial x}.\]
+</p>
+
+<p>
+Since \(y = 1/x\) in \(U_x\cap U_y\), we get that
+</p>
+
+<p>
+\[1 = u \cdot\frac{\partial y}{\partial x} \implies 1 = u \cdot \left(-\frac{1}{x^2}\right)\implies u = -x^2\]
+so \(\partial_y = -x^2 \partial_x\).
+</p>
+
+<p>
+The differential \(d:C^0\to C^1\) is therefore
+</p>
+
+<p>
+\[d(f(x)\partial_x, g(y)\cdot y\,\partial_y) = f(x)\partial_x - g(1/x)\left(\frac{1}{x}\cdot (-x^2\partial_x)\right) = (f(x) + xg(1/x))\partial_x.\]
+for arbitrary \(f \in \mathcal O_{\mathbb P^1}(U_x) = k[x]\) and \(g\in \mathcal O_{\mathbb P^1}(U_y) = k[y]\). By choosing these polynomials appropriately, the expression \(f(x) + xg(1/x)\) can be made equal to any Laurent polynomial in \(\mathcal O_{\mathbb P^1}(U_x \cap U_y) = k[x^\pm]\), so \(d\) is surjective and \(H^1(\mathbb P^1, \Theta) = 0\). The kernel of \(d\) consists of pairs \(f,g\) so that \(f(x) = -xg(1/x)\), which can happen if and only if \(g(y) = a_0 + a_1 y\) for some \(a_0,a_1 \in k\). Thus \(H^0(\mathbb P^1, \Theta) = k^{\oplus 2}\).
+</p>
+
+<p>
+\[H^0(\mathbb P^1, \Theta) = k^{\oplus 2}, ~ H^1(\mathbb P^1, \Theta) = 0.\]
+</p>
+
+<p>
+For more general situations we&rsquo;ll need to do a bit more work to relate the calculation of \(H^1(X, \Theta)\) to \(H^1(C_e, f^*\Theta)\). Here, however, it&rsquo;s dead easy. We know that \(\Theta\) is a line bundle on \(\mathbb P^1\) and thus is isomorphic to \(\mathcal O_{\mathbb P^1}(n)\) for some \(n\). By the cohomology calculation above, we know that \(n = 1\) in this case. Then, since \(C_e\) is rational, \(f^*\Theta \cong \mathcal O_{C_e}(d_e\cdot n)\) where \(d_e\) is the degree of \(f|_{C_e}:C_e\to \mathbb P^1\). In particular, \(f^*\Theta\) has nonnegative degree, so
+</p>
+
+<p>
+\[H^1(C_e, f^*\Theta) \cong H^1(\mathbb P^1, \mathcal O_{\mathbb P^1}(d_e\cdot n)) = 0.\]
+</p>
+
+<p>
+The exact sequence now reads
+</p>
+
+\begin{align*}
+0 &\to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \overbrace{\bigoplus_{vertices} H^0(C_v, f^*\Theta) ~\oplus ~ \bigoplus_{edges} H^0(C_e, f^*\Theta)}^{A_1}\to \overbrace{\bigoplus_{flags} \Theta_{s_{i(F)}}}^{A_2}\\
+&\to \underbrace{H^1(C, f^*\Theta)}_{B_5} \to \underbrace{\bigoplus_{vertices} H^1(C_v, f^*\Theta) ~\oplus ~ 0 }_{A_3}\to 0.
+\end{align*}
+</div>
+</div>
+<div id="outline-container-the-0th-cohomology-of-constant-sheaves" class="outline-4">
+<h4 id="the-0th-cohomology-of-constant-sheaves">The 0th cohomology of constant sheaves</h4>
+<div class="outline-text-4" id="text-the-0th-cohomology-of-constant-sheaves">
+<p>
+We know that \(C_v\) is connected and \(f^*\Theta\) is just the constant sheaf with value \(\Theta_{s_{i(v)}}\) since \(f\) is constant on \(C_v\), so \(H^0(C_v, f^*\Theta) = \Theta_{s_{i(v)}}\). This reduces the normalization sequence to
+</p>
+
+\begin{align*}
+0 &\to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \overbrace{\bigoplus_{vertices} \Theta_{p_{i(v)}} ~\oplus ~ \bigoplus_{edges}    H^0(C_e, f^*\Theta)}^{A_1}\to \overbrace{\bigoplus_{flags} \Theta_{s_{i(F)}}}^{A_2}\\
+&\to \underbrace{H^1(C, f^*\Theta)}_{B_5} \to \underbrace{\bigoplus_{vertices} H^1(C_v, f^*\Theta)}_{A_3} \to 0.
+\end{align*}
+
+<p>
+So \(K\)-theoretically,
+</p>
+\begin{align*}
+H^0(C, f^*\Theta) - H^1(C, f^*\Theta)
+=  &+ \bigoplus_{vert} \Theta_{s_{i(v)}} ~+ ~ \bigoplus_{edges} H^0(C_e, f^*\Theta) \\
+&- \bigoplus_{flag} \Theta_{s_{i(F)}} ~- ~ \bigoplus_{vert} H^1(C_v, f^*\Theta)
+\end{align*}
+</div>
+</div>
+</div>
+<div id="outline-container-computing-weights" class="outline-3">
+<h3 id="computing-weights">Computing weights</h3>
+<div class="outline-text-3" id="text-computing-weights">
+<p>
+We&rsquo;re now in a position to compute weights. All terms besides the remaining \(H^1\) are subsets of corresponding terms with \(\Theta\) swapped for \(f^*T_{\mathbb P^1}\), so it should be possible to read the weights off from the values listed in GP. (page 80 in blue notebook)
+</p>
+
+<p>
+Set contact order to be \((2,0)\) and let there be two marked points.
+</p>
+
+<p>
+See page 81 of blue notebook.
+</p>
+</div>
+<div id="outline-container-the-non-contracted-global-section-portion" class="outline-4">
+<h4 id="the-non-contracted-global-section-portion">The non-contracted global section portion</h4>
+<div class="outline-text-4" id="text-the-non-contracted-global-section-portion">
+<p>
+Here we calculate the weights on \(H^0(C_e, f^*\Theta)\).
+</p>
+
+<p>
+Here&rsquo;s something I realized which has been lurking in the background confusing me: we don&rsquo;t necessarily have a \(T\)-action on \(T\mathbb P^1\) the tangent bundle. Here are the induced actions of relevance for \(t\in T\):
+</p>
+<ul class="org-ul">
+<li>\(t\) acts on \(X\): \(t:X\to X\)</li>
+<li>\(t\) acts on \(\mathcal O_X\): \(t:f\mapsto f\circ t\)</li>
+<li>\(t\) acts on \(T_pX\) when \(p \in X^T\): a derivation \(\partial:\mathcal O_X\to \mathbb C\) at \(p\) gets sent to \(\partial_t(f) := \partial(f\circ t)\). This is still a derivation at \(p\) because it is still linear and because</li>
+</ul>
+<p>
+\[\partial(fg \circ t) = \partial(f\circ t)(g\circ t)(p) + \partial(g\circ t)(f\circ t)(p) = \partial_t(f)g(p) + \partial_t(g)f(p)\]
+since \(t\) fixes \(p\).
+</p>
+<ul class="org-ul">
+<li>Attempting to define a similar \(T\)-action on \(TX\) causes problems however; for a \(\mathbb C\)-derivation \(\partial:\mathcal O_X\to \mathcal O_X\),</li>
+</ul>
+<p>
+\[\partial_t(fg) = \partial_t(f)(g\circ t) + \partial_t(g)(f\circ t) \neq \partial_t(f)g+\partial_t(g)f\]
+</p>
+
+<p>
+So that&rsquo;s an issue when trying to think of the weights on \(TX\) descending to \(\Theta\); there isn&rsquo;t necessarily a \(T\)-action! However the action above still defines a linear map \(t:TX\to TX\) for each \(t\in T\), and this map sends \(\Theta\) to \(\Theta\) <b>SO LONG AS</b> \(D\subseteq X^T\). This is because a derivation \(\partial\) is logarithmic if and only if \(\partial(\mathcal I_D) \subset \mathcal I_D\), and if \(D\subseteq X^T\) then for any function \(f\in \mathcal I_D\) (i.e. any function vanishing on \(D\)) we get that \((f\circ t)(D) = 0\) since \(t\) fixes \(D\).
+</p>
+
+<p>
+I&rsquo;m going to do some BS now&#x2026;
+</p>
+
+<ul class="org-ul">
+<li>Based on a Cech calculation we know that \(\Theta\cong \mathcal O_{\mathbb P^1}(1)\). The weights on the global sections \(x,y\in \mathcal O_{\mathbb P^1}(1)\) are \(\lambda_0\) and \(\lambda_1\), let&rsquo;s say.</li>
+<li>When we pull back this guy to \(C_e\), we get \(H^0(\mathcal O_{C_e}(d_e))\), which is spanned by Cech cocycles of the form</li>
+</ul>
+<p>
+\[z_i^az_j^b, a+b = d_e\]
+where \(z_i \mapsto x^{d_e}\) and \(z_j\mapsto y^{d_e}\) via \(f\) in coordinates. Thus we expect that the weights on \(H^0(\mathcal O_{C_e}(d_e))\) are
+\[\frac{a\lambda_0 + b\lambda_1}{d_e}\]
+for values of \(a\) and \(b\) such that \(a + b = d_e\). Hopefully, these are the weights on \(H^0(f^*\Theta)\) since these bundles <i>are</i> isomorphic &#x2013; however, since the isomorphism \(\mathcal O_{\mathbb P^1}(1)\cong \Theta\) is <i>not</i> necessarily \(T\)-equivariant, there may be an issue here. If correct, this would mean that the Euler class contribution of \(H^0(C_e, f^* \Theta)\) to the Euler class of \(H^0(C,f^*\Theta) - H^1(C,f^*\Theta)\) is
+\[\frac{\sum_{a = 0}^{d_e}(a\lambda_0 + (d_e - a)\lambda_1)}{d_e^{d_e+1}}\]
+for example, if \(f:C_e \to \mathbb P^1\)is a degree \(2\) cover, then the contribution to the Euler class is
+\[\frac{(2\lambda_0)(\lambda_0 + \lambda_1)(2\lambda_1)}{2^3}.\]
+</p>
+</div>
+</div>
+<div id="outline-container-the-weights-on-the-contracted-h1-portion" class="outline-4">
+<h4 id="the-weights-on-the-contracted-h1-portion">The weights on the contracted H1 portion</h4>
+<div class="outline-text-4" id="text-the-weights-on-the-contracted-h1-portion">
+<p>
+Here we compute the weights on \(H^1(C_v, f^*\Theta)\).
+</p>
+
+<p>
+<b>Rewrite the cohomology</b>
+First notice that
+\[H^i(C_v, f^*\Theta) \cong H^i(C_v,\mathcal O_{C_v})\otimes \Theta_{p_i(v)}\]
+A quick argument: think of  \(f\) as a map \(f:C_v\to \text{pt} = \{p_i(v)\}\) and remember \(f^*\Theta \cong \mathcal O_{C_v}\otimes_{f^{-1}\mathcal O_{p_i(v)}} f^{-1}\Theta\). The sheaf \(f^{-1}\Theta\) is really just a constant sheaf whose value is a finite-dimensional \(\mathbb C\)-vector space of dimension \(n\), and \(f^{-1}\mathcal O_{p_i(v)}\) is just \(\underline{\mathbb C}\). Non-canonically, we then get
+\[f^*\Theta \cong \mathcal O_{C_v}^{\oplus n}.\]
+Since direct sum commutes with cohomology we get
+\[H^i(C_v, f^*\Theta) \cong H^i(C_v, \mathcal O_{C_v})^{\oplus n} \cong H^i(C_v, \mathcal O_{C_v}) \otimes \Theta_{p_i(v)}.\]
+This isomorphism is non-canonical; if you&rsquo;d rather a natural isomorphism, note that \(-\otimes_{f^{-1}\mathcal O_{p_i(v)}}f^{-1}\Theta\) is an exact functor, and exact functors commute with taking cohomology. Now we just need the weights on \(H^1(C_v, \mathcal O_{C_v})\) and \(\Theta_{p_i(v)}\) separately.
+</p>
+
+<p>
+<b>Weights of \(\Theta_{p_i(v)}\)</b>
+\(\Theta\) consists of vector fields which vanish on \(D\), the log stratum/divisor of \(\mathbb P^1\). If \(p_i(v)\in |D|\) then \(\Theta_{p_i(v)} \cong 0\) and otherwise \(\Theta_{p_i(v)} \cong T_{p_i(v)}\mathbb P^1\).
+</p>
+
+<p>
+<b>Weights of \(H^1(C_v, \mathcal O_{C_v})\)</b>
+The scheme \(C_v\) is <i>either</i> a single point or is a union of smooth curves meeting at nodes. In the former case the cohomology vanishes, in the latter case we can calculate it using the <a class="idlink" data-note="normalization-exact-sequence" href="../../notes/normalization-exact-sequence/">normalization exact sequence</a>. Our case is nice because we&rsquo;ve chosen \(g=0\) so all the components are rational. This should be the same as the term appearing in the Graber-Pandharipande paper however, since there is no logarithmic content as far as I can see (RUN THIS BY BERND).
+</p>
+
+<p>
+Should also be able to read off weights from the normalization exact sequence however. Writing \(C\) for \(C_v\) temporarily, if \(\beta:\widetilde C\to C\) is the normalization then the les in cohomology is
+</p>
+\begin{align*}
+0 &\to H^0(C, \mathcal O_C) \to H^0(C,\beta_*\mathcal O_{\widetilde C}) \to H^0(\bigoplus \mathbb C_p) \to ... \\
+&\to H^1(C, \mathcal O_C)\to H^1(C, \beta_*\mathcal O_{\widetilde C})\to 0.
+\end{align*}
+
+<p>
+Because \(\beta\) is finite, higher direct images \(R^i\beta_*\mathcal F\)  all vanish (see Geometry of Algebraic Curves II) for any coherent \(\mathcal F\) on \(\widetilde C\), so by the Leray spectral sequence
+\[H^1(\widetilde C, \mathcal F) \cong H^1(C, \beta_*\mathcal F)\]
+so
+</p>
+\begin{align*}
+0 &\to H^0(C, \mathcal O_C) \to H^0(\widetilde C,\mathcal O_{\widetilde C}) \to H^0(\bigoplus \mathbb C_p) \to ... \\
+&\to H^1(C, \mathcal O_C)\to H^1(\widetilde C, \mathcal O_{\widetilde C})\to 0.
+\end{align*}
+
+<p>
+<b>Just doing the weights together actually</b>
+However we can just copy the Graber Pandharipande weights with a minor modification. They point out that \(H^1(C_v,\mathcal O_{C_v})\) is dual to the Hodge bundle \(E = \pi_*\omega\) on \(\overline{M}_{g(v), \text{val}(v)}\).  \(H^1(C_v,\mathcal O_{C_v})\otimes T_{p_i(v)}\mathbb P^1\) is therefore \(E^\vee = H^1(C_v,\mathcal O_{C_v})\) since \(T_{p_i(v)}\mathbb P^1\) is just a one-dimensional vector space, and has weight \(\lambda_{i(v)} - \lambda_{j}\) where \(j \neq i(v)\). The top equivariant Chern class of this bundle is given by
+\[\prod_{j\neq i} c_{(\lambda_i - \lambda_j)^{-1}}(E^\vee)\cdot (\lambda_i - \lambda_j)^{g(v)},\]
+but since we&rsquo;re on \(\mathbb P^1\) and not \(\mathbb P^r\) and because we chose \(g = 0\) way at the beginning we would get
+\[c_{(\lambda_i - \lambda_j)^{-1}}(E^\vee) \cdot c_{(\lambda_j - \lambda_i)^{-1}}(E^\vee)\]
+where for a bundle \(Q\) of rank \(q\)
+\[c_t(Q) = 1 + tc_1(Q) + ... + t^qc_q(Q).\]
+I&rsquo;m not sure what the rank of \(E\) is, but we get a bonus simplification because we&rsquo;re taking the weights of the log tangent sheaf instead of the tangent sheaf: whenever \(p_{i(v)} \in D,\) this guy vanishes. Given our choice of log structure on \(\mathbb P^1\), this means we only get one of the two terms in the above product:
+</p>
+
+<p>
+\[c_{(\lambda_0 - \lambda_\infty)^{-1}}(E^\vee)\]
+</p>
+</div>
+</div>
+<div id="outline-container-the-weights-of-the-vertices-and-flags" class="outline-4">
+<h4 id="the-weights-of-the-vertices-and-flags">The weights of the vertices and flags</h4>
+<div class="outline-text-4" id="text-the-weights-of-the-vertices-and-flags">
+<p>
+These contributions come from \(\bigoplus_{vert}\Theta_{s_{i(v)}}\) and \(\bigoplus_{flags}\Theta_{s_i(F)}\). All of the former will cancel with some of the latter, leaving only a couple of flag contributions. These will have weight equal to the weight on the tangent space at the corresponding point or will be weight zero if the point is in the log stratum.
+</p>
+</div>
+</div>
+<div id="outline-container-final-form-of-the-euler-class-of-the-virtual-normal-bundle" class="outline-4">
+<h4 id="final-form-of-the-euler-class-of-the-virtual-normal-bundle">Final form of the Euler class of the virtual normal bundle</h4>
+<div class="outline-text-4" id="text-final-form-of-the-euler-class-of-the-virtual-normal-bundle">
+<p>
+Let&rsquo;s put everything together. We started with the exact sequence
+</p>
+
+<p>
+\[\begin{aligned} 0 &\to \overbrace{\Ext^0(\Omega_C(D),\mathcal O_C)}^{B_1} \to \overbrace{H^0(C, f^*\Theta)}^{B_2} \to \mathcal T^1 \\ &\to \underbrace{\Ext^1(\Omega_C(D), \mathcal O_C)}_{B_4}\to \underbrace{H^1(C, f^*\Theta)}_{B_5}\to \mathcal T^2 \to 0 \end{aligned}\]
+from which we get that
+</p>
+
+<p>
+\[e(N^{vir}) = \frac{e(B_2)e(B_4)}{e(B_1)e(B_5)}.\]
+</p>
+
+<p>
+The terms \(B_4\) and \(B_1\) are the same here as they are in the Graber-Pandharipande setup, so from their paper we get that
+\[\frac{e(B_4)}{e(B_1)} = \frac{\prod_{flags}(\omega_F - e_F)}{1}\]
+where
+</p>
+
+<ul class="org-ul">
+<li>\(\omega_F = \frac{\lambda_{i(F)} - \lambda_{j(F)}}{d_e}\)</li>
+<li>\(e_F\) is the first Chern class of the line bundle on \(\overline M_\Gamma\) whose fiber at \(C\) is the cotangent space to the component \(C_v\) associated to \(v\) at \(s_{i(F)}\).</li>
+</ul>
+
+<p>
+From the long exact sequence in cohomology applied to the pullback of the normalization exact sequence over \(f\), we get that
+</p>
+
+<p>
+\[\frac{e(B_2)}{e(B_5)} = \frac{e\left(\bigoplus_{vert}\Theta_{s_{i(v)}}\right) e\left(\bigoplus_{edges}H^0(C_e,f^*\Theta)\right)}{e\left(\bigoplus_{flags}\Theta_{s_{i(F)}}\right)e\left(\bigoplus_{verts\phantom{g}}H^1(C_v,f^*\Theta)\right)}\]
+</p>
+
+<p>
+Setting \(A\) to be the set consisting of flags \(F\) such that \(s_{i(F)} \notin D\) and similarly for \(B\) a subset of vertices, we calculated that
+</p>
+
+<p>
+\[e\left(\bigoplus_{vert}\Theta_{s_{i(v)}}\right) = \prod_{v\in B}\prod_{j\neq i(v)}(\lambda_{i(v)}-\lambda_j)\]
+</p>
+
+<p>
+\[e\left(\bigoplus_{flags}\Theta_{s_{i(v)}}\right) = \prod_{F\in A}\prod_{j\neq i(F)}(\lambda_{i(F)}-\lambda_j)\]
+</p>
+
+<p>
+\[e\left(\bigoplus_{vert}H^1(C_v, f^*\Theta)\right) = \prod_{v\in B}\prod_{j\neq i(v)}c_{(\lambda_{i(F)}-\lambda_j)^{-1}}(E^\vee)\]
+</p>
+
+<p>
+\[e\left(\bigoplus_{edge}H^0(C_e, f^*\Theta)\right) = \prod_{edges}\prod_{a=0}^{d_e}\frac{a\lambda_0 + (d_e - a)\lambda_1}{d_e}\]
+</p>
+
+<p>
+so putting everything together:
+</p>
+
+<p>
+\[e(N^{vir}_\Gamma) = \frac{\left(\prod_e\prod_{a=0}^{d_e} \frac{a\lambda_0 + (d_e - a)\lambda_1}{d_e}\right)\left(\prod_{v\in B}\prod_{j\neq i(v)}(\lambda_{i(v)}-\lambda_j)\right)\left(\prod_{flags}(\omega_F - e_F)\right)}{\left(\prod_{F\in A}\prod_{j\neq i(F)}(\lambda_{i(F)} - \lambda_j)\right)\left(\prod_{v\in B}\prod_{j\neq i(v)}c_{(\lambda_{i(v)} - \lambda_j)^{-1}}(E^\vee)\right)}\]
+</p>
+
+
+<p>
+Written another way to mimic the format in Graber-Pandharipande, we have
+</p>
+
+\begin{align*}
+&= \prod_{F\in A}\frac{1}{\omega_F - e_F} \prod_{j \neq i(F)}(\lambda_{i(F)} - \lambda_{j})\\
+\frac{1}{e(N^{vir})}&= \prod_{v \in B}\prod_{j\neq i(v)} c_{(\lambda_{i(v)} - \lambda_j)^{-1}}(E^\vee)\\
+&= \prod_{edges} \frac{d_e^{d_e+1}}{\prod_{a = 0}^{d_e}(a\lambda_0 + (d_e - a)\lambda_1)}
+\end{align*}
+
+<p>
+Note that the bit iterating over the edges is the most different from the Graber and Pandharipandhe paper, and it depends on the log structure we chose. There&rsquo;s surely a better way to write it which accounts for a more general choice of log stratum but this is supposed to be an example not a general formula yet.
+</p>
+
+<p>
+Also note that the term \(c_{(\lambda_i - \lambda_j)^{-1}}(E^\vee)\) above is just \(1\) when \(C_v\) is a single point, since the higher cohomology of a point vanishes.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="normalization-exact-sequence" href="../../notes/normalization-exact-sequence/">Normalization Exact Sequence</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

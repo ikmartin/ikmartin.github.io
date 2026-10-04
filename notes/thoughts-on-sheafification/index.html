@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thoughts On Sheafification — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/thoughts-on-sheafification/"
+      data-note-title="Thoughts On Sheafification">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#examples">Examples</a></li>
+    <li class="toc-l2"><a href="#kernel-image-and-cokernel-sheaves">Kernel, image and cokernel sheaves</a></li>
+    <li class="toc-l3"><a href="#the-kernel-presheaf-is-a-sheaf">The kernel presheaf is a sheaf</a></li>
+    <li class="toc-l3"><a href="#the-image-presheaf-fails-gluing">The image presheaf fails gluing</a></li>
+    <li class="toc-l3"><a href="#the-cokernel-presheaf-fails-locality">The cokernel presheaf fails locality</a></li>
+    <li class="toc-l2"><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Thoughts On Sheafification</h1>
+      <p class="note-meta"><span class="taxon">blog</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/sheaves/">#sheaves</a></p>
+
+      <article class="note">
+<blockquote>
+<p>
+Sheafification felt opaque to me when I first saw it, but it really isn&rsquo;t.
+</p>
+</blockquote>
+
+<p>
+Sheafification felt opaque to me when I first learned it from Hartshorne, I&rsquo;ll admit. I reviewed it recently to recover from summer rustiness and wanted to make the argument that it is, in fact, actually pretty straightforward.
+</p>
+
+<p>
+A slogan that took me far too long to internalize which I find helps immensely: <i>a section \(s\) of a sheaf \(\mathcal F\) on a set \(U\) is <b>always</b> a function on \(U\) taking values in some field \(k\)</i>. This is close to literally true, you&rsquo;ll find the precise statement in Hartshorne Section 2.1, but for some reason this too took a surprisingly long time to settle into the deep recesses of my supremely smooth brain. 
+</p>
+
+<p>
+There are two additional axioms a presheaf \(\mathcal F\) on \(X\) must satisfy to be a sheaf:
+</p>
+<ol class="org-ol">
+<li>(<i>Locality</i>) Let \(U\) be covered by \(U_i\). If \(s,t \in \mathcal F(U)\) satisfy \(s|_{U_i} = t|_{U_i}\) for all \(i\), then \(s = t\).</li>
+<li>(<i>Gluing</i>) Again let \(U\) be covered by \(U_i\). If there exist sections \(s_i \in \mathcal F(U_i)\) such that \(s_i|_{U_i\cap U_j} = s_j|_{U_i \cap U_j}\) then there exists some \(s \in \mathcal F(U)\) such that \(s|_{U_i} = s_i\).</li>
+</ol>
+
+<p>
+Test this against our sections-are-functions slogan and you get the corresponding smooth-brain statements:
+</p>
+<ol class="org-ol">
+<li>If \(s\) and \(t\) are both functions that agree everywhere on \(U\), then they agree.</li>
+<li>If you can define a function everywhere on \(U\), then you can define a function on \(U\).</li>
+</ol>
+
+<p>
+Stated this way the sheaf axioms become quite stupid. So, to <a class="idlink" data-note="the-mind-of-a-good-mathematician" href="../../notes/the-mind-of-a-good-mathematician/">appease the rule of three</a> and ensure the horse isn&rsquo;t merely asleep, here is the physicist-grade version of these same statements:
+</p>
+<ol class="org-ol">
+<li>If \(s\) and \(t\) are sections which agree locally, then the agree globally.</li>
+<li>If local sections can be found which agree on overlaps, then they may be glued together to form a global section.</li>
+</ol>
+
+<p>
+Thus, there are two ways a sheaf can fail to be a presheaf: it can violate locality by having <i>extra</i> sections which are equal locally but not globally, or it can violate gluing by having <i>too few</i> sections to glue stuff together. Sheafification consists of fixing both of these defects. It removes all sections which violate locality and adds extra sections to ensure gluing is possible. There&rsquo;s an excellent <a href="https://mathoverflow.net/questions/45212/how-should-one-think-about-sheafification-and-the-difference-between-a-sheaf-and">mathoverflow post on this</a>, and it&rsquo;s why I thought to write this in the first place. Aside: what I&rsquo;m calling the locality axiom is more commonly called the &ldquo;identity axiom&rdquo;. I&rsquo;m not quite sure why &#x2013; my headcannon is that the &ldquo;identity&rdquo; of a section, the thing it is, depends only on local information. A better name would then be the &ldquo;Local identity&rdquo; axiom, but that&rsquo;s two words.
+</p>
+<div id="outline-container-examples" class="outline-2">
+<h2 id="examples">Examples</h2>
+<div class="outline-text-2" id="text-examples">
+<p>
+Examples of presheaves which violate gluing are pretty natural; lots of properties are easy or even trivial to satisfy locally but are much harder to satisfy globally.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+<i>(Violating Gluing)</i> Let \(X = S^1\), and pick two distinct points \(p \neq q \in S^1\). For any \(U\subseteq S^1\) define \(\mathcal F(U)\) to be all continuous functions \(f:U\to \mathbb R\) such that \(f(p) = f(q)\). Whenever \(U\) includes \(p\) but not \(q\), this equality condition disappears and \(\mathcal F(U)\) is the set of <i>all</i> continuous functions on \(U\). Therefore if \(U\) is a neighborhood of \(p\) which avoids \(q\) and \(V\) a neighborhood of \(q\) which avoids \(p\), then two sections \(f\in \mathcal F(U)\) and \(g\in \mathcal F(V)\) only glue if they agree on \(U\cap V\) and if \(f(p) = g(q)\). Sheafification of \(\mathcal F\) adds in all these extra sections, and thus the sheafification of \(\mathcal F\) is the sheaf of continuous functions on \(S^1\).
+</p>
+</div>
+
+<p>
+<i>Takeaway: the property \(f(p) = f(q)\) is not a local property, hence it is removed.</i>
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+<i>(Violating Gluing)</i> Let \(X = \mathbb C\) and define \(\mathcal F(U)\) to be the collection of all polynomials bounded on \(U\). If we additionally define \(\mathcal F(\emptyset) = 0\) then \(\mathcal F\) is a presheaf. As long as \(U\) itself is bounded and nonempty, \(\mathcal F(U) = \mathbb C[z]\), but Liouville&rsquo;s theorem tells us that the only bounded holomorphic functions on all of \(\mathbb C\) are constant. In particular, if \(D_r\) is the open disk of radius \(r\) centered at \(0\), then \(f(z) = z\) is bounded on \(D_r\), but there is no section \(g \in \mathcal F(\mathbb C) = \mathbb C\) such that \(g|_{D_r}(z) = f(z)\). Sheafification applied to \(\mathcal F\) therefore adds in the extra functions; it just expands \(\mathcal F(U)\) so that it too is \(\mathbb C[z]\). The sheafification of \(\mathcal F\) is therefore the constant sheaf associated to \(\mathbb C[z]\).
+</p>
+</div>
+
+<p>
+<i>Takeaway: a function can simultaneously be bounded locally and unbounded globally. Hence the &rsquo;bounded&rsquo; condition is removed.</i>
+</p>
+
+<p>
+Examples of locality violation feel less natural to me because it&rsquo;s hard to construct them by imposing conditions on sets of functions. After all, if two functions are equal in every neighborhood of a space, then they&rsquo;re equal everywhere. It feels better to think about &ldquo;equivalence&rdquo;, in my opinion. I can easily imagine two things which are &ldquo;similar locally&rdquo; but are not similar globally. Here&rsquo;s an example utilizing the boundedness example from earlier.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+<i>(Violating Locality)</i> Again let \(X = \mathbb C\), let \(\mathcal F\) be the sheaf of holomorphic functions and let \(\mathcal G\) be the presheaf of bounded holomorphic functions. Now define a presheaf \(\mathcal H(U) = \mathcal F(U)/\mathcal G(U)\). At any \(x\in X\) we get \(\mathcal H_x = 0\), since any holomorphic function defined at \(x\) is bounded in a suitably small neighborhood of \(x\). However, functions like \(f(z) = z\) are not in the class of zero in \(\mathcal H(X)\), since they are not bounded globally. Contrast these two sets:
+</p>
+
+<ul class="org-ul">
+<li>\(\mathcal H_x = \{0\}\) for reasons described above</li>
+<li>\(\mathcal H(X) = \{\text{entire functions}\}/\mathbb C\), since the only bounded functions on \(X\) are the constant functions.</li>
+</ul>
+
+<p>
+The set \(\mathcal H(U)\) is kind of like &ldquo;unbounded functions on \(U\) up to boundedness&rdquo;. Two functions \(f\) and \(g\) can both be bounded on a small set \(U\), but for a strictly larger set \(f\) might become unbounded while \(g\) remains bounded. The sheafification of \(\mathcal H\) throws away all sections for which local equivalence doesn&rsquo;t imply global equivalence. Since all holomorphic functions are equivalent to a bounded function on a sufficiently small set, this is just the constant zero sheaf.
+</p>
+</div>
+
+<p>
+<i>Takeaway: locally bounded doesn&rsquo;t imply globally bounded for all sections, so all sections which are only locally bounded are thrown out.</i>
+</p>
+</div>
+</div>
+<div id="outline-container-kernel-image-and-cokernel-sheaves" class="outline-2">
+<h2 id="kernel-image-and-cokernel-sheaves">Kernel, image and cokernel sheaves</h2>
+<div class="outline-text-2" id="text-kernel-image-and-cokernel-sheaves">
+<p>
+Now let&rsquo;s look at some more general examples that show up immediately after you define sheafification. These sheafification examples are imperative to understand, since we use the sections of these sheaves <i>all the time</i>. If you fall back on the universal property of sheafification in these cases to avoid thinking about sections, then you&rsquo;re robbing yourself of valuable intuition and insight.
+</p>
+
+<p>
+Say we have a map \(\varphi:\mathcal F\to \mathcal G\) of sheaves on a topological space \(X\). We can immediately define kernel, image and cokernel presheaves on \(X\):
+</p>
+
+<ul class="org-ul">
+<li>\(\ker^p \varphi (U) = \ker(\varphi(U): \mathcal F(U)\to \mathcal G(U))\subseteq \mathcal F(U)\)</li>
+<li>\(\img ^p \varphi (U) = \im(\varphi(U): \mathcal F(U)\to \mathcal G(U))\subseteq \mathcal G(U)\)</li>
+<li>\(\coker^p \varphi(U) = \coker(\varphi(U): \mathcal F(U)\to \mathcal G(U))\)</li>
+</ul>
+
+<p>
+These are presheaves, but are they sheaves? Fix \(U\subseteq X\) and a cover \(\{U_i\}\) of \(U\).
+</p>
+</div>
+<div id="outline-container-the-kernel-presheaf-is-a-sheaf" class="outline-3">
+<h3 id="the-kernel-presheaf-is-a-sheaf">The kernel presheaf is a sheaf</h3>
+<div class="outline-text-3" id="text-the-kernel-presheaf-is-a-sheaf">
+<p>
+<b>Locality:</b> Everything is happening in \(\mathcal F(U)\), so this is easy. Given a section \(s\in \ker^p\varphi(U)\) whose restriction \(s|_{U_i} = 0\) is zero for all \(i\), we automatically have that \(s = 0\) on \(U\) since \(s|_{U_i} \in \mathcal F(U_i)\), \(s\in \mathcal F(U)\) and \(\mathcal F\) is a sheaf.
+</p>
+
+<p>
+<b>Gluing:</b> Given \(s_i \in \ker^p\varphi(U_i)\) so that \(s_i|_{U_i\cap U_j} = s_j|_{U_i\cap U_j}\), we want to find a section \(s\in \ker^p\varphi(U)\) whose restriction to \(U_i\) recovers \(s_i\). Such a section certainly exists in \(\mathcal F(U)\) because \(\mathcal F\) is a sheaf, but is this in the kernel of \(\varphi\)? Yes, it is &#x2013; we need to move over to \(\mathcal G\) to see it. The map \(\varphi\) commutes with restrictions, so
+\[\varphi(s)|_{U_i} = \varphi(s|_{U_i}) = \varphi(s_i) = 0\]
+in \(\mathcal G(U_i)\) by the assumption that \(s_i\in \ker^p\varphi(U_i) = \ker(\varphi(U_i))\). But \(\mathcal G\) is also a sheaf, hence satisfies locality and thus \(\varphi(s) = 0\) in \(\mathcal G(U)\). This implies \(s\in \ker^p\varphi(U)\).
+</p>
+
+<p>
+Therefore \(\ker^p\varphi\) is indeed a sheaf, so we remove the \(p\) and define \(\ker\varphi := \ker^p\varphi\).
+</p>
+</div>
+</div>
+<div id="outline-container-the-image-presheaf-fails-gluing" class="outline-3">
+<h3 id="the-image-presheaf-fails-gluing">The image presheaf fails gluing</h3>
+<div class="outline-text-3" id="text-the-image-presheaf-fails-gluing">
+<p>
+We&rsquo;re not so lucky in the case of the image presheaf. It <i>does</i> satisfy locality:
+</p>
+
+<p>
+<b>Locality:</b> Take \(s\in \im^p\varphi(U)\) whose restriction to each \(U_i\) is zero. By virtue of being a section of \(\mathcal G(U)\), this immediately implies \(s = 0\) because \(\mathcal G\) is a sheaf.
+</p>
+
+<p>
+But notice what goes wrong when we try to glue:
+</p>
+
+<p>
+<b>Gluing:</b> Given a collection of \(s_i \in \im^p\varphi(U_i)\) which agree on overlaps, we want a section \(s \in\im^p\varphi(U)\) which restricts to \(s_i\) at each \(U_i\). Again, because \(\mathcal G\) is a sheaf, there is a unique section of \(\mathcal G(U)\) which satisfies this. However, unless \(\varphi(U)\) is surjective, we can&rsquo;t guarantee that this \(s\) is in \(\im^p\varphi(U)\). Thus \(\im^p\varphi\) isn&rsquo;t a sheaf <i>unless</i> \(\varphi(U)\) is surjective for each \(U\).
+</p>
+
+<p>
+A presheaf which satisfies locality but not gluing is called a <b>separated presheaf</b>. To obtain an image sheaf, we simply sheafify: \(\im\varphi := (\im^p\varphi)^\sim\).
+</p>
+
+<p>
+All we&rsquo;ve done is add the missing sections from \(\mathcal G(U)\) into \(\im^p\varphi(U)\), so \(\im\varphi\) is most definitely still a subsheaf of \(\mathcal G\).
+</p>
+</div>
+</div>
+<div id="outline-container-the-cokernel-presheaf-fails-locality" class="outline-3">
+<h3 id="the-cokernel-presheaf-fails-locality">The cokernel presheaf fails locality</h3>
+<div class="outline-text-3" id="text-the-cokernel-presheaf-fails-locality">
+<p>
+If we look back at the bounded holomorphic sections examples, you&rsquo;ll notice that the failure of locality in the third example was actually due to the failure of gluing in the second. This is a more general fact: if we take the quotient of a presheaf (or sheaf) by a presheaf which doesn&rsquo;t have the gluing property, then the resulting quotient presheaf won&rsquo;t have the locality property. To see what I mean, let&rsquo;s look at why locality fails for the cokernel presheaf:
+</p>
+
+<p>
+<b>Locality:</b> Same setup as always, we&rsquo;ve got an \(s\in \coker^p\varphi(U) = \mathcal G(U)/\im(\varphi(U))\) whose restrictions are all zero. This means \(s|_{U_i}\) is contained in \(\im(\varphi(U_i))\), but if we wish to conclude \(s = 0\) too, we&rsquo;d need \(s \in \im(\varphi(U))\). This doesn&rsquo;t happen in general, exactly because the image presheaf doesn&rsquo;t glue!
+</p>
+
+<p>
+The cokernel doesn&rsquo;t actually satisfy gluing either.
+</p>
+
+<p>
+<b>Gluing:</b> Any injective morphism \(\varphi:\mathcal F\to \mathcal G\) will yield a cokernel presheaf which satisfies locality, so gluing is its only failure mode. To break it, we need only find two local sections in \(\mathcal G\) which are locally equivalent up to some section in \(\mathcal F\), but are not globally. For this we&rsquo;ll provide an actual example:
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Let&rsquo;s look at the circle \(S^1 = \mathbb R/\mathbb Z\) be the circle. Take \(\mathcal F = \underline{\mathbb Z}\)  to be the sheaf of constant integer-valued functions on \(S^1\), and let \(\mathcal G\) be the sheaf of all continuous functions on \(S^1\). We&rsquo;ll let \(\varphi:\mathcal F\to \mathcal G\) be the inclusion, so that \(\coker\varphi = \mathcal G/\mathcal F\).
+</p>
+
+<p>
+Poke two holes in \(S^1\), one by removing \(0\) to obtain \(U_1 = S^1 - \{0\}\) and another at \(1/2\) to obtain \(U_2 = S^1 - \{1/2\}\). Their union is all of \(S^1\) and their intersection is two disjoint open intervals. Next write two linear functions, one interpolating between \(0\) and \(1\) on \(U_1\) and the other between \(1/2\) and \(3/2\) on \(U_2\):
+</p>
+\begin{align*}
+  f_1([t]) = t,\quad t\in (0,1)
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+  f_2([t]) = t, \quad t\in (1/2, 3/2).
+\end{align*}
+
+<p>
+Their difference is \(1\) on the interval \((0,1/2)\) and is \(0\) on \((1/2, 0)\), so
+</p>
+\begin{align*}
+  f_2|_{U_1\cap U_2} - f_1|_{U_1\cap U_2} \in \mathcal G(U_1 \cap U_2)/\mathcal F(U_1\cap U_2),
+\end{align*}
+<p>
+and in particular the sections in \(\mathcal G(U_i)/\mathcal F(U_i)\) represented by the \(\overline f_i\) are equal on their overlap. However there is no continuous function \(f\in \mathcal G(S^1)\) such that \(f|_{U_i} - f_i \in \underline{\mathbb Z}(U_i)\) for both \(i\). If there were, then for \(i = 1\) we&rsquo;d get \(f([t]) = t + n\) on \((0,1)\) for some integer \(n\), but then \(f([t]) = t + n + 1\) on \((1/2, 3/2)\). So these \(f_i\) do not glue.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-conclusion" class="outline-2">
+<h2 id="conclusion">Conclusion</h2>
+<div class="outline-text-2" id="text-conclusion">
+<p>
+I have nothing left to say.
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="the-mind-of-a-good-mathematician" href="../../notes/the-mind-of-a-good-mathematician/">The Mind Of A Good Mathematician</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 3: Line Bundles And Linear Series — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-03-line-bundles-and-linear-series/"
+      data-note-title="Algebraic Curves Lecture 3: Line Bundles And Linear Series">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#brief-follow-up-from-previous-class">Brief Follow-up from Previous Class</a></li>
+    <li class="toc-l2"><a href="#line-bundles-and-linear-series">Line bundles and linear series</a></li>
+    <li class="toc-l3"><a href="#linear-series">Linear series</a></li>
+    <li class="toc-l3"><a href="#ampleness">Ampleness</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 3: Line Bundles And Linear Series</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-02-basic-notions" href="../../notes/algebraic-curves-02-basic-notions/">← lecture 2</a> · <a class="idlink" data-note="algebraic-curves-04-riemann-roch" href="../../notes/algebraic-curves-04-riemann-roch/">lecture 4 →</a>
+</p>
+
+<p>
+\(X\) is still a smooth curve over an algebraically closed field \(K\).
+</p>
+<div id="outline-container-brief-follow-up-from-previous-class" class="outline-2">
+<h2 id="brief-follow-up-from-previous-class">Brief Follow-up from Previous Class</h2>
+<div class="outline-text-2" id="text-brief-follow-up-from-previous-class">
+<p>
+We discussed &ldquo;finite type&rdquo; vs &ldquo;finite&rdquo; last class. A map \(f:x\to Y\) is
+</p>
+
+<p>
+<i>quasi finite</i> if it has finitely many points in each fiber
+</p>
+
+<p>
+<i>finite</i> if there exists an affine cover \(U_\alpha\) of \(Y\) such that for
+</p>
+\begin{align*}
+    f|_{f^{-1}(U_\alpha)}: f^{-1}(U_\alpha) \to U_\alpha
+\end{align*}
+<p>
+the corresponding inclusion \(A\rightarrow B\) realizes \(B\) as a finitely generated \(A\)-module; where \(U_\alpha = \Spec A\) and \(f^{-1}(U_\alpha) = \Spec B\).
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+A map as above is finite if and only if it is quasi-finite and proper.
+</p>
+</div>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Take the inclusion \(\mathbb A^1 \setminus \{0\} \to \mathbb A^1\). It is not finite type because \(K[x,x^{-1}]\) is not finitely generated as a module over \(K[x]\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-line-bundles-and-linear-series" class="outline-2">
+<h2 id="line-bundles-and-linear-series">Line bundles and linear series</h2>
+<div class="outline-text-2" id="text-line-bundles-and-linear-series">
+<p>
+We ended last class by defining the sheaf \(\mathcal O_X(D)\) to be the sheaf of rational functions \(f\) of \(X\) such that \(\div (f) + D\) is effective.
+</p>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+\(\mathcal O_{\mathbb P^1}(2P - 3Q)\) is the sheaf of regular functions which have a zero of order 3 or greater at \(Q\), a pole of order at most \(2\) at \(P\) and no poles anywhere else on \(\mathbb P^1\).
+</p>
+</div>
+
+<p>
+We have the following facts immediately.
+</p>
+<ol class="org-ol">
+<li>\(\mathcal O_X(D) \cong \mathcal O_X(D') \iff D\sim D'\)</li>
+<li>Conversely, any invertible sheaf \(L\) is of the form \(\mathcal O_X(D)\) for some divisor \(D\)</li>
+</ol>
+
+<p>
+We call \(L\)  <i>effective</i> if there exists \(D\) effective such that \(L\cong \mathcal O_X(D)\) which happens if and only if \(h^0(X,L) > 0\). Note that there are effective sheaves which are not invertible in general.
+</p>
+</div>
+<div id="outline-container-linear-series" class="outline-3">
+<h3 id="linear-series">Linear series</h3>
+<div class="outline-text-3" id="text-linear-series">
+<p>
+The <i>degree</i> of a line bundle \(L\cong \mathcal O_X(D)\) is the degree of \(D\). Furthermore, \(\mathcal O_X(D + D') = \mathcal O_X(D)\otimes \mathcal O_X(D')\). We can now define linear series, objects which classify maps \(X\to \mathbb P^r\).
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A linear series is a subspace \(V\) of \(H^0(X,L)\). 
+</p>
+<ul class="org-ul">
+<li>It has degree equal to the degree of \(L\).</li>
+<li>It has rank equal to \(\dim(V) - 1\).</li>
+<li>The linear series is called <i>complete</i> if \(V = H^0(X,L).\)</li>
+<li>A <i>base point</i> of a linear series \((L,V)\) is a point \(P\) such that \(\dim(V) = \dim(V(-P))\).</li>
+</ul>
+<p>
+A linear series of degree \(d\) and rank \(r\) is called a \(g^r_d\).
+</p>
+</div>
+<p>
+Why do we care about linear series? It turns out they classify maps to \(\mathbb P^r\).
+</p>
+
+<p>
+Given a \(g^r_d\) \((L,V)\) that is base point free, we obtain a map \(\varphi_V:X\to \mathbb P^r\) given by
+</p>
+\begin{align*}
+    P\mapsto \{s ~\mid~ s(P) = 0\} \in \mathbb PV^* \cong \mathbb P^r.
+\end{align*}
+<p>
+Note that \(V^*\) is the dual space here. This is the coordinate free version, but if we choose a basis \(s_0,...,s_r\) of \(V\) (remember that \(V\) is \(r+1\) dimensional) then we can write this map more concretely as
+</p>
+\begin{align*}
+    P\mapsto [s_0(P): ... : s_r(P)].
+\end{align*}
+
+<p>
+A question was asked: why does \(\{s\in V ~\mid~ s(P) = 0\}\) specify an element in the dual space of \(V\)? It&rsquo;s because the condition \(s(P) = 0\) specifies a hyperplane in \(V\), a subspace of codimension 1, and hence is given by an element of the dual space.
+</p>
+
+<p>
+In the situtation \(\varphi_V:V\to \mathbb P^r\) above, we have \(L\cong \varphi_V^*\mathcal O_{\mathcal P^r}(1)\); in other words, we can recover \(L\) from the map \(\varphi_V\). To summarize:
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+There is a bijective correspondence between maps \(f:X\to \mathbb P^r\) up to the action of \(\operatorname{PGL}_{r + 1}\) with non-degenerate image and a base-point free linear series.
+</p>
+</div>
+<p>
+<i>Notes:</i> By non-degenerate we just mean that the image of \(f\) above isn&rsquo;t contained in any linear subspace of \(\mathbb P^r\). This isn&rsquo;t the case with the map \(\varphi_V\) we defined above &#x2013; if it were, then \(s_0(P), ...,s_r(P)\) would have a nontrivial linear relation, which isn&rsquo;t the case since they were chosen to be a basis. If \(f:X\to \mathbb P^r\) <i>did</i> have image lying in some linear subspace, then we&rsquo;d simply decrease the value of \(r\).
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+If \(D\in \operatorname{Div}(X)\) is the base locus of \(V\), then the map \(\varphi_V\) is defined to be the map induced by \(V(-D)\).
+</p>
+</div>
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+If the \(g^r_d\) \((V,L)\) has degree \(d\) then
+</p>
+\begin{align*}
+    d = \deg(\varphi_V) \cdot \deg(\varphi_V(X)) + \deg(D).
+\end{align*}
+</div>
+</div>
+</div>
+<div id="outline-container-ampleness" class="outline-3">
+<h3 id="ampleness">Ampleness</h3>
+<div class="outline-text-3" id="text-ampleness">
+<p>
+\(L\) is called <i>very ample</i> if \(\varphi_L\) is an embedding. \(L\) is called <i>ample</i> if \(L^{\otimes n}\) is very ample for some \(n > 0\).
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+\(L\) is very ample if and only if it is effective and
+</p>
+<ol class="org-ol">
+<li>\(h^0(X,L(-P)) = h^0(X,L) - 1\) for all \(P\in X\)</li>
+<li>\(h^0(X,L(-P - Q)) = h^0(X.L) - 2\) for all \(P,Q\in X\).</li>
+</ol>
+</div>
+
+<p>
+The example we&rsquo;ll discuss next time to have in mind is the following:
+</p>
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+\(\mathbb P^1 \to \mathbb P^3\), \((s,t) \mapsto (s^3 : st^2: t^3)\).
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-02-basic-notions" href="../../notes/algebraic-curves-02-basic-notions/">Algebraic Curves Lecture 2: Basic Notions</a></li>
+    <li><a data-note="algebraic-curves-04-riemann-roch" href="../../notes/algebraic-curves-04-riemann-roch/">Algebraic Curves Lecture 4: Riemann Roch</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

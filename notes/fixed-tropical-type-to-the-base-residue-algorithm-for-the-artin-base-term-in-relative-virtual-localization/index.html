@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixed Tropical Type To The Base Residue -- Algorithm For The Artin-Base Term In Relative Virtual Localization — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/fixed-tropical-type-to-the-base-residue-algorithm-for-the-artin-base-term-in-relative-virtual-localization/"
+      data-note-title="Fixed Tropical Type To The Base Residue -- Algorithm For The Artin-Base Term In Relative Virtual Localization">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#inputs">Inputs</a></li>
+    <li class="toc-l2"><a href="#derived-quantities">Derived Quantities</a></li>
+    <li class="toc-l3"><a href="#d1-structure-of-covers-and-geometric-contact-components">D1: Structure of covers and geometric contact components</a></li>
+    <li class="toc-l3"><a href="#d2-balancing-condition">D2: Balancing Condition</a></li>
+    <li class="toc-l2"><a href="#part-0-fix-the-discrete-data">Part 0: Fix the discrete data</a></li>
+    <li class="toc-l2"><a href="#part-5-isomorphism-data-of-the-fixed-stable-map-is-unique">Part 5: Isomorphism data of the fixed stable map is unique</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Fixed Tropical Type To The Base Residue -- Algorithm For The Artin-Base Term In Relative Virtual Localization</h1>
+      <p class="note-meta"><span class="taxon">algorithm</span></p>
+
+      <article class="note">
+<p>
+The point of this note is to give an algorithm for taking a <a class="idlink" data-note="fixed-tropical-type" href="../../notes/fixed-tropical-type/">fixed tropical type</a> and producing the base residue. Work in progress. We&rsquo;ll fix \(\mathbb P^2\) with full toric log structure as our target for now.
+</p>
+<div id="outline-container-inputs" class="outline-2">
+<h2 id="inputs">Inputs</h2>
+<div class="outline-text-2" id="text-inputs">
+<p>
+The following are inputs, they are subject to certain conditions. For instance demanding that a <a class="idlink" data-note="fixed-tropical-type" href="../../notes/fixed-tropical-type/">type be fixed</a> incurs conditions on the type equivalent to the Kontesevich trees from ordinary GW theory and the balancing condition at the vertices of the dual graph \(G\) often completely determines the contact orders of the edges from the contact orders of the legs.
+<b>Geometric</b>
+</p>
+<ul class="org-ul">
+<li>\(X = \mathbb P^2\), \(T = \mathbb G_m^2\),</li>
+<li>\(M = \mathbb Zm_1\oplus \mathbb Zm_2 = \Hom(T, \mathbb G_m)\)</li>
+<li>\(N = \mathbb Z\rho_1 \oplus \mathbb Z\rho_2\) with \(\rho_0 = -\rho_1-\rho_1\), then the fan of \(\mathbb P^2\) is the complete fan with rays \(\rho_0,\rho_1,\rho_2\). Choose \(\rho_1 = m_1^\vee\) and \(\rho_2 = m_2^\vee\).</li>
+<li>write \(D_i = \{x_i = 0\}\) for the toric divisors. We write \(x_1/x_0 = x^{m_1}\) and \(x_2/x_0 = x^{m_2} \).</li>
+<li>write \(p_{ij} = D_i\cap D_j\) for the three fixed points of \(X\).</li>
+<li>write \(\lambda(p, D)\in M\) for the tangent weight of \(T\) at \(p\) along the divisor \(D\).</li>
+<li>the moduli space \(\mathcal M = \mathcal M(X)\) of basic stable log maps to \(X\)</li>
+<li>a curve class \((C, f, y_1,...,y_n)\in \mathcal M\)</li>
+</ul>
+
+<p>
+We&rsquo;ll later write \(\lambda_v(x) \in \frac{1}{d_v}M\) for the tangent weight of the cover \(C_v\) at a special point \(x\) over \(p\) when \(f|_{C_v}:C_v\to D\) is a degree \(d_v\) cover.
+</p>
+
+<p>
+<b>Discrete</b>
+</p>
+<ul class="org-ul">
+<li>the type \(\tau = (G, \mathbf g, \boldsymbol \sigma, \{u_y, u_q\})\)
+<ul class="org-ul">
+<li>a graph \(G\) comprised of legs \(L(G)\), edges \(E(G)\) and vertices \(V(G)\)</li>
+<li>genus map \(\mathbf g:V(G)\to \mathbb N\)</li>
+<li>cone map \(\boldsymbol \sigma:G\to \Sigma(X)\) assigning a cone to each part of the graph \(G\)</li>
+<li><a class="idlink" data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">contact orders</a> \(u_q\) and \(u_y\) at the nodes and marks</li>
+</ul></li>
+<li>the basic monoid \(Q_\tau\), \(H\subset Q_\tau\) a Hilbert basis, \(V = \Spec k[Q_\tau]\), \(T_V = \Spec k[Q_\tau^{gp}]\), used in the <a class="idlink" data-note="fixed-stack-of-local-model-of-an-artin-fan" href="../../notes/fixed-stack-of-local-model-of-an-artin-fan/">local model</a> of the algebraic stack base</li>
+</ul>
+
+<p>
+<b>Restrictions on the inputs</b>
+</p>
+<ul class="org-ul">
+<li>The curve \((C, f, z)\) is fixed by the \(T\) action and \(\tau\) is its type &#x2013; in particular \(\tau\) is <b>realizable</b>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-derived-quantities" class="outline-2">
+<h2 id="derived-quantities">Derived Quantities</h2>
+<div class="outline-text-2" id="text-derived-quantities">
+</div>
+<div id="outline-container-d1-structure-of-covers-and-geometric-contact-components" class="outline-3">
+<h3 id="d1-structure-of-covers-and-geometric-contact-components">D1: Structure of covers and geometric contact components</h3>
+<div class="outline-text-3" id="text-d1-structure-of-covers-and-geometric-contact-components">
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(C_v\) is a non-conectracted component of \(C \) mapping to \(D_i\), then it is totally ramified of degree \(d_v\) and \(C_v\cong \mathbb P^1\). Its two ramification points \(x_\pm(v)\) lie over the two fixed points of \(D_i\) and are its only special points. The map \(f|_{C_v} \) is given in local coordinates by \(z\mapsto z^{d_v}\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+See <a class="idlink" data-note="irreduible-components-of-stable-maps" href="../../notes/irreduible-components-of-stable-maps/">this note</a>.
+</p>
+</details>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(x \in \{x_\pm(v)\}\) lies over \(p_{ij}\) and \(m\in \rho_i^\perp\cap M\) is the affine coordinate of \(D_i\) vanishing at \(p_{ij}\) (that is, \(x^m\in k[\sigma_{ij}^\vee \cap M]\)) is the local coordinate of \(D_i\) in an affine cover) then
+</p>
+\begin{align*}
+  \langle u^{out}_x, m\rangle = d_v
+\end{align*}
+<p>
+where \(u^{out}_x\) is the contact order datum defined by a flag of the graph; if \(x\) is a marked point \(y\) then this is merely the contact order \(u_y\) but at an edge it flips sign depending on the choice of orientation.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-d2-balancing-condition" class="outline-3">
+<h3 id="d2-balancing-condition">D2: Balancing Condition</h3>
+<div class="outline-text-3" id="text-d2-balancing-condition">
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+At every vertex \(v\) of \(G\),
+</p>
+\begin{align*}
+\sum_{v\in x} u^{out}_x = 0
+\end{align*}
+<p>
+where the sum is over all special points of the component \(C_v\). When \(G\) is a tree this determines all \(u_e\) from the \(u_z\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-part-0-fix-the-discrete-data" class="outline-2">
+<h2 id="part-0-fix-the-discrete-data">Part 0: Fix the discrete data</h2>
+</div>
+<div id="outline-container-part-5-isomorphism-data-of-the-fixed-stable-map-is-unique" class="outline-2">
+<h2 id="part-5-isomorphism-data-of-the-fixed-stable-map-is-unique">Part 5: Isomorphism data of the fixed stable map is unique</h2>
+<div class="outline-text-2" id="text-part-5-isomorphism-data-of-the-fixed-stable-map-is-unique">
+<p>
+Here&rsquo;s a lemma about automorphisms of a <a class="idlink" data-note="logarithmic-point" href="../../notes/logarithmic-point/">log point</a>, see also <a class="idlink" data-note="maps-to-a-log-point" href="../../notes/maps-to-a-log-point/">morphisms to and from a log point</a>.
+</p>
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Let \(W_Q = \Spec (Q\to k)\) be a log point and \(\theta:W_Q\xrightarrow{\sim} W_Q\) be an automorphism of the log structure \(M_W\) with \(\overline \theta = \id\) on \(\overline M_W\). Then these is a unique homomorphism \(\phi:Q^{gp}\to k^\times\) with \(\theta(q,c) = (q, \theta(q)c)\) for all \((q,c)\); conversely every such \(\phi\)  defines such a \(\theta\). 
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The geometric data of \(\theta\) is unique, so take \(\theta:M_W\to M_W\) to be a morphism of the log structure only.
+</p>
+</details>
+
+<p>
+Now define \(\chi_\tau:T\to T_V\) by \(t\mapsto \phi_t\). The claim is then that \(\pi^T(y')\) lands in \(\mathcal Y^T_{\chi_\tau} = [V^{\chi_\tau}/T_V]\).
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">6</span></h2>
+  <ul>
+    <li><a data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">Contact Order Of A Stable Log Curve At Marks And Nodes</a></li>
+    <li><a data-note="fixed-stack-of-local-model-of-an-artin-fan" href="../../notes/fixed-stack-of-local-model-of-an-artin-fan/">Fixed Stack Of Local Model Of An Artin Fan</a></li>
+    <li><a data-note="fixed-tropical-type" href="../../notes/fixed-tropical-type/">Fixed Tropical Type</a></li>
+    <li><a data-note="irreduible-components-of-stable-maps" href="../../notes/irreduible-components-of-stable-maps/">Irreduible Components Of Stable Maps</a></li>
+    <li><a data-note="logarithmic-point" href="../../notes/logarithmic-point/">Logarithmic Point</a></li>
+    <li><a data-note="maps-to-a-log-point" href="../../notes/maps-to-a-log-point/">Morphisms To And From A Log Point</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

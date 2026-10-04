@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 25 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-25/"
+      data-note-title="Algebraic Curves Lecture 25">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#last-bit-about-extremal-curves">Last bit about extremal curves</a></li>
+    <li class="toc-l3"><a href="#last-time">Last time</a></li>
+    <li class="toc-l3"><a href="#final-example-of-extremal-curves">Final example of extremal curves</a></li>
+    <li class="toc-l2"><a href="#curves-in-mathbb-p-3-and-examples">Curves in \(\mathbb P^3\) and examples</a></li>
+    <li class="toc-l3"><a href="#example-is-there-a-degree-7-genus-5-curve">Example: is there a degree \(7\), genus \(5\) curve?</a></li>
+    <li class="toc-l3"><a href="#example-is-there-a-d-9-and-g-11-curve">Example: is there a \(d = 9\) and \(g = 11\) curve?</a></li>
+    <li class="toc-l3"><a href="#example-a-d-9-and-g-10-curve">Example: a \(d = 9\) and \(g = 10\) curve</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 25</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-24" href="../../notes/algebraic-curves-24/">← lecture 24</a> · <a class="idlink" data-note="algebraic-curves-26" href="../../notes/algebraic-curves-26/">lecture 26 →</a>
+</p>
+<div id="outline-container-last-bit-about-extremal-curves" class="outline-2">
+<h2 id="last-bit-about-extremal-curves">Last bit about extremal curves</h2>
+<div class="outline-text-2" id="text-last-bit-about-extremal-curves">
+</div>
+<div id="outline-container-last-time" class="outline-3">
+<h3 id="last-time">Last time</h3>
+<div class="outline-text-3" id="text-last-time">
+<p>
+We saw that \(\varphi_{K_X}(X)\), the image curves, is cut out by quadrics when \(X\) is trigonal or isomorphic to a plane quintic (Enriques-Babbage). Have one more remark about this:
+</p>
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+What the argument showed is that its <i>set theoretically</i> cut out by quadrics. You can actually show that it is <i>scheme-theoretically cut out by quadrics</i>. That is, \(\varphi_{K_X}(X)\) is cut out by quadrics as a scheme; the defining ideal of \(\varphi_{K_X}(X)\) is generated by the intersection of the quadrics.
+</p>
+
+<p>
+In general, \(\varphi_{K_X}(X) \subset \mathbb P^r\) is cut out by quadrics and cubics (Petri&rsquo;s theorem).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-final-example-of-extremal-curves" class="outline-3">
+<h3 id="final-example-of-extremal-curves">Final example of extremal curves</h3>
+<div class="outline-text-3" id="text-final-example-of-extremal-curves">
+<p>
+Our final example of extremal curves will be \(g = 5\) curves. In this case, \(C\subseteq \mathbb P^4\) is canonically embedded of degree \(8\) and there are \(3\) linearly independent quadrics vanishing on \(C\). Call them \(Q_1, Q_2, Q_3\).
+</p>
+
+<ol class="org-ol">
+<li>If \(Q_1 \cap Q_2\cap Q_3 \neq C\), then \(C\) lies on \(X_{1,2}\) and \(C\) is trigonal with \(g^1_3\) cut out by the ruling on \(X_{1,2}\).</li>
+<li>Otherwise, \(C\) is a complete intersection of the 3 quadrics: \(C = Q_1\cap Q_2 \cap Q_3\).</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-curves-in-mathbb-p-3-and-examples" class="outline-2">
+<h2 id="curves-in-mathbb-p-3-and-examples">Curves in \(\mathbb P^3\) and examples</h2>
+<div class="outline-text-2" id="text-curves-in-mathbb-p-3-and-examples">
+<p>
+The following image from Hartshorne IV Section 6 summarizes what we know about the existence of curves of degree \(d\) and genus \(g\) in \(\mathbb P^3\):
+</p>
+
+
+<div id="paragraph-1" class="figure">
+<p><img src="../../assets/note-images/hartshorne-picture-4cae847da0432a71.png" alt="hartshorne-picture.png" />
+</p>
+</div>
+
+<p>
+All possible values of \((d, g)\) below the line \(g = d - 3\) exist, and they will be embedded in \(\mathbb P^3\) by a non-special line bundle. We know everything in degree \(d \leq 6\) using what we&rsquo;ve discussed thus far in class.
+</p>
+
+<p>
+The first case in this image that isn&rsquo;t covered by the methods thus far discussed in class is the point \((7,5)\).
+</p>
+</div>
+<div id="outline-container-example-is-there-a-degree-7-genus-5-curve" class="outline-3">
+<h3 id="example-is-there-a-degree-7-genus-5-curve">Example: is there a degree \(7\), genus \(5\) curve?</h3>
+<div class="outline-text-3" id="text-example-is-there-a-degree-7-genus-5-curve">
+<p>
+First try: suppose it lives on a quadric. Then it has bidegree \((d_1,d_2)\) and \(d_1 + d_2 = 7\) and \((d_1 - 1)(d_2 - 1) = 5\). This implies \(d_1 = 2\) and \(d_2 = 6\).
+</p>
+
+<p>
+Second try: take \(X\) an abstract curve of genus \(5\). We want \(L\) on \(X\) such that \(\deg(L) = 7\) and \(h^0(X, L)\geq 4\) (we&rsquo;re forgetting about the geometry of an embedding into \(\mathbb P^3\) for a moment). Then by Riemann-Roch
+</p>
+\begin{align*}
+    4 = 7 - 5 + 1 + h^0(K_X - L) \implies h^0(K_X - L) = 1,
+\end{align*}
+<p>
+meaning \(L - K_X(-p)\) and \(h^0(X, L) = 4\). We also want this line bundle to be very ample so that it embedds \(X\) as a smooth curve into \(\mathbb P^3\).
+</p>
+
+<p>
+If \(L\) is very ample, then \(h^0(K_X(-p-q-r)) = 2\) for all \(q,r\in X\). This comes from our condition of very ampleness; subtracting any two points must lower the dimension of the space of global sections by \(2\). Thus
+</p>
+\begin{align*}
+    5 - 5 + 1 +h^0(\mathcal O_X(p+q+r)) = 2 \iff h^0(\mathcal O_X(p + q + r)) = 1.
+\end{align*}
+<p>
+This is the case if and only if \(X\) is not trigonal and is not hyperelliptic. (A curve is <i>trigonal</i> if it admits a basepoint free \(g^1_3\).) 
+</p>
+</div>
+</div>
+<div id="outline-container-example-is-there-a-d-9-and-g-11-curve" class="outline-3">
+<h3 id="example-is-there-a-d-9-and-g-11-curve">Example: is there a \(d = 9\) and \(g = 11\) curve?</h3>
+<div class="outline-text-3" id="text-example-is-there-a-d-9-and-g-11-curve">
+<p>
+Now suppose \(d = 9\) and \(g = 11\). Such a curve would need to lie on a quadric:
+</p>
+\begin{align*}
+    H^0(\mathbb P^3, \mathcal O_{\mathbb P^3}(2)) &\to H^0(C, \mathcal O_C(2)).
+\end{align*}
+<p>
+The domain has dimension \(10\). The dimension of the domain is bounded by \(10\) by Clifford:
+</p>
+\begin{align*}
+    h^0(C, \mathcal O_C(2)) \leq \frac{d}{2} + 1 = 10
+\end{align*}
+<p>
+and if we have equality then \(\mathcal O_C(2) = 9\cdot g^1_2\), which is not very ample, so \(h^0(C, \mathcal O_C(2)) \leq 9\). We thus have a linear map from something \(10\) dimensional to something \(9\) dimensional, meaning we have nontrivial kernel and hence \(C\) lies on a quadric in \(\mathbb P^3\). This in turn implies that \(C\) has bidegree \((d_1,d_2)\), so
+</p>
+\begin{align*}
+    d_1 + d_2 = 9 \hspace{1em}\text{and}\hspace{1em} (d-1)(d-2) = 11
+\end{align*}
+<p>
+and since \(11\) is prime, \(d_1 = 2\) and \(d_2 = 12\). These don&rsquo;t sum to \(9\), however. Thus there exists no curve of degree \(9\) and genus \(11\).
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(C\subseteq \mathbb P^3\) be a smooth curve of degree \(d\) and genus \(g\).
+</p>
+<ol class="org-ol">
+<li>If \(C\subseteq \mathbb P^2\) then \(g = \frac{(d-1)(d-2)}{2}\) and for any such values \((d,g)\) there exists a curve</li>
+<li>If \(C\subseteq Q_2\), some quadric in \(\mathbb P^3\), then there exists integers \(d_1,d_2\in \mathbb N\) such that \(d = d_1 + d_2,\) \(g = (d_1 - 1)(d_2 - 1)\).</li>
+<li>If \(C\) is not contained in a quadric, then \(g \leq \frac{1}{6}(d(d-3)) + 1\), and in this case a curve exists.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-example-a-d-9-and-g-10-curve" class="outline-3">
+<h3 id="example-a-d-9-and-g-10-curve">Example: a \(d = 9\) and \(g = 10\) curve</h3>
+<div class="outline-text-3" id="text-example-a-d-9-and-g-10-curve">
+<p>
+There are a few ways to construct curves of this type.
+</p>
+
+<ol class="org-ol">
+<li>Take a curve of bidegree \((d_1, d_2) = (3, 6)\) on a quadric surface in \(\mathbb P^3\). Then \(d_1 + d_2 = 9\) and \((d_1 - 1)(d_2 - 1) = 10\), as desired.
+<ul class="org-ul">
+<li>\(h^0(I_C(2)) > 0\)</li>
+<li>\(h^0(\mathcal O_C(2))\) can be calculated via the short exact sequence  \(0 \to \mathcal O_Q(-3-6) \xrightarrow{\cdot C} \mathcal O_Q \to \mathcal O_C\to 0\) and twisting by \(2\). You&rsquo;ll get that \(h^0(\mathcal O_C(2)) = 9\).</li>
+</ul></li>
+<li>Take \(C = Q_1\cap Q_2\) to be a complete intersection of two cubics. Then \(g = \frac{1}{2}(d_1 + d_2 - 4) + 1\), taking \(d_1 = d_2 = 3\) gives \(10\) as needed.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-24" href="../../notes/algebraic-curves-24/">Algebraic Curves Lecture 24</a></li>
+    <li><a data-note="algebraic-curves-26" href="../../notes/algebraic-curves-26/">Algebraic Curves Lectures 26 And 27</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 5: Corollaries To Riemann-Roch — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-05-corollaries-to-riemann-roch/"
+      data-note-title="Algebraic Curves Lecture 5: Corollaries To Riemann-Roch">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 5: Corollaries To Riemann-Roch</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-04-riemann-roch" href="../../notes/algebraic-curves-04-riemann-roch/">← lecture 4</a> · <a class="idlink" data-note="algebraic-curves-06-two-more-corollaries-of-riemann-roch" href="../../notes/algebraic-curves-06-two-more-corollaries-of-riemann-roch/">lecture 6 →</a>
+</p>
+<div id="outline-container-more-riemann-roch" class="outline-2">
+<h2 id="more-riemann-roch">More Riemann-Roch</h2>
+<div class="outline-text-2" id="text-more-riemann-roch">
+<p>
+Recall that for a divisor \(D\) on a curve \(X\), if we write
+</p>
+
+<ul class="org-ul">
+<li>\(\ell(D) = h^0(X,\mathcal O_X(D))\)</li>
+<li>\(i(D) = h^0(X,K_X\otimes \mathcal O_X(D)^{-1}) = h^1(X,\mathcal O_X(D))\) (here \(h^0(X,K_X\otimes \mathcal O_X(D)^{-1})\) is called the &ldquo;index of speciality&rdquo;)</li>
+</ul>
+
+<p>
+Then Riemann-Roch says \(\ell(D) - i(D) = d - g + 1\) where \(d\) is the degree of the line bundle. Today we&rsquo;ll collect some easy Corollaries of Riemann Roch.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+\(\mathcal O_X(D)/D\) is <i>special</i> if \(\ell(D) > 0\) and \(i(D) > 0\).
+</p>
+</div>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+Let \(K_X\) be the canonical sheaf. Then \(h^0(K_X) = g\) and \(\deg(K_X) = 2g - 2\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Apply Riemann-Roch to \(\mathcal O_X\). Then \(h^0(\mathcal O_X) = 1\) since the only global regular functions on \(X\) are constant, \(h^0(K_X\otimes \mathcal O_X^{-1}) = h^0(K_X)\) and \(d = 0\) since the degree of \(\mathcal O_X\) is \(0\). Then
+</p>
+\begin{align*}
+    h^0(K_X) = g.
+\end{align*}
+<p>
+Now applying Riemann-Roch to \(K_X\) gives us \(\deg(K_X) = 2g - 2\).
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+If \(\deg(L) < 0\) or \(\deg(L) > 2g- 2\) then \(L\) is not special and
+</p>
+\begin{align*}
+    h^0(L) =
+    \begin{cases}
+        0 & \text{if} \deg(L) < 0 \\
+        d - g + 1 &\text{if} \deg(L) > 2g - 2
+    \end{cases}
+\end{align*}
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+The first case where \(\deg(L) < 0\) was already established, so assume \(\deg(L) > 2g - 2\). Then \(h^0(L) - h^0(K_X - L) = d - g + 1\).
+</p>
+
+<p>
+Karl says that \(h^0(K_X - L) = 0\), I&rsquo;m not sure why, but this gives you the result.
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+The Hilbert Polynomial of a degree d subcurve of \(\mathbb P^n\) \(h_X(m) = d\cdot m - g + 1\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+By definition the Hilbert function is the function
+</p>
+\begin{align*}
+    f_X(m) = h^0(X,\mathcal O_X(m)).
+\end{align*}
+<p>
+Applying Riemman-Roch gives us
+</p>
+\begin{align*}
+    h^0(X,\mathcal O_X(m)) - h^1(X,\mathcal O_X(m)) = dm - g + 1.
+\end{align*}
+<p>
+For \(m \gg 0\), \(h^1(X,\mathcal O_X(m)) = 0\).
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+\(X\) is rational (i.e. isomorphic to \(\mathcal P^1\)) if and only if \(g = 0\). That is, there is only one genus \(0\) curve up to isomorphism.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Suppose \(g=0\). We now want to construct a map to \(\mathbb P^1\), Pick \(p\in X\) and consider \(\mathcal O_X(p) = L\). By Riemann-Roch, \(h^0(X,L) \geq d - g + 1 = 2\) since \(g = 0\) and \(d = \deg(\mathcal O_X(p) = 1\). This gives us a degree 1 map \(X \dashrightarrow \mathcal P^1\), which implies \(X\cong \mathbb P^1\).
+</p>
+
+<p>
+Now suppose that \(X\cong \mathbb P^1\). Then \(h_X(m) = h^0(\mathcal O_{\mathbb P^1}(m)) = m + 1.\) Then the previous corollary concerning the Hilbert polynomial means \(d\cdot m - g + 1 = m + 1\), and since \(d = 1\) (viewing \(X\) as a curve with a degree 1 embedding in \(\mathbb P^1\)) we have \(g = 0\).
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+For any line bundle \(L\), \(h^0(L) \leq \deg(L) + 1\). With equality if and only if \(X\) is rational.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Suppose \(h^0(L) > \deg(L) + 1\). Let \(D\) be an effective divisor of degree \(d + 1\). Then \(h^0(L(-D))\geq 0\). But \(0 > \deg(L(-D))\), which is a contradiction.
+</p>
+
+<p>
+If \(X\) is rational, \(L\) has degree d. Then \(h^0(L) \geq d + 1\). Then \(h^0(L)\geq d + 1\) since \(h^1(L) = 0\). Conversely, suppose there is a line bundle \(L\) of degree \(d > 0\) and space of global sections \(h^0(L) = d + 1\).
+</p>
+</details>
+
+<p>
+Now let \(D\) be an effective divisor of degree \(d - 1\). Then \(h^0(L(-D)) \geq 2\) and the degree of \(L(-D)\) is \(1\) (since \(L\) is degree \(d\) and \(-D\) is of degree \(1 - d\)). This again gives a map \(X\dashrightarrow \mathbb P^1\) of degree \(1\) and hence \(X\cong \mathbb P^1\).
+</p>
+
+<p>
+Now for the most important corollary:
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<ol class="org-ol">
+<li>Any line bundle of degree \(2g\) is base point free</li>
+<li>Any line bundle of degree \(2g + 1\) is very ample.</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+If \(\deg(L) \geq 2g\), then \(h^0(L) = d - g + 1\) and \(h^0(L(-p)) = d - 1\) for all \(p\). This implies there are no base points.
+</p>
+
+<p>
+If \(\deg(L)\geq 2g + 1\) then \(h^0(L) = h^0(L(-p-q)) + 2\) for all \(p,q\).
+</p>
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-04-riemann-roch" href="../../notes/algebraic-curves-04-riemann-roch/">Algebraic Curves Lecture 4: Riemann Roch</a></li>
+    <li><a data-note="algebraic-curves-06-two-more-corollaries-of-riemann-roch" href="../../notes/algebraic-curves-06-two-more-corollaries-of-riemann-roch/">Algebraic Curves Lecture 6: Two More Corollaries Of Riemann Roch</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

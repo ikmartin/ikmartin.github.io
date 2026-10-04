@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes And Examples From Msldd1 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/example-of-affine-manifold-to-log-central-fiber-msldd1/"
+      data-note-title="Notes And Examples From Msldd1">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#affine-manifolds-with-singularities-and-polyhedral-decompositions">Affine manifolds with singularities and polyhedral decompositions.</a></li>
+    <li class="toc-l2"><a href="#the-example">The example</a></li>
+    <li class="toc-l2"><a href="#log-structures">Log Structures</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Notes And Examples From Msldd1</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<p>
+Here we go through a complete example of reconstructing the central fiber of a toric degeneration from its dual intersection complex.
+</p>
+<div id="outline-container-affine-manifolds-with-singularities-and-polyhedral-decompositions" class="outline-2">
+<h2 id="affine-manifolds-with-singularities-and-polyhedral-decompositions">Affine manifolds with singularities and polyhedral decompositions.</h2>
+<div class="outline-text-2" id="text-affine-manifolds-with-singularities-and-polyhedral-decompositions">
+<p>
+First recall the definitions of affine manifolds with singularities and polyhedral decompositions thereof:
+</p>
+
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Not written
+</p>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="affine-manifold-with-singularities" href="../../notes/affine-manifold-with-singularities/">Affine Manifold With Singularities</a></p>
+
+
+<p>
+<a class="citeref" href="../../notes/gross-siebert-mirrorsymmetrylogarithmic2005/">[GS05]</a>
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(B\) be an integral affine manifold with singularities. A <i>polyhedral decomposition</i> of \(B\) is roughly a compatible collection of polyhedral decompositions of the charts of \(B\). More precisely, it is a collection \(\mathcal P\) of closed subset of \(B\) called <i>cells</i> covering \(B\) which satisfies the following properties. First, we require that all vertices of \(\mathcal P\) are nonsingular, that is, if \(\{v\} \in\mathcal P\) then \(v\in B\setminus \Delta\). Given such a \(v\), we then require that there exists a closed neighborhood \(R_v\subseteq T_{B,v} \) of the origin at the tanget space of \(B\) at \(v\) with a polyhedral decomposition \(\mathcal P_v\) together with the continuous map \(\exp_v:R_v\to \exp_v(0) = v\) (that is, \(R_v\) is a &ldquo;closed chart&rdquo; of \(B\) at \(v\), with the origin taking the place of \(v\), and \(\mathcal P_v\) is a polyhedral decomposition of \(R_v\) in the usual sense for a closed subset of Euclidean space). We additionally require the following:
+</p>
+
+<ol class="org-ol">
+<li>\(\exp_v\) is locally a homeomorphism onto its image, is injective on \(\Int(\tau)\) for all \(\tau\in \mathcal P_v\), and is an integral affine map in some neighborhood of the origin.</li>
+<li>For every top-dimensional \(\widetilde \sigma \in \mathcal P_v\), \(\exp_v(\Int(\widetilde \sigma)) \cap \Delta = \emptyset\) and the restriction of \(\exp_v\) to \(\Int(\widetilde \sigma)\) is integral affine. Furthermore, \(\exp_v(\widetilde \tau) \in \mathcal P\) for all \(\widetilde \tau \in \mathcal P_v\).</li>
+<li>A cell \(\sigma\in \mathcal P\) contains \(v\) if and only if \(\sigma = \exp_v(\widetilde \sigma)\) for some \(\widetilde\sigma \in \mathcal P_v\) for all \(\widetilde \tau \in \mathcal P_v\).</li>
+<li>Every \(\sigma\in \mathcal P\) arises in this way, that is, every \(\sigma\) contains a vertex \(v\) with \(\{v\}\in \mathcal P\).</li>
+</ol>
+
+<p>
+We have an additional condition which will often be of interest, and we say that \(\mathcal P\) is <i>toric</i> if it satisfies it:
+</p>
+
+<ol class="org-ol">
+<li>For each \(\sigma\in \mathcal P\), there is a neighborhood \(U_\sigma\subseteq B\) of \(\Int(\sigma)\) and an integral affine submersion \(S_\sigma:U_\sigma \to M' _ {\mathbb R}\) where \(M'\) is a lattice of rank equal to \(\dim B - \dim \sigma\) and \(S _\sigma(\sigma\cap U_\sigma) = \{0\}\).</li>
+</ol>
+</div>
+
+<p class="transclusion-source"><a class="idlink" data-note="polyhedral-decomposition-of-affine-manifold" href="../../notes/polyhedral-decomposition-of-affine-manifold/">Polyhedral Decomposition Of Affine Manifold</a></p>
+
+
+<p>
+Given the data \((B, \mathcal P)\) of an affine manifold with singularities and a polyhedral decomposition, we have enough data to form the preferred etale cover of \(X_0(B, \mathcal P, s)\).
+</p>
+
+
+<p>
+Given an affine manifold with singularities and a polyhedral decomposition \((B, \mathcal P)\), the first step in constructing the central fiber \(X_0\) of a toric degeneration whose dual intersection <i>is</i> \((B, \mathcal P)\) is to write down a collection of sets which will be glued to form an etale cover of \(X_0\). This is that process.
+</p>
+
+<p>
+First note that for a cone \(\sigma \in \mathcal P\), the vector space \(\Lambda_{\sigma, \mathbb R}\) is the stalk of \(\Lambda_{\mathcal P, \mathbb R}\) at any point \(y\in \Int(\sigma)\). Definition 1.31 in &ldquo;Mirror Symmetry via Log Degeneration Data I&rdquo; notes that the spaces \((\Lambda_{\mathcal P, \mathbb R})_y\) are all canonically identified by parallel transport for different choices of \(y\in \Int(\sigma)\). The sheaf \(\Lambda_{\mathcal P, \Lambda}\) is a subsheaf of the typical \(\Lambda_{\mathbb R}\) sheaf on \(B_0 = B\setminus \Delta\), defined
+</p>
+
+<p>
+\[\Gamma(U, \Lambda_{\mathcal P, \mathbb R}) = \left\{v\in \Gamma(U, \Lambda_{\mathbb R}) ~ \mid ~  \forall y\in U, \sigma \in \mathcal P \text{ with } y\in \sigma, v\text{ is tangent to } \sigma \text{ at }y\right\}.\]
+</p>
+
+<p>
+In practice, \(\Lambda_{\mathcal P, \mathbb R}|_{\Int(\sigma)}\) is simply the tangent sheaf of \(\Int(\sigma)\) thought of as an affine manifold in its own right.
+</p>
+
+<p>
+We will construct affine toric varieties \(U_\sigma\) and \(V_\sigma\) for every maximal cell \(\sigma \in \mathcal P\).
+</p>
+
+<ol class="org-ol">
+<li>Form the cone over \(\sigma\):</li>
+</ol>
+<p>
+\[C(\sigma) = \{(rp, r) ~ \mid ~ r\in \mathbb R_{\geq 0}, p \in \widetilde \sigma\}\subseteq \Lambda_{\sigma, \mathbb R} \oplus \mathbb R\]
+That is, choose your favorite vertex \(v\in \sigma\), embed \(\sigma\) in \(\mathbb R^{\dim \sigma}\oplus \mathbb R\) at height \(1\) with \(v \mapsto (0,1)\) and take the cone over the resulting embedding.
+</p>
+
+<ol class="org-ol">
+<li>Take the dual cone:</li>
+</ol>
+<p>
+\[C(\sigma)^\vee = \left\{m \in \Lambda_{\sigma, \mathbb R}^\vee \oplus \mathbb R ~ \mid ~ \langle m, v\rangle \geq 0, \forall v \in C(\sigma)\right\}\]
+</p>
+
+<ol class="org-ol">
+<li>Due to the integral structure of \(B\) we have a lattice inside of \(\Lambda_{\sigma, \mathbb R}^\vee\), which we denote by \(\Lambda_{\sigma}^\vee\). We  intersect our cone with it to obtain a monoid in standard toric fashion:</li>
+</ol>
+<p>
+\[P_\sigma = C(\sigma)^\vee \cap (\Lambda_{\sigma}^\vee \oplus \mathbb Z)\]
+</p>
+<ol class="org-ol">
+<li>We define</li>
+</ol>
+<p>
+\[U_\sigma = \Spec \mathbb Z[P_\sigma].\]
+</p>
+<ol class="org-ol">
+<li>To define \(V_\sigma\), we have two options.
+<ol class="org-ol">
+<li>We can either form it as a quotient of \(\mathbb Z[P_\sigma]\). To do this, we note that there is an element in \(P_\sigma\) which corresponds to the height projection on \(C(\sigma)\), it&rsquo;s denoted \(\rho_\sigma:\Lambda_{\sigma}\oplus \mathbb Z\to \mathbb Z\) and is simply projection onto the second factor. In coordinate on \(\Lambda_{\sigma}^\vee\oplus \mathbb Z\), it is the element \((0,...,0,1)\). We then define</li>
+</ol></li>
+</ol>
+<p>
+\[V_\sigma = \Spec \mathbb Z[P_\sigma]/(z^{\rho_\sigma}).\]
+</p>
+<ol class="org-ol">
+<li>We can define a new monoid from \(P_\sigma\), denoted \(\partial P_\sigma\), which as a set is the integral points on the boundary of \(C(\sigma)^\vee\) union infinity,</li>
+</ol>
+<p>
+\[\partial P_\sigma = \left(\partial C(\sigma)^\vee \cap (\Lambda_{\sigma}\oplus \mathbb Z)\right)\cup \{\infty\}\]
+and whose addition is defined by
+\[
+x + y =  \begin{cases}
+x + y & x + y \in \partial C(\sigma)^\vee \cap (\Lambda_{\sigma}\oplus \mathbb Z) \\
+\infty & \text{otherwise}
+\end{cases}.
+\]
+Then set
+\[V_\sigma = \Spec \mathbb Z[\partial P_\sigma].\]
+In either case we get the same thing.
+</p>
+
+<ol class="org-ol">
+<li>Finally, if we wish \(X_0\) to be a scheme over \(S\), then we define our <b>preferred etale cover</b> to be</li>
+</ol>
+
+<p>
+\[\big\{V_\sigma \times_{\Spec \mathbb Z} S\big\}_{\sigma \in \mathcal P_{\text{max}}}.\]
+</p>
+
+<p class="transclusion-source"><a class="idlink" data-note="etale-cover-of-central-fiber-from-affine-manifold-msldd1" href="../../notes/etale-cover-of-central-fiber-from-affine-manifold-msldd1/">Etale Cover Of Central Fiber From Affine Manifold Msldd1</a></p>
+</div>
+</div>
+<div id="outline-container-the-example" class="outline-2">
+<h2 id="the-example">The example</h2>
+<div class="outline-text-2" id="text-the-example">
+
+<div id="paragraph-1" class="figure">
+<p><img src="../../assets/note-images/affine-manifold-triangle-019e0866a8a50eda.png" alt="affine-manifold-triangle.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Example of affine manifold with singularities</p>
+</div>
+
+<p>
+Here is a single affine manifold with singularities \(B\). Topologically, \(B\) is the union of two triangles and it has one singularity. Depicted above are its two charts, \(U_1\) on the left and \(U_2\) on the right. Their intersection in \(B\) is just the two triangles with the common edge removed. The transition between them is the identity on the left connected component and the linear transform \((x,y) \mapsto (x, x+y)\) on the right component.
+</p>
+</div>
+</div>
+<div id="outline-container-log-structures" class="outline-2">
+<h2 id="log-structures">Log Structures</h2>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="affine-manifold-with-singularities" href="../../notes/affine-manifold-with-singularities/">Affine Manifold With Singularities</a></li>
+    <li><a data-note="etale-cover-of-central-fiber-from-affine-manifold-msldd1" href="../../notes/etale-cover-of-central-fiber-from-affine-manifold-msldd1/">Etale Cover Of Central Fiber From Affine Manifold Msldd1</a></li>
+    <li><a data-note="polyhedral-decomposition-of-affine-manifold" href="../../notes/polyhedral-decomposition-of-affine-manifold/">Polyhedral Decomposition Of Affine Manifold</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-gs05"><span class="ref-num">[GS05]</span> <a href="../../notes/gross-siebert-mirrorsymmetrylogarithmic2005/">Gross, Siebert — Mirror Symmetry Via Logarithmic Degeneration Data I (2005)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

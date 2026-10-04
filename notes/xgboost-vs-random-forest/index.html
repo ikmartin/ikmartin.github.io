@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xgboost Vs Random Forest — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/xgboost-vs-random-forest/"
+      data-note-title="Xgboost Vs Random Forest">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Xgboost Vs Random Forest</h1>
+      
+      <article class="note">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Random forest</th>
+<th scope="col" class="org-left">XGBoost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">How trees combine</td>
+<td class="org-left">Parallel average</td>
+<td class="org-left">Sequential sum</td>
+</tr>
+
+<tr>
+<td class="org-left">Individual trees</td>
+<td class="org-left">Deep: low bias, high variance</td>
+<td class="org-left">Shallow: high bias, low variance</td>
+</tr>
+
+<tr>
+<td class="org-left">Mainly reduces</td>
+<td class="org-left">Variance</td>
+<td class="org-left">Bias</td>
+</tr>
+
+<tr>
+<td class="org-left">More trees</td>
+<td class="org-left">Never hurts; converges</td>
+<td class="org-left">Eventually overfits, so needs early stopping</td>
+</tr>
+
+<tr>
+<td class="org-left">Tuning</td>
+<td class="org-left">Little; defaults work</td>
+<td class="org-left">Substantial: learning rate, depth, rounds, \(\lambda\), \(\gamma\), subsampling</td>
+</tr>
+
+<tr>
+<td class="org-left">Loss function</td>
+<td class="org-left">Fixed split criterion (squared error, Gini, entropy)</td>
+<td class="org-left">Any twice-differentiable loss: ranking, quantile, robust</td>
+</tr>
+
+<tr>
+<td class="org-left">Missing values</td>
+<td class="org-left">Depends on implementation</td>
+<td class="org-left">Native: learns a default direction at each split</td>
+</tr>
+
+<tr>
+<td class="org-left">Validation needed</td>
+<td class="org-left">Out-of-bag estimate, which is inflated under dependence</td>
+<td class="org-left">A validation set for early stopping</td>
+</tr>
+</tbody>
+</table>
+<div id="outline-container-when-each-wins" class="outline-2">
+<h2 id="when-each-wins">When each wins</h2>
+<div class="outline-text-2" id="text-when-each-wins">
+<p>
+<b>Random forest tends to win when:</b>
+</p>
+<ul class="org-ul">
+<li><b>Signal-to-noise is low.</b> Boosting fits residuals, and when the signal is tiny the residuals are mostly noise, so boosting chases it. Averaging is more forgiving. That&rsquo;s the reasoning behind your course&rsquo;s line &ldquo;in financial applications bagging is generally preferable to boosting.&rdquo;</li>
+<li><b>Validation data is scarce or leaky.</b> Boosting needs a validation set to decide when to stop, and choosing the stopping point on validation data is selection on that data. In finance, clean validation data is precisely the scarce resource.</li>
+<li><b>Labels are noisy.</b> Boosting concentrates effort on the hardest cases, and mislabelled points are hard cases.</li>
+<li><b>You need a robust baseline quickly</b>, with no tuning budget.</li>
+</ul>
+
+<p>
+<b>XGBoost tends to win when:</b>
+</p>
+<ul class="org-ul">
+<li><b>There&rsquo;s a lot of learnable structure, moderate noise and enough data.</b> That describes most tabular benchmarks, where tuned boosting is usually the most accurate option.</li>
+<li><b>The structure is many small effects plus low-order interactions.</b> Sums of shallow trees capture that efficiently; a forest needs deep trees.</li>
+<li><b>You need a specific loss:</b> a ranking objective for cross-sectional signals, quantile loss, or a robust loss for heavy-tailed targets.</li>
+<li><b>Features have missing values</b>, handled natively.</li>
+</ul>
+
+<p>
+One qualification on <a class="idlink link-unpublished" href="../../not-published/" title="not published">financial data</a>: &ldquo;bagging over boosting&rdquo; is López de Prado&rsquo;s position, not consensus. My understanding is that heavily regularised gradient boosting is common in quant practice: shallow trees, small learning rates, subsampling, and early stopping on properly purged folds.
+</p>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

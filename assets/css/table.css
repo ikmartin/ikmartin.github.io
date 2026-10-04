@@ -1,0 +1,111 @@
+/* The sortable notes table.
+ *
+ * The markup contract is load-bearing: assets/js/notes-table.js binds
+ * #notes-table, requires one <button> per sortable header, and reads each
+ * cell's data-sort. The column widths only mean anything because the table is
+ * table-layout: fixed, and they are keyed to the four default columns.
+ */
+/* --- the notes table ---------------------------------------------------
+   One row per note. table-layout is fixed so the columns keep the intended
+   proportions no matter how long a title or tag list is; anything that
+   overflows scrolls sideways inside its own cell rather than widening the
+   column or being clipped. */
+/* Caps how many rows are VISIBLE. Every row is still in the document, so sorting
+   sees the whole table -- you scroll to reach the rest. The arithmetic lives here
+   because this is where the row height is defined; the renderer only sets the
+   count. --max-rows absent means no cap. */
+.table-scroll {
+  --row-h: 2.1rem;      /* 0.9rem text at 1.65 line-height + 0.6rem padding + border */
+  --head-h: 2.2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.table-scroll[style*="--max-rows"] {
+  max-height: calc(var(--max-rows) * var(--row-h) + var(--head-h));
+}
+/* The header has to survive scrolling: it carries the sort buttons. */
+.table-scroll .notes-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+}
+.table-scroll .notes-table { margin-top: 0; }
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.9rem;
+  margin: 1.5rem 0 2rem;
+}
+.notes-table th,
+.notes-table td {
+  padding: 0.3rem 0.6rem 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: baseline;
+}
+.notes-table thead th {
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom-width: 2px;
+  white-space: nowrap;
+}
+.notes-table .col-name  { width: 42%; }
+.notes-table .col-taxon { width: 14%; }
+.notes-table .col-date  { width: 14%; }
+
+/* The scroll container. nowrap is what makes overflow possible in the first
+   place -- wrapped text never overflows, it just makes the row taller. */
+.notes-table .cell {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+.notes-table .cell::-webkit-scrollbar { height: 4px; }
+.notes-table .cell::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.notes-table tbody tr:hover { background: var(--callout-bg); }
+.notes-table .col-taxon a {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-decoration: none;
+}
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-size: 0.82rem;
+}
+.notes-table .col-taxon a:hover,
+.notes-table .col-date {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sortable headers are buttons so they are reachable by keyboard. */
+.notes-table thead button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+.notes-table thead button:hover { color: var(--fg); }
+.notes-table thead button:focus-visible { outline: 1px dotted var(--muted); outline-offset: 2px; }
+.notes-table .arrow::after { content: "\2195"; opacity: 0.35; }          /* idle: up-down */
+.notes-table [aria-sort="ascending"] .arrow::after  { content: "\25B2"; opacity: 1; }
+.notes-table [aria-sort="descending"] .arrow::after { content: "\25BC"; opacity: 1; }
+.notes-table [aria-sort="ascending"] button,
+.notes-table [aria-sort="descending"] button { color: var(--fg); }

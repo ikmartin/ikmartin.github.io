@@ -1,0 +1,331 @@
+/* Self-contained widgets, each with its own class namespace.
+ *
+ * Loads after content.css, which is required: the index and backlinks heading
+ * rules here tie with `.content h2` on specificity and win only by coming
+ * later. See the note at the top of content.css.
+ */
+/* --- hover preview card ------------------------------------------------
+   The first overlay in the project, so it introduces the only shadow and the
+   only z-index. Clamped by height with a fade rather than by truncating the
+   excerpt, which would mean balancing tags and could split a \(...\) pair. */
+.note-preview {
+  position: absolute;
+  z-index: 50;
+  max-width: 26rem;
+  padding: 0.7rem 0.9rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 24px rgba(31, 35, 40, 0.13);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+.note-preview[hidden] { display: none; }
+.note-preview-title {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.note-preview-taxon {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 400;
+}
+.note-preview-body {
+  max-height: 11rem;
+  overflow: hidden;
+  /* fade the clip so a cut-off paragraph reads as continuing, not as ending */
+  -webkit-mask-image: linear-gradient(to bottom, #000 8rem, transparent);
+  mask-image: linear-gradient(to bottom, #000 8rem, transparent);
+}
+.note-preview-body > :first-child { margin-top: 0; }
+.note-preview-body p { font-size: inherit; }
+
+/* No hover on touch, and a card pinned to a pointer position makes no sense
+   there. Matches how the rail drops its page-scoped blocks on narrow screens. */
+@media (hover: none) {
+  .note-preview { display: none !important; }
+}
+
+/* --- a page block that raised (dev builds only; a public build drops the page) --- */
+.build-error {
+  border: 1px solid #b00020;
+  border-left-width: 4px;
+  border-radius: var(--radius);
+  background: #fff6f6;
+  padding: 0.8rem 1.1rem;
+  margin: 1.5rem 0;
+}
+.build-error p { margin: 0 0 0.5rem; font-family: var(--font-head); font-size: 0.85rem; color: #b00020; }
+.build-error pre { background: none; padding: 0; font-size: 0.75rem; white-space: pre-wrap; }
+
+/* --- index / listing pages --- */
+.idx-group { margin: 2rem 0; }
+.idx-group h2 { font-size: 1.05rem; }
+.idx-group ul { padding-left: 1.2rem; }
+.idx-group .count { font-size: 0.8rem; color: var(--muted); margin-left: 0.3rem; }
+.idx-taxon {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+/* --- dev-only "Open in Emacs" link --- */
+.dev-open { margin: 0 0 0.75rem; }
+.dev-open a {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 0.1rem 0.5rem;
+}
+.dev-open a:hover { border-style: solid; color: var(--accent); }
+
+/* --- backlinks ("Linked references") --- */
+.backlinks {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.backlinks h2 { font-size: 1rem; color: var(--muted); }
+.backlinks h2 .count {
+  font-size: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  margin-left: 0.35rem;
+}
+.backlinks ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+
+/* --- citations and the references section --- */
+/* An inline `[1, Definition 2.14]`. Deliberately quiet: it sits mid-sentence, so it
+   reads as an annotation on the prose rather than as a link competing with it. */
+.citeref {
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.citeref:hover { color: var(--accent); }
+
+/* A citekey with no reference note. Visible on purpose, like `.image-missing`: a
+   citation the bibliography cannot back is a content error, and one that looked
+   like a working [4] would never get found. */
+.citeref-missing {
+  border-bottom: 1px dashed currentColor;
+  opacity: 0.65;
+  font-style: italic;
+}
+
+/* Mirrors .backlinks, and follows it in the page -- same rule, same muted heading,
+   so the two blocks below the article read as one footer rather than two designs. */
+.references {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.references h2 { font-size: 1rem; color: var(--muted); }
+.references h2 .count {
+  font-size: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  margin-left: 0.35rem;
+}
+/* The labels are rendered into the markup so they match the inline [ACGS20] exactly;
+   the list must not add bullets or numbers of its own. Hanging indent, so a wrapped
+   title lines up under the title rather than under the label. */
+.references ul { list-style: none; margin: 0.5rem 0 0; padding-left: 0; }
+.references li { margin-bottom: 0.4rem; padding-left: 5.5rem; text-indent: -5.5rem; }
+/* Labels vary in width (Ful98 to HMPP+24), so this is a minimum rather than a fixed
+   column: a long one pushes its own title right instead of overlapping it. */
+.references .ref-num {
+  display: inline-block;
+  min-width: 5.5rem;
+  color: var(--muted);
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+}
+
+/* --- internal links to unpublished/private notes (route to /not-published/) --- */
+.link-unpublished {
+  color: var(--muted);
+  text-decoration: underline dashed;
+  text-underline-offset: 2px;
+  cursor: help;
+}
+/* Needed because the generic `a:hover` (0,1,1) outranks `.link-unpublished`
+   (0,1,0): hovering a dead end turned it accent-coloured, which is exactly the
+   wrong signal. */
+.link-unpublished:hover { color: var(--muted); }
+.not-published-view {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  text-align: center;
+}
+
+/* --- tikz / commutative diagrams (compiled to inline SVG at build) --- */
+.tikz {
+  margin: 1.6rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+.tikz svg { max-width: 100%; height: auto; }
+.tikz-error pre {
+  text-align: left;
+  color: #b00020;
+  background: var(--code-bg);
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius);
+  white-space: pre-wrap;
+}
+
+/* --- project cards (/projects/) ---------------------------------------
+ * One clickable block per project: thumbnail behind, title centred over it.
+ * The whole card is the <a>, so every pixel is the target -- a link nested
+ * inside a box would leave most of it dead to the pointer.
+ *
+ * Hover expands the card to show the description. That is a LAYOUT change, not
+ * a transform, which is the point: the cards below are pushed down rather than
+ * painted over. So height is a min-height, and the description animates via
+ * grid-template-rows 0fr -> 1fr -- the one way to transition to "however tall
+ * the content happens to be" without guessing a max-height.
+ *
+ * Cards carry their own margin rather than sitting in a flex container: the
+ * export emits one per `#+begin_project` block, so prose can sit between two
+ * of them without breaking a list wrapper. */
+.project-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: var(--card-h);
+  margin: 0 0 var(--space);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: var(--callout-bg);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.project-card-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* On the image rather than over the whole card, so a generated tile keeps its
+     full colour. */
+  filter: brightness(0.55);
+  transition: filter 140ms ease;
+}
+
+/* Sits above the thumbnail, and is what actually gives the card its height. */
+.project-card-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--card-h);
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.project-card-title {
+  font-family: var(--font-head);
+  font-size: var(--step-1);
+  font-weight: 600;
+  text-shadow: 0 1px 3px var(--card-scrim);
+}
+
+.project-card-desc {
+  display: grid;
+  grid-template-rows: 0fr;          /* collapsed: the row has no height at all */
+  transition: grid-template-rows 180ms ease;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px var(--card-scrim);
+  /* Prose, unlike the title: a centred paragraph of several lines is hard to
+     scan, because every line starts somewhere different. */
+  text-align: left;
+  width: 100%;
+}
+.project-card-desc > * {
+  overflow: hidden;                 /* required, or 0fr still shows the content */
+  min-height: 0;
+}
+.project-card:hover .project-card-desc,
+.project-card:focus-visible .project-card-desc {
+  grid-template-rows: 1fr;
+}
+/* Only once open, so the text does not crowd the title on the way out. */
+.project-card:hover .project-card-desc > *,
+.project-card:focus-visible .project-card-desc > * { padding-top: 0.5rem; }
+
+/* No thumbnail: a tile from the title's hue, so a project is never blocked on
+   making a picture. Two stops of one hue rather than two hues -- a random pair
+   collides with the site palette far too often. */
+.project-card.is-generated {
+  background-image: linear-gradient(
+    135deg,
+    hsl(var(--tile-hue) 42% 38%),
+    hsl(var(--tile-hue) 38% 24%)
+  );
+  border-color: transparent;
+}
+
+/* Pressed inward, not lifted: the card is a button. Subtle enough not to fight
+   the expansion happening at the same time; set --card-press: 1 to drop it. */
+.project-card:hover,
+.project-card:focus-visible {
+  transform: scale(var(--card-press));
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+}
+.project-card:hover .project-card-thumb { filter: brightness(0.4); }
+.project-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* A card with no url is not interactive, so it must not pretend to be -- but its
+   description still opens, since that is the only way to read it. */
+div.project-card { cursor: default; }
+div.project-card:hover { transform: none; box-shadow: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card, .project-card-desc, .project-card-thumb { transition: none; }
+  .project-card:hover, .project-card:focus-visible { transform: none; }
+}
+
+/* --- transcluded content --- */
+/* A note spliced into another by `#+transclude:` renders as if it had been typed
+   there, so nothing here frames or tints the content itself. The only mark is this
+   permalink, which follows the spliced region: attribution the reader can follow to
+   the note's own page, sized and coloured to stay out of the way of the prose it
+   trails. The arrow lives in CSS rather than in the markup so the exported HTML
+   carries no decoration and the link text stays exactly the target's title. */
+.transclusion-source {
+  margin: -0.6rem 0 1.5rem;
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.transclusion-source a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.transclusion-source a::after { content: " \2197"; }
+.transclusion-source a:hover {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}

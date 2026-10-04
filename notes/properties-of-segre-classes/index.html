@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Properties Of Segre Classes — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/properties-of-segre-classes/"
+      data-note-title="Properties Of Segre Classes">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Properties Of Segre Classes</h1>
+      <p class="note-meta"><span class="taxon">proposition</span></p>
+
+      <article class="note">
+
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Let \(X\) be a scheme.
+</p>
+<ol class="org-ol">
+<li>For all \(\alpha \in A_k(X)\),
+<ul class="org-ul">
+<li>\(s_i(E) \cap \alpha = 0\) when \(i < 0\)</li>
+<li>\(s_0(E)\cap \alpha = \alpha\)</li>
+</ul></li>
+<li><i>(Commutativity)</i> Let \(E\) and \(F\) be vector bundles on \(X\). Then for all \(\alpha \in A_k(X)\) and \(i,j\) we have
+\[s_i(E) \cap (s_j(F) \cap \alpha) = s_j(F)\cap s_i(E)\cap \alpha\]</li>
+<li><i>(Proper pushforward compatability)</i> If \(f:X'\to X\) is proper, \(E\) is a vector bundle on \(X\) and \(\alpha \in A_*(X')\), then
+\[f_*\big(s_i(f^*E)\cap \alpha) = s_i(E)\cap f_*(\alpha)\big)\]</li>
+<li><i>(Flat pullback compatability)</i> If \(f:X' \to X\) is flat, \(E\) is a vector bundle on \(X\) and \(\alpha \in A_*(X)\), then
+\[f^*(s_i(E)\cap \alpha) = s_i(f^*E)\cap f^*(\alpha)\]</li>
+<li>If \(E\) is a line bundle on \(X\), then
+\[s_1(E)\cap \alpha = -c_1(E)\cap \alpha\].</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<ul class="org-ul">
+<li><i>(5):</i> Let \(\mathcal L\) be the invertible sheaf corresponding to \(E\). <a class="idlink" data-note="tensoring-vector-bundle-with-invertible-sheaf-does-not-change-proj" href="../../notes/tensoring-vector-bundle-with-invertible-sheaf-does-not-change-proj/">Recall that tensoring with an invertible sheaf doesn&rsquo;t affect \(\Proj\);</a> that is, for any locally free sheaf \(\mathcal E\) of \(\mathcal O_X\)-modules, \(\Proj_X(\Sym \mathcal E) = \Proj_X(\Sym(E\otimes \mathcal L)) \). Thus \(X = \Proj(\Sym \mathcal O_X) = \Proj\Sym \mathcal L = P\) and \(p:P\to X\) is the identity. Note that \(E = \mathcal O_E(-1)\), so 
+\[s_1(E)\cap \alpha = p_*(c_1(\mathcal O_E(1)) \cap p^*\alpha) = c_1(E^\vee)\cap \alpha = -c_1(E)\cap \alpha.\]</li>
+</ul>
+</details>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">3</span></h2>
+  <ul>
+    <li><a data-note="chern-classes" href="../../notes/chern-classes/">Chern Classes And Segre Classes Topic Page</a></li>
+    <li><a data-note="chern-classes-of-a-vector-bundle" href="../../notes/chern-classes-of-a-vector-bundle/">Chern Classes Of A Vector Bundle</a></li>
+    <li><a data-note="tensoring-vector-bundle-with-invertible-sheaf-does-not-change-proj" href="../../notes/tensoring-vector-bundle-with-invertible-sheaf-does-not-change-proj/">Tensoring A Projective Bundle With A Line Bundle Doesn&#x27;T Do Anything</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

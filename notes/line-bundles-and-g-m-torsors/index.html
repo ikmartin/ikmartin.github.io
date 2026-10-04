@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Line Bundles And G M Torsors — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/line-bundles-and-g-m-torsors/"
+      data-note-title="Line Bundles And G M Torsors">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Line Bundles And G M Torsors</h1>
+      <p class="note-meta"><span class="taxon">discussion</span></p>
+
+      <article class="note">
+<p>
+This is a discussion of the difference between \(\mathcal O_X^\times\)-torsors, \(\mathbb G_m\)-torsors and line bundles. This became necessary because <a class="idlink" data-note="global-sections-of-ghost-sheaf-and-line-bundles" href="../../notes/global-sections-of-ghost-sheaf-and-line-bundles/">global sections of the ghost sheaf</a> are interchangably used to give \(\mathbb G_m\)-torsors and line bundles.
+</p>
+<div id="outline-container-torsors-of-sheaves-of-groups-vs-group-schemes" class="outline-2">
+<h2 id="torsors-of-sheaves-of-groups-vs-group-schemes">Torsors of sheaves of groups vs group schemes</h2>
+<div class="outline-text-2" id="text-torsors-of-sheaves-of-groups-vs-group-schemes">
+<p>
+First let us show that \(\mathcal O^\times_X\)-torsors and \(\mathbb G_m\)-torsors are the same thing up to changing perspectives from sheaves of groups to group schemes; it&rsquo;s really whether you want to think of a torsor sheaf-theoretically or scheme-theoretically, similar to the locally free sheaf vs geometric vector bundle thing. The quick argument: \(\mathbb G_m\) is the scheme which represents the functor \(T\mapsto \Gamma(T, \mathcal O_T^\times)\). A \(\mathbb G_m\)-torsor over \(X\) is a flat map \(D\to X\) so that \(D\) globally has a 
+</p>
+
+<p>
+Here are their definitions, see also the definition of a \(G\)-<a class="idlink" data-note="g-torsor-in-algebraic-geometry" href="../../notes/g-torsor-in-algebraic-geometry/">torsor</a>.
+</p>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+An \(\mathcal O_X^\times\) -torsor is a sheaf of sets \(\mathcal P\) on the space \(X\), equipped with a right action of the sheaf of groups \(\mathcal O^\times_X\) such that the following conditions hold:
+</p>
+<ol class="org-ol">
+<li><b>Simply Transitive Action:</b> The sheaf map \[\mathcal P\times \mathcal O^\times_X \to \mathcal P\times\mathcal P\]defined on local sections by \((p,g)\mapsto (p, p\cdot g)\) is an isomorphism of sheaves, i.e. it is simply transitive.</li>
+<li><b>Local Triviality:</b> There exists an open cover \(\{U_i\}\) of \(X\) such that \(\mathcal P(U_i)\) is nonempty for all \(i\).</li>
+</ol>
+
+<p>
+Note: replace \(\mathcal O^\times_X\) with any sheaf of groups over \(X\) and you get the general definition.
+</p>
+</div>
+
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+We say that \(X \to S\) is a \(\mathbb G_m\)-torsor over \(S\) if \(\mathbb G_m\) acts on \(X\) and
+</p>
+<ol class="org-ol">
+<li>The following map is an isomorphism of schemes:</li>
+</ol>
+<p>
+\[\mathbb G_m\times_{S} X \to X\times_{S}X, \quad (g, x)\mapsto (g\cdot x, x)\]
+</p>
+<ol class="org-ol">
+<li>There is an fpqc cover \(\{S_i\to S\}\) so that \(X_{S_i}\to S_i\) has a section, which is equivalent to asking that \(X_{S_i}\) is equivariantly isomorphic to \((\mathbb G_m)_{S_i}\), i.e. that \(X_{S_i}\) is a trivial \((\mathbb G_m)_{S_i}\) torsor.</li>
+</ol>
+
+<p>
+Note: replace \(\mathbb G_m\) with any other group scheme \(G\) over \(S\) and you get the general definition of a \(G\)-torsor.
+</p>
+</div>
+
+<p>
+The following lemma is useful for thinking about \(G\)-torsors: 
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<ol class="org-ol">
+<li>A scheme \(X\) is a \(\mathbb G_m\)-torsor if and only if for every scheme \(T\) over \(S\) the set \(X(T)\) is either empty or the action of \(G(T)\) on \(X(T)\) is simply transitive.</li>
+<li>A \(\mathbb G_m\)-torsor is trivial (meaning there is a \(\mathbb G_m\)-equivariant isomorphism \(\mathbb G_m\to X\) where \(\mathbb G_m\) acts on itself on the left by multiplication) if and only if \(X\to S\) admits a section.</li>
+</ol>
+</div>
+
+<p>
+<b>Equivalence: Going from scheme to sheaf.</b> Suppose \(X\) is a \(\mathbb G_m\)-torsor over \(S\) with \(\pi:X\to S\) its structure map. Take the <b>sheaf of local sections on \(S\)</b>, i.e. define \(\mathcal P(U)\) to be the set of morphisms \(s:U\to X\) such that \(\pi|_U\circ s\) is the identity on \(U\). For each \(g:U\to \mathbb G_m \) element of \(\mathbb G_m(U)\) we have an automorphism \(\varphi_g:X\to X\) given by action of \(g\), and this acts on \(\mathcal P(U)\) by composition: take a section \(s:U\to X\) and send it to \(\varphi_g\circ s\). However, \(\mathcal O_S^\times\)  represents the functor of points of \(\mathbb G_m\), that is,
+\[\Hom_{Sch/S}(U, \mathbb G_m)\cong \mathcal O_S(U)^\times.\]
+Ignoring the base for a moment, a morphism \(U\to \mathbb G_m\) is the same as a morphism \(\mathcal O_{\mathbb G_m} \to \mathcal O_S|_U\). Since \(\mathbb G_m\) is affine, this in turn is the same as specifying a morphism on global sections, i.e. \(\mathbb Z[t, t^{-1}]\to \mathcal O_S(U)\). Such a morphism is determined by choosing an invertible element \(f\in \mathcal O_S(U)\) to be the image of \(t\), and thus the set of morphisms is in bijection with \(\mathcal O_S(U)^\times\).
+</p>
+
+<p>
+<b>Equivalence: Going from sheaf to scheme.</b> If we start with an abstract sheaf \(\mathcal P\) over \(S\) which is a \(\mathcal O_S^\times\)-torsor, we can build a full \(\mathbb G_m\)-torsor \(X\) over \(S\) by gluing copies of \(\mathbb G_m\) together over the trivialization \(\{U_i\}\) of \(\mathcal P\) with transition functions given by something like the quotient \(f/g\)  where \(f\) and \(g\) are the sections of \(\mathcal O_S^\times\) corresponding to the maps \(U_i \to \mathbb G_m\); it&rsquo;s just descent.
+</p>
+</div>
+</div>
+<div id="outline-container-line-bundles-and-torsors" class="outline-2">
+<h2 id="line-bundles-and-torsors">Line bundles and Torsors</h2>
+<div class="outline-text-2" id="text-line-bundles-and-torsors">
+<p>
+The basic idea here is that a torsor is a line bundle with the zero section removed.
+</p>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="g-torsor-in-algebraic-geometry" href="../../notes/g-torsor-in-algebraic-geometry/">G-Torsor In Algebraic Geometry</a></li>
+    <li><a data-note="global-sections-of-ghost-sheaf-and-line-bundles" href="../../notes/global-sections-of-ghost-sheaf-and-line-bundles/">Global Sections Of The Ghost Sheaf, Torsors, And Line Bundles</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

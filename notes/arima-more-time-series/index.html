@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arima More Time Series — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/arima-more-time-series/"
+      data-note-title="Arima More Time Series">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#motivation">Motivation</a></li>
+    <li class="toc-l2"><a href="#stationarity">Stationarity</a></li>
+    <li class="toc-l2"><a href="#examples">Examples</a></li>
+    <li class="toc-l2"><a href="#autocorrelation">Autocorrelation</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Arima More Time Series</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span></p>
+
+      <article class="note">
+<div id="outline-container-motivation" class="outline-2">
+<h2 id="motivation">Motivation</h2>
+<div class="outline-text-2" id="text-motivation">
+<p>
+So far, regression analysis has taken the form
+\[Y = f(X) + \epsilon\]
+This could be rewritten \(Y - f(X) = \epsilon\) and then using the function \(F(a,b) = a - f(b)\) it could be rewritten
+\[F(X,Y) = \epsilon.\]
+Here \(\epsilon\) is generally assumed to have a <i>fixed</i> distribution independent of \(X\) or \(Y\) (but it might have heterogeneous error). We then develop various ways to estimate \(\hat F\) and perhaps something about \(\epsilon\) from the data \((x_i,y_i)\).
+</p>
+
+<p>
+We could view this as attempting to find something about the relationship between \(X\) and \(Y\) which is invariant. If we had \(\epsilon = 0\) then our relationship would be <b>exact</b>. The next best thing is to make assumptions such as, in increasing order of assumption strenght, that
+</p>
+<ul class="org-ul">
+<li>\(\epsilon\) has mean \(0\) but otherwise might depend on \(X\)</li>
+<li>\(\epsilon\) has mean \(0\) but constant variance, but we don&rsquo;t know the distribution (which may or may not depend on \(X\))</li>
+<li>\(\epsilon\) is normally distributed with mean \(0\), constant variance, and is independent of \(X\).</li>
+</ul>
+
+<p>
+We need to believe something about the relationship between \(X\) and mkY doesn&rsquo;t change in order to get started with regression modeling. We have to adjust this story a bit for time series. Let&rsquo;s stick with a time series \(y_t \) without any covariats.
+</p>
+
+<p>
+We&rsquo;d like for there to be some <i>invariance</i> of the time series with time, i.e. some assumption that should hold at any time, perhaps about the relationship between \(Y_t\) and \(Y_{t+1}\).
+</p>
+</div>
+</div>
+<div id="outline-container-stationarity" class="outline-2">
+<h2 id="stationarity">Stationarity</h2>
+<div class="outline-text-2" id="text-stationarity">
+<p>
+We say that a time series \(\{y_t\}\) is <i>strictly stationary</i> if the joint probability distribution \(Y_{t_1},Y_{t_2},..., Y_{t_n} \) is equal to that of \(Y_{t_1+\tau}, Y_{t_2 + \tau},...,Y_{t_n+\tau}\) for any \(t_1,...,t_n\), \(\tau\), \(n\). This would imply that the joint distribution only depends on the intervals between \(t_1,...,t_n\) and in particular if \(n=1\)
+\[E(Y_t) = \mu, \text{Var}(Y_t) = \sigma^2\]
+are not functions of \(t\). Further if \(n = 2\) the joint distributio of \(Y_{t_1}\)and \(Y_{t_2}\) only depends on \((t_2 - t_1)\) which is called the <i>lag</i> between \(t_1\) and \(t_2\).
+</p>
+
+<p>
+<b>Strict stationarity</b> is quite restrictive and we more often define a weaker sense:
+\[E(Y_t) = \mu, \text{~ and } ~ \text{Cov}(Y_t, Y_{t + \tau}) = \gamma (\tau).\]
+</p>
+</div>
+</div>
+<div id="outline-container-examples" class="outline-2">
+<h2 id="examples">Examples</h2>
+<div class="outline-text-2" id="text-examples">
+<ul class="org-ul">
+<li>White noise: start with a sequence of random variables \(Y_t\) each iid. Then anything we expect about \(Y_t,...,Y_{t_n}\) we should expect about \(Y_{t+\tau},...,Y_{t+\tau+n}\). In particular, since they are iid, the pdf of the first sequence is</li>
+</ul>
+<p>
+\[f_{Y_1,...,Y_n}(y_1,...,y_n) = \prod_{i=1}^n f_{Y_i}\]
+</p>
+</div>
+</div>
+<div id="outline-container-autocorrelation" class="outline-2">
+<h2 id="autocorrelation">Autocorrelation</h2>
+<div class="outline-text-2" id="text-autocorrelation">
+<p>
+The <i>autocorrelation</i> of a time series is essentially the correlation of that time series with its future observations placed at different lag. In particular, the autocorrelation of a time series at la \(k\) is given by
+</p>
+\begin{align*}
+  r_k &= \text{Corr}(Y_{t+k, Y+t}) \\
+&= \frac{\text{Corr}(Y_{t+k}, Y_t)}{\text{StdDev}(Y_{t+k})\text{StdDev}(Y_t)}
+\end{align*}
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

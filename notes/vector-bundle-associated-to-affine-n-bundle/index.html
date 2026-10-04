@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vector Bundle Associated To Affine N Bundle Aka Vector Bundle Torsor — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/vector-bundle-associated-to-affine-n-bundle/"
+      data-note-title="Vector Bundle Associated To Affine N Bundle Aka Vector Bundle Torsor">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Vector Bundle Associated To Affine N Bundle Aka Vector Bundle Torsor</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<p>
+<b>Setup</b>
+\(X\) is a scheme (or a stack, it won&rsquo;t matter) and \(\varphi:B\to X\) is an <a class="idlink" data-note="affine-bundle-defn" href="../../notes/affine-bundle-defn/">affine bundle</a> of rank \(n\) over \(X\). This means it is a \(F\)-torsor for some rank \(n\) <a class="idlink" data-note="vector-bundle-definition" href="../../notes/vector-bundle-definition/">vector bundl</a>e over \(X\). So our terms:
+</p>
+
+<ul class="org-ul">
+<li>\(\mathcal F\) a locally free sheaf of rank \(n\) on \(X\)</li>
+<li>\( F= \Spec \Sym \mathcal F^\vee\) is the total space of \(\mathcal F\)</li>
+<li>\( \varphi:B\to X\) is a \(F\)-torsor over \(X\)</li>
+</ul>
+
+<p>
+<b>Construction</b>
+Set \(\mathcal A = \varphi_*\mathcal O_B\) and define \(\mathcal A^{\leq 1}\subseteq \mathcal A\) to be the subsheaf of affine-linear sections. That this is globally well-defined is a descent argument: \(\mathcal O_B\cong \mathcal O_X[y_1,...,y_n]\) locally, and because the transition functions are affine, they preserve \(\mathcal A^{\leq 1}\). Alternatively, for affine bundles one can observe that \(\Omega_{B/X} \cong \varphi^*\mathcal F^\vee\), since translations act trivially on relative differentials the affine maps act as if they were linear on differentials. Then \(f \in \mathcal A\) lies in \(\mathcal A^{\leq 1}\) if and only if \(d_{B/X}f \in \varphi_*\varphi^*\mathcal F^{\vee}\) lies in the image of the unit \(\mathcal F^\vee \to \varphi_*\varphi^*\mathcal F^\vee\), i.e. if its fiberwise differential is constant along fibers.
+</p>
+
+<p>
+Anyways, there are two maps involving \(\mathcal A^{\leq 1}\);
+</p>
+<ul class="org-ul">
+<li>the constant part: \(\mathcal O_X\to \mathcal A^{\leq 1}\) which we just call \(1\), identifiying \(\mathcal O_X\) with the constant sections of \(\mathcal A^{\leq 1}\), and</li>
+<li>the linear part: \( \mathcal A^{\leq 1}\xrightarrow{d_{B/X}} \mathcal F\), which is locally defined \(d_{B/X}(a_1y_1 + ... + a_n y_n + b) = (a_1,...,a_n)\in \mathcal F\).</li>
+</ul>
+
+<p>
+Really spelling this out: on an affine we have 
+</p>
+<ul class="org-ul">
+<li>\(\mathcal O_X = R\)</li>
+<li>\(\mathcal O_F = R[y_1,...,y_n]\)</li>
+<li>\(\mathcal F = \{a_1y_1 + ... + a_ny_n \in R[y_1,...,y_n]^{\deg = 1}\} \cong R^{\oplus n}\)</li>
+<li>\(\mathcal A^{\leq 1} = \{a_1y + ... + a_ny_n + b \in R[y_1,...,y_n]^{\deg \leq 1}\} \cong R^{\oplus (n+1)}\)</li>
+</ul>
+<p>
+This makes it obvious that \(\mathcal A^{\leq 1}\) is a locally free sheaf of rank \(n + 1\); call it \(\mathcal E\). These two maps fit into the exact sequence
+</p>
+\begin{align*}
+  0 \to \mathcal O_X\xrightarrow{1} \mathcal E \xrightarrow{d_{B/X}} \mathcal F\to 0.
+\end{align*}
+<p>
+Dualizing gives us
+</p>
+\begin{align*}
+  0 \to \mathcal F^\vee \xrightarrow{d_{B/X}^\vee} \mathcal E^\vee \xrightarrow{\tau} \mathcal O_X\to 0
+\end{align*}
+<p>
+where \(\tau(\xi) = \xi(1)\) evaluates a section \(\xi\) at the constact function \(1\in \mathcal E = \mathcal A^{\leq 1}\) . Taking \(\Spec\Sym(-)\) gives us the exact sequence of vector bundles
+</p>
+\begin{align*}
+  0 \to F\to E\xrightarrow{\rho} \mathbb A^1_{X}\to 0.
+\end{align*}
+
+<p>
+<b>Geometry</b>
+The inclusion \(\mathcal A^{\leq 1}\hookrightarrow \mathcal A\) induces a surjection \(\Sym(\mathcal A^{\leq 1})\twoheadrightarrow \mathcal A.\) It&rsquo;s surjective because \(\mathcal A\) is locally generated in degree \(\leq 1\). This gives us an inclusion \(B\hookrightarrow \operatorname{Tot}(\mathcal A^{\leq 1}) = \operatorname{Tot}(\mathcal E) = E\). What precisely is the ideal? Locally, the surjection looks like
+</p>
+\begin{align*}
+  R[T,Y_1,...,Y_n] \to R[Y_1,...,Y_n]
+\end{align*}
+<p>
+with \(T\) the formal variable attached to \(1 \in \mathcal A^{\leq 1}\). Hence the map is \(T\mapsto 1, Y_i \mapsto Y_i\), so the ideal is \((T - 1)\). Globally, this section \(T\) is the fiberwise-linear function on \(E\) attached to \(1 \in \mathcal E^\vee\), the composite
+</p>
+\begin{align*}
+  t:E\xrightarrow{\rho} X\times \mathbb A^1 \xrightarrow{\pr} \mathbb A^1,
+\end{align*}
+<p>
+since \(\tau\) was <i>defined</i> as evaluation at \(1\). Thus \(t^{-1}(1) = B\).
+</p>
+
+<p>
+We also have that \(t^{-1}(0) = F\), since functionals killing constants are precisely functionals on \(\mathcal A^{\leq 1}/\mathcal O\cong \mathcal F\). Thus, \(E\) is a family over \(\mathbb A^1\) whose central fiber is the trivial torsor \(F\) and whose fiber over \(1\) (and every other nonzero point) is \(B\).
+</p>
+
+<p>
+<b>Ext groups and Cohomology</b>
+Notice that
+</p>
+\begin{align*}
+  \Ext^1_X(\mathcal F, \mathcal O_X) \cong \Ext^1_X(\mathcal O_X, \mathcal F^\vee) \cong H^1_X(X, \mathcal F).
+\end{align*}
+<p>
+This is the one line cohomological justification for the above construction, when \(D\) is any \(F\)-torsor it has a canonical associated extension
+</p>
+\begin{align*}
+  0\to\mathcal F\to \mathcal F'\to \mathcal O_X\to 0,
+\end{align*}
+<p>
+and \(\Spec Sym(\mathcal F'^\vee)\) will give you the desired rank \(n+1\) vector bundle \(E\) into which \(D\) embeds. Also visible here: \(D\) is a split/trivial torsor exactly when the above extension class \([\mathcal F']\) is trivial i.e. when the above short exact sequence splits.
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="affine-bundle-defn" href="../../notes/affine-bundle-defn/">Affine Bundle Defn</a></li>
+    <li><a data-note="vector-bundle-definition" href="../../notes/vector-bundle-definition/">Vector Bundle Definition</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

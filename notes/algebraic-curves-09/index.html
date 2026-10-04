@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 9 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-09/"
+      data-note-title="Algebraic Curves Lecture 9">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 9</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-08" href="../../notes/algebraic-curves-08/">← lecture 8</a> · <a class="idlink" data-note="algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves" href="../../notes/algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves/">lecture 10 →</a>
+</p>
+<div id="outline-container-coverings" class="outline-2">
+<h2 id="coverings">Coverings</h2>
+<div class="outline-text-2" id="text-coverings">
+<p>
+Let \(f:Y\to X\) be a map of curves, \(p\in Y\), \(q = f(p)\). 
+</p>
+
+<p>
+The <i>ramification index</i> at \(p\) is \(v_p(t)\).
+</p>
+
+<p>
+If \(v_p(t) = 1\) we say that \(f\) is <i>unramified</i> at \(p\). Otherwise \(p\) is a <i>ramification point</i> of \(f\), in which case we say that \(q\) is a <i>branch point</i>.
+</p>
+
+<p>
+The <i>ramification divisor</i> of \(f\) is
+</p>
+\begin{align*}
+    R = \sum_{p\in Y} (v_p(t) - 1)\cdot p.
+\end{align*}
+<p>
+Implicit in this definition is the fact that \(f\) has finitely many ramification points. Our first theorem is the Riemann-Hurwitz formula.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+In this situation in characteristic \(0\),
+</p>
+\begin{align*}
+    K_Y = f^*K_X + R
+\end{align*}
+<p>
+and in particular
+</p>
+\begin{align*}
+    2g(Y) - 2 = d(2g(X) - 2) + \sum_{p\in Y}(v_p(t) - 1)
+\end{align*}
+<p>
+where \(d = \deg(t)\).
+</p>
+</div>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+We say that \(f\) is separable if the induced field extension \(K[Y]/K[X]\) is separable. In positive characteristic
+</p>
+<ol class="org-ol">
+<li>If \(f\) is not separable then it is ramified along all of \(Y\)</li>
+<li>Even if it is separable the formula might fail if the ramification is not tame (meaning the ramification index is divisible by the characteristic of the base field).</li>
+</ol>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<i>(Sketch of an analytic proof.)</i>   Let \(\omega\) be a meromorphic 1-form on \(X\) the target curve. Pulling it back by \(f\) gives us a 1-form on \(Y\). Away from branch points, \(f\) is a local isomorphism (here we have a drawing of a stack of analytic disks in \(Y\) over an analytic disk around the point \(q\) in \(X\)) and thus any zero or pole of \(\omega\) is given \(d\) zeros or \(d\) poles on \(Y\).
+</p>
+
+<p>
+At a ramification point \(p\), \(f\) is given analytic locally be \(z\mapsto z^{v_p(t)}\). On the other hand, \(\omega\) is locally given by \(dt = dz^{v_p(t)} = (v_p(t))z^{v_p(t)-1}dz\) on \(Y\).
+</p>
+</details>
+<p>
+We can see where this fails when the ramification is not tame; if the characteristic of the base field divides \(v_p(t)\) then \(\omega\) vanishes on \(Y\).
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+There is no nontrivial étale cover \(Y\to \mathbb P^1\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Recall that étale = flat + unramified. Any finite surjective map of nonsingular varieties is flat, but a cover \(f:Y\to \mathbb P^1\) will always fail to be unramified. Indeed, suppose \(f\) is étale. Riemann-Hurwitz says that
+</p>
+\begin{align*}
+    2g(Y) - 2 = -2\cdot d + \deg(R) = -2d
+\end{align*}
+<p>
+which implies \(g(Y) = 0, d = 1\). The important part is that \(\deg(f) = d=1\), hence \(f\) is an isomorphism on function fields. hence \(f\) is an isomorphism. The only étale map is therefore trivial.
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+If \(f:Y\to X\) is a cover then \(g(Y) \geq g(X)\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+    
+If \(g(X) = 0\) then there is nothing to show. Otherwise, we get by Riemann-Hurwitz that
+</p>
+\begin{align*}
+    &2g(Y) - 2 = d\cdot (2g(X) - 2) + \deg(R) \\
+    &\implies g(Y) = d(g(X) - 1) + \frac{\deg(R)}{2} + 1 \\
+    &\implies g(Y) = g(X) + (d-1)(g(X) - 1) + \frac{\deg(R)}{2}.
+\end{align*}
+<p>
+If \(g(X) > 0\) then \((d-1)(g(X) - 1)\geq 0\) and \(\frac{\deg(R)}{2}\geq 0\) so the claim follows.
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+\(\deg(R)\) is even.
+</p>
+</div>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+If \(g\geq 2\) and \(g(X) = g(Y) = g\) then any cover \(f:Y\to X\) is an isomorphism.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+\(2g - 2 = d\cdot (2g - 2) + \deg(R)\) which implies \(d = 1\) and hence \(f\) is an isomorphism.
+</p>
+</details>
+
+<p>
+<i>Example:</i> Take \(f:\mathbb P^1\xrightarrow{2:1} \mathbb P^1\). Then
+</p>
+\begin{align*}
+    -2 = 2\cdot (-2) + \deg(R) \implies \deg(R) = 2
+\end{align*}
+<p>
+and so \(f\) is ramified at two points with ramification index \(2\): \([x:y] \mapsto [x^2:y^2]\).
+</p>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+<i>(Hurwitz bound).</i>   Suppose \(X\) has genus \(\geq 2\) and finitely many automorphisms. Then \(|\Aut(X)| \leq 84(g - 1)\).
+</p>
+</div>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<ol class="org-ol">
+<li>This bound is sharp in the sense that it is achieved for infinitely many \(g\), but not all of them. For example, up to \(g = 6\) it is achieved only in \(g = 3\) by the Klein quartic:</li>
+</ol>
+\begin{align*}
+    \{x^3y + y^3z + z^3 x = 0\} \subseteq \mathbb P^2
+\end{align*}
+<ol class="org-ol">
+<li>The upshot is that if you fix \(g\), there is a bound on the automorphisms of ALL curves of that genus. A priori, it might be the case that for fixed genus \(g\) you could find curves of that genus whose automorphism group has arbitrarily large size.</li>
+<li>The Hurwitz bound fails in positive characteristic.</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+You can check that \(X/\Aut(X) = Y\) is again a curve. So you get a covering \(X\to Y\) of degree \(\Aut(X)|\). Ramification points of this cover are the points with non-trivial stabilizers.
+</p>
+
+<p>
+Denote by \(r_{i,j}\) the ramification points lying over a branch point \(p_i\) for \(1\leq i\leq b\). (A picture of a line representing the base curve \(Y\) with a tick for point \(p_i\) lying in \(Y\). Above \(p_i\) is a loopy curved line representing \(X\) so that each point \(r_{i,j}\) is a ramification point. Each \(r_{i,1}, r_{i,2}, r_{i,3}\) is a place where the fiber is &ldquo;tangent to the curve \(X\)&rdquo;)
+</p>
+
+<p>
+Over \(p_i\) all points in the fiber \(f^{-1}(p_i)\) have the same ramification index \(f_i\). If \(r_i = |f^{-1}(p_i)|\) then \(f_i\cdot r_i = |\Aut(X)|\). Then Riemann-Hurwitz says
+</p>
+\begin{align*}
+    2g(X) - 2 &= |\Aut(X)| \cdot (2g(Y) - 2) + \sum_{i}r_i\cdot (f_i - 1) \\
+    &= |\Aut(X)| \cdot (2g(Y) - 2) + \sum_{r_{i,j}}(f_i - 1)
+\end{align*}
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves" href="../../notes/algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves/">Algebraic Curves Lecture 10: Hurwitz Bound And Hyperelliptic Curves</a></li>
+    <li><a data-note="algebraic-curves-08" href="../../notes/algebraic-curves-08/">Algebraic Curves Lecture 8</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

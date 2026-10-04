@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classifying Stack — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/classifying-stack/"
+      data-note-title="Classifying Stack">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Classifying Stack</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+<i>(Classifying Stack.)</i> Let \(G\to S\) be a smooth affine group scheme over a scheme \(S\). The <i>classifying stack</i> \(BG\) of \(G\to S\) is the category over \(\Sch/S\) whose objects are <a class="idlink" data-note="principal-g-bundle" href="../../notes/principal-g-bundle/">principal G-bundles</a> \(P\to T\) and a morphism \((P'\to T') \to (P\to T)\) is the data of a \(G\)-equivariant morphism \(P'\to P\) such that
+</p>
+<figure class="tikz" id="tikz-a7cf112361958999"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-70.007476 -86.487628 88.466825 63.976631' width='8.8467em'>
+<defs>
+<path id='tza7cf112361958999-g0-3' d='M7.183064-6.495641C7.183064-6.804483 7.153176-6.844334 6.834371-6.844334H.9066C.597758-6.844334 .557908-6.814446 .557908-6.495641V-.358655C.557908-.039851 .587796 0 .916563 0H6.824408C7.153176 0 7.183064-.029888 7.183064-.348692V-6.495641ZM.956413-6.445828H6.784558V-.398506H.956413V-6.445828Z'/>
+<path id='tza7cf112361958999-g1-48' d='M2.022416-3.291656C2.078207-3.410212 2.085181-3.466002 2.085181-3.514819C2.085181-3.731009 1.889913-3.898381 1.673724-3.898381C1.408717-3.898381 1.325031-3.682192 1.290162-3.57061L.369614-.550934C.36264-.536986 .334745-.446326 .334745-.439352C.334745-.355666 .550934-.285928 .606725-.285928C.655542-.285928 .662516-.299875 .711333-.404483L2.022416-3.291656Z'/>
+<path id='tza7cf112361958999-g2-80' d='M3.01868-3.148194H4.712329C6.127024-3.148194 7.511831-4.184309 7.511831-5.300125C7.511831-6.067248 6.854296-6.804483 5.549191-6.804483H2.321295C2.132005-6.804483 2.022416-6.804483 2.022416-6.615193C2.022416-6.495641 2.11208-6.495641 2.311333-6.495641C2.440847-6.495641 2.620174-6.485679 2.739726-6.475716C2.899128-6.455791 2.958904-6.425903 2.958904-6.316314C2.958904-6.276463 2.948941-6.246575 2.919054-6.127024L1.58406-.777086C1.484433-.388543 1.464508-.308842 .67746-.308842C.508095-.308842 .398506-.308842 .398506-.119552C.398506 0 .518057 0 .547945 0C.826899 0 1.534247-.029888 1.8132-.029888C2.022416-.029888 2.241594-.019925 2.450809-.019925C2.669988-.019925 2.889166 0 3.098381 0C3.16812 0 3.297634 0 3.297634-.199253C3.297634-.308842 3.20797-.308842 3.01868-.308842C2.650062-.308842 2.371108-.308842 2.371108-.488169C2.371108-.547945 2.391034-.597758 2.400996-.657534L3.01868-3.148194ZM3.73599-6.117061C3.825654-6.465753 3.845579-6.495641 4.273973-6.495641H5.230386C6.057285-6.495641 6.585305-6.22665 6.585305-5.539228C6.585305-5.150685 6.386052-4.293898 5.997509-3.935243C5.499377-3.486924 4.901619-3.407223 4.463263-3.407223H3.058531L3.73599-6.117061Z'/>
+<path id='tza7cf112361958999-g2-84' d='M4.254047-6.047323C4.323786-6.326276 4.363636-6.386052 4.483188-6.41594C4.572852-6.435866 4.901619-6.435866 5.110834-6.435866C6.117061-6.435866 6.56538-6.396015 6.56538-5.618929C6.56538-5.469489 6.525529-5.080946 6.485679-4.821918C6.475716-4.782067 6.455791-4.662516 6.455791-4.632628C6.455791-4.572852 6.485679-4.503113 6.575342-4.503113C6.684932-4.503113 6.704857-4.582814 6.724782-4.732254L6.993773-6.465753C7.003736-6.505604 7.013699-6.60523 7.013699-6.635118C7.013699-6.744707 6.914072-6.744707 6.744707-6.744707H1.215442C.976339-6.744707 .966376-6.734745 .896638-6.545455L.298879-4.79203C.288917-4.772105 .239103-4.632628 .239103-4.612702C.239103-4.552927 .288917-4.503113 .358655-4.503113C.458281-4.503113 .468244-4.552927 .52802-4.712329C1.066002-6.256538 1.325031-6.435866 2.799502-6.435866H3.188045C3.466999-6.435866 3.466999-6.396015 3.466999-6.316314C3.466999-6.256538 3.437111-6.136986 3.427148-6.107098L2.092154-.787049C2.002491-.418431 1.972603-.308842 .9066-.308842C.547945-.308842 .488169-.308842 .488169-.119552C.488169 0 .597758 0 .657534 0C.926526 0 1.205479-.019925 1.474471-.019925C1.753425-.019925 2.042341-.029888 2.321295-.029888S2.879203-.019925 3.148194-.019925C3.437111-.019925 3.73599 0 4.014944 0C4.11457 0 4.234122 0 4.234122-.199253C4.234122-.308842 4.154421-.308842 3.895392-.308842C3.646326-.308842 3.516812-.308842 3.257783-.328767C2.968867-.358655 2.889166-.388543 2.889166-.547945C2.889166-.557908 2.889166-.607721 2.929016-.757161L4.254047-6.047323Z'/>
+</defs>
+<g id='tza7cf112361958999-page1'>
+<g stroke-miterlimit='10' transform='translate(-40.296018,-46.259237)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-29.82288,-20.17757)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.296018,-46.259237)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-30.719093,-78.973883)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.3073,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.719093,-78.973883)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-30.719093' y='-78.973883' xlink:href='#tza7cf112361958999-g2-80'/>
+<use x='-22.939231' y='-82.589247' xlink:href='#tza7cf112361958999-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(10.947518,-78.973883)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.90451,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(10.947518,-78.973883)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='10.947518' y='-78.973883' xlink:href='#tza7cf112361958999-g2-80'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(-30.719093,-46.259237)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.0191,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.719093,-46.259237)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-30.719093' y='-46.259237' xlink:href='#tza7cf112361958999-g2-84'/>
+<use x='-23.51345' y='-49.8746' xlink:href='#tza7cf112361958999-g1-48'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(10.947518,-46.259237)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.61632,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(10.947518,-46.259237)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='10.947518' y='-46.259237' xlink:href='#tza7cf112361958999-g2-84'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-10.3972 15.15976H12.80281' fill='none'/>
+<g transform='translate(13.00279,15.15976)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<g transform='translate(-3.19972,-4.62735)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(-40.296018,-46.259237)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<use x='-40.296018' y='-46.259237' xlink:href='#tza7cf112361958999-g0-3'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-20.21004 8.80003V-8.40005' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-20.21004,-8.60004)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M21.61282 8.80003V-9.08456' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,21.61282,-9.28455)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-10.6854-17.67757H13.091' fill='none'/>
+<g transform='translate(13.29099,-17.67757)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></figure>
+<p>
+is Cartesian.
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="principal-g-bundle" href="../../notes/principal-g-bundle/">Principal G Bundle</a></li>
+    <li><a data-note="quotient-prestack-and-stack" href="../../notes/quotient-prestack-and-stack/">Quotient Prestack And Stack</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

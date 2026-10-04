@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transcript For Iowa Water Project Presentation — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/transcript-for-iowa-water-project-presentation/"
+      data-note-title="Transcript For Iowa Water Project Presentation">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#some-freewriting-dumb-dumb">Some freewriting dumb dumb</a></li>
+    <li class="toc-l2"><a href="#draft">Draft</a></li>
+    <li class="toc-l3"><a href="#the-problem-setup">The Problem Setup</a></li>
+    <li class="toc-l3"><a href="#research-question">Research Question</a></li>
+    <li class="toc-l3"><a href="#the-data">The data</a></li>
+    <li class="toc-l3"><a href="#modeling-approach">Modeling approach</a></li>
+    <li class="toc-l3"><a href="#findings">Findings</a></li>
+    <li class="toc-l3"><a href="#next-steps">Next steps</a></li>
+    <li class="toc-l2"><a href="#erin-draft">Erin Draft</a></li>
+    <li class="toc-l3"><a href="#the-problem-setup-2">The Problem Setup</a></li>
+    <li class="toc-l3"><a href="#data-story">Data Story</a></li>
+    <li class="toc-l3"><a href="#final-data-list">Final data list</a></li>
+    <li class="toc-l3"><a href="#modeling-journey-40s">Modeling Journey (~40s)</a></li>
+    <li class="toc-l3"><a href="#final-results-55s">Final Results (~55s)</a></li>
+    <li class="toc-l3"><a href="#limitations-next-steps-35s">Limitations &amp; Next Steps (~35s)</a></li>
+    <li class="toc-l3"><a href="#business-decision-relevance-30s">Business / Decision Relevance (~30s)</a></li>
+    <li class="toc-l2"><a href="#final-transcript">Final Transcript</a></li>
+    <li class="toc-l3"><a href="#introduction-currently-60s">Introduction (currently 60s)</a></li>
+    <li class="toc-l3"><a href="#data-setup-currently-40s">Data Setup (currently 40s)</a></li>
+    <li class="toc-l3"><a href="#eda-currently-30s">EDA (currently 30s)</a></li>
+    <li class="toc-l3"><a href="#final-feature-list-currently-30s">Final feature list (currently 30s)</a></li>
+    <li class="toc-l3"><a href="#modeling-currently-35-seconds">Modeling (currently 35  seconds)</a></li>
+    <li class="toc-l3"><a href="#results-currently-25-seconds">Results (currently 25 seconds)</a></li>
+    <li class="toc-l3"><a href="#deployment-tuning">Deployment + tuning</a></li>
+    <li class="toc-l3"><a href="#limitations-and-improvements-currently-30-sec">Limitations and Improvements (currently 30 sec)</a></li>
+    <li class="toc-l3"><a href="#stakeholders-and-relevance-and-end-currently-25-seconds">Stakeholders and relevance and end (currently 25 seconds)</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Transcript For Iowa Water Project Presentation</h1>
+      <p class="note-meta"><span class="taxon">writing</span></p>
+
+      <article class="note">
+<div id="outline-container-some-freewriting-dumb-dumb" class="outline-2">
+<h2 id="some-freewriting-dumb-dumb">Some freewriting dumb dumb</h2>
+<div class="outline-text-2" id="text-some-freewriting-dumb-dumb">
+<p>
+<b>Introduce real world problem</b>
+Nitrate in the water is bad. Iowa has a lot of nitrate in the water. It mostly comes from fertilizer on corn fields. It varies seasonally. Long-term exposure 
+</p>
+
+<p>
+<b>Clearly state team&rsquo;s research question</b>
+State and federal agencies deploy real-time nitrate sensors in Iowa&rsquo;s waterways. Coverage is spotty &#x2013; sensors malfunction frequently and aren&rsquo;t deployed everywhere. More recently, many of the water-monitoring programs have been cut, and so data collection is getting even harder. We wondered: could we create virtual sensors which could predict nitrate levels in any part of the state from other more robust data sources?
+</p>
+
+<p>
+<b>Steps to improve project</b>
+Point pollution sources are potentially a huge missing piece of our pipeline. Latitude and longitude are rough proxies for it, but it would be useful to include them as it would likely improve performance. We didn&rsquo;t include it in this project due to time constraints, statewide point pollution data sources turned out to be prohibitively difficult to gather in the allotted time.
+</p>
+
+<p>
+Improved land use data
+</p>
+
+<p>
+Our models would also be improved by better network modeling.
+</p>
+</div>
+</div>
+<div id="outline-container-draft" class="outline-2">
+<h2 id="draft">Draft</h2>
+<div class="outline-text-2" id="text-draft">
+</div>
+<div id="outline-container-the-problem-setup" class="outline-3">
+<h3 id="the-problem-setup">The Problem Setup</h3>
+<div class="outline-text-3" id="text-the-problem-setup">
+<p>
+Iowa grows a lot of corn, 2.5 Billion bushels in 2024, or enough to feed the entire United States for a year. Iowa is also the only state in the US whose yearly cancer rate is increasing, a trend that began back in 2015. These two things are linked.
+</p>
+
+<p>
+You see, the soil can&rsquo;t natively handle that kind of corn production &#x2013; it requires a <i>lot</i> of extra nitrogen, added in the form of artificial fertilizer and animal manuer &#x2013; and not all of that nitrogen stays in the soil. The excess leaches into streams, rivers and eventually the manucipal watersupply as nitrate, a carcinogen. The typical background concentatration of nitrate in water is 1 to 2 mg/L, but Iowa is unique in that its residential water frequently exceeds a nitrate concentration of over 10 mg/L, the federally mandated limit.
+</p>
+
+<p>
+This is why both state and federal agencies deploy real-time sensors in Iowa&rsquo;s waterways to monitor the nitrate levels. However, coverage is spotty &#x2013; sensors break, are expensive to deploy, and many have recently been retired due to (potentially politically motivated) budget cuts. This leaves residents, policy makers and farmers flying blind.
+</p>
+</div>
+</div>
+<div id="outline-container-research-question" class="outline-3">
+<h3 id="research-question">Research Question</h3>
+<div class="outline-text-3" id="text-research-question">
+<p>
+Luckily, the pathway nitrate takes from the farm to your brita filter is well understood: water flows through the farms into streams and rivers, carrying excess nitrate with it. We wondered, <i>can we predict nitrate risk at a specific location using ONLY publicly available weather and land-use data, without a physical sensor?</i> In short: yes, we can.
+</p>
+</div>
+</div>
+<div id="outline-container-the-data" class="outline-3">
+<h3 id="the-data">The data</h3>
+<div class="outline-text-3" id="text-the-data">
+<p>
+We started with a list of 162 real sensors deployed across Iowa&rsquo;s waterways, and after filtering out for large data gaps and malformed data, we kept the 85 best, with records spanning 4 to 15 year periods betwen 2008 to 2025. Here&rsquo;s an example of one of them, and this is what it&rsquo;s nitrate data looks like.
+</p>
+
+<p>
+From these, we built two outcomes: (1) the daily maximum nitrate concentration, a regression target, and (2) a daily yes/no violation flag answering the question: on this day, did the sensor observe a nitrate level above the federal safety limit?
+</p>
+
+<p>
+Next, for each sensor, we computed its <i>drainage</i> basin, the area of land which actually flows into the sensor. It was vital we get this step correct: incorrectly including land would pollute models with irrelevant data, and incorrectly excluding land would deprive models of valuable signal. So we computed the basin for each site in three different ways, and then manually reviewed each to ensure its validity.
+</p>
+
+<p>
+We then layered four datasets onto each of these drainage basins: annual crop distribution data from satallite imagery, annual surplus nitrogen soil data obtained from a nature paper and two different source of daily historical weather data containing things like rainfall, temperature, and evapotranspiration information. These came at wildly different spatial resolutions, so we stitched these together to a common grid, which you see here. We also computed basic geographic information for each of these grid cells, including the area of the cell contained in the basin and the downhill flow distance from the center of each cell to the sensor. The predictors which carried the most weight in our models turned out to be the crop mix near the sensor, recent rainfall, and most importantly the location of the sensor itself.
+</p>
+</div>
+</div>
+<div id="outline-container-modeling-approach" class="outline-3">
+<h3 id="modeling-approach">Modeling approach</h3>
+<div class="outline-text-3" id="text-modeling-approach">
+<p>
+We used gradient-boosted decision trees, XGBoost, for both of our models. The relationship between weather, fertilizer and water-borne nitrate is highly nonlinear and the data (especially the sensor data) is messy, so trees decisevly beat classical time-series forecasters in every comparison we tried.
+</p>
+
+<p>
+It was also important to be careful about our validation strategy. If sensor A is a few kilometers downstream of sensor B, then the two sites will report highly correlated nitrate values. Since our goal was to predict nitrate at <i>unseen</i> locations, we had to ensure that sensors with overlapping basins were held out on the same side of the train/test split to prevent data leakage and ensure our reported accuracy reflected the true generalization to new places. Basically, we needed to make sure our models actually learned to predict nitrate from weather and crop data, and weren&rsquo;t simply memorizing patterns from location to location.
+</p>
+</div>
+</div>
+<div id="outline-container-findings" class="outline-3">
+<h3 id="findings">Findings</h3>
+<div class="outline-text-3" id="text-findings">
+<p>
+A few things stood out. First, nitrate has a strong memory, so the best predictor of today&rsquo;s nitrate value is yesterday&rsquo;s nitrate value, although this of course this baseline only makes sense when you have a sensor at your prediction location. Second, nitrate is both incredibly seasonal &#x2013; it consistently peaks in the late spring and early summer all across the entire state &#x2013; and is highly variable by location, with some extreme outlier states reporting an average nitrate concentration at a whopping 35mg/L.
+</p>
+
+<p>
+The exciting result is classifiation: our current best model can flag a violation risk at around INSERT ACCURACY. With a bit of tuning, we can catch&#x2026; but this is already a useful signal in places lacking a sensor.
+</p>
+
+<p>
+Predicting exact concentration is much harder, &lt;quantify results&gt;. However this is still a positive signal, and the model&rsquo;s methodology appears to be sensible: land immediately around the sensor contributes far more than the outer reaches of the basin, rainfall from the previous few weeks matters more than rainfall today, consistent with slow movement of nitrate through soil, and there&rsquo;s a clear seasonal spike in spring/summer.
+</p>
+</div>
+</div>
+<div id="outline-container-next-steps" class="outline-3">
+<h3 id="next-steps">Next steps</h3>
+<div class="outline-text-3" id="text-next-steps">
+<p>
+There are two main routes to improving our results: incorporating more features and using more sophisticated modeling techniques.
+</p>
+
+<p>
+We expect the best feature we could add is <i>point source pollution data</i>. Iowa has a lot of pig and cow farms, and the manure runoff from those farms are consistent sources of nitrate. We expect latitude and longitude are important feature precisely because they serve as a rough proxy for location dependent factors like this one. Other predictors that could prove useful include soil composition data to explain geographic differences in soil composition and 
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-erin-draft" class="outline-2">
+<h2 id="erin-draft">Erin Draft</h2>
+<div class="outline-text-2" id="text-erin-draft">
+</div>
+<div id="outline-container-the-problem-setup-2" class="outline-3">
+<h3 id="the-problem-setup-2">The Problem Setup</h3>
+<div class="outline-text-3" id="text-the-problem-setup-2">
+<p>
+(Isaac)
+Iowa grows a lot of corn, enough calories for everyone in the United States to eat nothing else, and the soil can&rsquo;t naturally handle that kind of maize production. It requires a <i>lot</i> of extra nitrogen, added in the form of artificial fertilizer and animal manure, and not all that nitrogen stays in the soil. When it rains, excess nitrogen leachs into streams, rivers and eventually the municipal water supply as nitrate, a carcinogen. The typical background concentration of nitrate is 1 to 2 mg/L of water, but residential water in Iowa frequently exceeds 10 mg/L, the federally mandated limit. This is a big reason why cancer is so prevelant in Iowa, and why since 2015, it is the only US state with a RISING number of annual cancer cases.
+</p>
+
+<p>
+(Erin)
+It&rsquo;s also why state and federal agencies deploy real-time sensors in Iowa&rsquo;s waterways to monitor the nitrate levels. However, coverage is spotty &#x2013; sensors break, are expensive to deploy, and many have been decommissioned following recent budget cuts. This leaves residents, regulators and farmers flying blind in the exact locations they most need information. 
+</p>
+
+<p>
+But what if it was possible to predict nitrate from other sources of data, to put virtual sensors in the river if you will? Given that nitrate is carried away from fields by runoff, if you know something about where the fertilizer is and what the weather is like, you should be able to say something about the nitrate &#x2013; that&rsquo;s what my team thought at least. We wanted to know:  using only weather and landuse data, can you flag days with high violation risk?
+</p>
+
+<p>
+Luckily, the pathway nitrate takes from the field to to the tap is well understood: water flows through the farms into streams and rivers, carrying excess nitrate with it.We wondered, can we flag nitrate violation risk WITHOUT a physical sensor? In short: yes, we can.
+</p>
+</div>
+</div>
+<div id="outline-container-data-story" class="outline-3">
+<h3 id="data-story">Data Story</h3>
+<div class="outline-text-3" id="text-data-story">
+<p>
+What you&rsquo;re seeing now is the widget my team built to help explore and visualize all the data. We started with 162 sensors, and then filtered down to the <b>85 best</b>. For each site we then computed the drainage basin in three different ways. For most sites these three basin choices agreed, but for others they were quite different. It was important to get this right, so we manually went through our sites and picked the basins that made the most sense.
+</p>
+
+<p>
+We then layered crop, soil-nitrogen surplus and daily weather onto our basins, all stitched toegether on a common grid, which you see here with cells colored by dominant crop type. Here is a graph of the sensor&rsquo;s nitrate and precipiation data for completeness.
+</p>
+
+<p>
+We then spent some time exploring the data we&rsquo;d curated and found three big things that informed our modeling.
+</p>
+
+<p>
+First: water-borne nitrate has a strong memory; if a sensor read a high value yesterday, it will likely read a high value today.
+</p>
+
+<p>
+Second: Nitrate is highly seasonal, it climbs in April, peaks in June, and falls in the late summer, coinciding with the growing season of corn.
+</p>
+
+<p>
+Third: Sensing sites have high variability. Most are pretty small, but some are truly massive. Some sites almost never see a nitrogen violation, others stay consistently above the 10 mg/L threshold.
+</p>
+
+<p>
+Second: 
+Key EDA insight: nitrate has strong <b>memory</b> (a persistence baseline beat linear regression), clear <b>seasonality</b> beyond what rain explains, and huge variation by location — some sites average <b>over 30 mg/L</b>. Main limitation: sensor coverage is sparse, and annual crop/soil data misses within-season change.
+</p>
+</div>
+</div>
+<div id="outline-container-final-data-list" class="outline-3">
+<h3 id="final-data-list">Final data list</h3>
+<div class="outline-text-3" id="text-final-data-list">
+<p>
+Our finalized feature list consisted of 
+</p>
+<ul class="org-ul">
+<li>daily weather data, stuff like precipitation, temperature and solar radiation</li>
+<li>annual crop data</li>
+<li>annual nitrogen soil surplus data</li>
+<li>geographical features like latitude and longitude</li>
+<li>calendar information to help with seasonality adjustments</li>
+<li>and average statewide nitrate values, giving us</li>
+<li>68 total features.</li>
+</ul>
+
+<p>
+We found that grid cells near the sensor mattered far more than grid cells far away, so accounted for this by aggregating data into near and far distance buckets and by directly weighting values by distance.
+</p>
+</div>
+</div>
+<div id="outline-container-modeling-journey-40s" class="outline-3">
+<h3 id="modeling-journey-40s">Modeling Journey <i>(~40s)</i></h3>
+<div class="outline-text-3" id="text-modeling-journey-40s">
+<p>
+We tried linear/logistic regression and traditional timeseries modeling experiments but all of these failed miserably. The first positive result we got was from XGBoost, a gradient boosted tree-ensemble model, whose baseline results at least gave us positive predictions for both regression and classification targets.
+</p>
+
+<p>
+Being honest about our validation was critical: as you can see, basins nest insides of each other, and sensors with nested basins report correlated values. To ensure we didn&rsquo;t leak our target values to the models during training, we kept overlapping families of basins on the same side of the test/training split. 
+</p>
+</div>
+</div>
+<div id="outline-container-final-results-55s" class="outline-3">
+<h3 id="final-results-55s">Final Results <i>(~55s)</i></h3>
+<div class="outline-text-3" id="text-final-results-55s">
+<p>
+Our regression results are modest, but we still get positive predictive power; our model explains about a third of daily variance on unseen basins.
+</p>
+
+<p>
+Flagging violations works much better. This score is the one we value the most, it tells us roughly how well our model balances true positives with false alarms, and our results are 2.4 x better than a &ldquo;random guess&rdquo; baseline. With proper tuning, we can do even better.
+</p>
+
+<p>
+To see what I mean, let&rsquo;s look at the deployed model in our widget. We drop a pin anywhere in Iowa, and it produces a basin for us. We can then run a forecast on a chosen model year, and we get out predicted regression and violation probability curves.
+</p>
+
+<p>
+By changing this parameter, we can change the tradeoff between the number of true positives we detect and the number of false alarms we&rsquo;re willing to tolerate. With it set to 2, we expect to catch 86% of true positives but will have to tolerate over 50% of our violation flags being false alarms.
+</p>
+
+<p>
+<b>Predicting exact concentration</b> is harder, as expected: on unseen basins the regressor explains
+<b>about a third of the daily variance (R² ≈ 0.33), with typical error near 4 mg/L</b>. The decomposition
+is the real story — it&rsquo;s twice as good at tracking <i>movement within</i> a basin (within-site R² ≈ 0.42)
+as at ranking the <i>absolute level</i> of a brand-new basin (between-site R² ≈ 0.21). So it&rsquo;s a strong
+&ldquo;when and roughly how bad,&rdquo; not a calibrated meter.
+</p>
+
+<p>
+<i>[Visual: spatial-CV precision–recall curve. Visual: predicted-vs-actual error band.]</i>
+</p>
+
+<p>
+The model&rsquo;s behavior is sensible: land near the sensor matters more than distant basin area, rain lag
+matters more than same-day rain, and there&rsquo;s a clear spring/early-summer spike. Both gain and
+permutation importance agree on the backbone — the <b>statewide nitrate level that day</b>, the sensor&rsquo;s
+<b>location and distance geometry</b>, and <b>near-field corn</b> — and permutation confirms the model leans on
+what&rsquo;s <i>immediately upstream</i>, exactly the riparian effect we engineered for.
+</p>
+</div>
+</div>
+<div id="outline-container-limitations-next-steps-35s" class="outline-3">
+<h3 id="limitations-next-steps-35s">Limitations &amp; Next Steps <i>(~35s)</i></h3>
+</div>
+
+
+
+<div id="outline-container-business-decision-relevance-30s" class="outline-3">
+<h3 id="business-decision-relevance-30s">Business / Decision Relevance <i>(~30s)</i></h3>
+</div>
+</div>
+<div id="outline-container-final-transcript" class="outline-2">
+<h2 id="final-transcript">Final Transcript</h2>
+<div class="outline-text-2" id="text-final-transcript">
+</div>
+<div id="outline-container-introduction-currently-60s" class="outline-3">
+<h3 id="introduction-currently-60s">Introduction (currently 60s)</h3>
+<div class="outline-text-3" id="text-introduction-currently-60s">
+<p>
+(Isaac)
+Iowa grows a lot of corn &#x2013; enough calories per year for everyone in the United States to eat nothing else. This is only possible by adding a huge amount of extra nitrogen to the soil, however, not all that nitrogen ends up in crops. It leaches into streams, rivers, and eventually the municipal water supply, as <i>nitrate</i>, a carcinogen. The typical background rate of nitrate is around 1 mg/L, but tap water in Iowa frequently exceeds the federal limit of 10 mg/L, which itself is 3x higher than the threshold for increased cancer risk. This is why Iowa is the only US state with a growing cancer rate.
+</p>
+
+<p>
+(Erin)
+It&rsquo;s also why state and federal agencies use real time sensors to monitor nitrate in Iowa&rsquo;s waterways. However, coverage is spotty &#x2013; sensors break and are not longer being consistently replaced due to budget cuts. This leaves utilities, farmers and regulators flying blind in large swathes of the state.
+</p>
+
+<p>
+(Preet)
+But what if you could predict nitrate from other, more consistent data &#x2013; put a &ldquo;virtual sensor&rdquo; in the water if you will? Our team thought this might be possible. We asked: if you know what&rsquo;s planted where, and what the weather has recently been like, can you flag days at a specific location with high nitrate violation risk?
+</p>
+</div>
+</div>
+<div id="outline-container-data-setup-currently-40s" class="outline-3">
+<h3 id="data-setup-currently-40s">Data Setup (currently 40s)</h3>
+<div class="outline-text-3" id="text-data-setup-currently-40s">
+<p>
+(Isaac)
+What you&rsquo;re seeing now is the widget we created to view and explore the data. We started with 162 sensors and cut this down to the 85 best. 
+</p>
+
+<p>
+(Erin)
+We then computed the drainage basin of each site in three different ways. For many sites these three choices matched quite well, but for others they were wildly different. Getting this correct was critical for everything downstream in the project, so we manually selected the correct basin for every site.
+</p>
+
+<p>
+(Preet)
+We then layered annual land-use and daily weather data onto a common grid, which you see here colored by dominant crop type. Here&rsquo;s a graph showing the daily rain and nitrate values for this site, the purple line is the nitrate signal we&rsquo;re trying to model.
+</p>
+</div>
+</div>
+<div id="outline-container-eda-currently-30s" class="outline-3">
+<h3 id="eda-currently-30s">EDA (currently 30s)</h3>
+<div class="outline-text-3" id="text-eda-currently-30s">
+<p>
+(Isaac)
+We then spent some time exploring the data we currated and found three big things that informed our modeling.
+</p>
+
+<p>
+First, waterborne nitrate has a strong memory; if a site had high nitrate yesterday, it probably has high nitrate today.
+</p>
+
+<p>
+(Erin)
+Second, nitrate it highly seasonal, even after controlling for weather: it rises in spring, peaks in June, and falls in late summer &#x2013; coinciding with the growing season of corn.
+</p>
+
+<p>
+(Preet)
+Third, sensing sites have high variability. Most are placed on small local streams, but some basins are truly massive. Some sites barely ever see a nitrate violation others stay consistently above the 10 mg/L threshold.
+</p>
+</div>
+</div>
+<div id="outline-container-final-feature-list-currently-30s" class="outline-3">
+<h3 id="final-feature-list-currently-30s">Final feature list (currently 30s)</h3>
+<div class="outline-text-3" id="text-final-feature-list-currently-30s">
+<p>
+(Isaac)
+The full list of data we used to build our virtual sensors model consisted of
+</p>
+<ul class="org-ul">
+<li>daily weather data,</li>
+<li>annual crop and soil nitrogen data,</li>
+<li>geographical features like latitude and longitude</li>
+<li>calendar information to account for seasonality</li>
+<li>average statewide nitrate values giving us</li>
+<li>68 total features.</li>
+</ul>
+
+<p>
+(Isaac or maybe Erin take over)
+We found that grid cells near the sensors matttered far more than grid cells far away. We accounted for this by aggregating data into near and far distance buckets and by weighting values directly by distance (both of which improved our results).
+</p>
+</div>
+</div>
+<div id="outline-container-modeling-currently-35-seconds" class="outline-3">
+<h3 id="modeling-currently-35-seconds">Modeling (currently 35  seconds)</h3>
+<div class="outline-text-3" id="text-modeling-currently-35-seconds">
+<p>
+(Erin)
+We tried both standard regression and timeseries modeling experiments, but these failed miserably and we quickly moved on. They were also poorly suited to our stated goal: we wished to train a model on our 85 physical sensors which could generalize to completely unseen locations. 
+</p>
+
+<p>
+(Preet)
+The first positive result we got came from XGBoost, whose initial results gave us hope that we had real predictive power. (this makes sense because&#x2026; XGBoost is well-suited to our problem because&#x2026;) Being careful about our validation was also critical &#x2013; here you see basins nest inside of each other, and we had to ensure our model wasn&rsquo;t simply memorizing the collective behavior of basin families. We accounted for this with smart validation techniques, so we can be sure that our final results are true representations of our model&rsquo;s ability to generalize.
+</p>
+</div>
+</div>
+<div id="outline-container-results-currently-25-seconds" class="outline-3">
+<h3 id="results-currently-25-seconds">Results (currently 25 seconds)</h3>
+<div class="outline-text-3" id="text-results-currently-25-seconds">
+<p>
+(Preet, cont.)
+Our regression results are modest, but we still have predictive power; our model explains roughly 1/3 of daily nitrate variation.
+</p>
+
+<p>
+(Isaac)
+Classifying high-risk days works much better. This is the score we value the most; it tells us how well our model balances true violation days with false alarms, and our results are significantly better than a &ldquo;random guess&rdquo; baseline. With proper tuning, we can do even better.
+</p>
+</div>
+</div>
+<div id="outline-container-deployment-tuning" class="outline-3">
+<h3 id="deployment-tuning">Deployment + tuning</h3>
+<div class="outline-text-3" id="text-deployment-tuning">
+<p>
+(Isaac, cont.)
+</p>
+
+<p>
+To see what I mean, let&rsquo;s look at our deployed model in the widget. We drop a pin anywhere in Iowa and it produces a basin. We can then run a forecast on a chosen model year and we get our predicted regression and violation probability curves. By changing the beta parameter you see here, we can control the balance between the number of true violations we detect and the number of false alarms we&rsquo;re willing to tolerate. With beta set to 2, we expect to catch 86% of true positives, but we&rsquo;ll have to tolerate nearly 60% of our violation flags being false alarms.
+</p>
+</div>
+</div>
+<div id="outline-container-limitations-and-improvements-currently-30-sec" class="outline-3">
+<h3 id="limitations-and-improvements-currently-30-sec">Limitations and Improvements (currently 30 sec)</h3>
+<div class="outline-text-3" id="text-limitations-and-improvements-currently-30-sec">
+<p>
+(Erin)
+This model is obviously limited. Our 85 sensors aren&rsquo;t enough to fully represent all of Iowa, and you can&rsquo;t learn everything there is to know about nitrate from daily weather data and annual snapshots of land use alone. Indeed, there are other sources of polution besides agriculture. For instance, manure runoff from livestock operations are also big source of nitrate, and we&rsquo;d like to add it in the future.
+</p>
+
+<p>
+(Preet)
+There&rsquo;s also a feature currently present in our data which we barely utilize: the network of rivers which connect basins together. We think some graph-based model architecture could take advantage of this richer structure to improve predictions.
+</p>
+</div>
+</div>
+<div id="outline-container-stakeholders-and-relevance-and-end-currently-25-seconds" class="outline-3">
+<h3 id="stakeholders-and-relevance-and-end-currently-25-seconds">Stakeholders and relevance and end (currently 25 seconds)</h3>
+<div class="outline-text-3" id="text-stakeholders-and-relevance-and-end-currently-25-seconds">
+<p>
+(Everyone on screen here)
+Nitrate predictions let three groups act sooner: <b>utilities</b> can start treatment before a spike hits,  <b>farmers</b> can better plan fertilizer application and <b>agencies</b> can target scarce funding toward high-risk areas. Virtual sensor models like this one certainly won&rsquo;t replace physical detectors &#x2013; but as an alternative to <i>no information at all</i>, even an imperfect prediction is a major upgrade.
+</p>
+</div>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

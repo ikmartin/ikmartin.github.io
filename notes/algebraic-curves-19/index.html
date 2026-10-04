@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 19 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-19/"
+      data-note-title="Algebraic Curves Lecture 19">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 19</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-18" href="../../notes/algebraic-curves-18/">← lecture 18</a> · <a class="idlink" data-note="algebraic-curves-20" href="../../notes/algebraic-curves-20/">lecture 20 →</a>
+</p>
+
+<p>
+Recall the following proposition from last time:
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+<i>(Base point free pencil trick).</i> If \(V\subseteq H^0(X,L)\) is a pencil with base locus \(B\) then the kernel of \(V\otimes H^0(X,F)\to H^0(X,L\otimes F)\) given by \(s\otimes r \mapsto s\cdot r\) is \(H^0(X,L^{-1}(B))\) for any locally free sheaf \(F\).
+</p>
+</div>
+<p>
+We then had the following corollary, and we had some confusion regarding the numerics of the statement:
+</p>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+If \(L\) is a complete \(g^1_d\) with \(2d < g+2\) then \(\mu_0\) is not injective.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(\mu_0:H^0(X,L)\otimes H^0(X,K_X-L) \to H^0(X,K_X)\) be the Petri map. Then 
+</p>
+\begin{align*}
+    \ker(\mu_0) = H^0(X,K_X\otimes L^{-1}\otimes L^{-1}(B))
+\end{align*}
+<p>
+by the pencil trick. By Riemann-Roch,
+</p>
+\begin{align*}
+    h^0(X,K_X\otimes L^{-1}\otimes L^{-1}(B)) = 2g - 2 - 2d + b - g + 1 + h^0(L\otimes L(-B)).
+\end{align*}
+<p>
+Assume first that \(B = \emptyset\), i.e. that \(L\) is basepoint free. Then \(b = 0\) and we get that the numerics above satisfy
+</p>
+\begin{align*}
+    ... > g - 1 - g - 2 + 3 =0.
+\end{align*}
+<p>
+Hence \(K_X\otimes L^{-1}\otimes L^{-1}(B)\) has global sections.
+</p>
+
+
+
+<p>
+Now suppose that \(L\) is a \(g^1_2\) and \(F\) is a basepoint free \(g^1_3\),
+</p>
+\begin{align*}
+    \varphi:H^0(X,L)\otimes H^0(X,F) \to H^0(X,L\otimes F)
+\end{align*}
+<p>
+and \(\ker\varphi = H^0(X,L\otimes F^{-1}) = 0\), which implies \(L\otimes F\) is a \(g^3_5\). Since \(g\geq 3\), \(5\leq 3g\) which implies that \(r(L\otimes F)\leq d/2\) by Clifford&rsquo;s inequaltiy.
+</p>
+
+<p>
+This is a contradiction.
+</p>
+</details>
+
+<p>
+<i>Remark</i>: (Alternative Proof.)   \(L\) and \(F\) would define a bnirational map \(X\to \mathbb P^1 \times \mathbb P^1\) with image of bidegree \((2,3)\) and thus genus 2. Contradiction.
+</p>
+
+<p>
+I think the above is missing details &#x2013; cross reference with Karl&rsquo;s notes.
+</p>
+<div id="outline-container-castelnuovo-s-bound" class="outline-2">
+<h2 id="castelnuovo-s-bound">Castelnuovo&rsquo;s bound</h2>
+<div class="outline-text-2" id="text-castelnuovo-s-bound">
+<p>
+Motivating Question: Given \(C\subset \mathbb P^r\) of degree \(d\), what is the largest possible value for \(g(C)\)?
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+For \(r \geq 3\), \(g(C)\) will not be determined by \(d\).
+</p>
+</div>
+
+<p>
+<i>Example of remark:</i>
+</p>
+<ol class="org-ol">
+<li>Take \(Q_1\cap Q_2\) has genus 1 and degree 4.</li>
+<li>\(\mathbb P^1 \to \mathbb P^3\) given by \([x,y] \mapsto [x^4 : x^3y : x^2y^2 : y^4]\), where One of the monomials is omitted. This has genus \(0\) and degree \(4\).</li>
+</ol>
+
+<p>
+This remark illustrates that the best we can hope for is a bound on the genus. One bound that we&rsquo;ve already seen, at least in \(\mathbb P^2\), comes from the genus-degree formula:
+</p>
+\begin{align*}
+    g = \frac{(g-1)(g-2)}{2}
+\end{align*}
+<p>
+which we obtained from the adjunction formula. We also saw that any curve in \(\mathbb P^r\) projects to a singular curve of the same degree in \(\math P^2\). From this it follows that
+</p>
+\begin{align*}
+    g(C) < \frac{(d-1)(d-2)}{2}
+\end{align*}
+<p>
+for \(C\) non-degenerate whenever \(r\geq 3\). We can get a better bound, however.
+</p>
+
+<p>
+Here&rsquo;s the plan: estimate the dimension of \(\alpha_\ell = r(\ell D)\) where \(D = C\cap H\) with \(H\) a general hyperplane in \(\mathbb P^r\). We know that \(D\) has degree \(d\) &#x2013; that&rsquo;s our assumption &#x2013; and so for high enough value of \(\ell\), \(r(\ell \cdot D)\) will exceed \(d/2\). Clifford&rsquo;s bound says that the rank of a line bundle within the special range is bounded by \(d/2\), so the line bundle corresponding to \(\ell D\) must fall outside the special range. Riemann-Roch then allows us to calculate the rank precisely; it&rsquo;s \(\ell\cdot d - g\). Rearranging will then give us a bound on the genus.
+</p>
+
+<p>
+Let \(E_\ell \subset |\ell D|\) given by the restriction of degree \(\ell\) hyperplanes in \(\mathbb P^r\) to \(C\):
+</p>
+\begin{align*}
+    H^0(\mathbb P^r, \mathcal O_{\mathbb P^r}(\ell)) \to H^0(C,\mathcal O_C(\ell)).
+\end{align*}
+<p>
+Set \(\beta_\ell = \dim E_\ell\). Then \(D+E_{\ell - 1}\subseteq E_\ell\) hence \(\beta_{\ell - 1}\leq \dim E_\ell(-D)\). So
+</p>
+\begin{align*}
+    \beta_\ell - \beta_{\ell - 1} \geq \dim E_\ell - \dim E_\ell (-D).
+\end{align*}
+<p>
+We have a short exact sequence
+</p>
+\begin{align*}
+    0 \to I_C(\ell)\to \mathcal O_{\mathbb P^r}(\ell) \to \mathcal O_C(\ell)\to 0,
+\end{align*}
+<p>
+where \(I_C(\ell)\) is the sheaf of ideals defining \(C\) twisted by \(\ell\). Passing to the long exact sequence of cohomology gives us a portion saying that
+</p>
+\begin{align*}
+    H^0(\mathcal O_{\mathbb P^r}(\ell)) \to H^0(\mathcal O_C(\ell)) \to H^1(I_C(\ell)).
+\end{align*}
+<p>
+The rightmost map above need not by surjective, so we get
+</p>
+\begin{align*}
+    \dim h^0(\mathcal O_C(\ell)) \geq  h^0(\mathcal O_{\mathbb P^r}(\ell)) - h^0(I_C(\ell)).
+\end{align*}
+<p>
+However \(E_\ell\) is precisely the image of \(H^0(\mathcal O_{\mathbb P^r}(\ell))\) in \(H^0(\mathcal O_C(\ell))\), so 
+</p>
+\begin{align*}
+    \beta_\ell = \dim E_\ell = h^0(\mathcal O_{\mathbb P^r}(\ell)) - h^0(I_C(\ell)).
+\end{align*}
+
+<p>
+Now, thinking of \(D\) as a subset of points in \(C\), we have a short exact sequence
+</p>
+\begin{align*}
+    0 \to I_D(\ell) \to \mathcal O_{\mathbb P^r}(\ell) \xrightarrow{\psi} \mathcal O_D(\ell) \to 0
+\end{align*}
+<p>
+where the map \(\psi\) fits into a commutative triangle with
+</p>
+\begin{align*}
+    \mathcal O_{\mathbb P^r}(\ell) \xrightarrow{\varphi_1} \mathcal O_C(\ell)\xrightarrow{\varphi_2} \mathcal O_D(\ell).
+\end{align*}
+<p>
+Then
+</p>
+\begin{align*}
+    \dim(E_{\ell}(-D)) &= \dim (\ker(\varphi_2|_{E_\ell})) \\
+    &= \dim(\ker \psi) - \dim(\ker \varphi_1) \\
+    &= h^0(I_D(\ell)) - h^0(I_C(\ell)).
+\end{align*}
+<p>
+This implies
+</p>
+\begin{align*}
+    \beta_\ell - \beta_{\ell - 1} &= h^0(\mathcal O_{\mathbb P^r}(\ell)) - h^0(I_C(\ell)) - h^0(I_D(\ell)) + h^0(I_C(\ell)) \\
+    &= h^0(\mathcal O_{\mathbb P^r}(\ell)) -h^0(I_D(\ell)).
+\end{align*}
+
+<p>
+Geometrically, this is <i>the number of conditions imposed by the points of \(D\) on the hypersurfaces in \(\mathbb P^r\)</i>, so the intersection points of \(C\) with a general degree \(\ell\) hyperplane of \(\mathbb P^r\). Note that when the points of \(D\) aren&rsquo;t sufficiently general, fewer conditions are imposed than expected. We&rsquo;re going to use the above difference as a bound, so we&rsquo;re looking for the <i>worst configuration of points which impose the least number of conditions</i>.
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+\(h^0(\mathcal O_{\mathbb P^r}(\ell)) - h^0(I_D(\ell))\) is the number \(\rho_\ell\) of conditions imposed by the points in \(D\) on hypersurfaces in \(\mathbb P^r\) of degree \(\ell\).
+</p>
+</div>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Suppose \(p_1,...,p_d \in \mathbb P^{r-1}\) are points chosen such that any \(r\) among them are linearly independent. Then the \(p_i\) impose at least \(\min\{d, \ell(r- 1)+1\}\) conditions on hypersurfaces of deegree \(\ell\).
+</p>
+</div>
+
+<p>
+Before we prove this lemma, let&rsquo;s expalin a little more.
+</p>
+
+<p>
+If \(\ell = 2\), then the points impose at least \(2r - 1\) conditions on quadrics.
+</p>
+
+<p>
+If \(\ell = 3\), then the points impose at least \(5\) conditions on quadrics in \(\mathbb P^2\) for any \(d\geq 5\) points that are linearly general ( no three points are colinear, no four points are coplanar, etc).
+</p>
+
+<p>
+Now let&rsquo;s prove the lemma.
+</p>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Assume the interesting case of the lemma, that the minimum is achieved by \(\ell(r - 1) + 1\) so \(\ell(r-1)+1 \leq d\). Order the points:
+</p>
+\begin{align*}
+    p_1, ..., p_{r - 1}, p_{r}, ..., p_{2(r - 1)}, ... , p_{\ell\cdot (r-1)}, ..., p_d.
+\end{align*}
+<p>
+Let \(H_i\) be the collection of points \(p_{(i-1)r},...,p_{i\cdot (r-1)}\) (this should be (r-1) points) and \(L_i\) be the linear form vanishing on \(\operatorname{span}(H_i)\). Thus \(L_i\) does not vanish on \(p_d\) since the points \(p_1,...,p_d\) are lie in linearly general position.
+</p>
+
+<p>
+Now consider \(F = \prod^ell_{i = 1}L_i\) which has degree \(\ell\) and vanishes on \(p_1,...,p_{\ell(r-1)}\) but not on \(p_d\).
+</p>
+
+
+
+<p>
+We&rsquo;re left with the case that \(d < \ell(r - 1) + 1\)&#x2026;
+</p>
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-18" href="../../notes/algebraic-curves-18/">Algebraic Curves Lecture 18</a></li>
+    <li><a data-note="algebraic-curves-20" href="../../notes/algebraic-curves-20/">Algebraic Curves Lecture 20</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Statements — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/research-statements/"
+      data-note-title="Research Statements">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Research Statements</h1>
+      <p class="note-meta"><span class="taxon">article</span></p>
+
+      <article class="note">
+<div id="outline-container-ising" class="outline-2">
+<h2 id="ising">Ising</h2>
+<div class="outline-text-2" id="text-ising">
+</div>
+<div id="outline-container-de-shaw" class="outline-3">
+<h3 id="de-shaw">DE Shaw</h3>
+<div class="outline-text-3" id="text-de-shaw">
+<p>
+<b>Largest coding project question</b>
+The largest programming project I&rsquo;ve contributed to was a program which could take an arbitrary boolean function as input and design an Ising Hamiltonian whose ground states modeled the correct answers of the given function. It consisted roughly of three parts:
+</p>
+
+<p>
+A) Python program predominantly using PyTorch to construct an initial linear programming problem, almost always infeasible
+B) Custom Merhrotra predictor-corrector LP solver written in C used to solve the linear program OR assign a score quantifying the degree of infeasibility of the linear program. Optimized specifically for our problem, up to 100x faster than the GLOP solver provided by Ortools
+C) Python circuit design program which modified the linear program using the score given by the LP solver.
+Steps B) and C) alternate until a feasible LP is found, at which point the problem is solved. Details can be found in &ldquo;Design of General Purpose Minimal-Auxiliary Ising Machines&rdquo; listed above.
+</p>
+
+<p>
+I worked primarily with one other collaborator (Andrew Moore, co-first author on the paper) on this project with feedback from a larger team of 7 people. About 50% of the code was written by me.
+</p>
+
+<p>
+This program consisted of roughly 5,000 lines of code between Python and C. Research on the project involved a lot of pen-and-paper mathematics informed by dozens of experiments, mostly written in Python. These experiments, though not strictly part of the final program, grew into a fairly robust code base featuring their own API and lots of reusable general code. If these are included in the line count, the full ecosystem is roughly 50,000 lines of code (average of ~500 lines for 100 python files).
+</p>
+
+<p>
+<b>Creativity Question</b>
+I concluded my work on the Ising problem this past December. The aim of the project was simple: design an Ising computer capable of 8x8 digit integer multiplication using as few &ldquo;spins&rdquo; as possible. An Ising system is a thermodynamic system modeled by a graph. Nodes or &ldquo;spins&rdquo; can take a state of +1 of -1 and edges receive weights. By designating some spins as &ldquo;inputs&rdquo; whose states can be locked in place and the others as &ldquo;outputs&rdquo; whose states are allowed to vary freely, the system computes the ground state with some probability. &ldquo;Solving the Ising problem&rdquo; for a given boolean function entails correctly choosing edge weights so that the ground states of the system are the outputs of the boolean function. Our team was given 8x8 multiplication as a target problem by the government.
+</p>
+
+<p>
+Though it is impossible to solve the Ising problem for almost all Boolean functions, including multiplication functions, it can always be made possible by adding extra spins to the system. Any solution to this problem would naturally proceed therefore by a two step optimization process:
+</p>
+
+<ol class="org-ol">
+<li>Add additional spins, obtain a linear problem</li>
+<li>Attempt to solve the linear problem, score the result</li>
+</ol>
+
+<p>
+There are two problems.
+</p>
+<ul class="org-ul">
+<li>Each pass of 2. requires solving a massive linear problem which grows exponentially every time a spin is added.</li>
+<li>The process of adding additional spins intelligently is a non-convex non-linear discrete optimization problem. The discrete nature of the spin values mean that gradient decent methods don&rsquo;t work well, and the non-convexity means it is very easy to fall into a local minima.</li>
+</ul>
+
+<p>
+Solving this problem would have been impossible without substantial mathematical insight. Research typically proceeded in a cycle of 2-3 days of experiment design to generate and test hypotheses, after which we spent 2-3 days on pen and paper math attempting to find exploitable properties from the mathematics. My proudest achievements include
+</p>
+
+<ul class="org-ul">
+<li>Producing a formal mathematical description of the Ising problem. When I arrived at the project, its statement was far more vague and particular to multiplication problems. Arriving at the correct mathematical formulation required generalizing far beyond the original goal and paved the way for all subsequent mathematical insights. In particular, this provides an incredibly quick way to solve the Ising problem using polynomial reduction techniques at the cost of adding far more than optimal additional spins.</li>
+<li>Circuit gluing. I found a way to &ldquo;glue&rdquo; Ising systems together in such a way that the resulting system is strictly more likely to be feasible. This idea came from the common algebraic theme in which objects are decomposed into simpler constituent parts.</li>
+<li>Formulating geometric interpretations. In order to solve the Ising problem algorithmically, one needs to drastically reduce its computational complexity. Even relatively simple geometric insights, viewing the state space of an Ising system as a hypercube for instance, led to huge algorithm improvements. It allowed us to reduce the problem scaling from exponential to quadratic scaling, isolate a tiny class of &ldquo;good&rdquo; circuits for use in the gluing approach and the discovery of &ldquo;Ising symmetries&rdquo; which further speed up solution searches by a factor of 8x to 32x depending on the problem.</li>
+</ul>
+
+<p>
+I believe formal math yields superior insight into the nature of a problem, and I thoroughly enjoyed this project because it demonstrated precisely this.   It&rsquo;s an aid to creativity as it provides a flexible way to view a single problem from multiple angles &#x2013; in this case, as an LP problem, a classification problem, or a polynomial reduction problem. However, as opposed to much pure mathematics research, the applied nature of this problem allowed for quickly prototyping and testing ideas. This proved enormously useful, as dead ends could be identified by showing them to be empirically ineffectual far faster than they could be useless using formal proofs. This interplay between empirical and formal methods is my favorite kind of research, and is exactly why I aim to leave pure math academia after the conclusion of my Ph.D.
+</p>
+</div>
+</div>
+</div>
+
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

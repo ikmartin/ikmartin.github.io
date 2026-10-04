@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 10: Hurwitz Bound And Hyperelliptic Curves — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-10-hurwitz-bound-and-hyperelliptic-curves/"
+      data-note-title="Algebraic Curves Lecture 10: Hurwitz Bound And Hyperelliptic Curves">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 10: Hurwitz Bound And Hyperelliptic Curves</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-09" href="../../notes/algebraic-curves-09/">← lecture 9</a> · <a class="idlink" data-note="algebraic-curves-11" href="../../notes/algebraic-curves-11/">lecture 11 →</a>
+</p>
+<div id="outline-container-proof-of-hurwitz-bound" class="outline-2">
+<h2 id="proof-of-hurwitz-bound">Proof of Hurwitz Bound</h2>
+<div class="outline-text-2" id="text-proof-of-hurwitz-bound">
+<p>
+Last time we ended with the Hurwitz bound:
+</p>
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<p>
+<i>(Hurwitz bound).</i>   Suppose \(X\) has genus \(\geq 2\) and finitely many automorphisms. Then \(|\Aut(X)| \leq 84(g - 1)\).
+</p>
+</div>
+<p>
+Note that if \(X\) is genus \(0\) or \(1\) then it will never have finitely many automorphisms.
+</p>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+let \(f_i\) be the number of points of ramification index \(r_i\) over a point \(p_i\) in the base. Orbit stabilizer theorem says that \(|\Aut(X)| = f_ir_i\). Let \(h\) denote the genus of \(X/\Aut(X)\). Riemann-Hurwitz says that
+</p>
+\begin{align*}
+    2g(X) - 2 &= |\Aut(X)| \cdot (2h - 2) + \sum_{i,j}(e_{i,j} - 1) \\
+    &= |\Aut(X)| \cdot (2h - 2) + \sum_{i=1}^bf_i(r_i - 1)
+    &= |\Aut(X)| \cdot \left(2h - 2 - \sum_{i=1}^b(1 - \frac{1}{r_i})\right).
+\end{align*}
+<p>
+Set \(c = \left(2h - 2 - \sum_{i}(1 - \frac{1}{r_i})\right)\). We&rsquo;ll come up with a lower bound on \(c\) by examining a few cases:
+</p>
+
+<p>
+<i>Case 1:</i> \(h \geq 2\). Then \(c \geq 2\) and \(|\Aut(X)| \leq g - 1\).
+</p>
+
+<p>
+<i>Case 2:</i> \(h = 1\). Then \(b \geq 1\) (remember, \(b\) is the number of branch points) and \(c \geq \frac{1}{2}\). Thus \(|\Aut(X)|\leq 4(g - 1)\).
+</p>
+
+<p>
+<i>Case 3:</i> \(h = 0\). 
+</p>
+
+<p>
+<i>Case 3.1:</i> If \(b\geq 5\), then \(c \geq \frac{1}{2}\) and so \(|\Aut(X) \leq 4(g - 1)\). 
+</p>
+
+<p>
+<i>Case 3.2:</i> If \(b = 4\) then not all \(r_i\) can be equal to \(2\). Then
+</p>
+\begin{align*}
+    c \geq -2 \frac{3}{2} = \frac{g + 4 - 12}{6} = \frac{1}{6} \implies |\Aut(X)| \leq 12(g - 1).
+\end{align*}
+
+<p>
+<i>Case 3.3:</i> The case that \(b \leq 2\) is not possible since \(g\) is at least \(2\).
+</p>
+
+<p>
+<i>Case 3.4:</i> If \(b = 3\) then suppose \(r_1\leq r_2 \leq r_3\) without loss of generality. Now MORE subcases:
+</p>
+
+<p>
+<i>Case 3.4.1:</i> If \(r_1\geq 3\), then not all \(r_i\) can be equal to \(3\), so
+</p>
+\begin{align*}
+    c \geq -2 + \frac{2}{3} + \frac{2}{3} + \frac{3}{4} = \frac{-24 + 16 + 9}{12} = \frac{1}{12},
+\end{align*}
+<p>
+from which it follows that \(|\Aut(X)| \leq 24(g - 1)\).
+</p>
+
+<p>
+<i>Case 3.4.2:</i> If \(r_1 = 2\) then \(r_2 > 4\) and \(r_3 \geq 5\). Then
+</p>
+\begin{align*}
+    c \geq -2 + \frac12 + \frac34 + \frac 45 = \frac{-40 + 10 + 15 + 16}{20} = \frac{1}{20}
+\end{align*}
+<p>
+so \(|\Aut(X)| \leq 40(g - 1)\).
+</p>
+
+<p>
+<i>Case 3.4.3:</i> If \(r_1 = 2\), \(r_2 = 3\) and then \(r_3 \geq 7\). Then
+</p>
+\begin{align*}
+    c \leq -2 + \frac{1}{2} + \frac34 + \frac67 = \frac{1}{42}
+\end{align*}
+<p>
+so \(|\Aut(X)| \leq 84(g - 1)\), which is exactly the Hurwitz bound.
+</p>
+
+<p>
+So in all cases, if \(X\) is a genus \(\geq 2\) curve, then \(|\Aut(X)| \leq 84(g - 1)\). 
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-hyperelliptic-curves" class="outline-2">
+<h2 id="hyperelliptic-curves">Hyperelliptic curves</h2>
+<div class="outline-text-2" id="text-hyperelliptic-curves">
+<p>
+A curve \(X\) is called <i>hyperelliptic</i> if it admits a \(g^1_2\), that is, a degree \(2\) map \(X\to \mathbb P^1\).
+</p>
+
+<ol class="org-ol">
+<li>If \(g = 0\) (meaning \(X \cong \mathbb P^1\)) then \(h^0(\mathcal O_{\mathbb P^1}(2)) = 3\). Any 2-dimensional subspace \(V\subset H^0(\mathcal O_{\mathbb P^1}(2))\) gives a \(g^1_2\).</li>
+<li>If \(g \geq 1\) and \(X\) is hyperelliptic, then the \(g^1_2\) needs to be complete.</li>
+<li>If \(g = 1\), then any degree 2 line bundle gives a \(g^1_2\) (Riemann-Roch).</li>
+<li>If \(g = 2\), then the canonical divisor has degree equal to \(2g - 2 = 2\), and its space of global sections is \(h^0(K_X) = g = 2\). From Riemann-Roch we can deduce that this is the unique \(g^1_2\).</li>
+</ol>
+
+<p>
+As a reminder:
+</p>
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+If \(X\) has genus \(g \geq 1\) and \(L\) has degree \(2g - 2\) then \(h^0(L) \leq g\) and equality holds if and only if \(L\cong K_X\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+\begin{align*}
+    h^0(L) - h^0(K_X - L) = 2g - 2 - g + 1 = g - 1.
+\end{align*}
+</details>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(X\) is a hyperelliptic curve with \(g\geq 2\) then \(K_X\cong L^{\otimes g - 1}\) where \(L\) is a \(g^1_2\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+\(L\) induces a map \(\varphi_L:X\to \mathbb P^1\). Consider the Veronese embedding of \(\mathbb P^1\), i.e. the map \(\mathbb P^1 \to \mathbb P^{g - 1}\) induced by \(\mathcal O_{\mathbb P^1}(g - 1)\): \([x,y] \mapsto [x^3, x^2y, xy^2, y^3]\). Then
+</p>
+\begin{align*}
+    \varphi^*_L\mathcal O_{\mathbb P^1}(1)\cong L
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    \mathcal O_{\mathbb P^1}(g - 1) \cong \mathcal O_{\mathbb P^1}(1)^{\otimes g - 1}.
+\end{align*}
+<p>
+Thus \(\varphi\circ \varphi_L:X\to \mathbb P^{g - 1}\) given by \(L^{\otimes g - 1}\). In particular, \(h^0(L^{\otimes g-1})\) and \(\deg(L^{\otimes g-1}) = 2g -2\), hence \(L^{g-1}\cong K_X\).
+</p>
+</details>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+Let \(g \geq 2\). Then \(K_X\) is base point free and
+</p>
+<ol class="org-ol">
+<li>very ample if \(X\) is not hyperelliptic</li>
+<li>a \(2:1\) cover of a rational normal curve in \(\mathbb P^{g-1}\) if \(X\) is hyperelliptic.</li>
+</ol>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Let \(p\in X\).
+</p>
+\begin{align*}
+    h^0(K_X - p) - h^0(\mathcal O_X(p)) = 2g - 3 - g + 1 = g - 2.
+\end{align*}
+<p>
+We previously saw that \(h^0(\mathcal O_X(p)) = 1\) in this case (I forgot why this is true) so \(h^0(K_X - p) = g - 1 = h^0(K_X) - 1\).
+</p>
+<ol class="org-ol">
+<li>Since \(h^0(\mathcal O_X O(p + q) = 1\) \begin{align*}h^0(K_x - p - q) - &amp;h^0(\mathcal O_X O(p + q)) = 2g - 4 - g + 1 = g-2 \\ &amp;\implies h^0(K_x - p - q) = g - 2.\end{align*}</li>
+<li>This was the previous proposition.</li>
+</ol>
+</details>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(X\) is a hyperelliptic curve of genus \(\geq 2\) then the \(g^1_2\) is unique.
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Consider \(\varphi_{K_X}:X\to \mathbb P^{g -1}\). By the previous proposition, this is a \(2:1\) cover of its image which is a rational curve. Conversely, give any \(g^1_2\) on \(X\) and it defines this cover. This implies the \(g^1_2\) is unique.
+</p>
+</details>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-11" href="../../notes/algebraic-curves-11/">Algebraic Curves Lecture 11</a></li>
+    <li><a data-note="algebraic-curves-09" href="../../notes/algebraic-curves-09/">Algebraic Curves Lecture 9</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

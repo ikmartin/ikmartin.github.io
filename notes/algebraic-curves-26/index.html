@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lectures 26 And 27 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-26/"
+      data-note-title="Algebraic Curves Lectures 26 And 27">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#construction-of-brill-noether-varieties">Construction of Brill-Noether varieties</a></li>
+    <li class="toc-l2"><a href="#determinantal-varieties">Determinantal Varieties</a></li>
+    <li class="toc-l3"><a href="#examples">Examples</a></li>
+    <li class="toc-l2"><a href="#tangent-spaces-of-the-generic-determinantal-variety">Tangent spaces of the generic determinantal variety.</a></li>
+    <li class="toc-l2"><a href="#start-of-lecture-27">Start of Lecture 27</a></li>
+    <li class="toc-l3"><a href="#why-do-we-care-about-determinental-varieties">Why do we care about determinental varieties?</a></li>
+    <li class="toc-l3"><a href="#examples-2">Examples</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lectures 26 And 27</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-25" href="../../notes/algebraic-curves-25/">← lecture 25</a>
+</p>
+<div id="outline-container-construction-of-brill-noether-varieties" class="outline-2">
+<h2 id="construction-of-brill-noether-varieties">Construction of Brill-Noether varieties</h2>
+<div class="outline-text-2" id="text-construction-of-brill-noether-varieties">
+<p>
+<i>Question:</i> For what triples \((g,r,d)\) are there maps \(f:X\to \mathbb P^r\) such that \(f\) has \(\deg d\) and \(X\) has genus \(g\)?
+</p>
+
+<p>
+<i>Idea:</i> Look at the locus of line bundles
+</p>
+\begin{align*}
+    W^r_d(X) = \{L\mid r(L) \geq r\} \subseteq \operatorname{Pic}^d(X)
+\end{align*}
+<p>
+whose rank is at least \(r\).
+</p>
+
+<p>
+We&rsquo;ll need a few ingredients.
+</p>
+
+<ol class="org-ol">
+<li>Determinantal varieties</li>
+<li>Some facts about the Picard scheme \(\operatorname{Pic}^d(X)\)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-determinantal-varieties" class="outline-2">
+<h2 id="determinantal-varieties">Determinantal Varieties</h2>
+<div class="outline-text-2" id="text-determinantal-varieties">
+<p>
+Let \(M_K\) denote the locus of matrices of rank \(\leq k\), and note that this is a subset of \(M(n,m)\). This is called the <i>generic determinantal variety</i>. We can realize \(M_K\) as a variety in the following way. Define this auxiliary object
+</p>
+\begin{align*}
+    \tilde{M}_k = \{(A, W) \in M(n,m) \times Gr(n-k, n) \mid A\cdot W = 0\}
+\end{align*}
+<p>
+consisting of all tuples \((A,W)\) where \(A\) is a \(n\times m\) matrix and \(W\) is a \((n-k)\)-dimensional subset of \(k^n\) where \(W\subset \ker A\). We then get a map \(\varphi:\tilde{M}_k \to M_k\), and it is generically \(1\) to \(1\): if \(A\in M_k\) has rank \(k\) then \(\varphi^{-1}(A) = (A, \ker A)\).
+</p>
+
+<p>
+Let \(\pi_2\) denote the projection onto the second component:
+</p>
+\begin{align*}
+    \pi_2:M(n,m)\times Gr(n-k,M) \to Gr (n-k,n).
+\end{align*}
+<p>
+For \(H\in Gr(n-k, n)\), the fiber of \(\pi_2|_{\tilde{M}_k}\) consists of all the \(A\in M(n,m)\) which vanish on \(H\). This is isomorphic to \(\mathbb A^{m - k}\) (to see this, row reduce \(A\)).
+</p>
+
+<p>
+It is true that \(\tilde{M}_k\) is irreducible, and hence \(M_k\) is irreducible since \(\varphi\) is surjective. We (meaning those of us in class) don&rsquo;t know why \(\tilde{M}_k\) is irreducible, it would follow from the properness of \(\pi_2\) except that \(\pi_2\) isn&rsquo;t proper, so for now we simply accept that \(\tilde{M}_k\) is irreducible.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+\(Gr(e, \ell)\) has dimension \(e\cdot (\ell - e)\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Fix \(H \in Gr(\ell - e, \ell)\) and let \(V\) be the \(\ell\)-dimensional vector space whose \(\ell-e\) dimensional subspaces \(Gr(\ell - e, \ell)\) parameterizes. Let \(\lambda\in (\bigwedge^e V)^*\) and \(U\subseteq Gr(e, \ell)\) be the set given by \(\lambda \neq 0\). Then \(U\) is the subset of \(e\)-dimensional subspaces transversal to \(H\). Any element in \(U\) can be identified with the graph of a linear function \(V/H \to H\). Elaborating: each choice of \(H\) gives you a split short exact sequence \(H\to V\to V/H\), which in turn gives you a map \(V/H \to H\). Conversely, if you have a surjective map \(V \to B\) with \(B\) isomorphic to \(V/H\), you get a subspace \(H\) in \(V\) so that \(H\oplus B \cong V\). 
+</p>
+
+<p>
+This means
+</p>
+\begin{align*}
+    U \cong \Hom(V/H, H) \cong \mathbb C^{(\ell - e)\cdot e}.
+\end{align*}
+<p>
+Note that \((\ell - e)\cdot e\) is the product of the dimension of \(H\) with the dimension of an element in \(U\).
+</p>
+
+<p>
+We have a Plucker embedding \(Gr(e, \ell) \hookrightarrow (\bigwedge^e V)^*\), and so these \(U\)&rsquo;s actually give us the affine charts of \(Gr(e, \ell)\).
+</p>
+</details>
+
+<div class="env env-corollary">
+<p class="env-label">Corollary</p>
+<ul class="org-ul">
+<li>\(\dim \tilde{M}_k = \dim (M_k) = m\cdot k + k\cdot (n - k) = k\cdot (n + m - k)\)</li>
+<li>\(\operatorname{codim}(M_k) = n\cdot m - (n + m - k)k = (n - k)(m - k)\).</li>
+</ul>
+</div>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Second fundamental theorem of invariant theory.)</i>   \(M_k\) is cut out scheme-theoretically by the \((k+1)\times (k+1)\)-minors.
+</p>
+</div>
+</div>
+<div id="outline-container-examples" class="outline-3">
+<h3 id="examples">Examples</h3>
+<div class="outline-text-3" id="text-examples">
+<ol class="org-ol">
+<li>Suppose \(m = n\), \(k = m-1\). Then \(M(n,m) \ M_{m-1} = GL(m)\) and \(M_{m-1}\) is given by the vanishing of the determinant.</li>
+<li>Suppose \(k = 1\) and that \(A\) has rank at most \(1\iff A = u^t\cdot v\). Then \(M_1(n, m)\) is the image of the Segre map \(\mathbb A^n \times \mathbb A^m \to \mathbb A^{n-m}\). A quadric surface in \(\mathbb P^3\) is the projectivization of \(M_1(2,2)\). (This is what we keep encountering, a quadric surface embeds in \(\mathbb P^1\times \mathbb P^1\subset \mathbb P^3\) embedded in \(\mathbb P^3\) via the Segre embedding).</li>
+<li>The following is a determinantal variety, and it is true that \(X_{a_1,a_2} = M_1(2, r + 1) \cap H_i\) where \(H_i\) is a hyperplane given by \(x_{1,2} = x_{2,1}, x_{1,3} = x_{2,2},...\)</li>
+</ol>
+\begin{align*}
+    X_{a_1,a_2} = 
+    \begin{pmatrix}
+        x_0 & x_1 & x_2 & \dots & x_{a_1-1} & y_0 & y_1 & \dots & y_{a_2 - 1} \\
+        x_1 & x_2 & x_3 & \dots & x_{a_1} & y_0 & y_1 & \dots & y_{a_2}
+    \end{pmatrix}.
+\end{align*}
+</div>
+</div>
+</div>
+<div id="outline-container-tangent-spaces-of-the-generic-determinantal-variety" class="outline-2">
+<h2 id="tangent-spaces-of-the-generic-determinantal-variety">Tangent spaces of the generic determinantal variety.</h2>
+<div class="outline-text-2" id="text-tangent-spaces-of-the-generic-determinantal-variety">
+<p>
+For a variety \(X\) over \(k\) and \(p\in X\) a point, we define the tangent space of \(X\) at \(p\) by
+</p>
+\begin{align*}
+    T_pX = \Hom((\Spec k[\epsilon]/(\epsilon^2), (\epsilon)), (X, p)).
+\end{align*}
+
+<p>
+<i>Example:</i> Consider \(T_H Gr(k, V)\). Given a map
+</p>
+\begin{align*}
+    \varphi:\Spec k[\epsilon]/(\epsilon^2) \to Gr (k,V)
+\end{align*}
+<p>
+and a basis \(\omega_1,...,\omega_k\) a basis of \(H\), we obtain a relative basis \(\omega_i + \epsilon\cdot v_i\). Conversely, a map \(\omega \mapsto v_i\) gives a linear map \(H\to V/H\). This should be enough to convince oneself that
+</p>
+\begin{align*}
+    T_H Gr(k,V) = \Hom(H, V/H).
+\end{align*}
+</div>
+</div>
+<div id="outline-container-start-of-lecture-27" class="outline-2">
+<h2 id="start-of-lecture-27">Start of Lecture 27</h2>
+<div class="outline-text-2" id="text-start-of-lecture-27">
+<p>
+I arrived late and so these notes ought to be cross checked with Karl&rsquo;s.
+</p>
+
+<p>
+Last time we saw that \(T_WGr(\ell,V) \cong \Hom(W, V/W)\).
+</p>
+\begin{align*}
+    T_{(W,W)}\widetilde{M}_k = \{(\varphi,B) ~\mid~ B\in M, \varphi\in \Hom(W,V/W) \text{ s.t. } B|_W = A\circ \varphi\}.
+\end{align*}
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+\(\widetilde{M}_k\) is smooth.
+</p>
+</div>
+<p>
+Take \(\pi:\widetilde{M}_k\to M_k\) to be the projection map. Then \(\pi_*T_{(A,W)}\widetilde{M}_k \subseteq T_AM_k\).
+</p>
+
+<p>
+The forward direction is obvious, if \(B|_W = -A\circ \varphi\) then \(B\cdot W \subset \img(A)\). Likewise, if \(B\cdot W \subset \img(A)\), we can define a \(\varphi\) by setting for any \(B(w) = A(v)\) \(\varphi(w) = -v\). This defines a map \(\varphi:W\to V/W\).
+</p>
+
+<p>
+\(\pi_* T_{(A,W)}\widetilde{M}_k = \{B\in M ~\mid~ B\cdot W\subseteq \img(A)\}.\)
+</p>
+\begin{align*}
+    \dim(\pi_*T_{(A,W)}\widetilde{M}) &= \dim(\Hom(W,\img(A))) + k\cdot m \\
+    &= (n-k)k + k\cdot m = (n+m - k)k \\
+    &= \dim(M_k) = \dim(\widetilde{M}_k)
+\end{align*}
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+\(M_k\setminus M_{k-1}\) is smooth. \(M_k\) is singular along \(M_{k-1}\) with Zariski tangent space equal to \(M(n,m)\).
+</p>
+</div>
+</div>
+<div id="outline-container-why-do-we-care-about-determinental-varieties" class="outline-3">
+<h3 id="why-do-we-care-about-determinental-varieties">Why do we care about determinental varieties?</h3>
+<div class="outline-text-3" id="text-why-do-we-care-about-determinental-varieties">
+<p>
+If \(\varphi:F\to E\) is a map of vector bundles of ranks \(n, m\) on \(X\). There exists a \(U\subset X\) which simultaneously trivializes these bundles; \(\varphi|_U:\mathcal O^{\oplus n}_X \to \mathcal O^{\oplus m}_X\). Then \(\varphi\) gives a matrix whose entries are regular functions on \(U\), i.e. functions \(\psi:U\to M\), \(U_k(\varphi):=\psi^{-1}M_k\). The set \(U_k(\varphi)\) does not depend on the choice of \(U\). This means there exists some \(X_k(\varphi)\subset X\) that restricts to \(U_k(\varphi)\) on \(U\). This is called the \(k\)th determinantal locus of \(\varphi\).
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+\(X_k(\varphi)\) is either empty or of codimension at most \((m-k)(n-k)\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-examples-2" class="outline-3">
+<h3 id="examples-2">Examples</h3>
+<div class="outline-text-3" id="text-examples-2">
+<p>
+If \(F\cong \mathcal O_X\) then \(\varphi:F\to E\) corresponds to a global section of \(E\). \(X_0(\varphi)\) is the vanishing locus of such a section. Hence the expected codimenion is \(\operatorname{codim}(X_0(\varphi)) = (m - k)(n - k) = (1 - 0)(\operatorname{rank}(E) - 0) = \operatorname{rank}(E)\)
+.
+</p>
+
+<p>
+If \(E = \mathcal O_{\mathbb P^2} \oplus \mathcal O_{\mathbb P^2}(1)\), then for a section \((\sigma, \tau)\in E\). If \(\sigma \neq 0\) then \(V(s) = \emptyset\) and if \(\sigma = 0\) then \(V(s)\) is a line which has codimension \(1\) in \(\mathbb P^2\).
+</p>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">1</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-25" href="../../notes/algebraic-curves-25/">Algebraic Curves Lecture 25</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

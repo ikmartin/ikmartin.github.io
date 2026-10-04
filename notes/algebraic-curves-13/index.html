@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 13 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-13/"
+      data-note-title="Algebraic Curves Lecture 13">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 13</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-12" href="../../notes/algebraic-curves-12/">← lecture 12</a> · <a class="idlink" data-note="algebraic-curves-14" href="../../notes/algebraic-curves-14/">lecture 14 →</a>
+</p>
+
+<p>
+We have a correspondence between maps to \(\mathbb P^n\) and line bundles, so an embedding \(\varphi:C\hookrightarrow \mathbb P^3\) gives a line bundle \(L = \varphi_L^*\mathcal O_{\mathbb P^3}(1) = \mathcal O_{\mathbb P^3}(1)|_C = K_C\) and each line bundle \(L\) gives an embedding \(\varphi:C\hookrightarrow \mathbb P^3\). <i>CHECK THIS AFTER CLASS</i>
+</p>
+<div id="outline-container-grassmanians-continued" class="outline-2">
+<h2 id="grassmanians-continued">Grassmanians Continued</h2>
+<div class="outline-text-2" id="text-grassmanians-continued">
+<p>
+An element \(\lambda\in \bigwedge^n V\) is <i>decomposable</i> if \(\lambda = v_1\wedge...\wedge v_k\). We have a map \(G(K,V)\to \mathbb P\left(\bigwedge^k V\right)\) called the <i>Plücker embedding</i>:
+</p>
+\begin{align*}
+    \mathbb{Gr}(k,V) &\to \mathbb P(\bigwedge^k V) \\
+    W &\mapsto v_1\wedge ... \wedge v_k
+\end{align*}
+</div>
+<div id="outline-container-pl-cker-relations" class="outline-3">
+<h3 id="pl-cker-relations">Plücker Relations</h3>
+<div class="outline-text-3" id="text-pl-cker-relations">
+<p>
+Fix a basis for \(V\). The coordinates of a \(k\)-dimensional subspace \(W\subseteq V\) are given by the \(K\times K\) minors of the \(n\times k\) matrix with columns basis vectors of \(W\).
+</p>
+
+<p>
+For any two sequences \(i_1 < ... < i_{k-1}\) and \(j_1 < ... < j_{k+1}\) with \(i\leq i_s, j_\ell \leq n\), it holds that
+</p>
+\begin{align*}
+    \sum^{k+1}_{\ell = 1}(-1)^{\ell} W_{i_1...i_{k-1}j_\ell} W_{j_1...\hat{j_\ell}...j_{k+1}} = 0
+\end{align*}
+<p>
+where \(W_{i_1...i_{k-1}j_\ell}\) is the coordinate corresponding to the \(k\times k\) minor with rows in \(i_1...i_{k-1}j_\ell\) under the Plücker embedding. Such relations are called the <i>Plücker relations</i>.
+</p>
+
+<p>
+<i>Example:</i> Consider the Plücker embedding \(\varphi: G(2,4) \to \bigwedge^2 V\) and choose \(W\in G(2,4)\). Choose a basis \(v_1,v_2\) of \(W\) where
+</p>
+\begin{align*}
+    v_1 &= a_1e_1 + a_2e_2 + a_3e_3 + a_4e_4 \\
+    v_2 &= b_1e_1 + b_2e_2 + b_3e_3 + b_4e_4.
+\end{align*}
+<p>
+These are the image of the matrix
+</p>
+\begin{align*}
+    M = 
+    \begin{pmatrix}
+        a_1 & b_1 \\
+        a_2 & b_2 \\
+        a_3 & b_3 \\
+        a_4 & b_4
+    \end{pmatrix}.
+\end{align*}
+<p>
+Taking \(v_1\wedge v_2\) gives me
+</p>
+\begin{align*}
+    v_1 \wedge v_2 &= (a_1e_1 + a_2e_2 + a_3e_3 + a_4e_4)\wedge (b_1e_1 + b_2e_2 + b_3e_3 + b_4e_4) \\
+    &= b_1a_2\cdot (e_2 \wedge e_1) + b_2\cdot a_1 \cdot (e_1 \wedge e_2) ... \\
+    &= (b_1 \cdot a_2 - b_2 \cdot a_1)(e_1\wedge e_2) + ...
+\end{align*}
+<p>
+Now take sequences \(i_1 = 1\) (only option) and \(j_1 = 1, j_2 = 2, j_3 = 3\) (\(k = 2\) and \(n=4\)). Then the Plücker relation is given
+</p>
+\begin{align*}
+    - 0 + W_{12} \cdot W_{13} - W_{13}\cdot W_{12} = 0,
+\end{align*}
+<p>
+which is always true. Taking \(i_1 = 1\), \(j_1 = 2, j_3 = 3, j_4 = 4\) and we get
+</p>
+\begin{align*}
+    - W_{12}\cdot W_{34} + W_{13}\cdot W_{24} - W_{14}\cdot W_{23} = 0,
+\end{align*}
+<p>
+which is a nonempty statement. This is the only Plücker relation in this case. This realizes \(G(2,4)\) as a quadric hypersurface in \(\mathbb P^5\).
+</p>
+
+<p>
+<i>Claim:</i> \(\lambda \in \bigwedge^2 V\) is decomposable if and only if \(\lambda \wedge \lambda = 0\).
+</p>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+One direction is immediate. For the other direction, suppose \(\lambda\) is indecomposable and write it \(\lambda = e_1\wedge e_2 + e_3\wedge e_4\) for some choice of coordinates on \(V\). Then
+</p>
+\begin{align*}
+    (\lambda \wedge \lambda) &= 2 (e_1\wedge e_2\wedge e_3 \wedge e_4) \neq 0.
+\end{align*}
+<p>
+Note that \(\lambda\wedge\lambda\) lives in \(\bigwedge^4 V\).
+</p>
+</details>
+
+<p>
+Let&rsquo;s return to the above example of \(G(2,4)\) and the Plücker relation
+</p>
+\begin{align*}
+    - W_{12}\cdot W_{34} + W_{13}\cdot W_{24} - W_{14}\cdot W_{23} = 0.
+\end{align*}
+<p>
+We now have a characterization of decomposable elements, so for
+</p>
+\begin{align*}
+    \lambda &= \lambda_{12}(e_1\wedge e_2) + \lambda_{13}(e_1\wedge e_3) + \lambda_{14}(e_1\wedge e_4) \\
+    &\hspace{0.5cm} + \lambda_{23}(e_2\wedge e_3) + \lambda_{24}(e_2\wedge e_4) + \lambda_{34}(e_3\wedge e_4),
+\end{align*}
+<p>
+we get
+</p>
+\begin{align*}
+    \lambda \wedge \lambda &= (\lambda_{12} \cdot \lambda_{34} - \lambda_{13}\cdot \lambda_{24}+\lambda_{14}\cdot \lambda_{23})(e_1\wedge e_2 \wedge e_3 \wedge e_4).
+\end{align*}
+<p>
+The coefficient \(\lambda_{12} \cdot \lambda_{34} - \lambda_{13}\cdot \lambda_{24}+\lambda_{14}\cdot \lambda_{23}\) gives the Plücker relation. Set
+</p>
+\begin{align*}
+    \Sigma = \left\{(x,H) ~\middle|~ x\in H\right\} \subseteq \mathbb P^n\times G(k,\mathbb P^n)
+\end{align*}
+<p>
+and consider the projections \(\pi_1:\Sigma \to \mathbb P^n\) and \(\pi_2:\Sigma\to G(k,\mathbb P^n)\). We call \(\Sigma\) an <i>incidence variety</i>. It is a subvariety since the condition \(x \in H\) means that \(x \wedge b_1 \wedge ... \wedge b_k = 0\) where \(b_1,...,b_k\) is a basis for \(H\), and hence
+</p>
+\begin{align*}
+    \Sigma = \left\{(x,h) ~\middle|~ x\wedge b_1 \wedge ... \wedge b_k = 0\right\}
+\end{align*}
+<p>
+meaning that \(\Sigma\) is a variety since \(x \wedge b_1 \wedge ... \wedge b_k\) is a polynomial equation.
+</p>
+
+<p>
+For any subvariety \(Y\subseteq G(k,\mathbb P^n)\), I get a subvariety \(\pi_1(\pi_2^{-1}(Y))\) of \(\mathbb P^n\). If I take two subvarieties \(X,Y\subseteq \mathbb P^n\) and consider the rational map 
+</p>
+\begin{align*}
+    \varphi: X\times Y&\to G(1,\mathbb P^n) \\
+    (x,y)&\mapsto x\wedge y
+\end{align*}
+<p>
+defined outside the set \(x = y\) in \(X\times Y\), then we can define two new varieties
+</p>
+\begin{align*}
+    J(X,Y) &= \pi_1(\pi_2^{-1}(\overline{\operatorname{img} \varphi})) \hspace{1cm}&\text{"join of \(X\) and \(Y\)"}\\
+    \textrm{Sec}(X) &= J(X,X)\hspace{1cm}&\text{"secant variety"}.
+\end{align*}
+<p>
+These have dimensions satisfying
+</p>
+\begin{align*}
+    \dim(J(X,Y)) &\leq \dim (X) + \dim(Y) + 1\\
+    \dim(\textrm{Sec}(X)) &\leq 2\dim X + 1.
+\end{align*}
+<p>
+<i>Example:</i> Take \(X\) to be a curve in \(\mathbb P^n\) with \(n\geq 3\).
+</p>
+<ul class="org-ul">
+<li>\(\dim(\textrm{Sec}(X)) = 1\) if and only if \(X\) is a line.</li>
+<li>\(\dim(\textrm{Sec}(X)) = 2\) if and only if \(X\) is contained in a plane but <i>not</i> a plane.</li>
+<li>\(\dim(\textrm{Sec}(X)) = 3\) if and only if \(X\) is not contained in a plane.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-12" href="../../notes/algebraic-curves-12/">Algebraic Curves Lecture 12</a></li>
+    <li><a data-note="algebraic-curves-14" href="../../notes/algebraic-curves-14/">Algebraic Curves Lecture 14</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

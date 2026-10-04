@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 7 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-07/"
+      data-note-title="Algebraic Curves Lecture 7">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    <nav class="rail-block rail-toc" aria-label="Table of contents">
+  <p class="rail-label">Contents</p>
+  <ol>
+    <li class="toc-l2"><a href="#connection-to-last-lecture">Connection to last lecture</a></li>
+    <li class="toc-l2"><a href="#curves-in-mathbb-p-2">Curves in \(\mathbb P^2\)</a></li>
+    <li class="toc-l2"><a href="#curves-in-mathbb-p-1-times-mathbb-p-1">Curves in \(\mathbb P^1\times \mathbb P^1\)</a></li>
+  </ol>
+</nav>
+
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 7</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-06-two-more-corollaries-of-riemann-roch" href="../../notes/algebraic-curves-06-two-more-corollaries-of-riemann-roch/">← lecture 6</a> · <a class="idlink" data-note="algebraic-curves-08" href="../../notes/algebraic-curves-08/">lecture 8 →</a>
+</p>
+<div id="outline-container-connection-to-last-lecture" class="outline-2">
+<h2 id="connection-to-last-lecture">Connection to last lecture</h2>
+<div class="outline-text-2" id="text-connection-to-last-lecture">
+<p>
+Last time we stopped with the calculation that \(K_{\mathbb P^r} = \mathcal O_{\mathbb P^r}(-r-1)\). Using this together with the following theorem is quite profitable:
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Adjunction formula)</i>. Let \(X\) be smooth and \(Y\subseteq X\) smooth of codimension \(k\). Then we can express the canonical sheaf of \(Y\) in terms of the canonical sheaf of \(X\) in the following way:
+</p>
+\begin{align*}
+    K_Y = K_X\otimes \bigwedge^k N_{Y/X} \otimes \mathcal O_Y,
+\end{align*}
+<p>
+where we include the last tensor just to ensure that this equality happens as sheaves on \(Y\). I believe the tensor products are taken over \(\mathbb C\).
+</p>
+</div>
+<p>
+The most common situation in which we use this is where \(k = 1\), in which case the adjunction formula says
+</p>
+\begin{align*}
+    K_Y = K_X\otimes \mathcal O_X(Y) \otimes \mathcal O_Y
+\end{align*}
+<p>
+or in the divisor notation
+</p>
+\begin{align*}
+    K_Y = (K_X + Y)|_{Y^0}.
+\end{align*}
+<p>
+Here&rsquo;s a sketch of the proof for \(k=1\):
+</p>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+<i>(Sketch).</i> We have an exact sequence
+</p>
+\begin{align*}
+    0 \to T_Y \to T_X|_{Y} \to N_{Y/X} \to 0.
+\end{align*}
+<p>
+We have a picture on the board at this point which shows a curve \(Y\) together with a tangent line drawn at a point on \(Y\) and a normal space (a plane) at the same point.
+</p>
+
+<p>
+Dualize this to get
+</p>
+\begin{align*}
+    0 \to N_{Y/X}^* \to T_{X|_{Y}}^*\to T^*_{Y}\to 0
+\end{align*}
+<p>
+noting that the rank of these bundles are \(1\), \(n\) and \(n-1\) respectively. It&rsquo;s a general fact that if you have an exact sequence
+</p>
+\begin{align*}
+    0 \to \mathcal F'\to \mathcal F\to \mathcal F'' \to 0,
+\end{align*}
+<p>
+then
+</p>
+\begin{align*}
+    \bigwedge^r \mathcal F = \bigwedge^{r'} \mathcal F' ~\otimes~\bigwedge^{r''}\mathcal F'',
+\end{align*}
+<p>
+so
+</p>
+\begin{align*}
+    \bigwedge^n T_{X|_Y}^* = N_{Y/X}^* \otimes \bigwedge^{n-1}T_Y^*.
+\end{align*}
+<p>
+The leftmost term is \(K_{X|_Y}\) and the rightmost term is \(K_Y\), so rearranging, we get
+</p>
+\begin{align*}
+    K_Y = N_{Y/X}\otimes K_X\otimes \mathcal O_Y.
+\end{align*}
+</details>
+</div>
+</div>
+<div id="outline-container-curves-in-mathbb-p-2" class="outline-2">
+<h2 id="curves-in-mathbb-p-2">Curves in \(\mathbb P^2\)</h2>
+<div class="outline-text-2" id="text-curves-in-mathbb-p-2">
+<p>
+Let&rsquo;s see Bezout&rsquo;s theorem.
+</p>
+
+<div class="env env-theorem">
+<p class="env-label">Theorem</p>
+<p>
+<i>(Bezout&rsquo;s Theorem).</i> If \(C_1\), \(C_2\subseteq \mathbb P^2\) are projective curves of degree \(d_1\) and \(d_2\) respectively, then \(C_1\cdot C_2 = d_1\cdot d_2\).
+</p>
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+\(C_1\) is linearly equivalent to a union of \(d_1\) general lines; likewise, \(C_2\) is linearly equivalent to a union of \(d_2\) general lines. Any two linear intersect in exactly one point, and \(C_1\cdot C_2\) is well-defined on linear equivalence classes. Thus, counting intersection of lines gives \(C_1\cdot C_2 = d_1\cdot d_2\).
+</p>
+</details>
+
+<p>
+Remember: \(C_1\) and \(C_2\) are divisors of \(\mathbb P^2\) and two divisors \(C\) and \(D\) are linearly equivalent (\(C\sim D\)) if and only if \(C - D = \div(f)\). The statement that every curve of degree \(d\) is linearly equivalent to a union of lines is something like saying that every polynomial of degree \(d\) factors as a product of \(d\) linear terms.
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+<i>(genus-degree formula)</i>. If \(C\subseteq \mathbb P^2\) is a smooth plane curve of degree \(d\) and genus \(g\), then
+</p>
+\begin{align*}
+    g = \frac{(d-1)(d-2)}{2}.
+\end{align*}
+</div>
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Recall that we saw, as a corollary of Riemann Roch, that \(\deg(K_C) = 2g - 2\). By adjunction we get
+</p>
+\begin{align*}
+    K_C = (K_{\mathbb P^2} + C)_{|_C} 
+    &= \left(\mathcal O_{\mathbb P^2}(-3) \otimes \mathcal O_{\mathbb P^2}(d)\right)_{|_C} \\
+    &= \left(\mathcal O_{\mathbb P^2}(d - 3)\right)_{|_C}
+\end{align*}
+<p>
+which implies
+</p>
+\begin{align*}
+    \deg(K_C) = (d-3)\cdot d = d^2 - 3d = 2g - 2.
+\end{align*}
+<p>
+Solving for \(g\) gives the result.
+</p>
+</details>
+</div>
+</div>
+<div id="outline-container-curves-in-mathbb-p-1-times-mathbb-p-1" class="outline-2">
+<h2 id="curves-in-mathbb-p-1-times-mathbb-p-1">Curves in \(\mathbb P^1\times \mathbb P^1\)</h2>
+<div class="outline-text-2" id="text-curves-in-mathbb-p-1-times-mathbb-p-1">
+<p>
+A curve on \(\mathbb P^1\times \mathbb P^1\) (take coordinates \([u_0:u_1]\times [v_1\times v_2]\)) is given by a bi-homogeneous polynomial of bi-degree \((d_1, d_2)\); that is, a polynomial in \(u_0,u_1,v_0,v_1\) which is homogeneous of degree \(d_1\) in \(u_0,u_1\) and homogeneous of degree \(d_2\) in \(v_0, v_1\). For instance, \(u_0^2 \cdot u_1 \cdot v_0 \cdot v_1 + u_1^3 \cdot v_0^2\) has bidegree \((3, 2)\).
+</p>
+
+<p>
+<i>Fact:</i> \(C\sim D\subseteq \mathbb P^1\times \mathbb P^1\) if and only if \(C\) and \(D\) have the same bi-degree.
+</p>
+
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+Let \(C_1\) and \(C_2\) be curves of bidegrees \((d_1,e_1)\) and \((d_2,e_2\)). Then
+</p>
+\begin{align*}
+    C_1\cdot C_2 = d_1e_2 + d_2 e_1
+\end{align*}
+</div>
+<p>
+The proof is, again, done by counting the intersections of lines. Omitted.
+</p>
+
+<p>
+Now consider an arbitrary curve \(C\) in \(\mathbb P^1\times \mathbb P^1\) of bi-degree \((d_1,d_2)\). It has canonical divisor
+</p>
+\begin{align*}
+    K_C = (K_{\mathbb P^1\times \mathbb P^1} + C)_{|_C}
+\end{align*}
+<p>
+by the adjunction formula. Once you know that \(K_{\mathbb P^1\times \mathbb P^1} = \mathcal O_{\mathbb P^1\times \mathbb P^1}(-2)\) (see below for this computation) the above equality implies that \(\textrm{bideg}(K_Q) = (-2, -2)\).
+</p>
+
+<p>
+Here are two ways of seeing that \(K_{\mathbb P^1\times \mathbb P^1} = \mathcal O_{\mathbb P^1\times \mathbb P^1}(-2)\).
+</p>
+
+<p>
+<i>Method 1:</i> We realize \(Q = \mathbb P^1\times \mathbb P^1\) as a smooth quadric in \(\mathbb P^3\) (in fact, <a href="https://math.stackexchange.com/questions/1334097/show-that-any-quadric-in-mathbbp3-is-isomorphic-to-mathbbp1-times-m">every smooth quadric in \(\mathbb P^3\) is isomorphic to \(\mathbb P^1\times \mathbb P^1\)</a>). To see this, take the Segre embedding \([u_0:u_1]\times [v_0:v_1]\mapsto [u_0v_0:u_0v_1:u_1v_0:u_1v_1]\) and notice that this is exactly the surface \(xy = zw\) in \(\mathbb P^3\) after choosing homogeneous coordinates \([x:y:z:w]\). 
+</p>
+
+<p>
+Now apply adjunction:
+</p>
+\begin{align*}
+    K_Q = (K_{\mathbb P^3} + Q)_{|_Q} = (\mathcal O_{\mathbb P^3}(-4) + \mathcal O_{\mathbb P^3}(2))_{|_Q} = (\mathcal O_{\mathbb P^3}(-2))_{|_Q}.
+\end{align*}
+
+<p>
+<i>Method 2:</i> (Thanks Abhishek!) We can instead calculate \(K_{\mathbb P^1\times \mathbb P^1}\) without considering an embedding into \(\mathbb P^3\) by applying the adjunction formula to one copy of \(\mathbb P^1\) inside of \(\mathbb P^1\times \mathbb P^1\). Adjunction says
+</p>
+\begin{align*}
+    K_{\mathbb P^1} = (K_{\mathbb P^1\times \mathbb P^1} + \mathbb P^1).
+\end{align*}
+
+<p>
+We know \(K_{\mathbb P^1} = \mathcal O_{\mathbb P^1}(-2)\) since \(K_{\mathbb P^r} = \mathcal O_{\mathbb P^r}(-r - 1)\). 
+</p>
+
+<p>
+Applying the Corollary about \(\deg(K_C)\) to our curve \(C\) of bi-degree \((d_1,d_2)\), we have
+</p>
+\begin{align*}
+    2g - 2 &= \deg(K_C) = \deg((K_{\mathbb P^1\times \mathbb P^1} + C)_{|_C}) \\
+    &= (d_1 - 2)\cdot d_2 ~+~ (d_2 - 2)\cdot d_1 \\
+    &= 2d_1d_2 - 2d_2-2d_1,
+\end{align*}
+<p>
+which implies \(g = (d_1-1)(d_2 - 1)\).
+</p>
+
+<p>
+This leads to the following proposition.
+</p>
+<div class="env env-proposition">
+<p class="env-label">Proposition</p>
+<p>
+If \(C\) is a smooth curve of bi-degree \((d_1,d_2)\) on \(\mathbb P^1\times \mathbb P^1\), then
+</p>
+\begin{align*}
+    g(C) = (d_1 - 1)(d_2 - 1).
+\end{align*}
+</div>
+
+<p>
+Comparing the genus/degree formulas for curves in \(\mathbb P^2\) and \(\mathbb P^1\times \mathbb P^1\) warrants the following remark.
+</p>
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<ol class="org-ol">
+<li>For some \(g\) (e.g. g = 2) there exists no smooth plane curve of that genus, simply because \(d\mapsto \frac{(d-1)(d-2)}{2}\) is not a surjective map on \(\mathbb N\).</li>
+<li>In contrast, for any \(g\) there exists a smooth curve of genus \(g\) on \(\mathbb P^1\times\mathbb P^1\). For example, a smooth curve of bi-degree \((g-1, 2)\).</li>
+</ol>
+</div>
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-06-two-more-corollaries-of-riemann-roch" href="../../notes/algebraic-curves-06-two-more-corollaries-of-riemann-roch/">Algebraic Curves Lecture 6: Two More Corollaries Of Riemann Roch</a></li>
+    <li><a data-note="algebraic-curves-08" href="../../notes/algebraic-curves-08/">Algebraic Curves Lecture 8</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

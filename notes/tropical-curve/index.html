@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropical Curve — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/tropical-curve/"
+      data-note-title="Tropical Curve">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Tropical Curve</h1>
+      <p class="note-meta"><span class="taxon">definition</span></p>
+
+      <article class="note">
+<p>
+This is the definition that appears in Logarithmic Gromov-Witten invariants.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+Let \(\overline \Gamma\) be a connected graph and let \(\Gamma\) be the topological space obtained by removing from \(\overline \Gamma\) a set of univalent vertices of \(\overline \Gamma\) so that \(\Gamma\) has both compact and non-compact edges (these vertices to be removed are part of the data). We assume that \(\Gamma\) has at least one vertex. Let \(N \cong \mathbb Z^n\) and \(N_{\mathbb R} = N\otimes_\mathbb Z\mathbb R\).
+</p>
+
+<p>
+A <i>tropical curve</i> in \(N_{\mathbb R}\) with domain \(\Gamma\) consists of the following data:
+</p>
+<ol class="org-ol">
+<li>For each flag \((v,E)\) of \(\Gamma\), where \(v\) is a vertex of \(\Gamma\) and \(E\) an edge containing \(v\), we are given a <i>weight vector</i> \(u_{(v,E)} \in N\). If \(E\) has two vertices \(v_1\) and \(v_2\), then \(u_{(v_1,E)} = - u_{(v_2,E)}\) and if \(E\) is a loop, then \(u_{(v,E)} = 0\). The graph \(\Gamma\) along with the weight vectors is called the <i>type</i> of the tropical curve.</li>
+<li>A map \(h:\Gamma \to N_{\mathbb R}\) with the following properties:
+<ul class="org-ul">
+<li>For any edge \(E\) of \(\Gamma\) with vertex \(v\), \(h|_E\) is constant if \(u_{(v,E)} = 0\), and otherwise \(h|_E\) is proper and identifies \(E\) with an affine line segment or ray. Furthermore, \(u_{(v,E)}\) is a tangent vector to \(h(E)\) pointing away from \(h(v)\).</li>
+<li>For each vertex \(v\), we have the <i>balancing condition</i> \[\sum_{E} u_{(v,e)} = 0\]                                       where the sum is over all edges \(E\) with vertex \(v\).</li>
+</ul></li>
+</ol>
+</div>
+
+<p>
+This is the definition that appears in Degenerations of Degenerate GW invariants.
+</p>
+<div class="env env-definition">
+<p class="env-label">Definition</p>
+<p>
+A <i>tropical curve</i> \((G, g, \ell)\) over a <a class="idlink" data-note="generalized-cone-complex" href="../../notes/generalized-cone-complex/">cone</a> \(\omega\) is a graph \(G\) consisting of vertices \(V(G)\) edges \(E(G)\) and legs/half-edges/unbounded edges \(L(G)\) together with an ordering of the legs and two maps
+\[g:V(G)\to \mathbb N\] 
+the genus function and
+\[\ell:E(G)\to \Hom(\omega \cap N_\omega, \mathbb N) \setminus \{0\}\]
+the length map. For \(v\in V(G)\) and \(E\in E(G)\), \(g(v)\) is the genus of \(v\) and \(\ell(E)\) is the length function of \(E\). Here \(N_\omega\) is the cocharacter lattice of the cone \(\omega\), and so \(\ell(E)\) is a character of \(N_\omega\) which is strictly positive on the cone \(\omega\). If you choose primitive vectors of \(\omega\) then their images under \(\ell(E)\) are &ldquo;lengths&rdquo;.
+</p>
+
+<p>
+The genus of a family of tropical curves \((G, g, \ell)\) is
+\[|g| = b_1(G) + \sum_{v\in V(G)} g(v).\]
+</p>
+</div>
+
+<p>
+In this definition,
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">stable log curve</th>
+<th scope="col" class="org-left">tropical curve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">irred comp C</td>
+<td class="org-left">vertex v</td>
+</tr>
+
+<tr>
+<td class="org-left">node q</td>
+<td class="org-left">edge E</td>
+</tr>
+
+<tr>
+<td class="org-left">marked point p</td>
+<td class="org-left">leg L</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The genus of the graph matches the arithmetic genus of the source curve.
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="balancing-condition-for-stable-log-curves" href="../../notes/balancing-condition-for-stable-log-curves/">Balancing Condition For Stable Log Curves</a></li>
+    <li><a data-note="contact-order-of-stable-log-curve" href="../../notes/contact-order-of-stable-log-curve/">Contact Order Of A Stable Log Curve At Marks And Nodes</a></li>
+    <li><a data-note="example-tropical-data-associated-to-stable-log-curve" href="../../notes/example-tropical-data-associated-to-stable-log-curve/">Example Tropical Data Associated To Stable Log Curve</a></li>
+    <li><a data-note="generalized-cone-complex" href="../../notes/generalized-cone-complex/">Generalized Cone Complex</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

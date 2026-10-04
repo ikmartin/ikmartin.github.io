@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Sections Of The Ghost Sheaf, Torsors, And Line Bundles — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/global-sections-of-ghost-sheaf-and-line-bundles/"
+      data-note-title="Global Sections Of The Ghost Sheaf, Torsors, And Line Bundles">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Global Sections Of The Ghost Sheaf, Torsors, And Line Bundles</h1>
+      <p class="note-meta"><span class="taxon">lemma</span></p>
+
+      <article class="note">
+
+<p>
+See <a class="citeref" href="../../notes/ogus-lectureslogarithmicalgebraic2018/">[Ogu18, page 274]</a>.
+</p>
+
+<div class="env env-lemma">
+<p class="env-label">Lemma</p>
+<p>
+Let \(\alpha:\mathcal M_X\to \mathcal O_X\)  be an integral log structure on \(X\). Then each global section \(s\in \Gamma(X, \overline{\mathcal M}_X)\) corresponds to a \(\mathcal O_X^*\)-torsor and thus a line bundle \(\mathcal L_s\) on \(X\).
+</p>
+</div>
+
+<details class="env env-proof">
+<summary class="env-label">Proof</summary>
+<p>
+Since the log structure is integral, we have an exact sequence
+</p>
+
+\begin{align*}
+  1\to \mathcal O_X^*\xrightarrow{\lambda} \mathcal M^{\text{gp}}_X\xrightarrow{\pi}\overline{\mathcal M}_X^{\text{gp}} \to 0
+\end{align*}
+
+<p>
+where \(\lambda\) is \(\alpha^{-1}|_{\alpha^{-1}(\mathcal O_X^*)}\) composed with the injection \(\mathcal M_X\hookrightarrow\mathcal M_X^{\text{gp}}\). Then for any global section \(s\in \Gamma(X,\overline{\mathcal M}_X)\), the sheaf  \(\mathcal L_s^* = \pi^{-1}(s)\subset \mathcal M_X\) admits an \(\mathcal O^*_X\)-action which is simply transitive and at each \(x\in X\). Furthermore, the stalk \((\mathcal L_s^*)_x\) at least contains a copy of \(\mathcal O_X^*\) and hence is nonempty, so \(\mathcal L_s^*\) is an <a class="idlink" data-note="g-torsor-in-algebraic-geometry" href="../../notes/g-torsor-in-algebraic-geometry/">\(\mathcal O_X^*\)-torsor.</a> Up to isomorphism <a class="idlink" data-note="g-torsors-and-first-cohomology" href="../../notes/g-torsors-and-first-cohomology/">this corresponds to a class</a> in \(H^1(X, \mathcal O_X^*)\) and hence a line bundle \(\mathcal L_s\) on \(X\).
+</p>
+
+<p>
+In fact, the map
+</p>
+
+\begin{align*}
+  \Gamma(X, \overline{\mathcal M}_X^{\text{gp}}) \to \Pic(X);~ s\mapsto [\mathcal L_s]
+\end{align*}
+
+<p>
+is simply the boundary map of the long exact sequence on cohomology associated to the above short exact sequence.
+</p>
+</details>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<p>
+The point here is that both an \(\mathcal O_X^*\)-torsor and a line bundle are defined up to isomorphism by patching data in \(\mathcal O_X^*\). This means that, while the \(\mathcal O_X^*\)-torsor \(\mathcal L^*_s = \pi^{-1}(s)\) isn&rsquo;t <i>literally</i> a line bundle on \(X\), its isomorphism class uniquely determines \(\mathcal O_X^*\) gluing data, which in turn can be used to build a line bundle unique up to isomorphism.
+</p>
+</div>
+
+<div class="env env-math-example">
+<p class="env-label">Example</p>
+<p>
+Let \(\mathcal M_X\) be the <a class="idlink" data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">divisorial log structure</a> on \(X\) corresponding to a smooth divisor \(D\). Then the inverse image of \(n\in \Gamma(X, \overline{\mathcal M}_X)\cong \mathbb N\) under the map \(\mathcal M_X\to \overline{\mathcal M_X}\) is the sheaf \(\mathcal L_n^*\) defined
+</p>
+
+\begin{align*}
+  U&\mapsto \{f\in \mathcal M_X(U) \mid f \text{ vanishes to at least \(n\)th order on }D\}.
+\end{align*}
+
+<p>
+Let \(\mathcal O_X^*(-nD)\) denote the subsheaf of \(\mathcal O_X(-nD)\) consisting of &ldquo;sections which are locally units away from \(D\)&rdquo;, which makes sense once we identify \(\mathcal O_X(-nD)(V)\) with \(\mathcal O_X(V)\) for a sufficiently small neighborhood \(V\). This is precisely \(\mathcal L^*_n\) above, and the corresponding line bundle is \(\mathcal O_X(-nD)\).
+</p>
+
+<p>
+<b>Punchline:</b> The line bundle associated to \(n\in \Gamma(X, \overline{\mathcal M}_X)\) is \(\mathcal O_X(-nD)\).
+</p>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">9</span></h2>
+  <ul>
+    <li><a data-note="balancing-condition-for-stable-log-curves" href="../../notes/balancing-condition-for-stable-log-curves/">Balancing Condition For Stable Log Curves</a></li>
+    <li><a data-note="formula-for-degree-and-contact-order-of-marks-and-nodes-log-curves" href="../../notes/formula-for-degree-and-contact-order-of-marks-and-nodes-log-curves/">Balancing Condition In Terms Of Contact Order And Degree Of Map</a></li>
+    <li><a data-note="divisorial-log-structure" href="../../notes/divisorial-log-structure/">Divisorial Log Structure</a></li>
+    <li><a data-note="exercises-in-log-geometry-from-sam-johnston" href="../../notes/exercises-in-log-geometry-from-sam-johnston/">Exercises In Log Geometry From Sam Johnston</a></li>
+    <li><a data-note="degree-contact-order-formula-log-stable-curves" href="../../notes/degree-contact-order-formula-log-stable-curves/">Formula For The Degree And Contact Orders Of Marks On A Log Stable Curve</a></li>
+    <li><a data-note="g-torsor-in-algebraic-geometry" href="../../notes/g-torsor-in-algebraic-geometry/">G-Torsor In Algebraic Geometry</a></li>
+    <li><a data-note="g-torsors-and-first-cohomology" href="../../notes/g-torsors-and-first-cohomology/">G-Torsors Are Classified By The First Cohomology Group</a></li>
+    <li><a data-note="line-bundles-and-g-m-torsors" href="../../notes/line-bundles-and-g-m-torsors/">Line Bundles And G M Torsors</a></li>
+    <li><a data-note="localization-and-stable-log-maps" href="../../notes/localization-and-stable-log-maps/">Notes On Localization And Stable Log Maps</a></li>
+  </ul>
+</section>
+<section class="references">
+  <h2>References <span class="count">1</span></h2>
+  <ul>
+    <li id="ref-ogu18"><span class="ref-num">[Ogu18]</span> <a href="../../notes/ogus-lectureslogarithmicalgebraic2018/">Ogus — Lectures On Logarithmic Algebraic Geometry / Arthur Ogus, University Of California, Berkeley. (2018)</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

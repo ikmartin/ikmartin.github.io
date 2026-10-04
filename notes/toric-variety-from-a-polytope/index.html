@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toric Variety From A Polytope Or Polyhedron — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/toric-variety-from-a-polytope/"
+      data-note-title="Toric Variety From A Polytope Or Polyhedron">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Toric Variety From A Polytope Or Polyhedron</h1>
+      <p class="note-meta"><span class="taxon">construction</span></p>
+
+      <article class="note">
+<p>
+See Chapter 7 of [Toric Varieties, Cox Little Schneck] or Example 3.6 of [Tropical Geometry and Mirror Symmetry, Gross].
+</p>
+
+<p>
+The one-sentence construction is this: start with a polyhedron \(\sigma \subset M_\mathbb R\), take its <a class="idlink" data-note="normal-fan-to-a-polytope" href="../../notes/normal-fan-to-a-polytope/">normal fan</a> \(\Sigma \subset N_\mathbb R\), then the toric variety \(X_\sigma\) is \(X_\Sigma\). However you don&rsquo;t actually have to move over to the normal fan, you can just do it directly. This corresponds to the cone picture in Gross-Siebert.
+</p>
+
+<p>
+<b>Construction without normal fan</b>
+Let \(\sigma\) be a strictly convex <a class="idlink" data-note="polytope-and-polyhedron" href="../../notes/polytope-and-polyhedron/">polytope</a> in \(M_\mathbb R\) (the character lattice of a torus tensored with \(\mathbb R\)). For each facet \(\tau\subset \sigma\), form the cone 
+\[C_\tau := \cone\left(\sigma - \tau\right) = \left\{n \in M_\mathbb R ~ \middle | ~ \exists a \in \sigma, b \in \tau, \lambda \in \mathbb R_{\geq 0} \text{ s.t. } n = \lambda a - b \right\}.\]
+</p>
+<ul class="org-ul">
+<li>for a vertex \(v\), the cone \(C_v\) is obtained by translating \(\sigma\) so \(v\) is at the origin and then taking the \(\mathbb R_{\geq 0}\) span.</li>
+<li>for a facet \(\tau\), do the same thing but at every point in \(\tau\) and then take the union. Equivalently, you can take any point \(p\) in the relative interior of \(\tau\), translate \(\sigma\) so \(p\) is the origin, and then take the cone over that.</li>
+</ul>
+
+<p>
+Note the following properties of these cones:
+</p>
+<ul class="org-ul">
+<li>since \(\sigma\) is strinctly convex, \(C_v\) does not contain a line</li>
+<li>the cone \(C_\tau\) contains a copy of \(\mathbb R^d\) where \(d\) is the dimension of the facet \(\tau\)</li>
+<li>when \(\tau \subset \tau'\) we have \(C_\tau \subset C_{\tau'}\).</li>
+</ul>
+
+<p>
+We then define \(U_\tau = \Spec\mathbb C[C_\tau \cap M]\) and get inclusions \(U_\tau \hookrightarrow U_{\tau'}\) whenever \(\tau \subset \tau'\). The toric variety \(X_\sigma\) is then the colimit of this diagram, the result of gluing along common inclusions.
+</p>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">4</span></h2>
+  <ul>
+    <li><a data-note="mumford-degeneration" href="../../notes/mumford-degeneration/">Mumford Degeneration</a></li>
+    <li><a data-note="normal-fan-to-a-polytope" href="../../notes/normal-fan-to-a-polytope/">Normal Fan Of A Polytope</a></li>
+    <li><a data-note="polytope-and-polyhedron" href="../../notes/polytope-and-polyhedron/">Polytope And Polyhedron</a></li>
+    <li><a data-note="torus-action-of-mumford-degeneration" href="../../notes/torus-action-of-mumford-degeneration/">Torus Action Of Mumford Degeneration</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>
